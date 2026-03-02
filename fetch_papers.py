@@ -38,7 +38,7 @@ def fetch_high_citation_papers(min_citations=100, max_results=200):
                     "citations": item.get("citationCount", 0),
                     "arxiv_id": arxiv_id,
                     "url": f"https://arxiv.org/abs/{arxiv_id}" if arxiv_id else "",
-                    "abstract": (item.get("abstract") or "")[:300],
+                    "abstract": (item.get("abstract") or ""),
                 })
         offset += limit
         if offset >= data.get("total", 0):
@@ -69,7 +69,7 @@ def fetch_latest_papers(max_results=50):
             "date": entry.find("atom:published", ns).text[:10],
             "arxiv_id": arxiv_id,
             "url": f"https://arxiv.org/abs/{arxiv_id}",
-            "abstract": entry.find("atom:summary", ns).text.strip()[:300],
+            "abstract": entry.find("atom:summary", ns).text.strip(),
         })
     return papers
 
@@ -81,8 +81,7 @@ def paper_card(p, show_citations=False):
     url = p.get("url", "")
     link = f'<a href="{url}" target="_blank" class="arxiv-link">arXiv →</a>' if url else ""
     abstract = p.get("abstract", "")
-    abstract_html = (f'<p class="abstract">{abstract}{"..." if len(abstract)==300 else ""}</p>'
-                     if abstract else "")
+    abstract_html = f'<p class="abstract">{abstract}</p>' if abstract else ""
     return f"""    <div class="card">
       <div class="card-header">{badge}{link}</div>
       <h3>{p["title"]}</h3>
@@ -91,23 +90,70 @@ def paper_card(p, show_citations=False):
     </div>"""
 
 
+def fetch_author_other_papers(author_name, cbf_arxiv_ids, max_results=20):
+    """获取作者在 CBF 之外的其他论文"""
+    params = {
+        "query": author_name,
+        "fields": "title,authors,year,citationCount,externalIds,publicationDate,abstract",
+        "limit": 50,
+    }
+    resp = requests.get(SEMANTIC_SCHOLAR_API, params=params, timeout=30)
+    if resp.status_code != 200:
+        return []
+    items = resp.json().get("data", [])
+    results = []
+    for item in items:
+        arxiv_id = (item.get("externalIds") or {}).get("ArXiv")
+        if arxiv_id and arxiv_id in cbf_arxiv_ids:
+            continue
+        # 确认作者名在列表中
+        names = [a["name"] for a in item.get("authors", [])]
+        if author_name not in names:
+            continue
+        results.append({
+            "title": item.get("title", ""),
+            "authors": names,
+            "year": item.get("year"),
+            "date": item.get("publicationDate", ""),
+            "citations": item.get("citationCount", 0),
+            "arxiv_id": arxiv_id,
+            "url": f"https://arxiv.org/abs/{arxiv_id}" if arxiv_id else "",
+            "abstract": (item.get("abstract") or ""),
+            "cbf_related": False,
+        })
+    results.sort(key=lambda x: x.get("date") or str(x.get("year", "")), reverse=True)
+    return results[:max_results]
+
+
 def build_authors(high_citation, latest):
-    """统计所有论文的作者，按论文数排序"""
+    """统计 CBF 论文作者，按论文数排序，并为每位作者附加其他论文"""
     from collections import defaultdict
     author_papers = defaultdict(list)
     seen = set()
+    cbf_arxiv_ids = set()
     for p in high_citation + latest:
         key = p.get("arxiv_id") or p.get("title")
         if key in seen:
             continue
         seen.add(key)
+        if p.get("arxiv_id"):
+            cbf_arxiv_ids.add(p["arxiv_id"])
+        p2 = dict(p, cbf_related=True)
         for a in p.get("authors", []):
-            author_papers[a].append(p)
-    # 每位作者的论文按日期倒序
+            author_papers[a].append(p2)
+    # 每位作者 CBF 论文按日期倒序
     for a in author_papers:
         author_papers[a].sort(key=lambda x: x.get("date") or str(x.get("year", "")), reverse=True)
-    # 按论文数倒序
-    return sorted(author_papers.items(), key=lambda x: len(x[1]), reverse=True)
+    # 按 CBF 论文数倒序，取前50位作者
+    sorted_authors = sorted(author_papers.items(), key=lambda x: len(x[1]), reverse=True)[:50]
+    # 为每位作者追加其他论文
+    result = []
+    for i, (name, cbf_ps) in enumerate(sorted_authors):
+        other_ps = fetch_author_other_papers(name, cbf_arxiv_ids)
+        result.append((name, cbf_ps + other_ps))
+        if i < len(sorted_authors) - 1:
+            time.sleep(0.5)
+    return result
 
 
 def generate_html(high_citation, latest):
@@ -157,7 +203,7 @@ def generate_html(high_citation, latest):
   .authors{{font-size:.85rem;color:#666;margin-bottom:.5rem}}
   .abstract{{font-size:.85rem;color:#555;line-height:1.6;border-top:1px solid #f0f0f0;padding-top:.5rem;margin-top:.5rem}}
   footer{{text-align:center;padding:2rem;color:#999;font-size:.85rem}}
-  .author-layout{{display:flex;max-width:1100px;margin:2rem auto;padding:0 1rem;gap:1.5rem}}
+  .author-layout{{display:flex;max-width:900px;margin:2rem auto;padding:0 1rem;gap:1.5rem}}
   .author-list{{width:260px;flex-shrink:0;background:white;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);overflow:hidden;align-self:flex-start;position:sticky;top:80px;max-height:80vh;overflow-y:auto}}
   .author-list ul{{list-style:none}}
   .author-item{{display:flex;justify-content:space-between;align-items:center;padding:.7rem 1rem;cursor:pointer;border-bottom:1px solid #f0f0f0;transition:background .15s}}
@@ -177,7 +223,7 @@ def generate_html(high_citation, latest):
 <div class="tabs">
   <button class="tab active" onclick="show('high',this)">📊 High Citation (≥100)</button>
   <button class="tab" onclick="show('latest',this)">🆕 Latest Papers</button>
-  <button class="tab" onclick="show('authors',this)">👤 主要作者</button>
+  <button class="tab" onclick="show('authors',this)">👤 Top Authors</button>
 </div>
 <div id="high" class="section active">{hc_cards}</div>
 <div id="latest" class="section">{lt_cards}</div>
