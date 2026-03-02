@@ -91,10 +91,44 @@ def paper_card(p, show_citations=False):
     </div>"""
 
 
+def build_authors(high_citation, latest):
+    """统计所有论文的作者，按论文数排序"""
+    from collections import defaultdict
+    author_papers = defaultdict(list)
+    seen = set()
+    for p in high_citation + latest:
+        key = p.get("arxiv_id") or p.get("title")
+        if key in seen:
+            continue
+        seen.add(key)
+        for a in p.get("authors", []):
+            author_papers[a].append(p)
+    # 每位作者的论文按日期倒序
+    for a in author_papers:
+        author_papers[a].sort(key=lambda x: x.get("date") or str(x.get("year", "")), reverse=True)
+    # 按论文数倒序
+    return sorted(author_papers.items(), key=lambda x: len(x[1]), reverse=True)
+
+
 def generate_html(high_citation, latest):
     updated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     hc_cards = "\n".join(paper_card(p, show_citations=True) for p in high_citation)
     lt_cards = "\n".join(paper_card(p, show_citations=False) for p in latest)
+    authors = build_authors(high_citation, latest)
+    # 作者列表
+    author_list_html = "\n".join(
+        f'<li class="author-item" onclick="showAuthor({i})">'
+        f'<span class="author-name">{a}</span>'
+        f'<span class="author-count">{len(ps)}</span></li>'
+        for i, (a, ps) in enumerate(authors)
+    )
+    # 每位作者的论文面板
+    author_panels_html = "\n".join(
+        f'<div class="author-panel" id="author-panel-{i}">'
+        + "\n".join(paper_card(p, show_citations="citations" in p) for p in ps)
+        + "</div>"
+        for i, (_, ps) in enumerate(authors)
+    )
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -123,6 +157,16 @@ def generate_html(high_citation, latest):
   .authors{{font-size:.85rem;color:#666;margin-bottom:.5rem}}
   .abstract{{font-size:.85rem;color:#555;line-height:1.6;border-top:1px solid #f0f0f0;padding-top:.5rem;margin-top:.5rem}}
   footer{{text-align:center;padding:2rem;color:#999;font-size:.85rem}}
+  .author-layout{{display:flex;max-width:1100px;margin:2rem auto;padding:0 1rem;gap:1.5rem}}
+  .author-list{{width:260px;flex-shrink:0;background:white;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);overflow:hidden;align-self:flex-start;position:sticky;top:80px;max-height:80vh;overflow-y:auto}}
+  .author-list ul{{list-style:none}}
+  .author-item{{display:flex;justify-content:space-between;align-items:center;padding:.7rem 1rem;cursor:pointer;border-bottom:1px solid #f0f0f0;transition:background .15s}}
+  .author-item:hover,.author-item.active{{background:#e8eaf6}}
+  .author-name{{font-size:.9rem;font-weight:500}}
+  .author-count{{font-size:.75rem;background:#1a1a2e;color:white;border-radius:1rem;padding:.1rem .5rem}}
+  .author-panels{{flex:1;min-width:0}}
+  .author-panel{{display:none}}
+  .author-panel.active{{display:block}}
 </style>
 </head>
 <body>
@@ -131,19 +175,34 @@ def generate_html(high_citation, latest):
   <p>Control Barrier Function papers on arXiv &nbsp;|&nbsp; Updated: {updated}</p>
 </header>
 <div class="tabs">
-  <button class="tab active" onclick="show('high')">📊 High Citation (≥100)</button>
-  <button class="tab" onclick="show('latest')">🆕 Latest Papers</button>
+  <button class="tab active" onclick="show('high',this)">📊 High Citation (≥100)</button>
+  <button class="tab" onclick="show('latest',this)">🆕 Latest Papers</button>
+  <button class="tab" onclick="show('authors',this)">👤 主要作者</button>
 </div>
 <div id="high" class="section active">{hc_cards}</div>
 <div id="latest" class="section">{lt_cards}</div>
+<div id="authors" class="section">
+  <div class="author-layout">
+    <div class="author-list"><ul>{author_list_html}</ul></div>
+    <div class="author-panels">{author_panels_html}</div>
+  </div>
+</div>
 <footer>Auto-updated by GitHub Actions · <a href="https://github.com/QianYuan1437/ArxivCBF">Source</a></footer>
 <script>
-  function show(id){{
+  function show(id,btn){{
     document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
     document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
     document.getElementById(id).classList.add('active');
-    event.target.classList.add('active');
+    btn.classList.add('active');
   }}
+  function showAuthor(i){{
+    document.querySelectorAll('.author-panel').forEach(p=>p.classList.remove('active'));
+    document.querySelectorAll('.author-item').forEach(a=>a.classList.remove('active'));
+    document.getElementById('author-panel-'+i).classList.add('active');
+    document.querySelectorAll('.author-item')[i].classList.add('active');
+  }}
+  // 默认显示第一位作者
+  if(document.querySelector('.author-item')) showAuthor(0);
 </script>
 </body>
 </html>"""
