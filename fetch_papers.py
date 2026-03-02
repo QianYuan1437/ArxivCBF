@@ -263,6 +263,7 @@ if __name__ == "__main__":
     print(f"Built {len(authors)} authors")
 
     os.makedirs("docs", exist_ok=True)
+    open("docs/.nojekyll", "w").close()
     with open("docs/index.html", "w", encoding="utf-8") as f:
         f.write(generate_html(high_citation, latest, authors))
     with open("docs/papers_data.json", "w", encoding="utf-8") as f:
