@@ -1,5 +1,6 @@
 import json
 import os
+import re
 import time
 from html import escape
 from collections import defaultdict
@@ -36,6 +37,18 @@ ARXIV_SUBJECT_LABELS = {
     "stat.ML": "Machine Learning",
 }
 
+CONFERENCE_ALIASES = {
+    "IROS": (" iros ", "ieee/rsj international conference on intelligent robots and systems"),
+    "ICRA": (" icra ", "ieee international conference on robotics and automation"),
+    "CDC": (" cdc ", "conference on decision and control"),
+    "ACC": (" acc ", "american control conference"),
+    "RSS": (" rss ", "robotics: science and systems"),
+    "CoRL": (" corl ", "conference on robot learning"),
+    "RAL": (" robotics and automation letters ", " ra-l "),
+    "TRO": (" transactions on robotics ",),
+    "TAC": (" transactions on automatic control ",),
+}
+
 
 def infer_topic(title="", abstract=""):
     text = f"{title} {abstract}".lower()
@@ -53,6 +66,21 @@ def _normalize_arxiv_id(arxiv_id):
     if not arxiv_id:
         return ""
     return arxiv_id.split("v")[0]
+
+
+def _extract_year(text, fallback=""):
+    m = re.search(r"(19|20)\d{2}", text or "")
+    if m:
+        return m.group(0)
+    return str(fallback)[:4]
+
+
+def _infer_venue(journal_ref="", comment="", title=""):
+    haystack = f" {journal_ref} {comment} {title} ".lower()
+    for abbr, needles in CONFERENCE_ALIASES.items():
+        if any(n in haystack for n in needles):
+            return abbr
+    return ""
 
 
 def build_keyword_stats(high_citation, latest, top_n=24):
@@ -224,6 +252,95 @@ def fetch_latest_papers(max_results=50):
     return papers
 
 
+def fetch_conference_papers(max_results=300):
+    params = {
+        "search_query": 'all:"control barrier function"',
+        "start": 0,
+        "max_results": max_results,
+        "sortBy": "submittedDate",
+        "sortOrder": "descending",
+    }
+    resp = requests.get(ARXIV_API, params=params, timeout=30)
+    resp.raise_for_status()
+
+    ns = {
+        "atom": "http://www.w3.org/2005/Atom",
+        "arxiv": "http://arxiv.org/schemas/atom",
+    }
+    root = ET.fromstring(resp.content)
+
+    papers = []
+    seen = set()
+    for entry in root.findall("atom:entry", ns):
+        arxiv_id = entry.find("atom:id", ns).text.split("/abs/")[-1]
+        title = entry.find("atom:title", ns).text.strip()
+        abstract = entry.find("atom:summary", ns).text.strip()
+        if not _is_cbf_related(title, abstract):
+            continue
+
+        journal_ref = (entry.find("arxiv:journal_ref", ns).text or "") if entry.find("arxiv:journal_ref", ns) is not None else ""
+        comment = (entry.find("arxiv:comment", ns).text or "") if entry.find("arxiv:comment", ns) is not None else ""
+        venue = _infer_venue(journal_ref=journal_ref, comment=comment, title=title)
+        if not venue:
+            continue
+
+        primary = entry.find("arxiv:primary_category", ns)
+        primary_term = primary.get("term") if primary is not None else ""
+        all_terms = [c.get("term") for c in entry.findall("atom:category", ns) if c.get("term")]
+        subjects = []
+        if primary_term:
+            subjects.append(primary_term)
+        subjects.extend([t for t in all_terms if t != primary_term])
+
+        date = entry.find("atom:published", ns).text[:10]
+        year = _extract_year(f"{journal_ref} {comment}", fallback=date)
+        key = _normalize_arxiv_id(arxiv_id)
+        if key in seen:
+            continue
+        seen.add(key)
+        papers.append(
+            {
+                "title": title,
+                "authors": [a.find("atom:name", ns).text for a in entry.findall("atom:author", ns)],
+                "date": date,
+                "citations": 0,
+                "arxiv_id": arxiv_id,
+                "url": f"https://arxiv.org/abs/{arxiv_id}",
+                "abstract": abstract,
+                "subjects": subjects,
+                "venue": venue,
+                "venue_year": year,
+            }
+        )
+    return papers
+
+
+def build_conference_groups(conference_papers):
+    groups = defaultdict(list)
+    for p in conference_papers:
+        venue = p.get("venue", "")
+        year = p.get("venue_year", "")
+        if not venue or not year:
+            continue
+        groups[f"{venue} {year}"].append(p)
+
+    for k in groups:
+        groups[k].sort(key=lambda x: x.get("date", ""), reverse=True)
+
+    def _group_sort_key(name):
+        parts = name.rsplit(" ", 1)
+        if len(parts) != 2:
+            return (0, name)
+        venue, year = parts[0], parts[1]
+        try:
+            y = int(year)
+        except Exception:
+            y = 0
+        return (-y, venue)
+
+    return sorted(groups.items(), key=lambda x: _group_sort_key(x[0]))
+
+
 def fetch_high_citation_papers(min_citations=100, max_results=200):
     papers = []
     seen = set()
@@ -384,11 +501,12 @@ def paper_card(p, show_citations=False, show_date=True):
     </div>"""
 
 
-def generate_html(high_citation, latest, authors):
+def generate_html(high_citation, latest, authors, conferences=None):
     updated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     hc_cards = "\n".join(paper_card(p, show_citations=True, show_date=True) for p in high_citation)
     lt_cards = "\n".join(paper_card(p, show_citations=False, show_date=True) for p in latest)
     keyword_stats, keyword_total_papers = build_keyword_stats(high_citation, latest)
+    conferences = conferences or []
 
     author_list_html = "\n".join(
         f'<li class="author-item" onclick="showAuthor({i})">'
@@ -424,6 +542,21 @@ def generate_html(high_citation, latest, authors):
             f"{cards}</div>\n"
         )
 
+    conference_list_html = "\n".join(
+        f'<li class="conference-item" onclick="showConference({i})">'
+        f'<span class="conference-name">{escape(group)}</span>'
+        f'<span class="conference-count">{len(papers)}</span></li>'
+        for i, (group, papers) in enumerate(conferences)
+    )
+    conference_panels_html = ""
+    for i, (group, papers) in enumerate(conferences):
+        cards = "\n".join(paper_card(p, show_citations=False, show_date=True) for p in papers)
+        conference_panels_html += (
+            f'<div class="conference-panel" id="conference-panel-{i}">'
+            f'<div class="section-divider">{escape(group)} | {len(papers)} papers</div>'
+            f"{cards}</div>\n"
+        )
+
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -454,13 +587,13 @@ def generate_html(high_citation, latest, authors):
   .authors{{font-size:.85rem;color:#666;margin-bottom:.5rem}}
   .abstract{{font-size:.85rem;color:#555;line-height:1.6;border-top:1px solid #f0f0f0;padding-top:.5rem;margin-top:.5rem}}
   footer{{text-align:center;padding:2rem;color:#999;font-size:.85rem}}
-  .author-layout,.keyword-layout{{display:flex;width:100%;margin:0;gap:1.5rem}}
-  .author-list,.keyword-list{{width:220px;flex-shrink:0;background:white;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);align-self:flex-start;position:sticky;top:80px;max-height:80vh;overflow-y:auto}}
-  .author-list,.keyword-list{{scrollbar-width:thin;scrollbar-color:#b7bfce #f1f3f7}}
-  .author-list::-webkit-scrollbar,.keyword-list::-webkit-scrollbar{{width:10px}}
-  .author-list::-webkit-scrollbar-track,.keyword-list::-webkit-scrollbar-track{{background:#f1f3f7;border-radius:999px}}
-  .author-list::-webkit-scrollbar-thumb,.keyword-list::-webkit-scrollbar-thumb{{background:#b7bfce;border-radius:999px;border:2px solid #f1f3f7}}
-  .author-list ul,.keyword-list ul{{list-style:none}}
+  .author-layout,.keyword-layout,.conference-layout{{display:flex;width:100%;margin:0;gap:1.5rem}}
+  .author-list,.keyword-list,.conference-list{{width:220px;flex-shrink:0;background:white;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);align-self:flex-start;position:sticky;top:80px;max-height:80vh;overflow-y:auto}}
+  .author-list,.keyword-list,.conference-list{{scrollbar-width:thin;scrollbar-color:#b7bfce #f1f3f7}}
+  .author-list::-webkit-scrollbar,.keyword-list::-webkit-scrollbar,.conference-list::-webkit-scrollbar{{width:10px}}
+  .author-list::-webkit-scrollbar-track,.keyword-list::-webkit-scrollbar-track,.conference-list::-webkit-scrollbar-track{{background:#f1f3f7;border-radius:999px}}
+  .author-list::-webkit-scrollbar-thumb,.keyword-list::-webkit-scrollbar-thumb,.conference-list::-webkit-scrollbar-thumb{{background:#b7bfce;border-radius:999px;border:2px solid #f1f3f7}}
+  .author-list ul,.keyword-list ul,.conference-list ul{{list-style:none}}
   .author-item{{display:flex;justify-content:space-between;align-items:center;padding:.7rem 1rem;cursor:pointer;border-bottom:1px solid #f0f0f0;transition:background .15s}}
   .author-item:hover,.author-item.active{{background:#e8eaf6}}
   .author-name{{font-size:.85rem;font-weight:500}}
@@ -475,6 +608,13 @@ def generate_html(high_citation, latest, authors):
   .keyword-panels{{flex:1;min-width:0}}
   .keyword-panel{{display:none}}
   .keyword-panel.active{{display:block}}
+  .conference-item{{display:flex;justify-content:space-between;align-items:center;padding:.7rem 1rem;cursor:pointer;border-bottom:1px solid #f0f0f0;transition:background .15s}}
+  .conference-item:hover,.conference-item.active{{background:#e8eaf6}}
+  .conference-name{{font-size:.85rem;font-weight:500}}
+  .conference-count{{font-size:.75rem;background:#1a1a2e;color:white;border-radius:1rem;padding:.1rem .5rem;flex-shrink:0}}
+  .conference-panels{{flex:1;min-width:0}}
+  .conference-panel{{display:none}}
+  .conference-panel.active{{display:block}}
   .section-divider{{font-size:.8rem;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.05em;padding:.5rem 0;margin-bottom:.5rem;border-bottom:2px solid #e0e0e0}}
   .controls{{width:var(--content-width);margin:1.2rem auto 0;padding:0;display:flex;flex-direction:column;gap:.8rem}}
   .search-row{{display:flex;align-items:center;gap:.8rem}}
@@ -492,8 +632,8 @@ def generate_html(high_citation, latest, authors):
   .topic-chip.active,.topic-chip:hover{{background:#1a1a2e;color:white;border-color:#1a1a2e}}
   .filter-empty{{display:none;width:var(--content-width);margin:1rem auto 0;padding:0;color:#666;font-size:.9rem}}
   @media (max-width: 860px) {{
-    .author-layout,.keyword-layout{{flex-direction:column}}
-    .author-list,.keyword-list{{position:static;width:100%;max-height:none}}
+    .author-layout,.keyword-layout,.conference-layout{{flex-direction:column}}
+    .author-list,.keyword-list,.conference-list{{position:static;width:100%;max-height:none}}
     .search-row{{flex-direction:column;align-items:stretch}}
     .search-input{{max-width:none}}
     .sort-wrap{{min-width:0;width:100%}}
@@ -511,6 +651,7 @@ def generate_html(high_citation, latest, authors):
   <button class="tab" onclick="show('latest',this)">Latest Papers</button>
   <button class="tab" onclick="show('authors',this)">Top Authors</button>
   <button class="tab" onclick="show('keywords',this)">Key Words</button>
+  <button class="tab" onclick="show('conferences',this)">Conference Papers</button>
 </div>
 <div class="controls">
   <div class="search-row">
@@ -550,6 +691,12 @@ def generate_html(high_citation, latest, authors):
     <div class="keyword-panels">{keyword_panels_html}</div>
   </div>
 </div>
+<div id="conferences" class="section">
+  <div class="conference-layout">
+    <div class="conference-list"><ul>{conference_list_html}</ul></div>
+    <div class="conference-panels">{conference_panels_html}</div>
+  </div>
+</div>
 <footer>Auto-updated by GitHub Actions | <a href="https://github.com/QianYuan1437/ArxivCBF">Source</a></footer>
 <script>
   let activeTopic = 'all';
@@ -559,6 +706,7 @@ def generate_html(high_citation, latest, authors):
     if (!section) return null;
     if (section.id === 'authors') return section.querySelector('.author-panel.active');
     if (section.id === 'keywords') return section.querySelector('.keyword-panel.active');
+    if (section.id === 'conferences') return section.querySelector('.conference-panel.active');
     return section;
   }}
 
@@ -650,8 +798,16 @@ def generate_html(high_citation, latest, authors):
     document.querySelectorAll('.keyword-item')[i].classList.add('active');
     applyFilters();
   }}
+  function showConference(i){{
+    document.querySelectorAll('.conference-panel').forEach(p=>p.classList.remove('active'));
+    document.querySelectorAll('.conference-item').forEach(a=>a.classList.remove('active'));
+    document.getElementById('conference-panel-'+i).classList.add('active');
+    document.querySelectorAll('.conference-item')[i].classList.add('active');
+    applyFilters();
+  }}
   if(document.querySelector('.author-item')) showAuthor(0);
   if(document.querySelector('.keyword-item')) showKeyword(0);
+  if(document.querySelector('.conference-item')) showConference(0);
   document.addEventListener('click', function(e){{
     const wrap = document.getElementById('sortWrap');
     const menu = document.getElementById('sortMenu');
@@ -686,15 +842,21 @@ if __name__ == "__main__":
     authors = build_authors(high_citation, latest)
     print(f"Built {len(authors)} authors")
 
+    print("Fetching conference papers...")
+    conference_papers = fetch_conference_papers()
+    conferences = build_conference_groups(conference_papers)
+    print(f"Built {len(conferences)} conference groups")
+
     os.makedirs("docs", exist_ok=True)
     open("docs/.nojekyll", "w").close()
     with open("docs/index.html", "w", encoding="utf-8") as f:
-        f.write(generate_html(high_citation, latest, authors))
+        f.write(generate_html(high_citation, latest, authors, conferences))
     with open("docs/papers_data.json", "w", encoding="utf-8") as f:
         json.dump({
             "high_citation": high_citation,
             "latest": latest,
             "authors": [(n, c, o) for n, c, o in authors],
+            "conferences": [(n, ps) for n, ps in conferences],
         }, f, ensure_ascii=False, indent=2)
 
     print("Done! docs/index.html updated.")
