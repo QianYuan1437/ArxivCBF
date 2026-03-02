@@ -45,9 +45,8 @@ def infer_topic(title="", abstract=""):
     return "other", "Other"
 
 
-def _subject_display(subject_code):
-    label = ARXIV_SUBJECT_LABELS.get(subject_code)
-    return f"{label} ({subject_code})" if label else subject_code
+def _subject_label(subject_code):
+    return ARXIV_SUBJECT_LABELS.get(subject_code, subject_code)
 
 
 def _normalize_arxiv_id(arxiv_id):
@@ -68,16 +67,10 @@ def build_keyword_stats(high_citation, latest, top_n=24):
 
     stats = defaultdict(lambda: {"count": 0, "papers": []})
     for p in merged:
-        subjects = p.get("subjects", []) or []
-        for subject_code in subjects:
-            stats[subject_code]["count"] += 1
-            stats[subject_code]["papers"].append(
-                {
-                    "title": p.get("title", ""),
-                    "url": p.get("url", ""),
-                    "date": p.get("date", ""),
-                }
-            )
+        labels = {_subject_label(code) for code in (p.get("subjects", []) or [])}
+        for label in labels:
+            stats[label]["count"] += 1
+            stats[label]["papers"].append(p)
 
     sorted_stats = sorted(stats.items(), key=lambda x: (-x[1]["count"], x[0]))[:top_n]
     return sorted_stats, len(merged)
@@ -414,30 +407,22 @@ def generate_html(high_citation, latest, authors):
             f'<div class="section-divider">CBF Related Papers</div>{cbf_section}{other_block}</div>\n'
         )
 
-    keyword_card_blocks = []
-    for kw, meta in keyword_stats:
-        items = []
-        for p in meta["papers"]:
-            title = escape(p.get("title", ""))
-            date = escape(p.get("date", ""))
-            url = p.get("url", "")
-            if url:
-                items.append(f'<li><a href="{escape(url, quote=True)}" target="_blank">{title}</a><span class="paper-date">{date}</span></li>')
-            else:
-                items.append(f'<li><span>{title}</span><span class="paper-date">{date}</span></li>')
-        papers_html = "".join(items)
+    keyword_list_html = "\n".join(
+        f'<li class="keyword-item" onclick="showKeyword({i})">'
+        f'<span class="keyword-name">{escape(label)}</span>'
+        f'<span class="keyword-count">{meta["count"]}</span></li>'
+        for i, (label, meta) in enumerate(keyword_stats)
+    )
+
+    keyword_panels_html = ""
+    for i, (label, meta) in enumerate(keyword_stats):
         coverage = (meta["count"] / keyword_total_papers * 100) if keyword_total_papers else 0.0
-        keyword_card_blocks.append(
-            f"""    <div class="keyword-card">
-      <div class="keyword-header"><span class="keyword-name">{escape(_subject_display(kw))}</span><span class="keyword-count">{meta["count"]} papers</span></div>
-      <p class="keyword-share">{coverage:.1f}% coverage</p>
-      <details class="keyword-details">
-        <summary>Show related papers</summary>
-        <ul class="keyword-paper-list">{papers_html}</ul>
-      </details>
-    </div>"""
+        cards = "\n".join(paper_card(p, show_citations=False, show_date=True) for p in meta["papers"])
+        keyword_panels_html += (
+            f'<div class="keyword-panel" id="keyword-panel-{i}">'
+            f'<div class="section-divider">{escape(label)} | {meta["count"]} papers | {coverage:.1f}% coverage</div>'
+            f"{cards}</div>\n"
         )
-    keyword_cards_html = "\n".join(keyword_card_blocks)
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -469,13 +454,13 @@ def generate_html(high_citation, latest, authors):
   .authors{{font-size:.85rem;color:#666;margin-bottom:.5rem}}
   .abstract{{font-size:.85rem;color:#555;line-height:1.6;border-top:1px solid #f0f0f0;padding-top:.5rem;margin-top:.5rem}}
   footer{{text-align:center;padding:2rem;color:#999;font-size:.85rem}}
-  .author-layout{{display:flex;width:100%;margin:0;gap:1.5rem}}
-  .author-list{{width:220px;flex-shrink:0;background:white;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);align-self:flex-start;position:sticky;top:80px;max-height:80vh;overflow-y:auto}}
-  .author-list{{scrollbar-width:thin;scrollbar-color:#b7bfce #f1f3f7}}
-  .author-list::-webkit-scrollbar{{width:10px}}
-  .author-list::-webkit-scrollbar-track{{background:#f1f3f7;border-radius:999px}}
-  .author-list::-webkit-scrollbar-thumb{{background:#b7bfce;border-radius:999px;border:2px solid #f1f3f7}}
-  .author-list ul{{list-style:none}}
+  .author-layout,.keyword-layout{{display:flex;width:100%;margin:0;gap:1.5rem}}
+  .author-list,.keyword-list{{width:220px;flex-shrink:0;background:white;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);align-self:flex-start;position:sticky;top:80px;max-height:80vh;overflow-y:auto}}
+  .author-list,.keyword-list{{scrollbar-width:thin;scrollbar-color:#b7bfce #f1f3f7}}
+  .author-list::-webkit-scrollbar,.keyword-list::-webkit-scrollbar{{width:10px}}
+  .author-list::-webkit-scrollbar-track,.keyword-list::-webkit-scrollbar-track{{background:#f1f3f7;border-radius:999px}}
+  .author-list::-webkit-scrollbar-thumb,.keyword-list::-webkit-scrollbar-thumb{{background:#b7bfce;border-radius:999px;border:2px solid #f1f3f7}}
+  .author-list ul,.keyword-list ul{{list-style:none}}
   .author-item{{display:flex;justify-content:space-between;align-items:center;padding:.7rem 1rem;cursor:pointer;border-bottom:1px solid #f0f0f0;transition:background .15s}}
   .author-item:hover,.author-item.active{{background:#e8eaf6}}
   .author-name{{font-size:.85rem;font-weight:500}}
@@ -483,6 +468,13 @@ def generate_html(high_citation, latest, authors):
   .author-panels{{flex:1;min-width:0}}
   .author-panel{{display:none}}
   .author-panel.active{{display:block}}
+  .keyword-item{{display:flex;justify-content:space-between;align-items:center;padding:.7rem 1rem;cursor:pointer;border-bottom:1px solid #f0f0f0;transition:background .15s}}
+  .keyword-item:hover,.keyword-item.active{{background:#e8eaf6}}
+  .keyword-name{{font-size:.85rem;font-weight:500}}
+  .keyword-count{{font-size:.75rem;background:#1a1a2e;color:white;border-radius:1rem;padding:.1rem .5rem;flex-shrink:0}}
+  .keyword-panels{{flex:1;min-width:0}}
+  .keyword-panel{{display:none}}
+  .keyword-panel.active{{display:block}}
   .section-divider{{font-size:.8rem;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.05em;padding:.5rem 0;margin-bottom:.5rem;border-bottom:2px solid #e0e0e0}}
   .controls{{width:var(--content-width);margin:1.2rem auto 0;padding:0;display:flex;flex-direction:column;gap:.8rem}}
   .search-input{{width:100%;padding:.75rem .95rem;border:1px solid #ccd4df;border-radius:10px;font-size:.95rem;outline:none;background:white}}
@@ -491,21 +483,9 @@ def generate_html(high_citation, latest, authors):
   .topic-chip{{padding:.35rem .8rem;border:1px solid #c8d0df;background:white;color:#263044;border-radius:999px;cursor:pointer;font-size:.82rem;font-weight:600}}
   .topic-chip.active,.topic-chip:hover{{background:#1a1a2e;color:white;border-color:#1a1a2e}}
   .filter-empty{{display:none;width:var(--content-width);margin:1rem auto 0;padding:0;color:#666;font-size:.9rem}}
-  .keywords-grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}}
-  .keyword-card{{background:white;border-radius:12px;padding:1rem 1.1rem;box-shadow:0 2px 8px rgba(0,0,0,.06)}}
-  .keyword-header{{display:flex;justify-content:space-between;align-items:center;gap:.5rem;margin-bottom:.4rem}}
-  .keyword-name{{font-weight:700;color:#1a1a2e}}
-  .keyword-count{{font-size:.8rem;background:#e8eaf6;color:#283593;border-radius:999px;padding:.15rem .55rem}}
-  .keyword-share{{font-size:.82rem;color:#666;margin-bottom:.45rem}}
-  .keyword-details summary{{cursor:pointer;color:#1a1a2e;font-size:.85rem;font-weight:600}}
-  .keyword-paper-list{{list-style:none;margin-top:.55rem;display:flex;flex-direction:column;gap:.4rem}}
-  .keyword-paper-list li{{display:flex;justify-content:space-between;gap:.6rem;font-size:.8rem;line-height:1.4}}
-  .keyword-paper-list a{{color:#1565c0;text-decoration:none}}
-  .keyword-paper-list a:hover{{text-decoration:underline}}
-  .paper-date{{color:#666;white-space:nowrap}}
   @media (max-width: 860px) {{
-    .author-layout{{flex-direction:column}}
-    .author-list{{position:static;width:100%;max-height:none}}
+    .author-layout,.keyword-layout{{flex-direction:column}}
+    .author-list,.keyword-list{{position:static;width:100%;max-height:none}}
     .section,.controls,.filter-empty{{width:92vw}}
   }}
 </style>
@@ -543,7 +523,10 @@ def generate_html(high_citation, latest, authors):
   </div>
 </div>
 <div id="keywords" class="section">
-  <div class="keywords-grid">{keyword_cards_html}</div>
+  <div class="keyword-layout">
+    <div class="keyword-list"><ul>{keyword_list_html}</ul></div>
+    <div class="keyword-panels">{keyword_panels_html}</div>
+  </div>
 </div>
 <footer>Auto-updated by GitHub Actions | <a href="https://github.com/QianYuan1437/ArxivCBF">Source</a></footer>
 <script>
@@ -595,7 +578,15 @@ def generate_html(high_citation, latest, authors):
     document.querySelectorAll('.author-item')[i].classList.add('active');
     applyFilters();
   }}
+  function showKeyword(i){{
+    document.querySelectorAll('.keyword-panel').forEach(p=>p.classList.remove('active'));
+    document.querySelectorAll('.keyword-item').forEach(a=>a.classList.remove('active'));
+    document.getElementById('keyword-panel-'+i).classList.add('active');
+    document.querySelectorAll('.keyword-item')[i].classList.add('active');
+    applyFilters();
+  }}
   if(document.querySelector('.author-item')) showAuthor(0);
+  if(document.querySelector('.keyword-item')) showKeyword(0);
   applyFilters();
 </script>
 </body>
