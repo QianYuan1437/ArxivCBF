@@ -4,6 +4,7 @@ import time
 import os
 from datetime import datetime, timezone
 from xml.etree import ElementTree as ET
+from collections import defaultdict
 
 SEMANTIC_SCHOLAR_API = "https://api.semanticscholar.org/graph/v1/paper/search"
 ARXIV_API = "http://export.arxiv.org/api/query"
@@ -74,10 +75,70 @@ def fetch_latest_papers(max_results=50):
     return papers
 
 
+def fetch_author_other_papers(author_name, cbf_titles, max_results=20):
+    """获取作者不含 CBF 关键词的其他论文"""
+    params = {
+        "query": author_name,
+        "fields": "title,authors,year,citationCount,externalIds,publicationDate,abstract",
+        "limit": 50,
+    }
+    resp = requests.get(SEMANTIC_SCHOLAR_API, params=params, timeout=30)
+    if resp.status_code != 200:
+        return []
+    results = []
+    for item in resp.json().get("data", []):
+        title = item.get("title", "")
+        if title in cbf_titles:
+            continue
+        names = [a["name"] for a in item.get("authors", [])]
+        if author_name not in names:
+            continue
+        arxiv_id = (item.get("externalIds") or {}).get("ArXiv")
+        results.append({
+            "title": title,
+            "authors": names,
+            "year": item.get("year"),
+            "date": item.get("publicationDate", ""),
+            "citations": item.get("citationCount", 0),
+            "arxiv_id": arxiv_id,
+            "url": f"https://arxiv.org/abs/{arxiv_id}" if arxiv_id else "",
+            "abstract": (item.get("abstract") or ""),
+        })
+    results.sort(key=lambda x: x.get("date") or str(x.get("year", "")), reverse=True)
+    return results[:max_results]
+
+
+def build_authors(high_citation, latest):
+    """按 CBF 论文数排序作者，每位作者分 CBF / 其他两部分"""
+    author_cbf = defaultdict(list)
+    seen = set()
+    cbf_titles = set()
+    for p in high_citation + latest:
+        key = p.get("arxiv_id") or p.get("title")
+        if key in seen:
+            continue
+        seen.add(key)
+        cbf_titles.add(p.get("title", ""))
+        for a in p.get("authors", []):
+            author_cbf[a].append(p)
+
+    # 按 CBF 论文数倒序，取前 30 位
+    sorted_authors = sorted(author_cbf.items(), key=lambda x: len(x[1]), reverse=True)[:30]
+
+    result = []
+    for i, (name, cbf_ps) in enumerate(sorted_authors):
+        cbf_ps_sorted = sorted(cbf_ps, key=lambda x: x.get("date") or str(x.get("year", "")), reverse=True)
+        other_ps = fetch_author_other_papers(name, cbf_titles)
+        result.append((name, cbf_ps_sorted, other_ps))
+        if i < len(sorted_authors) - 1:
+            time.sleep(0.5)
+    return result
+
+
 def paper_card(p, show_citations=False):
     authors = ", ".join(p["authors"][:5]) + (" et al." if len(p["authors"]) > 5 else "")
     badge = (f'<span class="badge">🔥 {p["citations"]} citations</span>'
-             if show_citations else f'<span class="badge date">{p.get("date","")}</span>')
+             if show_citations else f'<span class="badge date">{p.get("date", "")}</span>')
     url = p.get("url", "")
     link = f'<a href="{url}" target="_blank" class="arxiv-link">arXiv →</a>' if url else ""
     abstract = p.get("abstract", "")
@@ -90,91 +151,25 @@ def paper_card(p, show_citations=False):
     </div>"""
 
 
-def fetch_author_other_papers(author_name, cbf_arxiv_ids, max_results=20):
-    """获取作者在 CBF 之外的其他论文"""
-    params = {
-        "query": author_name,
-        "fields": "title,authors,year,citationCount,externalIds,publicationDate,abstract",
-        "limit": 50,
-    }
-    resp = requests.get(SEMANTIC_SCHOLAR_API, params=params, timeout=30)
-    if resp.status_code != 200:
-        return []
-    items = resp.json().get("data", [])
-    results = []
-    for item in items:
-        arxiv_id = (item.get("externalIds") or {}).get("ArXiv")
-        if arxiv_id and arxiv_id in cbf_arxiv_ids:
-            continue
-        # 确认作者名在列表中
-        names = [a["name"] for a in item.get("authors", [])]
-        if author_name not in names:
-            continue
-        results.append({
-            "title": item.get("title", ""),
-            "authors": names,
-            "year": item.get("year"),
-            "date": item.get("publicationDate", ""),
-            "citations": item.get("citationCount", 0),
-            "arxiv_id": arxiv_id,
-            "url": f"https://arxiv.org/abs/{arxiv_id}" if arxiv_id else "",
-            "abstract": (item.get("abstract") or ""),
-            "cbf_related": False,
-        })
-    results.sort(key=lambda x: x.get("date") or str(x.get("year", "")), reverse=True)
-    return results[:max_results]
-
-
-def build_authors(high_citation, latest):
-    """统计 CBF 论文作者，按论文数排序，并为每位作者附加其他论文"""
-    from collections import defaultdict
-    author_papers = defaultdict(list)
-    seen = set()
-    cbf_arxiv_ids = set()
-    for p in high_citation + latest:
-        key = p.get("arxiv_id") or p.get("title")
-        if key in seen:
-            continue
-        seen.add(key)
-        if p.get("arxiv_id"):
-            cbf_arxiv_ids.add(p["arxiv_id"])
-        p2 = dict(p, cbf_related=True)
-        for a in p.get("authors", []):
-            author_papers[a].append(p2)
-    # 每位作者 CBF 论文按日期倒序
-    for a in author_papers:
-        author_papers[a].sort(key=lambda x: x.get("date") or str(x.get("year", "")), reverse=True)
-    # 按 CBF 论文数倒序，取前50位作者
-    sorted_authors = sorted(author_papers.items(), key=lambda x: len(x[1]), reverse=True)[:50]
-    # 为每位作者追加其他论文
-    result = []
-    for i, (name, cbf_ps) in enumerate(sorted_authors):
-        other_ps = fetch_author_other_papers(name, cbf_arxiv_ids)
-        result.append((name, cbf_ps + other_ps))
-        if i < len(sorted_authors) - 1:
-            time.sleep(0.5)
-    return result
-
-
-def generate_html(high_citation, latest):
+def generate_html(high_citation, latest, authors):
     updated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     hc_cards = "\n".join(paper_card(p, show_citations=True) for p in high_citation)
     lt_cards = "\n".join(paper_card(p, show_citations=False) for p in latest)
-    authors = build_authors(high_citation, latest)
-    # 作者列表
+
     author_list_html = "\n".join(
         f'<li class="author-item" onclick="showAuthor({i})">'
-        f'<span class="author-name">{a}</span>'
-        f'<span class="author-count">{len(ps)}</span></li>'
-        for i, (a, ps) in enumerate(authors)
+        f'<span class="author-name">{name}</span>'
+        f'<span class="author-count">{len(cbf_ps)}</span></li>'
+        for i, (name, cbf_ps, _) in enumerate(authors)
     )
-    # 每位作者的论文面板
-    author_panels_html = "\n".join(
-        f'<div class="author-panel" id="author-panel-{i}">'
-        + "\n".join(paper_card(p, show_citations="citations" in p) for p in ps)
-        + "</div>"
-        for i, (_, ps) in enumerate(authors)
-    )
+
+    author_panels_html = ""
+    for i, (name, cbf_ps, other_ps) in enumerate(authors):
+        cbf_section = "\n".join(paper_card(p, show_citations="citations" in p) for p in cbf_ps)
+        other_section = "\n".join(paper_card(p, show_citations=True) for p in other_ps)
+        other_block = f'<div class="section-divider">Other Papers</div>{other_section}' if other_ps else ""
+        author_panels_html += f'<div class="author-panel" id="author-panel-{i}"><div class="section-divider">CBF Related Papers</div>{cbf_section}{other_block}</div>\n'
+
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -204,15 +199,16 @@ def generate_html(high_citation, latest):
   .abstract{{font-size:.85rem;color:#555;line-height:1.6;border-top:1px solid #f0f0f0;padding-top:.5rem;margin-top:.5rem}}
   footer{{text-align:center;padding:2rem;color:#999;font-size:.85rem}}
   .author-layout{{display:flex;max-width:900px;margin:2rem auto;padding:0 1rem;gap:1.5rem}}
-  .author-list{{width:260px;flex-shrink:0;background:white;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);overflow:hidden;align-self:flex-start;position:sticky;top:80px;max-height:80vh;overflow-y:auto}}
+  .author-list{{width:220px;flex-shrink:0;background:white;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);align-self:flex-start;position:sticky;top:80px;max-height:80vh;overflow-y:auto}}
   .author-list ul{{list-style:none}}
   .author-item{{display:flex;justify-content:space-between;align-items:center;padding:.7rem 1rem;cursor:pointer;border-bottom:1px solid #f0f0f0;transition:background .15s}}
   .author-item:hover,.author-item.active{{background:#e8eaf6}}
-  .author-name{{font-size:.9rem;font-weight:500}}
-  .author-count{{font-size:.75rem;background:#1a1a2e;color:white;border-radius:1rem;padding:.1rem .5rem}}
+  .author-name{{font-size:.85rem;font-weight:500}}
+  .author-count{{font-size:.75rem;background:#1a1a2e;color:white;border-radius:1rem;padding:.1rem .5rem;flex-shrink:0}}
   .author-panels{{flex:1;min-width:0}}
   .author-panel{{display:none}}
   .author-panel.active{{display:block}}
+  .section-divider{{font-size:.8rem;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.05em;padding:.5rem 0;margin-bottom:.5rem;border-bottom:2px solid #e0e0e0}}
 </style>
 </head>
 <body>
@@ -227,7 +223,7 @@ def generate_html(high_citation, latest):
 </div>
 <div id="high" class="section active">{hc_cards}</div>
 <div id="latest" class="section">{lt_cards}</div>
-<div id="authors" class="section">
+<div id="authors" class="section" style="max-width:900px">
   <div class="author-layout">
     <div class="author-list"><ul>{author_list_html}</ul></div>
     <div class="author-panels">{author_panels_html}</div>
@@ -247,7 +243,6 @@ def generate_html(high_citation, latest):
     document.getElementById('author-panel-'+i).classList.add('active');
     document.querySelectorAll('.author-item')[i].classList.add('active');
   }}
-  // 默认显示第一位作者
   if(document.querySelector('.author-item')) showAuthor(0);
 </script>
 </body>
@@ -263,10 +258,18 @@ if __name__ == "__main__":
     latest = fetch_latest_papers()
     print(f"Found {len(latest)} latest papers")
 
+    print("Building author data...")
+    authors = build_authors(high_citation, latest)
+    print(f"Built {len(authors)} authors")
+
     os.makedirs("docs", exist_ok=True)
     with open("docs/index.html", "w", encoding="utf-8") as f:
-        f.write(generate_html(high_citation, latest))
+        f.write(generate_html(high_citation, latest, authors))
     with open("docs/papers_data.json", "w", encoding="utf-8") as f:
-        json.dump({"high_citation": high_citation, "latest": latest}, f, ensure_ascii=False, indent=2)
+        json.dump({
+            "high_citation": high_citation,
+            "latest": latest,
+            "authors": [(n, c, o) for n, c, o in authors]
+        }, f, ensure_ascii=False, indent=2)
 
     print("Done! docs/index.html updated.")
