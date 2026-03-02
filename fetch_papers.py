@@ -1,6 +1,7 @@
 import json
 import os
 import time
+from html import escape
 from collections import defaultdict
 from datetime import datetime, timezone
 from xml.etree import ElementTree as ET
@@ -14,6 +15,22 @@ CBF_KEYWORDS = (
     "control barrier functions",
     "cbf",
 )
+
+TOPIC_RULES = [
+    ("biomedical", "Biomedical", ("blood-brain barrier", "epithelial", "podocyte", "microbiota", "duodenum", "barrier permeability")),
+    ("robotics", "Robotics", ("robot", "robotic", "manipulator", "drone", "quadruped", "mobile robot", "bipedal", "surface vehicle", "surface vessel", "autonomous")),
+    ("mpc", "MPC/Planning", ("model predictive control", "mpc", "trajectory", "planning", "optimization", "obstacle")),
+    ("learning", "Learning", ("neural", "fuzzy", "learning", "reinforcement", "adaptive")),
+    ("theory", "Theory", ("lyapunov", "stability", "invariance", "robustness", "certificate", "proof")),
+]
+
+
+def infer_topic(title="", abstract=""):
+    text = f"{title} {abstract}".lower()
+    for key, label, keywords in TOPIC_RULES:
+        if any(word in text for word in keywords):
+            return key, label
+    return "other", "Other"
 
 
 def _load_previous_high_citation(path="docs/papers_data.json"):
@@ -235,8 +252,9 @@ def build_authors(high_citation, latest):
 
 def paper_card(p, show_citations=False, show_date=True):
     authors = ", ".join(p["authors"][:5]) + (" et al." if len(p["authors"]) > 5 else "")
+    topic_key, topic_label = infer_topic(p.get("title", ""), p.get("abstract", ""))
 
-    badges = []
+    badges = [f'<span class="badge topic">{topic_label}</span>']
     if show_citations and "citations" in p:
         badges.append(f'<span class="badge">{p["citations"]} citations</span>')
     if show_date:
@@ -250,7 +268,12 @@ def paper_card(p, show_citations=False, show_date=True):
     abstract = p.get("abstract", "")
     abstract_html = f'<p class="abstract">{abstract}</p>' if abstract else ""
 
-    return f"""    <div class="card">
+    search_text = " ".join(
+        [p.get("title", ""), " ".join(p.get("authors", [])), p.get("abstract", ""), topic_label]
+    ).lower()
+    search_attr = escape(search_text, quote=True)
+
+    return f"""    <div class="card" data-topic="{topic_key}" data-search="{search_attr}">
       <div class="card-header">{badge_html}{link}</div>
       <h3>{p["title"]}</h3>
       <p class="authors">{authors}</p>
@@ -301,6 +324,7 @@ def generate_html(high_citation, latest, authors):
   .card:hover{{box-shadow:0 4px 16px rgba(0,0,0,.12)}}
   .card-header{{display:flex;justify-content:space-between;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.5rem}}
   .badge{{font-size:.8rem;padding:.2rem .7rem;border-radius:1rem;background:#fff3e0;color:#e65100;font-weight:600}}
+  .badge.topic{{background:#e3f2fd;color:#0d47a1}}
   .badge.date{{background:#e8f5e9;color:#2e7d32}}
   .arxiv-link{{font-size:.85rem;color:#1565c0;text-decoration:none;font-weight:600}}
   .arxiv-link:hover{{text-decoration:underline}}
@@ -319,6 +343,13 @@ def generate_html(high_citation, latest, authors):
   .author-panel{{display:none}}
   .author-panel.active{{display:block}}
   .section-divider{{font-size:.8rem;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.05em;padding:.5rem 0;margin-bottom:.5rem;border-bottom:2px solid #e0e0e0}}
+  .controls{{max-width:900px;margin:1.2rem auto 0;padding:0 1rem;display:flex;flex-direction:column;gap:.8rem}}
+  .search-input{{width:100%;padding:.75rem .95rem;border:1px solid #ccd4df;border-radius:10px;font-size:.95rem;outline:none;background:white}}
+  .search-input:focus{{border-color:#1a1a2e;box-shadow:0 0 0 3px rgba(26,26,46,.1)}}
+  .topics{{display:flex;flex-wrap:wrap;gap:.5rem}}
+  .topic-chip{{padding:.35rem .8rem;border:1px solid #c8d0df;background:white;color:#263044;border-radius:999px;cursor:pointer;font-size:.82rem;font-weight:600}}
+  .topic-chip.active,.topic-chip:hover{{background:#1a1a2e;color:white;border-color:#1a1a2e}}
+  .filter-empty{{display:none;max-width:900px;margin:1rem auto 0;padding:0 1rem;color:#666;font-size:.9rem}}
   @media (max-width: 860px) {{
     .author-layout{{flex-direction:column}}
     .author-list{{position:static;width:100%;max-height:none}}
@@ -335,6 +366,19 @@ def generate_html(high_citation, latest, authors):
   <button class="tab" onclick="show('latest',this)">Latest Papers</button>
   <button class="tab" onclick="show('authors',this)">Top Authors</button>
 </div>
+<div class="controls">
+  <input id="searchInput" class="search-input" type="text" placeholder="Search title / authors / abstract" oninput="applyFilters()" />
+  <div class="topics" id="topicChips">
+    <button class="topic-chip active" type="button" onclick="setTopic('all',this)">All</button>
+    <button class="topic-chip" type="button" onclick="setTopic('theory',this)">Theory</button>
+    <button class="topic-chip" type="button" onclick="setTopic('robotics',this)">Robotics</button>
+    <button class="topic-chip" type="button" onclick="setTopic('mpc',this)">MPC/Planning</button>
+    <button class="topic-chip" type="button" onclick="setTopic('learning',this)">Learning</button>
+    <button class="topic-chip" type="button" onclick="setTopic('biomedical',this)">Biomedical</button>
+    <button class="topic-chip" type="button" onclick="setTopic('other',this)">Other</button>
+  </div>
+</div>
+<p id="filterEmpty" class="filter-empty">No papers match current filters.</p>
 <div id="high" class="section active">{hc_cards}</div>
 <div id="latest" class="section">{lt_cards}</div>
 <div id="authors" class="section" style="max-width:900px">
@@ -345,19 +389,52 @@ def generate_html(high_citation, latest, authors):
 </div>
 <footer>Auto-updated by GitHub Actions | <a href="https://github.com/QianYuan1437/ArxivCBF">Source</a></footer>
 <script>
+  let activeTopic = 'all';
+
+  function applyFilters(){{
+    const q = (document.getElementById('searchInput')?.value || '').trim().toLowerCase();
+    const current = document.querySelector('.section.active');
+    if (!current) return;
+
+    const cards = current.querySelectorAll('.card');
+    let visible = 0;
+    cards.forEach(card => {{
+      const text = (card.dataset.search || '').toLowerCase();
+      const topic = card.dataset.topic || 'other';
+      const okQuery = !q || text.includes(q);
+      const okTopic = activeTopic === 'all' || topic === activeTopic;
+      const show = okQuery && okTopic;
+      card.style.display = show ? '' : 'none';
+      if (show) visible += 1;
+    }});
+
+    const empty = document.getElementById('filterEmpty');
+    if (empty) empty.style.display = visible ? 'none' : 'block';
+  }}
+
+  function setTopic(topic, btn){{
+    activeTopic = topic;
+    document.querySelectorAll('.topic-chip').forEach(chip => chip.classList.remove('active'));
+    btn.classList.add('active');
+    applyFilters();
+  }}
+
   function show(id,btn){{
     document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
     document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
     document.getElementById(id).classList.add('active');
     btn.classList.add('active');
+    applyFilters();
   }}
   function showAuthor(i){{
     document.querySelectorAll('.author-panel').forEach(p=>p.classList.remove('active'));
     document.querySelectorAll('.author-item').forEach(a=>a.classList.remove('active'));
     document.getElementById('author-panel-'+i).classList.add('active');
     document.querySelectorAll('.author-item')[i].classList.add('active');
+    applyFilters();
   }}
   if(document.querySelector('.author-item')) showAuthor(0);
+  applyFilters();
 </script>
 </body>
 </html>"""
