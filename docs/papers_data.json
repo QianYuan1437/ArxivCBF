@@ -628,5 +628,1136 @@
       "url": "https://arxiv.org/abs/2512.08607v1",
       "abstract": "This article presents a systematic method for designing time-varying Control Barrier Functions (CBF) composed of a time-invariant component and multiple time-dependent components, leveraging structural properties of the system dynamics. The method involves the construction of a specific class of time-invariant CBFs that encode the system's dynamic capabilities with respect to a given constraint, and augments them subsequently with appropriately designed time-dependent transformations. While transformations uniformly varying the time-invariant CBF can be applied to arbitrary systems, transformations exploiting structural properties in the dynamics - equivariances in particular - enable the handling of a broader and more expressive class of time-varying constraints. The article shows how to leverage such properties in the design of time-varying CBFs. The proposed method decouples the design of time variations from the computationally expensive construction of the underlying CBFs, thereby providing a computationally attractive method to the design of time-varying CBFs. The method accounts for input constraints and under-actuation, and requires only qualitative knowledge on the time-variation of the constraints making it suitable to the application in uncertain environments."
     }
+  ],
+  "authors": [
+    [
+      "Wei Xiao",
+      [
+        {
+          "title": "BarrierSteer: LLM Safety via Learning Barrier Steering",
+          "authors": [
+            "Thanh Q. Tran",
+            "Arun Verma",
+            "Kiwan Wong",
+            "Bryan Kian Hsiang Low",
+            "Daniela Rus",
+            "Wei Xiao"
+          ],
+          "date": "2026-02-23",
+          "arxiv_id": "2602.20102v1",
+          "url": "https://arxiv.org/abs/2602.20102v1",
+          "abstract": "Despite the state-of-the-art performance of large language models (LLMs) across diverse tasks, their susceptibility to adversarial attacks and unsafe content generation remains a major obstacle to deployment, particularly in high-stakes settings. Addressing this challenge requires safety mechanisms that are both practically effective and supported by rigorous theory. We introduce BarrierSteer, a novel framework that formalizes response safety by embedding learned non-linear safety constraints directly into the model's latent representation space. BarrierSteer employs a steering mechanism based on Control Barrier Functions (CBFs) to efficiently detect and prevent unsafe response trajectories during inference with high precision. By enforcing multiple safety constraints through efficient constraint merging, without modifying the underlying LLM parameters, BarrierSteer preserves the model's original capabilities and performance. We provide theoretical results establishing that applying CBFs in latent space offers a principled and computationally efficient approach to enforcing safety. Our experiments across multiple models and datasets show that BarrierSteer substantially reduces adversarial success rates, decreases unsafe generations, and outperforms existing methods."
+        },
+        {
+          "title": "Robust Taylor-Lagrange Control for Safety-Critical Systems",
+          "authors": [
+            "Wei Xiao",
+            "Christos Cassandras",
+            "Anni Li"
+          ],
+          "date": "2026-02-23",
+          "arxiv_id": "2602.20076v1",
+          "url": "https://arxiv.org/abs/2602.20076v1",
+          "abstract": "Solving safety-critical control problem has widely adopted the Control Barrier Function (CBF) method. However, the existence of a CBF is only a sufficient condition for system safety. The recently proposed Taylor-Lagrange Control (TLC) method addresses this limitation, but is vulnerable to the feasibility preservation problem (e.g., inter-sampling effect). In this paper, we propose a robust TLC (rTLC) method to address the feasibility preservation problem. Specifically, the rTLC method expands the safety function at an order higher than the relative degree of the function using Taylor's expansion with Lagrange remainder, which allows the control to explicitly show up at the current time instead of the future time in the TLC method. The rTLC method naturally addresses the feasibility preservation problem with only one hyper-parameter (the discretization time interval size during implementation), which is much less than its counterparts. Finally, we illustrate the effectiveness of the proposed rTLC method through an adaptive cruise control problem, and compare it with existing safety-critical control methods."
+        },
+        {
+          "title": "Taylor-Lagrange Control for Safety-Critical Systems",
+          "authors": [
+            "Wei Xiao",
+            "Anni Li"
+          ],
+          "date": "2025-12-12",
+          "arxiv_id": "2512.11999v1",
+          "url": "https://arxiv.org/abs/2512.11999v1",
+          "abstract": "This paper proposes a novel Taylor-Lagrange Control (TLC) method for nonlinear control systems to ensure the safety and stability through Taylor's theorem with Lagrange remainder. To achieve this, we expand a safety or stability function with respect to time along the system dynamics using the Lie derivative and Taylor's theorem. This expansion enables the control input to appear in the Taylor series at an order equivalent to the relative degree of the function. We show that the proposed TLC provides necessary and sufficient conditions for system safety and is applicable to systems and constraints of arbitrary relative degree. The TLC exhibits connections with existing Control Barrier Function (CBF) and Control Lyapunov Function (CLF) methods, and it further extends the CBF and CLF methods to the complex domain, especially for higher order cases. Compared to High-Order CBFs (HOCBFs), TLC is less restrictive as it does not require forward invariance of the intersection of a set of safe sets while HOCBFs do. We employ TLC to reformulate a constrained optimal control problem as a sequence of quadratic programs with a zero-order hold implementation method, and demonstrate the safety of zero-order hold TLC using an event-triggered control method to address inter-sampling effects. Finally, we illustrate the effectiveness of the proposed TLC method through an adaptive cruise control system and a robot control problem, and compare it with existing CBF methods."
+        }
+      ],
+      []
+    ],
+    [
+      "Zihao Li",
+      [
+        {
+          "title": "SAGE-LLM: Towards Safe and Generalizable LLM Controller with Fuzzy-CBF Verification and Graph-Structured Knowledge Retrieval for UAV Decision",
+          "authors": [
+            "Wenzhe Zhao",
+            "Yang Zhao",
+            "Ganchao Liu",
+            "Zhiyu Jiang",
+            "Dandan Ma",
+            "Zihao Li",
+            "Xuelong Li"
+          ],
+          "date": "2026-02-27",
+          "arxiv_id": "2602.23719v1",
+          "url": "https://arxiv.org/abs/2602.23719v1",
+          "abstract": "In UAV dynamic decision, complex and variable hazardous factors pose severe challenges to the generalization capability of algorithms. Despite offering semantic understanding and scene generalization, Large Language Models (LLM) lack domain-specific UAV control knowledge and formal safety assurances, restricting their direct applicability. To bridge this gap, this paper proposes a train-free two-layer decision architecture based on LLMs, integrating high-level safety planning with low-level precise control. The framework introduces three key contributions: 1) A fuzzy Control Barrier Function verification mechanism for semantically-augmented actions, providing provable safety certification for LLM outputs. 2) A star-hierarchical graph-based retrieval-augmented generation system, enabling efficient, elastic, and interpretable scene adaptation. 3) Systematic experimental validation in pursuit-evasion scenarios with unknown obstacles and emergent threats, demonstrating that our SAGE-LLM maintains performance while significantly enhancing safety and generalization without online training. The proposed framework demonstrates strong extensibility, suggesting its potential for generalization to broader embodied intelligence systems and safety-critical control domains."
+        },
+        {
+          "title": "UEREBot: Learning Safe Quadrupedal Locomotion under Unstructured Environments and High-Speed Dynamic Obstacles",
+          "authors": [
+            "Zihao Xu",
+            "Runyu Lei",
+            "Zihao Li",
+            "Boxi Lin",
+            "Ce Hao",
+            "Jin Song Dong"
+          ],
+          "date": "2026-02-07",
+          "arxiv_id": "2602.07363v1",
+          "url": "https://arxiv.org/abs/2602.07363v1",
+          "abstract": "Quadruped robots are increasingly deployed in unstructured environments. Safe locomotion in these settings requires long-horizon goal progress, passability over uneven terrain and static constraints, and collision avoidance against high-speed dynamic obstacles. A single system cannot fully satisfy all three objectives simultaneously: planning-based decisions can be too slow, while purely reactive decisions can sacrifice goal progress and passability. To resolve this conflict, we propose UEREBot (Unstructured-Environment Reflexive Evasion Robot), a hierarchical framework that separates slow planning from instantaneous reflexive evasion and coordinates them during execution. UEREBot formulates the task as a constrained optimal control problem blueprint. It adopts a spatial--temporal planner that provides reference guidance toward the goal and threat signals. It then uses a threat-aware handoff to fuse navigation and reflex actions into a nominal command, and a control barrier function shield as a final execution safeguard. We evaluate UEREBot in Isaac Lab simulation and deploy it on a Unitree Go2 quadruped equipped with onboard perception. Across diverse environments with complex static structure and high-speed dynamic obstacles, UEREBot achieves higher avoidance success and more stable locomotion while maintaining goal progress than representative baselines, demonstrating improved safety--progress trade-offs."
+        }
+      ],
+      []
+    ],
+    [
+      "Sylvia Herbert",
+      [
+        {
+          "title": "Refining Almost-Safe Value Functions on the Fly",
+          "authors": [
+            "Sander Tonkens",
+            "Sosuke Kojima",
+            "Chenhao Liu",
+            "Judy Masri",
+            "Sylvia Herbert"
+          ],
+          "date": "2026-02-26",
+          "arxiv_id": "2602.23478v1",
+          "url": "https://arxiv.org/abs/2602.23478v1",
+          "abstract": "Control Barrier Functions (CBFs) are a powerful tool for ensuring robotic safety, but designing or learning valid CBFs for complex systems is a significant challenge. While Hamilton-Jacobi Reachability provides a formal method for synthesizing safe value functions, it scales poorly and is typically performed offline, limiting its applicability in dynamic environments. This paper bridges the gap between offline synthesis and online adaptation. We introduce refineCBF for refining an approximate CBF - whether analytically derived, learned, or even unsafe - via warm-started HJ reachability. We then present its computationally efficient successor, HJ-Patch, which accelerates this process through localized updates. Both methods guarantee the recovery of a safe value function and can ensure monotonic safety improvements during adaptation. Our experiments validate our framework's primary contribution: in-the-loop, real-time adaptation, in simulation (with detailed value function analysis) and on physical hardware. Our experiments on ground vehicles and quadcopters show that our framework can successfully adapt to sudden environmental changes, such as new obstacles and unmodeled wind disturbances, providing a practical path toward deploying formally guaranteed safety in real-world settings."
+        },
+        {
+          "title": "Safe Stochastic Explorer: Enabling Safe Goal Driven Exploration in Stochastic Environments and Safe Interaction with Unknown Objects",
+          "authors": [
+            "Nikhil Uday Shinde",
+            "Dylan Hirsch",
+            "Michael C. Yip",
+            "Sylvia Herbert"
+          ],
+          "date": "2026-01-31",
+          "arxiv_id": "2602.00868v1",
+          "url": "https://arxiv.org/abs/2602.00868v1",
+          "abstract": "Autonomous robots operating in unstructured, safety-critical environments, from planetary exploration to warehouses and homes, must learn to safely navigate and interact with their surroundings despite limited prior knowledge. Current methods for safe control, such as Hamilton-Jacobi Reachability and Control Barrier Functions, assume known system dynamics. Meanwhile existing safe exploration techniques often fail to account for the unavoidable stochasticity inherent when operating in unknown real world environments, such as an exploratory rover skidding over an unseen surface or a household robot pushing around unmapped objects in a pantry. To address this critical gap, we propose Safe Stochastic Explorer (S.S.Explorer) a novel framework for safe, goal-driven exploration under stochastic dynamics. Our approach strategically balances safety and information gathering to reduce uncertainty about safety in the unknown environment. We employ Gaussian Processes to learn the unknown safety function online, leveraging their predictive uncertainty to guide information-gathering actions and provide probabilistic bounds on safety violations. We first present our method for discrete state space environments and then introduce a scalable relaxation to effectively extend this approach to continuous state spaces. Finally we demonstrate how this framework can be naturally applied to ensure safe physical interaction with multiple unknown objects. Extensive validation in simulation and demonstrative hardware experiments showcase the efficacy of our method, representing a step forward toward enabling reliable widespread robot autonomy in complex, uncertain environments."
+        }
+      ],
+      []
+    ],
+    [
+      "Anni Li",
+      [
+        {
+          "title": "Robust Taylor-Lagrange Control for Safety-Critical Systems",
+          "authors": [
+            "Wei Xiao",
+            "Christos Cassandras",
+            "Anni Li"
+          ],
+          "date": "2026-02-23",
+          "arxiv_id": "2602.20076v1",
+          "url": "https://arxiv.org/abs/2602.20076v1",
+          "abstract": "Solving safety-critical control problem has widely adopted the Control Barrier Function (CBF) method. However, the existence of a CBF is only a sufficient condition for system safety. The recently proposed Taylor-Lagrange Control (TLC) method addresses this limitation, but is vulnerable to the feasibility preservation problem (e.g., inter-sampling effect). In this paper, we propose a robust TLC (rTLC) method to address the feasibility preservation problem. Specifically, the rTLC method expands the safety function at an order higher than the relative degree of the function using Taylor's expansion with Lagrange remainder, which allows the control to explicitly show up at the current time instead of the future time in the TLC method. The rTLC method naturally addresses the feasibility preservation problem with only one hyper-parameter (the discretization time interval size during implementation), which is much less than its counterparts. Finally, we illustrate the effectiveness of the proposed rTLC method through an adaptive cruise control problem, and compare it with existing safety-critical control methods."
+        },
+        {
+          "title": "Taylor-Lagrange Control for Safety-Critical Systems",
+          "authors": [
+            "Wei Xiao",
+            "Anni Li"
+          ],
+          "date": "2025-12-12",
+          "arxiv_id": "2512.11999v1",
+          "url": "https://arxiv.org/abs/2512.11999v1",
+          "abstract": "This paper proposes a novel Taylor-Lagrange Control (TLC) method for nonlinear control systems to ensure the safety and stability through Taylor's theorem with Lagrange remainder. To achieve this, we expand a safety or stability function with respect to time along the system dynamics using the Lie derivative and Taylor's theorem. This expansion enables the control input to appear in the Taylor series at an order equivalent to the relative degree of the function. We show that the proposed TLC provides necessary and sufficient conditions for system safety and is applicable to systems and constraints of arbitrary relative degree. The TLC exhibits connections with existing Control Barrier Function (CBF) and Control Lyapunov Function (CLF) methods, and it further extends the CBF and CLF methods to the complex domain, especially for higher order cases. Compared to High-Order CBFs (HOCBFs), TLC is less restrictive as it does not require forward invariance of the intersection of a set of safe sets while HOCBFs do. We employ TLC to reformulate a constrained optimal control problem as a sequence of quadratic programs with a zero-order hold implementation method, and demonstrate the safety of zero-order hold TLC using an event-triggered control method to address inter-sampling effects. Finally, we illustrate the effectiveness of the proposed TLC method through an adaptive cruise control system and a robot control problem, and compare it with existing CBF methods."
+        }
+      ],
+      []
+    ],
+    [
+      "Pol Mestres",
+      [
+        {
+          "title": "Safe Feedback Optimization through Control Barrier Functions",
+          "authors": [
+            "Giannis Delimpaltadakis",
+            "Pol Mestres",
+            "Jorge Cortés",
+            "W. P. M. H. Heemels"
+          ],
+          "date": "2026-02-10",
+          "arxiv_id": "2602.09928v1",
+          "url": "https://arxiv.org/abs/2602.09928v1",
+          "abstract": "Feedback optimization refers to a class of methods that steer a control system to a steady state that solves an optimization problem. Despite tremendous progress on the topic, an important problem remains open: enforcing state constraints at all times. The difficulty in addressing it lies on mediating between the safety enforcement and the closed-loop stability, and ensuring the equivalence between closed-loop equilibria and the optimization problem's critical points. In this work, we present a feedback-optimization method that enforces state constraints at all times employing high-order control-barrier functions. We provide several results on the proposed controller dynamics, including well-posedness, safety guarantees, equivalence between equilibria and critical points, and local and global (in certain convex cases) asymptotic stability of optima. Various simulations illustrate our results."
+        },
+        {
+          "title": "Explicit Control Barrier Function-based Safety Filters and their Resource-Aware Computation",
+          "authors": [
+            "Pol Mestres",
+            "Shima Sadat Mousavi",
+            "Pio Ong",
+            "Lizhi Yang",
+            "Ersin Das",
+            "Joel W. Burdick",
+            "Aaron D. Ames"
+          ],
+          "date": "2025-12-10",
+          "arxiv_id": "2512.10118v1",
+          "url": "https://arxiv.org/abs/2512.10118v1",
+          "abstract": "This paper studies the efficient implementation of safety filters that are designed using control barrier functions (CBFs), which minimally modify a nominal controller to render it safe with respect to a prescribed set of states. Although CBF-based safety filters are often implemented by solving a quadratic program (QP) in real time, the use of off-the-shelf solvers for such optimization problems poses a challenge in applications where control actions need to be computed efficiently at very high frequencies. In this paper, we introduce a closed-form expression for controllers obtained through CBF-based safety filters. This expression is obtained by partitioning the state-space into different regions, with a different closed-form solution in each region. We leverage this formula to introduce a resource-aware implementation of CBF-based safety filters that detects changes in the partition region and uses the closed-form expression between changes. We showcase the applicability of our approach in examples ranging from aerospace control to safe reinforcement learning."
+        }
+      ],
+      []
+    ],
+    [
+      "Roberto Armellin",
+      [
+        {
+          "title": "Meta-Reinforcement Learning for Robust and Non-greedy Control Barrier Functions in Spacecraft Proximity Operations",
+          "authors": [
+            "Minduli C. Wijayatunga",
+            "Richard Linares",
+            "Roberto Armellin"
+          ],
+          "date": "2026-02-07",
+          "arxiv_id": "2602.07335v1",
+          "url": "https://arxiv.org/abs/2602.07335v1",
+          "abstract": "Autonomous spacecraft inspection and docking missions require controllers that can guarantee safety under thrust constraints and uncertainty. Input-constrained control barrier functions (ICCBFs) provide a framework for safety certification under bounded actuation; however, conventional ICCBF formulations can be overly conservative and exhibit limited robustness to uncertainty, leading to high fuel consumption and reduced mission feasibility. This paper proposes a framework in which the full hierarchy of class-$\\mathcal{K}$ functions defining the ICCBF recursion is parameterized and learned, enabling localized shaping of the safe set and reduced conservatism. A control margin is computed efficiently using differential algebra to enable the learned continuous-time ICCBFs to be implemented on time-sampled dynamical systems typical of spacecraft proximity operations. A meta-reinforcement learning scheme is developed to train a policy that generates ICCBF parameters over a distribution of hidden physical parameters and uncertainties, using both multilayer perceptron (MLP) and recurrent neural network (RNN) architectures. Simulation results on cruise control, spacecraft inspection, and docking scenarios demonstrate that the proposed approach maintains safety while reducing fuel consumption and improving feasibility relative to fixed class-$\\mathcal{K}$ ICCBFs, with the RNN showing a particularly strong advantage in the more complex inspection case."
+        },
+        {
+          "title": "Learning Safety-Guaranteed, Non-Greedy Control Barrier Functions Using Reinforcement Learning",
+          "authors": [
+            "Minduli Wijayatunga",
+            "Nathan Wallace",
+            "Salah Sukkarieh",
+            "Roberto Armellin"
+          ],
+          "date": "2026-01-30",
+          "arxiv_id": "2602.00366v1",
+          "url": "https://arxiv.org/abs/2602.00366v1",
+          "abstract": "Spacecraft rendezvous and proximity operations (RPO) pose safety risks to high-value assets, so formal safety guarantees are critical. Yet conservative safety controllers can reduce mission efficiency. We propose a unified two-stage reinforcement learning (RL) framework that addresses two complementary limitations of Input-Constrained Control Barrier Functions (ICCBFs) for safety-critical, fuel-limited spacecraft control. Given a certified safe set S, ICCBFs guarantee forward invariance of an inner set C* under input bounds, but the resulting per-step quadratic programme (QP) is greedy and fuel-inefficient within C*, and recoverable states outside C* are conservatively discarded. Stage 1 learns state-dependent class-K-infinity parameters that adapt ICCBF/CLF decay rates, embedding long-horizon cost awareness while preserving invariance in C*. Stage 2 learns a residual barrier h_RL(x) that certifies recoverability for a subset of S minus C*. At run time, the controller selects the appropriate barrier formulation (Stage 1 or Stage 2) and solves a lightweight ZOH QP. Both stages are trained with PPO using rewards that penalise constraint violations, control effort, and task metrics. We evaluate three benchmarks: cruise control, spacecraft rendezvous with a rotating target, and inspection that maximises observability subject to keep-in and keep-out zone constraints. Across test cases, the method reduces median fuel relative to ICCBF baselines by 12 to 25 percent and increases the fraction of trajectories that remain in S by 7 to 8 percent, while retaining real-time QP complexity."
+        }
+      ],
+      []
+    ],
+    [
+      "Ji Wang",
+      [
+        {
+          "title": "Safe Adaptive Control of Parabolic PDE-ODE Cascades",
+          "authors": [
+            "Yun Jiang",
+            "Ji Wang"
+          ],
+          "date": "2026-02-04",
+          "arxiv_id": "2602.04656v1",
+          "url": "https://arxiv.org/abs/2602.04656v1",
+          "abstract": "In this paper, we propose a safe adaptive boundary control strategy for a class of parabolic partial differential equation-ordinary differential equation (PDE-ODE) cascaded systems with parametric uncertainties in both the PDE and ODE subsystems. The proposed design is built upon an adaptive Control Barrier Function (aCBF) framework that incorporates high-relative-degree CBFs together with a batch least-squares identification (BaLSI)-based adaptive control that guarantees exact parameter identification in finite time. The proposed control law ensures that: (i) if the system output state initially lies within a prescribed safe set, safety is maintained for all time; otherwise, the output is driven back into the safe region within a preassigned finite time; and (ii) convergence to zero of all plant states is achieved. Numerical simulations are provided to demonstrate the effectiveness of the proposed approach."
+        },
+        {
+          "title": "Data-Driven Safe Output Regulation of Strict-Feedback Linear Systems with Input Delay",
+          "authors": [
+            "Zhenxu Zhao",
+            "Ji Wang",
+            "Weiyao Lan"
+          ],
+          "date": "2026-01-20",
+          "arxiv_id": "2601.14089v2",
+          "url": "https://arxiv.org/abs/2601.14089v2",
+          "abstract": "This paper develops a data-driven safe control framework for linear systems possessing a known strict-feedback structure, but with most plant parameters, external disturbances, and input delay being unknown. By leveraging Koopman operator theory, we utilize Krylov dynamic mode decomposition (DMD) to extract the system dynamics from measured data, enabling the reconstruction of the system and disturbance matrices. Concurrently, the batch least-squares identification (BaLSI) method is employed to identify other unknown parameters in the input channel. Using control barrier functions (CBFs) and backstepping, we first develop a full-state safe controller. Based on this, we build an output-feedback controller by performing system identification using only the output data and actuation signals as well as constructing an observer to estimate the unmeasured plant states. The proposed approach achieves: 1) finite-time identification of a substantial set of unknown system quantities, and 2) exponential convergence of the output state (the state furthest from the control input) to a reference trajectory while rigorously ensuring safety constraints. The effectiveness of the proposed method is demonstrated through a safe vehicle platooning application."
+        }
+      ],
+      []
+    ],
+    [
+      "Philip E. Paré",
+      [
+        {
+          "title": "Robust Safety-Critical Control of Networked SIR Dynamics",
+          "authors": [
+            "Saba Samadi",
+            "Brooks A. Butler",
+            "Philip E. Paré"
+          ],
+          "date": "2026-02-02",
+          "arxiv_id": "2602.02452v1",
+          "url": "https://arxiv.org/abs/2602.02452v1",
+          "abstract": "We present a robust safety-critical control framework tailored for networked susceptible-infected-recovered (SIR) epidemic dynamics, leveraging control barrier functions (CBFs) and robust control barrier functions to address the challenges of epidemic spread and mitigation. In our networked SIR model, each node must keep its infection level below a critical threshold, despite dynamic interactions with neighboring nodes and inherent uncertainties in the epidemic parameters and measurement errors, to ensure public health safety. We first derive a CBF-based controller that guarantees infection thresholds are not exceeded in the nominal case. We enhance the framework to handle realistic epidemic scenarios under uncertainties by incorporating compensation terms that reinforce safety against uncertainties: an independent method with constant bounds for uniform uncertainty, and a novel approach that scales with the state to capture increased relative noise in early or suppressed outbreak stages. Simulation results on a networked SIR system illustrate that the nominal CBF controller maintains safety under low uncertainty, while the robust approaches provide formal safety guarantees under higher uncertainties; in particular, the novel method employs more conservative control efforts to provide larger safety margins, whereas the independent approach optimizes resource allocation by allowing infection levels to approach the boundaries in steady epidemic regimes."
+        },
+        {
+          "title": "Energy-Aware Bayesian Control Barrier Functions for Physics-Informed Gaussian Process Dynamics",
+          "authors": [
+            "Chi Ho Leung",
+            "Philip E. Paré"
+          ],
+          "date": "2025-12-30",
+          "arxiv_id": "2512.24493v1",
+          "url": "https://arxiv.org/abs/2512.24493v1",
+          "abstract": "We study safe control for dynamical systems whose continuous-time dynamics are learned with Gaussian processes (GPs), focusing on mechanical and port-Hamiltonian systems where safety is naturally expressed via energy constraints. The availability of a GP Hamiltonian posterior naturally raises the question of how to systematically exploit this structure to design an energy-aware control barrier function with high-probability safety guarantees. We address this problem by developing a Bayesian-CBF framework and instantiating it with energy-aware Bayesian-CBFs (EB-CBFs) that construct conservative energy-based barriers directly from the Hamiltonian and vector-field posteriors, yielding safety filters that minimally modify a nominal controller while providing probabilistic energy safety guarantees. Numerical simulations on a mass-spring system demonstrate that the proposed EB-CBFs achieve high-probability safety under noisy sampled GP-learned dynamics."
+        }
+      ],
+      []
+    ],
+    [
+      "Shima Sadat Mousavi",
+      [
+        {
+          "title": "From Vertices to Convex Hulls: Certifying Set-Wise Compatibility for CBF Constraints",
+          "authors": [
+            "Shima Sadat Mousavi",
+            "Xiao Tan",
+            "Aaron D. Ames"
+          ],
+          "date": "2026-01-19",
+          "arxiv_id": "2601.12885v1",
+          "url": "https://arxiv.org/abs/2601.12885v1",
+          "abstract": "This paper develops certificates that propagate compatibility of multiple control barrier function (CBF) constraints from sampled vertices to their convex hull. Under mild concavity and affinity assumptions, we present three sufficient feasibility conditions under which feasible inputs over the convex hull can be obtained per coordinate, with a common input, or via convex blending. We also describe the associated computational methods, based on interval intersections or an offline linear program (LP). Beyond certifying compatibility, we give conditions under which the quadratic-program (QP) safety filter is affine in the state. This enables explicit implementations via convex combinations of vertex-feasible inputs. Case studies illustrate the results."
+        },
+        {
+          "title": "Explicit Control Barrier Function-based Safety Filters and their Resource-Aware Computation",
+          "authors": [
+            "Pol Mestres",
+            "Shima Sadat Mousavi",
+            "Pio Ong",
+            "Lizhi Yang",
+            "Ersin Das",
+            "Joel W. Burdick",
+            "Aaron D. Ames"
+          ],
+          "date": "2025-12-10",
+          "arxiv_id": "2512.10118v1",
+          "url": "https://arxiv.org/abs/2512.10118v1",
+          "abstract": "This paper studies the efficient implementation of safety filters that are designed using control barrier functions (CBFs), which minimally modify a nominal controller to render it safe with respect to a prescribed set of states. Although CBF-based safety filters are often implemented by solving a quadratic program (QP) in real time, the use of off-the-shelf solvers for such optimization problems poses a challenge in applications where control actions need to be computed efficiently at very high frequencies. In this paper, we introduce a closed-form expression for controllers obtained through CBF-based safety filters. This expression is obtained by partitioning the state-space into different regions, with a different closed-form solution in each region. We leverage this formula to introduce a resource-aware implementation of CBF-based safety filters that detects changes in the partition region and uses the closed-form expression between changes. We showcase the applicability of our approach in examples ranging from aerospace control to safe reinforcement learning."
+        }
+      ],
+      []
+    ],
+    [
+      "Aaron D. Ames",
+      [
+        {
+          "title": "From Vertices to Convex Hulls: Certifying Set-Wise Compatibility for CBF Constraints",
+          "authors": [
+            "Shima Sadat Mousavi",
+            "Xiao Tan",
+            "Aaron D. Ames"
+          ],
+          "date": "2026-01-19",
+          "arxiv_id": "2601.12885v1",
+          "url": "https://arxiv.org/abs/2601.12885v1",
+          "abstract": "This paper develops certificates that propagate compatibility of multiple control barrier function (CBF) constraints from sampled vertices to their convex hull. Under mild concavity and affinity assumptions, we present three sufficient feasibility conditions under which feasible inputs over the convex hull can be obtained per coordinate, with a common input, or via convex blending. We also describe the associated computational methods, based on interval intersections or an offline linear program (LP). Beyond certifying compatibility, we give conditions under which the quadratic-program (QP) safety filter is affine in the state. This enables explicit implementations via convex combinations of vertex-feasible inputs. Case studies illustrate the results."
+        },
+        {
+          "title": "Explicit Control Barrier Function-based Safety Filters and their Resource-Aware Computation",
+          "authors": [
+            "Pol Mestres",
+            "Shima Sadat Mousavi",
+            "Pio Ong",
+            "Lizhi Yang",
+            "Ersin Das",
+            "Joel W. Burdick",
+            "Aaron D. Ames"
+          ],
+          "date": "2025-12-10",
+          "arxiv_id": "2512.10118v1",
+          "url": "https://arxiv.org/abs/2512.10118v1",
+          "abstract": "This paper studies the efficient implementation of safety filters that are designed using control barrier functions (CBFs), which minimally modify a nominal controller to render it safe with respect to a prescribed set of states. Although CBF-based safety filters are often implemented by solving a quadratic program (QP) in real time, the use of off-the-shelf solvers for such optimization problems poses a challenge in applications where control actions need to be computed efficiently at very high frequencies. In this paper, we introduce a closed-form expression for controllers obtained through CBF-based safety filters. This expression is obtained by partitioning the state-space into different regions, with a different closed-form solution in each region. We leverage this formula to introduce a resource-aware implementation of CBF-based safety filters that detects changes in the partition region and uses the closed-form expression between changes. We showcase the applicability of our approach in examples ranging from aerospace control to safe reinforcement learning."
+        }
+      ],
+      []
+    ],
+    [
+      "Wenzhe Zhao",
+      [
+        {
+          "title": "SAGE-LLM: Towards Safe and Generalizable LLM Controller with Fuzzy-CBF Verification and Graph-Structured Knowledge Retrieval for UAV Decision",
+          "authors": [
+            "Wenzhe Zhao",
+            "Yang Zhao",
+            "Ganchao Liu",
+            "Zhiyu Jiang",
+            "Dandan Ma",
+            "Zihao Li",
+            "Xuelong Li"
+          ],
+          "date": "2026-02-27",
+          "arxiv_id": "2602.23719v1",
+          "url": "https://arxiv.org/abs/2602.23719v1",
+          "abstract": "In UAV dynamic decision, complex and variable hazardous factors pose severe challenges to the generalization capability of algorithms. Despite offering semantic understanding and scene generalization, Large Language Models (LLM) lack domain-specific UAV control knowledge and formal safety assurances, restricting their direct applicability. To bridge this gap, this paper proposes a train-free two-layer decision architecture based on LLMs, integrating high-level safety planning with low-level precise control. The framework introduces three key contributions: 1) A fuzzy Control Barrier Function verification mechanism for semantically-augmented actions, providing provable safety certification for LLM outputs. 2) A star-hierarchical graph-based retrieval-augmented generation system, enabling efficient, elastic, and interpretable scene adaptation. 3) Systematic experimental validation in pursuit-evasion scenarios with unknown obstacles and emergent threats, demonstrating that our SAGE-LLM maintains performance while significantly enhancing safety and generalization without online training. The proposed framework demonstrates strong extensibility, suggesting its potential for generalization to broader embodied intelligence systems and safety-critical control domains."
+        }
+      ],
+      [
+        {
+          "title": "Multifactorial effects of biochar-loaded nano zero-valent iron on soil bacteria in remediation of Cd-contaminated soil: Insights from community structure, diversity and functional responses",
+          "authors": [
+            "Wenzhe Zhao",
+            "Peipei Song"
+          ],
+          "year": 2025,
+          "date": "2025-11-01",
+          "citations": 3,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": ""
+        },
+        {
+          "title": "NMS: Efficient Edge DNN Training via Near-Memory Sampling on Manifolds",
+          "authors": [
+            "Boran Zhao",
+            "Haiduo Huang",
+            "Qiwei Dang",
+            "Wenzhe Zhao",
+            "Tian Xia",
+            "Pengju Ren"
+          ],
+          "year": 2025,
+          "date": "2025-08-04",
+          "citations": 3,
+          "arxiv_id": "2508.02313",
+          "url": "https://arxiv.org/abs/2508.02313",
+          "abstract": "Training deep neural networks (DNNs) on edge devices has attracted increasing attention due to its potential to address challenges related to domain adaptation and privacy preservation. However, DNNs typically rely on large datasets for training, which results in substantial energy consumption, making the training in edge devices impractical. Some dataset compression methods have been proposed to solve this challenge. For instance, the coreset selection and dataset distillation reduce the training cost by selecting and generating representative samples respectively. Nevertheless, these methods have two significant defects: (1) The necessary of leveraging a DNN model to evaluate the quality of representative samples, which inevitably introduces inductive bias of DNN, resulting in a severe generalization issue; (2) All training images require multiple accesses to the DDR via long-distance PCB connections, leading to substantial energy overhead. To address these issues, inspired by the nonlinear manifold stationary of the human brain, we firstly propose a DNN-free sample-selecting algorithm, called DE-SNE, to improve the generalization issue. Secondly, we innovatively utilize the near-memory computing technique to implement DE-SNE, thus only a small fraction of images need to access the DDR via long-distance PCB. It significantly reduces DDR energy consumption. As a result, we build a novel expedited DNN training system with a more efficient in-place Near-Memory Sampling characteristic for edge devices, dubbed NMS. As far as we know, our NMS is the first DNN-free near-memory sampling technique that can effectively alleviate generalization issues and significantly reduce DDR energy caused by dataset access. The experimental results show that our NMS outperforms the current state-of-the-art (SOTA) approaches, namely DQ, DQAS, and NeSSA, in model accuracy."
+        },
+        {
+          "title": "Transcriptome and metabolome analyses uncover nanoplastic induced oxidative stress responses in peach roots.",
+          "authors": [
+            "Wenzhe Zhao",
+            "Qijie Wu",
+            "Binbin Wen",
+            "Nan Sun",
+            "Tongqiu Luo",
+            "Yuanyuan Li",
+            "Xingyao Gong",
+            "Wei Xiao",
+            "Ling Li"
+          ],
+          "year": 2025,
+          "date": "2025-06-01",
+          "citations": 3,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "Nanoplastics (NPs) are tiny particles generated through plastic degradation. Currently, research on NPs in plants mainly focuses on algae and food crops, while studies on fruit trees are limited. In this study, we examined the influence of different concentrations (0, 2, 4, 8, 16, and 32 mg/L) of PS-NPs (Polystyrene Nanoplastics) on the growth and development of the 'Qingzhou' peach (Prunus persica (L.) Batsch) and Prunus davidiana Franch root systems. PS-NPs were taken up by peach roots, and 32 mg/L PS-NP treatment induced oxidative stress in the roots across both varieties and caused H2O2 and O2- accumulation in vivo, inhibiting root elongation. To resolve the regulatory network induced by NPs, integrated transcriptome and metabolome sequencing analysis of peach root systems administered 0 and 32 mg/L PS-NPs suggested that 32 mg/L PS-NPs treatment produced a PpCRTISO-mediated oxidative cascade response by up-regulating the transcription of PpNRT2.7. In this process, PS-NPs down-regulated Dopamine levels in 'Qingzhou' peach and L-Cysteine in Prunus davidiana Franch, disrupting non-enzymatic antioxidant systems and causing an imbalance of ROS homeostasis. Further, the equilibrium between oxidation and antioxidants was disrupted, inducing oxidative stress responses in the root system. These findings are critical for deciphering the interactions and defense mechanisms between NPs and fruit trees, as well as reducing the negative impacts of NPs on fruit trees."
+        },
+        {
+          "title": "A two-stage method for detecting trajectory clusters of different densities with peak trajectories identification",
+          "authors": [
+            "Ju Peng",
+            "Jianbo Tang",
+            "Min Deng",
+            "Zhiyuan Hu",
+            "Jianbing Xiang",
+            "Xia Ning",
+            "Wenzhe Zhao"
+          ],
+          "year": 2025,
+          "date": "2025-04-24",
+          "citations": 6,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "Abstract Trajectory clustering is a fundamental yet challenging data mining task that aims to group similar trajectories. Due to the inherent nature and implicit patterns of trajectories, existing methods often struggle to cluster trajectories with varying densities and noise, and automatically determine cluster numbers. We propose an adaptive two-stage trajectory cluster (ATSTC) algorithm considering the intra-cluster trajectory distance distributions. In the first stage, peak trajectories with the highest local densities, and their adaptively estimated k-nearest neighbors, are initialized as candidate clusters. Trajectories in multiple peak neighborhoods are assigned to clusters with minimal relative distances while remaining trajectories are merged with the nearest cluster or labeled as noise depending on the resultant changes in intra-cluster distance standard deviation. In the second stage, a hierarchical agglomerative strategy is employed to merge clusters by analyzing changes in the average distance and standard deviation of intra-cluster trajectories before and after merging. Experiments on four simulated datasets, with comparisons to eight baselines, demonstrate the superior performance (e.g. ARI) of ATSTC in detecting trajectory clusters under different scenarios. Case studies involving route extraction from ship trajectories and bird tracks with clusters of different sizes, densities, and noise underscore the potential and efficacy of ATSTC in real-world applications."
+        },
+        {
+          "title": "Infinite-Canvas: Higher-Resolution Video Outpainting with Extensive Content Generation",
+          "authors": [
+            "Qihua Chen",
+            "Yue Ma",
+            "Hongfa Wang",
+            "Junkun Yuan",
+            "Wenzhe Zhao",
+            "Qi Tian",
+            "Hongmei Wang",
+            "Shaobo Min",
+            "Qifeng Chen",
+            "Wei Liu"
+          ],
+          "year": 2025,
+          "date": "2025-04-11",
+          "citations": 3,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "This paper explores higher-resolution video outpainting with extensive content generation. We point out common issues faced by existing methods when attempting to largely outpaint videos: the generation of low-quality content and limitations imposed by GPU memory. To address these challenges, we propose a diffusion-based method called Infinite-Canvas. It builds upon two core designs. First, instead of employing the common practice of \"single-shot\" outpainting, we distribute the task across spatial windows and seamlessly merge them. It allows us to outpaint videos of any size and resolution without being constrained by GPU memory. Second, the source video and its relative positional relation are injected into the generation process of each window. It makes the generated spatial layout within each window harmonize with the source video. Coupling with these two designs enables us to generate higher-resolution outpainting videos with rich content while keeping spatial and temporal consistency. Infinite-Canvas excels in large-scale video outpainting, e.g., from 512 × 512 to 1152 × 2048 (9×), while producing high-quality and aesthetically pleasing results. It achieves the best quantitative results across various resolution and scale setups. The code is available at https://github.com/mayuelala/FollowYourCanvas."
+        },
+        {
+          "title": "Combination therapy and dual-target inhibitors based on cyclin-dependent kinases (CDKs): Emerging strategies for cancer therapy.",
+          "authors": [
+            "Qi Hao",
+            "Wenzhe Zhao",
+            "Zhijia Li",
+            "Yue Lai",
+            "Yan Wang",
+            "Qianqian Yang",
+            "Lan Zhang"
+          ],
+          "year": 2025,
+          "date": "2025-03-01",
+          "citations": 7,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "Cyclin-dependent kinases (CDKs) are pivotal regulators of the cell cycle and transcriptional machinery, making them attractive targets for cancer therapy. While CDK inhibitors have demonstrated promising clinical outcomes, they also face challenges in enhancing efficacy, particularly in overcoming drug resistance. Combination therapies have emerged as a key strategy to augment the effectiveness of CDK inhibitors when used alongside other kinase inhibitors or non-kinase-targeted agents. Dual-target inhibitors that simultaneously inhibit CDKs and other oncogenic drivers are gaining attention, offering novel avenues to optimize cancer therapy. Based on the structural characterization and biological functions of CDKs, this review comprehensively examines the structure-activity relationship (SAR) of existing dual-target CDK inhibitors from a drug design perspective. We also thoroughly investigate the preclinical studies and clinical translational potential of combination therapies and dual-target inhibitors. Tailoring CDK inhibitors to specific cancer subtypes and therapeutic settings will inspire innovative approaches for the next generation of CDK-related therapies, ultimately improving patient survival."
+        },
+        {
+          "title": "Partial Channel Network: Compute Fewer, Perform Better",
+          "authors": [
+            "Haiduo Huang",
+            "Tian Xia",
+            "Wenzhe Zhao",
+            "Pengju Ren"
+          ],
+          "year": 2025,
+          "date": "2025-02-03",
+          "citations": 3,
+          "arxiv_id": "2502.01303",
+          "url": "https://arxiv.org/abs/2502.01303",
+          "abstract": "Designing a module or mechanism that enables a network to maintain low parameters and FLOPs without sacrificing accuracy and throughput remains a challenge. To address this challenge and exploit the redundancy within feature map channels, we propose a new solution: partial channel mechanism (PCM). Specifically, through the split operation, the feature map channels are divided into different parts, with each part corresponding to different operations, such as convolution, attention, pooling, and identity mapping. Based on this assumption, we introduce a novel partial attention convolution (PATConv) that can efficiently combine convolution with visual attention. Our exploration indicates that the PATConv can completely replace both the regular convolution and the regular visual attention while reducing model parameters and FLOPs. Moreover, PATConv can derive three new types of blocks: Partial Channel-Attention block (PAT_ch), Partial Spatial-Attention block (PAT_sp), and Partial Self-Attention block (PAT_sf). In addition, we propose a novel dynamic partial convolution (DPConv) that can adaptively learn the proportion of split channels in different layers to achieve better trade-offs. Building on PATConv and DPConv, we propose a new hybrid network family, named PartialNet, which achieves superior top-1 accuracy and inference speed compared to some SOTA models on ImageNet-1K classification and excels in both detection and segmentation on the COCO dataset. Our code is available at https://github.com/haiduo/PartialNet."
+        },
+        {
+          "title": "Urchin-like magnetic nanoparticles loaded with type X collagen siRNA and Stattic to treat triple negative breast cancer under rotating magnetic field like an \"enchanted micro-scalpel\".",
+          "authors": [
+            "Jie Liu",
+            "Xiao-Rong Qiu",
+            "Yi‐Le Tian",
+            "Wenjun Sun",
+            "Yu-Hua Wang",
+            "Huan Liu",
+            "Ge Zhang",
+            "Wenzhe Zhao",
+            "Dachuan Yin",
+            "Chenyan Zhang"
+          ],
+          "year": 2025,
+          "date": "2025-01-24",
+          "citations": 2,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": ""
+        },
+        {
+          "title": "MiR-495 reverses in the mechanical unloading, random rotating and aging induced muscle atrophy via targeting MyoD and inactivating the Myostatin/TGF-β/Smad3 axis.",
+          "authors": [
+            "Chenyan Zhang",
+            "Yi‐Le Tian",
+            "Xinli Liu",
+            "Xuezhou Yang",
+            "Shanfeng Jiang",
+            "Ge Zhang",
+            "Chang-Qing Yang",
+            "Wenjing Liu",
+            "Weihong Guo",
+            "Wenzhe Zhao",
+            "Dachuan Yin"
+          ],
+          "year": 2024,
+          "date": "2024-12-01",
+          "citations": 2,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": ""
+        },
+        {
+          "title": "Reduced-dose deep learning iterative reconstruction for abdominal computed tomography with low tube voltage and tube current",
+          "authors": [
+            "Shumeng Zhu",
+            "Baoping Zhang",
+            "Qian Tian",
+            "Ao Li",
+            "Zhe Liu",
+            "Wei Hou",
+            "Wenzhe Zhao",
+            "Xin Huang",
+            "Yao Xiao",
+            "Yiming Wang",
+            "Rui Wang",
+            "Yuhang Li",
+            "Jian Yang",
+            "Chao Jin"
+          ],
+          "year": 2024,
+          "date": "2024-12-01",
+          "citations": 4,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "The low tube-voltage technique (e.g., 80 kV) can efficiently reduce the radiation dose and increase the contrast enhancement of vascular and parenchymal structures in abdominal CT. However, a high tube current is always required in this setting and limits the dose reduction potential. This study investigated the feasibility of a deep learning iterative reconstruction algorithm (Deep IR) in reducing the radiation dose while improving the image quality for abdominal computed tomography (CT) with low tube voltage and current. Sixty patients (male/female, 36/24; Age, 57.72 ± 10.19 years) undergoing the abdominal portal venous phase CT were randomly divided into groups A (100 kV, automatic exposure control [AEC] with reference tube-current of 213 mAs) and B (80 kV, AEC with reference of 130 mAs). Images were reconstructed via hybrid iterative reconstruction (HIR) and Deep IR (levels 1–5). The mean CT and standard deviation (SD) values of four regions of interest (ROI), i.e. liver, spleen, main portal vein and erector spinae at the porta hepatis level in each image serial were measured, and the signal-to-noise ratio (SNR) and contrast-to-noise ratio (CNR) were calculated. The image quality was subjectively scored by two radiologists using a 5-point criterion. A significant reduction in the radiation dose of 69.94% (5.09 ± 0.91 mSv vs. 1.53 ± 0.37 mSv) was detected in Group B compared with Group A. After application of the Deep IR, there was no significant change in the CT value, but the SD gradually increased. Group B had higher CT values than group A, and the portal vein CT values significantly differed between the groups (P < 0.003). The SNR and CNR in Group B with Deep IR at levels 1–5 were greater than those in Group A and significantly differed when HIR and Deep IR were applied at levels 1–3 of HIR and Deep IR (P < 0.003). The subjective scores (distortion, clarity of the portal vein, visibility of small structures and overall image quality) with Deep IR at levels 4–5 in Group B were significantly higher than those in group A with HIR (P < 0.003). Deep IR algorithm can meet the clinical requirements and reduce the radiation dose by 69.94% in portal venous phase abdominal CT with a low tube voltage of 80 kV and a low tube current. Deep IR at levels 4–5 can significantly improve the image quality of the abdominal parenchymal organs and the clarity of the portal vein."
+        },
+        {
+          "title": "Combination Using Magnetic Iron Oxide Nanoparticles and Magnetic Field for Cancer Therapy",
+          "authors": [
+            "Wenjun Sun",
+            "Xiaoxia Chai",
+            "Yuan Zhang",
+            "Tongyao Yu",
+            "Yu-Hua Wang",
+            "Wenzhe Zhao",
+            "Yanhua Liu",
+            "Dachuan Yin",
+            "Chenyan Zhang"
+          ],
+          "year": 2024,
+          "date": "2024-11-28",
+          "citations": 7,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "Iron oxide nanoparticles (MNPs) demonstrate notable benefits in magnetic induction, attributed to their distinctive physical and chemical attributes. Emerging cancer treatment utilizing magnetic fields have also gathered increasing attention in the biomedical field. However, the defects of difficult dispersion and poor biocompatibility of MNPs seriously hinder their application. In order to overcome its inherent defects and maximize the therapeutic potential of MNPs, various functionalized MNPs have been developed, and numerous combined treatment methods based on MNPs have been widely studied. In this review, we compare and analyze the common nanoparticles based on MNPs with different sizes, shapes, and functional modifications. Additionally, we introduced the therapeutic mechanisms of the strategies, such as magnetically controlled targeting, magnetic hyperthermia, and magneto‐mechanical effect, which based on the unique magnetic induction capabilities of MNPs. Finally, main challenges of MNPs as smart nanomaterials were also discussed. This review seeks to offer a thorough overview of MNPs in biomedicine and a new sight for their application in tumor treatment."
+        },
+        {
+          "title": "Follow-Your-Canvas: Higher-Resolution Video Outpainting with Extensive Content Generation",
+          "authors": [
+            "Qihua Chen",
+            "Yue Ma",
+            "Hongfa Wang",
+            "Junkun Yuan",
+            "Wenzhe Zhao",
+            "Qi Tian",
+            "Hongmei Wang",
+            "Shaobo Min",
+            "Qifeng Chen",
+            "Wei Liu"
+          ],
+          "year": 2024,
+          "date": "2024-09-02",
+          "citations": 41,
+          "arxiv_id": "2409.01055",
+          "url": "https://arxiv.org/abs/2409.01055",
+          "abstract": "This paper explores higher-resolution video outpainting with extensive content generation. We point out common issues faced by existing methods when attempting to largely outpaint videos: the generation of low-quality content and limitations imposed by GPU memory. To address these challenges, we propose a diffusion-based method called \\textit{Follow-Your-Canvas}. It builds upon two core designs. First, instead of employing the common practice of\"single-shot\"outpainting, we distribute the task across spatial windows and seamlessly merge them. It allows us to outpaint videos of any size and resolution without being constrained by GPU memory. Second, the source video and its relative positional relation are injected into the generation process of each window. It makes the generated spatial layout within each window harmonize with the source video. Coupling with these two designs enables us to generate higher-resolution outpainting videos with rich content while keeping spatial and temporal consistency. Follow-Your-Canvas excels in large-scale video outpainting, e.g., from 512X512 to 1152X2048 (9X), while producing high-quality and aesthetically pleasing results. It achieves the best quantitative results across various resolution and scale setups. The code is released on https://github.com/mayuelala/FollowYourCanvas"
+        },
+        {
+          "title": "Quantitative evaluation of PI-RDL interfacial delamination in fan-out wafer-level packaging during unbiased highly accelerated stress test",
+          "authors": [
+            "Wenyu Wu",
+            "Wenzhe Zhao",
+            "Kai Chen",
+            "Baoguang Ma",
+            "Dong Lu",
+            "Ke Wang",
+            "Jingshen Wu"
+          ],
+          "year": 2024,
+          "date": "2024-07-01",
+          "citations": 8,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": ""
+        },
+        {
+          "title": "Towards Multiple Character Image Animation Through Enhancing Implicit Decoupling",
+          "authors": [
+            "Jingyun Xue",
+            "Hongfa Wang",
+            "Qi Tian",
+            "Yue Ma",
+            "Andong Wang",
+            "Zhiyuan Zhao",
+            "Shaobo Min",
+            "Wenzhe Zhao",
+            "Kaihao Zhang",
+            "H. Shum",
+            "Wei Liu",
+            "Mengyang Liu",
+            "Wenhan Luo"
+          ],
+          "year": 2024,
+          "date": "2024-06-05",
+          "citations": 10,
+          "arxiv_id": "2406.03035",
+          "url": "https://arxiv.org/abs/2406.03035",
+          "abstract": "Controllable character image animation has a wide range of applications. Although existing studies have consistently improved performance, challenges persist in the field of character image animation, particularly concerning stability in complex backgrounds and tasks involving multiple characters. To address these challenges, we propose a novel multi-condition guided framework for character image animation, employing several well-designed input modules to enhance the implicit decoupling capability of the model. First, the optical flow guider calculates the background optical flow map as guidance information, which enables the model to implicitly learn to decouple the background motion into background constants and background momentum during training, and generate a stable background by setting zero background momentum during inference. Second, the depth order guider calculates the order map of the characters, which transforms the depth information into the positional information of multiple characters. This facilitates the implicit learning of decoupling different characters, especially in accurately separating the occluded body parts of multiple characters. Third, the reference pose map is input to enhance the ability to decouple character texture and pose information in the reference image. Furthermore, to fill the gap of fair evaluation of multi-character image animation, we propose a new benchmark comprising about 4,000 frames. Extensive qualitative and quantitative evaluations demonstrate that our method excels in generating high-quality character animations, especially in scenarios of complex backgrounds and multiple characters."
+        },
+        {
+          "title": "Differential-Matching Prefetcher for Indirect Memory Access",
+          "authors": [
+            "Gelin Fu",
+            "Tian Xia",
+            "Zhongpei Luo",
+            "Ruiyang Chen",
+            "Wenzhe Zhao",
+            "Pengju Ren"
+          ],
+          "year": 2024,
+          "date": "2024-03-02",
+          "citations": 8,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "Indirect memory access is a critical bottleneck for modern CPUs, especially for graph analysis and sparse linear algebra applications, where the values of one data array are used to generate the fetching addresses of another array. It often causes irregular data accesses with poor temporal and spatial locality that are difficult to be captured by conventional hardware prefetchers. For many complex workloads, such indirect access patterns may have different types and are nested in a multiplelevel form. Moreover, branch mispredictions would further disturb their patterns, making them even harder to detect. As a result, existing hardware prefetchers are unable to fully prefetch complex indirect patterns. This paper proposes DMP, a low-cost hardware prefetcher to improve the memory latency in several representative irregular workloads. DMP targets four types of indirect memory access patterns including single, range, multi-level, and multi-way indirect access. DMP uses differential matching to identify an indirect access pattern in pair with its corresponding index stream. Then DMP uses a flexible prefetching mechanism to dynamically adapt the prefetching degree to maintain prefetching coverage. We evaluate the performance, energy consumption, and transistor cost of DMP among various algorithms from GAP, NAS, and HPCG benchmarks. DMP improves performance by 1.8 × (up to 5.6 ×) on average against state-of-the-art hardware prefetchers and 1.2 × (up to 2.3 ×) speedup against state-of-the-art compiler-based prefetcher Prodigy. Besides, the proposed design is optimized to take only 0.9KB of storage, making it feasible to be integrated into current CPU designs."
+        },
+        {
+          "title": "Cross-Modal Retrieval and Semantic Refinement for Remote Sensing Image Captioning",
+          "authors": [
+            "Zhengxin Li",
+            "Wenzhe Zhao",
+            "Xuanyi Du",
+            "Guangyao Zhou",
+            "Songlin Zhang"
+          ],
+          "year": 2024,
+          "date": "2024-01-03",
+          "citations": 18,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "Two-stage remote sensing image captioning (RSIC) methods have achieved promising results by incorporating additional pre-trained remote sensing tasks to extract supplementary information and improve caption quality. However, these methods face limitations in semantic comprehension, as pre-trained detectors/classifiers are constrained by predefined labels, leading to an oversight of the intricate and diverse details present in remote sensing images (RSIs). Additionally, the handling of auxiliary remote sensing tasks separately can introduce challenges in ensuring seamless integration and alignment with the captioning process. To address these problems, we propose a novel cross-modal retrieval and semantic refinement (CRSR) RSIC method. Specifically, we employ a cross-modal retrieval model to retrieve relevant sentences of each image. The words in these retrieved sentences are then considered as primary semantic information, providing valuable supplementary information for the captioning process. To further enhance the quality of the captions, we introduce a semantic refinement module that refines the primary semantic information, which helps to filter out misleading information and emphasize visually salient semantic information. A Transformer Mapper network is introduced to expand the representation of image features beyond the retrieved supplementary information with learnable queries. Both the refined semantic tokens and visual features are integrated and fed into a cross-modal decoder for caption generation. Through extensive experiments, we demonstrate the superiority of our CRSR method over existing state-of-the-art approaches on the RSICD, the UCM-Captions, and the Sydney-Captions datasets"
+        },
+        {
+          "title": "Follow-Your-Pose v2: Multiple-Condition Guided Character Image Animation for Stable Pose Control",
+          "authors": [
+            "Jingyun Xue",
+            "Hongfa Wang",
+            "Qi Tian",
+            "Yue Ma",
+            "Andong Wang",
+            "Zhiyuan Zhao",
+            "Shaobo Min",
+            "Wenzhe Zhao",
+            "Kaihao Zhang",
+            "Harry Shum",
+            "Wei Liu",
+            "Mengyang Liu",
+            "Wenhan Luo"
+          ],
+          "year": 2024,
+          "date": null,
+          "citations": 26,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": ""
+        },
+        {
+          "title": "HIPU: A Hybrid Intelligent Processing Unit With Fine-Grained ISA for Real-Time Deep Neural Network Inference Applications",
+          "authors": [
+            "Wenzhe Zhao",
+            "Guoming Yang",
+            "Tian Xia",
+            "Fei Chen",
+            "Nanning Zheng",
+            "Pengju Ren"
+          ],
+          "year": 2023,
+          "date": "2023-12-01",
+          "citations": 7,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "Neural network algorithms have shown superior performance over conventional algorithms, leading to the designation and deployment of dedicated accelerators in practical scenarios. Coarse-grained accelerators achieve high performance but can support only a limited number of predesigned operators, which cannot cover the flexible operators emerging in modern neural network algorithms. Therefore, fine-grained accelerators, such as instruction set architecture (ISA)-based accelerators, have become a hot research topic due to their sufficient flexibility to cover the unpredefined operators. The main challenges for fine-grained accelerators include the undesired long delays of single-image inference when performing multibatch inference, as well as the difficulty of meeting real-time constraints when processing multiple tasks simultaneously. This article proposes a hybrid intelligent processing unit (HIPU) to address the aforementioned problems. Specifically, we design a novel conversion-free data format, expanding the single-instruction multiple-data (SIMD) instruction set and optimizing the microarchitecture design to improve the performance. We also arrange the inference schedule to guarantee scalability on multicores. The experimental results show that the proposed accelerator maintains high multiply–accumulation (MAC) utilization for all common operators and achieves high performance with 4– $7\\times $ speedup against NVIDIA RTX2080Ti GPU. Finally, the proposed accelerator is manufactured using TSMC 28-nm technology, achieving 1 GHz for each core, with a peak performance of 13 TOPS."
+        },
+        {
+          "title": "Optimizing FPGA-Based DNN Accelerator With Shared Exponential Floating-Point Format",
+          "authors": [
+            "Wenzhe Zhao",
+            "Qiwei Dang",
+            "Tian Xia",
+            "Jingmin Zhang",
+            "Nanning Zheng",
+            "Pengju Ren"
+          ],
+          "year": 2023,
+          "date": "2023-11-01",
+          "citations": 13,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "In recent years, low-precision fixed-point computation has become a widely used technique for neural network inference on FPGAs. However, this approach has some limitations, as certain neural networks are difficult to quantify using fixed-point arithmetic, such as those involved in super-resolution scaling, image denoising, and other scenarios that lack sufficient conditions for fine-tuning. Furthermore, deploying a floating-point precision neural network directly on an FPGA would lead to significant hardware overhead and low computational efficiency. To address this issue, this paper proposes an FPGA-friendly floating-point data format that achieves the same storage density as int8 without sacrificing inference accuracy or requiring fine-tuning. Additionally, this paper presents an FPGA-based neural network accelerator that is compatible with the proposed format, utilizing DSP resources to increase the number of DSP cascading from 7 to 16, and solving the back-to-back accumulation issue of floating-point numbers. This design achieves comparable resource consumption and execution efficiency to those of 8-bit fixed-point accelerators. Experimental results demonstrate that the accelerator proposed in this study achieves the same accuracy as the native floating point on multiple neural networks without fine-tuning, and remains high computing performance. When deployed on the Xilinx ZU9P, the performance achieves 4.072 TFlops at 250 MHz, which outperforms the previous works, including the Xilinx official DPU."
+        },
+        {
+          "title": "The transcription factor PpTGA9 improves salt tolerance by interacting with PpATP1 in peach",
+          "authors": [
+            "Qijie Wu",
+            "Huiru Chi",
+            "Wenzhe Zhao",
+            "W. Xiao",
+            "Q. Tan",
+            "Xinmin Li",
+            "Ling Li",
+            "MingYue Sun"
+          ],
+          "year": 2023,
+          "date": "2023-08-01",
+          "citations": 3,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": ""
+        }
+      ]
+    ],
+    [
+      "Yang Zhao",
+      [
+        {
+          "title": "SAGE-LLM: Towards Safe and Generalizable LLM Controller with Fuzzy-CBF Verification and Graph-Structured Knowledge Retrieval for UAV Decision",
+          "authors": [
+            "Wenzhe Zhao",
+            "Yang Zhao",
+            "Ganchao Liu",
+            "Zhiyu Jiang",
+            "Dandan Ma",
+            "Zihao Li",
+            "Xuelong Li"
+          ],
+          "date": "2026-02-27",
+          "arxiv_id": "2602.23719v1",
+          "url": "https://arxiv.org/abs/2602.23719v1",
+          "abstract": "In UAV dynamic decision, complex and variable hazardous factors pose severe challenges to the generalization capability of algorithms. Despite offering semantic understanding and scene generalization, Large Language Models (LLM) lack domain-specific UAV control knowledge and formal safety assurances, restricting their direct applicability. To bridge this gap, this paper proposes a train-free two-layer decision architecture based on LLMs, integrating high-level safety planning with low-level precise control. The framework introduces three key contributions: 1) A fuzzy Control Barrier Function verification mechanism for semantically-augmented actions, providing provable safety certification for LLM outputs. 2) A star-hierarchical graph-based retrieval-augmented generation system, enabling efficient, elastic, and interpretable scene adaptation. 3) Systematic experimental validation in pursuit-evasion scenarios with unknown obstacles and emergent threats, demonstrating that our SAGE-LLM maintains performance while significantly enhancing safety and generalization without online training. The proposed framework demonstrates strong extensibility, suggesting its potential for generalization to broader embodied intelligence systems and safety-critical control domains."
+        }
+      ],
+      []
+    ],
+    [
+      "Ganchao Liu",
+      [
+        {
+          "title": "SAGE-LLM: Towards Safe and Generalizable LLM Controller with Fuzzy-CBF Verification and Graph-Structured Knowledge Retrieval for UAV Decision",
+          "authors": [
+            "Wenzhe Zhao",
+            "Yang Zhao",
+            "Ganchao Liu",
+            "Zhiyu Jiang",
+            "Dandan Ma",
+            "Zihao Li",
+            "Xuelong Li"
+          ],
+          "date": "2026-02-27",
+          "arxiv_id": "2602.23719v1",
+          "url": "https://arxiv.org/abs/2602.23719v1",
+          "abstract": "In UAV dynamic decision, complex and variable hazardous factors pose severe challenges to the generalization capability of algorithms. Despite offering semantic understanding and scene generalization, Large Language Models (LLM) lack domain-specific UAV control knowledge and formal safety assurances, restricting their direct applicability. To bridge this gap, this paper proposes a train-free two-layer decision architecture based on LLMs, integrating high-level safety planning with low-level precise control. The framework introduces three key contributions: 1) A fuzzy Control Barrier Function verification mechanism for semantically-augmented actions, providing provable safety certification for LLM outputs. 2) A star-hierarchical graph-based retrieval-augmented generation system, enabling efficient, elastic, and interpretable scene adaptation. 3) Systematic experimental validation in pursuit-evasion scenarios with unknown obstacles and emergent threats, demonstrating that our SAGE-LLM maintains performance while significantly enhancing safety and generalization without online training. The proposed framework demonstrates strong extensibility, suggesting its potential for generalization to broader embodied intelligence systems and safety-critical control domains."
+        }
+      ],
+      []
+    ],
+    [
+      "Zhiyu Jiang",
+      [
+        {
+          "title": "SAGE-LLM: Towards Safe and Generalizable LLM Controller with Fuzzy-CBF Verification and Graph-Structured Knowledge Retrieval for UAV Decision",
+          "authors": [
+            "Wenzhe Zhao",
+            "Yang Zhao",
+            "Ganchao Liu",
+            "Zhiyu Jiang",
+            "Dandan Ma",
+            "Zihao Li",
+            "Xuelong Li"
+          ],
+          "date": "2026-02-27",
+          "arxiv_id": "2602.23719v1",
+          "url": "https://arxiv.org/abs/2602.23719v1",
+          "abstract": "In UAV dynamic decision, complex and variable hazardous factors pose severe challenges to the generalization capability of algorithms. Despite offering semantic understanding and scene generalization, Large Language Models (LLM) lack domain-specific UAV control knowledge and formal safety assurances, restricting their direct applicability. To bridge this gap, this paper proposes a train-free two-layer decision architecture based on LLMs, integrating high-level safety planning with low-level precise control. The framework introduces three key contributions: 1) A fuzzy Control Barrier Function verification mechanism for semantically-augmented actions, providing provable safety certification for LLM outputs. 2) A star-hierarchical graph-based retrieval-augmented generation system, enabling efficient, elastic, and interpretable scene adaptation. 3) Systematic experimental validation in pursuit-evasion scenarios with unknown obstacles and emergent threats, demonstrating that our SAGE-LLM maintains performance while significantly enhancing safety and generalization without online training. The proposed framework demonstrates strong extensibility, suggesting its potential for generalization to broader embodied intelligence systems and safety-critical control domains."
+        }
+      ],
+      []
+    ],
+    [
+      "Dandan Ma",
+      [
+        {
+          "title": "SAGE-LLM: Towards Safe and Generalizable LLM Controller with Fuzzy-CBF Verification and Graph-Structured Knowledge Retrieval for UAV Decision",
+          "authors": [
+            "Wenzhe Zhao",
+            "Yang Zhao",
+            "Ganchao Liu",
+            "Zhiyu Jiang",
+            "Dandan Ma",
+            "Zihao Li",
+            "Xuelong Li"
+          ],
+          "date": "2026-02-27",
+          "arxiv_id": "2602.23719v1",
+          "url": "https://arxiv.org/abs/2602.23719v1",
+          "abstract": "In UAV dynamic decision, complex and variable hazardous factors pose severe challenges to the generalization capability of algorithms. Despite offering semantic understanding and scene generalization, Large Language Models (LLM) lack domain-specific UAV control knowledge and formal safety assurances, restricting their direct applicability. To bridge this gap, this paper proposes a train-free two-layer decision architecture based on LLMs, integrating high-level safety planning with low-level precise control. The framework introduces three key contributions: 1) A fuzzy Control Barrier Function verification mechanism for semantically-augmented actions, providing provable safety certification for LLM outputs. 2) A star-hierarchical graph-based retrieval-augmented generation system, enabling efficient, elastic, and interpretable scene adaptation. 3) Systematic experimental validation in pursuit-evasion scenarios with unknown obstacles and emergent threats, demonstrating that our SAGE-LLM maintains performance while significantly enhancing safety and generalization without online training. The proposed framework demonstrates strong extensibility, suggesting its potential for generalization to broader embodied intelligence systems and safety-critical control domains."
+        }
+      ],
+      []
+    ],
+    [
+      "Xuelong Li",
+      [
+        {
+          "title": "SAGE-LLM: Towards Safe and Generalizable LLM Controller with Fuzzy-CBF Verification and Graph-Structured Knowledge Retrieval for UAV Decision",
+          "authors": [
+            "Wenzhe Zhao",
+            "Yang Zhao",
+            "Ganchao Liu",
+            "Zhiyu Jiang",
+            "Dandan Ma",
+            "Zihao Li",
+            "Xuelong Li"
+          ],
+          "date": "2026-02-27",
+          "arxiv_id": "2602.23719v1",
+          "url": "https://arxiv.org/abs/2602.23719v1",
+          "abstract": "In UAV dynamic decision, complex and variable hazardous factors pose severe challenges to the generalization capability of algorithms. Despite offering semantic understanding and scene generalization, Large Language Models (LLM) lack domain-specific UAV control knowledge and formal safety assurances, restricting their direct applicability. To bridge this gap, this paper proposes a train-free two-layer decision architecture based on LLMs, integrating high-level safety planning with low-level precise control. The framework introduces three key contributions: 1) A fuzzy Control Barrier Function verification mechanism for semantically-augmented actions, providing provable safety certification for LLM outputs. 2) A star-hierarchical graph-based retrieval-augmented generation system, enabling efficient, elastic, and interpretable scene adaptation. 3) Systematic experimental validation in pursuit-evasion scenarios with unknown obstacles and emergent threats, demonstrating that our SAGE-LLM maintains performance while significantly enhancing safety and generalization without online training. The proposed framework demonstrates strong extensibility, suggesting its potential for generalization to broader embodied intelligence systems and safety-critical control domains."
+        }
+      ],
+      []
+    ],
+    [
+      "Sander Tonkens",
+      [
+        {
+          "title": "Refining Almost-Safe Value Functions on the Fly",
+          "authors": [
+            "Sander Tonkens",
+            "Sosuke Kojima",
+            "Chenhao Liu",
+            "Judy Masri",
+            "Sylvia Herbert"
+          ],
+          "date": "2026-02-26",
+          "arxiv_id": "2602.23478v1",
+          "url": "https://arxiv.org/abs/2602.23478v1",
+          "abstract": "Control Barrier Functions (CBFs) are a powerful tool for ensuring robotic safety, but designing or learning valid CBFs for complex systems is a significant challenge. While Hamilton-Jacobi Reachability provides a formal method for synthesizing safe value functions, it scales poorly and is typically performed offline, limiting its applicability in dynamic environments. This paper bridges the gap between offline synthesis and online adaptation. We introduce refineCBF for refining an approximate CBF - whether analytically derived, learned, or even unsafe - via warm-started HJ reachability. We then present its computationally efficient successor, HJ-Patch, which accelerates this process through localized updates. Both methods guarantee the recovery of a safe value function and can ensure monotonic safety improvements during adaptation. Our experiments validate our framework's primary contribution: in-the-loop, real-time adaptation, in simulation (with detailed value function analysis) and on physical hardware. Our experiments on ground vehicles and quadcopters show that our framework can successfully adapt to sudden environmental changes, such as new obstacles and unmodeled wind disturbances, providing a practical path toward deploying formally guaranteed safety in real-world settings."
+        }
+      ],
+      []
+    ],
+    [
+      "Sosuke Kojima",
+      [
+        {
+          "title": "Refining Almost-Safe Value Functions on the Fly",
+          "authors": [
+            "Sander Tonkens",
+            "Sosuke Kojima",
+            "Chenhao Liu",
+            "Judy Masri",
+            "Sylvia Herbert"
+          ],
+          "date": "2026-02-26",
+          "arxiv_id": "2602.23478v1",
+          "url": "https://arxiv.org/abs/2602.23478v1",
+          "abstract": "Control Barrier Functions (CBFs) are a powerful tool for ensuring robotic safety, but designing or learning valid CBFs for complex systems is a significant challenge. While Hamilton-Jacobi Reachability provides a formal method for synthesizing safe value functions, it scales poorly and is typically performed offline, limiting its applicability in dynamic environments. This paper bridges the gap between offline synthesis and online adaptation. We introduce refineCBF for refining an approximate CBF - whether analytically derived, learned, or even unsafe - via warm-started HJ reachability. We then present its computationally efficient successor, HJ-Patch, which accelerates this process through localized updates. Both methods guarantee the recovery of a safe value function and can ensure monotonic safety improvements during adaptation. Our experiments validate our framework's primary contribution: in-the-loop, real-time adaptation, in simulation (with detailed value function analysis) and on physical hardware. Our experiments on ground vehicles and quadcopters show that our framework can successfully adapt to sudden environmental changes, such as new obstacles and unmodeled wind disturbances, providing a practical path toward deploying formally guaranteed safety in real-world settings."
+        }
+      ],
+      []
+    ],
+    [
+      "Chenhao Liu",
+      [
+        {
+          "title": "Refining Almost-Safe Value Functions on the Fly",
+          "authors": [
+            "Sander Tonkens",
+            "Sosuke Kojima",
+            "Chenhao Liu",
+            "Judy Masri",
+            "Sylvia Herbert"
+          ],
+          "date": "2026-02-26",
+          "arxiv_id": "2602.23478v1",
+          "url": "https://arxiv.org/abs/2602.23478v1",
+          "abstract": "Control Barrier Functions (CBFs) are a powerful tool for ensuring robotic safety, but designing or learning valid CBFs for complex systems is a significant challenge. While Hamilton-Jacobi Reachability provides a formal method for synthesizing safe value functions, it scales poorly and is typically performed offline, limiting its applicability in dynamic environments. This paper bridges the gap between offline synthesis and online adaptation. We introduce refineCBF for refining an approximate CBF - whether analytically derived, learned, or even unsafe - via warm-started HJ reachability. We then present its computationally efficient successor, HJ-Patch, which accelerates this process through localized updates. Both methods guarantee the recovery of a safe value function and can ensure monotonic safety improvements during adaptation. Our experiments validate our framework's primary contribution: in-the-loop, real-time adaptation, in simulation (with detailed value function analysis) and on physical hardware. Our experiments on ground vehicles and quadcopters show that our framework can successfully adapt to sudden environmental changes, such as new obstacles and unmodeled wind disturbances, providing a practical path toward deploying formally guaranteed safety in real-world settings."
+        }
+      ],
+      []
+    ],
+    [
+      "Judy Masri",
+      [
+        {
+          "title": "Refining Almost-Safe Value Functions on the Fly",
+          "authors": [
+            "Sander Tonkens",
+            "Sosuke Kojima",
+            "Chenhao Liu",
+            "Judy Masri",
+            "Sylvia Herbert"
+          ],
+          "date": "2026-02-26",
+          "arxiv_id": "2602.23478v1",
+          "url": "https://arxiv.org/abs/2602.23478v1",
+          "abstract": "Control Barrier Functions (CBFs) are a powerful tool for ensuring robotic safety, but designing or learning valid CBFs for complex systems is a significant challenge. While Hamilton-Jacobi Reachability provides a formal method for synthesizing safe value functions, it scales poorly and is typically performed offline, limiting its applicability in dynamic environments. This paper bridges the gap between offline synthesis and online adaptation. We introduce refineCBF for refining an approximate CBF - whether analytically derived, learned, or even unsafe - via warm-started HJ reachability. We then present its computationally efficient successor, HJ-Patch, which accelerates this process through localized updates. Both methods guarantee the recovery of a safe value function and can ensure monotonic safety improvements during adaptation. Our experiments validate our framework's primary contribution: in-the-loop, real-time adaptation, in simulation (with detailed value function analysis) and on physical hardware. Our experiments on ground vehicles and quadcopters show that our framework can successfully adapt to sudden environmental changes, such as new obstacles and unmodeled wind disturbances, providing a practical path toward deploying formally guaranteed safety in real-world settings."
+        }
+      ],
+      []
+    ],
+    [
+      "Darshan Gadginmath",
+      [
+        {
+          "title": "Provably Safe Generative Sampling with Constricting Barrier Functions",
+          "authors": [
+            "Darshan Gadginmath",
+            "Ahmed Allibhoy",
+            "Fabio Pasqualetti"
+          ],
+          "date": "2026-02-24",
+          "arxiv_id": "2602.21429v2",
+          "url": "https://arxiv.org/abs/2602.21429v2",
+          "abstract": "Flow-based generative models, such as diffusion models and flow matching models, have achieved remarkable success in learning complex data distributions. However, a critical gap remains for their deployment in safety-critical domains: the lack of formal guarantees that generated samples will satisfy hard constraints. We address this by proposing a safety filtering framework that acts as an online shield for any pre-trained generative model. Our key insight is to cooperate with the generative process rather than override it. We define a constricting safety tube that is relaxed at the initial noise distribution and progressively tightens to the target safe set at the final data distribution, mirroring the coarse-to-fine structure of the generative process itself. By characterizing this tube via Control Barrier Functions (CBFs), we synthesize a feedback control input through a convex Quadratic Program (QP) at each sampling step. As the tube is loosest when noise is high and intervention is cheapest in terms of control energy, most constraint enforcement occurs when it least disrupts the model's learned structure. We prove that this mechanism guarantees safe sampling while minimizing the distributional shift from the original model at each sampling step, as quantified by the KL divergence. Our framework applies to any pre-trained flow-based generative scheme requiring no retraining or architectural modifications. We validate the approach across constrained image generation, physically-consistent trajectory sampling, and safe robotic manipulation policies, achieving 100% constraint satisfaction while preserving semantic fidelity."
+        }
+      ],
+      []
+    ],
+    [
+      "Ahmed Allibhoy",
+      [
+        {
+          "title": "Provably Safe Generative Sampling with Constricting Barrier Functions",
+          "authors": [
+            "Darshan Gadginmath",
+            "Ahmed Allibhoy",
+            "Fabio Pasqualetti"
+          ],
+          "date": "2026-02-24",
+          "arxiv_id": "2602.21429v2",
+          "url": "https://arxiv.org/abs/2602.21429v2",
+          "abstract": "Flow-based generative models, such as diffusion models and flow matching models, have achieved remarkable success in learning complex data distributions. However, a critical gap remains for their deployment in safety-critical domains: the lack of formal guarantees that generated samples will satisfy hard constraints. We address this by proposing a safety filtering framework that acts as an online shield for any pre-trained generative model. Our key insight is to cooperate with the generative process rather than override it. We define a constricting safety tube that is relaxed at the initial noise distribution and progressively tightens to the target safe set at the final data distribution, mirroring the coarse-to-fine structure of the generative process itself. By characterizing this tube via Control Barrier Functions (CBFs), we synthesize a feedback control input through a convex Quadratic Program (QP) at each sampling step. As the tube is loosest when noise is high and intervention is cheapest in terms of control energy, most constraint enforcement occurs when it least disrupts the model's learned structure. We prove that this mechanism guarantees safe sampling while minimizing the distributional shift from the original model at each sampling step, as quantified by the KL divergence. Our framework applies to any pre-trained flow-based generative scheme requiring no retraining or architectural modifications. We validate the approach across constrained image generation, physically-consistent trajectory sampling, and safe robotic manipulation policies, achieving 100% constraint satisfaction while preserving semantic fidelity."
+        }
+      ],
+      []
+    ],
+    [
+      "Fabio Pasqualetti",
+      [
+        {
+          "title": "Provably Safe Generative Sampling with Constricting Barrier Functions",
+          "authors": [
+            "Darshan Gadginmath",
+            "Ahmed Allibhoy",
+            "Fabio Pasqualetti"
+          ],
+          "date": "2026-02-24",
+          "arxiv_id": "2602.21429v2",
+          "url": "https://arxiv.org/abs/2602.21429v2",
+          "abstract": "Flow-based generative models, such as diffusion models and flow matching models, have achieved remarkable success in learning complex data distributions. However, a critical gap remains for their deployment in safety-critical domains: the lack of formal guarantees that generated samples will satisfy hard constraints. We address this by proposing a safety filtering framework that acts as an online shield for any pre-trained generative model. Our key insight is to cooperate with the generative process rather than override it. We define a constricting safety tube that is relaxed at the initial noise distribution and progressively tightens to the target safe set at the final data distribution, mirroring the coarse-to-fine structure of the generative process itself. By characterizing this tube via Control Barrier Functions (CBFs), we synthesize a feedback control input through a convex Quadratic Program (QP) at each sampling step. As the tube is loosest when noise is high and intervention is cheapest in terms of control energy, most constraint enforcement occurs when it least disrupts the model's learned structure. We prove that this mechanism guarantees safe sampling while minimizing the distributional shift from the original model at each sampling step, as quantified by the KL divergence. Our framework applies to any pre-trained flow-based generative scheme requiring no retraining or architectural modifications. We validate the approach across constrained image generation, physically-consistent trajectory sampling, and safe robotic manipulation policies, achieving 100% constraint satisfaction while preserving semantic fidelity."
+        }
+      ],
+      []
+    ],
+    [
+      "Thanh Q. Tran",
+      [
+        {
+          "title": "BarrierSteer: LLM Safety via Learning Barrier Steering",
+          "authors": [
+            "Thanh Q. Tran",
+            "Arun Verma",
+            "Kiwan Wong",
+            "Bryan Kian Hsiang Low",
+            "Daniela Rus",
+            "Wei Xiao"
+          ],
+          "date": "2026-02-23",
+          "arxiv_id": "2602.20102v1",
+          "url": "https://arxiv.org/abs/2602.20102v1",
+          "abstract": "Despite the state-of-the-art performance of large language models (LLMs) across diverse tasks, their susceptibility to adversarial attacks and unsafe content generation remains a major obstacle to deployment, particularly in high-stakes settings. Addressing this challenge requires safety mechanisms that are both practically effective and supported by rigorous theory. We introduce BarrierSteer, a novel framework that formalizes response safety by embedding learned non-linear safety constraints directly into the model's latent representation space. BarrierSteer employs a steering mechanism based on Control Barrier Functions (CBFs) to efficiently detect and prevent unsafe response trajectories during inference with high precision. By enforcing multiple safety constraints through efficient constraint merging, without modifying the underlying LLM parameters, BarrierSteer preserves the model's original capabilities and performance. We provide theoretical results establishing that applying CBFs in latent space offers a principled and computationally efficient approach to enforcing safety. Our experiments across multiple models and datasets show that BarrierSteer substantially reduces adversarial success rates, decreases unsafe generations, and outperforms existing methods."
+        }
+      ],
+      []
+    ],
+    [
+      "Arun Verma",
+      [
+        {
+          "title": "BarrierSteer: LLM Safety via Learning Barrier Steering",
+          "authors": [
+            "Thanh Q. Tran",
+            "Arun Verma",
+            "Kiwan Wong",
+            "Bryan Kian Hsiang Low",
+            "Daniela Rus",
+            "Wei Xiao"
+          ],
+          "date": "2026-02-23",
+          "arxiv_id": "2602.20102v1",
+          "url": "https://arxiv.org/abs/2602.20102v1",
+          "abstract": "Despite the state-of-the-art performance of large language models (LLMs) across diverse tasks, their susceptibility to adversarial attacks and unsafe content generation remains a major obstacle to deployment, particularly in high-stakes settings. Addressing this challenge requires safety mechanisms that are both practically effective and supported by rigorous theory. We introduce BarrierSteer, a novel framework that formalizes response safety by embedding learned non-linear safety constraints directly into the model's latent representation space. BarrierSteer employs a steering mechanism based on Control Barrier Functions (CBFs) to efficiently detect and prevent unsafe response trajectories during inference with high precision. By enforcing multiple safety constraints through efficient constraint merging, without modifying the underlying LLM parameters, BarrierSteer preserves the model's original capabilities and performance. We provide theoretical results establishing that applying CBFs in latent space offers a principled and computationally efficient approach to enforcing safety. Our experiments across multiple models and datasets show that BarrierSteer substantially reduces adversarial success rates, decreases unsafe generations, and outperforms existing methods."
+        }
+      ],
+      []
+    ],
+    [
+      "Kiwan Wong",
+      [
+        {
+          "title": "BarrierSteer: LLM Safety via Learning Barrier Steering",
+          "authors": [
+            "Thanh Q. Tran",
+            "Arun Verma",
+            "Kiwan Wong",
+            "Bryan Kian Hsiang Low",
+            "Daniela Rus",
+            "Wei Xiao"
+          ],
+          "date": "2026-02-23",
+          "arxiv_id": "2602.20102v1",
+          "url": "https://arxiv.org/abs/2602.20102v1",
+          "abstract": "Despite the state-of-the-art performance of large language models (LLMs) across diverse tasks, their susceptibility to adversarial attacks and unsafe content generation remains a major obstacle to deployment, particularly in high-stakes settings. Addressing this challenge requires safety mechanisms that are both practically effective and supported by rigorous theory. We introduce BarrierSteer, a novel framework that formalizes response safety by embedding learned non-linear safety constraints directly into the model's latent representation space. BarrierSteer employs a steering mechanism based on Control Barrier Functions (CBFs) to efficiently detect and prevent unsafe response trajectories during inference with high precision. By enforcing multiple safety constraints through efficient constraint merging, without modifying the underlying LLM parameters, BarrierSteer preserves the model's original capabilities and performance. We provide theoretical results establishing that applying CBFs in latent space offers a principled and computationally efficient approach to enforcing safety. Our experiments across multiple models and datasets show that BarrierSteer substantially reduces adversarial success rates, decreases unsafe generations, and outperforms existing methods."
+        }
+      ],
+      []
+    ],
+    [
+      "Bryan Kian Hsiang Low",
+      [
+        {
+          "title": "BarrierSteer: LLM Safety via Learning Barrier Steering",
+          "authors": [
+            "Thanh Q. Tran",
+            "Arun Verma",
+            "Kiwan Wong",
+            "Bryan Kian Hsiang Low",
+            "Daniela Rus",
+            "Wei Xiao"
+          ],
+          "date": "2026-02-23",
+          "arxiv_id": "2602.20102v1",
+          "url": "https://arxiv.org/abs/2602.20102v1",
+          "abstract": "Despite the state-of-the-art performance of large language models (LLMs) across diverse tasks, their susceptibility to adversarial attacks and unsafe content generation remains a major obstacle to deployment, particularly in high-stakes settings. Addressing this challenge requires safety mechanisms that are both practically effective and supported by rigorous theory. We introduce BarrierSteer, a novel framework that formalizes response safety by embedding learned non-linear safety constraints directly into the model's latent representation space. BarrierSteer employs a steering mechanism based on Control Barrier Functions (CBFs) to efficiently detect and prevent unsafe response trajectories during inference with high precision. By enforcing multiple safety constraints through efficient constraint merging, without modifying the underlying LLM parameters, BarrierSteer preserves the model's original capabilities and performance. We provide theoretical results establishing that applying CBFs in latent space offers a principled and computationally efficient approach to enforcing safety. Our experiments across multiple models and datasets show that BarrierSteer substantially reduces adversarial success rates, decreases unsafe generations, and outperforms existing methods."
+        }
+      ],
+      []
+    ],
+    [
+      "Daniela Rus",
+      [
+        {
+          "title": "BarrierSteer: LLM Safety via Learning Barrier Steering",
+          "authors": [
+            "Thanh Q. Tran",
+            "Arun Verma",
+            "Kiwan Wong",
+            "Bryan Kian Hsiang Low",
+            "Daniela Rus",
+            "Wei Xiao"
+          ],
+          "date": "2026-02-23",
+          "arxiv_id": "2602.20102v1",
+          "url": "https://arxiv.org/abs/2602.20102v1",
+          "abstract": "Despite the state-of-the-art performance of large language models (LLMs) across diverse tasks, their susceptibility to adversarial attacks and unsafe content generation remains a major obstacle to deployment, particularly in high-stakes settings. Addressing this challenge requires safety mechanisms that are both practically effective and supported by rigorous theory. We introduce BarrierSteer, a novel framework that formalizes response safety by embedding learned non-linear safety constraints directly into the model's latent representation space. BarrierSteer employs a steering mechanism based on Control Barrier Functions (CBFs) to efficiently detect and prevent unsafe response trajectories during inference with high precision. By enforcing multiple safety constraints through efficient constraint merging, without modifying the underlying LLM parameters, BarrierSteer preserves the model's original capabilities and performance. We provide theoretical results establishing that applying CBFs in latent space offers a principled and computationally efficient approach to enforcing safety. Our experiments across multiple models and datasets show that BarrierSteer substantially reduces adversarial success rates, decreases unsafe generations, and outperforms existing methods."
+        }
+      ],
+      []
+    ],
+    [
+      "Christos Cassandras",
+      [
+        {
+          "title": "Robust Taylor-Lagrange Control for Safety-Critical Systems",
+          "authors": [
+            "Wei Xiao",
+            "Christos Cassandras",
+            "Anni Li"
+          ],
+          "date": "2026-02-23",
+          "arxiv_id": "2602.20076v1",
+          "url": "https://arxiv.org/abs/2602.20076v1",
+          "abstract": "Solving safety-critical control problem has widely adopted the Control Barrier Function (CBF) method. However, the existence of a CBF is only a sufficient condition for system safety. The recently proposed Taylor-Lagrange Control (TLC) method addresses this limitation, but is vulnerable to the feasibility preservation problem (e.g., inter-sampling effect). In this paper, we propose a robust TLC (rTLC) method to address the feasibility preservation problem. Specifically, the rTLC method expands the safety function at an order higher than the relative degree of the function using Taylor's expansion with Lagrange remainder, which allows the control to explicitly show up at the current time instead of the future time in the TLC method. The rTLC method naturally addresses the feasibility preservation problem with only one hyper-parameter (the discretization time interval size during implementation), which is much less than its counterparts. Finally, we illustrate the effectiveness of the proposed rTLC method through an adaptive cruise control problem, and compare it with existing safety-critical control methods."
+        }
+      ],
+      []
+    ],
+    [
+      "Zachary Ravichandran",
+      [
+        {
+          "title": "Contextual Safety Reasoning and Grounding for Open-World Robots",
+          "authors": [
+            "Zachary Ravichandran",
+            "David Snyder",
+            "Alexander Robey",
+            "Hamed Hassani",
+            "Vijay Kumar",
+            "George J. Pappas"
+          ],
+          "date": "2026-02-23",
+          "arxiv_id": "2602.19983v2",
+          "url": "https://arxiv.org/abs/2602.19983v2",
+          "abstract": "Robots are increasingly operating in open-world environments where safe behavior depends on context: the same hallway may require different navigation strategies when crowded versus empty, or during an emergency versus normal operations. Traditional safety approaches enforce fixed constraints in user-specified contexts, limiting their ability to handle the open-ended contextual variability of real-world deployment. We address this gap via CORE, a safety framework that enables online contextual reasoning, grounding, and enforcement without prior knowledge of the environment (e.g., maps or safety specifications). CORE uses a vision-language model (VLM) to continuously reason about context-dependent safety rules directly from visual observations, grounds these rules in the physical environment, and enforces the resulting spatially-defined safe sets via control barrier functions. We provide probabilistic safety guarantees for CORE that account for perceptual uncertainty, and we demonstrate through simulation and real-world experiments that CORE enforces contextually appropriate behavior in unseen environments, significantly outperforming prior semantic safety methods that lack online contextual reasoning. Ablation studies validate our theoretical guarantees and underscore the importance of both VLM-based reasoning and spatial grounding for enforcing contextual safety in novel settings. We provide additional resources at https://zacravichandran.github.io/CORE."
+        }
+      ],
+      []
+    ]
   ]
 }
