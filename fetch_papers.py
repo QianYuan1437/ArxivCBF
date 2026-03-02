@@ -61,6 +61,15 @@ def infer_topic(title="", abstract=""):
     return "other", "Other"
 
 
+def _is_robotics_related(title="", abstract="", subjects=None, extra_text=""):
+    text = f"{title} {abstract} {extra_text}".lower()
+    robotics_keywords = TOPIC_RULES[1][2]
+    if any(word in text for word in robotics_keywords):
+        return True
+    subjects = subjects or []
+    return any(s in {"cs.RO"} for s in subjects)
+
+
 def _subject_label(subject_code):
     return ARXIV_SUBJECT_LABELS.get(subject_code, subject_code)
 
@@ -294,7 +303,7 @@ def fetch_latest_papers(max_results=50):
     return papers
 
 
-def fetch_conference_papers(max_results=350, per_group_extra=120):
+def fetch_conference_papers(max_results=350, per_group_extra=45):
     ns = {
         "atom": "http://www.w3.org/2005/Atom",
         "arxiv": "http://arxiv.org/schemas/atom",
@@ -329,6 +338,7 @@ def fetch_conference_papers(max_results=350, per_group_extra=120):
             "venue": venue,
             "venue_year": _extract_year(f"{journal_ref} {comment}", fallback=date),
             "is_cbf": _is_cbf_related(title, abstract),
+            "is_robotics": _is_robotics_related(title=title, abstract=abstract, subjects=subjects, extra_text=f"{journal_ref} {comment}"),
         }
 
     # Seed CBF conference papers.
@@ -379,6 +389,8 @@ def fetch_conference_papers(max_results=350, per_group_extra=120):
             if not parsed:
                 continue
             if parsed["venue"] != venue or parsed["venue_year"] != year:
+                continue
+            if (not parsed["is_cbf"]) and (not parsed.get("is_robotics", False)):
                 continue
             key = _normalize_arxiv_id(parsed["arxiv_id"])
             if key in seen:
