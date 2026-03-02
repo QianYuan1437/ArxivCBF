@@ -10,6 +10,7 @@ from xml.etree import ElementTree as ET
 import requests
 
 SEMANTIC_SCHOLAR_API = "https://api.semanticscholar.org/graph/v1/paper/search"
+SEMANTIC_SCHOLAR_PAPER_API = "https://api.semanticscholar.org/graph/v1/paper"
 ARXIV_API = "http://export.arxiv.org/api/query"
 CBF_KEYWORDS = (
     "control barrier function",
@@ -48,6 +49,8 @@ CONFERENCE_ALIASES = {
     "TRO": (" transactions on robotics ",),
     "TAC": (" transactions on automatic control ",),
 }
+
+VENUE_ORDER = ["IROS", "ICRA", "RSS", "CoRL", "CDC", "ACC", "RAL", "TRO", "TAC"]
 
 
 def infer_topic(title="", abstract=""):
@@ -130,6 +133,21 @@ def _semantic_scholar_get(params, retries=4, timeout=30):
     return None
 
 
+def _semantic_scholar_get_paper(paper_key, retries=3, timeout=30):
+    url = f"{SEMANTIC_SCHOLAR_PAPER_API}/{paper_key}"
+    params = {"fields": "citationCount"}
+    for attempt in range(retries):
+        try:
+            resp = requests.get(url, params=params, timeout=timeout)
+        except requests.RequestException:
+            resp = None
+        if resp is not None and resp.status_code == 200:
+            return resp
+        if attempt < retries - 1:
+            time.sleep(1.0 * (attempt + 1))
+    return None
+
+
 def _is_cbf_related(title="", abstract=""):
     text = f"{title} {abstract}".lower()
     return any(keyword in text for keyword in CBF_KEYWORDS)
@@ -207,6 +225,29 @@ def enrich_arxiv_subjects(papers, batch_size=40):
             p["subjects"] = subject_map.get(aid, p.get("subjects", []))
 
 
+def enrich_citations(papers, delay=0.15):
+    cache = {}
+    for p in papers:
+        aid = _normalize_arxiv_id(p.get("arxiv_id"))
+        if not aid:
+            p["citations"] = int(p.get("citations", 0) or 0)
+            continue
+        if aid in cache:
+            p["citations"] = cache[aid]
+            continue
+        resp = _semantic_scholar_get_paper(f"ARXIV:{aid}")
+        if resp is not None:
+            try:
+                c = int(resp.json().get("citationCount", 0) or 0)
+            except Exception:
+                c = int(p.get("citations", 0) or 0)
+        else:
+            c = int(p.get("citations", 0) or 0)
+        cache[aid] = c
+        p["citations"] = c
+        time.sleep(delay)
+
+
 def fetch_latest_papers(max_results=50):
     params = {
         "search_query": 'all:"control barrier function"',
@@ -243,6 +284,7 @@ def fetch_latest_papers(max_results=50):
                 "title": title,
                 "authors": [a.find("atom:name", ns).text for a in entry.findall("atom:author", ns)],
                 "date": entry.find("atom:published", ns).text[:10],
+                "citations": 0,
                 "arxiv_id": arxiv_id,
                 "url": f"https://arxiv.org/abs/{arxiv_id}",
                 "abstract": abstract,
@@ -252,7 +294,44 @@ def fetch_latest_papers(max_results=50):
     return papers
 
 
-def fetch_conference_papers(max_results=300):
+def fetch_conference_papers(max_results=350, per_group_extra=120):
+    ns = {
+        "atom": "http://www.w3.org/2005/Atom",
+        "arxiv": "http://arxiv.org/schemas/atom",
+    }
+
+    def _parse_entry(entry):
+        arxiv_id = entry.find("atom:id", ns).text.split("/abs/")[-1]
+        title = entry.find("atom:title", ns).text.strip()
+        abstract = entry.find("atom:summary", ns).text.strip()
+        journal_ref = (entry.find("arxiv:journal_ref", ns).text or "") if entry.find("arxiv:journal_ref", ns) is not None else ""
+        comment = (entry.find("arxiv:comment", ns).text or "") if entry.find("arxiv:comment", ns) is not None else ""
+        venue = _infer_venue(journal_ref=journal_ref, comment=comment, title=title)
+        if not venue:
+            return None
+        primary = entry.find("arxiv:primary_category", ns)
+        primary_term = primary.get("term") if primary is not None else ""
+        all_terms = [c.get("term") for c in entry.findall("atom:category", ns) if c.get("term")]
+        subjects = []
+        if primary_term:
+            subjects.append(primary_term)
+        subjects.extend([t for t in all_terms if t != primary_term])
+        date = entry.find("atom:published", ns).text[:10]
+        return {
+            "title": title,
+            "authors": [a.find("atom:name", ns).text for a in entry.findall("atom:author", ns)],
+            "date": date,
+            "citations": 0,
+            "arxiv_id": arxiv_id,
+            "url": f"https://arxiv.org/abs/{arxiv_id}",
+            "abstract": abstract,
+            "subjects": subjects,
+            "venue": venue,
+            "venue_year": _extract_year(f"{journal_ref} {comment}", fallback=date),
+            "is_cbf": _is_cbf_related(title, abstract),
+        }
+
+    # Seed CBF conference papers.
     params = {
         "search_query": 'all:"control barrier function"',
         "start": 0,
@@ -262,83 +341,86 @@ def fetch_conference_papers(max_results=300):
     }
     resp = requests.get(ARXIV_API, params=params, timeout=30)
     resp.raise_for_status()
-
-    ns = {
-        "atom": "http://www.w3.org/2005/Atom",
-        "arxiv": "http://arxiv.org/schemas/atom",
-    }
     root = ET.fromstring(resp.content)
 
     papers = []
     seen = set()
+    cbf_groups = set()
     for entry in root.findall("atom:entry", ns):
-        arxiv_id = entry.find("atom:id", ns).text.split("/abs/")[-1]
-        title = entry.find("atom:title", ns).text.strip()
-        abstract = entry.find("atom:summary", ns).text.strip()
-        if not _is_cbf_related(title, abstract):
+        parsed = _parse_entry(entry)
+        if not parsed or not parsed["is_cbf"]:
             continue
-
-        journal_ref = (entry.find("arxiv:journal_ref", ns).text or "") if entry.find("arxiv:journal_ref", ns) is not None else ""
-        comment = (entry.find("arxiv:comment", ns).text or "") if entry.find("arxiv:comment", ns) is not None else ""
-        venue = _infer_venue(journal_ref=journal_ref, comment=comment, title=title)
-        if not venue:
-            continue
-
-        primary = entry.find("arxiv:primary_category", ns)
-        primary_term = primary.get("term") if primary is not None else ""
-        all_terms = [c.get("term") for c in entry.findall("atom:category", ns) if c.get("term")]
-        subjects = []
-        if primary_term:
-            subjects.append(primary_term)
-        subjects.extend([t for t in all_terms if t != primary_term])
-
-        date = entry.find("atom:published", ns).text[:10]
-        year = _extract_year(f"{journal_ref} {comment}", fallback=date)
-        key = _normalize_arxiv_id(arxiv_id)
+        key = _normalize_arxiv_id(parsed["arxiv_id"])
         if key in seen:
             continue
         seen.add(key)
-        papers.append(
-            {
-                "title": title,
-                "authors": [a.find("atom:name", ns).text for a in entry.findall("atom:author", ns)],
-                "date": date,
-                "citations": 0,
-                "arxiv_id": arxiv_id,
-                "url": f"https://arxiv.org/abs/{arxiv_id}",
-                "abstract": abstract,
-                "subjects": subjects,
-                "venue": venue,
-                "venue_year": year,
-            }
-        )
+        papers.append(parsed)
+        cbf_groups.add((parsed["venue"], parsed["venue_year"]))
+
+    # For each discovered venue-year, additionally collect non-CBF papers.
+    for venue, year in sorted(cbf_groups):
+        q = f'all:"{venue}" AND all:"{year}"'
+        params = {
+            "search_query": q,
+            "start": 0,
+            "max_results": per_group_extra,
+            "sortBy": "submittedDate",
+            "sortOrder": "descending",
+        }
+        try:
+            resp = requests.get(ARXIV_API, params=params, timeout=30)
+            resp.raise_for_status()
+            root = ET.fromstring(resp.content)
+        except Exception:
+            continue
+
+        for entry in root.findall("atom:entry", ns):
+            parsed = _parse_entry(entry)
+            if not parsed:
+                continue
+            if parsed["venue"] != venue or parsed["venue_year"] != year:
+                continue
+            key = _normalize_arxiv_id(parsed["arxiv_id"])
+            if key in seen:
+                continue
+            seen.add(key)
+            papers.append(parsed)
+        time.sleep(0.2)
+
     return papers
 
 
 def build_conference_groups(conference_papers):
-    groups = defaultdict(list)
+    groups = defaultdict(lambda: {"cbf": [], "other": []})
     for p in conference_papers:
         venue = p.get("venue", "")
         year = p.get("venue_year", "")
         if not venue or not year:
             continue
-        groups[f"{venue} {year}"].append(p)
+        key = f"{venue} {year}"
+        if p.get("is_cbf", False):
+            groups[key]["cbf"].append(p)
+        else:
+            groups[key]["other"].append(p)
 
     for k in groups:
-        groups[k].sort(key=lambda x: x.get("date", ""), reverse=True)
+        groups[k]["cbf"].sort(key=lambda x: x.get("date", ""), reverse=True)
+        groups[k]["other"].sort(key=lambda x: x.get("date", ""), reverse=True)
 
     def _group_sort_key(name):
         parts = name.rsplit(" ", 1)
         if len(parts) != 2:
-            return (0, name)
+            return (999, 0, name)
         venue, year = parts[0], parts[1]
         try:
             y = int(year)
         except Exception:
             y = 0
-        return (-y, venue)
+        venue_rank = VENUE_ORDER.index(venue) if venue in VENUE_ORDER else 999
+        return (venue_rank, -y, name)
 
-    return sorted(groups.items(), key=lambda x: _group_sort_key(x[0]))
+    items = sorted(groups.items(), key=lambda x: _group_sort_key(x[0]))
+    return [(name, payload["cbf"], payload["other"]) for name, payload in items]
 
 
 def fetch_high_citation_papers(min_citations=100, max_results=200):
@@ -504,9 +586,11 @@ def paper_card(p, show_citations=False, show_date=True):
 def generate_html(high_citation, latest, authors, conferences=None):
     updated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     hc_cards = "\n".join(paper_card(p, show_citations=True, show_date=True) for p in high_citation)
-    lt_cards = "\n".join(paper_card(p, show_citations=False, show_date=True) for p in latest)
+    lt_cards = "\n".join(paper_card(p, show_citations=True, show_date=True) for p in latest)
     keyword_stats, keyword_total_papers = build_keyword_stats(high_citation, latest)
     conferences = conferences or []
+    if conferences and len(conferences[0]) == 2:
+        conferences = [(n, ps, []) for n, ps in conferences]
 
     author_list_html = "\n".join(
         f'<li class="author-item" onclick="showAuthor({i})">'
@@ -517,8 +601,8 @@ def generate_html(high_citation, latest, authors, conferences=None):
 
     author_panels_html = ""
     for i, (name, cbf_ps, other_ps) in enumerate(authors):
-        cbf_section = "\n".join(paper_card(p, show_citations=False, show_date=True) for p in cbf_ps)
-        other_section = "\n".join(paper_card(p, show_citations=False, show_date=True) for p in other_ps)
+        cbf_section = "\n".join(paper_card(p, show_citations=True, show_date=True) for p in cbf_ps)
+        other_section = "\n".join(paper_card(p, show_citations=True, show_date=True) for p in other_ps)
         other_block = f'<div class="section-divider">Non-CBF Papers</div>{other_section}' if other_ps else ""
         author_panels_html += (
             f'<div class="author-panel" id="author-panel-{i}">'
@@ -535,7 +619,7 @@ def generate_html(high_citation, latest, authors, conferences=None):
     keyword_panels_html = ""
     for i, (label, meta) in enumerate(keyword_stats):
         coverage = (meta["count"] / keyword_total_papers * 100) if keyword_total_papers else 0.0
-        cards = "\n".join(paper_card(p, show_citations=False, show_date=True) for p in meta["papers"])
+        cards = "\n".join(paper_card(p, show_citations=True, show_date=True) for p in meta["papers"])
         keyword_panels_html += (
             f'<div class="keyword-panel" id="keyword-panel-{i}">'
             f'<div class="section-divider">{escape(label)} | {meta["count"]} papers | {coverage:.1f}% coverage</div>'
@@ -545,16 +629,18 @@ def generate_html(high_citation, latest, authors, conferences=None):
     conference_list_html = "\n".join(
         f'<li class="conference-item" onclick="showConference({i})">'
         f'<span class="conference-name">{escape(group)}</span>'
-        f'<span class="conference-count">{len(papers)}</span></li>'
-        for i, (group, papers) in enumerate(conferences)
+        f'<span class="conference-count">{len(cbf_ps) + len(other_ps)}</span></li>'
+        for i, (group, cbf_ps, other_ps) in enumerate(conferences)
     )
     conference_panels_html = ""
-    for i, (group, papers) in enumerate(conferences):
-        cards = "\n".join(paper_card(p, show_citations=False, show_date=True) for p in papers)
+    for i, (group, cbf_ps, other_ps) in enumerate(conferences):
+        cbf_cards = "\n".join(paper_card(p, show_citations=True, show_date=True) for p in cbf_ps)
+        other_cards = "\n".join(paper_card(p, show_citations=True, show_date=True) for p in other_ps)
+        other_block = f'<div class="section-divider">Other Papers</div>{other_cards}' if other_ps else ""
         conference_panels_html += (
             f'<div class="conference-panel" id="conference-panel-{i}">'
-            f'<div class="section-divider">{escape(group)} | {len(papers)} papers</div>'
-            f"{cards}</div>\n"
+            f'<div class="section-divider">{escape(group)} | {len(cbf_ps)+len(other_ps)} papers</div>'
+            f'<div class="section-divider">CBF Related Papers</div>{cbf_cards}{other_block}</div>\n'
         )
 
     return f"""<!DOCTYPE html>
@@ -837,13 +923,22 @@ if __name__ == "__main__":
     print("Enriching arXiv subject categories...")
     enrich_arxiv_subjects(latest)
     enrich_arxiv_subjects(high_citation)
+    print("Enriching citation counts...")
+    enrich_citations(latest)
+    enrich_citations(high_citation)
 
     print("Building author data...")
     authors = build_authors(high_citation, latest)
     print(f"Built {len(authors)} authors")
+    author_papers = []
+    for _, cbf_ps, other_ps in authors:
+        author_papers.extend(cbf_ps)
+        author_papers.extend(other_ps)
+    enrich_citations(author_papers)
 
     print("Fetching conference papers...")
     conference_papers = fetch_conference_papers()
+    enrich_citations(conference_papers)
     conferences = build_conference_groups(conference_papers)
     print(f"Built {len(conferences)} conference groups")
 
@@ -856,7 +951,7 @@ if __name__ == "__main__":
             "high_citation": high_citation,
             "latest": latest,
             "authors": [(n, c, o) for n, c, o in authors],
-            "conferences": [(n, ps) for n, ps in conferences],
+            "conferences": [(n, c, o) for n, c, o in conferences],
         }, f, ensure_ascii=False, indent=2)
 
     print("Done! docs/index.html updated.")
