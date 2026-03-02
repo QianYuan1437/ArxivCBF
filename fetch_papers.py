@@ -376,7 +376,7 @@ def paper_card(p, show_citations=False, show_date=True):
     ).lower()
     search_attr = escape(search_text, quote=True)
 
-    return f"""    <div class="card" data-topic="{topic_key}" data-search="{search_attr}">
+    return f"""    <div class="card" data-topic="{topic_key}" data-date="{escape(str(p.get('date', '')), quote=True)}" data-citations="{int(p.get('citations', 0) or 0)}" data-search="{search_attr}">
       <div class="card-header">{badge_html}{link}</div>
       <h3>{p["title"]}</h3>
       <p class="authors">{authors}</p>
@@ -477,8 +477,11 @@ def generate_html(high_citation, latest, authors):
   .keyword-panel.active{{display:block}}
   .section-divider{{font-size:.8rem;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.05em;padding:.5rem 0;margin-bottom:.5rem;border-bottom:2px solid #e0e0e0}}
   .controls{{width:var(--content-width);margin:1.2rem auto 0;padding:0;display:flex;flex-direction:column;gap:.8rem}}
-  .search-input{{width:100%;padding:.75rem .95rem;border:1px solid #ccd4df;border-radius:10px;font-size:.95rem;outline:none;background:white}}
+  .search-row{{display:flex;align-items:center;gap:.8rem}}
+  .search-input{{flex:1;max-width:68%;padding:.75rem .95rem;border:1px solid #ccd4df;border-radius:10px;font-size:.95rem;outline:none;background:white}}
   .search-input:focus{{border-color:#1a1a2e;box-shadow:0 0 0 3px rgba(26,26,46,.1)}}
+  .sort-select{{min-width:220px;padding:.75rem .85rem;border:1px solid #ccd4df;border-radius:10px;background:white;color:#263044;font-size:.9rem;outline:none}}
+  .sort-select:focus{{border-color:#1a1a2e;box-shadow:0 0 0 3px rgba(26,26,46,.1)}}
   .topics{{display:flex;flex-wrap:wrap;gap:.5rem}}
   .topic-chip{{padding:.35rem .8rem;border:1px solid #c8d0df;background:white;color:#263044;border-radius:999px;cursor:pointer;font-size:.82rem;font-weight:600}}
   .topic-chip.active,.topic-chip:hover{{background:#1a1a2e;color:white;border-color:#1a1a2e}}
@@ -486,6 +489,9 @@ def generate_html(high_citation, latest, authors):
   @media (max-width: 860px) {{
     .author-layout,.keyword-layout{{flex-direction:column}}
     .author-list,.keyword-list{{position:static;width:100%;max-height:none}}
+    .search-row{{flex-direction:column;align-items:stretch}}
+    .search-input{{max-width:none}}
+    .sort-select{{min-width:0;width:100%}}
     .section,.controls,.filter-empty{{width:92vw}}
   }}
 </style>
@@ -502,7 +508,13 @@ def generate_html(high_citation, latest, authors):
   <button class="tab" onclick="show('keywords',this)">Key Words</button>
 </div>
 <div class="controls">
-  <input id="searchInput" class="search-input" type="text" placeholder="Search title / authors / abstract" oninput="applyFilters()" />
+  <div class="search-row">
+    <input id="searchInput" class="search-input" type="text" placeholder="Search title / authors / abstract" oninput="applyFilters()" />
+    <select id="sortSelect" class="sort-select" onchange="setSort(this.value)">
+      <option value="time">Sort by Time (new -> old)</option>
+      <option value="citations">Sort by Citations (high -> low)</option>
+    </select>
+  </div>
   <div class="topics" id="topicChips">
     <button class="topic-chip active" type="button" onclick="setTopic('all',this)">All</button>
     <button class="topic-chip" type="button" onclick="setTopic('theory',this)">Theory</button>
@@ -531,6 +543,27 @@ def generate_html(high_citation, latest, authors):
 <footer>Auto-updated by GitHub Actions | <a href="https://github.com/QianYuan1437/ArxivCBF">Source</a></footer>
 <script>
   let activeTopic = 'all';
+  let activeSort = 'time';
+
+  function applySorting(container){{
+    const cards = Array.from(container.querySelectorAll('.card'));
+    cards.sort((a, b) => {{
+      const dateA = (a.dataset.date || '');
+      const dateB = (b.dataset.date || '');
+      const citationsA = parseInt(a.dataset.citations || '0', 10);
+      const citationsB = parseInt(b.dataset.citations || '0', 10);
+      if (activeSort === 'citations') {{
+        return (citationsB - citationsA) || dateB.localeCompare(dateA);
+      }}
+      return dateB.localeCompare(dateA) || (citationsB - citationsA);
+    }});
+    cards.forEach(card => container.appendChild(card));
+  }}
+
+  function setSort(sortBy){{
+    activeSort = sortBy;
+    applyFilters();
+  }}
 
   function applyFilters(){{
     const q = (document.getElementById('searchInput')?.value || '').trim().toLowerCase();
@@ -543,6 +576,7 @@ def generate_html(high_citation, latest, authors):
       if (empty) empty.style.display = 'none';
       return;
     }}
+    applySorting(current);
     let visible = 0;
     cards.forEach(card => {{
       const text = (card.dataset.search || '').toLowerCase();
