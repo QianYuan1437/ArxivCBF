@@ -1,0 +1,632 @@
+{
+  "high_citation": [],
+  "latest": [
+    {
+      "title": "SAGE-LLM: Towards Safe and Generalizable LLM Controller with Fuzzy-CBF Verification and Graph-Structured Knowledge Retrieval for UAV Decision",
+      "authors": [
+        "Wenzhe Zhao",
+        "Yang Zhao",
+        "Ganchao Liu",
+        "Zhiyu Jiang",
+        "Dandan Ma",
+        "Zihao Li",
+        "Xuelong Li"
+      ],
+      "date": "2026-02-27",
+      "arxiv_id": "2602.23719v1",
+      "url": "https://arxiv.org/abs/2602.23719v1",
+      "abstract": "In UAV dynamic decision, complex and variable hazardous factors pose severe challenges to the generalization capability of algorithms. Despite offering semantic understanding and scene generalization, Large Language Models (LLM) lack domain-specific UAV control knowledge and formal safety assurances"
+    },
+    {
+      "title": "Refining Almost-Safe Value Functions on the Fly",
+      "authors": [
+        "Sander Tonkens",
+        "Sosuke Kojima",
+        "Chenhao Liu",
+        "Judy Masri",
+        "Sylvia Herbert"
+      ],
+      "date": "2026-02-26",
+      "arxiv_id": "2602.23478v1",
+      "url": "https://arxiv.org/abs/2602.23478v1",
+      "abstract": "Control Barrier Functions (CBFs) are a powerful tool for ensuring robotic safety, but designing or learning valid CBFs for complex systems is a significant challenge. While Hamilton-Jacobi Reachability provides a formal method for synthesizing safe value functions, it scales poorly and is typically "
+    },
+    {
+      "title": "Provably Safe Generative Sampling with Constricting Barrier Functions",
+      "authors": [
+        "Darshan Gadginmath",
+        "Ahmed Allibhoy",
+        "Fabio Pasqualetti"
+      ],
+      "date": "2026-02-24",
+      "arxiv_id": "2602.21429v2",
+      "url": "https://arxiv.org/abs/2602.21429v2",
+      "abstract": "Flow-based generative models, such as diffusion models and flow matching models, have achieved remarkable success in learning complex data distributions. However, a critical gap remains for their deployment in safety-critical domains: the lack of formal guarantees that generated samples will satisfy"
+    },
+    {
+      "title": "BarrierSteer: LLM Safety via Learning Barrier Steering",
+      "authors": [
+        "Thanh Q. Tran",
+        "Arun Verma",
+        "Kiwan Wong",
+        "Bryan Kian Hsiang Low",
+        "Daniela Rus",
+        "Wei Xiao"
+      ],
+      "date": "2026-02-23",
+      "arxiv_id": "2602.20102v1",
+      "url": "https://arxiv.org/abs/2602.20102v1",
+      "abstract": "Despite the state-of-the-art performance of large language models (LLMs) across diverse tasks, their susceptibility to adversarial attacks and unsafe content generation remains a major obstacle to deployment, particularly in high-stakes settings. Addressing this challenge requires safety mechanisms "
+    },
+    {
+      "title": "Robust Taylor-Lagrange Control for Safety-Critical Systems",
+      "authors": [
+        "Wei Xiao",
+        "Christos Cassandras",
+        "Anni Li"
+      ],
+      "date": "2026-02-23",
+      "arxiv_id": "2602.20076v1",
+      "url": "https://arxiv.org/abs/2602.20076v1",
+      "abstract": "Solving safety-critical control problem has widely adopted the Control Barrier Function (CBF) method. However, the existence of a CBF is only a sufficient condition for system safety. The recently proposed Taylor-Lagrange Control (TLC) method addresses this limitation, but is vulnerable to the feasi"
+    },
+    {
+      "title": "Contextual Safety Reasoning and Grounding for Open-World Robots",
+      "authors": [
+        "Zachary Ravichandran",
+        "David Snyder",
+        "Alexander Robey",
+        "Hamed Hassani",
+        "Vijay Kumar",
+        "George J. Pappas"
+      ],
+      "date": "2026-02-23",
+      "arxiv_id": "2602.19983v2",
+      "url": "https://arxiv.org/abs/2602.19983v2",
+      "abstract": "Robots are increasingly operating in open-world environments where safe behavior depends on context: the same hallway may require different navigation strategies when crowded versus empty, or during an emergency versus normal operations. Traditional safety approaches enforce fixed constraints in use"
+    },
+    {
+      "title": "Cooperative Transportation Without Prior Object Knowledge via Adaptive Self-Allocation and Coordination",
+      "authors": [
+        "Jie Song",
+        "Yang Bai",
+        "Naoki Wakamiya"
+      ],
+      "date": "2026-02-22",
+      "arxiv_id": "2602.19070v1",
+      "url": "https://arxiv.org/abs/2602.19070v1",
+      "abstract": "This work proposes a novel cooperative transportation framework for multi-agent systems that does not require any prior knowledge of cargo locations or sizes. Each agent relies on local sensing to detect cargos, recruit nearby agents, and autonomously form a transportation team with an appropriate s"
+    },
+    {
+      "title": "TEG: Exascale Cluster Governance via Non-Equilibrium Thermodynamics and Langevin Dynamics",
+      "authors": [
+        "Zhengyan Chu"
+      ],
+      "date": "2026-02-14",
+      "arxiv_id": "2602.13789v1",
+      "url": "https://arxiv.org/abs/2602.13789v1",
+      "abstract": "As cloud computing scales toward the Exascale regime ($10^5+$ nodes), the prevailing \"Newtonian\" orchestration paradigm -- exemplified by Kubernetes -- approaches fundamental physical limits. The centralized, deterministic scheduling model suffers from $O(N)$ latency scaling, \"Head-of-Line\" blocking"
+    },
+    {
+      "title": "Safe-SDL:Establishing Safety Boundaries and Control Mechanisms for AI-Driven Self-Driving Laboratories",
+      "authors": [
+        "Zihan Zhang",
+        "Haohui Que",
+        "Junhan Chang",
+        "Xin Zhang",
+        "Hao Wei",
+        "Tong Zhu"
+      ],
+      "date": "2026-02-13",
+      "arxiv_id": "2602.15061v1",
+      "url": "https://arxiv.org/abs/2602.15061v1",
+      "abstract": "The emergence of Self-Driving Laboratories (SDLs) transforms scientific discovery methodology by integrating AI with robotic automation to create closed-loop experimental systems capable of autonomous hypothesis generation, experimentation, and analysis. While promising to compress research timeline"
+    },
+    {
+      "title": "Control Barrier Functions with Audio Risk Awareness for Robot Safe Navigation on Construction Sites",
+      "authors": [
+        "Johannes Mootz",
+        "Reza Akhavian"
+      ],
+      "date": "2026-02-12",
+      "arxiv_id": "2602.12416v1",
+      "url": "https://arxiv.org/abs/2602.12416v1",
+      "abstract": "Construction automation increasingly requires autonomous mobile robots, yet robust autonomy remains challenging on construction sites. These environments are dynamic and often visually occluded, which complicates perception and navigation. In this context, valuable information from audio sources rem"
+    },
+    {
+      "title": "SQ-CBF: Signed Distance Functions for Numerically Stable Superquadric-Based Safety Filtering",
+      "authors": [
+        "Haocheng Zhao",
+        "Lukas Brunke",
+        "Oliver Lagerquist",
+        "Siqi Zhou",
+        "Angela P. Schoellig"
+      ],
+      "date": "2026-02-11",
+      "arxiv_id": "2602.11049v1",
+      "url": "https://arxiv.org/abs/2602.11049v1",
+      "abstract": "Ensuring safe robot operation in cluttered and dynamic environments remains a fundamental challenge. While control barrier functions provide an effective framework for real-time safety filtering, their performance critically depends on the underlying geometric representation, which is often simplifi"
+    },
+    {
+      "title": "A Collaborative Safety Shield for Safe and Efficient CAV Lane Changes in Congested On-Ramp Merging",
+      "authors": [
+        "Bharathkumar Hegde",
+        "Melanie Bouroche"
+      ],
+      "date": "2026-02-10",
+      "arxiv_id": "2602.10007v1",
+      "url": "https://arxiv.org/abs/2602.10007v1",
+      "abstract": "Lane changing in dense traffic is a significant challenge for Connected and Autonomous Vehicles (CAVs). Existing lane change controllers primarily either ensure safety or collaboratively improve traffic efficiency, but do not consider these conflicting objectives together. To address this, we propos"
+    },
+    {
+      "title": "Safe Feedback Optimization through Control Barrier Functions",
+      "authors": [
+        "Giannis Delimpaltadakis",
+        "Pol Mestres",
+        "Jorge Cortés",
+        "W. P. M. H. Heemels"
+      ],
+      "date": "2026-02-10",
+      "arxiv_id": "2602.09928v1",
+      "url": "https://arxiv.org/abs/2602.09928v1",
+      "abstract": "Feedback optimization refers to a class of methods that steer a control system to a steady state that solves an optimization problem. Despite tremendous progress on the topic, an important problem remains open: enforcing state constraints at all times. The difficulty in addressing it lies on mediati"
+    },
+    {
+      "title": "From Ellipsoids to Midair Control of Dynamic Hitches",
+      "authors": [
+        "Jiawei Xu",
+        "Subhrajit Bhattacharya",
+        "David Saldaña"
+      ],
+      "date": "2026-02-08",
+      "arxiv_id": "2602.08116v1",
+      "url": "https://arxiv.org/abs/2602.08116v1",
+      "abstract": "The ability to dynamically manipulate interaction between cables, carried by pairs of aerial vehicles attached to the ends of each cable, can greatly improve the versatility and agility of cable-assisted aerial manipulation. Such interlacing cables create hitches by winding two or more cables around"
+    },
+    {
+      "title": "UEREBot: Learning Safe Quadrupedal Locomotion under Unstructured Environments and High-Speed Dynamic Obstacles",
+      "authors": [
+        "Zihao Xu",
+        "Runyu Lei",
+        "Zihao Li",
+        "Boxi Lin",
+        "Ce Hao",
+        "Jin Song Dong"
+      ],
+      "date": "2026-02-07",
+      "arxiv_id": "2602.07363v1",
+      "url": "https://arxiv.org/abs/2602.07363v1",
+      "abstract": "Quadruped robots are increasingly deployed in unstructured environments. Safe locomotion in these settings requires long-horizon goal progress, passability over uneven terrain and static constraints, and collision avoidance against high-speed dynamic obstacles. A single system cannot fully satisfy a"
+    },
+    {
+      "title": "Meta-Reinforcement Learning for Robust and Non-greedy Control Barrier Functions in Spacecraft Proximity Operations",
+      "authors": [
+        "Minduli C. Wijayatunga",
+        "Richard Linares",
+        "Roberto Armellin"
+      ],
+      "date": "2026-02-07",
+      "arxiv_id": "2602.07335v1",
+      "url": "https://arxiv.org/abs/2602.07335v1",
+      "abstract": "Autonomous spacecraft inspection and docking missions require controllers that can guarantee safety under thrust constraints and uncertainty. Input-constrained control barrier functions (ICCBFs) provide a framework for safety certification under bounded actuation; however, conventional ICCBF formula"
+    },
+    {
+      "title": "Banach Control Barrier Functions for Large-Scale Swarm Control",
+      "authors": [
+        "Xuting Gao",
+        "Guillem Pascual",
+        "Scott Brown",
+        "Sonia Martínez"
+      ],
+      "date": "2026-02-04",
+      "arxiv_id": "2602.05011v1",
+      "url": "https://arxiv.org/abs/2602.05011v1",
+      "abstract": "This paper studies the safe control of very large multi-agent systems via a generalized framework that employs so-called Banach Control Barrier Functions (B-CBFs). Modeling a large swarm as probability distribution over a spatial domain, we show how B-CBFs can be used to appropriately capture a vari"
+    },
+    {
+      "title": "Safe Adaptive Control of Parabolic PDE-ODE Cascades",
+      "authors": [
+        "Yun Jiang",
+        "Ji Wang"
+      ],
+      "date": "2026-02-04",
+      "arxiv_id": "2602.04656v1",
+      "url": "https://arxiv.org/abs/2602.04656v1",
+      "abstract": "In this paper, we propose a safe adaptive boundary control strategy for a class of parabolic partial differential equation-ordinary differential equation (PDE-ODE) cascaded systems with parametric uncertainties in both the PDE and ODE subsystems. The proposed design is built upon an adaptive Control"
+    },
+    {
+      "title": "Peak Bounds for the Estimation Error under Sensor Attacks",
+      "authors": [
+        "Axel Stafström",
+        "Daniel Arnström",
+        "Adam Miksits",
+        "David Umsonst"
+      ],
+      "date": "2026-02-04",
+      "arxiv_id": "2602.04568v1",
+      "url": "https://arxiv.org/abs/2602.04568v1",
+      "abstract": "This paper investigates bounds on the estimation error of a linear system affected by norm-bounded disturbances and full sensor attacks. The system is equipped with a detector that evaluates the norm of the innovation signal to detect faults, and the attacker wants to avoid detection. We utilize ind"
+    },
+    {
+      "title": "Towards X-embodiment safety: A control theory perspective on transferring safety certificates across dynamical systems",
+      "authors": [
+        "Nikolaos Bousias",
+        "George Pappas"
+      ],
+      "date": "2026-02-03",
+      "arxiv_id": "2602.03987v1",
+      "url": "https://arxiv.org/abs/2602.03987v1",
+      "abstract": "Control barrier functions (CBFs) provide a powerful tool for enforcing safety constraints in control systems, but their direct application to complex, high-dimensional dynamics is often challenging. In many settings, safety certificates are more naturally designed for simplified or alternative syste"
+    },
+    {
+      "title": "Robust Safety-Critical Control of Networked SIR Dynamics",
+      "authors": [
+        "Saba Samadi",
+        "Brooks A. Butler",
+        "Philip E. Paré"
+      ],
+      "date": "2026-02-02",
+      "arxiv_id": "2602.02452v1",
+      "url": "https://arxiv.org/abs/2602.02452v1",
+      "abstract": "We present a robust safety-critical control framework tailored for networked susceptible-infected-recovered (SIR) epidemic dynamics, leveraging control barrier functions (CBFs) and robust control barrier functions to address the challenges of epidemic spread and mitigation. In our networked SIR mode"
+    },
+    {
+      "title": "Safe Stochastic Explorer: Enabling Safe Goal Driven Exploration in Stochastic Environments and Safe Interaction with Unknown Objects",
+      "authors": [
+        "Nikhil Uday Shinde",
+        "Dylan Hirsch",
+        "Michael C. Yip",
+        "Sylvia Herbert"
+      ],
+      "date": "2026-01-31",
+      "arxiv_id": "2602.00868v1",
+      "url": "https://arxiv.org/abs/2602.00868v1",
+      "abstract": "Autonomous robots operating in unstructured, safety-critical environments, from planetary exploration to warehouses and homes, must learn to safely navigate and interact with their surroundings despite limited prior knowledge. Current methods for safe control, such as Hamilton-Jacobi Reachability an"
+    },
+    {
+      "title": "Learning Safety-Guaranteed, Non-Greedy Control Barrier Functions Using Reinforcement Learning",
+      "authors": [
+        "Minduli Wijayatunga",
+        "Nathan Wallace",
+        "Salah Sukkarieh",
+        "Roberto Armellin"
+      ],
+      "date": "2026-01-30",
+      "arxiv_id": "2602.00366v1",
+      "url": "https://arxiv.org/abs/2602.00366v1",
+      "abstract": "Spacecraft rendezvous and proximity operations (RPO) pose safety risks to high-value assets, so formal safety guarantees are critical. Yet conservative safety controllers can reduce mission efficiency. We propose a unified two-stage reinforcement learning (RL) framework that addresses two complement"
+    },
+    {
+      "title": "Composite Adaptive Control Barrier Functions for Safety-Critical Systems with Parametric Uncertainty",
+      "authors": [
+        "Mohammadreza Kamaldar"
+      ],
+      "date": "2026-01-25",
+      "arxiv_id": "2601.17683v1",
+      "url": "https://arxiv.org/abs/2601.17683v1",
+      "abstract": "Control barrier functions guarantee safety but typically require accurate system models. Parametric uncertainty invalidates these guarantees. Existing robust methods maintain safety via worst-case bounds, limiting performance, while modular learning schemes decouple estimation from safety, permittin"
+    },
+    {
+      "title": "Stochastic Control Barrier Functions under State Estimation: From Euclidean Space to Lie Groups",
+      "authors": [
+        "Ruoyu Lin",
+        "Magnus Egerstedt"
+      ],
+      "date": "2026-01-22",
+      "arxiv_id": "2601.16198v2",
+      "url": "https://arxiv.org/abs/2601.16198v2",
+      "abstract": "Ensuring safety for autonomous systems under uncertainty remains challenging, particularly when safety of the true state is required despite the true state not being fully known. Control barrier functions (CBFs) have become widely adopted as safety filters. However, standard CBF formulations do not "
+    },
+    {
+      "title": "TTCBF: A Truncated Taylor Control Barrier Function for High-Order Safety Constraints",
+      "authors": [
+        "Jianye Xu",
+        "Bassam Alrifaee"
+      ],
+      "date": "2026-01-21",
+      "arxiv_id": "2601.15196v1",
+      "url": "https://arxiv.org/abs/2601.15196v1",
+      "abstract": "Control Barrier Functions (CBFs) enforce safety by rendering a prescribed safe set forward invariant. However, standard CBFs are limited to safety constraints with relative degree one, while High-Order CBF (HOCBF) methods address higher relative degree at the cost of introducing a chain of auxiliary"
+    },
+    {
+      "title": "Data-Driven Safe Output Regulation of Strict-Feedback Linear Systems with Input Delay",
+      "authors": [
+        "Zhenxu Zhao",
+        "Ji Wang",
+        "Weiyao Lan"
+      ],
+      "date": "2026-01-20",
+      "arxiv_id": "2601.14089v2",
+      "url": "https://arxiv.org/abs/2601.14089v2",
+      "abstract": "This paper develops a data-driven safe control framework for linear systems possessing a known strict-feedback structure, but with most plant parameters, external disturbances, and input delay being unknown. By leveraging Koopman operator theory, we utilize Krylov dynamic mode decomposition (DMD) to"
+    },
+    {
+      "title": "Convex Model Predictive Control for Safe Output Consensus of Nonlinear Multi-Agent Systems",
+      "authors": [
+        "Chao Wang",
+        "Shuyuan Zhang",
+        "Lei Wang"
+      ],
+      "date": "2026-01-19",
+      "arxiv_id": "2601.13057v1",
+      "url": "https://arxiv.org/abs/2601.13057v1",
+      "abstract": "Nonlinear dynamics and safety constraints typically result in a nonlinear programming problem when applying model predictive control to achieve safe output consensus. To avoid the heavy computational burden of solving a nonlinear programming problem directly, this paper proposes a novel Convex Model"
+    },
+    {
+      "title": "From Vertices to Convex Hulls: Certifying Set-Wise Compatibility for CBF Constraints",
+      "authors": [
+        "Shima Sadat Mousavi",
+        "Xiao Tan",
+        "Aaron D. Ames"
+      ],
+      "date": "2026-01-19",
+      "arxiv_id": "2601.12885v1",
+      "url": "https://arxiv.org/abs/2601.12885v1",
+      "abstract": "This paper develops certificates that propagate compatibility of multiple control barrier function (CBF) constraints from sampled vertices to their convex hull. Under mild concavity and affinity assumptions, we present three sufficient feasibility conditions under which feasible inputs over the conv"
+    },
+    {
+      "title": "Allocating Corrective Control to Mitigate Multi-agent Safety Violations Under Private Preferences",
+      "authors": [
+        "Johnathan Corbin",
+        "Sarah H. Q. Li",
+        "Jonathan Rogers"
+      ],
+      "date": "2026-01-18",
+      "arxiv_id": "2601.12616v1",
+      "url": "https://arxiv.org/abs/2601.12616v1",
+      "abstract": "We propose a novel framework that computes the corrective control efforts to ensure joint safety in multi-agent dynamical systems. This framework efficiently distributes the required corrective effort without revealing individual agents' private preferences. Our framework integrates high-order contr"
+    },
+    {
+      "title": "Neural Process-Based Reactive Controller for Autonomous Racing",
+      "authors": [
+        "Devin Hunter",
+        "Chinwendu Enyioha"
+      ],
+      "date": "2026-01-17",
+      "arxiv_id": "2601.12143v1",
+      "url": "https://arxiv.org/abs/2601.12143v1",
+      "abstract": "Attention-based neural architectures have become central to state-of-the-art methods in real-time nonlinear control. As these data-driven models continue to be integrated into increasingly safety-critical domains, ensuring statistically grounded and provably safe decision-making becomes essential. T"
+    },
+    {
+      "title": "Distributed Control Barrier Functions for Safe Multi-Vehicle Navigation in Heterogeneous USV Fleets",
+      "authors": [
+        "Tyler Paine",
+        "Brendan Long",
+        "Jeremy Wenger",
+        "Michael DeFilippo",
+        "James Usevitch",
+        "Michael Benjamin"
+      ],
+      "date": "2026-01-16",
+      "arxiv_id": "2601.11335v1",
+      "url": "https://arxiv.org/abs/2601.11335v1",
+      "abstract": "Collision avoidance in heterogeneous fleets of uncrewed vessels is challenging because the decision-making processes and controllers often differ between platforms, and it is further complicated by the limitations on sharing trajectories and control values in real-time. This paper presents a pragmat"
+    },
+    {
+      "title": "Proactive Local-Minima-Free Robot Navigation: Blending Motion Prediction with Safe Control",
+      "authors": [
+        "Yifan Xue",
+        "Ze Zhang",
+        "Knut Åkesson",
+        "Nadia Figueroa"
+      ],
+      "date": "2026-01-15",
+      "arxiv_id": "2601.10233v2",
+      "url": "https://arxiv.org/abs/2601.10233v2",
+      "abstract": "This work addresses the challenge of safe and efficient mobile robot navigation in complex dynamic environments with concave moving obstacles. Reactive safe controllers like Control Barrier Functions (CBFs) design obstacle avoidance strategies based only on the current states of the obstacles, riski"
+    },
+    {
+      "title": "Safe Navigation under Uncertain Obstacle Dynamics using Control Barrier Functions and Constrained Convex Generators",
+      "authors": [
+        "Hugo Matias",
+        "Daniel Silvestre"
+      ],
+      "date": "2026-01-12",
+      "arxiv_id": "2601.07715v1",
+      "url": "https://arxiv.org/abs/2601.07715v1",
+      "abstract": "This paper presents a sampled-data framework for the safe navigation of controlled agents in environments cluttered with obstacles governed by uncertain linear dynamics. Collision-free motion is achieved by combining Control Barrier Function (CBF)-based safety filtering with set-valued state estimat"
+    },
+    {
+      "title": "Self-Organizing Dual-Buffer Adaptive Clustering Experience Replay (SODASER) for Safe Reinforcement Learning in Optimal Control",
+      "authors": [
+        "Roya Khalili Amirabadi",
+        "Mohsen Jalaeian Farimani",
+        "Omid Solaymani Fard"
+      ],
+      "date": "2026-01-10",
+      "arxiv_id": "2601.06540v1",
+      "url": "https://arxiv.org/abs/2601.06540v1",
+      "abstract": "This paper proposes a novel reinforcement learning framework, named Self-Organizing Dual-buffer Adaptive Clustering Experience Replay (SODACER), designed to achieve safe and scalable optimal control of nonlinear systems. The proposed SODACER mechanism consisting of a Fast-Buffer for rapid adaptation"
+    },
+    {
+      "title": "Energy-Aware Bayesian Control Barrier Functions for Physics-Informed Gaussian Process Dynamics",
+      "authors": [
+        "Chi Ho Leung",
+        "Philip E. Paré"
+      ],
+      "date": "2025-12-30",
+      "arxiv_id": "2512.24493v1",
+      "url": "https://arxiv.org/abs/2512.24493v1",
+      "abstract": "We study safe control for dynamical systems whose continuous-time dynamics are learned with Gaussian processes (GPs), focusing on mechanical and port-Hamiltonian systems where safety is naturally expressed via energy constraints. The availability of a GP Hamiltonian posterior naturally raises the qu"
+    },
+    {
+      "title": "Safe Sliding Mode Control for Marine Vessels Using High-Order Control Barrier Functions and Fast Projection",
+      "authors": [
+        "Spyridon Syntakas",
+        "Kostas Vlachos"
+      ],
+      "date": "2025-12-30",
+      "arxiv_id": "2512.24281v1",
+      "url": "https://arxiv.org/abs/2512.24281v1",
+      "abstract": "This paper presents a novel safe control framework that integrates Sliding Mode Control (SMC), High-Order Control Barrier Functions (HOCBFs) with state-dependent adaptiveness and a lightweight projection for collision-free navigation of an over-actuated 3-DOF marine surface vessel subjected to stron"
+    },
+    {
+      "title": "Uncertainty-Aware 3D UAV Tracking Using Single-Anchor UWB Measurements",
+      "authors": [
+        "Yuqi Ping",
+        "Junwei Wu",
+        "Bofeng Zheng",
+        "Fan Liu",
+        "Tianhao Liang",
+        "Tingting Zhang"
+      ],
+      "date": "2025-12-19",
+      "arxiv_id": "2512.17249v1",
+      "url": "https://arxiv.org/abs/2512.17249v1",
+      "abstract": "In this letter, we present an uncertainty-aware single-anchor Ultra-Wideband (UWB)-based 3D tracking framework. Specifically, a mobile Unmanned Aerial Vehicle (UAV) maintains a desired standoff distance to a moving target using range and 3D bearing measurements from a multi-antenna UWB anchor rigidl"
+    },
+    {
+      "title": "Perception-Limited Smooth Safety Filtering",
+      "authors": [
+        "Lyes Smaili",
+        "Soulaimane Berkane"
+      ],
+      "date": "2025-12-18",
+      "arxiv_id": "2512.17057v1",
+      "url": "https://arxiv.org/abs/2512.17057v1",
+      "abstract": "This paper develops a smooth safety-filtering framework for nonlinear control-affine systems under limited perception. Classical Control Barrier Function (CBF) filters assume global availability of the safety function - its value and gradient must be known everywhere - an assumption incompatible wit"
+    },
+    {
+      "title": "Neural Control Barrier Functions for Signal Temporal Logic Specifications with Input Constraints",
+      "authors": [
+        "Vaishnavi Jagabathula",
+        "Pushpak Jagtap"
+      ],
+      "date": "2025-12-15",
+      "arxiv_id": "2512.13344v1",
+      "url": "https://arxiv.org/abs/2512.13344v1",
+      "abstract": "Signal Temporal Logic (STL) provides a powerful framework to describe complex tasks involving temporal and logical behavior in dynamical systems. In this work, we address the problem of synthesizing controllers for continuous-time systems under STL specifications with input constraints. We propose a"
+    },
+    {
+      "title": "High Order Control Lyapunov Function - Control Barrier Function - Quadratic Programming Based Autonomous Driving Controller for Bicyclist Safety",
+      "authors": [
+        "Haochong Chen",
+        "Xincheng Cao",
+        "Levent Guvenc",
+        "Bilin Aksun-Guvenc"
+      ],
+      "date": "2025-12-14",
+      "arxiv_id": "2512.12776v1",
+      "url": "https://arxiv.org/abs/2512.12776v1",
+      "abstract": "Ensuring the safety of Vulnerable Road Users (VRUs) is a critical challenge in the development of advanced autonomous driving systems in smart cities. Among vulnerable road users, bicyclists present unique characteristics that make their safety both critical and also manageable. Vehicles often trave"
+    },
+    {
+      "title": "Taylor-Lagrange Control for Safety-Critical Systems",
+      "authors": [
+        "Wei Xiao",
+        "Anni Li"
+      ],
+      "date": "2025-12-12",
+      "arxiv_id": "2512.11999v1",
+      "url": "https://arxiv.org/abs/2512.11999v1",
+      "abstract": "This paper proposes a novel Taylor-Lagrange Control (TLC) method for nonlinear control systems to ensure the safety and stability through Taylor's theorem with Lagrange remainder. To achieve this, we expand a safety or stability function with respect to time along the system dynamics using the Lie d"
+    },
+    {
+      "title": "Design and Experimental Validation of Closed-Form CBF-Based Safe Control for Stewart Platform Under Multiple Constraints",
+      "authors": [
+        "Benedictus C. G. Cinun",
+        "Tua A. Tamba",
+        "Immanuel R. Santjoko",
+        "Xiaofeng Wang",
+        "Michael A. Gunarso",
+        "Bin Hu"
+      ],
+      "date": "2025-12-11",
+      "arxiv_id": "2512.11125v1",
+      "url": "https://arxiv.org/abs/2512.11125v1",
+      "abstract": "This letter presents a closed-form solution of Control Barrier Function (CBF) framework for enforcing safety constraints on a Stewart robotic platform. The proposed method simultaneously handles multiple position and velocity constraints through an explicit closed-form control law, eliminating the n"
+    },
+    {
+      "title": "V-OCBF: Learning Safety Filters from Offline Data via Value-Guided Offline Control Barrier Functions",
+      "authors": [
+        "Mumuksh Tayal",
+        "Manan Tayal",
+        "Aditya Singh",
+        "Shishir Kolathaya",
+        "Ravi Prakash"
+      ],
+      "date": "2025-12-11",
+      "arxiv_id": "2512.10822v1",
+      "url": "https://arxiv.org/abs/2512.10822v1",
+      "abstract": "Ensuring safety in autonomous systems requires controllers that satisfy hard, state-wise constraints without relying on online interaction. While existing Safe Offline RL methods typically enforce soft expected-cost constraints, they do not guarantee forward invariance. Conversely, Control Barrier F"
+    },
+    {
+      "title": "Collision-Aware Density-Driven Control of Multi-Agent Systems via Control Barrier Functions",
+      "authors": [
+        "Sungjun Seo",
+        "Kooktae Lee"
+      ],
+      "date": "2025-12-11",
+      "arxiv_id": "2512.10392v1",
+      "url": "https://arxiv.org/abs/2512.10392v1",
+      "abstract": "This paper tackles the problem of safe and efficient area coverage using a multi-agent system operating in environments with obstacles. Applications such as environmental monitoring and search and rescue require robot swarms to cover large domains under resource constraints, making both coverage eff"
+    },
+    {
+      "title": "Explicit Control Barrier Function-based Safety Filters and their Resource-Aware Computation",
+      "authors": [
+        "Pol Mestres",
+        "Shima Sadat Mousavi",
+        "Pio Ong",
+        "Lizhi Yang",
+        "Ersin Das",
+        "Joel W. Burdick",
+        "Aaron D. Ames"
+      ],
+      "date": "2025-12-10",
+      "arxiv_id": "2512.10118v1",
+      "url": "https://arxiv.org/abs/2512.10118v1",
+      "abstract": "This paper studies the efficient implementation of safety filters that are designed using control barrier functions (CBFs), which minimally modify a nominal controller to render it safe with respect to a prescribed set of states. Although CBF-based safety filters are often implemented by solving a q"
+    },
+    {
+      "title": "Safe Learning for Contact-Rich Robot Tasks: A Survey from Classical Learning-Based Methods to Safe Foundation Models",
+      "authors": [
+        "Heng Zhang",
+        "Rui Dai",
+        "Gokhan Solak",
+        "Pokuang Zhou",
+        "Yu She",
+        "Arash Ajoudani"
+      ],
+      "date": "2025-12-10",
+      "arxiv_id": "2512.11908v2",
+      "url": "https://arxiv.org/abs/2512.11908v2",
+      "abstract": "Contact-rich tasks pose significant challenges for robotic systems due to inherent uncertainty, complex dynamics, and the high risk of damage during interaction. Recent advances in learning-based control have shown great potential in enabling robots to acquire and generalize complex manipulation ski"
+    },
+    {
+      "title": "Cross-Layer Isochronous Diffusion Protocol (CIDP): A Rigorous Information-Theoretic and Control-Theoretic Framework for Sovereign Tactical Anonymity",
+      "authors": [
+        "Pravin G"
+      ],
+      "date": "2025-12-09",
+      "arxiv_id": "2512.09954v1",
+      "url": "https://arxiv.org/abs/2512.09954v1",
+      "abstract": "Next-generation tactical networks face a critical Anonymity Trilemma: it is impossible to simultaneously achieve strong anonymity, low latency (isochrony), and low bandwidth overhead under a global passive adversary. CIDP breaks this deadlock by injecting physical-layer entropy via rapid antenna sid"
+    },
+    {
+      "title": "VLSA: Vision-Language-Action Models with Plug-and-Play Safety Constraint Layer",
+      "authors": [
+        "Songqiao Hu",
+        "Zeyi Liu",
+        "Shuang Liu",
+        "Jun Cen",
+        "Zihan Meng",
+        "Xiao He"
+      ],
+      "date": "2025-12-09",
+      "arxiv_id": "2512.11891v1",
+      "url": "https://arxiv.org/abs/2512.11891v1",
+      "abstract": "Vision-Language-Action (VLA) models have demonstrated remarkable capabilities in generalizing across diverse robotic manipulation tasks. However, deploying these models in unstructured environments remains challenging due to the critical need for simultaneous task compliance and safety assurance, pa"
+    },
+    {
+      "title": "Decoupled Design of Time-Varying Control Barrier Functions via Equivariances",
+      "authors": [
+        "Adrian Wiltz",
+        "Dimos V. Dimarogonas"
+      ],
+      "date": "2025-12-09",
+      "arxiv_id": "2512.08607v1",
+      "url": "https://arxiv.org/abs/2512.08607v1",
+      "abstract": "This article presents a systematic method for designing time-varying Control Barrier Functions (CBF) composed of a time-invariant component and multiple time-dependent components, leveraging structural properties of the system dynamics. The method involves the construction of a specific class of tim"
+    }
+  ]
+}
