@@ -1,1 +1,3 @@
-run_logs*.zip
+*.zip
+__pycache__/
+*.pyc
