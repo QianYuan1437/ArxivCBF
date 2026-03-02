@@ -760,6 +760,34 @@
           "abstract": "Real-world tasks involve nuanced combinations of goal and safety specifications. In high dimensions, the challenge is exacerbated: formal automata become cumbersome, and the combination of sparse rewards tends to require laborious tuning. In this work, we consider the innate structure of the Bellman Value as a means to naturally organize the problem for improved automatic performance. Namely, we prove the Bellman Value for a complex task defined in temporal logic can be decomposed into a graph of Bellman Values, connected by a set of well-known Bellman equations (BEs): the Reach-Avoid BE, the Avoid BE, and a novel type, the Reach-Avoid-Loop BE. To solve the Value and optimal policy, we propose VDPPO, which embeds the decomposed Value graph into a two-layer neural net, bootstrapping the implicit dependencies. We conduct a variety of simulated and hardware experiments to test our method on complex, high-dimensional tasks involving heterogeneous teams and nonlinear dynamics. Ultimately, we find this approach greatly improves performance over existing baselines, balancing safety and liveness automatically."
         },
         {
+          "title": "Haptic Virtual Fixtures for Telemanipulation using Control Barrier Functions.",
+          "authors": [
+            "Robert Bloom",
+            "Dylan Hirsch",
+            "Sylvia Herbert",
+            "Tania K. Morimoto"
+          ],
+          "year": 2026,
+          "date": "2026-01-19",
+          "citations": 0,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "Teleoperating mobile manipulators can be cognitively demanding due to a lack of depth perception and situational awareness. While virtual fixture constraints can be used to improve teleoperation performance, it is critical to ensure safety of these fixtures in order to enable their use in physical human-robot-interaction (pHRI) tasks. In this work, we propose to use control barrier functions (CBF) to design a virtual fixture architecture that allows us to tune the tradeoff between performance and safety. We design the architecture to ensure tracking performance between the user and robot is maintained outside of virtual fixture violations, and to simultaneously ensure that the robot cannot overshoot into a constraint. We conducted an analysis to investigate the relationship between tracking and safety, and present results which indicate that the ratio between the control gain used for tracking and the safety decay rate determine when the CBF filter and CBF-based force feedback become active. Finally, we implemented our proposed virtual fixture architecture on a mobile manipulator platform to investigate its effects on user's performance as they performed a simulated temperature scanning task. Overall, this work highlights the potential benefits of using CBF-based haptic virtual fixtures for conducting pHRI tasks."
+        },
+        {
+          "title": "Control of Subpopulation Fractions in a Population of Bistable Cells",
+          "authors": [
+            "Dylan Hirsch",
+            "Sylvia Herbert"
+          ],
+          "year": 2025,
+          "date": null,
+          "citations": 0,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "Bistable genetic circuits have long been studied in systems and synthetic biology, with notable recent work focused on controlling the phenotypic composition of populations with such circuits. Here, we build on previous literature to theoretically characterize a mechanism by which cells with bistable circuits can use quorum sensing to drive the population to arbitrary phenotypic compositions. We in particular investigate the ability of a proportional controller to accomplish this task on ideal and non-ideal plants, providing performance guarantees and, under additional assumptions, guarantees of almost-global convergence to a desirable population equilibrium."
+        },
+        {
           "title": "Hamilton-Jacobi Reachability in Reinforcement Learning: A Survey",
           "authors": [
             "Milan Ganai",
@@ -786,20 +814,6 @@
           "arxiv_id": "2405.17832",
           "url": "https://arxiv.org/abs/2405.17832",
           "abstract": "Policy gradient methods have enabled deep reinforcement learning (RL) to approach challenging continuous control problems, even when the underlying systems involve highly nonlinear dynamics that generate complex non-smooth optimization landscapes. We develop a rigorous framework for understanding how policy gradient methods mollify non-smooth optimization landscapes to enable effective policy search, as well as the downside of it: while making the objective function smoother and easier to optimize, the stochastic objective deviates further from the original problem. We demonstrate the equivalence between policy gradient methods and solving backward heat equations. Following the ill-posedness of backward heat equations from PDE theory, we present a fundamental challenge to the use of policy gradient under stochasticity. Moreover, we make the connection between this limitation and the uncertainty principle in harmonic analysis to understand the effects of exploration with stochastic policies in RL. We also provide experimental results to illustrate both the positive and negative aspects of mollification effects in practice."
-        },
-        {
-          "title": "Fractal Landscapes in Policy Optimization",
-          "authors": [
-            "Tao Wang",
-            "Sylvia Herbert",
-            "Sicun Gao"
-          ],
-          "year": 2023,
-          "date": "2023-10-24",
-          "citations": 7,
-          "arxiv_id": "2310.15418",
-          "url": "https://arxiv.org/abs/2310.15418",
-          "abstract": "Policy gradient lies at the core of deep reinforcement learning (RL) in continuous domains. Despite much success, it is often observed in practice that RL training with policy gradient can fail for many reasons, even on standard control problems with known solutions. We propose a framework for understanding one inherent limitation of the policy gradient approach: the optimization landscape in the policy space can be extremely non-smooth or fractal for certain classes of MDPs, such that there does not exist gradient to be estimated in the first place. We draw on techniques from chaos theory and non-smooth analysis, and analyze the maximal Lyapunov exponents and H\\\"older exponents of the policy optimization objectives. Moreover, we develop a practical method that can estimate the local smoothness of objective function from samples to identify when the training process has encountered fractal landscapes. We show experiments to illustrate how some failure cases of policy optimization can be explained by such fractal landscapes."
         }
       ]
     ],
@@ -865,295 +879,7 @@
           "abstract": "This paper studies the efficient implementation of safety filters that are designed using control barrier functions (CBFs), which minimally modify a nominal controller to render it safe with respect to a prescribed set of states. Although CBF-based safety filters are often implemented by solving a quadratic program (QP) in real time, the use of off-the-shelf solvers for such optimization problems poses a challenge in applications where control actions need to be computed efficiently at very high frequencies. In this paper, we introduce a closed-form expression for controllers obtained through CBF-based safety filters. This expression is obtained by partitioning the state-space into different regions, with a different closed-form solution in each region. We leverage this formula to introduce a resource-aware implementation of CBF-based safety filters that detects changes in the partition region and uses the closed-form expression between changes. We showcase the applicability of our approach in examples ranging from aerospace control to safe reinforcement learning."
         }
       ],
-      [
-        {
-          "title": "Risk-Aware Safety Filters with Poisson Safety Functions and Laplace Guidance Fields",
-          "authors": [
-            "Gilbert Bahati",
-            "Ryan M. Bena",
-            "Meg Wilkinson",
-            "Pol Mestres",
-            "Ryan K. Cosner",
-            "A. D. Ames"
-          ],
-          "year": 2025,
-          "date": "2025-10-29",
-          "citations": 0,
-          "arxiv_id": "2510.25913",
-          "url": "https://arxiv.org/abs/2510.25913",
-          "abstract": "Robotic systems navigating in real-world settings require a semantic understanding of their environment to properly determine safe actions. This work aims to develop the mathematical underpinnings of such a representation--specifically, the goal is to develop safety filters that are risk-aware. To this end, we take a two step approach: encoding an understanding of the environment via Poisson's equation, and associated risk via Laplace guidance fields. That is, we first solve a Dirichlet problem for Poisson's equation to generate a safety function that encodes system safety as its 0-superlevel set. We then separately solve a Dirichlet problem for Laplace's equation to synthesize a safe \\textit{guidance field} that encodes variable levels of caution around obstacles -- by enforcing a tunable flux boundary condition. The safety function and guidance fields are then combined to define a safety constraint and used to synthesize a risk-aware safety filter which, given a semantic understanding of an environment with associated risk levels of environmental features, guarantees safety while prioritizing avoidance of higher risk obstacles. We demonstrate this method in simulation and discuss how \\textit{a priori} understandings of obstacle risk can be directly incorporated into the safety filter to generate safe behaviors that are risk-aware."
-        },
-        {
-          "title": "Probabilistic Control Barrier Functions: Safety in Probability for Discrete-Time Stochastic Systems",
-          "authors": [
-            "Pol Mestres",
-            "Blake Werner",
-            "Ryan K. Cosner",
-            "Aaron D. Ames"
-          ],
-          "year": 2025,
-          "date": "2025-10-01",
-          "citations": 2,
-          "arxiv_id": "2510.01501",
-          "url": "https://arxiv.org/abs/2510.01501",
-          "abstract": "Control systems operating in the real world face countless sources of unpredictable uncertainties. These random disturbances can render deterministic guarantees inapplicable and cause catastrophic safety failures. To overcome this, this paper proposes a method for designing safe controllers for discrete-time stochastic systems that retain probabilistic guarantees of safety. To do this we modify the traditional notion of a control barrier function (CBF) to explicitly account for these stochastic uncertainties and call these new modified functions probabilistic CBFs. We show that probabilistic CBFs can be used to design controllers that guarantee safety over a finite number of time steps with a prescribed probability. Next, by leveraging various uncertainty quantification methods, such as concentration inequalities and the scenario approach, we provide a variety of sufficient conditions that result in computationally tractable controllers with tunable probabilistic guarantees across a plethora of practical scenarios. Finally, we showcase the applicability of our results in simulation and hardware for the control of a quadruped robot."
-        },
-        {
-          "title": "Off-Policy Reinforcement Learning with Anytime Safety Guarantees via Robust Safe Gradient Flow",
-          "authors": [
-            "Pol Mestres",
-            "Arnau Marzabal",
-            "Jorge Cort'es"
-          ],
-          "year": 2025,
-          "date": "2025-10-01",
-          "citations": 0,
-          "arxiv_id": "2510.01492",
-          "url": "https://arxiv.org/abs/2510.01492",
-          "abstract": "This paper considers the problem of solving constrained reinforcement learning (RL) problems with anytime guarantees, meaning that the algorithmic solution must yield a constraint-satisfying policy at every iteration of its evolution. Our design is based on a discretization of the Robust Safe Gradient Flow (RSGF), a continuous-time dynamics for anytime constrained optimization whose forward invariance and stability properties we formally characterize. The proposed strategy, termed RSGF-RL, is an off-policy algorithm which uses episodic data to estimate the value functions and their gradients and updates the policy parameters by solving a convex quadratically constrained quadratic program. Our technical analysis combines statistical analysis, the theory of stochastic approximation, and convex analysis to determine the number of episodes sufficient to ensure that safe policies are updated to safe policies and to recover from an unsafe policy, both with an arbitrary user-specified probability, and to establish the asymptotic convergence to the set of KKT points of the RL problem almost surely. Simulations on a navigation example and the cart-pole system illustrate the superior performance of RSGF-RL with respect to the state of the art."
-        },
-        {
-          "title": "Neural Network-based Universal Formulas for Control",
-          "authors": [
-            "Pol Mestres",
-            "Jorge Cort'es",
-            "E.D. Sontag"
-          ],
-          "year": 2025,
-          "date": "2025-05-30",
-          "citations": 2,
-          "arxiv_id": "2505.24744",
-          "url": "https://arxiv.org/abs/2505.24744",
-          "abstract": "We study the problem of designing a controller that satisfies an arbitrary number of affine inequalities at every point in the state space. This is motivated by the fact that a variety of key control objectives, such as stability, safety, and input saturation, are guaranteed by closed-loop systems whose controllers satisfy such inequalities. Many works in the literature design such controllers as the solution to a state-dependent quadratic program (QP) whose constraints are precisely the inequalities. When the input dimension and number of constraints are high, computing a solution of this QP in real time can become computationally burdensome. Additionally, the solution of such optimization problems is not smooth in general, which can degrade the performance of the system. This paper provides a novel method to design a smooth controller that satisfies an arbitrary number of affine constraints. The controller is given at every state as the minimizer of a strictly convex function. To avoid computing the minimizer of such function in real time, we introduce a method based on neural networks (NN) to approximate the controller. Remarkably, this NN can be used to solve the controller design problem for any task with less than a fixed input dimension and number of affine constraints, and is completely independent of the state dimension. This is why we refer to such NN approximation as a NN-based universal formula for control. Additionally, we show that the NN-based controller only needs to be trained with datapoints from a bounded set in the state space, which significantly simplifies the training process. Various simulations showcase the performance of the proposed solution."
-        },
-        {
-          "title": "Anytime Safe Reinforcement Learning",
-          "authors": [
-            "Pol Mestres",
-            "Arnau Marzabal",
-            "Jorge Cort'es"
-          ],
-          "year": 2025,
-          "date": "2025-04-23",
-          "citations": 4,
-          "arxiv_id": "2504.16417",
-          "url": "https://arxiv.org/abs/2504.16417",
-          "abstract": "This paper considers the problem of solving constrained reinforcement learning problems with anytime guarantees, meaning that the algorithmic solution returns a safe policy regardless of when it is terminated. Drawing inspiration from anytime constrained optimization, we introduce Reinforcement Learning-based Safe Gradient Flow (RL-SGF), an on-policy algorithm which employs estimates of the value functions and their respective gradients associated with the objective and safety constraints for the current policy, and updates the policy parameters by solving a convex quadratically constrained quadratic program. We show that if the estimates are computed with a sufficiently large number of episodes (for which we provide an explicit bound), safe policies are updated to safe policies with a probability higher than a prescribed tolerance. We also show that iterates asymptotically converge to a neighborhood of a KKT point, whose size can be arbitrarily reduced by refining the estimates of the value function and their gradients. We illustrate the performance of RL-SGF in a navigation example."
-        },
-        {
-          "title": "Feedback Optimization with State Constraints through Control Barrier Functions",
-          "authors": [
-            "Giannis Delimpaltadakis",
-            "Pol Mestres",
-            "Jorge Cort'es",
-            "W. Heemels"
-          ],
-          "year": 2025,
-          "date": "2025-04-01",
-          "citations": 3,
-          "arxiv_id": "2504.00813",
-          "url": "https://arxiv.org/abs/2504.00813",
-          "abstract": "Recently, there has been a surge of research on a class of methods called feedback optimization. These are methods to steer the state of a control system to an equilibrium that arises as the solution of an optimization problem. Despite the growing literature on the topic, the important problem of enforcing state constraints at all times remains unaddressed. In this work, we present the first feedback-optimization method that enforces state constraints. The method combines a class of dynamics called safe gradient flows with high-order control barrier functions. We provide a number of results on our proposed controller, including well-posedness guarantees, anytime constraint-satisfaction guarantees, equivalence between the closed-loop’s equilibria and the optimization problem’s critical points, and local asymptotic stability of optima."
-        },
-        {
-          "title": "Control Barrier Function-Based Safety Filters: Characterization of Undesired Equilibria, Unbounded Trajectories, and Limit Cycles",
-          "authors": [
-            "Pol Mestres",
-            "Yiting Chen",
-            "E. Dall’Anese",
-            "Jorge Cort'es"
-          ],
-          "year": 2025,
-          "date": "2025-01-16",
-          "citations": 8,
-          "arxiv_id": "2501.09289",
-          "url": "https://arxiv.org/abs/2501.09289",
-          "abstract": "This paper focuses on safety filters designed based on Control Barrier Functions (CBFs): these are modifications of a nominal stabilizing controller typically utilized in safety-critical control applications to render a given subset of states forward invariant. The paper investigates the dynamical properties of the closed-loop systems, with a focus on characterizing undesirable behaviors that may emerge due to the use of CBF-based filters. These undesirable behaviors include unbounded trajectories, limit cycles, and undesired equilibria, which can be locally stable and even form a continuum. Our analysis offer the following contributions: (i) conditions under which trajectories remain bounded and (ii) conditions under which limit cycles do not exist; (iii) we show that undesired equilibria can be characterized by solving an algebraic equation, and (iv) we provide examples that show that asymptotically stable undesired equilibria can exist for a large class of nominal controllers and design parameters of the safety filter (even for convex safe sets). Further, for the specific class of planar systems, (v) we provide explicit formulas for the total number of undesired equilibria and the proportion of saddle points and asymptotically stable equilibria, and (vi) in the case of linear planar systems, we present an exhaustive analysis of their global stability properties. Examples throughout the paper illustrate the results."
-        },
-        {
-          "title": "Safe and Dynamically Feasible Motion Planning Using Control Lyapunov and Barrier Functions",
-          "authors": [
-            "Pol Mestres",
-            "Carlos Nieto-Granda",
-            "Jorge Cort'es"
-          ],
-          "year": 2024,
-          "date": "2024-10-10",
-          "citations": 1,
-          "arxiv_id": "2410.08364",
-          "url": "https://arxiv.org/abs/2410.08364",
-          "abstract": "This article considers the problem of designing motion planning algorithms for control-affine systems that generate collision-free paths from an initial to a final destination and can be executed using safe and dynamically feasible controllers. We introduce the compatible control lyapunov function control barrier function rapidly exploring random tree (C-CLF-CBF-RRT) algorithm, which produces paths with such properties and leverages rapidly exploring random trees (RRTs), control Lyapunov functions (CLFs), and control barrier functions (CBFs). For linear systems with polytopic and ellipsoidal constraints, C-CLF-CBF-RRT requires solving a quadratically constrained quadratic program at every iteration of the algorithm, which can be done efficiently. We prove the probabilistic completeness of C-CLF-CBF-RRT and showcase its performance in simulation and hardware experiments."
-        },
-        {
-          "title": "Equilibria and Their Stability Do Not Depend on the Control Barrier Function in Safe Optimization-Based Control",
-          "authors": [
-            "Yiting Chen",
-            "Pol Mestres",
-            "Jorge Cortés",
-            "E. Dall’Anese"
-          ],
-          "year": 2024,
-          "date": "2024-09-10",
-          "citations": 2,
-          "arxiv_id": "2409.06808",
-          "url": "https://arxiv.org/abs/2409.06808",
-          "abstract": "Control barrier functions (CBFs) play a critical role in the design of safe optimization-based controllers for control-affine systems. Given a CBF associated with a desired ``safe'' set, the typical approach consists in embedding CBF-based constraints into the optimization problem defining the control law to enforce forward invariance of the safe set. While this approach effectively guarantees safety for a given CBF, the CBF-based control law can introduce undesirable equilibrium points (i.e., points that are not equilibria of the original system); open questions remain on how the choice of CBF influences the number and locations of undesirable equilibria and, in general, the dynamics of the closed-loop system. This paper investigates how the choice of CBF impacts the dynamics of the closed-loop system and shows that: (i) The CBF does not affect the number, location, and (local) stability properties of the equilibria in the interior of the safe set; (ii) undesirable equilibria only appear on the boundary of the safe set; and, (iii) the number and location of undesirable equilibria for the closed-loop system do not depend of the choice of the CBF. Additionally, for the well-established safety filters and controllers based on both CBF and control Lyapunov functions (CLFs), we show that the stability properties of equilibria of the closed-loop system are independent of the choice of the CBF and of the associated extended class-K function."
-        },
-        {
-          "title": "Stabilization of Nonlinear Systems through Control Barrier Functions",
-          "authors": [
-            "Pol Mestres",
-            "Kehan Long",
-            "Melvin Leok",
-            "Nikolay Atanasov",
-            "Jorge Cortés"
-          ],
-          "year": 2024,
-          "date": "2024-08-15",
-          "citations": 0,
-          "arxiv_id": "2408.08398",
-          "url": "https://arxiv.org/abs/2408.08398",
-          "abstract": "This paper proposes a control design approach for stabilizing nonlinear control systems. Our key observation is that the set of points where the decrease condition of a control Lyapunov function (CLF) is feasible can be regarded as a safe set. By leveraging a nonsmooth version of control barrier functions (CBFs) and a weaker notion of CLF, we develop a control design that forces the system to converge to and remain in the region where the CLF decrease condition is feasible. We characterize the conditions under which our controller asymptotically stabilizes the origin or a small neighborhood around it, even in the cases where it is discontinuous. We illustrate our design in various examples."
-        },
-        {
-          "title": "Characterization of the Dynamical Properties of Safety Filters for Linear Planar Systems",
-          "authors": [
-            "Yiting Chen",
-            "Pol Mestres",
-            "E. Dall’Anese",
-            "Jorge Cortés"
-          ],
-          "year": 2024,
-          "date": "2024-08-02",
-          "citations": 5,
-          "arxiv_id": "2408.00958",
-          "url": "https://arxiv.org/abs/2408.00958",
-          "abstract": "This paper studies the dynamical properties of closed-loop systems obtained from control barrier function-based safety filters. We provide a sufficient and necessary condition for the existence of undesirable equilibria and show that the Jacobian matrix of the closed-loop system evaluated at an undesirable equilibrium always has a nonpositive eigenvalue. In the special case of linear planar systems and ellipsoidal obstacles, we give a complete characterization of the dynamical properties of the corresponding closed-loop system. We show that for underactuated systems, the safety filter always introduces a single undesirable equilibrium, which is a saddle-point. We prove that all trajectories outside the global stable manifold of such equilibrium converge to the origin. In the fully actuated case, we discuss how the choice of nominal controller affects the stability properties of the closed-loop system. Various simulations illustrate our results."
-        },
-        {
-          "title": "Distributed Safe Navigation of Multi-Agent Systems Using Control Barrier Function-Based Controllers",
-          "authors": [
-            "Pol Mestres",
-            "Carlos Nieto-Granda",
-            "Jorge Cortés"
-          ],
-          "year": 2024,
-          "date": "2024-07-01",
-          "citations": 23,
-          "arxiv_id": null,
-          "url": "",
-          "abstract": "This letter proposes a distributed controller synthesis framework for safe navigation of multi-agent systems. We leverage control barrier functions to formulate collision avoidance with obstacles and teammates as constraints on the control input for a state-dependent network optimization problem that encodes team formation and the navigation task. Our algorithmic solution is valid under general assumptions for nonlinear dynamics and state-dependent network optimization problems with convex constraints and strongly convex objectives. The resulting controller is distributed, satisfies the safety constraints at all times, and asymptotically converges to the solution of the state-dependent network optimization problem. We illustrate its performance in a team of differential-drive robots in a variety of complex environments, both in simulation and in hardware."
-        },
-        {
-          "title": "Converse Theorems for Certificates of Safety and Stability",
-          "authors": [
-            "Pol Mestres",
-            "Jorge Cort'es"
-          ],
-          "year": 2024,
-          "date": "2024-06-21",
-          "citations": 6,
-          "arxiv_id": "2406.14823",
-          "url": "https://arxiv.org/abs/2406.14823",
-          "abstract": "Motivated by the key role of control barrier functions (CBFs) in assessing safety and enabling the synthesis of safe controllers in nonlinear control systems, this article presents a suite of converse results on CBFs. Given any safe set, we first identify a set of general sufficient conditions which guarantee the existence of a CBF. Our technical analysis also enables us to define an extended notion of CBF which is always guaranteed to exist if the set is safe. We next turn our attention to the problem of joint safety and stability, and give conditions under which the notions of control Lyapunov-barrier function (CLBF) and compatible control Lyapunov function (CLF) and CBF pair are guaranteed to exist. We also show via a counterexample that the existence of a CLF and a CBF does not imply the existence of a strictly compatible CLF-CBF pair, but provide conditions under which this holds. Throughout the article, we intersperse different examples and counterexamples to motivate our results and position them within the state of the art."
-        },
-        {
-          "title": "Distributed Safe Navigation of Multi-Agent Systems using Control Barrier Function-Based Optimal Controllers",
-          "authors": [
-            "Pol Mestres",
-            "Carlos Nieto-Granda",
-            "Jorge Cort'es"
-          ],
-          "year": 2024,
-          "date": "2024-02-09",
-          "citations": 1,
-          "arxiv_id": "2402.06195",
-          "url": "https://arxiv.org/abs/2402.06195",
-          "abstract": "This paper proposes a distributed controller synthesis framework for safe navigation of multi-agent systems. We leverage control barrier functions to formulate collision avoidance with obstacles and teammates as constraints on the control input for a state-dependent network optimization problem that encodes team formation and the navigation task. Our algorithmic solution is valid for general nonlinear control dynamics and optimization problems. The resulting controller is distributed, satisfies the safety constraints at all times, and is asymptotically optimal. We illustrate its performance in a team of differential-drive robots in a variety of complex environments, both in simulation and in hardware."
-        },
-        {
-          "title": "Regularity properties of optimization-based controllers",
-          "authors": [
-            "Pol Mestres",
-            "Ahmed Allibhoy",
-            "Jorge Cort'es"
-          ],
-          "year": 2023,
-          "date": "2023-11-22",
-          "citations": 31,
-          "arxiv_id": "2311.13167",
-          "url": "https://arxiv.org/abs/2311.13167",
-          "abstract": ""
-        },
-        {
-          "title": "Feasibility Analysis and Regularity Characterization of Distributionally Robust Safe Stabilizing Controllers",
-          "authors": [
-            "Pol Mestres",
-            "Kehan Long",
-            "Nikolay Atanasov",
-            "Jorge Cort'es"
-          ],
-          "year": 2023,
-          "date": "2023-11-10",
-          "citations": 6,
-          "arxiv_id": "2311.05813",
-          "url": "https://arxiv.org/abs/2311.05813",
-          "abstract": "This letter studies the well-posedness and regularity of safe stabilizing optimization-based controllers for control-affine systems in the presence of model uncertainty. When the system dynamics contain unknown parameters, a finite set of samples can be used to formulate distributionally robust versions of control barrier function and control Lyapunov function constraints. Control synthesis with such distributionally robust constraints can be achieved by solving a (convex) second-order cone program (SOCP). We provide one necessary and two sufficient conditions to check the feasibility of such optimization problems, characterize their computational complexity and numerically show that they are significantly faster to check than direct use of SOCP solvers. Finally, we also analyze the regularity of the resulting control laws."
-        },
-        {
-          "title": "Distributed and Anytime Algorithm for Network Optimization Problems with Separable Structure",
-          "authors": [
-            "Pol Mestres",
-            "Jorge Cort'es"
-          ],
-          "year": 2023,
-          "date": "2023-09-06",
-          "citations": 13,
-          "arxiv_id": "2309.03174",
-          "url": "https://arxiv.org/abs/2309.03174",
-          "abstract": "This paper considers the problem of designing a dynamical system to solve constrained optimization problems in a distributed way and in an anytime fashion (i.e., such that the feasible set is forward invariant). For problems with separable objective function and constraints, we design an algorithm with the desired properties and establish its convergence. Simulations illustrate our results."
-        },
-        {
-          "title": "Resource-Aware Discretization of Accelerated Optimization Flows: The Heavy-Ball Dynamics Case",
-          "authors": [
-            "M. Vaquero",
-            "Pol Mestres",
-            "J. Cortés"
-          ],
-          "year": 2023,
-          "date": "2023-04-01",
-          "citations": 7,
-          "arxiv_id": null,
-          "url": "",
-          "abstract": "This article proposes a methodology for discretizing accelerated optimization flows while retaining their convergence properties. Inspired by the success of resource-aware control in developing efficient closed-loop feedback implementations on digital systems, we view the last sampled state of the system as the resource to be aware of. We illustrate our design methodology for discretization on a newly introduced continuous-time dynamics, the heavy-ball dynamics with displaced gradient. Our algorithm design employs techniques from resource-aware control that, in this context, have interesting parallelisms with the discrete-time implementation of optimization algorithms. These include derivative- and performance-based triggers to monitor the evolution of the Lyapunov function as a way of determining the stepsize, exploiting sampled information to enhance performance, and employing high-order holds using more accurate integrators of the original dynamics. Our approach gives rise to variable-stepsize discrete-time algorithms that retain by design the monotonically decreasing properties of the Lyapunov certificate of the continuous-time heavy-ball dynamics with displaced gradient."
-        },
-        {
-          "title": "Feasibility and Regularity Analysis of Safe Stabilizing Controllers under Uncertainty",
-          "authors": [
-            "Pol Mestres",
-            "Jorge Cort'es"
-          ],
-          "year": 2023,
-          "date": "2023-01-11",
-          "citations": 16,
-          "arxiv_id": "2301.04603",
-          "url": "https://arxiv.org/abs/2301.04603",
-          "abstract": "This paper studies the problem of safe stabilization of control-affine systems under uncertainty. Our starting point is the availability of worst-case or probabilistic error descriptions for the dynamics and a control barrier function (CBF). These descriptions give rise to second-order cone constraints (SOCCs) whose simultaneous satisfaction guarantees safe stabilization. We study the feasibility of such SOCCs and the regularity properties of various controllers satisfying them."
-        },
-        {
-          "title": "Safe Policy Design for Controlling Epidemic Spreading under Heterogeneous Testing Capabilities",
-          "authors": [
-            "Pol Mestres",
-            "J. Cortés"
-          ],
-          "year": 2022,
-          "date": "2022-06-08",
-          "citations": 4,
-          "arxiv_id": null,
-          "url": "",
-          "abstract": "This paper studies a model that captures epidemic spreading in a population with heterogeneous testing capabilities. The detection of the disease is faster in a subpopulation because of access to better testing capabilities, whereas another subpopulation relies on standard testing to confirm positive cases once individual have manifested symptoms. This model is a particular case of a recently proposed vectorized SIR model, for which we characterize various invariance properties and the stability properties of its set of equilibria. We leverage these analytical results to design social distancing policies that guarantee that the impact of the pandemic satisfies certain specifications, namely, that the total capacity of the healthcare system does not get overburdened and that the total number of infections throughout the pandemic remains below a thresh-old. Simulations illustrate the extent to which higher testing capabilities allow for more lenient social distancing policies."
-        }
-      ]
+      []
     ],
     [
       "Roberto Armellin",
@@ -2078,7 +1804,625 @@
           "abstract": "In UAV dynamic decision, complex and variable hazardous factors pose severe challenges to the generalization capability of algorithms. Despite offering semantic understanding and scene generalization, Large Language Models (LLM) lack domain-specific UAV control knowledge and formal safety assurances, restricting their direct applicability. To bridge this gap, this paper proposes a train-free two-layer decision architecture based on LLMs, integrating high-level safety planning with low-level precise control. The framework introduces three key contributions: 1) A fuzzy Control Barrier Function verification mechanism for semantically-augmented actions, providing provable safety certification for LLM outputs. 2) A star-hierarchical graph-based retrieval-augmented generation system, enabling efficient, elastic, and interpretable scene adaptation. 3) Systematic experimental validation in pursuit-evasion scenarios with unknown obstacles and emergent threats, demonstrating that our SAGE-LLM maintains performance while significantly enhancing safety and generalization without online training. The proposed framework demonstrates strong extensibility, suggesting its potential for generalization to broader embodied intelligence systems and safety-critical control domains."
         }
       ],
-      []
+      [
+        {
+          "title": "Seaweed-7B: Cost-Effective Training of Video Generation Foundation Model",
+          "authors": [
+            "Team Seawead",
+            "Ceyuan Yang",
+            "Zhijie Lin",
+            "Yang Zhao",
+            "Shanchuan Lin",
+            "Zhibei Ma",
+            "Haoyuan Guo",
+            "Hao Chen",
+            "Lu Qi",
+            "Sen Wang",
+            "Feng Cheng",
+            "Fei Zeng",
+            "Ziyan Yang",
+            "Fangyuan Kong",
+            "Zhiwu Qing",
+            "Fei Xiao",
+            "Meng Wei",
+            "Tuyen Hoang",
+            "Siyu Zhang",
+            "Peihao Zhu",
+            "Qi Zhao",
+            "Jiangqiao Yan",
+            "Liangke Gui",
+            "Sheng Bi",
+            "Jiashi Li",
+            "Yuxi Ren",
+            "Rui Wang",
+            "Huixia Li",
+            "Xuefeng Xiao",
+            "Shu Liu",
+            "Feng Ling",
+            "Heng Zhang",
+            "Houmin Wei",
+            "Huafeng Kuang",
+            "J.Matthews Duncan",
+            "Junda Zhang",
+            "Jun Zheng",
+            "Li Sun",
+            "Manlin Zhang",
+            "Renfei Sun",
+            "Xiao Zhuang",
+            "Xiaojie Li",
+            "Xin Xia",
+            "XU Chi",
+            "Yang Peng",
+            "Yuping Wang",
+            "Yuxuan Wang",
+            "Zhongkai Zhao",
+            "Zhuo Chen",
+            "Zuquan Song",
+            "Zhe Yang",
+            "Jiashi Feng",
+            "Jianchao Yang",
+            "Lu Jiang"
+          ],
+          "year": 2025,
+          "date": "2025-04-11",
+          "citations": 70,
+          "arxiv_id": "2504.08685",
+          "url": "https://arxiv.org/abs/2504.08685",
+          "abstract": "This technical report presents a cost-efficient strategy for training a video generation foundation model. We present a mid-sized research model with approximately 7 billion parameters (7B) called Seaweed-7B trained from scratch using 665,000 H100 GPU hours. Despite being trained with moderate computational resources, Seaweed-7B demonstrates highly competitive performance compared to contemporary video generation models of much larger size. Design choices are especially crucial in a resource-constrained setting. This technical report highlights the key design decisions that enhance the performance of the medium-sized diffusion model. Empirically, we make two observations: (1) Seaweed-7B achieves performance comparable to, or even surpasses, larger models trained on substantially greater GPU resources, and (2) our model, which exhibits strong generalization ability, can be effectively adapted across a wide range of downstream applications either by lightweight fine-tuning or continue training. See the project page at https://seaweed.video/"
+        },
+        {
+          "title": "Immune checkpoint inhibitors and anti-vascular endothelial growth factor antibody/tyrosine kinase inhibitors with or without transarterial chemoembolization as first-line treatment for advanced hepatocellular carcinoma (CHANCE2201): a target trial emulation study",
+          "authors": [
+            "Zhi-Cheng Jin",
+            "Jian-Jian Chen",
+            "Xiao-Li Zhu",
+            "Xu-hua Duan",
+            "Yu-Jing Xin",
+            "B. Zhong",
+            "Jin-Zhang Chen",
+            "Jun Tie",
+            "Kang-Shun Zhu",
+            "Lan Zhang",
+            "Ming Huang",
+            "M. Piao",
+            "Xiao Li",
+            "Hai-bin Shi",
+            "Rui-Bao Liu",
+            "Ai-bing Xu",
+            "Fanpu Ji",
+            "Jian-Bing Wu",
+            "Guo-Liang Shao",
+            "Hai-liang Li",
+            "Ming Huang",
+            "Zhi-Yi Peng",
+            "Jian-Song Ji",
+            "C. Yuan",
+            "Xiu-Feng Liu",
+            "Zhou-Chao Hu",
+            "Wei Yang",
+            "G. Yin",
+            "Jin-Hua Huang",
+            "Nai-Jian Ge",
+            "Xiaolong Qi",
+            "Yang Zhao",
+            "Jia-wei Zhou",
+            "Guohui Xu",
+            "Qiang Tu",
+            "Hailai Lin",
+            "Yao-Jun Zhang",
+            "Hua Jiang",
+            "Haibo Shao",
+            "Yongxing Su",
+            "Ting Chen",
+            "Bao-Qi Shi",
+            "Xiang Zhou",
+            "Hai-Tao Zhao",
+            "Hai Zhu",
+            "Zheng-Gang Ren",
+            "Gao-Jun Teng",
+            "Fanpu Ji",
+            "Xiaolong Qi",
+            "Yang Zhao",
+            "W. Xing",
+            "Shan-Zhi Gu",
+            "Weidong Wang",
+            "Song Wang",
+            "Shu-Wei Wen",
+            "Wei-Fu Lv",
+            "Xu Zhu",
+            "Wei Mu",
+            "W. Ren",
+            "Zaizai Lu",
+            "Yong Fan",
+            "Jia-ping Li",
+            "Wei Zhao",
+            "Chuan-Sheng Zheng",
+            "Xuejin Zhao",
+            "Hui Zhao",
+            "Jian Xu",
+            "Wen-Hao Hu",
+            "Yan Lei",
+            "Qing-Hua Wu",
+            "Huan-Zhang Niu",
+            "Jia-rui Li",
+            "Jian-Jun Han",
+            "Dui-Ping Feng",
+            "Zheng Cai",
+            "Qing-Dong Li",
+            "Zhenjuan Dai",
+            "Rong-Shu Shi",
+            "Yong Chen",
+            "Wen-jun Wang",
+            "Linan Yin",
+            "Hai-Tao Zhao",
+            "Gao-Jun Teng"
+          ],
+          "year": 2024,
+          "date": "2024-05-06",
+          "citations": 118,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "Summary Background The role of transarterial chemoembolization (TACE) in the treatment of advanced hepatocellular carcinoma (HCC) is unconfirmed. This study aimed to assess the efficacy and safety of immune checkpoint inhibitors (ICIs) plus anti-vascular endothelial growth factor (anti-VEGF) antibody/tyrosine kinase inhibitors (TKIs) with or without TACE as first-line treatment for advanced HCC. Methods This nationwide, multicenter, retrospective cohort study included advanced HCC patients receiving either TACE with ICIs plus anti-VEGF antibody/TKIs (TACE-ICI-VEGF) or only ICIs plus anti-VEGF antibody/TKIs (ICI-VEGF) from January 2018 to December 2022. The study design followed the target trial emulation framework with stabilized inverse probability of treatment weighting (sIPTW) to minimize biases. The primary outcome was overall survival (OS). Secondary outcomes included progression-free survival (PFS), objective response rate (ORR), and safety. The study is registered with ClinicalTrials.gov, NCT05332821. Findings Among 1244 patients included in the analysis, 802 (64.5%) patients received TACE-ICI-VEGF treatment, and 442 (35.5%) patients received ICI-VEGF treatment. The median follow-up time was 21.1 months and 20.6 months, respectively. Post-application of sIPTW, baseline characteristics were well-balanced between the two groups. TACE-ICI-VEGF group exhibited a significantly improved median OS (22.6 months [95% CI: 21.2–23.9] vs 15.9 months [14.9–17.8]; P < 0.0001; adjusted hazard ratio [aHR] 0.63 [95% CI: 0.53–0.75]). Median PFS was also longer in TACE-ICI-VEGF group (9.9 months [9.1–10.6] vs 7.4 months [6.7–8.5]; P < 0.0001; aHR 0.74 [0.65–0.85]) per Response Evaluation Criteria in Solid Tumours (RECIST) version 1.1. A higher ORR was observed in TACE-ICI-VEGF group, by either RECIST v1.1 or modified RECIST (41.2% vs 22.9%, P < 0.0001; 47.3% vs 29.7%, P < 0.0001). Grade ≥3 adverse events occurred in 178 patients (22.2%) in TACE-ICI-VEGF group and 80 patients (18.1%) in ICI-VEGF group. Interpretation This multicenter study supports the use of TACE combined with ICIs and anti-VEGF antibody/TKIs as first-line treatment for advanced HCC, demonstrating an acceptable safety profile. Funding 10.13039/501100001809National Natural Science Foundation of China, 10.13039/501100012166National Key Research and Development Program of China, Jiangsu Provincial Medical Innovation Center, Collaborative Innovation Center of Radiation Medicine of Jiangsu Higher Education Institutions, and Nanjing Life Health Science and Technology Project."
+        },
+        {
+          "title": "Digital finance and corporate ESG performance: Empirical evidence from listed companies in China",
+          "authors": [
+            "Xiaohang Ren",
+            "Gudian Zeng",
+            "Yang Zhao"
+          ],
+          "year": 2023,
+          "date": "2023-03-01",
+          "citations": 278,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": ""
+        },
+        {
+          "title": "DNA damage and repair in age-related inflammation",
+          "authors": [
+            "Yang Zhao",
+            "M. Simon",
+            "A. Seluanov",
+            "V. Gorbunova"
+          ],
+          "year": 2022,
+          "date": "2022-07-13",
+          "citations": 254,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": ""
+        },
+        {
+          "title": "Thriving under Stress: How Plants Balance Growth and the Stress Response.",
+          "authors": [
+            "Heng Zhang",
+            "Yang Zhao",
+            "Jian‐Kang Zhu"
+          ],
+          "year": 2020,
+          "date": "2020-12-07",
+          "citations": 598,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "Defense against stress and active suppression of growth are two complementary strategies by which plants respond to adverse environments. Although beneficial for plant survival, active growth inhibition is often undesirable for crop productivity. Compared with the knowledge on how plants defend against stress-caused cellular impairment, much less is known about how stress signaling regulates plant growth and vice versa. Here, we review recent progress in this area and discuss recent studies suggesting that reciprocal regulation between stress-response and growth-control pathways occurs at multiple levels. Understanding this regulatory network will be critical for resetting the balance between stress resistance and growth in order to engineer stress-resistant and high-yielding crops."
+        },
+        {
+          "title": "Fenton/Fenton-like processes with in-situ production of hydrogen peroxide/hydroxyl radical for degradation of emerging contaminants: Advances and prospects.",
+          "authors": [
+            "Yong Liu",
+            "Yang Zhao",
+            "Jianlong Wang"
+          ],
+          "year": 2020,
+          "date": "2020-10-07",
+          "citations": 611,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "Fenton processes based on the reaction between Fe2+ and H2O2 to produce hydroxyl radicals, have been widely studied and applied for the degradation of toxic organic contaminants in wastewater due to its high efficiency, mild condition and simple operation. However, H2O2 is usually added by bulk feeding, which suffers from the potential risks during the storage and transportation of H2O2 as well as its low utilization efficiency. Therefore, Fenton/Fenton-like processes with in-situ production of H2O2 have received increasing attention, in which H2O2 was in-situ produced through O2 activation, then decomposed into hydroxyl radicals by Fenton catalysts. In this review, the in situ production of H2O2 for Fenton oxidation was introduced, the strategies for activation of O2 to generate H2O2 were summarized, including chemical reduction, electro-catalysis and photo-catalysis, the influencing factors and the mechanisms of the in situ production and utilization of H2O2 in various Fenton/Fenton-like processes were analyzed and discussed, and the applications of these processes for the degradation of toxic organic contaminants were summarized. This review will deepen the understanding of the tacit cooperation between the in situ production and utilization of H2O2 in Fenton process, and provide the further insight into this promising process for degradation of emerging contaminants in industrial wastewater."
+        },
+        {
+          "title": "Integrative Proteomic Characterization of Human Lung Adenocarcinoma.",
+          "authors": [
+            "Junming Xu",
+            "Chunchao Zhang",
+            "Xiang Wang",
+            "Linhui Zhai",
+            "Yiming Ma",
+            "Y. Mao",
+            "Kun Qian",
+            "Changqing Sun",
+            "Zhiwei Liu",
+            "Shangwen Jiang",
+            "Minghui Wang",
+            "Lin Feng",
+            "Lei Zhao",
+            "Ping Liu",
+            "Bo Wang",
+            "Xin Zhao",
+            "Hui Xie",
+            "Xiaoyun Yang",
+            "Liyuan Zhao",
+            "Yafei Chang",
+            "Jin-hui Jia",
+            "Xijun Wang",
+            "Yimin Zhang",
+            "Yaru Wang",
+            "Yikun Yang",
+            "Zhixiang Wu",
+            "Longhai Yang",
+            "Bin Liu",
+            "T. Zhao",
+            "Shengguo Ren",
+            "A. Sun",
+            "Yang Zhao",
+            "W. Ying",
+            "Fei Wang",
+            "Guangshun Wang",
+            "Yi Zhang",
+            "Shujun Cheng",
+            "J. Qin",
+            "X. Qian",
+            "Yi Wang",
+            "Jing Li",
+            "F. He",
+            "T. Xiao",
+            "M. Tan"
+          ],
+          "year": 2020,
+          "date": "2020-07-01",
+          "citations": 460,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "Genomic studies of lung adenocarcinoma (LUAD) have advanced our understanding of the disease's biology and accelerated targeted therapy. However, the proteomic characteristics of LUAD remain poorly understood. We carried out a comprehensive proteomics analysis of 103 cases of LUAD in Chinese patients. Integrative analysis of proteome, phosphoproteome, transcriptome, and whole-exome sequencing data revealed cancer-associated characteristics, such as tumor-associated protein variants, distinct proteomics features, and clinical outcomes in patients at an early stage or with EGFR and TP53 mutations. Proteome-based stratification of LUAD revealed three subtypes (S-I, S-II, and S-III) related to different clinical and molecular features. Further, we nominated potential drug targets and validated the plasma protein level of HSP 90β as a potential prognostic biomarker for LUAD in an independent cohort. Our integrative proteomics analysis enables a more comprehensive understanding of the molecular landscape of LUAD and offers an opportunity for more precise diagnosis and treatment."
+        },
+        {
+          "title": "Compassionate Use of Remdesivir for Patients with Severe Covid-19",
+          "authors": [
+            "J. Grein",
+            "N. Ohmagari",
+            "Daniel Shin",
+            "G. Diaz",
+            "E. Asperges",
+            "A. Castagna",
+            "T. Feldt",
+            "Gary M. Green",
+            "M. L. Green",
+            "F. Lescure",
+            "E. Nicastri",
+            "Rentaro Oda",
+            "Kikuo Yo",
+            "E. Quiros-Roldan",
+            "A. Studemeister",
+            "John Redinski",
+            "Seema Ahmed",
+            "J. Bernett",
+            "D. Chelliah",
+            "Danny Chen",
+            "S. Chihara",
+            "Stuart H. Cohen",
+            "J. Cunningham",
+            "A. d’Arminio Monforte",
+            "S. Ismail",
+            "Hideaki Kato",
+            "G. Lapadula",
+            "E. L’her",
+            "T. Maeno",
+            "Sumit Majumder",
+            "M. Massari",
+            "M. Mora-Rillo",
+            "Y. Mutoh",
+            "Duc Nguyen",
+            "E. Verweij",
+            "A. Zoufaly",
+            "A. Osinusi",
+            "A. DeZure",
+            "Yang Zhao",
+            "Lijie Zhong",
+            "A. Chokkalingam",
+            "E. Elboudwarej",
+            "L. Telep",
+            "Leighann Timbs",
+            "Ilana N. Henne",
+            "Scott V. Sellers",
+            "H. Cao",
+            "Susanna K. Tan",
+            "Lucinda Winterbourne",
+            "P. Desai",
+            "R. Mera",
+            "A. Gaggar",
+            "R. Myers",
+            "D. Brainard",
+            "R. Childs",
+            "T. Flanigan"
+          ],
+          "year": 2020,
+          "date": "2020-04-10",
+          "citations": 2477,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "Abstract Background Remdesivir, a nucleotide analogue prodrug that inhibits viral RNA polymerases, has shown in vitro activity against SARS-CoV-2. Methods We provided remdesivir on a compassionate-use basis to patients hospitalized with Covid-19, the illness caused by infection with SARS-CoV-2. Patients were those with confirmed SARS-CoV-2 infection who had an oxygen saturation of 94% or less while they were breathing ambient air or who were receiving oxygen support. Patients received a 10-day course of remdesivir, consisting of 200 mg administered intravenously on day 1, followed by 100 mg daily for the remaining 9 days of treatment. This report is based on data from patients who received remdesivir during the period from January 25, 2020, through March 7, 2020, and have clinical data for at least 1 subsequent day. Results Of the 61 patients who received at least one dose of remdesivir, data from 8 could not be analyzed (including 7 patients with no post-treatment data and 1 with a dosing error). Of the 53 patients whose data were analyzed, 22 were in the United States, 22 in Europe or Canada, and 9 in Japan. At baseline, 30 patients (57%) were receiving mechanical ventilation and 4 (8%) were receiving extracorporeal membrane oxygenation. During a median follow-up of 18 days, 36 patients (68%) had an improvement in oxygen-support class, including 17 of 30 patients (57%) receiving mechanical ventilation who were extubated. A total of 25 patients (47%) were discharged, and 7 patients (13%) died; mortality was 18% (6 of 34) among patients receiving invasive ventilation and 5% (1 of 19) among those not receiving invasive ventilation. Conclusions In this cohort of patients hospitalized for severe Covid-19 who were treated with compassionate-use remdesivir, clinical improvement was observed in 36 of 53 patients (68%). Measurement of efficacy will require ongoing randomized, placebo-controlled trials of remdesivir therapy. (Funded by Gilead Sciences.)"
+        },
+        {
+          "title": "Local Differential Privacy-Based Federated Learning for Internet of Things",
+          "authors": [
+            "Yang Zhao",
+            "Jun Zhao",
+            "Mengmeng Yang",
+            "Teng Wang",
+            "Ning Wang",
+            "Lingjuan Lyu",
+            "D. Niyato",
+            "Kwok-Yan Lam"
+          ],
+          "year": 2020,
+          "date": "2020-04-01",
+          "citations": 383,
+          "arxiv_id": "2004.08856",
+          "url": "https://arxiv.org/abs/2004.08856",
+          "abstract": "The Internet of Vehicles (IoV) is a promising branch of the Internet of Things. IoV simulates a large variety of crowdsourcing applications, such as Waze, Uber, and Amazon Mechanical Turk, etc. Users of these applications report the real-time traffic information to the cloud server which trains a machine learning model based on traffic information reported by users for intelligent traffic management. However, crowdsourcing application owners can easily infer users’ location information, traffic information, motor vehicle information, environmental information, etc., which raises severe sensitive personal information privacy concerns of the users. In addition, as the number of vehicles increases, the frequent communication between vehicles and the cloud server incurs unexpected amount of communication cost. To avoid the privacy threat and reduce the communication cost, in this article, we propose to integrate federated learning and local differential privacy (LDP) to facilitate the crowdsourcing applications to achieve the machine learning model. Specifically, we propose four LDP mechanisms to perturb gradients generated by vehicles. The proposed Three-Outputs mechanism introduces three different output possibilities to deliver a high accuracy when the privacy budget is small. The output possibilities of Three-Outputs can be encoded with two bits to reduce the communication cost. Besides, to maximize the performance when the privacy budget is large, an optimal piecewise mechanism (PM-OPT) is proposed. We further propose a suboptimal mechanism (PM-SUB) with a simple formula and comparable utility to PM-OPT. Then, we build a novel hybrid mechanism by combining Three-Outputs and PM-SUB. Finally, an LDP-FedSGD algorithm is proposed to coordinate the cloud server and vehicles to train the model collaboratively. Extensive experimental results on real-world data sets validate that our proposed algorithms are capable of protecting privacy while guaranteeing utility."
+        },
+        {
+          "title": "Abscisic acid dynamics, signaling and functions in plants.",
+          "authors": [
+            "Kong Chen",
+            "Guo-jun Li",
+            "R. Bressan",
+            "Chunpeng Song",
+            "Jian‐Kang Zhu",
+            "Yang Zhao"
+          ],
+          "year": 2019,
+          "date": "2019-12-18",
+          "citations": 1204,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "Abscisic acid (ABA) is an important phytohormone regulating plant growth, development and stress responses. It has an essential role in multiple physiological processes of plants, such as stomatal closure, cuticular wax accumulation, leaf senescence, bud dormancy, seed germination, osmotic regulation and growth inhibition among many others. ABA controls downstream responses to abiotic and biotic environmental changes through both transcriptional and posttranscriptional mechanisms. During the past twenty years, the ABA biosynthesis and many of its signaling pathways have been well characterized. Here we review the dynamics of ABA metabolic pools and signaling that affects many of its physiological functions. This article is protected by copyright. All rights reserved."
+        },
+        {
+          "title": "Recent Progresses on Defect Passivation toward Efficient Perovskite Solar Cells",
+          "authors": [
+            "Feng Gao",
+            "Yang Zhao",
+            "Xingwang Zhang",
+            "Jingbi You"
+          ],
+          "year": 2019,
+          "date": "2019-10-14",
+          "citations": 600,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "The disorderly distribution of defects in the perovskite or at the grain boundaries, surfaces, and interfaces, which seriously affect carrier transport through the formation of nonradiative recombination centers, hinders the further improvement on the power conversion efficiency (PCE) of perovskite solar cells (PSCs). Several defect passivation strategies have been confirmed as an efficient approach for promoting the performance of PSCs. Herein, recent progress in the defect passivation toward efficient perovskite solar cells are summarized, and a classification of common passivation strategies that elaborate the mechanism according to the location of the defects and the type of passivation agent is presented. Finally, this review offers likely prospects for future trends in the development of passivation strategies."
+        },
+        {
+          "title": "Deep High-Resolution Representation Learning for Visual Recognition",
+          "authors": [
+            "Jingdong Wang",
+            "Ke Sun",
+            "Tianheng Cheng",
+            "Borui Jiang",
+            "Chaorui Deng",
+            "Yang Zhao",
+            "Dong Liu",
+            "Yadong Mu",
+            "Mingkui Tan",
+            "Xinggang Wang",
+            "Wenyu Liu",
+            "Bin Xiao"
+          ],
+          "year": 2019,
+          "date": "2019-08-20",
+          "citations": 4456,
+          "arxiv_id": "1908.07919",
+          "url": "https://arxiv.org/abs/1908.07919",
+          "abstract": "High-resolution representations are essential for position-sensitive vision problems, such as human pose estimation, semantic segmentation, and object detection. Existing state-of-the-art frameworks first encode the input image as a low-resolution representation through a subnetwork that is formed by connecting high-to-low resolution convolutions in series (e.g., ResNet, VGGNet), and then recover the high-resolution representation from the encoded low-resolution representation. Instead, our proposed network, named as High-Resolution Network (HRNet), maintains high-resolution representations through the whole process. There are two key characteristics: (i) Connect the high-to-low resolution convolution streams in parallel and (ii) repeatedly exchange the information across resolutions. The benefit is that the resulting representation is semantically richer and spatially more precise. We show the superiority of the proposed HRNet in a wide range of applications, including human pose estimation, semantic segmentation, and object detection, suggesting that the HRNet is a stronger backbone for computer vision problems. All the codes are available at https://github.com/HRNet."
+        },
+        {
+          "title": "Artificial intelligence-based fault detection and diagnosis methods for building energy systems: Advantages, challenges and the future",
+          "authors": [
+            "Yang Zhao",
+            "Tingting Li",
+            "Xuejun Zhang",
+            "Chaobo Zhang"
+          ],
+          "year": 2019,
+          "date": "2019-07-01",
+          "citations": 479,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "Abstract Artificial intelligence has showed powerful capacity in detecting and diagnosing faults of building energy systems. This paper aims at making a comprehensive literature review of artificial intelligence-based fault detection and diagnosis (FDD) methods for building energy systems in the past twenty years from 1998 to 2018, summarizing the strengths and shortcomings of the existing artificial intelligence-based methods, and revealing the most important research tasks in the future. Challenges in developing FDD methods for building energy systems are discussed firstly. Then, a comprehensive literature review is made. All methods are classified into two categories, i.e. data driven-based and knowledge driven-based. The data driven-based methods are abundant, including the classification-based, unsupervised learning-based and regression-based. They showed powerful capacity in learning patterns from training data. But, they need a large amount of training data, and have problems in reliability and robustness. The knowledge driven-based methods show powerful capacity in simulating the diagnostic thinking of experts. But, they rely on expert knowledge heavily. It is concluded that new artificial intelligence-based methodologies are needed to be able to combine the advantages of both kinds of methods in the future."
+        },
+        {
+          "title": "Privacy-Preserving Blockchain-Based Federated Learning for IoT Devices",
+          "authors": [
+            "Yang Zhao",
+            "Jun Zhao",
+            "Linshan Jiang",
+            "Rui Tan",
+            "D. Niyato",
+            "Zengxiang Li",
+            "L. Lyu",
+            "Yingbo Liu"
+          ],
+          "year": 2019,
+          "date": "2019-06-26",
+          "citations": 474,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "Home appliance manufacturers strive to obtain feedback from users to improve their products and services to build a smart home system. To help manufacturers develop a smart home system, we design a federated learning (FL) system leveraging a reputation mechanism to assist home appliance manufacturers to train a machine learning model based on customers’ data. Then, manufacturers can predict customers’ requirements and consumption behaviors in the future. The working flow of the system includes two stages: in the first stage, customers train the initial model provided by the manufacturer using both the mobile phone and the mobile-edge computing (MEC) server. Customers collect data from various home appliances using phones, and then they download and train the initial model with their local data. After deriving local models, customers sign on their models and send them to the blockchain. In case customers or manufacturers are malicious, we use the blockchain to replace the centralized aggregator in the traditional FL system. Since records on the blockchain are untampered, malicious customers or manufacturers’ activities are traceable. In the second stage, manufacturers select customers or organizations as miners for calculating the averaged model using received models from customers. By the end of the crowdsourcing task, one of the miners, who is selected as the temporary leader, uploads the model to the blockchain. To protect customers’ privacy and improve the test accuracy, we enforce differential privacy (DP) on the extracted features and propose a new normalization technique. We experimentally demonstrate that our normalization technique outperforms batch normalization when features are under DP protection. In addition, to attract more customers to participate in the crowdsourcing FL task, we design an incentive mechanism to award participants."
+        },
+        {
+          "title": "Job satisfaction among hospital nurses: A literature review.",
+          "authors": [
+            "Hong Lu",
+            "Yang Zhao",
+            "A. While"
+          ],
+          "year": 2019,
+          "date": "2019-06-01",
+          "citations": 566,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "BACKGROUND\nGlobally there are mounting concerns about nurses' job satisfaction because of its pivotal role in nurse turnover and the quality of care of patients.\n\n\nOBJECTIVES\nTo identify a more comprehensive and extensive knowledge of the job satisfaction of qualified general nurses working in acute care hospitals and its associated factors drawing upon empirical literature published in the last five years.\n\n\nDESIGN\nLiterature review.\n\n\nDATA SOURCES\nA comprehensive electronic database search was conducted in PubMed (2012-2017), Web of Science (2012-2017), CINAHL (2012-2017), Embase (2012-2017), PsycINFO (2012-2017) and the Applied Social Sciences Index (2012-2017), CNKI (2012-2017), WanFang (2012-2017), SinoMed (2012-2017) and VIP (2012-2017) to retrieve relevant articles published in both English and Chinese between January 2012 and October 2017.\n\n\nREVIEW METHODS\nKey terms and phrases associated with job satisfaction, occupational stress, professional commitment, role conflict and role ambiguity were utilized in the subject search in combination with nurses following guidelines for searching the OVID interface. The abstracts or full texts of research papers were reviewed prior to their inclusion in the review according to inclusion criteria and quality assessment using the Strobe guidelines.\n\n\nRESULTS\nA total of 59 papers were included in this review. The impact of job satisfaction upon sickness absence, turnover intention, as well as the influencing factors of job satisfaction such as working shift and leadership, job performance, organizational commitment, effort and reward style has been identified in a number of research studies yielding equivocal findings. Job satisfaction of hospital nurses is closely related to work environment, structural empowerment, organizational commitment, professional commitment, job stress, patient satisfaction, patient-nurse ratios, social capital, evidence-based practice and ethnic background. Various mediating or moderating pathways have been identified with nurses' job satisfaction being mediated by various factors.\n\n\nCONCLUSIONS\nIt is vital to increase nurses' job satisfaction because this has the potential both to improve patients' perceptions of care quality and ensure an adequate nursing workforce. The indirect relationships and predictors of job satisfaction contribute to a more comprehensive understanding of the complex phenomenon of job satisfaction, which in turn may aid the development of effective strategies to address the nursing shortage and increase the quality of patient care."
+        },
+        {
+          "title": "Promoting the Transformation of Li2S2 to Li2S: Significantly Increasing Utilization of Active Materials for High‐Sulfur‐Loading Li–S Batteries",
+          "authors": [
+            "Xiaofei Yang",
+            "Xuejie Gao",
+            "Qian Sun",
+            "S. P. Jand",
+            "Ying Yu",
+            "Yang Zhao",
+            "Xia Li",
+            "Keegan Adair",
+            "Liang-Yin Kuo",
+            "J. Rohrer",
+            "Jianneng Liang",
+            "Xiaoting Lin",
+            "M. Banis",
+            "Yongfeng Hu",
+            "Hongzhang Zhang",
+            "Xianfeng Li",
+            "Ruying Li",
+            "Huamin Zhang",
+            "P. Kaghazchi",
+            "T. Sham",
+            "X. Sun"
+          ],
+          "year": 2019,
+          "date": "2019-05-07",
+          "citations": 347,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "Lithium–sulfur (Li–S) batteries with high sulfur loading are urgently required in order to take advantage of their high theoretical energy density. Ether‐based Li–S batteries involve sophisticated multistep solid–liquid–solid–solid electrochemical reaction mechanisms. Recently, studies on Li–S batteries have widely focused on the initial solid (sulfur)–liquid (soluble polysulfide)–solid (Li2S2) conversion reactions, which contribute to the first 50% of the theoretical capacity of the Li–S batteries. Nonetheless, the sluggish kinetics of the solid–solid conversion from solid‐state intermediate product Li2S2 to the final discharge product Li2S (corresponding to the last 50% of the theoretical capacity) leads to the premature end of discharge, resulting in low discharge capacity output and low sulfur utilization. To tackle the aforementioned issue, a catalyst of amorphous cobalt sulfide (CoS3) is proposed to decrease the dissociation energy of Li2S2 and propel the electrochemical transformation of Li2S2 to Li2S. The CoS3 catalyst plays a critical role in improving the sulfur utilization, especially in high‐loading sulfur cathodes (3–10 mg cm−2). Accordingly, the Li2S/Li2S2 ratio in the discharge products increased to 5.60/1 from 1/1.63 with CoS3 catalyst, resulting in a sulfur utilization increase of 20% (335 mAh g−1) compared to the counterpart sulfur electrode without CoS3."
+        },
+        {
+          "title": "Single platinum atoms embedded in nanoporous cobalt selenide as electrocatalyst for accelerating hydrogen evolution reaction",
+          "authors": [
+            "Kang Jiang",
+            "Boyang Liu",
+            "M. Luo",
+            "S. Ning",
+            "Ming Peng",
+            "Yang Zhao",
+            "Ying-Rui Lu",
+            "T. Chan",
+            "F. D. de Groot",
+            "Yongwen Tan"
+          ],
+          "year": 2019,
+          "date": "2019-04-15",
+          "citations": 535,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "Designing efficient electrocatalysts for hydrogen evolution reaction is significant for renewable and sustainable energy conversion. Here, we report single-atom platinum decorated nanoporous Co0.85Se (Pt/np-Co0.85Se) as efficient electrocatalysts for hydrogen evolution. The achieved Pt/np-Co0.85Se shows high catalytic performance with a near-zero onset overpotential, a low Tafel slope of 35 mV dec−1, and a high turnover frequency of 3.93 s−1 at −100 mV in neutral media, outperforming commercial Pt/C catalyst and other reported transition-metal-based compounds. Operando X-ray absorption spectroscopy studies combined with density functional theory calculations indicate that single-atom platinum in Pt/np-Co0.85Se not only can optimize surface states of Co0.85Se active centers under realistic working conditions, but also can significantly reduce energy barriers of water dissociation and improve adsorption/desorption behavior of hydrogen, which synergistically promote thermodynamics and kinetics. This work opens up further opportunities for local electronic structures tuning of electrocatalysts to effectively manipulate its catalytic properties by an atomic-level engineering strategy. While water splitting chemistry provides a renewable means to produce carbon-neutral hydrogen fuel, the most efficient catalysts require rare and expensive platinum. Here, authors prepare single-atom platinum on cobalt selenide as a high-performance hydrogen evolution electrocatalyst."
+        },
+        {
+          "title": "High-Resolution Representations for Labeling Pixels and Regions",
+          "authors": [
+            "Ke Sun",
+            "Yang Zhao",
+            "Borui Jiang",
+            "Tianheng Cheng",
+            "Bin Xiao",
+            "Dong Liu",
+            "Yadong Mu",
+            "Xinggang Wang",
+            "Wenyu Liu",
+            "Jingdong Wang"
+          ],
+          "year": 2019,
+          "date": "2019-04-09",
+          "citations": 871,
+          "arxiv_id": "1904.04514",
+          "url": "https://arxiv.org/abs/1904.04514",
+          "abstract": "High-resolution representation learning plays an essential role in many vision problems, e.g., pose estimation and semantic segmentation. The high-resolution network (HRNet)~\\cite{SunXLW19}, recently developed for human pose estimation, maintains high-resolution representations through the whole process by connecting high-to-low resolution convolutions in \\emph{parallel} and produces strong high-resolution representations by repeatedly conducting fusions across parallel convolutions. \nIn this paper, we conduct a further study on high-resolution representations by introducing a simple yet effective modification and apply it to a wide range of vision tasks. We augment the high-resolution representation by aggregating the (upsampled) representations from all the parallel convolutions rather than only the representation from the high-resolution convolution as done in~\\cite{SunXLW19}. This simple modification leads to stronger representations, evidenced by superior results. We show top results in semantic segmentation on Cityscapes, LIP, and PASCAL Context, and facial landmark detection on AFLW, COFW, $300$W, and WFLW. In addition, we build a multi-level representation from the high-resolution representation and apply it to the Faster R-CNN object detection framework and the extended frameworks. The proposed approach achieves superior results to existing single-model networks on COCO object detection. The code and models have been publicly available at \\url{this https URL}."
+        },
+        {
+          "title": "Proteomics identifies new therapeutic targets of early-stage hepatocellular carcinoma",
+          "authors": [
+            "Ying Jiang",
+            "A. Sun",
+            "Yang Zhao",
+            "W. Ying",
+            "Huichuan Sun",
+            "Xinrong Yang",
+            "B. Xing",
+            "Wei Sun",
+            "L. Ren",
+            "Bo Hu",
+            "Chaoying Li",
+            "Li Zhang",
+            "Guangrong Qin",
+            "Menghuan Zhang",
+            "Ning Chen",
+            "Manli Zhang",
+            "Yin Huang",
+            "Jinan Zhou",
+            "Yan Zhao",
+            "Mingwei Liu",
+            "Xiao-dong Zhu",
+            "Yang Qiu",
+            "Yanjun Sun",
+            "Cheng Huang",
+            "Meng Yan",
+            "Mingchao Wang",
+            "Wei Liu",
+            "Fang Tian",
+            "Hualin Xu",
+            "Jian Zhou",
+            "Zhenyu Wu",
+            "Tieliu Shi",
+            "Weimin Zhu",
+            "J. Qin",
+            "Lu Xie",
+            "Jia Fan",
+            "X. Qian",
+            "F. He",
+            "Chinese Human Proteome Project Consortium"
+          ],
+          "year": 2019,
+          "date": "2019-02-27",
+          "citations": 715,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": ""
+        },
+        {
+          "title": "Effect of Anlotinib as a Third-Line or Further Treatment on Overall Survival of Patients With Advanced Non–Small Cell Lung Cancer: The ALTER 0303 Phase 3 Randomized Clinical Trial",
+          "authors": [
+            "B. Han",
+            "Kai Li",
+            "Qiming Wang",
+            "Li Zhang",
+            "Jianhua Shi",
+            "Zhehai Wang",
+            "Ying Cheng",
+            "Jianxing He",
+            "Yuankai Shi",
+            "Yizhuo Zhao",
+            "Hao Yu",
+            "Yang Zhao",
+            "Weiqiang Chen",
+            "Yi Luo",
+            "Lin Wu",
+            "Xiuwen Wang",
+            "R. Pirker",
+            "K. Nan",
+            "F. Jin",
+            "Jian Dong",
+            "Baolan Li",
+            "Yan Sun"
+          ],
+          "year": 2018,
+          "date": "2018-11-01",
+          "citations": 538,
+          "arxiv_id": null,
+          "url": "",
+          "abstract": "Importance Anlotinib is a novel multitarget tyrosine kinase inhibitor for tumor angiogenesis and proliferative signaling. A phase 2 trial showed anlotinib to improve progression-free survival with a potential benefit of overall survival, leading to the phase 3 trial to confirm the drug’s efficacy in advanced non–small cell lung cancer (NSCLC). Objective To investigate the efficacy of anlotinib on overall survival of patients with advanced NSCLC progressing after second-line or further treatment. Design, Setting, and Participants The ALTER 0303 trial was a multicenter, double-blind, phase 3 randomized clinical trial designed to evaluate the efficacy and safety of anlotinib in patients with advanced NSCLC. Patients from 31 grade-A tertiary hospitals in China were enrolled between March 1, 2015, and August 31, 2016. Those aged 18 to 75 years who had histologically or cytologically confirmed NSCLC were eligible (n = 606), and those who had centrally located squamous cell carcinoma with cavitary features or brain metastases that were uncontrolled or controlled for less than 2 months were excluded. Patients (n = 440) were randomly assigned in a 2-to-1 ratio to receive either 12 mg/d of anlotinib or a matched placebo. All cases were treated with study drugs at least once in accordance with the intention-to-treat principle. Main Outcomes and Measures The primary end point was overall survival. The secondary end points were progression-free survival, objective response rate, disease control rate, quality of life, and safety. Results In total, 439 patients were randomized, 296 to the anlotinib group (106 [36.1%] were female and 188 [64.0%] were male, with a mean [SD] age of 57.9 [9.1] years) and 143 to the placebo group (46 [32.2%] were female and 97 [67.8%] were male, with a mean [SD] age of 56.8 [9.1] years). Overall survival was significantly longer in the anlotinib group (median, 9.6 months; 95% CI, 8.2-10.6) than the placebo group (median, 6.3 months; 95% CI, 5.0-8.1), with a hazard ratio (HR) of 0.68 (95% CI, 0.54-0.87; P = .002). A substantial increase in progression-free survival was noted in the anlotinib group compared with the placebo group (median, 5.4 months [95% CI, 4.4-5.6] vs 1.4 months [95% CI, 1.1-1.5]; HR, 0.25 [95% CI, 0.19-0.31]; P < .001). Considerable improvement in objective response rate and disease control rate was observed in the anlotinib group over the placebo group. The most common grade 3 or higher adverse events in the anlotinib arm were hypertension and hyponatremia. Conclusions and Relevance Among the Chinese patients in this trial, anlotinib appears to lead to prolonged overall survival and progression-free survival. This finding suggests that anlotinib is well tolerated and is a potential third-line or further therapy for patients with advanced NSCLC. Trial Registration ClinicalTrials.gov identifier: NCT02388919"
+        }
+      ]
     ],
     [
       "Ganchao Liu",
@@ -2282,172 +2626,7 @@
           "abstract": "Flow-based generative models, such as diffusion models and flow matching models, have achieved remarkable success in learning complex data distributions. However, a critical gap remains for their deployment in safety-critical domains: the lack of formal guarantees that generated samples will satisfy hard constraints. We address this by proposing a safety filtering framework that acts as an online shield for any pre-trained generative model. Our key insight is to cooperate with the generative process rather than override it. We define a constricting safety tube that is relaxed at the initial noise distribution and progressively tightens to the target safe set at the final data distribution, mirroring the coarse-to-fine structure of the generative process itself. By characterizing this tube via Control Barrier Functions (CBFs), we synthesize a feedback control input through a convex Quadratic Program (QP) at each sampling step. As the tube is loosest when noise is high and intervention is cheapest in terms of control energy, most constraint enforcement occurs when it least disrupts the model's learned structure. We prove that this mechanism guarantees safe sampling while minimizing the distributional shift from the original model at each sampling step, as quantified by the KL divergence. Our framework applies to any pre-trained flow-based generative scheme requiring no retraining or architectural modifications. We validate the approach across constrained image generation, physically-consistent trajectory sampling, and safe robotic manipulation policies, achieving 100% constraint satisfaction while preserving semantic fidelity."
         }
       ],
-      [
-        {
-          "title": "Optimization Algorithms for Regulation of Dynamic Processes",
-          "authors": [
-            "Ahmed Allibhoy"
-          ],
-          "year": 2025,
-          "date": "2025-06-24",
-          "citations": 0,
-          "arxiv_id": null,
-          "url": "",
-          "abstract": "In this tutorial we consider the problem of designing optimization algorithms for settings where the solution is used to regulate a physical plant. This scenario is ubiquitous in engineering applications e.g. model predictive controllers for regulating industrial processes, safety filters in robotics, and online feedback optimization for power systems. In these applications, the optimization problem often incorporates constraints which, when violated, would threaten the safe operation of the system. Thus, we require that the algorithm is anytime, meaning that it is guaranteed to return a feasible point even when terminated before it converges to a solution. To solve this problem, rather than adopting the dominant view of an optimization algorithm as simply a computational method, we instead approach its design from a systems theoretic perspective. This is because the optimization algorithm, along with the physical process it regulates, can be viewed as a pair of interconnected dynamical systems, which is naturally analyzed using control theoretic tools. Our solution begins by considering a \"static\" nonlinear optimization problem and introducing an anytime solver in the form of a continuous time dynamical system – derived using techniques from safety critical control – called the safe gradient flow. Next, we \"close the loop\" and analyze the interconnection of the safe gradient flow with a dynamical system modeling the plant. Finally, to address the practical implementation of these methods on digital computers, we tackle the challenge of discretizing the safe gradient flow."
-        },
-        {
-          "title": "Global Optimization Through Heterogeneous Oscillator Ising Machines",
-          "authors": [
-            "Ahmed Allibhoy",
-            "A. Montanari",
-            "Fabio Pasqualetti",
-            "A. Motter"
-          ],
-          "year": 2025,
-          "date": "2025-05-06",
-          "citations": 2,
-          "arxiv_id": "2505.17027",
-          "url": "https://arxiv.org/abs/2505.17027",
-          "abstract": "Oscillator Ising machines (OIMs) are networks of coupled oscillators that seek the minimum energy state of an Ising model. Since many NP-hard problems are equivalent to the minimization of an Ising Hamiltonian, OIMs have emerged as a promising computing paradigm for solving complex optimization problems that are intractable on existing digital computers. However, their performance is sensitive to the choice of tunable parameters, and convergence guarantees are mostly lacking. Here, we show that lower energy states are more likely to be stable, and that convergence to the global minimizer is often improved by introducing random heterogeneities in the regularization parameters. Our analysis relates the stability properties of Ising configurations to the spectral properties of a signed graph Laplacian. By examining the spectra of random ensembles of these graphs, we show that the probability of an equilibrium being asymptotically stable depends inversely on the value of the Ising Hamiltonian, biasing the system toward low-energy states. Our numerical results confirm our findings and demonstrate that heterogeneously designed OIMs efficiently converge to globally optimal solutions with high probability."
-        },
-        {
-          "title": "Regularity properties of optimization-based controllers",
-          "authors": [
-            "Pol Mestres",
-            "Ahmed Allibhoy",
-            "Jorge Cort'es"
-          ],
-          "year": 2023,
-          "date": "2023-11-22",
-          "citations": 31,
-          "arxiv_id": "2311.13167",
-          "url": "https://arxiv.org/abs/2311.13167",
-          "abstract": ""
-        },
-        {
-          "title": "Anytime solvers for variational inequalities: The (recursive) safe monotone flows",
-          "authors": [
-            "Ahmed Allibhoy",
-            "Jorge Cort'es"
-          ],
-          "year": 2023,
-          "date": "2023-11-16",
-          "citations": 4,
-          "arxiv_id": "2311.09527",
-          "url": "https://arxiv.org/abs/2311.09527",
-          "abstract": "This paper synthesizes anytime algorithms, in the form of continuous-time dynamical systems, to solve monotone variational inequalities. We introduce three algorithms that solve this problem: the projected monotone flow, the safe monotone flow, and the recursive safe monotone flow. The first two systems admit dual interpretations: either as projected dynamical systems or as dynamical systems controlled with a feedback controller specified by a quadratic program derived using techniques from safety-critical control. The third flow bypasses the need to solve quadratic programs along the trajectories by incorporating a dynamics whose equilibria precisely correspond to such solutions, and interconnecting the dynamical systems on different time scales. We perform a thorough analysis of the dynamical properties of all three systems. For the safe monotone flow, we show that equilibria correspond exactly with critical points of the original problem, and the constraint set is forward invariant and asymptotically stable. The additional assumption of convexity and monotonicity allows us to derive global stability guarantees, as well as establish the system is contracting when the constraint set is polyhedral. For the recursive safe monotone flow, we use tools from singular perturbation theory for contracting systems to show KKT points are locally exponentially stable and globally attracting, and obtain practical safety guarantees. We illustrate the performance of the flows on a two-player game example and also demonstrate the versatility for interconnection and regulation of dynamical processes of the safe monotone flow in an example of a receding horizon linear quadratic dynamic game."
-        },
-        {
-          "title": "Safety-Critical Control as a Design Paradigm for Anytime Solvers of Variational Inequalities",
-          "authors": [
-            "Ahmed Allibhoy",
-            "J. Cortés"
-          ],
-          "year": 2022,
-          "date": "2022-12-06",
-          "citations": 5,
-          "arxiv_id": null,
-          "url": "",
-          "abstract": "This paper shows that safety-critical control methods for the synthesis of safeguarding controllers also have an important role to play in optimization theory. We are motivated by applications where the solution of a variational inequality is used to regulate a dynamically evolving plant. We design algorithms to solve these problems by blending techniques from safety-critical control with tools from monotone operator theory. These algorithms are anytime, meaning that, if initialized in the feasible set, they are guaranteed to return a feasible solution to the optimization problem regardless of when they are terminated, which makes them particularly suitable for real-time applications. In some cases, our approach leads to reinterpretations of well-known algorithms from the lens of control theory, and in other cases we derive entirely novel algorithms. Our results demonstrate the promising potential of safety-critical control for both the analysis and design of optimization algorithms."
-        },
-        {
-          "title": "Control-Barrier-Function-Based Design of Gradient Flows for Constrained Nonlinear Programming",
-          "authors": [
-            "Ahmed Allibhoy",
-            "Jorge Cort'es"
-          ],
-          "year": 2022,
-          "date": "2022-04-05",
-          "citations": 54,
-          "arxiv_id": "2204.01930",
-          "url": "https://arxiv.org/abs/2204.01930",
-          "abstract": "This article considers the problem of designing a continuous-time dynamical system that solves a constrained nonlinear optimization problem and makes the feasible set forward invariant and asymptotically stable. The invariance of the feasible set makes the dynamics anytime, when viewed as an algorithm, meaning it returns a feasible solution regardless of when it is terminated. Our approach augments the gradient flow of the objective function with inputs defined by the constraint functions, treats the feasible set as a safe set, and synthesizes a safe feedback controller using techniques from the theory of control barrier functions. The resulting closed-loop system, termed safe gradient flow, can be viewed as a primal–dual flow, where the state corresponds to the primal variables and the inputs correspond to the dual ones. We provide a detailed suite of conditions based on constraint qualification under which (both isolated and nonisolated) local minimizers are asymptotically stable with respect to the feasible set and the whole state space. Comparisons with other continuous-time methods for optimization in a simple example illustrate the advantages of the safe gradient flow."
-        },
-        {
-          "title": "Optimal Network Interventions to Control the Spreading of Oscillations",
-          "authors": [
-            "Ahmed Allibhoy",
-            "Federico Celi",
-            "F. Pasqualetti",
-            "J. Cortés"
-          ],
-          "year": 2022,
-          "date": null,
-          "citations": 10,
-          "arxiv_id": null,
-          "url": "",
-          "abstract": "Oscillations are a prominent feature of neuronal activity and are associated with a variety of phenomena in brain tissue, both healthy and unhealthy. Characterizing how oscillations spread through regions of the brain is of particular interest when studying countermeasures to pathological brain synchronizations. This paper models neuronal activity using networks of interconnected excitatory-inhibitory pairs with linear threshold dynamics, and presents strategies to design networks with desired robustness properties. In particular, we develop a dynamical description of the brain through a network where the state of each node models the firing rate of a region of neurons and where edges capture the structural connectivity between the regions. We characterize the presence of oscillations and study conditions on their spreading. We also discuss strategies to optimally design networks which are robust to oscillation spreading. We demonstrate our results with numerical simulations."
-        },
-        {
-          "title": "Anytime Solution of Constrained Nonlinear Programs via Control Barrier Functions",
-          "authors": [
-            "Ahmed Allibhoy",
-            "J. Cortés"
-          ],
-          "year": 2021,
-          "date": "2021-12-14",
-          "citations": 7,
-          "arxiv_id": null,
-          "url": "",
-          "abstract": "This paper considers the problem of designing a dynamical system to solve constrained nonlinear optimization problems such that the feasible set is forward invariant and asymptotically stable. The invariance of the feasible set makes the dynamics anytime, when viewed as an algorithm, meaning that it is guaranteed to return a feasible solution regardless of when it is terminated. Such property is of critical importance in feedback control since controllers are often implemented as solutions to constrained programs that must be solved in real time. The proposed design builds on the basic insight of following the gradient flow of the objective function while keeping the state evolution within the feasible set using techniques from the theory of control barrier functions. We show that the resulting closed-loop system can be interpreted as a continuous approximation of the projected gradient flow, establish the monotonic decrease of the objective function along the feasible set, and characterize the asymptotic convergence properties to the set of critical points. Various examples illustrate our results."
-        },
-        {
-          "title": "Linear-Threshold Dynamics for the Study of Epileptic Events",
-          "authors": [
-            "Federico Celi",
-            "Ahmed Allibhoy",
-            "F. Pasqualetti",
-            "J. Cortés"
-          ],
-          "year": 2021,
-          "date": "2021-10-01",
-          "citations": 10,
-          "arxiv_id": null,
-          "url": "",
-          "abstract": ""
-        },
-        {
-          "title": "Linear-Threshold Dynamics for the Study of Epileptic Events",
-          "authors": [
-            "Federico Celi",
-            "Ahmed Allibhoy",
-            "F. Pasqualetti",
-            "J. Cortés"
-          ],
-          "year": 2021,
-          "date": "2021-05-25",
-          "citations": 0,
-          "arxiv_id": null,
-          "url": "",
-          "abstract": "In this letter, we provide a detailed characterization of the equilibria and bifurcations of two-dimensional linear-threshold models. Using the input to the system as the bifurcation parameter, we characterize the location of the admissible equilibria, show that bifurcations can arise only when equilibria lie on the boundary of well-defined regions of the state space, and prove that (codimension-one) bifurcations can only be of three different types: persistent, non-smooth fold, and Hopf. We show how these bifurcations change the qualitative properties of the system trajectories, and how these behaviors resemble prototypical patterns of EEG activity observed before, during, and after seizure events in the human brain. Our findings suggest that low-dimensional linear threshold models can effectively be used to model, analyze, predict, and ultimately regulate the interactions of neuronal populations in the human brain."
-        },
-        {
-          "title": "Data-Driven Distributed Predictive Control via Network Optimization",
-          "authors": [
-            "Ahmed Allibhoy",
-            "J. Cortés"
-          ],
-          "year": 2020,
-          "date": "2020-06-08",
-          "citations": 3,
-          "arxiv_id": null,
-          "url": "",
-          "abstract": ""
-        },
-        {
-          "title": "Data-Based Receding Horizon Control of Linear Network Systems",
-          "authors": [
-            "Ahmed Allibhoy",
-            "J. Cortés"
-          ],
-          "year": 2020,
-          "date": "2020-03-22",
-          "citations": 59,
-          "arxiv_id": "2003.09813",
-          "url": "https://arxiv.org/abs/2003.09813",
-          "abstract": "We propose a distributed data-based predictive control scheme to stabilize a network system described by linear dynamics. Agents cooperate to predict the future system evolution without knowledge of the dynamics, relying instead on learning a data-based representation from a single sample trajectory. We employ this representation to reformulate the finite-horizon Linear Quadratic Regulator problem as a network optimization with separable objective functions and locally expressible constraints. We show that the controller resulting from approximately solving this problem using a distributed optimization algorithm in a receding horizon manner is stabilizing. We validate our results through numerical simulations."
-        }
-      ]
+      []
     ],
     [
       "Fabio Pasqualetti",
@@ -2507,353 +2686,7 @@
           "abstract": "Despite the state-of-the-art performance of large language models (LLMs) across diverse tasks, their susceptibility to adversarial attacks and unsafe content generation remains a major obstacle to deployment, particularly in high-stakes settings. Addressing this challenge requires safety mechanisms that are both practically effective and supported by rigorous theory. We introduce BarrierSteer, a novel framework that formalizes response safety by embedding learned non-linear safety constraints directly into the model's latent representation space. BarrierSteer employs a steering mechanism based on Control Barrier Functions (CBFs) to efficiently detect and prevent unsafe response trajectories during inference with high precision. By enforcing multiple safety constraints through efficient constraint merging, without modifying the underlying LLM parameters, BarrierSteer preserves the model's original capabilities and performance. We provide theoretical results establishing that applying CBFs in latent space offers a principled and computationally efficient approach to enforcing safety. Our experiments across multiple models and datasets show that BarrierSteer substantially reduces adversarial success rates, decreases unsafe generations, and outperforms existing methods."
         }
       ],
-      [
-        {
-          "title": "A bacterial signal coordinates plant-microbe fitness trade-off to enhance sulfur deficiency tolerance in plants.",
-          "authors": [
-            "Arijit Mukherjee",
-            "Mrinmoy Mazumder",
-            "Arun Verma",
-            "H. Tikariha",
-            "Raktim Bhattacharya",
-            "Qi En Ooi",
-            "S. Swarup"
-          ],
-          "year": 2025,
-          "date": "2025-09-01",
-          "citations": 1,
-          "arxiv_id": null,
-          "url": "",
-          "abstract": ""
-        },
-        {
-          "title": "ActiveDPO: Active Direct Preference Optimization for Sample-Efficient Alignment",
-          "authors": [
-            "Xiaoqiang Lin",
-            "Arun Verma",
-            "Zhongxiang Dai",
-            "Daniela Rus",
-            "See-Kiong Ng",
-            "K. H. Low"
-          ],
-          "year": 2025,
-          "date": "2025-05-25",
-          "citations": 4,
-          "arxiv_id": "2505.19241",
-          "url": "https://arxiv.org/abs/2505.19241",
-          "abstract": "The recent success of using human preferences to align large language models (LLMs) has significantly improved their performance in various downstream tasks like question answering, mathematical reasoning, and code generation. However,3 achieving effective LLM alignment depends on high-quality human preference datasets. Collecting these datasets requires human preference annotation, which is costly and resource-intensive, necessitating efficient active data selection methods. Existing methods either lack a strong theoretical foundation or depend on restrictive reward function assumptions (e.g., linearity). To this end, we propose an algorithm, ActiveDPO, that uses a theoretically grounded data selection criterion for non-linear reward functions while directly leveraging the LLM itself to parameterize the reward model that is used for active data selection. As a result, ActiveDPO explicitly accounts for the influence of LLM on data selection, unlike methods that select the data without considering the LLM that is being aligned, thereby leading to more effective and efficient data collection. Extensive experiments show that ActiveDPO outperforms existing methods across various models and datasets."
-        },
-        {
-          "title": "Active Human Feedback Collection via Neural Contextual Dueling Bandits",
-          "authors": [
-            "Arun Verma",
-            "Xiaoqiang Lin",
-            "Zhongxiang Dai",
-            "Daniela Rus",
-            "K. H. Low"
-          ],
-          "year": 2025,
-          "date": "2025-04-16",
-          "citations": 3,
-          "arxiv_id": "2504.12016",
-          "url": "https://arxiv.org/abs/2504.12016",
-          "abstract": "Collecting human preference feedback is often expensive, leading recent works to develop principled algorithms to select them more efficiently. However, these works assume that the underlying reward function is linear, an assumption that does not hold in many real-life applications, such as online recommendation and LLM alignment. To address this limitation, we propose Neural-ADB, an algorithm based on the neural contextual dueling bandit framework that provides a principled and practical method for collecting human preference feedback when the underlying latent reward function is non-linear. We theoretically show that when preference feedback follows the Bradley-Terry-Luce model, the worst sub-optimality gap of the policy learned by Neural-ADB decreases at a sub-linear rate as the preference dataset increases. Our experimental results on preference datasets further corroborate the effectiveness of Neural-ADB."
-        },
-        {
-          "title": "TETRIS: Optimal Draft Token Selection for Batch Speculative Decoding",
-          "authors": [
-            "Zhaoxuan Wu",
-            "Zijian Zhou",
-            "Arun Verma",
-            "Alok Prakash",
-            "Daniela Rus",
-            "B. Low"
-          ],
-          "year": 2025,
-          "date": "2025-02-21",
-          "citations": 3,
-          "arxiv_id": "2502.15197",
-          "url": "https://arxiv.org/abs/2502.15197",
-          "abstract": "We propose TETRIS, a novel method that optimizes the total throughput of batch speculative decoding in multi-request settings. Unlike existing methods that optimize for a single request or a group of requests as a whole, TETRIS actively selects the most promising draft tokens (for every request in a batch) to be accepted when verified in parallel, resulting in fewer rejected tokens and hence less wasted computing resources. Such an effective resource utilization to achieve fast inference in large language models (LLMs) is especially important to service providers with limited inference capacity. Compared to baseline speculative decoding, TETRIS yields a consistently higher acceptance rate and more effective utilization of the limited inference capacity. We show theoretically and empirically that TETRIS outperforms baseline speculative decoding and existing methods that dynamically select draft tokens, leading to a more efficient batch inference in LLMs."
-        },
-        {
-          "title": "Bioinformatic Methodologies in Assessing Gut Microbiota",
-          "authors": [
-            "J. Fox",
-            "Austin Sims",
-            "Morgan Ross",
-            "J. Bettag",
-            "Alexandra Wilder",
-            "Dylan Natrop",
-            "Alison Borsotti",
-            "Sree L. Kolli",
-            "Shaurya Mehta",
-            "Hema Verma",
-            "Kento Kurashima",
-            "C. Manithody",
-            "Arun Verma",
-            "Ajay Jain"
-          ],
-          "year": 2024,
-          "date": "2024-12-01",
-          "citations": 10,
-          "arxiv_id": null,
-          "url": "",
-          "abstract": "Bioinformatic methodologies play a crucial role in the assessment of gut microbiota, offering advanced tools for analyzing complex microbial communities. These methodologies involve high-throughput sequencing technologies, such as 16S rRNA gene sequencing and metagenomics, which generate vast amounts of data on microbial diversity and functional potential, as well as whole-genome sequencing, which, while being more costly, has a more expansive potential. Bioinformatics tools and algorithms process these data to identify microbial taxa and quantify and elucidate their roles within the microbiome. Advanced statistical and computational models further enable the identification of microbiota patterns associated with various diseases and health conditions. Overall, bioinformatic approaches are essential for deciphering the complexities of gut microbiota so that, in the future, we may be able to discover treatments and technologies aimed at restoring or optimizing the microbiome. The goal of this review is to describe the differences in methodology and utilization of 16S versus whole-genome sequencing to address the increased understanding of the role that the gut microbiome plays in human physiology and pathology."
-        },
-        {
-          "title": "Novel Models for Assessing and Pathophysiology of Hepatic Ischemia–Reperfusion Injury Mechanisms",
-          "authors": [
-            "Connor Whalen",
-            "Arun Verma",
-            "Kento Kurashima",
-            "Jasmine Carter",
-            "Hala Nazzal",
-            "Ajay Jain"
-          ],
-          "year": 2024,
-          "date": "2024-09-01",
-          "citations": 9,
-          "arxiv_id": null,
-          "url": "",
-          "abstract": "Hepatic ischemia–reperfusion injury (IRI) is a major cause of postoperative hepatic dysfunction and liver failure involving cellular damage to previously ischemic tissues to which blood flow is restored. The reestablishment of blood flow is essential for salvaging ischemic tissues. The reperfusion itself, however, can paradoxically lead to further cellular damage, which involves a multi-factorial process resulting in extensive tissue damage, which can threaten the function and viability of the liver and other organ systems. The following review outlines multiple models for in-lab analysis of the various hepatic IRI mechanisms, including murine, porcine, cell lines, and machine perfusion models."
-        },
-        {
-          "title": "Keep Everyone Happy: Online Fair Division of Numerous Items with Few Copies",
-          "authors": [
-            "Arun Verma",
-            "Indrajit Saha",
-            "Makoto Yokoo",
-            "B. Low"
-          ],
-          "year": 2024,
-          "date": "2024-08-23",
-          "citations": 3,
-          "arxiv_id": "2408.12845",
-          "url": "https://arxiv.org/abs/2408.12845",
-          "abstract": "This paper considers a novel variant of the online fair division problem involving multiple agents in which a learner sequentially observes an indivisible item that has to be irrevocably allocated to one of the agents while satisfying a fairness and efficiency constraint. Existing algorithms assume a small number of items with a sufficiently large number of copies, which ensures a good utility estimation for all item-agent pairs from noisy bandit feedback. However, this assumption may not hold in many real-life applications, for example, an online platform that has a large number of users (items) who use the platform's service providers (agents) only a few times (a few copies of items), which makes it difficult to accurately estimate utilities for all item-agent pairs. To address this, we assume utility is an unknown function of item-agent features. We then propose algorithms that model online fair division as a contextual bandit problem, with sub-linear regret guarantees. Our experimental results further validate the effectiveness of the proposed algorithms."
-        },
-        {
-          "title": "Neural Dueling Bandits",
-          "authors": [
-            "Arun Verma",
-            "Zhongxiang Dai",
-            "Xiaoqiang Lin",
-            "P. Jaillet",
-            "K. H. Low"
-          ],
-          "year": 2024,
-          "date": "2024-07-24",
-          "citations": 6,
-          "arxiv_id": "2407.17112",
-          "url": "https://arxiv.org/abs/2407.17112",
-          "abstract": "Contextual dueling bandit is used to model the bandit problems, where a learner's goal is to find the best arm for a given context using observed noisy human preference feedback over the selected arms for the past contexts. However, existing algorithms assume the reward function is linear, which can be complex and non-linear in many real-life applications like online recommendations or ranking web search results. To overcome this challenge, we use a neural network to estimate the reward function using preference feedback for the previously selected arms. We propose upper confidence bound- and Thompson sampling-based algorithms with sub-linear regret guarantees that efficiently select arms in each round. We also extend our theoretical results to contextual bandit problems with binary feedback, which is in itself a non-trivial contribution. Experimental results on the problem instances derived from synthetic datasets corroborate our theoretical results."
-        },
-        {
-          "title": "Data-Centric AI in the Age of Large Language Models",
-          "authors": [
-            "Xinyi Xu",
-            "Zhaoxuan Wu",
-            "Rui Qiao",
-            "Arun Verma",
-            "Yao Shu",
-            "Jingtan Wang",
-            "Xinyuan Niu",
-            "Zhenfeng He",
-            "Jiangwei Chen",
-            "Zijian Zhou",
-            "Gregory Kang Ruey Lau",
-            "Hieu Dao",
-            "Lucas Agussurja",
-            "Rachael Hwee Ling Sim",
-            "Xiaoqiang Lin",
-            "Wenyang Hu",
-            "Zhongxiang Dai",
-            "Pang Wei Koh",
-            "B. Low"
-          ],
-          "year": 2024,
-          "date": "2024-06-20",
-          "citations": 4,
-          "arxiv_id": "2406.14473",
-          "url": "https://arxiv.org/abs/2406.14473",
-          "abstract": "This position paper proposes a data-centric viewpoint of AI research, focusing on large language models (LLMs). We start by making the key observation that data is instrumental in the developmental (e.g., pretraining and fine-tuning) and inferential stages (e.g., in-context learning) of LLMs, and yet it receives disproportionally low attention from the research community. We identify four specific scenarios centered around data, covering data-centric benchmarks and data curation, data attribution, knowledge transfer, and inference contextualization. In each scenario, we underscore the importance of data, highlight promising research directions, and articulate the potential impacts on the research community and, where applicable, the society as a whole. For instance, we advocate for a suite of data-centric benchmarks tailored to the scale and complexity of data for LLMs. These benchmarks can be used to develop new data curation methods and document research efforts and results, which can help promote openness and transparency in AI and LLM research."
-        },
-        {
-          "title": "Prompt Optimization with Human Feedback",
-          "authors": [
-            "Xiaoqiang Lin",
-            "Zhongxiang Dai",
-            "Arun Verma",
-            "See-Kiong Ng",
-            "P. Jaillet",
-            "K. H. Low"
-          ],
-          "year": 2024,
-          "date": "2024-05-27",
-          "citations": 31,
-          "arxiv_id": "2405.17346",
-          "url": "https://arxiv.org/abs/2405.17346",
-          "abstract": "Large language models (LLMs) have demonstrated remarkable performances in various tasks. However, the performance of LLMs heavily depends on the input prompt, which has given rise to a number of recent works on prompt optimization. However, previous works often require the availability of a numeric score to assess the quality of every prompt. Unfortunately, when a human user interacts with a black-box LLM, attaining such a score is often infeasible and unreliable. Instead, it is usually significantly easier and more reliable to obtain preference feedback from a human user, i.e., showing the user the responses generated from a pair of prompts and asking the user which one is preferred. Therefore, in this paper, we study the problem of prompt optimization with human feedback (POHF), in which we aim to optimize the prompt for a black-box LLM using only human preference feedback. Drawing inspiration from dueling bandits, we design a theoretically principled strategy to select a pair of prompts to query for preference feedback in every iteration, and hence introduce our algorithm named automated POHF (APOHF). We apply our APOHF algorithm to various tasks, including optimizing user instructions, prompt optimization for text-to-image generative models, and response optimization with human feedback (i.e., further refining the response using a variant of our APOHF). The results demonstrate that our APOHF can efficiently find a good prompt using a small number of preference feedback instances. Our code can be found at \\url{https://github.com/xqlin98/APOHF}."
-        },
-        {
-          "title": "Role of Effective Policy and Screening in Managing Pediatric Nutritional Insecurity as the Most Important Social Determinant of Health Influencing Health Outcomes",
-          "authors": [
-            "Hema Verma",
-            "Arun Verma",
-            "J. Bettag",
-            "Sree L. Kolli",
-            "Kento Kurashima",
-            "C. Manithody",
-            "Ajay Jain"
-          ],
-          "year": 2023,
-          "date": "2023-12-19",
-          "citations": 4,
-          "arxiv_id": null,
-          "url": "",
-          "abstract": "Social Determinants of Health (SDOH) impact nearly half of health outcomes, surpassing the influence of human behavior, clinical care, and the physical environment. SDOH has five domains: Economic Stability, Education Access and Quality, Health Care Access and Quality, Neighborhood and Built Environment, and Social and Community Context. Any adversity arising out of these interlinked domains predominantly affects children due to their greater susceptibility, and the adverse outcomes may span generations. Unfavorable SDOH may cause food insecurity, malnutrition, unbalanced gut microbiome, acute and chronic illnesses, inadequate education, unemployment, and lower life expectancy. Systematic screening by health care workers and physicians utilizing currently available tools and questionnaires can identify children susceptible to adverse childhood experiences, but there is a deficiency with respect to streamlined approach and institutional support. Additionally, current ameliorating supplemental food programs fall short of pediatric nutritional requirements. We propose a nutrition-based Surveillance, Screening, Referral, and Reevaluation (SSRR) plan encompassing a holistic approach to SDOH with a core emphasis on food insecurity, coupled with standardizing outcome-based interventions. We also propose more inclusive use of Food Prescription Programs, tailored to individual children’s needs, with emphasis on education and access to healthy food."
-        },
-        {
-          "title": "Exploiting Correlated Auxiliary Feedback in Parameterized Bandits",
-          "authors": [
-            "Arun Verma",
-            "Zhongxiang Dai",
-            "Yao Shu",
-            "K. H. Low"
-          ],
-          "year": 2023,
-          "date": "2023-11-05",
-          "citations": 2,
-          "arxiv_id": "2311.02715",
-          "url": "https://arxiv.org/abs/2311.02715",
-          "abstract": "We study a novel variant of the parameterized bandits problem in which the learner can observe additional auxiliary feedback that is correlated with the observed reward. The auxiliary feedback is readily available in many real-life applications, e.g., an online platform that wants to recommend the best-rated services to its users can observe the user's rating of service (rewards) and collect additional information like service delivery time (auxiliary feedback). In this paper, we first develop a method that exploits auxiliary feedback to build a reward estimator with tight confidence bounds, leading to a smaller regret. We then characterize the regret reduction in terms of the correlation coefficient between reward and its auxiliary feedback. Experimental results in different settings also verify the performance gain achieved by our proposed method."
-        },
-        {
-          "title": "Quantum Bayesian Optimization",
-          "authors": [
-            "Zhongxiang Dai",
-            "Gregory Kang Ruey Lau",
-            "Arun Verma",
-            "Yao Shu",
-            "K. H. Low",
-            "P. Jaillet"
-          ],
-          "year": 2023,
-          "date": "2023-10-09",
-          "citations": 17,
-          "arxiv_id": "2310.05373",
-          "url": "https://arxiv.org/abs/2310.05373",
-          "abstract": "Kernelized bandits, also known as Bayesian optimization (BO), has been a prevalent method for optimizing complicated black-box reward functions. Various BO algorithms have been theoretically shown to enjoy upper bounds on their cumulative regret which are sub-linear in the number T of iterations, and a regret lower bound of Omega(sqrt(T)) has been derived which represents the unavoidable regrets for any classical BO algorithm. Recent works on quantum bandits have shown that with the aid of quantum computing, it is possible to achieve tighter regret upper bounds better than their corresponding classical lower bounds. However, these works are restricted to either multi-armed or linear bandits, and are hence not able to solve sophisticated real-world problems with non-linear reward functions. To this end, we introduce the quantum-Gaussian process-upper confidence bound (Q-GP-UCB) algorithm. To the best of our knowledge, our Q-GP-UCB is the first BO algorithm able to achieve a regret upper bound of O(polylog T), which is significantly smaller than its regret lower bound of Omega(sqrt(T)) in the classical setting. Moreover, thanks to our novel analysis of the confidence ellipsoid, our Q-GP-UCB with the linear kernel achieves a smaller regret than the quantum linear UCB algorithm from the previous work. We use simulations, as well as an experiment using a real quantum computer, to verify that the theoretical quantum speedup achieved by our Q-GP-UCB is also potentially relevant in practice."
-        },
-        {
-          "title": "Data and Knowledge Engineering for Legal Precedents Using First-Order Predicate Logic",
-          "authors": [
-            "M. Alam",
-            "Md. Shahin Kabir",
-            "Arun Verma"
-          ],
-          "year": 2023,
-          "date": "2023-10-06",
-          "citations": 2,
-          "arxiv_id": null,
-          "url": "",
-          "abstract": "Data and knowledge engineering play a crucial role in the advancement of intelligent systems, particularly in the ability to analyze and comprehend legal precedents. We have applied this technique to divorce cases as a study and we have found that these techniques offer valuable insights and support decision-making processes. This paper delves into the application of First Order Predicate Logic (FOPL) in modeling and reasoning about divorce precedents. FOPL provides a formal representation of legal concepts, rules, and relationships, enabling the development of intelligent systems capable of analyzing divorce cases and extracting pertinent information. By harnessing FOPL, this research aims to enhance the efficiency and accuracy of legal systems analysis. The paper explores the design and implementation of a FOPL-based system for divorce case analysis and furthermore, it uncovers challenges and future directions."
-        },
-        {
-          "title": "Risk-Aware Reinforcement Learning with Coherent Risk Measures and Non-linear Function Approximation",
-          "authors": [
-            "Thanh Lam",
-            "Arun Verma",
-            "K. H. Low",
-            "P. Jaillet"
-          ],
-          "year": 2023,
-          "date": null,
-          "citations": 17,
-          "arxiv_id": null,
-          "url": "",
-          "abstract": ""
-        },
-        {
-          "title": "Zeroth-Order Optimization with Trajectory-Informed Derivative Estimation",
-          "authors": [
-            "Yao Shu",
-            "Zhongxiang Dai",
-            "Weicong Sng",
-            "Arun Verma",
-            "P. Jaillet",
-            "K. H. Low"
-          ],
-          "year": 2023,
-          "date": null,
-          "citations": 16,
-          "arxiv_id": null,
-          "url": "",
-          "abstract": ""
-        },
-        {
-          "title": "FAIR: Fair Collaborative Active Learning with Individual Rationality for Scientific Discovery",
-          "authors": [
-            "Xinyi Xu",
-            "Zhaoxuan Wu",
-            "Arun Verma",
-            "Chuan-Sheng Foo",
-            "B. Low"
-          ],
-          "year": 2023,
-          "date": null,
-          "citations": 11,
-          "arxiv_id": null,
-          "url": "",
-          "abstract": ""
-        },
-        {
-          "title": "Bayesian Optimization under Stochastic Delayed Feedback",
-          "authors": [
-            "Arun Verma",
-            "Zhongxiang Dai",
-            "B. Low"
-          ],
-          "year": 2022,
-          "date": "2022-06-19",
-          "citations": 15,
-          "arxiv_id": "2206.09341",
-          "url": "https://arxiv.org/abs/2206.09341",
-          "abstract": "Bayesian optimization (BO) is a widely-used sequential method for zeroth-order optimization of complex and expensive-to-compute black-box functions. The existing BO methods assume that the function evaluation (feedback) is available to the learner immediately or after a fixed delay. Such assumptions may not be practical in many real-life problems like online recommendations, clinical trials, and hyperparameter tuning where feedback is available after a random delay. To benefit from the experimental parallelization in these problems, the learner needs to start new function evaluations without waiting for delayed feedback. In this paper, we consider the BO under stochastic delayed feedback problem. We propose algorithms with sub-linear regret guarantees that efficiently address the dilemma of selecting new function queries while waiting for randomly delayed feedback. Building on our results, we also make novel contributions to batch BO and contextual Gaussian process bandits. Experiments on synthetic and real-life datasets verify the performance of our algorithms."
-        },
-        {
-          "title": "Federated Neural Bandits",
-          "authors": [
-            "Zhongxiang Dai",
-            "Yao Shu",
-            "Arun Verma",
-            "Flint Xiaofeng Fan",
-            "B. Low",
-            "P. Jaillet"
-          ],
-          "year": 2022,
-          "date": "2022-05-28",
-          "citations": 20,
-          "arxiv_id": "2205.14309",
-          "url": "https://arxiv.org/abs/2205.14309",
-          "abstract": "Recent works on neural contextual bandits have achieved compelling performances due to their ability to leverage the strong representation power of neural networks (NNs) for reward prediction. Many applications of contextual bandits involve multiple agents who collaborate without sharing raw observations, thus giving rise to the setting of federated contextual bandits. Existing works on federated contextual bandits rely on linear or kernelized bandits, which may fall short when modeling complex real-world reward functions. So, this paper introduces the federated neural-upper confidence bound (FN-UCB) algorithm. To better exploit the federated setting, FN-UCB adopts a weighted combination of two UCBs: $\\text{UCB}^{a}$ allows every agent to additionally use the observations from the other agents to accelerate exploration (without sharing raw observations), while $\\text{UCB}^{b}$ uses an NN with aggregated parameters for reward prediction in a similar way to federated averaging for supervised learning. Notably, the weight between the two UCBs required by our theoretical analysis is amenable to an interesting interpretation, which emphasizes $\\text{UCB}^{a}$ initially for accelerated exploration and relies more on $\\text{UCB}^{b}$ later after enough observations have been collected to train the NNs for accurate reward prediction (i.e., reliable exploitation). We prove sub-linear upper bounds on both the cumulative regret and the number of communication rounds of FN-UCB, and empirically demonstrate its competitive performance."
-        },
-        {
-          "title": "Application of Clustering Algorithms for Dimensionality Reduction in Infrastructure Resilience Prediction Models",
-          "authors": [
-            "Srijith Balakrishnan",
-            "B. Cassottana",
-            "Arun Verma"
-          ],
-          "year": 2022,
-          "date": "2022-05-06",
-          "citations": 8,
-          "arxiv_id": "2205.03316",
-          "url": "https://arxiv.org/abs/2205.03316",
-          "abstract": "Recent studies increasingly adopt simulation-based machine learning (ML) models to analyze critical infrastructure system resilience. For realistic applications, these ML models consider the component-level characteristics that influence the network response during emergencies. However, such an approach could result in a large number of features and cause ML models to suffer from the `curse of dimensionality'. We present a clustering-based method that simultaneously minimizes the problem of high-dimensionality and improves the prediction accuracy of ML models developed for resilience analysis in large-scale interdependent infrastructure networks. The methodology has three parts: (a) generation of simulation dataset, (b) network component clustering, and (c) dimensionality reduction and development of prediction models. First, an interdependent infrastructure simulation model simulates the network-wide consequences of various disruptive events. The component-level features are extracted from the simulated data. Next, clustering algorithms are used to derive the cluster-level features by grouping component-level features based on their topological and functional characteristics. Finally, ML algorithms are used to develop models that predict the network-wide impacts of disruptive events using the cluster-level features. The applicability of the method is demonstrated using an interdependent power-water-transport testbed. The proposed method can be used to develop decision-support tools for post-disaster recovery of infrastructure networks."
-        }
-      ]
+      []
     ],
     [
       "Kiwan Wong",
