@@ -480,8 +480,13 @@ def generate_html(high_citation, latest, authors):
   .search-row{{display:flex;align-items:center;gap:.8rem}}
   .search-input{{flex:1;max-width:68%;padding:.75rem .95rem;border:1px solid #ccd4df;border-radius:10px;font-size:.95rem;outline:none;background:white}}
   .search-input:focus{{border-color:#1a1a2e;box-shadow:0 0 0 3px rgba(26,26,46,.1)}}
-  .sort-select{{min-width:220px;padding:.75rem .85rem;border:1px solid #ccd4df;border-radius:10px;background:white;color:#263044;font-size:.9rem;outline:none}}
-  .sort-select:focus{{border-color:#1a1a2e;box-shadow:0 0 0 3px rgba(26,26,46,.1)}}
+  .sort-wrap{{position:relative;min-width:220px}}
+  .sort-button{{width:100%;padding:.75rem .85rem;border:1px solid #ccd4df;border-radius:10px;background:white;color:#263044;font-size:.9rem;outline:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center}}
+  .sort-button:focus{{border-color:#1a1a2e;box-shadow:0 0 0 3px rgba(26,26,46,.1)}}
+  .sort-menu{{display:none;position:absolute;top:calc(100% + 6px);left:0;right:0;background:white;border:1px solid #ccd4df;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.12);padding:.35rem;z-index:30}}
+  .sort-menu.open{{display:block}}
+  .sort-option{{width:100%;text-align:left;border:none;background:white;color:#263044;padding:.55rem .65rem;border-radius:8px;cursor:pointer;font-size:.88rem}}
+  .sort-option:hover,.sort-option.active{{background:#e8eaf6}}
   .topics{{display:flex;flex-wrap:wrap;gap:.5rem}}
   .topic-chip{{padding:.35rem .8rem;border:1px solid #c8d0df;background:white;color:#263044;border-radius:999px;cursor:pointer;font-size:.82rem;font-weight:600}}
   .topic-chip.active,.topic-chip:hover{{background:#1a1a2e;color:white;border-color:#1a1a2e}}
@@ -491,8 +496,8 @@ def generate_html(high_citation, latest, authors):
     .author-list,.keyword-list{{position:static;width:100%;max-height:none}}
     .search-row{{flex-direction:column;align-items:stretch}}
     .search-input{{max-width:none}}
-    .sort-select{{min-width:0;width:100%}}
-    .section,.controls,.filter-empty{{width:92vw}}
+    .sort-wrap{{min-width:0;width:100%}}
+  .section,.controls,.filter-empty{{width:92vw}}
   }}
 </style>
 </head>
@@ -510,10 +515,15 @@ def generate_html(high_citation, latest, authors):
 <div class="controls">
   <div class="search-row">
     <input id="searchInput" class="search-input" type="text" placeholder="Search title / authors / abstract" oninput="applyFilters()" />
-    <select id="sortSelect" class="sort-select" onchange="setSort(this.value)">
-      <option value="time">Sort by Time (new -> old)</option>
-      <option value="citations">Sort by Citations (high -> low)</option>
-    </select>
+    <div class="sort-wrap" id="sortWrap">
+      <button id="sortButton" class="sort-button" type="button" onclick="toggleSortMenu()">
+        <span id="sortLabel">Sort by Time</span><span>▾</span>
+      </button>
+      <div id="sortMenu" class="sort-menu">
+        <button type="button" class="sort-option active" onclick="chooseSort('time', this)">Sort by Time</button>
+        <button type="button" class="sort-option" onclick="chooseSort('citations', this)">Sort by Citations</button>
+      </div>
+    </div>
   </div>
   <div class="topics" id="topicChips">
     <button class="topic-chip active" type="button" onclick="setTopic('all',this)">All</button>
@@ -545,6 +555,13 @@ def generate_html(high_citation, latest, authors):
   let activeTopic = 'all';
   let activeSort = 'time';
 
+  function getActiveCardContainer(section){{
+    if (!section) return null;
+    if (section.id === 'authors') return section.querySelector('.author-panel.active');
+    if (section.id === 'keywords') return section.querySelector('.keyword-panel.active');
+    return section;
+  }}
+
   function applySorting(container){{
     const cards = Array.from(container.querySelectorAll('.card'));
     cards.sort((a, b) => {{
@@ -560,8 +577,20 @@ def generate_html(high_citation, latest, authors):
     cards.forEach(card => container.appendChild(card));
   }}
 
-  function setSort(sortBy){{
+  function toggleSortMenu(){{
+    const menu = document.getElementById('sortMenu');
+    if (!menu) return;
+    menu.classList.toggle('open');
+  }}
+
+  function chooseSort(sortBy, btn){{
     activeSort = sortBy;
+    document.querySelectorAll('.sort-option').forEach(o => o.classList.remove('active'));
+    btn.classList.add('active');
+    const label = document.getElementById('sortLabel');
+    if (label) label.textContent = sortBy === 'citations' ? 'Sort by Citations' : 'Sort by Time';
+    const menu = document.getElementById('sortMenu');
+    if (menu) menu.classList.remove('open');
     applyFilters();
   }}
 
@@ -570,13 +599,15 @@ def generate_html(high_citation, latest, authors):
     const current = document.querySelector('.section.active');
     if (!current) return;
 
-    const cards = current.querySelectorAll('.card');
+    const cardContainer = getActiveCardContainer(current);
+    if (!cardContainer) return;
+    const cards = cardContainer.querySelectorAll('.card');
     const empty = document.getElementById('filterEmpty');
     if (!cards.length) {{
       if (empty) empty.style.display = 'none';
       return;
     }}
-    applySorting(current);
+    applySorting(cardContainer);
     let visible = 0;
     cards.forEach(card => {{
       const text = (card.dataset.search || '').toLowerCase();
@@ -621,6 +652,12 @@ def generate_html(high_citation, latest, authors):
   }}
   if(document.querySelector('.author-item')) showAuthor(0);
   if(document.querySelector('.keyword-item')) showKeyword(0);
+  document.addEventListener('click', function(e){{
+    const wrap = document.getElementById('sortWrap');
+    const menu = document.getElementById('sortMenu');
+    if (!wrap || !menu) return;
+    if (!wrap.contains(e.target)) menu.classList.remove('open');
+  }});
   applyFilters();
 </script>
 </body>
