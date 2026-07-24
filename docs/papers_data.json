@@ -66,7 +66,7 @@
       ],
       "year": 2021,
       "date": "2021-09-25",
-      "citations": 0,
+      "citations": 109,
       "arxiv_id": "2109.12313",
       "paper_id": "d9a7ef6bb3c2a4bd8f7bb6b832a55c6bbf0039fc",
       "url": "https://arxiv.org/abs/2109.12313",
@@ -191,7 +191,7 @@
       ],
       "year": 2020,
       "date": "2020-03-17",
-      "citations": 0,
+      "citations": 134,
       "arxiv_id": "2003.07819",
       "paper_id": "41efa4d755cff2bd72071d0bbeb326c7ed73b717",
       "url": "https://arxiv.org/abs/2003.07819",
@@ -229,7 +229,7 @@
       ],
       "year": 2016,
       "date": "2016-09-21",
-      "citations": 0,
+      "citations": 2661,
       "arxiv_id": "1609.06408",
       "paper_id": "291a176dc906f31e8faf760911a61f0ca9bde444",
       "url": "https://arxiv.org/abs/1609.06408",
@@ -1131,7 +1131,7 @@
           ],
           "year": 2021,
           "date": "2021-09-25",
-          "citations": 0,
+          "citations": 109,
           "arxiv_id": "2109.12313",
           "paper_id": "d9a7ef6bb3c2a4bd8f7bb6b832a55c6bbf0039fc",
           "url": "https://arxiv.org/abs/2109.12313",
@@ -1233,7 +1233,7 @@
           ],
           "year": 2016,
           "date": "2016-09-21",
-          "citations": 0,
+          "citations": 2661,
           "arxiv_id": "1609.06408",
           "paper_id": "291a176dc906f31e8faf760911a61f0ca9bde444",
           "url": "https://arxiv.org/abs/1609.06408",
@@ -1408,7 +1408,7 @@
           ],
           "year": 2021,
           "date": "2021-09-25",
-          "citations": 0,
+          "citations": 109,
           "arxiv_id": "2109.12313",
           "paper_id": "d9a7ef6bb3c2a4bd8f7bb6b832a55c6bbf0039fc",
           "url": "https://arxiv.org/abs/2109.12313",
@@ -1473,7 +1473,7 @@
           ],
           "year": 2020,
           "date": "2020-03-17",
-          "citations": 0,
+          "citations": 134,
           "arxiv_id": "2003.07819",
           "paper_id": "41efa4d755cff2bd72071d0bbeb326c7ed73b717",
           "url": "https://arxiv.org/abs/2003.07819",
@@ -1493,7 +1493,7 @@
           ],
           "year": 2016,
           "date": "2016-09-21",
-          "citations": 0,
+          "citations": 2661,
           "arxiv_id": "1609.06408",
           "paper_id": "291a176dc906f31e8faf760911a61f0ca9bde444",
           "url": "https://arxiv.org/abs/1609.06408",
@@ -1772,456 +1772,7 @@
           ]
         }
       ],
-      [
-        {
-          "title": "Balancing Cell Growth and Product Synthesis for Efficient Microbial Cell Factories",
-          "authors": [
-            "Linxia Liu",
-            "D. Ding",
-            "Huiying Wang",
-            "Xinyi Ren",
-            "Sang Yup Lee",
-            "Dawei Zhang"
-          ],
-          "year": 2025,
-          "date": "2025-09-18",
-          "citations": 42,
-          "arxiv_id": null,
-          "paper_id": "4fc31461c4c1c738f8861ee1df5cbd9606666691",
-          "url": "https://www.semanticscholar.org/paper/4fc31461c4c1c738f8861ee1df5cbd9606666691",
-          "abstract": "The sustainable, bio‐based production of industrially valuable chemicals and materials from renewable, non‐edible biomass through biorefineries has emerged as a vital strategy for tackling urgent global challenges, including climate change, and for realizing the “net zero carbon” commitments recently pledged by nations worldwide. Metabolic engineering has played a central role in enabling the development of microbial strains capable of efficiently overproducing a diverse array of target compounds. Nevertheless, engineered microbial cell factories often face inherent trade‐offs between product synthesis and cell growth, frequently resulting in diminished fitness or loss‐of‐function phenotypes. This review highlights recent advances in metabolic engineering strategies aims at reconciling this conflict, encompassing pathway optimization, dynamic regulation, orthogonal system design, microbial consortia engineering, fermentation process control, and integrative metabolic modeling. It also explores the remaining challenges and future directions for reprogramming microbial metabolism to harmonize growth with high‐level production.",
-          "subjects": []
-        },
-        {
-          "title": "Nonhistone lactylation: A hub for tumour metabolic reprogramming and epigenetic regulation",
-          "authors": [
-            "Dawei Zhang",
-            "Changming Liang",
-            "Cheng-wei Wu",
-            "Michael Hawanga",
-            "Senlin Wan",
-            "Lishuai Xu",
-            "Xu Zhang",
-            "Yongchun Liu",
-            "Fangshuai Hu",
-            "Mengyun Wang",
-            "Xiaoming Wang",
-            "Li Xu",
-            "Xiaoxu Huang"
-          ],
-          "year": 2025,
-          "date": "2025-08-12",
-          "citations": 20,
-          "arxiv_id": null,
-          "paper_id": "00c24790aa106ceea47f57e7da57af2971fe45b9",
-          "url": "https://www.semanticscholar.org/paper/00c24790aa106ceea47f57e7da57af2971fe45b9",
-          "abstract": "Recent research has shifted the perception of lactate from being merely a byproduct of metabolism to being a crucial signalling molecule and epigenetic regulator in tumours. This paper provides a comprehensive review of the mechanisms by which the lactylation of nonhistones contributes to tumorigenesis and tumour development. Lactate accumulates in the tumour microenvironment (TME) due to the Warburg effect and serves as a substrate for the covalent modification of nonhistone proteins (such as p53 and PD-L1) through both enzymatic and nonenzymatic processes. These modifications influence gene expression, signalling pathways, autophagy, and DNA damage repair, ultimately facilitating tumour growth, metastasis, and immune evasion. This review also discusses how the lactylation of nonhistones contributes to the chemotherapy and immunotherapy resistance of tumours by increasing homologous recombination repair, bolstering antioxidant defences, and fostering an immunosuppressive environment. Furthermore, therapeutic strategies targeting key enzymes involved in lactate metabolism (such as LDH and MCTs) and those related to lactylation (such as AARS1 and the SIRT family) are explored. Potential applications of glycolysis inhibitors (e.g., 2-DG), lactate transport inhibitors (e.g., α-CHC), and specific activators of depyrogenase are discussed. Future research should focus on the spatiotemporal dynamics of lactylation and the development of targeted interventions to enhance tumour combination therapies.",
-          "subjects": []
-        },
-        {
-          "title": "Conformally coated scaffold design using water-tolerant Pr1.8Ba0.2NiO4.1 for protonic ceramic electrochemical cells with 5,000-h electrolysis stability",
-          "authors": [
-            "Hanchen Tian",
-            "Wei Li",
-            "Yueh-Lin Lee",
-            "Hongkui Zheng",
-            "Qingyuan Li",
-            "Liang Ma",
-            "Debangsu Bhattacharyya",
-            "Xiujuan Chen",
-            "Dawei Zhang",
-            "Guosheng Li",
-            "Yi Wang",
-            "Li Li",
-            "Qingsong Wang",
-            "Fang Xia",
-            "M. Kartal",
-            "Zhuozhao Shao",
-            "M. Rowles",
-            "Wenyuan Li",
-            "Wissam A. Saidi",
-            "Cijie Liu",
-            "Xuemei Li",
-            "Jian Luo",
-            "Xiaolin Li",
-            "Kai He",
-            "Xingbo Liu"
-          ],
-          "year": 2025,
-          "date": "2025-07-01",
-          "citations": 38,
-          "arxiv_id": null,
-          "paper_id": "586cc8b59c6e6e18832df3c4c2211bc6c56ad6f5",
-          "url": "https://www.semanticscholar.org/paper/586cc8b59c6e6e18832df3c4c2211bc6c56ad6f5",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Diverse roles of MYB transcription factors in plants.",
-          "authors": [
-            "Dawei Zhang",
-            "Huapeng Zhou",
-            "Yang Zhang",
-            "Yuqing Zhao",
-            "Yiyi Zhang",
-            "Xixian Feng",
-            "Honghui Lin"
-          ],
-          "year": 2025,
-          "date": "2025-02-27",
-          "citations": 107,
-          "arxiv_id": null,
-          "paper_id": "80f436dc5555492eb502975855d6236dcbec8795",
-          "url": "https://www.semanticscholar.org/paper/80f436dc5555492eb502975855d6236dcbec8795",
-          "abstract": "MYB transcription factors (TFs), one of the largest TF families in plants, are involved in various plant-specific processes as the central regulators, such as in phenylpropanoid metabolism, cell cycle, formation of root hair and trichome, phytohormones responses, reproductive growth and abiotic or biotic stress responses. Here we summarized multiple roles and explained the molecular mechanisms of MYB TFs in plant development and stress adaptation. The exploration of MYB TFs contributes to a better comprehension of molecular regulation in plant development and environmental adaptability.",
-          "subjects": []
-        },
-        {
-          "title": "Synergistic Zn and MoS2 Tailored Co-N/C Environments Enabling Bifunctional ORR/OER Electrocatalysis for Advanced Li-O2 Batteries.",
-          "authors": [
-            "Yan Yu",
-            "Zhiyang Wang",
-            "Qi Zhang",
-            "Wenhong Liu",
-            "Hao Luo",
-            "Xianghua Kong",
-            "Qingchun Yang",
-            "Dawei Zhang"
-          ],
-          "year": 2025,
-          "date": "2025-02-08",
-          "citations": 40,
-          "arxiv_id": null,
-          "paper_id": "eb4433669847f0eb50154b71990c03d5ca2409ac",
-          "url": "https://www.semanticscholar.org/paper/eb4433669847f0eb50154b71990c03d5ca2409ac",
-          "abstract": "To better adapt lithium-oxygen batteries (LOBs) and overcome their sluggish oxygen reduction and evolution reactions (ORR/OER) kinetics, designing efficient bifunctional ORR/OER catalytic materials is essential. In this study, we successfully constructed a bifunctional ZnCo-N/C@MoS2 catalyst by tailoring the Co-N/C center with Zn incorporation and MoS2 encapsulation. Surprisingly, Zn atoms, which are typically considered to promote the Co atoms isolation, exhibit a promoting effect on the ORR performance of Co-N/C centers and enhance their stability under harsh conditions. Introducing MoS2 establishes Mo-N coupling centers, enhancing electron transfer and adjusting the charge density of Co active centers, thereby compensating OER activity limitation of ZnCo-N/C. In Li-O2 batteries, Zn and MoS2 synergistically optimize intermediate interactions and regulate LiO2 formation/decomposition, while Zn's environmental adaptability and MoS2's encapsulating protection jointly enhance operational stability. Results show that ZnCo-N/C@MoS2, serving as the oxygen electrode in Li-O2 batteries, achieves a low overpotential of 1.01 V, an ultra-high specific capacity of 25,026 mAh g-1, and a long cycle life of 298 cycles. This work achieves bifunctionality in single-atom catalysts through precise dual modulation of the catalytic environment, providing a novel strategy for the development of lithium-oxygen batteries.",
-          "subjects": []
-        },
-        {
-          "title": "Real-time holographic camera for obtaining real 3D scene hologram",
-          "authors": [
-            "Zhao-Song Li",
-            "Chao Liu",
-            "Xiao-Wei Li",
-            "Yi Zheng",
-            "Qian Huang",
-            "Yi Zheng",
-            "Ye-Hao Hou",
-            "Chen-Liang Chang",
-            "Dawei Zhang",
-            "S. Zhuang",
-            "Di Wang",
-            "Qiong-Hua Wang"
-          ],
-          "year": 2025,
-          "date": "2025-02-08",
-          "citations": 51,
-          "arxiv_id": null,
-          "paper_id": "aa6f7f7a42e74cb51b9347422899eab5281c5c89",
-          "url": "https://www.semanticscholar.org/paper/aa6f7f7a42e74cb51b9347422899eab5281c5c89",
-          "abstract": "As a frontier technology, holography has important research values in fields such as bio-micrographic imaging, light field modulation and data storage. However, the real-time acquisition of 3D scenes and high-fidelity reconstruction technology has not yet made a breakthrough, which has seriously hindered the development of holography. Here, a novel holographic camera is proposed to solve the above inherent problems completely. The proposed holographic camera consists of the acquisition end and the calculation end. At the acquisition end of the holographic camera, specially configured liquid materials and liquid lens structure based on voice-coil motor-driving are used to produce the liquid camera, so that the liquid camera can quickly capture the focus stack of the real 3D scene within 15 ms. At the calculation end, a new structured focus stack network (FS-Net) is designed for hologram calculation. After training the FS-Net with the focus stack renderer and learnable Zernike phase, it enables hologram calculation within 13 ms. As the first device to achieve real-time incoherent acquisition and high-fidelity holographic reconstruction of a real 3D scene, our proposed holographic camera breaks technical bottlenecks of difficulty in acquiring the real 3D scene, low quality of the holographic reconstructed image, and incorrect defocus blur. The experimental results demonstrate the effectiveness of our holographic camera in the acquisition of focal plane information and hologram calculation of the real 3D scene. The proposed holographic camera opens up a new way for the application of holography in fields such as 3D display, light field modulation, and 3D measurement. A real-time holographic camera for acquiring high-fidelity holograms of real 3D scenes based on a elastic membrane liquid camera and a focal stack network is proposed.",
-          "subjects": []
-        },
-        {
-          "title": "Charge-transfer complexation of coordination cages for enhanced photochromism and photocatalysis",
-          "authors": [
-            "Gen Li",
-            "Zelin Du",
-            "Chao Wu",
-            "Yawei Liu",
-            "Yan Xu",
-            "Roy Lavendomme",
-            "Shihang Liang",
-            "En-Qing Gao",
-            "Dawei Zhang"
-          ],
-          "year": 2025,
-          "date": "2025-01-09",
-          "citations": 25,
-          "arxiv_id": null,
-          "paper_id": "5f4410537fd0f19e7299f583cbc1735e33fe7356",
-          "url": "https://www.semanticscholar.org/paper/5f4410537fd0f19e7299f583cbc1735e33fe7356",
-          "abstract": "Intensified host-guest electronic interplay within stable metal-organic cages (MOCs) presents great opportunities for applications in stimuli response and photocatalysis. Zr-MOCs represent a type of robust discrete hosts for such a design, but their host-guest chemistry in solution is hampered by the limited solubility. Here, by using pyridinium-derived cationic ligands with tetrakis(3,5-bis(trifluoromethyl)phenyl)borate (BArF−) as solubilizing counteranions, we report the preparation of soluble Zr-MOCs of different shapes (1-4) that are otherwise inaccessible through a conventional method. Enforced arrangement of the multiple electron-deficient pyridinium groups into one cage (1) leads to magnified positive electrostatic field and electron-accepting strength in favor of hosting electron-donating anions, including halides and tetraarylborates. The strong charge-transfer (CT) interactions activate guest-to-host photoinduced electron transfer (PET), leading to pronounced and regulable photochromisms. Both ground-state and radical structures of host and host-guest complexes have been unambiguously characterized by X-ray crystallography. The CT-enhanced PET also enables the use of 1 as an efficient photocatalyst for aerobic oxidation of tetraarylborates into biaryls and phenols. This work presents the solution assembly of soluble Zr-MOCs from cationic ligands with the assistance of solubilizing anions and highlights the great potential of harnessing host-guest CT for boosting PET-based functions and applications. Improved host-guest electronic interplay within stable metal-organic cages (MOCs) presents opportunities for photocatalysis. Here, the authors use pyridinium-derived ligands with solubilizing counteranions to prepare highly soluble Zr-MOCs and demonstrate the use of host-guest charge-transfer complexation to enhance photo-induced electron transfer.",
-          "subjects": []
-        },
-        {
-          "title": "Fundamentals and critical appraisal of electrochemical techniques for investigating microbial corrosion",
-          "authors": [
-            "P. Cristiani",
-            "Masoumeh Moradi",
-            "R. Basseguy",
-            "Digby D. Macdonald",
-            "Tingyue Gu",
-            "Dawei Zhang",
-            "J. Wharton",
-            "Dake Xu"
-          ],
-          "year": 2025,
-          "date": "2025-01-01",
-          "citations": 25,
-          "arxiv_id": null,
-          "paper_id": "a6d837cffde6250cb1e80bbd71e4ed9edfb0ff84",
-          "url": "https://www.semanticscholar.org/paper/a6d837cffde6250cb1e80bbd71e4ed9edfb0ff84",
-          "abstract": "Electrochemical (EC) techniques are crucial in detecting microbiologically-influence corrosion (MIC) in both laboratory and field settings. This review fundamentally examines the electron transfer mechanisms ad microbial interactions with corroding metal surfaces, emphasizing the strengths and inherent limitations of EC in accurately assessing corrosion rates across various scales. The non-destructive and electrical stimulating techniques are discussed, highlighting their applicability for in field conditions. Emerging local techniques are assessed for their potential in laboratory MIC investigations. Despite their limitations, advanced EC methods, integrated with microelectrodes and microscopy, facilitate exploration of MIC phenomena in a multi-evidence approach.",
-          "subjects": []
-        },
-        {
-          "title": "g-C3N4-Based Heterojunction for Enhanced Photocatalytic Performance: A Review of Fabrications, Applications, and Perspectives",
-          "authors": [
-            "Junxiang Pei",
-            "Haofeng Li",
-            "Dechao Yu",
-            "Dawei Zhang"
-          ],
-          "year": 2024,
-          "date": "2024-11-16",
-          "citations": 40,
-          "arxiv_id": null,
-          "paper_id": "eefe45ad2a5f14879e7e79aa6aefa211707a8d69",
-          "url": "https://www.semanticscholar.org/paper/eefe45ad2a5f14879e7e79aa6aefa211707a8d69",
-          "abstract": "In recent years, photocatalysts have attracted wide attention in alleviating energy problems and environmental governance, among which, g-C3N4, as an ideal photocatalyst, has shown excellent application potential in achieving the sustainable development of energy. However, its photocatalytic performance needs to be further improved in some applications. Rational construction of heterostructures with two or more semiconductor materials can combine the advantages of multi-components to simultaneously improve the photo-induced charge separation, which is very conducive to improving the absorption of visible light and obtaining more efficient redox capacity. With the rapid development in photocatalysis of g-C3N4-based heterostructures, a systematic summary and prospection of performance improvement are urgent and meaningful. This review focuses on various kinds of effective methods of heterogeneous combination; as well, strategies for improving the photocatalytic performance are fully discussed. In addition, the applications in efficient photocatalytic hydrogen production, photocatalytic carbon dioxide reduction, and organic pollutant degradation are systematically demonstrated. Finally, the remaining issues and prospects of further development are proposed as a kind of guidance for g-C3N4-based heterostructures with high efficiency at photocatalysis.",
-          "subjects": []
-        },
-        {
-          "title": "Microplastic biofilms promote the horizontal transfer of antibiotic resistance genes in estuarine environments.",
-          "authors": [
-            "Yangyuan Zhou",
-            "Guosheng Zhang",
-            "Dawei Zhang",
-            "Ningzheng Zhu",
-            "Jinpei Bo",
-            "Xiangzhou Meng",
-            "Yao Chen",
-            "Yu Qin",
-            "Huajie Liu",
-            "Weiying Li"
-          ],
-          "year": 2024,
-          "date": "2024-10-03",
-          "citations": 44,
-          "arxiv_id": null,
-          "paper_id": "0fe02ce6a1c6074bcc06f624c1ce98f7dfc78bdf",
-          "url": "https://www.semanticscholar.org/paper/0fe02ce6a1c6074bcc06f624c1ce98f7dfc78bdf",
-          "abstract": "As emerging pollutants, microplastics can aggregate microorganisms on their surfaces and form biofilms, enriching antibiotic-resistant bacteria (ARB) and antibiotic resistance genes (ARGs). Consequently, microplastic biofilms have become a focal point of research. Horizontal gene transfer is one of the primary mechanisms by which bacteria acquire antibiotic resistance, with much of the research focusing on suspended bacteria. However, microplastic biofilms, as hotspots for horizontal gene transfer, also merit significant investigation. This study primarily explored and compared the frequency of ARG conjugative transfer between suspended bacteria and microplastic biofilms. The results demonstrated that, compared to suspended bacteria, microplastic biofilms enhanced the frequency of ARG conjugative transfer by 7.2-19.6 times. Among them, biofilms on polyethylene microplastics showed the strongest promotion of conjugation. After the formation of microplastic biofilms, there was a significant increase in bacterial density within the biofilms, which raised the collision frequency of donor and recipient bacteria. Then microplastic biofilms facilitated the gene expression levels of outer membrane proteins, enhanced bacterial gene transfer capabilities, promoted the synthesis of conjugative pili, accelerated the formation of conjugative pairing systems, and elevated the expression levels of genes related to DNA replication and transfer systems, thereby enhancing the conjugative transfer of ARGs within microplastic biofilms. Among different types of microplastic biofilms, polyethylene biofilms exhibited the highest bacterial density, thus showing the highest frequency of ARG conjugation. This study highlights the risks associated with ARG conjugative transfer following the formation of microplastic biofilms and provides insights into the risks of microplastic and antibiotic resistance propagation in estuarine environments.",
-          "subjects": []
-        },
-        {
-          "title": "Axial Ratio Improved and Beamforming Enhanced Circularly Polarized Phased Array",
-          "authors": [
-            "Meicheng Liu",
-            "Yuefeng Hou",
-            "Zhenshuai Fu",
-            "Jin Wu",
-            "Shixuan Wang",
-            "Yan-Ting Liu",
-            "Dawei Zhang",
-            "Mingtao Zhang",
-            "Kaixue Ma"
-          ],
-          "year": 2024,
-          "date": "2024-10-01",
-          "citations": 26,
-          "arxiv_id": null,
-          "paper_id": "751fc09a8964de5afd08e5f0f020108c3a67e1ac",
-          "url": "https://www.semanticscholar.org/paper/751fc09a8964de5afd08e5f0f020108c3a67e1ac",
-          "abstract": "In this article, a novel circularly polarized (CP) phased array is proposed with the augmented feature of high-precision beamforming with low axial ratio (AR) and wide AR bandwidth. First, the two-stage sequential rotation feed (SRF) technique is adopted in the CP phased array, broadening the AR bandwidth. Then, the innovative 180°–90°/90°–180° combined SRF network is implemented in the CP phased array, to perform a high-precision beamforming, ensuring low AR and AR bandwidth of scanning beams. Utilizing the proposed SRF topology, output phase differences of the feed network are kept constant over the operating band with an effective improvement of port isolation. Moreover, the coupling transition with filtering responses is applied to reduce the cost and complexity of fabrication. Long blind vias that require the back-drilling process are avoided. Finally, a prototype of the CP phased array for Wi-Fi applications is fabricated. The 180°–90°/90°–180° combined SRF beamforming network is measured separately, with highly stable output phase differences and isolation at output ports of higher than 12.17 dB over the operating band from 2.30 to 2.60 GHz. With the proposed SRF beamforming network, the CP phased array supports a wide-angle scanning of ±50°, with high precision of pointing error $\\le 1^{\\circ }$ . The AR of beams is lower than 1.31 dB at 2.45 GHz. The AR bandwidth (AR $\\le 3$ dB) of steered beams is 28.6%, from 2.15 to 2.85 GHz.",
-          "subjects": []
-        },
-        {
-          "title": "A reference framework for the digital twin smart factory based on cloud-fog-edge computing collaboration",
-          "authors": [
-            "Zhiyuan Li",
-            "Xuesong Mei",
-            "Zheng Sun",
-            "Jun Xu",
-            "Jianchen Zhang",
-            "Dawei Zhang",
-            "Jin Zhu"
-          ],
-          "year": 2024,
-          "date": "2024-06-04",
-          "citations": 24,
-          "arxiv_id": null,
-          "paper_id": "7eab6aef01933641f427de27fd09e0d6385529fa",
-          "url": "https://www.semanticscholar.org/paper/7eab6aef01933641f427de27fd09e0d6385529fa",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Accumulated-state-error-based event-triggered sampling scheme and its application to H∞ control of sampled-data systems",
-          "authors": [
-            "Xianming Zhang",
-            "Qing-Long Han",
-            "Baolin Zhang",
-            "Xiaohua Ge",
-            "Dawei Zhang"
-          ],
-          "year": 2024,
-          "date": "2024-05-28",
-          "citations": 90,
-          "arxiv_id": null,
-          "paper_id": "c0c38852c539b07879600e2b52abdf383ac8e77a",
-          "url": "https://www.semanticscholar.org/paper/c0c38852c539b07879600e2b52abdf383ac8e77a",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Coordination cages integrated into swelling poly(ionic liquid)s for guest encapsulation and separation",
-          "authors": [
-            "Xiang Zhang",
-            "Dawei Zhang",
-            "Chenyang Wei",
-            "Dehua Wang",
-            "Roy Lavendomme",
-            "Shuo Qi",
-            "Yu Zhu",
-            "Jingshun Zhang",
-            "Yongya Zhang",
-            "Jiachen Wang",
-            "Lin Xu",
-            "En-Qing Gao",
-            "Wei Yu",
-            "Hairui Yang",
-            "Mingyuan He"
-          ],
-          "year": 2024,
-          "date": "2024-05-04",
-          "citations": 20,
-          "arxiv_id": null,
-          "paper_id": "9f8ccbf4f437b490f106c8019ee888f2d89bad48",
-          "url": "https://www.semanticscholar.org/paper/9f8ccbf4f437b490f106c8019ee888f2d89bad48",
-          "abstract": "Coordination cages have been widely reported to bind a variety of guests, which are useful for chemical separation. Although the use of cages in the solid state benefits the recycling, the flexibility, dynamicity, and metal-ligand bond reversibility of solid-state cages are poor, preventing efficient guest encapsulation. Here we report a type of coordination cage-integrated solid materials that can be swelled into gel in water. The material is prepared through incorporation of an anionic FeII4L6 cage as the counterion of a cationic poly(ionic liquid) (MOC@PIL). The immobilized cages within MOC@PILs have been found to greatly affect the swelling ability of MOC@PILs and thus the mechanical properties. Importantly, upon swelling, the uptake of water provides an ideal microenvironment within the gels for the immobilized cages to dynamically move and flex that leads to excellent solution-level guest binding performances. This concept has enabled the use of MOC@PILs as efficient adsorbents for the removal of pollutants from water and for the purification of toluene and cyclohexane. Importantly, MOC@PILs can be regenerated through a deswelling strategy along with the recycling of the extracted guests. The efficient encapsulation of guests by coordination cages in the solid state is prevented by their flexibility, dynamicity, and metal-ligand bond reversibility. Here, the authors report coordination cages integrated into poly(ionic liquid)s to control swelling and mechanical properties of the gels and develop efficient and regenerable supramolecular separation materials.",
-          "subjects": []
-        },
-        {
-          "title": "A lightweight road crack detection algorithm based on improved YOLOv7 model",
-          "authors": [
-            "Junjie He",
-            "Yanchao Wang",
-            "Yiting Wang",
-            "Run Li",
-            "Dawei Zhang",
-            "Zhonglong Zheng"
-          ],
-          "year": 2024,
-          "date": "2024-04-25",
-          "citations": 39,
-          "arxiv_id": null,
-          "paper_id": "dd13727e9905a01a75951325d724dc494195c11a",
-          "url": "https://www.semanticscholar.org/paper/dd13727e9905a01a75951325d724dc494195c11a",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Mitochondria-targeted photodynamic therapy triggers GSDME-mediated pyroptosis and sensitizes anti-PD-1 therapy in colorectal cancer",
-          "authors": [
-            "Yun Zhou",
-            "Wenyao Zhang",
-            "Boda Wang",
-            "Pei Wang",
-            "Dan Li",
-            "Tianyu Cao",
-            "Dawei Zhang",
-            "Hua Han",
-            "Mingfeng Bai",
-            "Xin Wang",
-            "Xiaodi Zhao",
-            "Yuanyuan Lu"
-          ],
-          "year": 2024,
-          "date": "2024-03-01",
-          "citations": 74,
-          "arxiv_id": null,
-          "paper_id": "fbce11c86ce26c362efac1f266e03fc93a63c885",
-          "url": "https://www.semanticscholar.org/paper/fbce11c86ce26c362efac1f266e03fc93a63c885",
-          "abstract": "Background The effectiveness of immune checkpoint inhibitors in colorectal cancer (CRC) is limited due to the low tumor neoantigen load and low immune infiltration in most microsatellite-stable (MSS) tumors. This study aimed to develop a mitochondria-targeted photodynamic therapy (PDT) approach to provoke host antitumor immunity of MSS-CRC and elucidate the underlying molecular mechanisms. Methods The role and mechanism of mitochondria-targeted PDT in inhibiting CRC progression and inducing pyroptosis were evaluated both in vitro and in vivo. The immune effects of PDT sensitization on PD-1 blockade were also assessed in CT26 and 4T1 tumor-bearing mouse models. Results Here, we report that PDT using IR700DX-6T, a photosensitizer targeting the mitochondrial translocation protein, may trigger an antitumor immune response initiated by pyroptosis in CRC. Mechanistically, IR700DX-6T-PDT produced reactive oxygen species on light irradiation and promoted downstream p38 phosphorylation and active caspase3 (CASP3)-mediated cleavage of gasdermin E (GSDME), subsequently inducing pyroptosis. Furthermore, IR700DX-6T-PDT enhanced the sensitivity of MSS-CRC cells to PD-1 blockade. Decitabine, a demethylation drug used to treat hematologic neoplasms, disrupted the abnormal methylation pattern of GSDME in tumor cells, enhanced the efficacy of IR700DX-6T-PDT, and elicited a potent antitumor immune response in combination with PD-1 blockade and IR700DX-6T-PDT. Conclusion Our work provides clear a understanding of immunogenic cell death triggered by mitochondria-targeted PDT, offering a new approach for enhancing the efficacy of PD-1 blockade in CRC.",
-          "subjects": []
-        },
-        {
-          "title": "Liquid lens based holographic camera for real 3D scene hologram acquisition using end-to-end physical model-driven network",
-          "authors": [
-            "Di Wang",
-            "Zhao-Song Li",
-            "Yi Zheng",
-            "Youngjun Zhao",
-            "Chao Liu",
-            "Jinbo Xu",
-            "Yi Zheng",
-            "Qian Huang",
-            "Chen-Liang Chang",
-            "Dawei Zhang",
-            "S. Zhuang",
-            "Qiong-hua Wang"
-          ],
-          "year": 2024,
-          "date": "2024-02-29",
-          "citations": 81,
-          "arxiv_id": null,
-          "paper_id": "b2beb03a19a51e61b4a89b343328d0ad9fac0ffc",
-          "url": "https://www.semanticscholar.org/paper/b2beb03a19a51e61b4a89b343328d0ad9fac0ffc",
-          "abstract": "With the development of artificial intelligence, neural network provides unique opportunities for holography, such as high fidelity and dynamic calculation. How to obtain real 3D scene and generate high fidelity hologram in real time is an urgent problem. Here, we propose a liquid lens based holographic camera for real 3D scene hologram acquisition using an end-to-end physical model-driven network (EEPMD-Net). As the core component of the liquid camera, the first 10 mm large aperture electrowetting-based liquid lens is proposed by using specially fabricated solution. The design of the liquid camera ensures that the multi-layers of the real 3D scene can be obtained quickly and with great imaging performance. The EEPMD-Net takes the information of real 3D scene as the input, and uses two new structures of encoder and decoder networks to realize low-noise phase generation. By comparing the intensity information between the reconstructed image after depth fusion and the target scene, the composite loss function is constructed for phase optimization, and the high-fidelity training of hologram with true depth of the 3D scene is realized for the first time. The holographic camera achieves the high-fidelity and fast generation of the hologram of the real 3D scene, and the reconstructed experiment proves that the holographic image has the advantage of low noise. The proposed holographic camera is unique and can be used in 3D display, measurement, encryption and other fields. A holographic camera for acquiring high-fidelity holograms of real 3D scenes based on a liquid camera and an end-to-end physical model-driven network is proposed.",
-          "subjects": []
-        },
-        {
-          "title": "Revolutionizing cancer treatment: enhancing CAR-T cell therapy with CRISPR/Cas9 gene editing technology",
-          "authors": [
-            "Ruiyu Tao",
-            "Xiaopeng Han",
-            "Xue Bai",
-            "Jianping Yu",
-            "Youwei Ma",
-            "Weikai Chen",
-            "Dawei Zhang",
-            "Zhengkai Li"
-          ],
-          "year": 2024,
-          "date": "2024-02-21",
-          "citations": 79,
-          "arxiv_id": null,
-          "paper_id": "2ec33a956fd6f8ee3ef3be4e3324da62b5e00375",
-          "url": "https://www.semanticscholar.org/paper/2ec33a956fd6f8ee3ef3be4e3324da62b5e00375",
-          "abstract": "CAR-T cell therapy, a novel immunotherapy, has made significant breakthroughs in clinical practice, particularly in treating B-cell-associated leukemia and lymphoma. However, it still faces challenges such as poor persistence, limited proliferation capacity, high manufacturing costs, and suboptimal efficacy. CRISPR/Cas system, an efficient and simple method for precise gene editing, offers new possibilities for optimizing CAR-T cells. It can increase the function of CAR-T cells and reduce manufacturing costs. The combination of CRISPR/Cas9 technology and CAR-T cell therapy may promote the development of this therapy and provide more effective and personalized treatment for cancer patients. Meanwhile, the safety issues surrounding the application of this technology in CAR-T cells require further research and evaluation. Future research should focus on improving the accuracy and safety of CRISPR/Cas9 technology to facilitate the better development and application of CAR-T cell therapy. This review focuses on the application of CRISPR/Cas9 technology in CAR-T cell therapy, including eliminating the inhibitory effect of immune checkpoints, enhancing the ability of CAR-T cells to resist exhaustion, assisting in the construction of universal CAR-T cells, reducing the manufacturing costs of CAR-T cells, and the security problems faced. The objective is to show the revolutionary role of CRISPR/Cas9 technology in CAR-T cell therapy for researchers.",
-          "subjects": []
-        },
-        {
-          "title": "Geothermal resource distribution and prospects for development and utilization in China",
-          "authors": [
-            "Jinchuan Zhang",
-            "Lei Chen",
-            "Yuhang Sun",
-            "Longfei Xu",
-            "Xingxu Zhao",
-            "Qianchao Li",
-            "Dawei Zhang"
-          ],
-          "year": 2024,
-          "date": "2024-02-01",
-          "citations": 35,
-          "arxiv_id": null,
-          "paper_id": "ae0b6565924ef1979a1df0466596129ff2d28485",
-          "url": "https://www.semanticscholar.org/paper/ae0b6565924ef1979a1df0466596129ff2d28485",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Mechanisms of cancer cell death induction by triptolide: A comprehensive overview",
-          "authors": [
-            "Ke Feng",
-            "Xiaojiang Li",
-            "Yuzhuo Bai",
-            "Dawei Zhang",
-            "Lin Tian"
-          ],
-          "year": 2024,
-          "date": "2024-01-01",
-          "citations": 28,
-          "arxiv_id": null,
-          "paper_id": "e7a7658b7999cfd87c8a8760f8eadb38bc86b630",
-          "url": "https://www.semanticscholar.org/paper/e7a7658b7999cfd87c8a8760f8eadb38bc86b630",
-          "abstract": "The need for naturally occurring constituents is driven by the rise in the cancer prevalence and the unpleasant side effects associated with chemotherapeutics. Triptolide, the primary active component of “Tripterygium Wilfordii”, has exploited for biological mechanisms and therapeutic potential against various tumors. Based on the recent pre-clinical investigations, triptolide is linked to the induction of death of cancerous cells by triggering cellular apoptosis via inhibiting heat shock protein expression (HSP70), and cyclin dependent kinase (CDKs) by up regulating expression of P21. MKP1, histone methyl transferases and RNA polymerases have all recently identified as potential targets of triptolide in cells. Autophagy, AKT signaling pathway and various pathways involving targeted proteins such as A-disintegrin & metalloprotease-10 (ADAM10), Polycystin-2 (PC-2), dCTP pyro-phosphatase 1 (DCTP1), peroxiredoxin-I (Prx-I), TAK1 binding protein (TAB1), kinase subunit (DNA–PKcs) and the xeroderma-pigmentosum B (XPB or ERCC3) have been exploited. Besides that, triptolide is responsible for enhancing the effectiveness of various chemotherapeutics. In addition, several triptolide moieties, including minnelide and LLDT8, have progressed in investigations on humans for the treatment of cancer. Targeted strategies, such as triptolide conjugation with ligands or triptolide loaded nano-carriers, are efficient techniques to confront toxicities associated with triptolide. We expect and anticipate that advances in near future, regarding combination therapies of triptolide, might be beneficial against cancerous cells.",
-          "subjects": []
-        }
-      ]
+      []
     ],
     [
       "Roberto Tron",
@@ -2301,474 +1852,9 @@
           "subjects": [
             "cs.RO"
           ]
-        },
-        {
-          "title": "Your Model Already Knows: Attention-Guided Safety Filter for Vision-Language-Action Models",
-          "authors": [
-            "Seongbin Park",
-            "Fan Zhang",
-            "Baharan Mirzasoleiman",
-            "Shahriar Talebi",
-            "Nader Sehatbakhsh"
-          ],
-          "year": 2026,
-          "date": "2026-06-08",
-          "citations": 0,
-          "arxiv_id": "2606.09749",
-          "paper_id": "11a6394188d03ce64d9aac0c578affaeb9d7dfeb",
-          "url": "https://arxiv.org/abs/2606.09749",
-          "abstract": "Vision-Language-Action (VLA) models have demonstrated impressive end-to-end performance across a variety of robotic manipulation tasks. However, these policies offer no guarantees against collisions with task-irrelevant objects in the scene. Existing safety filters sidestep this problem by querying a vision-language model (VLM) to identify obstacles and their locations. This, however, is too slow to run in the control loop and can only be invoked at episode initialization, leaving the filter unable to track moving obstacles. We discover that a small number of attention heads within a VLA model reliably localize the object the policy intends to approach. These heads can be exploited within a training-free safety framework that obtains the active target from the attention heads at every step, treats the remainder of the scene as obstacles, and feeds these into a Control Barrier Function (CBF) filter. Together with a lightweight real-time object tracker, this allows for collision avoidance for non-static obstacles. We evaluate our framework on SafeLIBERO, which we extend with moving obstacles. On the original static benchmark, our method performs comparably to an oracle that uses privileged simulator state to identify the target, emulating a VLM-based identification step run once at episode initialization. On the dynamic variant, where the oracle's init-time target assignment becomes stale, our method substantially outperforms it by 43%, on average. Our findings suggest that the perceptual signals needed for real-time safety filtering are already present within VLA policies and can be exploited without additional training or heavy auxiliary models.",
-          "subjects": []
-        },
-        {
-          "title": "ProbeAct: Probe-Guided Training-Free Failure Recovery in Vision-Language-Action Models",
-          "authors": [
-            "Fan Zhang",
-            "Seongbin Park",
-            "Baharan Mirzasoleiman",
-            "S. Talebi",
-            "Nader Sehatbakhsh"
-          ],
-          "year": 2026,
-          "date": "2026-06-08",
-          "citations": 0,
-          "arxiv_id": "2606.09740",
-          "paper_id": "6e0dc40ec6ee80a3973d733c1b3ae027e05b4f2f",
-          "url": "https://arxiv.org/abs/2606.09740",
-          "abstract": "Vision-Language-Action (VLA) models demonstrate strong perfor-1 mance on language-conditioned robotic manipulation within their training dis-2 tribution, yet their generalization capabilities remain fundamentally limited. They3 lack the robustness required to handle perturbations, frequently failing when con-4 fronted with lighting changes, altered camera viewpoints, or small initial-state5 variations. We propose PROBEACT, a training-free runtime intervention frame-6 work that detects and recovers from grasping and placement failures in pre-7 trained VLA policies without modifying their weights or requiring additional8 demonstrations. PROBEACT combines three components: (i) a lightweight multi-9 target hidden-state probe that predicts the 3D positions of task-relevant objects10 from intermediate VLA features, with Hungarian-matched identity tracking for11 multi-object scenes; (ii) an object-agnostic kinematic state machine that detects12 grasp, transport, and placement failures using only gripper-internal signals and13 end-effector kinematics; and (iii) a hierarchical Control Barrier Function (CBF)14 filter that encodes repeated-failure locations as soft safe-set constraints, mini-15 mally correcting VLA actions while preserving baseline behavior. As a plug-and-16 play, training-free intervention loop, PROBEACT is orthogonal to existing train-17 ing pipelines. Evaluated on the LIBERO-plus benchmark, our framework acts as18 a universal safety net, improving the success rate of the OpenVLA-OFT model19 from 69.6% to 74.1%, while demonstrating broad applicability to both base and20 fine-tuned VLA policies.",
-          "subjects": []
         }
       ],
-      [
-        {
-          "title": "Uncertainty oriented pattern extracting and analyzing via sliding window control",
-          "authors": [
-            "Seungwan Park",
-            "Doyoung Kim",
-            "Seongbin Park",
-            "Unil Yun"
-          ],
-          "year": null,
-          "date": "",
-          "citations": 2,
-          "arxiv_id": null,
-          "paper_id": "78b463f1c401678c4d04edac060d49aaf606f9f4",
-          "url": "https://www.semanticscholar.org/paper/78b463f1c401678c4d04edac060d49aaf606f9f4",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Seminal Plasma Microbiome Composition and Its Association with Sperm Morphology in Breeding Boars",
-          "authors": [
-            "Notsile H. Dlamini",
-            "S. L. Kameni",
-            "Peixin Fan",
-            "Seongbin Park",
-            "Shengfa F. Liao",
-            "J. Feugang"
-          ],
-          "year": 2026,
-          "date": "2026-07-10",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "b683392ddafbad4b397976cea41a224c665e92c9",
-          "url": "https://www.semanticscholar.org/paper/b683392ddafbad4b397976cea41a224c665e92c9",
-          "abstract": "Semen quality is a key determinant of reproductive performance in breeding boars, and emerging evidence suggests the seminal microbiome may influence sperm function. However, the composition of the seminal plasma microbiome and its relationship to sperm quality remain poorly characterized. This study aimed to investigate the microbial composition of boar seminal plasma and its association with sperm quality. Semen ejaculates collected from Duroc boars were analyzed and classified as Passed (≥70% normal morphology) or Failed (<70% normal morphology). Seminal plasma was isolated by centrifugation and analyzed using 16S/ITS rRNA gene sequencing. The dominant bacterial phyla were Firmicutes, Bacteroidetes, Proteobacteria, and Actinobacteria. The most abundant genera included Porphyromonas, Bacteroides, and Cladosporium. Only the Shannon diversity index was significantly higher in Failed samples for the bacterial microbiome (p = 0.038). Furthermore, correlation analysis showed a negative association between Tenericutes and sperm concentration (r = −0.90; p = 0.014). Linear discriminant analysis identified microbial biomarkers associated with sperm quality, including Rhodococcus, Sphingomonas, Lactobacillus, Streptococcus, and Empedobacter. The increased abundance of these genera in Failed samples suggests disruption of the normal seminal microbial community. In conclusion, boar seminal plasma harbors a distinct bacterial and fungal microbiome that is associated with sperm morphology.",
-          "subjects": []
-        },
-        {
-          "title": "Agentic Artificial Intelligence for the Automated Generation of Accurate Summary Podcasts of Radiology Research Papers",
-          "authors": [
-            "J. Lee",
-            "Kyowon Gu",
-            "Jaeseung Shin",
-            "J. Min",
-            "J. Hwang",
-            "Jichang Ban",
-            "Jihwan Choi",
-            "Taewon Han",
-            "Dong Young Jeong",
-            "Kyung-Ran Kang",
-            "Hae-In Kim",
-            "Harim Kim",
-            "Hyun Su Kim",
-            "Min Je Kim",
-            "M. Kim",
-            "Sanghee Kim",
-            "Min Hwan Kwak",
-            "Ji Hyun Lee",
-            "Sang Yub Lee",
-            "Changdae Oh",
-            "Sung Goo Park",
-            "Y. Roh",
-            "Yongsik Sim",
-            "B. Sohn",
-            "S. Sung",
-            "Min-Hyuk Yu",
-            "Seongbin Park"
-          ],
-          "year": 2026,
-          "date": "2026-05-28",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "6d1584b638fed4478e176dda22cfb82662f4ca17",
-          "url": "https://www.semanticscholar.org/paper/6d1584b638fed4478e176dda22cfb82662f4ca17",
-          "abstract": "Objective To evaluate whether a custom agentic artificial intelligence (AI) pipeline can overcome the limitations of general-purpose large language model tools, when compared with a generic commercial tool (Google NotebookLM [NBLM]), for generating podcast-style summaries of radiology research articles. Materials and Methods Twenty-two PDF-format original research articles published in the April 2025 issue of Radiology were processed using our Programmable, Phoneme-Aware PDF-to-Podcast Pipeline (P5) and NBLM to generate 44 audio episodes. P5 utilizes a multi-agent workflow for script generation, quality assurance, pronunciation enhancement, and audio synthesis. Four radiologists from a pool of 25 (7 generalists and 18 specialists) were randomly assigned to evaluate each blinded audio episode, yielding 176 total evaluations. The primary outcomes were the number of hallucinations (factual errors) per episode and the percentage of hallucination-free episodes. Secondary outcomes included the number of inappropriate statements, mispronunciations, and flow disruptions; the composite quality score (Quality Assessment of Educational Podcasts [QAEP]); the key results coverage score; and overall listener preference. Data were analyzed using generalized linear mixed models. Results The P5 method produced significantly fewer hallucinations per episode compared with NBLM (mean, 0.32 vs. 0.93; P < 0.001) and a higher proportion of hallucination-free episodes (71.6% [63/88] vs. 56.8% [50/88]; P = 0.013), consistently across generalists and specialists. P5 demonstrated significantly fewer mispronunciations (mean, 0.11 vs. 1.62; P < 0.001) and flow disruptions (mean, 0.19 vs. 1.06; P < 0.001) per episode, as well as higher mean QAEP composite scores (4.62 vs. 4.28; P < 0.001), compared with NBLM, consistently across generalists and specialists. Raters preferred P5 over NBLM in 72.7% (64/88) of comparisons (P = 0.003). Conclusion Our custom agentic AI pipeline generated podcast-style summaries of radiology research articles with significantly higher quality and greater listener preference than the generic commercial tool.",
-          "subjects": []
-        },
-        {
-          "title": "Advanced Temporal Fuzzy Utility Pattern Analysis for Dynamic Uncertain Data Streams",
-          "authors": [
-            "Doyoung Kim",
-            "Seongbin Park",
-            "Junyoung Park",
-            "Hanju Kim",
-            "Myungha Cho",
-            "Unil Yun"
-          ],
-          "year": 2026,
-          "date": "2026-05-01",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "8f82aff15cedc71031c73f454d281ed9dcfba02d",
-          "url": "https://www.semanticscholar.org/paper/8f82aff15cedc71031c73f454d281ed9dcfba02d",
-          "abstract": "High temporal fuzzy utility pattern analysis extracts patterns by considering temporal factors at which items appear, as well as expressing patterns in a linguistic way that humans can easily understand based on the fuzzy theory. However, in real-world stream data environments, data often involve inherent uncertainty, such as inaccuracies in sensor data. Nevertheless, previous studies utilizing the temporal aspect for pattern analysis and fuzzy set theory do not explicitly account for such uncertainty or inaccuracies. Motivated by the limitation, we introduce a scalable method to extract high temporal fuzzy utility patterns within dynamic uncertain data streams. By incorporating uncertainty associated with items appearing in each transaction, our method extracts uncertainty-based high temporal fuzzy utility patterns that more accurately reflect real-world conditions. The pattern expansion process is conducted efficiently with a list structure and various pruning methods. Experimental results indicate the proposed approach exhibits superior performance on runtime and memory usage compared to previous methods under diverse membership functions. Moreover, our method exhibits the highest scalability for increasing data volumes and maintains stable sensitivity to threshold variation while exhibiting the completeness and significance of extracted results. Evaluations under various uncertainty distributions show the superior performance of our approach, and effectiveness evaluations indicate contributions of proposed components. The case study involving the concept-drifting evaluation indicates the applicability of our approach in various real-world environments with better performance.",
-          "subjects": []
-        },
-        {
-          "title": "Exact Subquadratic Algorithm for Many-to-Many Matching on Planar Point Sets with Integer Coordinates",
-          "authors": [
-            "Seongbin Park",
-            "Eunjin Oh"
-          ],
-          "year": 2026,
-          "date": "2026-04-18",
-          "citations": 0,
-          "arxiv_id": "2604.16921",
-          "paper_id": "236d180efd1a7684bb845239ed585f002f7b9e75",
-          "url": "https://arxiv.org/abs/2604.16921",
-          "abstract": "In this paper, we study the many-to-many matching problem on planar point sets with integer coordinates: Given two disjoint sets $R,B \\subset [\\Delta]^2$ with $|R|+|B|=n$, the goal is to select a set of edges between $R$ and $B$ so that every point is incident to at least one edge and the total Euclidean length is minimized. In the general case that $R$ and $B$ are point sets in the plane, the best-known algorithm for the many-to-many matching problem takes $\\tilde{O}(n^2)$ time. We present an exact $\\tilde{O}(n^{1.5} \\log \\Delta)$ time algorithm for point sets in $[\\Delta]^2$. To the best of our knowledge, this is the first subquadratic exact algorithm for planar many-to-many matching under bounded integer coordinates.",
-          "subjects": []
-        },
-        {
-          "title": "NEMESIS: Noise-suppressed Efficient MAE with Enhanced Superpatch Integration Strategy",
-          "authors": [
-            "Kyeonghun Kim",
-            "Hye-Won Jung",
-            "Youngung Han",
-            "Hyunsu Go",
-            "Eun-Won Choi",
-            "Seongbin Park",
-            "J. Lim",
-            "Jiwon Yang",
-            "Sumin Lee",
-            "Insung Hwang",
-            "K. Liao",
-            "N. Kim"
-          ],
-          "year": 2026,
-          "date": "2026-04-02",
-          "citations": 0,
-          "arxiv_id": "2604.01612",
-          "paper_id": "7340c7f0f895011c06e9c33a9763b922935acd9e",
-          "url": "https://arxiv.org/abs/2604.01612",
-          "abstract": "Volumetric CT imaging is essential for clinical diagnosis, yet annotating 3D volumes is expensive and time-consuming, motivating self-supervised learning (SSL) from unlabeled data. However, applying SSL to 3D CT remains challenging due to the high memory cost of full-volume transformers and the anisotropic spatial structure of CT data, which is not well captured by conventional masking strategies. We propose NEMESIS, a masked autoencoder (MAE) framework that operates on local 128x128x128 superpatches, enabling memory-efficient training while preserving anatomical detail. NEMESIS introduces three key components: (i) noise-enhanced reconstruction as a pretext task, (ii) Masked Anatomical Transformer Blocks (MATB) that perform dual-masking through parallel plane-wise and axis-wise token removal, and (iii) NEMESIS Tokens (NT) for cross-scale context aggregation. On the BTCV multi-organ classification benchmark, NEMESIS with a frozen backbone and a linear classifier achieves a mean AUROC of 0.9633, surpassing fully fine-tuned SuPreM (0.9493) and VoCo (0.9387). Under a low-label regime with only 10% of available annotations, it retains an AUROC of 0.9075, demonstrating strong label efficiency. Furthermore, the superpatch-based design reduces computational cost to 31.0 GFLOPs per forward pass, compared to 985.8 GFLOPs for the full-volume baseline, providing a scalable and robust foundation for 3D medical imaging.",
-          "subjects": []
-        },
-        {
-          "title": "MATHENA: Mamba-based Architectural Tooth Hierarchical Estimator and Holistic Evaluation Network for Anatomy",
-          "authors": [
-            "Kyeonghun Kim",
-            "Jaehyung Park",
-            "Young-Tak Han",
-            "A. Jung",
-            "Seongbin Park",
-            "Sumin Lee",
-            "Jiwon Yang",
-            "J. Han",
-            "Subeen Lee",
-            "J. Lim",
-            "Hyunsu Go",
-            "Eun-Won Choi",
-            "Hyeonseok Jung",
-            "Soo Yong Kim",
-            "Woo Kyoung Jeong",
-            "Won-Jae Lee",
-            "Pamela M. Hong",
-            "Hyuk-Jae Lee",
-            "K. Liao",
-            "N. Kim"
-          ],
-          "year": 2026,
-          "date": "2026-04-01",
-          "citations": 0,
-          "arxiv_id": "2604.00537",
-          "paper_id": "bc9172192b34d5072a917ad1d4c1b5274da25507",
-          "url": "https://arxiv.org/abs/2604.00537",
-          "abstract": "Dental diagnosis from Orthopantomograms (OPGs) requires coordination of tooth detection, caries segmentation (CarSeg), anomaly detection (AD), and dental developmental staging (DDS). We propose Mamba-based Architectural Tooth Hierarchical Estimator and Holistic Evaluation Network for Anatomy (MATHENA), a unified framework leveraging Mamba's linear-complexity State Space Models (SSM) to address all four tasks. MATHENA integrates MATHE, a multi-resolution SSM-driven detector with four-directional Vision State Space (VSS) blocks for O(N) global context modeling, generating per-tooth crops. These crops are processed by HENA, a lightweight Mamba-UNet with a triple-head architecture and Global Context State Token (GCST). In the triple-head architecture, CarSeg is first trained as an upstream task to establish shared representations, which are then frozen and reused for downstream AD fine-tuning and DDS classification via linear probing, enabling stable, efficient learning. We also curate PARTHENON, a benchmark comprising 15,062 annotated instances from ten datasets. MATHENA achieves 93.78% mAP@50 in tooth detection, 90.11% Dice for CarSeg, 88.35% for AD, and 72.40% ACC for DDS.",
-          "subjects": []
-        },
-        {
-          "title": "Exploring and detecting utility streams on prelarge and time fading properties",
-          "authors": [
-            "Doyoung Kim",
-            "Seongbin Park",
-            "Junyoung Park",
-            "Hyeonmo Kim",
-            "Myungha Cho",
-            "Hanju Kim",
-            "Chanhee Lee",
-            "Unil Yun"
-          ],
-          "year": 2026,
-          "date": "2026-04-01",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "ab0a5ed641f63da124e5fc474ab891717809c7b3",
-          "url": "https://www.semanticscholar.org/paper/ab0a5ed641f63da124e5fc474ab891717809c7b3",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Flexibility and periodicity intended pattern mining on shifting stream windows in time-series data",
-          "authors": [
-            "Junyoung Park",
-            "Doyoung Kim",
-            "Seongbin Park",
-            "Unil Yun"
-          ],
-          "year": 2026,
-          "date": "2026-03-01",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "f5d92d5e0ce00e1c9c0300879213c1b01d6982a8",
-          "url": "https://www.semanticscholar.org/paper/f5d92d5e0ce00e1c9c0300879213c1b01d6982a8",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "MAESIL: Masked Autoencoder for Enhanced Self-supervised Medical Image Learning",
-          "authors": [
-            "Kyeonghun Kim",
-            "Hye-Won Jung",
-            "Y. Han",
-            "Junsu Lim",
-            "Yeonju Jean",
-            "Seongbin Park",
-            "E. Choi",
-            "Hyunsu Go",
-            "Seoyoung Ju",
-            "Seohyoung Park",
-            "Gyeongmin Kim",
-            "Min-Jin Kwon",
-            "Kyungseok Yuh",
-            "Soo Yong Kim",
-            "K. Liao",
-            "N. Kim",
-            "Hyuk-Jae Lee"
-          ],
-          "year": 2026,
-          "date": "2026-01-18",
-          "citations": 0,
-          "arxiv_id": "2604.00514",
-          "paper_id": "21a8c6f0c238dc42aa5dd726da37c63650fc1855",
-          "url": "https://arxiv.org/abs/2604.00514",
-          "abstract": "Training deep learning models for three-dimensional (3D) medical imaging, such as Computed Tomography (CT), is fundamentally challenged by the scarcity of labeled data. While pre-training on natural images is common, it results in a significant domain shift, limiting performance. Self-Supervised Learning (SSL) on unlabeled medical data has emerged as a powerful solution, but prominent frameworks often fail to exploit the inherent 3D nature of CT scans. These methods typically process 3D scans as a collection of independent 2D slices, an approach that fundamentally discards critical axial coherence and the 3D structural context. To address this limitation, we propose the autoencoder for enhanced self-supervised medical image learning(MAESIL), a novel self-supervised learning framework designed to capture 3D structural information efficiently. The core innovation is the ‘superpatch,’ a 3D chunk-based input unit that balances 3D context preservation with computational efficiency. Our framework partitions the volume into superpatches and employs a 3D masked autoencoder strategy with a dualmasking strategy to learn comprehensive spatial representations. We validated our approach on three diverse large-scale public CT datasets. Our experimental results show that MAESIL demonstrates significant improvements over existing methods such as AE, VAE and VQ-VAE in key reconstruction metrics such as PSNR and SSIM. This establishes MAESIL as a robust and practical pre-training solution for 3D medical imaging tasks.",
-          "subjects": []
-        },
-        {
-          "title": "Intelligent average utility pattern analysis using pre-large concept in dynamic stream data",
-          "authors": [
-            "Doyoung Kim",
-            "Seongbin Park",
-            "Junyoung Park",
-            "Hanju Kim",
-            "Seungwan Park",
-            "Myungha Cho",
-            "Unil Yun"
-          ],
-          "year": 2026,
-          "date": "2026-01-04",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "e87f4b6914f66165cf78e19ac01f8447f33d2cae",
-          "url": "https://www.semanticscholar.org/paper/e87f4b6914f66165cf78e19ac01f8447f33d2cae",
-          "abstract": "Recent studies on high average utility pattern analysis aim to extract patterns from quantitative data considering the pattern length in incremental environments. However, traditional methods have the limitation that the pattern expansion process is conducted whenever incremental data occur. The pre-large concept is a technique that addresses this by classifying patterns and leveraging them to reduce re-scan and pattern expansion operations with a re-scan condition. In this paper, a novel approach is proposed for analyzing high average utility patterns leveraging the framework of the pre-large concept with the tight re-scan condition. Specifically, the proposed approach adopts a newly proposed tight re-scan condition combined with effective pattern tree management. This approach manages the occurrence of the pattern expansion process more efficiently than state-of-the-art methods and reduces redundant computations while extracting results through the average utility of each pattern. Comprehensive experiments on real and synthetic datasets demonstrate that the proposed method is superior to other comparison methods regarding runtime and scalability while exhibiting completeness with competitive memory usage. Furthermore, the sensitivity tests indicate that the proposed approach maintains the most stable runtime performance under varying thresholds, and the case study under concept drift tests demonstrates its superior scalability, showing its applicability compared to the state-of-the-art approach.",
-          "subjects": []
-        },
-        {
-          "title": "Characterizing Carbon Cost of Federated Learning",
-          "authors": [
-            "Yonglak Son",
-            "Chanwoo Cho",
-            "Seongbin Park",
-            "Young Seo Lee",
-            "Young Geun Kim"
-          ],
-          "year": 2026,
-          "date": "2026-01-01",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "95c6c32f62cc00b09964f533b65cd85b16c7ffe8",
-          "url": "https://www.semanticscholar.org/paper/95c6c32f62cc00b09964f533b65cd85b16c7ffe8",
-          "abstract": "Federated learning (FL) is a decentralized learning approach for training machine learning models without sharing user data with a centralized server. Though FL is considered as a practical solution to mitigate the risk of privacy leakage in training, its environmental impact can be significant, especially considering the scale of billions of mobile users. In this letter, we first demonstrate the carbon cost of privacy by quantifying and characterizing the carbon footprint (CF) of FL while accounting for both server-side FL settings and client heterogeneity. Our analysis reveals that CF-optimal FL settings vary by the service-level objective, and client heterogeneity further complicates CF optimization of FL. We believe our work will be a practical guideline for designing carbon-efficient FL systems.",
-          "subjects": []
-        },
-        {
-          "title": "Mining temporally aware patterns with fuzzy utility measures under dynamically moving window environments",
-          "authors": [
-            "Doyoung Kim",
-            "Seongbin Park",
-            "Junyoung Park",
-            "Hyeonmo Kim",
-            "Taewoong Ryu",
-            "Unil Yun"
-          ],
-          "year": 2026,
-          "date": "2026",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "a67933fadd313f158ee049478ad665a006705d74",
-          "url": "https://www.semanticscholar.org/paper/a67933fadd313f158ee049478ad665a006705d74",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Pre-Eminent Utility Driven Data Analytics Based on Prelarge Patterns for Dynamic Transaction Deletion in IoT Environments",
-          "authors": [
-            "Doyoung Kim",
-            "Seungwan Park",
-            "Heonho Kim",
-            "Chanhee Lee",
-            "Hanju Kim",
-            "Myungha Cho",
-            "Seongbin Park",
-            "Unil Yun"
-          ],
-          "year": 2025,
-          "date": "2025-07-01",
-          "citations": 4,
-          "arxiv_id": null,
-          "paper_id": "13b234747380dc6f18fb43bf0f260ee58ca1a31f",
-          "url": "https://www.semanticscholar.org/paper/13b234747380dc6f18fb43bf0f260ee58ca1a31f",
-          "abstract": "On the Internet of Things (IoT) environment, interconnected devices continuously share generated data in real time, typically collected with a specific purpose. To ensure efficiency, IoT technology must deliver only the most relevant insights into these devices. High utility pattern mining is a technique that extracts important knowledge, and there has been research on performance improvements to efficiently mine these patterns in dynamic environments. Although approaches with a prelarge concept have been introduced to mining high utility patterns in data deletion environments, the state-of-the-art method relies on inefficient data structures, making them unsuitable for real-time analysis with IoT data. To overcome these limitations, this article proposes a novel utility pattern mining approach with prelarge concept for dynamic IoT environments, where data is deleted because of sensor errors or storage constraints. The actual utilities of the prelarge patterns are maintained to skip the verification and improve communication delays. It can optimize processing time and memory consumption due to storing fewer large or prelarge patterns based on the actual utility. The proposed method operates in an efficient list-based manner, enabling effective search space pruning when the rescan condition is met and generating compact data structures through transaction merging. The experiments indicate that our algorithm is outstanding regarding processing time and scalability with minimal compromise in memory consumption compared with the existing methods, while extracting the exact patterns. Additionally, an analysis that replicates real IoT environments demonstrates that the proposed method is sufficiently applicable in real-world settings.",
-          "subjects": []
-        },
-        {
-          "title": "Efficient mining of incremental high utility patterns with negative unit profits over all the accumulated stream data",
-          "authors": [
-            "Doyoung Kim",
-            "Heonho Kim",
-            "Seungwan Park",
-            "Hanju Kim",
-            "Myungha Cho",
-            "Seongbin Park",
-            "Taewoong Ryu",
-            "Chanhee Lee",
-            "Hyeonmo Kim",
-            "Unil Yun"
-          ],
-          "year": 2025,
-          "date": "2025-06-01",
-          "citations": 5,
-          "arxiv_id": null,
-          "paper_id": "dcf690269fb639d79d63fbf3e15d1af0e59a54c9",
-          "url": "https://www.semanticscholar.org/paper/dcf690269fb639d79d63fbf3e15d1af0e59a54c9",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "SuperPure: Efficient Purification of Localized and Distributed Adversarial Patches via Super-Resolution GAN Models",
-          "authors": [
-            "Hossein Khalili",
-            "Seongbin Park",
-            "Venkat Bollapragada",
-            "Nader Sehatbakhsh"
-          ],
-          "year": 2025,
-          "date": "2025-05-22",
-          "citations": 0,
-          "arxiv_id": "2505.16318",
-          "paper_id": "ac8a72259cdf47edc6aebc5a7d59d4bf25a492d4",
-          "url": "https://arxiv.org/abs/2505.16318",
-          "abstract": "As vision-based machine learning models are increasingly integrated into autonomous and cyber-physical systems, concerns about (physical) adversarial patch attacks are growing. While state-of-the-art defenses can achieve certified robustness with minimal impact on utility against highly-concentrated localized patch attacks, they fall short in two important areas: (i) State-of-the-art methods are vulnerable to low-noise distributed patches where perturbations are subtly dispersed to evade detection or masking, as shown recently by the DorPatch attack; (ii) Achieving high robustness with state-of-the-art methods is extremely time and resource-consuming, rendering them impractical for latency-sensitive applications in many cyber-physical systems. To address both robustness and latency issues, this paper proposes a new defense strategy for adversarial patch attacks called SuperPure. The key novelty is developing a pixel-wise masking scheme that is robust against both distributed and localized patches. The masking involves leveraging a GAN-based super-resolution scheme to gradually purify the image from adversarial patches. Our extensive evaluations using ImageNet and two standard classifiers, ResNet and EfficientNet, show that SuperPure advances the state-of-the-art in three major directions: (i) it improves the robustness against conventional localized patches by more than 20%, on average, while also improving top-1 clean accuracy by almost 10%; (ii) It achieves 58% robustness against distributed patch attacks (as opposed to 0% in state-of-the-art method, PatchCleanser); (iii) It decreases the defense end-to-end latency by over 98% compared to PatchCleanser. Our further analysis shows that SuperPure is robust against white-box attacks and different patch sizes. Our code is open-source.",
-          "subjects": []
-        },
-        {
-          "title": "Design of a Serendipity-Incorporated Recommender System",
-          "authors": [
-            "Yuri Kim",
-            "Seoyeon Oh",
-            "Chaerin Noh",
-            "Eunbeen Hong",
-            "Seongbin Park"
-          ],
-          "year": 2025,
-          "date": "2025-02-19",
-          "citations": 7,
-          "arxiv_id": null,
-          "paper_id": "6dbac9aa2993e93fb4312bfc1c3b1404fdf2d325",
-          "url": "https://www.semanticscholar.org/paper/6dbac9aa2993e93fb4312bfc1c3b1404fdf2d325",
-          "abstract": "Unexpected yet advantageous findings, often referred to as serendipitous discoveries, are becoming increasingly significant in the field of computer science. This research aims to examine the impact of factors that could potentially trigger such serendipity within a recommender system (RS) and consequently proposes a novel, serendipity-incorporated recommender system (SRS). The SRS is developed by integrating elements that could stimulate the occurrence of serendipity into an RS algorithm. These elements include interestingness, diversity, and unexpectedness. As a result, the SRS is equipped to provide users with recommendations that are surprising, intriguing, and atypical. The algorithm within the SRS recommends three items predicated on a user’s preferred item. To facilitate the selection of items to be recommended, we have designed a computation method called the ’serendipity measure’, which is tasked with calculating the weights of all items. Our innovative algorithm and its efficient execution are expounded upon extensively in this study. The performance of the SRS was assessed using a quantitative serendipity evaluation model (QSEM). This model is a quantitative tool designed to measure the probability of users encountering serendipitous events within a specific information space. We conducted a user study to compare the SRS with the traditional cold-start recommender system (CRS), and the feedback for the SRS was positively received. The experiments confirm the viability of cultivating a serendipitous environment from a system’s perspective. The test results also underline the exciting potential that serendipity brings to recommender systems.",
-          "subjects": []
-        },
-        {
-          "title": "A Rule-Based Stock Trading Recommendation System Using Sentiment Analysis and Technical Indicators",
-          "authors": [
-            "Yuri Kim",
-            "Sujin Yoo",
-            "Seongbin Park"
-          ],
-          "year": 2025,
-          "date": "2025-02-17",
-          "citations": 9,
-          "arxiv_id": null,
-          "paper_id": "1f7032875dbcc3a9b4cd102aff93f87f31823813",
-          "url": "https://www.semanticscholar.org/paper/1f7032875dbcc3a9b4cd102aff93f87f31823813",
-          "abstract": "This paper presents a stock trading recommendation system that integrates news sentiment analysis with the relative strength index (RSI) to provide informed buy–sell decisions. The system uses a rule-based natural language processing (NLP) approach to analyze recent news articles and combines the resulting sentiment scores with the RSI, which tracks stock momentum. By evaluating seven days of news data, the system assigns a sentiment score (1 to 100) that reflects market sentiment, while the RSI identifies overbought or oversold conditions. This combined approach allows traders to make data-driven buy, sell, or hold decisions in real time. In this study, we conducted a comparative study with benchmark indices across various subsets of stocks to evaluate their relative performance, highlighting our system’s competitive edge in terms of accuracy, profitability, and lightweight design with low computational cost. The results showed the system’s adaptability across different market segments and its potential to enhance trading outcomes. By integrating real-time sentiment analysis with technical indicators, the system offers a practical and actionable investment strategy.",
-          "subjects": []
-        },
-        {
-          "title": "Dietary Arginine Supplementation Modulates the Proteome of Boar Seminal Plasma",
-          "authors": [
-            "E. Oladejo",
-            "Tasha R Gruhot",
-            "Seongbin Park",
-            "G. Ishak",
-            "B. Mote",
-            "Shengfa F. Liao",
-            "J. Feugang"
-          ],
-          "year": 2025,
-          "date": "2025-02-01",
-          "citations": 4,
-          "arxiv_id": null,
-          "paper_id": "98d1f899bfcc04a32f6bcae2f87ed59ea3d2c8da",
-          "url": "https://www.semanticscholar.org/paper/98d1f899bfcc04a32f6bcae2f87ed59ea3d2c8da",
-          "abstract": "Simple Summary This study explores the effects of an increased arginine level in a boar diet on semen production and the seminal plasma proteome. The results showed that although arginine supplementation did not significantly affect semen output or sperm quality, such as in motility and morphology, it led to an increase in ten proteins and a decrease in two proteins related to reproduction. These findings suggest that arginine may influence sperm function, highlighting the need for further research in this critical area.",
-          "subjects": []
-        },
-        {
-          "title": "Chimera: Creating Digitally Signed Fake Photos by Fooling Image Recapture and Deepfake Detectors",
-          "authors": [
-            "Seongbin Park",
-            "Alexander Vilesov",
-            "Jinghui Zhang",
-            "Hossein Khalili",
-            "Yuan Tian",
-            "Achuta Kadambi",
-            "Nader Sehatbakhsh"
-          ],
-          "year": 2025,
-          "date": "2025",
-          "citations": 3,
-          "arxiv_id": null,
-          "paper_id": "6746f256491235304742092a041af852ac29eda5",
-          "url": "https://www.semanticscholar.org/paper/6746f256491235304742092a041af852ac29eda5",
-          "abstract": "",
-          "subjects": []
-        }
-      ]
+      []
     ],
     [
       "Baharan Mirzasoleiman",
@@ -2869,7 +1955,7 @@
           ],
           "year": 2016,
           "date": "2016-09-21",
-          "citations": 0,
+          "citations": 2661,
           "arxiv_id": "1609.06408",
           "paper_id": "291a176dc906f31e8faf760911a61f0ca9bde444",
           "url": "https://arxiv.org/abs/1609.06408",
@@ -2902,6 +1988,23 @@
       "J. Grizzle",
       [
         {
+          "title": "Enhancing the Performance of a Safe Controller Via Supervised Learning for Truck Lateral Control",
+          "authors": [
+            "Yuxiao Chen",
+            "Ayonga Hereid",
+            "Huei Peng",
+            "J. Grizzle"
+          ],
+          "year": 2017,
+          "date": "2017-12-15",
+          "citations": 0,
+          "arxiv_id": "1712.05506",
+          "paper_id": "c1e36e384b1455a5df438f7938f0510b825a9d6b",
+          "url": "https://arxiv.org/abs/1712.05506",
+          "abstract": "Correct-by-construction techniques, such as control barrier functions (CBFs), can be used to guarantee closed-loop safety by acting as a supervisor of an existing legacy controller. However, supervisory-control intervention typically compromises the performance of the closed-loop system. On the other hand, machine learning has been used to synthesize controllers that inherit good properties from a training dataset, though safety is typically not guaranteed due to the difficulty of analyzing the associated learning structure. In this paper, supervised learning is combined with CBFs to synthesize controllers that enjoy good performance with provable safety. A training set is generated by trajectory optimization that incorporates the CBF constraint for an interesting range of initial conditions of the truck model. A control policy is obtained via supervised learning that maps a feature representing the initial conditions to a parameterized desired trajectory. The learning-based controller is used as the performance controller and a CBF-based supervisory controller guarantees safety. A case study of lane keeping (LK) for articulated trucks shows that the controller trained by supervised learning inherits the good performance of the training set and rarely requires intervention by the CBF supervisor.",
+          "subjects": []
+        },
+        {
           "title": "Control Barrier Function Based Quadratic Programs for Safety Critical Systems",
           "authors": [
             "A. Ames",
@@ -2911,7 +2014,7 @@
           ],
           "year": 2016,
           "date": "2016-09-21",
-          "citations": 0,
+          "citations": 2661,
           "arxiv_id": "1609.06408",
           "paper_id": "291a176dc906f31e8faf760911a61f0ca9bde444",
           "url": "https://arxiv.org/abs/1609.06408",
@@ -2938,7 +2041,417 @@
           "subjects": []
         }
       ],
-      []
+      [
+        {
+          "title": "Trace: Tennessee Research and Creative Exchange Developing Chitosan-based Biomaterials for Brain Repair and Neuroprosthetics Recommended Citation Developing Chitosan-based Biomaterials for Brain Repair and Neuroprosthetics Table of Contents List of Tables List of Figures",
+          "authors": [
+            "Masters Theses",
+            "Z. Cao",
+            "Wei He",
+            "M. Professor",
+            "Roberto Benson",
+            "Kevin Kit",
+            "Carolyn R Hodges",
+            "M. Kevin",
+            "Kit",
+            "J. Grizzle",
+            "J. Dunlap",
+            "Gregory Jones",
+            "F. Harte",
+            "Michael Smith",
+            "Svetlana Zivanovic"
+          ],
+          "year": null,
+          "date": "",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "1097bdd522a2cd9a653ad3dadc926eb4eae925a7",
+          "url": "https://www.semanticscholar.org/paper/1097bdd522a2cd9a653ad3dadc926eb4eae925a7",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "A Roadmap for US Robotics - From Internet to Robotics 2020 Edition",
+          "authors": [
+            "Henrik I. Christensen",
+            "N. Amato",
+            "H. Yanco",
+            "M. Matarić",
+            "H. Choset",
+            "Ann W. Drobnis",
+            "Ken Goldberg",
+            "J. Grizzle",
+            "Gregory Hager",
+            "J. Hollerbach",
+            "Seth Hutchinson",
+            "V. Krovi",
+            "Daniel Lee",
+            "B. Smart",
+            "J. Trinkle",
+            "G. Sukhatme"
+          ],
+          "year": 2021,
+          "date": "2021",
+          "citations": 138,
+          "arxiv_id": null,
+          "paper_id": "bd6d8840ecbdddab31e9fbbb79fc8ce2f11830b7",
+          "url": "https://www.semanticscholar.org/paper/bd6d8840ecbdddab31e9fbbb79fc8ce2f11830b7",
+          "abstract": "Recently, the robotics industry celebrated its 60-year anniversary. We have used robots for more than six decades to empower people to do things that are typically dirty, dull and/or dangerous. The industry has progressed significantly over the period from basic mechanical assist systems to fully autonomous cars, environmental monitoring and exploration of outer space. We have seen tremendous adoption of IT technology in our daily lives for a diverse set of support tasks. Through use of robots we are starting to see a new revolution, as we not only will have IT support from tablets, phones, computers but also systems that can physically interact with the world and assist with daily tasks, work, and leisure activities. The present document is a summary of the main societal opportunities identified, the associated challenges to deliver desired solutions and a presentation of efforts to be undertaken to ensure that US will continue to be a leader in robotics both in terms of research innovation, adoption of the latest technology, and adoption of appropriate policy frameworks that ensure that the technology is utilized in a responsible fashion. H. I. Christensen, N. Amato, H. Yanco, M. Mataric, H. Choset, A. Drobnis, K. Goldberg, J. Grizzle, G. Hager, J. Hollerbach, S. Hutchinson, V. Krovi, D. Lee, W. Smart and J. Trinkle (2021), “A Roadmap for US Robotics – From Internet to Robotics 2020 Edition”, Foundations and Trends® in Robotics: Vol. 8, No. 4, pp 307–424. DOI: 10.1561/2300000066. Full text available at: http://dx.doi.org/10.1561/2300000066",
+          "subjects": []
+        },
+        {
+          "title": "Contact-aided invariant extended Kalman filtering for robot state estimation",
+          "authors": [
+            "R. Hartley",
+            "Maani Ghaffari Jadidi",
+            "R. Eustice",
+            "J. Grizzle"
+          ],
+          "year": 2019,
+          "date": "2019-04-19",
+          "citations": 0,
+          "arxiv_id": "1904.09251",
+          "paper_id": "b5e33d796b313a202200ab3715c68294509ceb04",
+          "url": "https://arxiv.org/abs/1904.09251",
+          "abstract": "Legged robots require knowledge of pose and velocity in order to maintain stability and execute walking paths. Current solutions either rely on vision data, which is susceptible to environmental and lighting conditions, or fusion of kinematic and contact data with measurements from an inertial measurement unit (IMU). In this work, we develop a contact-aided invariant extended Kalman filter (InEKF) using the theory of Lie groups and invariant observer design. This filter combines contact-inertial dynamics with forward kinematic corrections to estimate pose and velocity along with all current contact points. We show that the error dynamics follows a log-linear autonomous differential equation with several important consequences: (a) the observable state variables can be rendered convergent with a domain of attraction that is independent of the system’s trajectory; (b) unlike the standard EKF, neither the linearized error dynamics nor the linearized observation model depend on the current state estimate, which (c) leads to improved convergence properties and (d) a local observability matrix that is consistent with the underlying nonlinear system. Furthermore, we demonstrate how to include IMU biases, add/remove contacts, and formulate both world-centric and robo-centric versions. We compare the convergence of the proposed InEKF with the commonly used quaternion-based extended Kalman filter (EKF) through both simulations and experiments on a Cassie-series bipedal robot. Filter accuracy is analyzed using motion capture, while a LiDAR mapping experiment provides a practical use case. Overall, the developed contact-aided InEKF provides better performance in comparison with the quaternion-based EKF as a result of exploiting symmetries present in system.",
+          "subjects": []
+        },
+        {
+          "title": "Automotive Control Systems",
+          "authors": [
+            "Joseph S. Cook",
+            "J. Grizzle",
+            "Jing Sun",
+            "M. Liubakka",
+            "D. Rhode",
+            "James R. Winkelman",
+            "P. Kokotovic"
+          ],
+          "year": 2018,
+          "date": "2018-10-24",
+          "citations": 717,
+          "arxiv_id": null,
+          "paper_id": "552e2b143ca54b2494e8aae03c4d14b8b094ee3c",
+          "url": "https://www.semanticscholar.org/paper/552e2b143ca54b2494e8aae03c4d14b8b094ee3c",
+          "abstract": "This engineering textbook is designed to introduce advanced control systems for vehicles, including advanced automotive concepts and the next generation of vehicles for Intelligent Transportation Systems (ITS). For each automotive-control problem considered, the authors emphasize the physics and underlying principles behind the control-system concept and design. This is an exciting and rapidly developing field for which many articles and reports exist but no modern unifying text. An extensive list of references is provided at the end of each chapter for all topics covered. This is currently the only textbook, including problems and examples, that covers and integrates the topics of automotive powertrain control, vehicle control, and ITS. The emphasis is on fundamental concepts and methods for automotive control systems rather than the rapidly changing specific technologies. Many of the text examples, as well as the end-of-chapter problems, require the use of MATLAB and/or Simulink.",
+          "subjects": []
+        },
+        {
+          "title": "Feedback Control of a Cassie Bipedal Robot: Walking, Standing, and Riding a Segway",
+          "authors": [
+            "Yukai Gong",
+            "R. Hartley",
+            "Xingye Da",
+            "Ayonga Hereid",
+            "Omar Harib",
+            "Jiunn-Kai Huang",
+            "J. Grizzle"
+          ],
+          "year": 2018,
+          "date": "2018-09-19",
+          "citations": 0,
+          "arxiv_id": "1809.07279",
+          "paper_id": "76a89e10661d5ccb96af2c76625c24e909ab3b84",
+          "url": "https://arxiv.org/abs/1809.07279",
+          "abstract": "The Cassie bipedal robot designed by Agility Robotics is providing academics with a common platform for sharing and comparing algorithms for locomotion, perception, and navigation. This paper focuses on feedback control for standing and walking using the methods of virtual constraints and gait libraries. The designed controller was implemented six weeks after the robot arrived at the University of Michigan and allowed it to stand in place as well as walk over sidewalks, grass, snow, sand, and burning brush. The controller for standing also enables the robot to ride a Segway. Software supporting the work in this paper is available on GitHub.",
+          "subjects": []
+        },
+        {
+          "title": "Combining trajectory optimization, supervised machine learning, and model structure for mitigating the curse of dimensionality in the control of bipedal robots",
+          "authors": [
+            "Xingye Da",
+            "J. Grizzle"
+          ],
+          "year": 2017,
+          "date": "2017-11-06",
+          "citations": 76,
+          "arxiv_id": "1711.02223",
+          "paper_id": "a83989fc2b4c87c70061d96e224db7ea56cd38e1",
+          "url": "https://arxiv.org/abs/1711.02223",
+          "abstract": "To overcome the obstructions imposed by high-dimensional bipedal models, we embed a stable walking motion in an attractive low-dimensional surface of the system’s state space. The process begins with trajectory optimization to design an open-loop periodic walking motion of the high-dimensional model and then adding to this solution a carefully selected set of additional open-loop trajectories of the model that steer toward the nominal motion. A drawback of trajectories is that they provide little information on how to respond to a disturbance. To address this shortcoming, supervised machine learning is used to extract a low-dimensional state-variable realization of the open-loop trajectories. The periodic orbit is now an attractor of the low-dimensional state-variable model but is not attractive in the full-order system. We then use the special structure of mechanical models associated with bipedal robots to embed the low-dimensional model in the original model in such a manner that the desired walking motions are locally exponentially stable. The design procedure is first developed for ordinary differential equations and illustrated on a simple model. The methods are subsequently extended to a class of hybrid models and then realized experimentally on an Atrias-series 3D bipedal robot.",
+          "subjects": []
+        },
+        {
+          "title": "Nonholonomic virtual constraints and gait optimization for robust walking control",
+          "authors": [
+            "Brent A. Griffin",
+            "J. Grizzle"
+          ],
+          "year": 2017,
+          "date": "2017-05-23",
+          "citations": 56,
+          "arxiv_id": null,
+          "paper_id": "4ac89afe1c56f9444cb423c5ce91dfca02b1e5de",
+          "url": "https://www.semanticscholar.org/paper/4ac89afe1c56f9444cb423c5ce91dfca02b1e5de",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Supplementary Material to : Legged Robot State-Estimation Through Combined Kinematic and Preintegrated Contact Factors",
+          "authors": [
+            "R. Hartley",
+            "Josh Mangelson",
+            "Lu Gan",
+            "M. G. Jadidi",
+            "Jeffrey M. Walls",
+            "R. Eustice",
+            "J. Grizzle"
+          ],
+          "year": 2017,
+          "date": "2017",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "2103e4f2378d11ed3be6da27163e5a12e7bc5eb4",
+          "url": "https://www.semanticscholar.org/paper/2103e4f2378d11ed3be6da27163e5a12e7bc5eb4",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Exponentially stabilizing continuous-time controllers for periodic orbits of hybrid systems: Application to bipedal locomotion with ground height variations",
+          "authors": [
+            "K. Hamed",
+            "B. G. Buss",
+            "J. Grizzle"
+          ],
+          "year": 2016,
+          "date": "2016-07-01",
+          "citations": 82,
+          "arxiv_id": null,
+          "paper_id": "7d0bfb58d6f8efccc128889c2ffbfffa3f217a78",
+          "url": "https://www.semanticscholar.org/paper/7d0bfb58d6f8efccc128889c2ffbfffa3f217a78",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Models, feedback control, and open problems of 3D bipedal robotic walking",
+          "authors": [
+            "J. Grizzle",
+            "C. Chevallereau",
+            "Ryan W. Sinnet",
+            "A. Ames"
+          ],
+          "year": 2014,
+          "date": "2014-08-01",
+          "citations": 347,
+          "arxiv_id": null,
+          "paper_id": "fdf409152397b4914e285f97ca8a262603fdac3b",
+          "url": "https://www.semanticscholar.org/paper/fdf409152397b4914e285f97ca8a262603fdac3b",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Robust Stabilizing Continuous-Time Controllers for Periodic Orbits of Hybrid Systems : Application to Bipedal Robots",
+          "authors": [
+            "K. Hamed",
+            "B. G. Buss",
+            "J. Grizzle"
+          ],
+          "year": 2014,
+          "date": "2014",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "5500701d64bb7c6c24223939b441cc2fe1333677",
+          "url": "https://www.semanticscholar.org/paper/5500701d64bb7c6c24223939b441cc2fe1333677",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Embedding active force control within the compliant hybrid zero dynamics to achieve stable, fast running on MABEL",
+          "authors": [
+            "K. Sreenath",
+            "Hae-won Park",
+            "I. Poulakakis",
+            "J. Grizzle"
+          ],
+          "year": 2013,
+          "date": "2013-03-01",
+          "citations": 156,
+          "arxiv_id": null,
+          "paper_id": "f05a6c7a10b6bf7e620ede5662a84b6b15b44bc3",
+          "url": "https://www.semanticscholar.org/paper/f05a6c7a10b6bf7e620ede5662a84b6b15b44bc3",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "A Compliant Hybrid Zero Dynamics Controller for Stable, Efficient and Fast Bipedal Walking on MABEL",
+          "authors": [
+            "K. Sreenath",
+            "Hae-won Park",
+            "I. Poulakakis",
+            "J. Grizzle"
+          ],
+          "year": 2011,
+          "date": "2011-08-01",
+          "citations": 398,
+          "arxiv_id": null,
+          "paper_id": "ef1289721229cf7b497ef252fb6df1cc9a68aff3",
+          "url": "https://www.semanticscholar.org/paper/ef1289721229cf7b497ef252fb6df1cc9a68aff3",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "3D Bipedal Robotic Walking: Models, Feedback Control, and Open Problems",
+          "authors": [
+            "J. Grizzle",
+            "C. Chevallereau",
+            "A. Ames",
+            "Ryan W. Sinnet"
+          ],
+          "year": 2010,
+          "date": "2010-09-01",
+          "citations": 146,
+          "arxiv_id": null,
+          "paper_id": "3b808fa389bcc8a1c89b83381ef82842661f4bb8",
+          "url": "https://www.semanticscholar.org/paper/3b808fa389bcc8a1c89b83381ef82842661f4bb8",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Employee customer orientation in context: how the environment moderates the influence of customer orientation on performance outcomes.",
+          "authors": [
+            "J. Grizzle",
+            "A. Zablah",
+            "Tom J Brown",
+            "J. Mowen",
+            "James M. Lee"
+          ],
+          "year": 2009,
+          "date": "2009-09-01",
+          "citations": 192,
+          "arxiv_id": null,
+          "paper_id": "62ae8db75eb8e58da98b8ca82b7971fc8384d84a",
+          "url": "https://www.semanticscholar.org/paper/62ae8db75eb8e58da98b8ca82b7971fc8384d84a",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Infectious Diseases of Freshwater Mussels and Other Freshwater Bivalve Mollusks",
+          "authors": [
+            "J. Grizzle",
+            "C. J. Brunner"
+          ],
+          "year": 2009,
+          "date": "2009-06-04",
+          "citations": 77,
+          "arxiv_id": null,
+          "paper_id": "eb2eece0becbc597d02a3a60497328b987fa88b7",
+          "url": "https://www.semanticscholar.org/paper/eb2eece0becbc597d02a3a60497328b987fa88b7",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Towards the ictalurid catfish transcriptome: generation and analysis of 31,215 catfish ESTs",
+          "authors": [
+            "Ping Li",
+            "E. Peatman",
+            "Shaolin Wang",
+            "Jinian Feng",
+            "Chongbo He",
+            "P. Baoprasertkul",
+            "Peng Xu",
+            "H. Kucuktas",
+            "S. Nandi",
+            "B. Somridhivej",
+            "J. Serapion",
+            "M. Simmons",
+            "C. Turan",
+            "Lei Liu",
+            "W. Muir",
+            "R. Dunham",
+            "Y. Brady",
+            "J. Grizzle",
+            "Zhanjiang Liu"
+          ],
+          "year": 2007,
+          "date": "2007-06-18",
+          "citations": 73,
+          "arxiv_id": null,
+          "paper_id": "cacc06ff2ba222cfcb41f49a0d2a33f5928d7d53",
+          "url": "https://www.semanticscholar.org/paper/cacc06ff2ba222cfcb41f49a0d2a33f5928d7d53",
+          "abstract": "BackgroundEST sequencing is one of the most efficient means for gene discovery and molecular marker development, and can be additionally utilized in both comparative genome analysis and evaluation of gene duplications. While much progress has been made in catfish genomics, large-scale EST resources have been lacking. The objectives of this project were to construct primary cDNA libraries, to conduct initial EST sequencing to generate catfish EST resources, and to obtain baseline information about highly expressed genes in various catfish organs to provide a guide for the production of normalized and subtracted cDNA libraries for large-scale transcriptome analysis in catfish.ResultsA total of 17 cDNA libraries were constructed including 12 from channel catfish (Ictalurus punctatus) and 5 from blue catfish (I. furcatus). A total of 31,215 ESTs, with average length of 778 bp, were generated including 20,451 from the channel catfish and 10,764 from blue catfish. Cluster analysis indicated that 73% of channel catfish and 67% of blue catfish ESTs were unique within the project. Over 53% and 50% of the channel catfish and blue catfish ESTs, respectively, had significant similarities to known genes. All ESTs have been deposited in GenBank. Evaluation of the catfish EST resources demonstrated their potential for molecular marker development, comparative genome analysis, and evaluation of ancient and recent gene duplications. Subtraction of abundantly expressed genes in a variety of catfish tissues, identified here, will allow the production of low-redundancy libraries for in-depth sequencing.ConclusionThe sequencing of 31,215 ESTs from channel catfish and blue catfish has significantly increased the EST resources in catfish. The EST resources should provide the potential for microarray development, polymorphic marker identification, mapping, and comparative genome analysis.",
+          "subjects": []
+        },
+        {
+          "title": "Virus Distribution and Signs of Disease after Immersion Exposure to Largemouth Bass Virus",
+          "authors": [
+            "B. Beck",
+            "R. Bakal",
+            "C. J. Brunner",
+            "J. Grizzle"
+          ],
+          "year": 2006,
+          "date": "2006-09-01",
+          "citations": 20,
+          "arxiv_id": null,
+          "paper_id": "6133547e3d833e9aa74cddbcd38d8f94b9d90f41",
+          "url": "https://www.semanticscholar.org/paper/6133547e3d833e9aa74cddbcd38d8f94b9d90f41",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "IEEE Transactions on Automatic Control",
+          "authors": [
+            "P. Antsaklis",
+            "E. Kovács",
+            "E. K. Chong",
+            "J. Grizzle",
+            "Miroslav Krstic",
+            "J. Spall",
+            "Y. Amamoto",
+            "D. Arzelier",
+            "Alessandro Astolfi",
+            "J. Braslavsky",
+            "H. Chang",
+            "X. Chen",
+            "Shibaura Inst",
+            "A. Chiuso",
+            "J. Daafouz",
+            "Fabrizio Dabbene",
+            "G. Dullerud",
+            "Magnus Egerstedt",
+            "É. Fabre",
+            "A. Ferrara",
+            "Hideaki Ishii",
+            "Matthew R. James",
+            "Antonio Loría",
+            "Michael A. Malisoff",
+            "H. Marchand",
+            "Rennes-Bretagne Atlantique",
+            "Lorenzo Marconi",
+            "K. Morris",
+            "F. Paganini",
+            "Maria Prandini",
+            "S. Reveliotis",
+            "L. Schenato",
+            "H. Trentelman",
+            "Z. Wang",
+            "E. Weyer",
+            "J. Winkin"
+          ],
+          "year": 2006,
+          "date": "2006",
+          "citations": 409,
+          "arxiv_id": null,
+          "paper_id": "db0760d59f189a5906e0d2b431eeaec31842ddb5",
+          "url": "https://www.semanticscholar.org/paper/db0760d59f189a5906e0d2b431eeaec31842ddb5",
+          "abstract": "Consider a given dynamical system, described by ẋ = f(x) (wheref is a nonlinear function) and [x0] a subset ofR. We present an algorithm, based on interval analysis, able to show that there exists a unique equilibrium statex∞ ∈ [x0] which is asymptotically stable. The effective method also provides a set[x] (subset of[x0]) which is included in the attraction domain of x∞.",
+          "subjects": []
+        },
+        {
+          "title": "The influence of contagion information and behavior on older adolescents' perceptions of peers with chronic illness",
+          "authors": [
+            "J. Grizzle"
+          ],
+          "year": 2005,
+          "date": "2005-11-01",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "49714145d114937d7757f5c91eb948e01c9e3317",
+          "url": "https://www.semanticscholar.org/paper/49714145d114937d7757f5c91eb948e01c9e3317",
+          "abstract": "",
+          "subjects": []
+        }
+      ]
     ],
     [
       "David E. J. van Wijk",
@@ -3172,406 +2685,9 @@
             "cs.MA",
             "eess.SY"
           ]
-        },
-        {
-          "title": "Safe and Scalable Multi-Drone Payload Transport Via CBF-Based Reinforcement Learning With Zero-Shot Sim-to-Real Transfer",
-          "authors": [
-            "Jaeyoun Choi",
-            "Oswin So",
-            "Songyuan Zhang",
-            "Cooper Taylor",
-            "Chuchu Fan"
-          ],
-          "year": 2026,
-          "date": "2026",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "2cd983addd6378b3d340fae3c8e982e512407a38",
-          "url": "https://www.semanticscholar.org/paper/2cd983addd6378b3d340fae3c8e982e512407a38",
-          "abstract": "",
-          "subjects": []
         }
       ],
-      [
-        {
-          "title": "Impact of Age on Efficacy and Safety of Advanced Therapies During Induction in Ulcerative Colitis: An Individual Patient Data Pooled Analysis from Randomized Controlled Trials.",
-          "authors": [
-            "Dhruv Ahuja",
-            "Jaeyoun Choi",
-            "G. Zou",
-            "S. Goodwin",
-            "V. Jairath",
-            "Siddharth Singh"
-          ],
-          "year": 2026,
-          "date": "2026-02-16",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "ff59a00bf73f1f9c4481ae2fddcc00266693baf7",
-          "url": "https://www.semanticscholar.org/paper/ff59a00bf73f1f9c4481ae2fddcc00266693baf7",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Maximizing Reach-Avoid Probabilities for Linear Stochastic Systems via Control Architectures",
-          "authors": [
-            "Niklas Schmid",
-            "Jaeyoun Choi",
-            "Oswin So",
-            "Chuchu Fan"
-          ],
-          "year": 2026,
-          "date": "2026-01-22",
-          "citations": 0,
-          "arxiv_id": "2601.16290",
-          "paper_id": "933b6bcf3ae671306c4683c1ed574d3e96d4c7ab",
-          "url": "https://arxiv.org/abs/2601.16290",
-          "abstract": "The maximization of reach-avoid probabilities for stochastic systems is a central topic in the control literature. Yet, the available methods are either restricted to low-dimensional systems or suffer from conservative approximations. To address these limitations, we propose control architectures that combine the flexibility of Markov Decision Processes with the scalability of Model Predictive Controllers. The Model Predictive Controller tracks reference signals while remaining agnostic to the stochasticity and reach-avoid objective. Instead, the reach-avoid probability is maximized by optimally updating the controller's reference online. To achieve this, the closed-loop system, consisting of the system and Model Predictive Controller, is abstracted as a Markov Decision Process in which a new reference can be chosen at every time-step. A feedback policy generating optimal references is then computed via Dynamic Programming. If the state space of the system is continuous, the Dynamic Programming algorithm must be executed on a finite system approximation. Modifications to the Model Predictive Controller enable a computationally efficient robustification of the Dynamic Programming algorithm to approximation errors, preserving bounds on the achieved reach-avoid probability. The approach is validated on a perturbed 12D quadcopter model in cluttered reach-avoid environments proving its flexibility and scalability.",
-          "subjects": []
-        },
-        {
-          "title": "Parameter-Robust MPPI for Safe Online Learning of Unknown Parameters",
-          "authors": [
-            "M. Vahs",
-            "Jaeyoun Choi",
-            "Niklas Schmid",
-            "Jana Tumova",
-            "Chuchu Fan"
-          ],
-          "year": 2026,
-          "date": "2026-01-06",
-          "citations": 1,
-          "arxiv_id": "2601.02948",
-          "paper_id": "2bf5f06b48fc454211d7570f009a7c9d71dff034",
-          "url": "https://arxiv.org/abs/2601.02948",
-          "abstract": "Robots deployed in dynamic environments must remain safe even when key physical parameters are uncertain or change over time. We propose Parameter-Robust Model Predictive Path Integral (PRMPPI) control, a framework that integrates online parameter learning with probabilistic safety constraints. PRMPPI maintains a particle-based belief over parameters via Stein Variational Gradient Descent, evaluates safety constraints using Conformal Prediction, and optimizes both a nominal performance-driven and a safety-focused backup trajectory in parallel. This yields a controller that is cautious at first, improves performance as parameters are learned, and ensures safety throughout. Simulation and hardware experiments demonstrate higher success rates, lower tracking error, and more accurate parameter estimates than baselines.",
-          "subjects": []
-        },
-        {
-          "title": "Artificial intelligence-based digital pathology using H&E-stained whole slide images in immuno-oncology: from immune biomarker detection to immunotherapy response prediction",
-          "authors": [
-            "Jessica Zhang",
-            "Horyun Choi",
-            "Yeseul Kim",
-            "Jonghanne Park",
-            "Sukjoo Cho",
-            "Eugene Y Kim",
-            "Allen Cho",
-            "Ju Young Lee",
-            "Jaeyoun Choi",
-            "C. Low",
-            "C. Jung",
-            "E. Yu",
-            "Jeffrey H. Chuang",
-            "Lee Cooper",
-            "Y. Chae"
-          ],
-          "year": 2025,
-          "date": "2025-08-01",
-          "citations": 17,
-          "arxiv_id": null,
-          "paper_id": "5c42fad8381a5f01e5b0400f5938f7d5dfb91fdc",
-          "url": "https://www.semanticscholar.org/paper/5c42fad8381a5f01e5b0400f5938f7d5dfb91fdc",
-          "abstract": "Immuno-oncology and the advent of immunotherapies, in particular immune checkpoint inhibitors (ICIs), have fundamentally altered the way we treat cancer. Yet only a small subset of patients actually responds to ICIs, and many face significant adverse effects, making the accurate selection of patients for ICIs essential to the work of immuno-oncology. Immune biomarkers, such as programmed death-ligand 1, microsatellite instability/defective mismatch repair, and tumor mutational burden have been developed for patient selection and stratification for ICIs, though their predictive abilities remain limited. This is due to several challenges: lack of adequate tissue sampling, the time-consuming and subjective nature of manual visual-based quantification techniques, and the growing recognition of the complexity of the tumor microenvironment, for which these tests cannot fully capture on their own. Meanwhile, emerging technologies in the field of artificial intelligence (AI), such as the performance of deep learning techniques in digital pathology, have garnered significant attention for their potential to be used in this space. Many have now turned their attention towards the immuno-oncology-related applications for digital pathology, particularly in analyzing whole-slide images of widely available H&E-stained slides to aid in immune biomarker detection and ICI response prediction. In this review, we discuss the current landscape of AI-based digital pathology in immuno-oncology, including its applications for identifying and measuring immune biomarkers and, importantly, its potential for predicting ICI response and survival outcomes. We will end by discussing the challenges and future directions of adopting AI technologies for clinical deployment.",
-          "subjects": []
-        },
-        {
-          "title": "203: IMPACT OF AGE ON EFFICACY AND SAFETY OF ADVANCED THERAPIES IN ULCERATIVE COLITIS: A POOLED ANALYSIS OF RANDOMIZED CONTROLLED TRIALS",
-          "authors": [
-            "Jaeyoun Choi",
-            "Dhruv Ahuja",
-            "GY Zou",
-            "S. Goodwin",
-            "V. Jairath",
-            "Siddharth Singh"
-          ],
-          "year": 2025,
-          "date": "2025-05-01",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "3b5fb8928d73aa700daf4adae86b871ce9b99309",
-          "url": "https://www.semanticscholar.org/paper/3b5fb8928d73aa700daf4adae86b871ce9b99309",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Fine-Tuned DenseNet-169 for Breast Cancer Metastasis Prediction Using FastAI and 1-Cycle Policy",
-          "authors": [
-            "Adarsh Vulli",
-            "P. Srinivasu",
-            "Madipally Sai Krishna Sashank",
-            "J. Shafi",
-            "Jaeyoun Choi",
-            "Muhammad Fazal Ijaz"
-          ],
-          "year": 2022,
-          "date": "2022-04-01",
-          "citations": 184,
-          "arxiv_id": null,
-          "paper_id": "3b11ed066ed30e5e235e9ef15cd3b8ada96d9899",
-          "url": "https://www.semanticscholar.org/paper/3b11ed066ed30e5e235e9ef15cd3b8ada96d9899",
-          "abstract": "Lymph node metastasis in breast cancer may be accurately predicted using a DenseNet-169 model. However, the current system for identifying metastases in a lymph node is manual and tedious. A pathologist well-versed with the process of detection and characterization of lymph nodes goes through hours investigating histological slides. Furthermore, because of the massive size of most whole-slide images (WSI), it is wise to divide a slide into batches of small image patches and apply methods independently on each patch. The present work introduces a novel method for the automated diagnosis and detection of metastases from whole slide images using the Fast AI framework and the 1-cycle policy. Additionally, it compares this new approach to previous methods. The proposed model has surpassed other state-of-art methods with more than 97.4% accuracy. In addition, a mobile application is developed for prompt and quick response. It collects user information and models to diagnose metastases present in the early stages of cancer. These results indicate that the suggested model may assist general practitioners in accurately analyzing breast cancer situations, hence preventing future complications and mortality. With digital image processing, histopathologic interpretation and diagnostic accuracy have improved considerably.",
-          "subjects": []
-        },
-        {
-          "title": "A Twisted Elastic Rotary-Rail Actuator (TERRA) Using a Double-Stranded Helix Structure",
-          "authors": [
-            "Jae In Kim",
-            "Jaeyoun Choi",
-            "Junhyung Kim",
-            "Yong‐Lae Park"
-          ],
-          "year": 2021,
-          "date": "2021-10-01",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "b32ec35c3da906e08aa53e867613996e428ed0dd",
-          "url": "https://www.semanticscholar.org/paper/b32ec35c3da906e08aa53e867613996e428ed0dd",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Pop-up cookie molds: self-folding elastomer sheets using thermal expansion of embedded air chambers",
-          "authors": [
-            "Junghan Kwon",
-            "Myungsu Park",
-            "Jaeyoun Choi",
-            "Yong‐Lae Park"
-          ],
-          "year": 2021,
-          "date": "2021-09-22",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "bd8d354ea3f072701154a698045b5d596d796546",
-          "url": "https://www.semanticscholar.org/paper/bd8d354ea3f072701154a698045b5d596d796546",
-          "abstract": "Self-folding is a promising concept in the fields of smart materials and robotics, which allows self-assembly and multi-functionality. Although there have been approaches to realize self-folding mechanisms using different techniques, and their practical applications are not sufficiently investigated. Here, we propose untethered, self-folding polymer structures with embedded air chambers, which easily transform two-dimensional flat shapes into preprogrammed three-dimensional (3D) shapes when heat energy is transferred into the structures resulting in thermal expansion of the air chambers. This mechanism is particularly useful for casting materials that require shape and phase changes simultaneously if the proposed structures are used as molds. As a practical application, we present pop-up cookie molds that can bake 3D-shaped cookies from flat cookie dough. Analytical modelings based on the ideal gas law, the principle of minimum potential energy, and the lumped capacitance method for heat transfer are established and experimentally validated using prototypes. These provide a prediction of the structure’s bending curvature during the baking process. Furthermore, other target shapes, including bending, twisting, and their combinations, are also achieved by configuring various chamber designs. Finally, practical prototypes with more complex shapes are proposed, and their performances are demonstrated.",
-          "subjects": []
-        },
-        {
-          "title": "Assessing tumor heterogeneity: integrating tissue and circulating tumor DNA (ctDNA) analysis in the era of immuno-oncology - blood TMB is not the same as tissue TMB",
-          "authors": [
-            "S. Fridland",
-            "Jaeyoun Choi",
-            "M. Nam",
-            "S. Schellenberg",
-            "Eugene Kim",
-            "G. Lee",
-            "Nathaniel Yoon",
-            "Y. Chae"
-          ],
-          "year": 2021,
-          "date": "2021-08-01",
-          "citations": 40,
-          "arxiv_id": null,
-          "paper_id": "d3ea24158bfb6c8d6bdef5e544ecfb6badde6304",
-          "url": "https://www.semanticscholar.org/paper/d3ea24158bfb6c8d6bdef5e544ecfb6badde6304",
-          "abstract": "Tissue tumor mutational burden (tTMB) is calculated to aid in cancer treatment selection. High tTMB predicts a favorable response to immunotherapy in patients with non-small cell lung cancer. Blood TMB (bTMB) from circulating tumor DNA is reported to have similar predictive power and has been proposed as an alternative to tTMB. Across many studies not only are tTMB and bTMB not concordant but also as reported previously by our group predict conflicting outcomes. This implies that bTMB is not a substitute for tTMB, but rather a composite index that may encompass tumor heterogeneity. Here, we provide a thorough overview of the predictive power of TMB, discuss the use of tumor heterogeneity alongside TMB to predict treatment response and review several methods of tumor heterogeneity assessment. Furthermore, we propose a hypothetical method of estimating tumor heterogeneity and touch on its clinical implications.",
-          "subjects": []
-        },
-        {
-          "title": "Metastatic CDK12-Mutated Neuroendocrine Tumor of Lung Showed an Exceptional Response to Olaparib and Paclitaxel.",
-          "authors": [
-            "W. Bae",
-            "J. Hwang",
-            "W. K. Hur",
-            "Jaeyoun Choi",
-            "M. Nam",
-            "Y. Choi",
-            "L. Kim",
-            "Eugene Kim",
-            "S. Fridland",
-            "Heayoon S. Cho",
-            "C. Low",
-            "E. Yu",
-            "C. Jung",
-            "E. Vagia",
-            "L. Kiedrowski",
-            "Y. Chae"
-          ],
-          "year": 2021,
-          "date": "2021-05-01",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "40d3060c20f6e52555b4593fcee7f87a610d64c8",
-          "url": "https://www.semanticscholar.org/paper/40d3060c20f6e52555b4593fcee7f87a610d64c8",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "18 New method of assessing tumor heterogeneity utilizing both circulating tumor DNA and tissue DNA to predict the response to immunotherapy",
-          "authors": [
-            "Jaeyoun Choi",
-            "M. Nam",
-            "S. Fridland",
-            "J. Hwang",
-            "C. Jung",
-            "C. Low",
-            "Y. Chae"
-          ],
-          "year": 2020,
-          "date": "2020-11-01",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "a6d742c42920e424ba98907ae040e483b1e58a33",
-          "url": "https://www.semanticscholar.org/paper/a6d742c42920e424ba98907ae040e483b1e58a33",
-          "abstract": "Tumor heterogeneity assessment may help predict response to immunotherapy. In melanoma mouse models, tumor heterogeneity impaired immune response.1 In addition, among lung cancer patients receiving immunotherapy, the high clonal neoantigen group had favorable survival and outcomes.2 Ideal methods of quantifying tumor heterogeneity are multiple biopsies or autopsy. However, these are not feasible in routine clinical practice. Circulating tumor DNA (ctDNA) is emerging as an alternative. Here, we reviewed the current state of tumor heterogeneity quantification from ctDNA. Furthermore, we propose a new tumor heterogeneity index(THI) based on our own scoring system, utilizing both ctDNA and tissue DNA.Systematic literature search on Pubmed was conducted up to August 18, 2020. A scoring system and THI were theoretically derived.Two studies suggested their own methods of assessing tumor heterogeneity. One suggested clustering mutations with Pyclone,3 and the other suggested using the ratio of allele frequency (AF) to the maximum somatic allele frequency (MSAF).4 According to the former, the mutations in the highest cellular prevalence cluster can be defined as clonal mutations. According to the latter, the mutations with AF/MSAF<10% can be defined as subclonal mutations. To date, there have been no studies on utilizing both ctDNA and tissue DNA simultaneously to quantify tumor heterogeneity. We hypothesize that a mutation found in only one of either ctDNA or tissue DNA has a higher chance of being subclonal.We suggest a scoring system based on the previously mentioned methods to estimate the probability for a mutant allele to be subclonal. Adding up the points that correspond to the conditions results in a subclonality score (table 1). In a given ctDNA, the number of alleles with a subclonality score greater than or equal to 2 divided by the total number of alleles is defined as blood THI (bTHI) (figure 1). We can repeat the same calculation in a given tissue DNA for tissue THI (tTHI) (figure 2). Finally, we define composite THI (cTHI) as the mean of bTHI and tTHI.Abstract 18 Table 1Subclonality scoreAbstract 18 Figure 1Hypothetical distribution of all alleles found in ctDNA bTHI = the number of alleles with a subclonality score greater than or equal to 2/the total number of alleles found in ctDNA = 10/20 =50%Abstract 18 Figure 2Hypothetical distribution of all alleles found in tissue DNA tTHI= the number of alleles with a subclonality score greater than or equal to 2/the total number of alleles found in tissue DNA = 16/40 = 40% cTHI= (bTHI + tTHI)/2 = 45%Tumor heterogeneity is becoming an important biomarker for predicting response to immunotherapy. Because autopsy and multiple biopsies are not feasible, utilizing both ctDNA and tissue DNA is the most comprehensive and practical approach. Therefore, we propose cTHI, for the first time, as a quantification measure of tumor heterogeneity.Wolf Y, Bartok O. UVB-Induced Tumor Heterogeneity Diminishes Immune Response in Melanoma. Cell 2019;179:219–235.McGranahan N, Swanton C. Clonal neoantigens elicit T cell immunoreactivity and sensitivity to immune checkpoint blockade. Science 2016;351:1463–1469.Ma F, Guan Y. Assessing tumor heterogeneity using ctDNA to predict and monitor therapeutic response in metastatic breast cancer. Int J Cancer 2020;146:1359–1368.Liu Z, Xie Z. Presence of allele frequency heterogeneity defined by ctDNA profiling predicts unfavorable overall survival of NSCLC. Transl Lung Cancer Res 2019;8:1045–1050.",
-          "subjects": []
-        },
-        {
-          "title": "753 The immune landscape of papillary thyroid cancer and its association with neoantigen landscape and DNA repair gene mutations",
-          "authors": [
-            "M. Nam",
-            "Woojung Yang",
-            "J. Y. Lee",
-            "Jaeyoun Choi",
-            "Hansol Choi",
-            "Eugene Kim",
-            "Emma P K Yu",
-            "J. Hwang",
-            "W. Bae",
-            "C. Jung",
-            "Victor G. Wang",
-            "Jeffrey H. Chuang",
-            "Y. Chae"
-          ],
-          "year": 2020,
-          "date": "2020-11-01",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "9de82de4431af4874f0d1c5e6fdfc94e13779511",
-          "url": "https://www.semanticscholar.org/paper/9de82de4431af4874f0d1c5e6fdfc94e13779511",
-          "abstract": "Tumors with high tumor mutational burden (TMB) or defects in mismatch repair (dMMR) respond well to immune checkpoint inhibitors (ICIs).1 2 TMB and DNA repair gene mutations including dMMR are closely related to the increase of neoantigens, which are recognized by immune cells to trigger an immune response.1 3 Although not a standard of care in thyroid cancer treatment, there are ongoing clinical trials for ICI use in differentiated thyroid carcinoma. However, not much has been explored concerning the neoantigen landscape and its association with immune traits in papillary thyroid cancer (PTC). We aim to analyze the immune landscape of PTC in association with neoantigen burden, TMB, and DNA repair gene mutations.We used the PTC cohort data from The Cancer Genome Atlas (TCGA). The mutation counts and data for neoantigen prediction were acquired from TCGA mutation calling. CloudNeo pipeline was used for neoantigen prediction. TMB was calculated as the sum of missense and indel mutation counts per megabase pairs covered by whole-exome sequencing. Tumor-infiltrating immune cells were estimated using CIBERSORT.Out of the 496 PTC patients from cBioPortal, a subset of 400 patients with available mutation counts and predicted neoantigen burden was included in the study. Immune cell infiltration estimated by CIBERSORT showed macrophage M2 as the most abundant, followed by macrophage M0 and other T cells (figure 1). The TMB ranged from 0.03 to 2.05 with a median value of 0.2. Neoantigen burden ranged from 0 to 18 with a median value of 1, which is relatively low compared to the median value of 18 in non-small cell lung cancer (NSCLC)1 (figure 2). One or more DNA repair gene mutations were discovered in 32 patients (8%). The mutation status of repair genes was not related to TMB or neoantigen burden. TMB or neoantigen burden was not related to immune traits such as infiltration of CD8+ T cells or regulatory T cells, cytolytic activity score, and PD-L1 expression.Abstract 753 Figure 1Immune cell infiltration estimated by CIBERSORTAbstract 753 Figure 2Histogram of neoantigen burdenThis is the first study to report the immune landscape of PTC in the context of neoantigen. The lack of association between TMB or neoantigen burden with immune traits may be due to the relatively low number of neoantigens in PTC compared to other immunogenic cancers such as NSCLC. Our results suggest that mutations in DNA repair genes or TMB are likely to have limited value in predicting response to ICI treatment in PTC.Chae YK, et al., Mutations in DNA repair genes are associated with increased neoantigen burden and a distinct immunophenotype in lung squamous cell carcinoma. Sci Rep 2019; 9:3235.Rizvi NA, et al., Cancer immunology. mutational landscape determines sensitivity to PD-1 blockade in non-small cell lung cancer. Science 2015; 348:124–128.Schumacher TN, Schreiber RD, Neoantigens in cancer immunotherapy. Science 2015; 348:69–74.",
-          "subjects": []
-        },
-        {
-          "title": "752 The impact of grade of differentiation and BRAF mutation status on neoantigen and immune landscape in papillary thyroid cancer",
-          "authors": [
-            "M. Nam",
-            "Woojung Yang",
-            "J. Y. Lee",
-            "Jaeyoun Choi",
-            "Hansol Choi",
-            "Emma P K Yu",
-            "Eugene Kim",
-            "J. Hwang",
-            "W. Bae",
-            "C. Jung",
-            "Victor G. Wang",
-            "Jeffrey H. Chuang",
-            "Y. Chae"
-          ],
-          "year": 2020,
-          "date": "2020-11-01",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "d17dd8b47a284b9d9183121ce3c5ed3cbb0cfe36",
-          "url": "https://www.semanticscholar.org/paper/d17dd8b47a284b9d9183121ce3c5ed3cbb0cfe36",
-          "abstract": "Background The use of immune checkpoint inhibitors (ICIs) in cancer treatment has been approved by the FDA, but its application is experimental in the treatment of papillary thyroid cancer (PTC). Induction of immune response via recognition of neoantigens is considered to be the basis for the treatment mechanism of ICIs.1 However, the neoantigen landscape has not been explored in PTC. Our aim is to investigate the immune landscape of PTC in relation to neoantigens, taking into account the BRAF mutation status and grade of differentiation as contributing factors. Methods BRAF V600E mutation status and thyroid differentiation scores (TDSs) were gathered from the PTC cohort of The Cancer Genome Atlas (TCGA). TDS was derived from the mRNA expression levels of 16 thyroid function genes to quantify the grade of differentiation. Tumors with TDSs in the 1st quartile and 4th quartile were defined as poorly differentiated and well differentiated, respectively. The neoantigen burden for each sample was predicted using CloudNeo pipeline. The infiltration of immune cells was calculated through CIBERSORT. Results Among 400 patients with predicted neoantigen data, 187 (47%) had BRAF mutations. The BRAF mutated tumors showed increased cytolytic activity score (CYT, p=0.001), increased infiltration of regulatory T cells (Treg, p Conclusions Increased CYT and higher expression of PD-L1 in the BRAF mutated or the poorly differentiated tumors imply the possible role of ICI use in these subgroups of patients. However, the immune response to these subgroups does not seem to be mediated through the increase in neoantigen formation. Further studies are warranted to explore markers for immunotherapy implication. References Schumacher TN, Schreiber RD, Neoantigens in cancer immunotherapy. Science 2015; 348:69–74.",
-          "subjects": []
-        },
-        {
-          "title": "Overcoming acquired resistance to PD-1 inhibitor with the addition of metformin in small cell lung cancer (SCLC)",
-          "authors": [
-            "Yeseul Kim",
-            "E. Vagia",
-            "P. Viveiros",
-            "C. Kang",
-            "J. Y. Lee",
-            "G. Gim",
-            "Sukjoo Cho",
-            "Horyun Choi",
-            "L. Kim",
-            "I. Park",
-            "Jaeyoun Choi",
-            "Y. Chae"
-          ],
-          "year": 2020,
-          "date": "2020-10-21",
-          "citations": 40,
-          "arxiv_id": null,
-          "paper_id": "c4f2ecd50dda3999d5fbdfd38412fa81f17bbf13",
-          "url": "https://www.semanticscholar.org/paper/c4f2ecd50dda3999d5fbdfd38412fa81f17bbf13",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "THE IMPACT OF GRADE OF DIFFERENTIATION AND BRAF MUTATION STATUS ON NEOANTIGEN AND IMMUNE LANDSCAPE IN PAPILLARY THYROID CANCER",
-          "authors": [
-            "Y. Lee",
-            "Jaeyoun Choi",
-            "Hansol Choi",
-            "Emma P K Yu",
-            "Eugene Kim",
-            "J. Hwang",
-            "M. Jung",
-            "Victor G. Wang",
-            "Jeffrey H. Chuang",
-            "K. Chae"
-          ],
-          "year": 2020,
-          "date": "2020",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "e3c9fa8f2a6d40c383462c1b455f417086a6ab90",
-          "url": "https://www.semanticscholar.org/paper/e3c9fa8f2a6d40c383462c1b455f417086a6ab90",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "A Numerical Study on the Reinforcement Method of a Pillar Using Tension Bolts at the Connecting Part between 2-Arch Tunnels and Parallel Tunnels",
-          "authors": [
-            "Yeonjun Park",
-            "Jaeyoun Choi"
-          ],
-          "year": 2015,
-          "date": "2015-10-31",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "46615d02567ef60e84eb7a309b13a5551c85539d",
-          "url": "https://www.semanticscholar.org/paper/46615d02567ef60e84eb7a309b13a5551c85539d",
-          "abstract": "Abstract Two-arch tunnels require minimal spacing between the 2 tunnels and thus occupy small amount of land compared to parallel tunnels. But it is rather expensive. The parallel tunnel is not as expensive, but it requires more land than 2-arch tunnels. This may cause a problem when there is a land shortage. The new design is to connect these two types of tunnels by another pair of parallel tunnels where the separation distance is gradually increasing. The applicability of this new design to the cases where rock condition is not even fair has to be verified since the width of the pillar between the connecting tunnels can be quite narrow. Therefore both two and three dimensional numerical analyses were conducted and pillar stability was examined for rock classes IV and V in two different ways. Results showed that this new design is still effective for poor rock conditions if central pillar is properly reinforced by tension bolts as long as overburden is less than five times of the tunnel diameter.Key words 2-arch tunnel, Parallel tunnel, Pillar 2-arch varying section tunnel, Tension bolt초 록 2-아치 터널은 터널의 간격이 매우 좁아서 병렬 터널에 비해 점유 면적이 작으나 경제적이지 못하다 . 병렬 터널은 경제적이긴 하지만 2-아치 터널보다 점유 면적이 커서 용지의 매입이 어려운 경우에는 문제가 될 수 있다. 새로운 설계는 이 두 터널을 터널의 간격이 점차 증가하는 제 3의 병렬터널로 연결시키는 것이다. 접속 터널의 필라는 폭이 매우 좁을 수 있기 때문에 이 새로운 설계를 불량한 암반에 적용하려면 검증이 필요하다 . 이에 4등급 및 5등급 암반에 대해 2차원 및 3차원 수치해석을 이용하여 2가지 방법으로 안정성 검토를 수행하였다. 검토 결과, 중앙 필라가 텐션 볼트로 적절히 보강된다면 터널 심도가 직경의 5배 이하인 경우에는 적용이 가능하였다.핵심어 2-아치 터널, 병렬 터널, 2-arch 변단면 터널, 필라, 텐션 볼트",
-          "subjects": []
-        },
-        {
-          "title": "A Case Study on the Design and Construction of a 2-arch Tunnel with Varying Section",
-          "authors": [
-            "Jaeyoun Choi",
-            "Yeonjun Park",
-            "Si-Keun Kim",
-            "Jae-Hyun Park"
-          ],
-          "year": 2012,
-          "date": "2012-10-31",
-          "citations": 2,
-          "arxiv_id": null,
-          "paper_id": "665d73ea72389c4ed2a3bb9e0cf67ed49a002262",
-          "url": "https://www.semanticscholar.org/paper/665d73ea72389c4ed2a3bb9e0cf67ed49a002262",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Docetaxel and Cisplatin Combination Chemotherapy in Patients with Squamous Cell Carcinomas of the Head and Neck.",
-          "authors": [
-            "Jung Hyun Lee",
-            "K. Lee",
-            "Young-jin Choi",
-            "Jaeyoun Choi",
-            "H. Shin",
-            "J. Chung",
-            "G. Cho",
-            "B. Lee",
-            "Soo-Geun Wang"
-          ],
-          "year": 2003,
-          "date": "2003-06-30",
-          "citations": 3,
-          "arxiv_id": null,
-          "paper_id": "203b73b816abdd275ce00fe678c04340c6352d1d",
-          "url": "https://www.semanticscholar.org/paper/203b73b816abdd275ce00fe678c04340c6352d1d",
-          "abstract": "",
-          "subjects": []
-        }
-      ]
+      []
     ],
     [
       "Oswin So",
@@ -3595,9 +2711,576 @@
             "cs.MA",
             "eess.SY"
           ]
+        },
+        {
+          "title": "Safe and Scalable Multi-Drone Payload Transport Via CBF-Based Reinforcement Learning With Zero-Shot Sim-to-Real Transfer",
+          "authors": [
+            "Jaeyoun Choi",
+            "Oswin So",
+            "Songyuan Zhang",
+            "Cooper Taylor",
+            "Chuchu Fan"
+          ],
+          "year": 2026,
+          "date": "2026",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "2cd983addd6378b3d340fae3c8e982e512407a38",
+          "url": "https://www.semanticscholar.org/paper/2cd983addd6378b3d340fae3c8e982e512407a38",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Safe Beyond the Horizon: Efficient Sampling-based MPC with Neural Control Barrier Functions",
+          "authors": [
+            "Ji Yin",
+            "Oswin So",
+            "Eric Yang Yu",
+            "Chuchu Fan",
+            "Panagiotis Tsiotras"
+          ],
+          "year": 2025,
+          "date": "2025-02-20",
+          "citations": 0,
+          "arxiv_id": "2502.15006",
+          "paper_id": "42e9c65d55e9e1c81e5f0571343eb96af95dba5e",
+          "url": "https://arxiv.org/abs/2502.15006",
+          "abstract": "A common problem when using model predictive control (MPC) in practice is the satisfaction of safety specifications beyond the prediction horizon. While theoretical works have shown that safety can be guaranteed by enforcing a suitable terminal set constraint or a sufficiently long prediction horizon, these techniques are difficult to apply and thus are rarely used by practitioners, especially in the case of general nonlinear dynamics. To solve this problem, we impose a tradeoff between exact recursive feasibility, computational tractability, and applicability to ``black-box''dynamics by learning an approximate discrete-time control barrier function and incorporating it into a variational inference MPC (VIMPC), a sampling-based MPC paradigm. To handle the resulting state constraints, we further propose a new sampling strategy that greatly reduces the variance of the estimated optimal control, improving the sample efficiency, and enabling real-time planning on a CPU. The resulting Neural Shield-VIMPC (NS-VIMPC) controller yields substantial safety improvements compared to existing sampling-based MPC controllers, even under badly designed cost functions. We validate our approach in both simulation and real-world hardware experiments. Project website: https://mit-realm.github.io/ns-vimpc/.",
+          "subjects": []
+        },
+        {
+          "title": "Discrete GCBF Proximal Policy Optimization for Multi-agent Safe Optimal Control",
+          "authors": [
+            "Songyuan Zhang",
+            "Oswin So",
+            "Mitchell Black",
+            "Chuchu Fan"
+          ],
+          "year": 2025,
+          "date": "2025-02-05",
+          "citations": 0,
+          "arxiv_id": "2502.03640",
+          "paper_id": "538d341ecd5934843798adfc31aa36397222df3e",
+          "url": "https://arxiv.org/abs/2502.03640",
+          "abstract": "Control policies that can achieve high task performance and satisfy safety constraints are desirable for any system, including multi-agent systems (MAS). One promising technique for ensuring the safety of MAS is distributed control barrier functions (CBF). However, it is difficult to design distributed CBF-based policies for MAS that can tackle unknown discrete-time dynamics, partial observability, changing neighborhoods, and input constraints, especially when a distributed high-performance nominal policy that can achieve the task is unavailable. To tackle these challenges, we propose DGPPO, a new framework that simultaneously learns both a discrete graph CBF which handles neighborhood changes and input constraints, and a distributed high-performance safe policy for MAS with unknown discrete-time dynamics. We empirically validate our claims on a suite of multi-agent tasks spanning three different simulation engines. The results suggest that, compared with existing methods, our DGPPO framework obtains policies that achieve high task performance (matching baselines that ignore the safety constraints), and high safety rates (matching the most conservative baselines), with a constant set of hyperparameters across all environments.",
+          "subjects": []
+        },
+        {
+          "title": "Comment(s) on “Control barrier functions for stochastic systems” [Automatica 130 (2021) 109688]",
+          "authors": [
+            "Oswin So",
+            "Chuchu Fan"
+          ],
+          "year": 2025,
+          "date": "2025-02-01",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "71308b7abf86d04715088cd6f7eed0a1cf0811e6",
+          "url": "https://www.semanticscholar.org/paper/71308b7abf86d04715088cd6f7eed0a1cf0811e6",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Safety on the Fly: Constructing Robust Safety Filters via Policy Control Barrier Functions at Runtime",
+          "authors": [
+            "L. Knoedler",
+            "Oswin So",
+            "Ji Yin",
+            "Mitchell Black",
+            "Zachary Serlin",
+            "Panagiotis Tsiotras",
+            "Javier Alonso-Mora",
+            "Chuchu Fan"
+          ],
+          "year": 2024,
+          "date": "2024-10-15",
+          "citations": 0,
+          "arxiv_id": "2410.11157",
+          "paper_id": "b7d86e120e93279dedc24e489a35b6dfeb8ecab3",
+          "url": "https://arxiv.org/abs/2410.11157",
+          "abstract": "Control Barrier Functions (CBFs) have proven to be an effective tool for performing safe control synthesis for nonlinear systems. However, guaranteeing safety in the presence of disturbances and input constraints for high relative degree systems is a difficult problem. In this work, we propose the Robust Policy CBF (RPCBF), a practical approach for constructing robust CBF approximations online via the estimation of a value function. We establish conditions under which the approximation qualifies as a valid CBF and demonstrate the effectiveness of the RPCBF-safety filter in simulation on a variety of high relative degree input-constrained systems. Finally, we demonstrate the benefits of our method in compensating for model errors on a hardware quadcopter platform by treating the model errors as disturbances.",
+          "subjects": []
+        },
+        {
+          "title": "GCBF+: A Neural Graph Control Barrier Function Framework for Distributed Safe Multiagent Control",
+          "authors": [
+            "Songyuan Zhang",
+            "Oswin So",
+            "Kunal Garg",
+            "Chuchu Fan"
+          ],
+          "year": 2024,
+          "date": "2024-01-25",
+          "citations": 0,
+          "arxiv_id": "2401.14554",
+          "paper_id": "8f4857384e0573e45e74154704fc89468ab17988",
+          "url": "https://arxiv.org/abs/2401.14554",
+          "abstract": "Distributed, scalable, and safe control of large-scale multiagent systems is a challenging problem. In this article, we design a distributed framework for safe multiagent control in large-scale environments with obstacles, where a large number of agents are required to maintain safety using only local information and reach their goal locations. We introduce a new class of certificates, termed graph control barrier function (GCBF), which are based on the well-established control barrier function theory for safety guarantees and utilize a graph structure for scalable and generalizable distributed control of MAS. We develop a novel theoretical framework to prove the safety of an arbitrary-sized MAS with a single GCBF. We propose a new training framework GCBF+ that uses graph neural networks to parameterize a candidate GCBF and a distributed control policy. The proposed framework is distributed and is capable of taking point clouds from LiDAR, instead of actual state information, for real-world robotic applications. We illustrate the efficacy of the proposed method through various hardware experiments on a swarm of drones with objectives ranging from exchanging positions to docking on a moving target without collision. In addition, we perform extensive numerical experiments, where the number and density of agents, as well as the number of obstacles, increase. Empirical results show that in complex environments with agents with nonlinear dynamics (e.g., Crazyflie drones), GCBF+ outperforms the hand-crafted CBF-based method with the best performance by up to 20% for relatively small-scale MAS with up to 256 agents, and leading reinforcement learning (RL) methods by up to 40% for MAS with 1024 agents. Furthermore, the proposed method does not compromise on the performance, in terms of goal reaching, for achieving high safety rates, which is a common tradeoff in RL-based methods. Project website: https://mit-realm.github.io/gcbfplus/",
+          "subjects": []
+        },
+        {
+          "title": "RPCBF: Constructing Safety Filters Robust to Model Error and Disturbances via Policy Control Barrier Functions",
+          "authors": [
+            "L. Knoedler",
+            "Oswin So",
+            "Ji Yin",
+            "Mitchell Black",
+            "Zachary Serlin",
+            "Panagiotis Tsiotras",
+            "Javier Alonso-Mora",
+            "Chuchu Fan"
+          ],
+          "year": 2024,
+          "date": "2024",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "657a223a8721e45da7d1f2d423bd62acaa92860b",
+          "url": "https://www.semanticscholar.org/paper/657a223a8721e45da7d1f2d423bd62acaa92860b",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Almost-Sure Safety Guarantees of Stochastic Zero-Control Barrier Functions Do Not Hold",
+          "authors": [
+            "Oswin So",
+            "A. Clark",
+            "Chuchu Fan"
+          ],
+          "year": 2023,
+          "date": "2023-12-05",
+          "citations": 17,
+          "arxiv_id": "2312.02430",
+          "paper_id": "31ba58fb7d50155650d9d4fa82f3869d70df7e5d",
+          "url": "https://arxiv.org/abs/2312.02430",
+          "abstract": "The 2021 paper\"Control barrier functions for stochastic systems\"provides theorems that give almost sure safety guarantees given stochastic zero control barrier function (ZCBF). Unfortunately, both the theorem and its proof is invalid. In this letter, we illustrate on a toy example that the almost sure safety guarantees for stochastic ZCBF do not hold and explain why the proof is flawed. Although stochastic reciprocal barrier functions (RCBF) also uses the same proof technique, we provide a different proof technique that verifies that stochastic RCBFs are indeed safe with probability one. Using the RCBF, we derive a modified ZCBF condition that guarantees safety with probability one. Finally, we provide some discussion on the role of unbounded controls in the almost-sure safety guarantees of RCBFs, and show that the rate of divergence of the ratio of the drift and diffusion is the key for whether a system has almost sure safety guarantees.",
+          "subjects": []
+        },
+        {
+          "title": "How to Train Your Neural Control Barrier Function: Learning Safety Filters for Complex Input-Constrained Systems",
+          "authors": [
+            "Oswin So",
+            "Zachary Serlin",
+            "Makai Mann",
+            "Jake Gonzales",
+            "Kwesi J. Rutledge",
+            "Nicholas Roy",
+            "Chuchu Fan"
+          ],
+          "year": 2023,
+          "date": "2023-10-24",
+          "citations": 0,
+          "arxiv_id": "2310.15478",
+          "paper_id": "f35f6f542da9a3d6da7fe69cbcf9c2399607c16a",
+          "url": "https://arxiv.org/abs/2310.15478",
+          "abstract": "Control barrier functions (CBFs) have become popular as a safety filter to guarantee the safety of nonlinear dynamical systems for arbitrary inputs. However, it is difficult to construct functions that satisfy the CBF constraints for high relative degree systems with input constraints. To address these challenges, recent work has explored learning CBFs using neural networks via neural CBFs (NCBFs). However, such methods face difficulties when scaling to higher dimensional systems under input constraints. In this work, we first identify challenges that NCBFs face during training. Next, to address these challenges, we propose policy neural CBFs (PNCBFs), a method of constructing CBFs by learning the value function of a nominal policy, and show that the value function of the maximum-over-time cost is a CBF. We demonstrate the effectiveness of our method in simulation on a variety of systems ranging from toy linear systems to a jet aircraft with a 16-dimensional state space. Finally, we validate our approach on a two-agent quadcopter system on hardware under tight input constraints.",
+          "subjects": []
+        },
+        {
+          "title": "Decentralized Safe Multi-agent Stochastic Optimal Control using Deep FBSDEs and ADMM",
+          "authors": [
+            "M. Pereira",
+            "A. Saravanos",
+            "Oswin So",
+            "Evangelos A. Theodorou"
+          ],
+          "year": 2022,
+          "date": "2022-02-22",
+          "citations": 0,
+          "arxiv_id": "2202.10658",
+          "paper_id": "d162a2e413c1402a0c34510776d5657ff3a4558a",
+          "url": "https://arxiv.org/abs/2202.10658",
+          "abstract": "In this work, we propose a novel safe and scalable decentralized solution for multi-agent control in the presence of stochastic disturbances. Safety is mathematically encoded using stochastic control barrier functions and safe controls are computed by solving quadratic programs. Decentralization is achieved by augmenting to each agent's optimization variables, copy variables, for its neighbors. This allows us to decouple the centralized multi-agent optimization problem. However, to ensure safety, neighboring agents must agree on\"what is safe for both of us\"and this creates a need for consensus. To enable safe consensus solutions, we incorporate an ADMM-based approach. Specifically, we propose a Merged CADMM-OSQP implicit neural network layer, that solves a mini-batch of both, local quadratic programs as well as the overall consensus problem, as a single optimization problem. This layer is embedded within a Deep FBSDEs network architecture at every time step, to facilitate end-to-end differentiable, safe and decentralized stochastic optimal control. The efficacy of the proposed approach is demonstrated on several challenging multi-robot tasks in simulation. By imposing requirements on safety specified by collision avoidance constraints, the safe operation of all agents is ensured during the entire training process. We also demonstrate superior scalability in terms of computational and memory savings as compared to a centralized approach.",
+          "subjects": []
         }
       ],
-      []
+      [
+        {
+          "title": "MIT Open Access",
+          "authors": [
+            "Student Member Ieee Songyuan Zhang",
+            "Oswin So",
+            "Member Ieee Kunal Garg",
+            "Member Ieee Chuchu Fan"
+          ],
+          "year": null,
+          "date": "",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "ab0b74ac5ab7baa00748bb00a17d6ed19433f677",
+          "url": "https://www.semanticscholar.org/paper/ab0b74ac5ab7baa00748bb00a17d6ed19433f677",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Annual Reviews in Control",
+          "authors": [
+            "Kunal Garg",
+            "Songyuan Zhang",
+            "Oswin So",
+            "Charles Dawson",
+            "Chuchu Fan"
+          ],
+          "year": null,
+          "date": "",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "fa59eecb11fbacbdd646edac191b22ae14044fa5",
+          "url": "https://www.semanticscholar.org/paper/fa59eecb11fbacbdd646edac191b22ae14044fa5",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Value Functions for Temporal Logic: Optimal Policies and Safety Filters",
+          "authors": [
+            "Oswin So",
+            "Will Sharpless",
+            "Sylvia L. Herbert",
+            "Chuchu Fan"
+          ],
+          "year": 2026,
+          "date": "2026-05-01",
+          "citations": 0,
+          "arxiv_id": "2605.01051",
+          "paper_id": "3cbdd4161c5cb4a8facf18106c8b7ccd01684f47",
+          "url": "https://arxiv.org/abs/2605.01051",
+          "abstract": "While Bellman equations for basic reach, avoid, and reach-avoid problems are well studied, the relationship between value optimality and policy optimality becomes subtle in the undiscounted infinite-horizon setting, particularly for more complicated tasks. Greedily maximizing the Q-function can produce policies that indefinitely defer task completion for reach-avoid problems, or equivalently, Until specifications, even when the value function is optimal. Building upon recent results decomposing the value function for temporal logic (TL) into a graph of constituent value functions, we construct non-Markovian policies based on state history that avoid this pathology and prove their optimality with respect to the quantitative robustness score for nested Until, Globally, and Globally-Until specifications. We further show how the Q function can serve as a safety filter for complex TL specifications, extending prior results beyond simple avoid or reach-avoid tasks.",
+          "subjects": []
+        },
+        {
+          "title": "Bellman Value Decomposition for Task Logic in Safe Optimal Control",
+          "authors": [
+            "Will Sharpless",
+            "Oswin So",
+            "Dylan Hirsch",
+            "Sylvia Herbert",
+            "Chuchu Fan"
+          ],
+          "year": 2026,
+          "date": "2026-02-23",
+          "citations": 0,
+          "arxiv_id": "2602.19532",
+          "paper_id": "955821cc81472c09c67d38c420fdd7464c02498e",
+          "url": "https://arxiv.org/abs/2602.19532",
+          "abstract": "Real-world tasks involve nuanced combinations of goal and safety specifications. In high dimensions, the challenge is exacerbated: formal automata become cumbersome, and the combination of sparse rewards tends to require laborious tuning. In this work, we consider the innate structure of the Bellman Value as a means to naturally organize the problem for improved automatic performance. Namely, we prove the Bellman Value for a complex task defined in temporal logic can be decomposed into a graph of Bellman Values, connected by a set of well-known Bellman equations (BEs): the Reach-Avoid BE, the Avoid BE, and a novel type, the Reach-Avoid-Loop BE. To solve the Value and optimal policy, we propose VDPPO, which embeds the decomposed Value graph into a two-layer neural net, bootstrapping the implicit dependencies. We conduct a variety of simulated and hardware experiments to test our method on complex, high-dimensional tasks involving heterogeneous teams and nonlinear dynamics. Ultimately, we find this approach greatly improves performance over existing baselines, balancing safety and liveness automatically.",
+          "subjects": []
+        },
+        {
+          "title": "Solving Parameter-Robust Avoid Problems with Unknown Feasibility using Reinforcement Learning",
+          "authors": [
+            "Oswin So",
+            "Eric Yang Yu",
+            "Songyuan Zhang",
+            "Matthew Cleaveland",
+            "Mitchell Black",
+            "Chuchu Fan"
+          ],
+          "year": 2026,
+          "date": "2026-02-17",
+          "citations": 0,
+          "arxiv_id": "2602.15817",
+          "paper_id": "11be3dcd5c7ab4aba1c23481605bf77aed2816a9",
+          "url": "https://arxiv.org/abs/2602.15817",
+          "abstract": "Recent advances in deep reinforcement learning (RL) have achieved strong results on high-dimensional control tasks, but applying RL to reachability problems raises a fundamental mismatch: reachability seeks to maximize the set of states from which a system remains safe indefinitely, while RL optimizes expected returns over a user-specified distribution. This mismatch can result in policies that perform poorly on low-probability states that are still within the safe set. A natural alternative is to frame the problem as a robust optimization over a set of initial conditions that specify the initial state, dynamics and safe set, but whether this problem has a solution depends on the feasibility of the specified set, which is unknown a priori. We propose Feasibility-Guided Exploration (FGE), a method that simultaneously identifies a subset of feasible initial conditions under which a safe policy exists, and learns a policy to solve the reachability problem over this set of initial conditions. Empirical results demonstrate that FGE learns policies with over 50% more coverage than the best existing method for challenging initial conditions across tasks in the MuJoCo simulator and the Kinetix simulator with pixel observations.",
+          "subjects": []
+        },
+        {
+          "title": "Discrete Adjoint Matching",
+          "authors": [
+            "Oswin So",
+            "Brian Karrer",
+            "Chuchu Fan",
+            "Ricky T. Q. Chen",
+            "Guan-Horng Liu"
+          ],
+          "year": 2026,
+          "date": "2026-02-06",
+          "citations": 0,
+          "arxiv_id": "2602.07132",
+          "paper_id": "760e184feb7e68c1ba3222afd20b1f3a5107424e",
+          "url": "https://arxiv.org/abs/2602.07132",
+          "abstract": "Computation methods for solving entropy-regularized reward optimization -- a class of problems widely used for fine-tuning generative models -- have advanced rapidly. Among those, Adjoint Matching (AM, Domingo-Enrich et al., 2025) has proven highly effective in continuous state spaces with differentiable rewards. Transferring these practical successes to discrete generative modeling, however, remains particularly challenging and largely unexplored, mainly due to the drastic shift in generative model classes to discrete state spaces, which are nowhere differentiable. In this work, we propose Discrete Adjoint Matching (DAM) -- a discrete variant of AM for fine-tuning discrete generative models characterized by Continuous-Time Markov Chains, such as diffusion-based large language models. The core of DAM is the introduction of discrete adjoint-an estimator of the optimal solution to the original problem but formulated on discrete domains-from which standard matching frameworks can be applied. This is derived via a purely statistical standpoint, in contrast to the control-theoretic viewpoint in AM, thereby opening up new algorithmic opportunities for general adjoint-based estimators. We showcase DAM's effectiveness on synthetic and mathematical reasoning tasks.",
+          "subjects": []
+        },
+        {
+          "title": "ReFORM: Reflected Flows for On-support Offline RL via Noise Manipulation",
+          "authors": [
+            "Songyuan Zhang",
+            "Oswin So",
+            "H. M. Ahmad",
+            "Eric Yang Yu",
+            "Matthew Cleaveland",
+            "Mitchell Black",
+            "Chuchu Fan"
+          ],
+          "year": 2026,
+          "date": "2026-02-04",
+          "citations": 0,
+          "arxiv_id": "2602.05051",
+          "paper_id": "4095b5578c0659be6bdcf50b80014d75fe6de680",
+          "url": "https://arxiv.org/abs/2602.05051",
+          "abstract": "Offline reinforcement learning (RL) aims to learn the optimal policy from a fixed dataset generated by behavior policies without additional environment interactions. One common challenge that arises in this setting is the out-of-distribution (OOD) error, which occurs when the policy leaves the training distribution. Prior methods penalize a statistical distance term to keep the policy close to the behavior policy, but this constrains policy improvement and may not completely prevent OOD actions. Another challenge is that the optimal policy distribution can be multimodal and difficult to represent. Recent works apply diffusion or flow policies to address this problem, but it is unclear how to avoid OOD errors while retaining policy expressiveness. We propose ReFORM, an offline RL method based on flow policies that enforces the less restrictive support constraint by construction. ReFORM learns a behavior cloning (BC) flow policy with a bounded source distribution to capture the support of the action distribution, then optimizes a reflected flow that generates bounded noise for the BC flow while keeping the support, to maximize the performance. Across 40 challenging tasks from the OGBench benchmark with datasets of varying quality and using a constant set of hyperparameters for all tasks, ReFORM dominates all baselines with hand-tuned hyperparameters on the performance profile curves.",
+          "subjects": []
+        },
+        {
+          "title": "Maximizing Reach-Avoid Probabilities for Linear Stochastic Systems via Control Architectures",
+          "authors": [
+            "Niklas Schmid",
+            "Jaeyoun Choi",
+            "Oswin So",
+            "Chuchu Fan"
+          ],
+          "year": 2026,
+          "date": "2026-01-22",
+          "citations": 0,
+          "arxiv_id": "2601.16290",
+          "paper_id": "933b6bcf3ae671306c4683c1ed574d3e96d4c7ab",
+          "url": "https://arxiv.org/abs/2601.16290",
+          "abstract": "The maximization of reach-avoid probabilities for stochastic systems is a central topic in the control literature. Yet, the available methods are either restricted to low-dimensional systems or suffer from conservative approximations. To address these limitations, we propose control architectures that combine the flexibility of Markov Decision Processes with the scalability of Model Predictive Controllers. The Model Predictive Controller tracks reference signals while remaining agnostic to the stochasticity and reach-avoid objective. Instead, the reach-avoid probability is maximized by optimally updating the controller's reference online. To achieve this, the closed-loop system, consisting of the system and Model Predictive Controller, is abstracted as a Markov Decision Process in which a new reference can be chosen at every time-step. A feedback policy generating optimal references is then computed via Dynamic Programming. If the state space of the system is continuous, the Dynamic Programming algorithm must be executed on a finite system approximation. Modifications to the Model Predictive Controller enable a computationally efficient robustification of the Dynamic Programming algorithm to approximation errors, preserving bounds on the achieved reach-avoid probability. The approach is validated on a perturbed 12D quadcopter model in cluttered reach-avoid environments proving its flexibility and scalability.",
+          "subjects": []
+        },
+        {
+          "title": "AirTaxiSim: A Simulator for Autonomous Air Taxis",
+          "authors": [
+            "Ayoosh Bansal",
+            "M. Yeghiazaryan",
+            "Hyung-Jin Yoon",
+            "Duo Wang",
+            "Ashik E Rasul",
+            "Chuyuan Tao",
+            "Yang Zhao",
+            "Tianyi Zhu",
+            "Oswin So",
+            "Chuchu Fan",
+            "Petros Voulgaris",
+            "N. Hovakimyan",
+            "Lui Sha"
+          ],
+          "year": 2025,
+          "date": "2025-07-16",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "c979ed56b67ec1db74e2b88a7749b069a627539c",
+          "url": "https://www.semanticscholar.org/paper/c979ed56b67ec1db74e2b88a7749b069a627539c",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Active ramp-down control and trajectory design for tokamaks with neural differential equations and reinforcement learning",
+          "authors": [
+            "Allen M. Wang",
+            "C. Rea",
+            "Oswin So",
+            "Charles Dawson",
+            "Darren T. Garnier",
+            "Chuchu Fan"
+          ],
+          "year": 2025,
+          "date": "2025-06-04",
+          "citations": 5,
+          "arxiv_id": null,
+          "paper_id": "aa45ac1b17d5ad4f8d3f2fec066b83d3fcbc114f",
+          "url": "https://www.semanticscholar.org/paper/aa45ac1b17d5ad4f8d3f2fec066b83d3fcbc114f",
+          "abstract": "The tokamak offers a promising path to fusion energy, but disruptions pose a major economic risk, motivating solutions to manage their consequence. This work develops a reinforcement learning approach to this problem by training a policy to ramp-down the plasma current while avoiding limits on a number of quantities correlated with disruptions. The policy training environment is a hybrid physics and machine learning model trained on simulations of the SPARC primary reference discharge (PRD) ramp-down, an upcoming burning plasma scenario which we use as a testbed. To address physics uncertainty and model inaccuracies, the simulation is massively parallelized on GPU with randomized physics parameters during policy training. The trained policy is then run in feedback on a transport simulator as a demonstration. We also directly address the crucial issue of control validation by demonstrating that a constraint-conditioned policy can be a trajectory design assistant that designs a library of feed-forward trajectories to handle different physics conditions and user constraint settings, a promising approach for the sensitive context of burning plasma tokamaks. Finally, we demonstrate that the training environment can be a useful platform for feed-forward optimization approaches by optimizing feed-forward trajectories that are robust to physics uncertainty. The robust termination of tokamak fusion plasmas poses massive simulation and control challenges. In this work, the authors provide simulation demonstrations of how techniques like neural differential equations and reinforcement learning can help with both real-time feedback control and offline trajectory design.",
+          "subjects": []
+        },
+        {
+          "title": "Solving Multi-Agent Safe Optimal Control with Distributed Epigraph Form MARL",
+          "authors": [
+            "Songyuan Zhang",
+            "Oswin So",
+            "Mitchell Black",
+            "Zachary Serlin",
+            "Chuchu Fan"
+          ],
+          "year": 2025,
+          "date": "2025-04-21",
+          "citations": 0,
+          "arxiv_id": "2504.15425",
+          "paper_id": "4509aaa8dcff1928a677dee749dcc581b8fc4b5a",
+          "url": "https://arxiv.org/abs/2504.15425",
+          "abstract": "Tasks for multi-robot systems often require the robots to collaborate and complete a team goal while maintaining safety. This problem is usually formalized as a constrained Markov decision process (CMDP), which targets minimizing a global cost and bringing the mean of constraint violation below a user-defined threshold. Inspired by real-world robotic applications, we define safety as zero constraint violation. While many safe multi-agent reinforcement learning (MARL) algorithms have been proposed to solve CMDPs, these algorithms suffer from unstable training in this setting. To tackle this, we use the epigraph form for constrained optimization to improve training stability and prove that the centralized epigraph form problem can be solved in a distributed fashion by each agent. This results in a novel centralized training distributed execution MARL algorithm named Def-MARL. Simulation experiments on 8 different tasks across 2 different simulators show that Def-MARL achieves the best overall performance, satisfies safety constraints, and maintains stable training. Real-world hardware experiments on Crazyflie quadcopters demonstrate the ability of Def-MARL to safely coordinate agents to complete complex collaborative tasks compared to other methods.",
+          "subjects": []
+        },
+        {
+          "title": "Learning plasma dynamics and robust rampdown trajectories with predict-first experiments at TCV",
+          "authors": [
+            "Allen M. Wang",
+            "A. Pau",
+            "C. Rea",
+            "Oswin So",
+            "Charles Dawson",
+            "O. Sauter",
+            "M. D. Boyer",
+            "A. Vu",
+            "C. Galperti",
+            "Chuchu Fan",
+            "A. Merle",
+            "Y. Poels",
+            "C. Venturini",
+            "S. Marchioni",
+            "The Tcv Team"
+          ],
+          "year": 2025,
+          "date": "2025-02-17",
+          "citations": 0,
+          "arxiv_id": "2502.12327",
+          "paper_id": "8abfce3d2ab980a867a4ad9abc79172c589aeea9",
+          "url": "https://arxiv.org/abs/2502.12327",
+          "abstract": "The rampdown phase of a tokamak pulse is difficult to simulate and often exacerbates multiple plasma instabilities. To reduce the risk of disrupting operations, we leverage advances in Scientific Machine Learning (SciML) to combine physics with data-driven models, developing a neural state-space model (NSSM) that predicts plasma dynamics during Tokamak à Configuration Variable (TCV) rampdowns. The NSSM efficiently learns dynamics from a modest dataset of 311 pulses with only five pulses in a reactor-relevant high-performance regime. The NSSM is parallelized across uncertainties, and reinforcement learning (RL) is applied to design trajectories that avoid instability limits. High-performance experiments at TCV show statistically significant improvements in relevant metrics. A predict-first experiment, increasing plasma current by 20% from baseline, demonstrates the NSSM’s ability to make small extrapolations. The developed approach paves the way for designing tokamak controls with robustness to considerable uncertainty and demonstrates the relevance of SciML for fusion experiments. The authors report on the implementation of a data-efficient machine learning approach to predict plasma dynamics. This enables offline design of robust trajectories to terminate the plasma without disruptive instabilities. Experimental results at the TCV tokamak show statistically significant improvements in key figures of merit and the ability to a priori predict the dynamics of key plasma properties.",
+          "subjects": []
+        },
+        {
+          "title": "Solving Minimum-Cost Reach Avoid using Reinforcement Learning",
+          "authors": [
+            "Oswin So",
+            "Cheng Ge",
+            "Chuchu Fan"
+          ],
+          "year": 2024,
+          "date": "2024-10-29",
+          "citations": 0,
+          "arxiv_id": "2410.22600",
+          "paper_id": "6a07440cd5d56b5e6bcdaf36784748804cc8032c",
+          "url": "https://arxiv.org/abs/2410.22600",
+          "abstract": "Current reinforcement-learning methods are unable to directly learn policies that solve the minimum cost reach-avoid problem to minimize cumulative costs subject to the constraints of reaching the goal and avoiding unsafe states, as the structure of this new optimization problem is incompatible with current methods. Instead, a surrogate problem is solved where all objectives are combined with a weighted sum. However, this surrogate objective results in suboptimal policies that do not directly minimize the cumulative cost. In this work, we propose RC-PPO, a reinforcement-learning-based method for solving the minimum-cost reach-avoid problem by using connections to Hamilton-Jacobi reachability. Empirical results demonstrate that RC-PPO learns policies with comparable goal-reaching rates to while achieving up to 57% lower cumulative costs compared to existing methods on a suite of minimum-cost reach-avoid benchmarks on the Mujoco simulator. The project page can be found at https://oswinso.xyz/rcppo.",
+          "subjects": []
+        },
+        {
+          "title": "Second-order constrained dynamic optimization",
+          "authors": [
+            "Yuichiro Aoyama",
+            "Oswin So",
+            "A. Saravanos",
+            "Evangelos A. Theodorou"
+          ],
+          "year": 2024,
+          "date": "2024-09-18",
+          "citations": 0,
+          "arxiv_id": "2409.11649",
+          "paper_id": "695adbb6afb345c3774ad9fcd6e653cb7da7b3f4",
+          "url": "https://arxiv.org/abs/2409.11649",
+          "abstract": "This paper provides an overview, analysis, and comparison of second-order dynamic optimization algorithms, that is, constrained differential dynamic programming (DDP) and sequential quadratic programming (SQP). Although a variety of these algorithms have been proposed and used successfully, there exists a gap in understanding the key differences and advantages, which we aim to provide in this work. For constrained DDP, we choose methods that incorporate nonlinear programming techniques to handle state and control constraints, including augmented Lagrangian (AL), interior point, primal-dual augmented Lagrangian (PDAL), and alternating direction method of multipliers (ADMM). Both DDP and SQP are provided in single- and multiple-shooting formulations, where constraints that arise from dynamics are encoded implicitly and explicitly, respectively. As a byproduct of the review, we propose a single-shooting PDAL DDP that has more favorable properties than the standard AL variant, such as the robustness to the growth of penalty parameters. We perform extensive numerical experiments on a variety of systems with increasing complexity to investigate the quality of the solutions, the levels of constraint violation, and the sensitivity of final solutions with respect to initialization, as well as targets. The results show that single-shooting PDAL DDP and multiple-shooting SQP are the most robust methods. For multiple-shooting formulation, both DDP and SQP can enjoy informed initial guesses, while the latter appears to be more advantageous in complex systems. It is also worth highlighting that DDP provides favorable computational complexity and feedback gains as a byproduct of optimization as is.",
+          "subjects": []
+        },
+        {
+          "title": "Active Disruption Avoidance and Trajectory Design for Tokamak Ramp-downs with Neural Differential Equations and Reinforcement Learning",
+          "authors": [
+            "Allen M. Wang",
+            "Oswin So",
+            "Charles Dawson",
+            "Darren T. Garnier",
+            "C. Rea",
+            "Chuchu Fan"
+          ],
+          "year": 2024,
+          "date": "2024-02-14",
+          "citations": 0,
+          "arxiv_id": "2402.09387",
+          "paper_id": "4313a5b2b0f6116cd83ec17049627f54a456b53a",
+          "url": "https://arxiv.org/abs/2402.09387",
+          "abstract": "The tokamak offers a promising path to fusion energy, but plasma disruptions pose a major economic risk, motivating considerable advances in disruption avoidance. This work develops a reinforcement learning approach to this problem by training a policy to safely ramp-down the plasma current while avoiding limits on a number of quantities correlated with disruptions. The policy training environment is a hybrid physics and machine learning model trained on simulations of the SPARC primary reference discharge (PRD) ramp-down, an upcoming burning plasma scenario which we use as a testbed. To address physics uncertainty and model inaccuracies, the simulation environment is massively parallelized on GPU with randomized physics parameters during policy training. The trained policy is then successfully transferred to a higher fidelity simulator where it successfully ramps down the plasma while avoiding user-specified disruptive limits. We also address the crucial issue of safety criticality by demonstrating that a constraint-conditioned policy can be used as a trajectory design assistant to design a library of feed-forward trajectories to handle different physics conditions and user settings. As a library of trajectories is more interpretable and verifiable offline, we argue such an approach is a promising path for leveraging the capabilities of reinforcement learning in the safety-critical context of burning plasma tokamaks. Finally, we demonstrate how the training environment can be a useful platform for other feed-forward optimization approaches by using an evolutionary algorithm to perform optimization of feed-forward trajectories that are robust to physics uncertainty",
+          "subjects": []
+        },
+        {
+          "title": "Learning safe control for multi-robot systems: Methods, verification, and open challenges",
+          "authors": [
+            "Kunal Garg",
+            "Songyuan Zhang",
+            "Oswin So",
+            "Charles Dawson",
+            "Chuchu Fan"
+          ],
+          "year": 2024,
+          "date": "2024",
+          "citations": 30,
+          "arxiv_id": null,
+          "paper_id": "b993a15371c5bb03f0b9aba5c28a28f109118eed",
+          "url": "https://www.semanticscholar.org/paper/b993a15371c5bb03f0b9aba5c28a28f109118eed",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Learning Safe Control for Multi-Robot Systems: Methods, Verification, and Open Challenges",
+          "authors": [
+            "Kunal Garg",
+            "Songyuan Zhang",
+            "Oswin So",
+            "Charles Dawson",
+            "Chuchu Fan"
+          ],
+          "year": 2023,
+          "date": "2023-11-22",
+          "citations": 0,
+          "arxiv_id": "2311.13714",
+          "paper_id": "5902f5f86d34c04d29465153698ea4ae9d537bbb",
+          "url": "https://arxiv.org/abs/2311.13714",
+          "abstract": "In this survey, we review the recent advances in control design methods for robotic multi-agent systems (MAS), focussing on learning-based methods with safety considerations. We start by reviewing various notions of safety and liveness properties, and modeling frameworks used for problem formulation of MAS. Then we provide a comprehensive review of learning-based methods for safe control design for multi-robot systems. We start with various types of shielding-based methods, such as safety certificates, predictive filters, and reachability tools. Then, we review the current state of control barrier certificate learning in both a centralized and distributed manner, followed by a comprehensive review of multi-agent reinforcement learning with a particular focus on safety. Next, we discuss the state-of-the-art verification tools for the correctness of learning-based methods. Based on the capabilities and the limitations of the state of the art methods in learning and verification for MAS, we identify various broad themes for open challenges: how to design methods that can achieve good performance along with safety guarantees; how to decompose single-agent based centralized methods for MAS; how to account for communication-related practical issues; and how to assess transfer of theoretical guarantees to practice.",
+          "subjects": []
+        },
+        {
+          "title": "Solving Stabilize-Avoid via Epigraph Form Optimal Control using Deep Reinforcement Learning",
+          "authors": [
+            "Oswin So",
+            "Chuchu Fan"
+          ],
+          "year": 2023,
+          "date": "2023-07-10",
+          "citations": 4,
+          "arxiv_id": null,
+          "paper_id": "743cd9b0c4aef4538b9cf731378c8578d1b618c6",
+          "url": "https://www.semanticscholar.org/paper/743cd9b0c4aef4538b9cf731378c8578d1b618c6",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "NashFormer: Leveraging Local Nash Equilibria for Semantically Diverse Trajectory Prediction",
+          "authors": [
+            "Justin Lidard",
+            "Oswin So",
+            "Yanxia Zhang",
+            "Jonathan A. DeCastro",
+            "Xiongyi Cui",
+            "Xin Huang",
+            "Yen-Ling Kuo",
+            "John Leonard",
+            "Avinash Balachandran",
+            "N. Leonard",
+            "G. Rosman"
+          ],
+          "year": 2023,
+          "date": "2023-05-28",
+          "citations": 0,
+          "arxiv_id": "2305.17600",
+          "paper_id": "e624cbaf00f9ad9dfd3e4256d62df702d014ee1d",
+          "url": "https://arxiv.org/abs/2305.17600",
+          "abstract": "Interactions between road agents present a significant challenge in trajectory prediction, especially in cases involving multiple agents. Because existing diversity-aware predictors do not account for the interactive nature of multi-agent predictions, they may miss these important interaction outcomes. In this paper, we propose NashFormer, a framework for trajectory prediction that leverages game-theoretic inverse reinforcement learning to improve coverage of multi-modal predictions. We use a training-time game-theoretic analysis as an auxiliary loss resulting in improved coverage and accuracy without presuming a taxonomy of actions for the agents. We demonstrate our approach on the interactive split of the Waymo Open Motion Dataset, including four subsets involving scenarios with high interaction complexity. Experiment results show that our predictor produces accurate predictions while covering $33\\%$ more potential interactions versus a baseline model.",
+          "subjects": []
+        },
+        {
+          "title": "GAME-UP: Game-Aware Mode Enumeration and Understanding for Trajectory Prediction",
+          "authors": [
+            "Justin Lidard",
+            "Oswin So",
+            "Yanxia Zhang",
+            "Jonathan A. DeCastro",
+            "Xiongyi Cui",
+            "Xin Huang",
+            "Yen-Ling Kuo",
+            "John Leonard",
+            "Avinash Balachandran",
+            "N. Leonard",
+            "Guy Rosman"
+          ],
+          "year": 2023,
+          "date": "2023-05-28",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "9b757a0494d5b4379762c85760c46d506f8359e4",
+          "url": "https://www.semanticscholar.org/paper/9b757a0494d5b4379762c85760c46d506f8359e4",
+          "abstract": "",
+          "subjects": []
+        }
+      ]
     ],
     [
       "Songyuan Zhang",
@@ -3755,7 +3438,7 @@
             "Zewen Yang"
           ],
           "date": "2026-03-05",
-          "citations": 0,
+          "citations": 1,
           "arxiv_id": "2603.05754v2",
           "url": "https://arxiv.org/abs/2603.05754v2",
           "abstract": "Current Vision-Language-Action (VLA) models rely primarily on RGB perception, preventing them from capturing modalities such as thermal signals that are imperceptible to conventional visual sensors. Moreover, end-to-end generative policies lack explicit safety constraints, making them fragile when encountering obstacles and novel scenarios outside the training distribution. To address these limitations, we propose Safe-Night VLA, a multimodal manipulation framework that enables robots to see the unseen while enforcing rigorous safety constraints for thermal-aware manipulation in unstructured environments. Specifically, Safe-Night VLA integrates long-wave infrared thermal perception into a pre-trained vision-language backbone, enabling semantic reasoning grounded in thermodynamic properties. To ensure safe execution under out-of-distribution conditions, we incorporate a safety filter via control barrier functions, which provide deterministic workspace constraint enforcement during policy execution. We validate our framework through real-world experiments on a Franka manipulator, introducing a novel evaluation paradigm featuring temperature-conditioned manipulation, subsurface target localization, and reflection disambiguation, while maintaining constrained execution at inference time. Results demonstrate that Safe-Night VLA outperforms RGB-only baselines and provide empirical evidence that foundation models can effectively leverage non-visible physical modalities for robust manipulation.",
