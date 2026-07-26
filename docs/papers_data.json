@@ -31,7 +31,7 @@
       ],
       "year": 2022,
       "date": "2022-09-18",
-      "citations": 0,
+      "citations": 150,
       "arxiv_id": "2209.08539",
       "paper_id": "c75841c3223bac648fbf347072e38aa3373278b8",
       "url": "https://arxiv.org/abs/2209.08539",
@@ -171,7 +171,7 @@
       ],
       "year": 2020,
       "date": "2020-03-17",
-      "citations": 134,
+      "citations": 0,
       "arxiv_id": "2003.07819",
       "paper_id": "41efa4d755cff2bd72071d0bbeb326c7ed73b717",
       "url": "https://arxiv.org/abs/2003.07819",
@@ -1368,7 +1368,7 @@
           ],
           "year": 2020,
           "date": "2020-03-17",
-          "citations": 134,
+          "citations": 0,
           "arxiv_id": "2003.07819",
           "paper_id": "41efa4d755cff2bd72071d0bbeb326c7ed73b717",
           "url": "https://arxiv.org/abs/2003.07819",
@@ -2172,405 +2172,9 @@
             "eess.SY",
             "math.OC"
           ]
-        },
-        {
-          "title": "End-to-End Learning of Safe Optimal Feedback Control in High Dimensions with Control Barrier Function Layers",
-          "authors": [
-            "Xingjian Li",
-            "Kelvin Kan",
-            "Deepanshu Verma",
-            "Krishna Kumar",
-            "Stanley Osher",
-            "Samy Wu Fung"
-          ],
-          "year": 2026,
-          "date": "2026-07-22",
-          "citations": 0,
-          "arxiv_id": "2607.20674",
-          "paper_id": "c14d794dbca8e55dd96bbee87bcaadfdadebfba0",
-          "url": "https://arxiv.org/abs/2607.20674",
-          "abstract": "We consider the problem of learning high-dimensional semi-global feedback controllers under hard safety constraints enforced by control barrier functions (CBFs). Incorporating CBFs into end-to-end policy training requires embedding a quadratic-program-based safety filter as an optimization layer, but computational and differentiation bottlenecks have largely restricted prior approaches to low-dimensional systems, typically with at most 16 state dimensions. We address this limitation by combining operator splitting with the recently developed Jacobian-Free Backpropagation (JFB) method to enable scalable end-to-end training while preserving hard safety guarantees through the CBF safety filter. We justify this training methodology theoretically using nonsmooth analysis techniques and demonstrate its effectiveness on high-dimensional multi-agent nonlinear control problems with state and control dimensions up to 1200 and 400, respectively.",
-          "subjects": []
-        },
-        {
-          "title": "Mean-Field Control Barrier Functions for Stochastic Multi-Agent Systems",
-          "authors": [
-            "Cinzia Tomaselli",
-            "Gian Carlo Maffettone",
-            "Samy Wu Fung",
-            "L. Nurbekyan",
-            "M. di Bernardo"
-          ],
-          "year": 2026,
-          "date": "2026-03-19",
-          "citations": 0,
-          "arxiv_id": "2603.18658",
-          "paper_id": "644be5f4748e5956542fafc26196d965935d9d3e",
-          "url": "https://arxiv.org/abs/2603.18658",
-          "abstract": "Many applications involving multi-agent systems require fulfilling safety constraints. Control barrier functions offer a systematic framework to enforce forward invariance of safety sets. Recent work extended this paradigm to mean-field scenarios, where the number of agents is large enough to make density-space descriptions a reasonable workaround for the curse of dimensionality. However, an open gap in the recent literature concerns the development of mean-field control barrier functions for Fokker-Planck (advection-diffusion) equations. In this work, we address this gap, enabling safe mean-field control of agents with stochastic microscopic dynamics. We provide bounded stability guarantees under safety corrections and corroborate our results through numerical simulations in two representative scenarios, coverage and shepherding control of multi-agent systems.",
-          "subjects": []
-        },
-        {
-          "title": "Mean-Field Control Barrier Functions: A Framework for Real-Time Swarm Control",
-          "authors": [
-            "Samy Wu Fung",
-            "L. Nurbekyan"
-          ],
-          "year": 2024,
-          "date": "2024-09-27",
-          "citations": 0,
-          "arxiv_id": "2409.18945",
-          "paper_id": "fb94e95f83b6bffaeef4db60ef903889c0753cd9",
-          "url": "https://arxiv.org/abs/2409.18945",
-          "abstract": "Control Barrier Functions (CBFs) are an effective methodology to ensure safety and performative efficacy in real-time control applications such as power systems, resource allocation, autonomous vehicles, robotics, etc. This approach ensures safety independently of the high-level tasks that may have been pre-planned off-line. For example, CBFs can be used to guarantee that a vehicle will remain in its lane. However, when the number of agents is large, computation of CBFs can suffer from the curse of dimensionality in the multi-agent setting. In this work, we present Mean-field Control Barrier Functions (MF-CBFs), which extends the CBF framework to the mean-field (or swarm control) setting. The core idea is to model a population of agents as probability measures in the state space and build corresponding control barrier functions. Similar to traditional CBFs, we derive safety constraints on the (distributed) controls but now relying on the differential calculus in the space of probability measures.",
-          "subjects": []
         }
       ],
-      [
-        {
-          "title": "Implicit Neural Optimal Transport via Fixed-Point Optimization",
-          "authors": [
-            "Yesom Park",
-            "Eric Gelphman",
-            "Stanley Osher",
-            "Samy Wu Fung"
-          ],
-          "year": 2026,
-          "date": "2026-05-11",
-          "citations": 0,
-          "arxiv_id": "2605.10792",
-          "paper_id": "d610951b9d5dc25d845955aa8a5cb47b18d50108",
-          "url": "https://arxiv.org/abs/2605.10792",
-          "abstract": "We propose an implicit neural formulation of optimal transport that eliminates adversarial min--max optimization and multi-network architectures commonly used in existing approaches. Our key idea is to parameterize a single potential in the Kantorovich dual and reformulate the associated c-transform as a proximal fixed-point problem. This yields a stable single-network framework in which dual feasibility is enforced exactly through proximal optimality conditions rather than adversarial training. Despite the inner fixed-point computation, gradients can be computed without differentiating through the fixed-point iterations, enabling efficient training without requiring implicit differentiation. We further establish convergence of stochastic gradient descent. The resulting framework is efficient, scalable, and broadly applicable: it simultaneously recovers forward and backward transport maps and naturally extends to class-conditional settings. Experiments on high-dimensional Gaussian benchmarks, physical datasets, and image translation tasks demonstrate strong transport accuracy together with improved training stability and favorable computational and memory efficiency.",
-          "subjects": []
-        },
-        {
-          "title": "Probabilistic Gaussian Homotopy: A Probability-Space Continuation Framework for Nonconvex Optimization",
-          "authors": [
-            "Eshed Gal",
-            "Samy Wu Fung",
-            "Eldad Haber"
-          ],
-          "year": 2026,
-          "date": "2026-03-13",
-          "citations": 0,
-          "arxiv_id": "2603.13546",
-          "paper_id": "5dac93bc9644a6b8b93d2895cf56c96c74c30cad",
-          "url": "https://arxiv.org/abs/2603.13546",
-          "abstract": "We introduce Probabilistic Gaussian Homotopy (PGH), a probability-space continuation framework for nonconvex optimization. Unlike classical Gaussian homotopy, which smooths the objective and uniformly averages gradients, PGH deforms the associated Boltzmann distribution and induces Boltzmann-weighted aggregation of perturbed gradients, which exponentially biases descent directions toward low-energy regions. We show that PGH corresponds to a log-sum-exp (soft-min) homotopy that smooths a nonconvex objective at scale $\\lambda>0$ and recovers the original objective as $\\lambda\\to 0$, yielding a posterior-mean generalization of the Moreau envelope, and we derive a dynamical system governing minimizer evolution along an annealed homotopy path. This establishes a principled connection between Gaussian continuation, Bayesian denoising, and diffusion-style smoothing. We further propose Probabilistic Gaussian Homotopy Optimization (PGHO), a practical stochastic algorithm based on Monte Carlo gradient estimation, and demonstrate strong performance on high-dimensional nonconvex benchmarks and sparse recovery problems where classical gradient methods and objective-space smoothing frequently fail.",
-          "subjects": []
-        },
-        {
-          "title": "A Gauss-Newton Method with No Additional PDE Solves Beyond Gradient Evaluation for Large-Scale PDE-Constrained Inverse Problems",
-          "authors": [
-            "Cash Cherry",
-            "Samy Wu Fung",
-            "L. Tenorio",
-            "Ebru Bozdag"
-          ],
-          "year": 2026,
-          "date": "2026-03-06",
-          "citations": 0,
-          "arxiv_id": "2603.06899",
-          "paper_id": "70f5a57ad17fa6741545420dee6f464d05a5c9e2",
-          "url": "https://arxiv.org/abs/2603.06899",
-          "abstract": "Partial Differential Equation (PDE)-constrained optimization problems often take the form of an optimization of an objective function given as a sum of loss terms. Each function or gradient evaluation requires one or more PDE solves, which render these problems computationally demanding. While Gauss-Newton methods are well-suited for large-scale PDE-constrained optimization, their application to settings such as Full-Waveform Inversion (FWI) is hindered by the need for additional PDE solves to compute Jacobian-vector products. This paper proposes a Gauss-Newton approach that eliminates the need for extra PDE solves beyond those required for gradient computation. Our numerical experiments on FWI demonstrate that the proposed method achieves the efficiency of gradient-based schemes while retaining the fast convergence of Gauss-Newton methods.",
-          "subjects": []
-        },
-        {
-          "title": "On the Convergence of Jacobian-Free Backpropagation for Optimal Control Problems with Implicit Hamiltonians",
-          "authors": [
-            "Eric Gelphman",
-            "Deepanshu Verma",
-            "N. Yang",
-            "Stanley Osher",
-            "Samy Wu Fung"
-          ],
-          "year": 2026,
-          "date": "2026-01-31",
-          "citations": 3,
-          "arxiv_id": "2602.00921",
-          "paper_id": "dce30459af99e2a9f34218e27acd687633d16366",
-          "url": "https://arxiv.org/abs/2602.00921",
-          "abstract": "Optimal feedback control with implicit Hamiltonians poses a fundamental challenge for learning-based value function methods due to the absence of closed-form optimal control laws. Recent work~\\cite{gelphman2025end} introduced an implicit deep learning approach using Jacobian-Free Backpropagation (JFB) to address this setting, but only established sample-wise descent guarantees. In this paper, we establish convergence guarantees for JFB in the stochastic minibatch setting, showing that the resulting updates converge to stationary points of the expected optimal control objective. We further demonstrate scalability on substantially higher-dimensional problems, including multi-agent optimal consumption and swarm-based quadrotor and bicycle control. Together, our results provide both theoretical justification and empirical evidence for using JFB in high-dimensional optimal control with implicit Hamiltonians.",
-          "subjects": []
-        },
-        {
-          "title": "Operator Splitting with Hamilton-Jacobi-based Proximals",
-          "authors": [
-            "N. Di",
-            "Eric C. Chi",
-            "Samy Wu Fung"
-          ],
-          "year": 2026,
-          "date": "2026-01-29",
-          "citations": 0,
-          "arxiv_id": "2601.22370",
-          "paper_id": "800639c63028dbb16228f977a1b3647bdce2ce85",
-          "url": "https://arxiv.org/abs/2601.22370",
-          "abstract": "Operator splitting algorithms are a cornerstone of modern first-order optimization, decomposing complex problems into simpler subproblems solved via proximal operators. However, most functions lack closed-form proximal operators, which has long restricted these methods to a narrow set of problems. Hamilton-Jacobi-based proximal operator (HJ-Prox) is a recent derivative-free Monte Carlo technique based on Hamilton-Jacobi PDE theory, that approximates proximal operators numerically. In this work, we introduce a unified framework for operator splitting via HJ-Prox, which allows for deployment of operator splitting even when functions are not proximable. We prove that replacing exact proximal steps with HJ-Prox in algorithms such as proximal point, proximal gradient descent, Douglas-Rachford splitting, Davis-Yin splitting, and primal-dual hybrid gradient preserves convergence guarantees under mild assumptions. Numerical experiments demonstrate HJ-Prox is competitive and effective on a wide variety of statistical learning tasks.",
-          "subjects": []
-        },
-        {
-          "title": "Correction: A Primal-Dual Price-Optimization Method for Computing Equilibrium Prices in Mean-Field Games Models",
-          "authors": [
-            "Xu Wang",
-            "Samy Wu Fung",
-            "L. Nurbekyan"
-          ],
-          "year": 2026,
-          "date": "2026-01-20",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "7174a69bd94d8baeb92b6585eaaef124e4d138d9",
-          "url": "https://www.semanticscholar.org/paper/7174a69bd94d8baeb92b6585eaaef124e4d138d9",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Fixed-Point Neural Optimal Transport without Implicit Differentiation",
-          "authors": [
-            "Yesom Park",
-            "Eric Gelphman",
-            "Stanley Osher",
-            "Samy Wu Fung"
-          ],
-          "year": 2026,
-          "date": "2026",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "8e65c69cd4a3d58474ec43f05538557fd9042ca5",
-          "url": "https://www.semanticscholar.org/paper/8e65c69cd4a3d58474ec43f05538557fd9042ca5",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "maze-dataset: Maze Generation with Algorithmic Variety and Representational Flexibility",
-          "authors": [
-            "M. I. Ivanitskiy",
-            "Aaron Sandoval",
-            "Alex F Spies",
-            "Tilman Räuker",
-            "Brandon Knutson",
-            "Cecilia G. Diniz Behn",
-            "Samy Wu Fung"
-          ],
-          "year": 2025,
-          "date": "2025-10-21",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "59bdd1310228a587b63c09188cfad89e23e9aba1",
-          "url": "https://www.semanticscholar.org/paper/59bdd1310228a587b63c09188cfad89e23e9aba1",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "End-to-End Training of High-Dimensional Optimal Control with Implicit Hamiltonians via Jacobian-Free Backpropagation",
-          "authors": [
-            "Eric Gelphman",
-            "Deepanshu Verma",
-            "N. Yang",
-            "Stanley Osher",
-            "Samy Wu Fung"
-          ],
-          "year": 2025,
-          "date": "2025-10-01",
-          "citations": 0,
-          "arxiv_id": "2510.00359",
-          "paper_id": "33d5717d38ed4087857a0792948aac935c962acf",
-          "url": "https://arxiv.org/abs/2510.00359",
-          "abstract": "Neural network approaches that parameterize value functions have succeeded in approximating high-dimensional optimal feedback controllers when the Hamiltonian admits explicit formulas. However, many practical problems, such as the space shuttle reentry problem and bicycle dynamics, among others, may involve implicit Hamiltonians that do not admit explicit formulas, limiting the applicability of existing methods. Rather than directly parameterizing controls, which does not leverage the Hamiltonian's underlying structure, we propose an end-to-end implicit deep learning approach that directly parameterizes the value function to learn optimal control laws. Our method enforces physical principles by ensuring trained networks adhere to the control laws by exploiting the fundamental relationship between the optimal control and the value function's gradient; this is a direct consequence of the connection between Pontryagin's Maximum Principle and dynamic programming. Using Jacobian-Free Backpropagation (JFB), we achieve efficient training despite temporal coupling in trajectory optimization. We show that JFB produces descent directions for the optimal control objective and experimentally demonstrate that our approach effectively learns high-dimensional feedback controllers across multiple scenarios involving implicit Hamiltonians, which existing methods cannot address.",
-          "subjects": []
-        },
-        {
-          "title": "A Monte Carlo Approach for Nonsmooth Convex Optimization via Proximal Splitting Algorithms",
-          "authors": [
-            "N. Di",
-            "Eric C. Chi",
-            "Samy Wu Fung"
-          ],
-          "year": 2025,
-          "date": "2025-09-09",
-          "citations": 0,
-          "arxiv_id": "2509.07914",
-          "paper_id": "12f59975d3e64ce30ba65df14b97f3c5488543b7",
-          "url": "https://arxiv.org/abs/2509.07914",
-          "abstract": "Operator splitting algorithms are a cornerstone of modern first-order optimization, relying critically on proximal operators as their fundamental building blocks. However, explicit formulas for proximal operators are available only for limited classes of functions, restricting the applicability of these methods. Recent work introduced HJ-Prox, a zeroth-order Monte Carlo approximation of the proximal operator derived from Hamilton-Jacobi PDEs, which circumvents the need for closed-form solutions. In this work, we extend the scope of HJ-Prox by establishing that it can be seamlessly incorporated into operator splitting schemes while preserving convergence guarantees. In particular, we show that replacing exact proximal steps with HJ-Prox approximations in algorithms such as proximal gradient descent, Douglas-Rachford splitting, Davis-Yin splitting, and the primal-dual hybrid gradient method still ensures convergence under mild conditions.",
-          "subjects": []
-        },
-        {
-          "title": "A primal-dual price-optimization method for computing equilibrium prices in mean-field games models",
-          "authors": [
-            "Xu Wang",
-            "Samy Wu Fung",
-            "L. Nurbekyan"
-          ],
-          "year": 2025,
-          "date": "2025-06-04",
-          "citations": 0,
-          "arxiv_id": "2506.04169",
-          "paper_id": "5c3117c37741116350e6609c1a27b85a4ca53c79",
-          "url": "https://arxiv.org/abs/2506.04169",
-          "abstract": "We develop a simple yet efficient Lagrangian method for computing equilibrium prices in a mean-field game price-formation model. We prove that equilibrium prices are optimal in terms of a suitable criterion and derive a primal-dual gradient-based algorithm for computing them. One of the highlights of our computational framework is the efficient, simple, and flexible implementation of the algorithm using modern automatic differentiation techniques. Our implementation is modular and admits a seamless extension to high-dimensional settings with more complex dynamics, costs, and equilibrium conditions. Additionally, automatic differentiation enables a versatile algorithm that requires only coding the cost functions of agents. It automatically handles the gradients of the costs, thereby eliminating the need to manually form the adjoint equations.",
-          "subjects": []
-        },
-        {
-          "title": "Thinking Out of the Box: Hybrid SAT Solving by Unconstrained Continuous Optimization",
-          "authors": [
-            "Zhiwei Zhang",
-            "Samy Wu Fung",
-            "Anastasios Kyrillidis",
-            "Stanley Osher",
-            "M. Vardi"
-          ],
-          "year": 2025,
-          "date": "2025-05-31",
-          "citations": 2,
-          "arxiv_id": "2506.00674",
-          "paper_id": "c2fa7a3058b7c4ce73bcce8e94de04577f898115",
-          "url": "https://arxiv.org/abs/2506.00674",
-          "abstract": "The Boolean satisfiability (SAT) problem lies at the core of many applications in combinatorial optimization, software verification, cryptography, and machine learning. While state-of-the-art solvers have demonstrated high efficiency in handling conjunctive normal form (CNF) formulas, numerous applications require non-CNF (hybrid) constraints, such as XOR, cardinality, and Not-All-Equal constraints. Recent work leverages polynomial representations to represent such hybrid constraints, but it relies on box constraints that can limit the use of powerful unconstrained optimizers. In this paper, we propose unconstrained continuous optimization formulations for hybrid SAT solving by penalty terms. We provide theoretical insights into when these penalty terms are necessary and demonstrate empirically that unconstrained optimizers (e.g., Adam) can enhance SAT solving on hybrid benchmarks. Our results highlight the potential of combining continuous optimization and machine-learning-based methods for effective hybrid SAT solving.",
-          "subjects": []
-        },
-        {
-          "title": "Recent Advances in Numerical Solutions for Hamilton-Jacobi PDEs",
-          "authors": [
-            "Tingwei Meng",
-            "Siting Liu",
-            "Samy Wu Fung",
-            "Stanley Osher"
-          ],
-          "year": 2025,
-          "date": "2025-02-28",
-          "citations": 0,
-          "arxiv_id": "2502.20833",
-          "paper_id": "bc17365b17a60fab9f3bcdf1dde73480216f3186",
-          "url": "https://arxiv.org/abs/2502.20833",
-          "abstract": "Hamilton-Jacobi partial differential equations (HJ PDEs) play a central role in many applications such as economics, physics, and engineering. These equations describe the evolution of a value function which encodes valuable information about the system, such as action, cost, or level sets of a dynamic process. Their importance lies in their ability to model diverse phenomena, ranging from the propagation of fronts in computational physics to optimal decision-making in control systems. This paper provides a review of some recent advances in numerical methods to address challenges such as high-dimensionality, nonlinearity, and computational efficiency. By examining these developments, this paper sheds light on important techniques and emerging directions in the numerical solution of HJ PDEs.",
-          "subjects": []
-        },
-        {
-          "title": "A Generalization Bound for a Family of Implicit Networks",
-          "authors": [
-            "Samy Wu Fung",
-            "Benjamin Berkels"
-          ],
-          "year": 2024,
-          "date": "2024-10-09",
-          "citations": 0,
-          "arxiv_id": "2410.07427",
-          "paper_id": "6fd4f93134814b1d83a339d0f6cca1bff6a2ced3",
-          "url": "https://arxiv.org/abs/2410.07427",
-          "abstract": "Implicit networks are a class of neural networks whose outputs are defined by the fixed point of a parameterized operator. They have enjoyed success in many applications including natural language processing, image processing, and numerous other applications. While they have found abundant empirical success, theoretical work on its generalization is still under-explored. In this work, we consider a large family of implicit networks defined parameterized contractive fixed point operators. We show a generalization bound for this class based on a covering number argument for the Rademacher complexity of these architectures.",
-          "subjects": []
-        },
-        {
-          "title": "On Logical Extrapolation for Mazes with Recurrent and Implicit Networks",
-          "authors": [
-            "Brandon Knutson",
-            "Amandin Chyba Rabeendran",
-            "M. I. Ivanitskiy",
-            "Jordan Pettyjohn",
-            "Cecilia G. Diniz Behn",
-            "Samy Wu Fung",
-            "Daniel McKenzie"
-          ],
-          "year": 2024,
-          "date": "2024-10-03",
-          "citations": 0,
-          "arxiv_id": "2410.03020",
-          "paper_id": "14af3215b1d48b0c08aa46fb3194dd93dad95cd2",
-          "url": "https://arxiv.org/abs/2410.03020",
-          "abstract": "Recent work suggests that certain neural network architectures — particularly recurrent neural networks (RNNs) and implicit neural networks (INNs) — are capable of logical extrapolation. When trained on easy instances of a task, these networks (henceforth: logical extrapolators) can generalize to more difficult instances. Previous research has hypothesized that logical extrapolators do so by learning a scalable, iterative algorithm for the given task which converges to the solution. We examine this idea more closely in the context of a single task: maze solving. By varying test data along multiple axes — not just maze size — we show that models introduced in prior work fail in a variety of ways, some expected and others less so. It remains uncertain whether any of these models has truly learned an algorithm. However, we provide evidence that a certain RNN has approximately learned a form of `deadend-filling'. We show that training these models on more diverse data addresses some failure modes but, paradoxically, does not improve logical extrapolation. We also analyze convergence behavior, and show that models explicitly trained to converge to a fixed point are likely to do so when extrapolating, while models that are not may exhibit more exotic limiting behavior such as limit cycles, even when they correctly solve the problem. Our results (i) show that logical extrapolation is not immune to the problem of goal misgeneralization, and (ii) suggest that analyzing the dynamics of extrapolation may yield insights into designing better logical extrapolators.",
-          "subjects": []
-        },
-        {
-          "title": "A hybrid SIAC—data-driven post-processing filter for discontinuities in solutions to numerical PDEs",
-          "authors": [
-            "Soraya Terrab",
-            "Samy Wu Fung",
-            "Jennifer K. Ryan"
-          ],
-          "year": 2024,
-          "date": "2024-08-09",
-          "citations": 0,
-          "arxiv_id": "2408.05193",
-          "paper_id": "72f3f3b9f630b46a29bcbd0fa58601e4b7974fb4",
-          "url": "https://arxiv.org/abs/2408.05193",
-          "abstract": "We present a post-processing hybrid filter that is only applied to the approximation at the final time and allows for reducing errors away from a shock as well as near a shock for approximation with reduced stabilization applied during time-evolution. This filter is designed for discontinuous Galerkin approximations to PDEs and combines a rigorous moment-based Smoothness-Increasing Accuracy-Conserving (SIAC) filter with a consistent data-driven Convolutional-Neural-Network (CNN) filter. While SIAC improves accuracy in smooth regions, it fails to reduce the O(1)\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\mathcal {O}(1)$$\\end{document} errors near discontinuities, particularly in inviscid compressible flows with shocks. Our hybrid SIAC–CNN filter, trained exclusively on top-hat functions, enforces consistency constraints globally and higher-order moment conditions in smooth regions, reducing both ℓ2\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\ell _2$$\\end{document} and ℓ∞\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\ell _\\infty $$\\end{document} errors near discontinuities and preserving theoretical accuracy in smooth regions. We demonstrate the effectiveness of the hybrid filter on the Euler equations for the Lax, Sod, and Shu–Osher shock-tube problems.",
-          "subjects": []
-        },
-        {
-          "title": "Fast Partial Fourier Transforms for Large-Scale Ptychography",
-          "authors": [
-            "Ricardo Parada",
-            "Samy Wu Fung",
-            "Stanley Osher"
-          ],
-          "year": 2024,
-          "date": "2024-08-07",
-          "citations": 0,
-          "arxiv_id": "2408.03532",
-          "paper_id": "e274acbc43dc0139c4a5745ef35b3c5879f4a80e",
-          "url": "https://arxiv.org/abs/2408.03532",
-          "abstract": "Ptychography is a popular imaging technique that combines diffractive imaging with scanning microscopy. The technique consists of a coherent beam that is scanned across an object in a series of overlapping positions, leading to reliable and improved reconstructions. Ptychographic microscopes allow for large fields to be imaged at high resolution at additional computational expense. In this work, we explore the use of the fast Partial Fourier Transforms (PFTs), which efficiently compute Fourier coefficients corresponding to low frequencies. The core idea is to use the PFT in a plug-and-play manner to warm-start existing ptychography algorithms such as the ptychographic iterative engine (PIE). This approach reduces the computational budget required to solve the ptychography problem. Our numerical results show that our scheme accelerates the convergence of traditional solvers without sacrificing quality of reconstruction.",
-          "subjects": []
-        },
-        {
-          "title": "Three-Operator Splitting for Learning to Predict Equilibria in Convex Games",
-          "authors": [
-            "Daniel McKenzie",
-            "Howard Heaton",
-            "Qiuwei Li",
-            "Samy Wu Fung",
-            "Stanley Osher",
-            "Wotao Yin"
-          ],
-          "year": 2024,
-          "date": "2024-07-11",
-          "citations": 13,
-          "arxiv_id": null,
-          "paper_id": "08e0b4794f86ada2f7965024b9f870f5bb8d17b4",
-          "url": "https://www.semanticscholar.org/paper/08e0b4794f86ada2f7965024b9f870f5bb8d17b4",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Laplace Meets Moreau: Smooth Approximation to Infimal Convolutions Using Laplace's Method",
-          "authors": [
-            "R. Tibshirani",
-            "Samy Wu Fung",
-            "Howard Heaton",
-            "Stanley Osher"
-          ],
-          "year": 2024,
-          "date": "2024-06-04",
-          "citations": 20,
-          "arxiv_id": "2406.02003",
-          "paper_id": "04d863bddb9685219bea94b621e4e148c2c2eeff",
-          "url": "https://arxiv.org/abs/2406.02003",
-          "abstract": "We study approximations to the Moreau envelope -- and infimal convolutions more broadly -- based on Laplace's method, a classical tool in analysis which ties certain integrals to suprema of their integrands. We believe the connection between Laplace's method and infimal convolutions is generally deserving of more attention in the study of optimization and partial differential equations, since it bears numerous potentially important applications, from proximal-type algorithms to solving Halmiton-Jacobi equations.",
-          "subjects": []
-        },
-        {
-          "title": "Kernel Expansions for High-Dimensional Mean-Field Control with Non-local Interactions",
-          "authors": [
-            "Alexander Vidal",
-            "Samy Wu Fung",
-            "Stanley Osher",
-            "Luis Tenorio",
-            "L. Nurbekyan"
-          ],
-          "year": 2024,
-          "date": "2024-05-17",
-          "citations": 0,
-          "arxiv_id": "2405.10922",
-          "paper_id": "4f2ca48cf67d512b3c58916552379527d295c342",
-          "url": "https://arxiv.org/abs/2405.10922",
-          "abstract": "Mean-field control (MFC) problems aim to find the optimal policy to control massive populations of interacting agents. These problems are crucial in areas such as economics, physics, and biology. We consider the nonlocal setting, where the interactions between agents are governed by a suitable kernel. For N agents, the interaction cost has $\\mathcal{O}\\left( {{N^2}} \\right)$ complexity, which can be prohibitively slow to evaluate and differentiate when N is large. To this end, we propose an efficient primal-dual algorithm that utilizes basis expansions of the kernels. The basis expansions reduce the cost of computing the interactions, while the primal-dual methodology decouples the agents at the expense of solving for a moderate number of dual variables. We also demonstrate that our approach can further be structured in a multi-resolution manner, where we estimate optimal dual variables using a moderate N and solve decoupled trajectory optimization problems for large N. We illustrate the effectiveness of our method on an optimal control of 5000 interacting quadrotors.",
-          "subjects": []
-        }
-      ]
+      []
     ],
     [
       "Jaeyoun Choi",
@@ -2594,9 +2198,406 @@
             "cs.MA",
             "eess.SY"
           ]
+        },
+        {
+          "title": "Safe and Scalable Multi-Drone Payload Transport Via CBF-Based Reinforcement Learning With Zero-Shot Sim-to-Real Transfer",
+          "authors": [
+            "Jaeyoun Choi",
+            "Oswin So",
+            "Songyuan Zhang",
+            "Cooper Taylor",
+            "Chuchu Fan"
+          ],
+          "year": 2026,
+          "date": "2026-07-22",
+          "citations": 0,
+          "arxiv_id": "2607.20665",
+          "paper_id": "2cd983addd6378b3d340fae3c8e982e512407a38",
+          "url": "https://arxiv.org/abs/2607.20665",
+          "abstract": "Multi-drone payload transportation has emerged as a promising research paradigm with potential applications in construction, logistics, and disaster response. However, the complex coupled dynamics among drones, cables, and payloads pose significant challenges, and existing approaches remain limited in safety and scalability, particularly in dynamic and unstructured environments. In this work, we propose a learning-based framework for safe and scalable multi-drone cooperative payload transport. We introduce a minimal 2D abstraction that preserves the task-relevant drone-payload coupling required for coordination and safety, while remaining computationally efficient for large-scale learning. Using domain randomization over team size and physical parameters, we train a fully distributed policy via Discrete Graph Control Barrier Function Proximal Policy Optimization (DGPPO), enabling robust zero-shot sim-to-real transfer without fine-tuning. Extensive real-world evaluations demonstrate that a single learned policy generalizes across varying team sizes and task scenarios. Furthermore, multi-group hardware experiments show that the same policy can safely operate in dynamic environments, where other drone teams act as moving obstacles. These results indicate that the proposed framework enables efficient, safe, and scalable multi-drone payload transportation with strong generalization to complex real-world conditions.",
+          "subjects": []
         }
       ],
-      []
+      [
+        {
+          "title": "Impact of Age on Efficacy and Safety of Advanced Therapies During Induction in Ulcerative Colitis: An Individual Patient Data Pooled Analysis from Randomized Controlled Trials.",
+          "authors": [
+            "Dhruv Ahuja",
+            "Jaeyoun Choi",
+            "G. Zou",
+            "S. Goodwin",
+            "V. Jairath",
+            "Siddharth Singh"
+          ],
+          "year": 2026,
+          "date": "2026-02-16",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "ff59a00bf73f1f9c4481ae2fddcc00266693baf7",
+          "url": "https://www.semanticscholar.org/paper/ff59a00bf73f1f9c4481ae2fddcc00266693baf7",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Maximizing Reach-Avoid Probabilities for Linear Stochastic Systems via Control Architectures",
+          "authors": [
+            "Niklas Schmid",
+            "Jaeyoun Choi",
+            "Oswin So",
+            "Chuchu Fan"
+          ],
+          "year": 2026,
+          "date": "2026-01-22",
+          "citations": 0,
+          "arxiv_id": "2601.16290",
+          "paper_id": "933b6bcf3ae671306c4683c1ed574d3e96d4c7ab",
+          "url": "https://arxiv.org/abs/2601.16290",
+          "abstract": "The maximization of reach-avoid probabilities for stochastic systems is a central topic in the control literature. Yet, the available methods are either restricted to low-dimensional systems or suffer from conservative approximations. To address these limitations, we propose control architectures that combine the flexibility of Markov Decision Processes with the scalability of Model Predictive Controllers. The Model Predictive Controller tracks reference signals while remaining agnostic to the stochasticity and reach-avoid objective. Instead, the reach-avoid probability is maximized by optimally updating the controller's reference online. To achieve this, the closed-loop system, consisting of the system and Model Predictive Controller, is abstracted as a Markov Decision Process in which a new reference can be chosen at every time-step. A feedback policy generating optimal references is then computed via Dynamic Programming. If the state space of the system is continuous, the Dynamic Programming algorithm must be executed on a finite system approximation. Modifications to the Model Predictive Controller enable a computationally efficient robustification of the Dynamic Programming algorithm to approximation errors, preserving bounds on the achieved reach-avoid probability. The approach is validated on a perturbed 12D quadcopter model in cluttered reach-avoid environments proving its flexibility and scalability.",
+          "subjects": []
+        },
+        {
+          "title": "Parameter-Robust MPPI for Safe Online Learning of Unknown Parameters",
+          "authors": [
+            "M. Vahs",
+            "Jaeyoun Choi",
+            "Niklas Schmid",
+            "Jana Tumova",
+            "Chuchu Fan"
+          ],
+          "year": 2026,
+          "date": "2026-01-06",
+          "citations": 1,
+          "arxiv_id": "2601.02948",
+          "paper_id": "2bf5f06b48fc454211d7570f009a7c9d71dff034",
+          "url": "https://arxiv.org/abs/2601.02948",
+          "abstract": "Robots deployed in dynamic environments must remain safe even when key physical parameters are uncertain or change over time. We propose Parameter-Robust Model Predictive Path Integral (PRMPPI) control, a framework that integrates online parameter learning with probabilistic safety constraints. PRMPPI maintains a particle-based belief over parameters via Stein Variational Gradient Descent, evaluates safety constraints using Conformal Prediction, and optimizes both a nominal performance-driven and a safety-focused backup trajectory in parallel. This yields a controller that is cautious at first, improves performance as parameters are learned, and ensures safety throughout. Simulation and hardware experiments demonstrate higher success rates, lower tracking error, and more accurate parameter estimates than baselines.",
+          "subjects": []
+        },
+        {
+          "title": "Artificial intelligence-based digital pathology using H&E-stained whole slide images in immuno-oncology: from immune biomarker detection to immunotherapy response prediction",
+          "authors": [
+            "Jessica Zhang",
+            "Horyun Choi",
+            "Yeseul Kim",
+            "Jonghanne Park",
+            "Sukjoo Cho",
+            "Eugene Y Kim",
+            "Allen Cho",
+            "Ju Young Lee",
+            "Jaeyoun Choi",
+            "C. Low",
+            "C. Jung",
+            "E. Yu",
+            "Jeffrey H. Chuang",
+            "Lee Cooper",
+            "Y. Chae"
+          ],
+          "year": 2025,
+          "date": "2025-08-01",
+          "citations": 18,
+          "arxiv_id": null,
+          "paper_id": "5c42fad8381a5f01e5b0400f5938f7d5dfb91fdc",
+          "url": "https://www.semanticscholar.org/paper/5c42fad8381a5f01e5b0400f5938f7d5dfb91fdc",
+          "abstract": "Immuno-oncology and the advent of immunotherapies, in particular immune checkpoint inhibitors (ICIs), have fundamentally altered the way we treat cancer. Yet only a small subset of patients actually responds to ICIs, and many face significant adverse effects, making the accurate selection of patients for ICIs essential to the work of immuno-oncology. Immune biomarkers, such as programmed death-ligand 1, microsatellite instability/defective mismatch repair, and tumor mutational burden have been developed for patient selection and stratification for ICIs, though their predictive abilities remain limited. This is due to several challenges: lack of adequate tissue sampling, the time-consuming and subjective nature of manual visual-based quantification techniques, and the growing recognition of the complexity of the tumor microenvironment, for which these tests cannot fully capture on their own. Meanwhile, emerging technologies in the field of artificial intelligence (AI), such as the performance of deep learning techniques in digital pathology, have garnered significant attention for their potential to be used in this space. Many have now turned their attention towards the immuno-oncology-related applications for digital pathology, particularly in analyzing whole-slide images of widely available H&E-stained slides to aid in immune biomarker detection and ICI response prediction. In this review, we discuss the current landscape of AI-based digital pathology in immuno-oncology, including its applications for identifying and measuring immune biomarkers and, importantly, its potential for predicting ICI response and survival outcomes. We will end by discussing the challenges and future directions of adopting AI technologies for clinical deployment.",
+          "subjects": []
+        },
+        {
+          "title": "203: IMPACT OF AGE ON EFFICACY AND SAFETY OF ADVANCED THERAPIES IN ULCERATIVE COLITIS: A POOLED ANALYSIS OF RANDOMIZED CONTROLLED TRIALS",
+          "authors": [
+            "Jaeyoun Choi",
+            "Dhruv Ahuja",
+            "GY Zou",
+            "S. Goodwin",
+            "V. Jairath",
+            "Siddharth Singh"
+          ],
+          "year": 2025,
+          "date": "2025-05-01",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "3b5fb8928d73aa700daf4adae86b871ce9b99309",
+          "url": "https://www.semanticscholar.org/paper/3b5fb8928d73aa700daf4adae86b871ce9b99309",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Fine-Tuned DenseNet-169 for Breast Cancer Metastasis Prediction Using FastAI and 1-Cycle Policy",
+          "authors": [
+            "Adarsh Vulli",
+            "P. Srinivasu",
+            "Madipally Sai Krishna Sashank",
+            "J. Shafi",
+            "Jaeyoun Choi",
+            "Muhammad Fazal Ijaz"
+          ],
+          "year": 2022,
+          "date": "2022-04-01",
+          "citations": 184,
+          "arxiv_id": null,
+          "paper_id": "3b11ed066ed30e5e235e9ef15cd3b8ada96d9899",
+          "url": "https://www.semanticscholar.org/paper/3b11ed066ed30e5e235e9ef15cd3b8ada96d9899",
+          "abstract": "Lymph node metastasis in breast cancer may be accurately predicted using a DenseNet-169 model. However, the current system for identifying metastases in a lymph node is manual and tedious. A pathologist well-versed with the process of detection and characterization of lymph nodes goes through hours investigating histological slides. Furthermore, because of the massive size of most whole-slide images (WSI), it is wise to divide a slide into batches of small image patches and apply methods independently on each patch. The present work introduces a novel method for the automated diagnosis and detection of metastases from whole slide images using the Fast AI framework and the 1-cycle policy. Additionally, it compares this new approach to previous methods. The proposed model has surpassed other state-of-art methods with more than 97.4% accuracy. In addition, a mobile application is developed for prompt and quick response. It collects user information and models to diagnose metastases present in the early stages of cancer. These results indicate that the suggested model may assist general practitioners in accurately analyzing breast cancer situations, hence preventing future complications and mortality. With digital image processing, histopathologic interpretation and diagnostic accuracy have improved considerably.",
+          "subjects": []
+        },
+        {
+          "title": "A Twisted Elastic Rotary-Rail Actuator (TERRA) Using a Double-Stranded Helix Structure",
+          "authors": [
+            "Jae In Kim",
+            "Jaeyoun Choi",
+            "Junhyung Kim",
+            "Yong‐Lae Park"
+          ],
+          "year": 2021,
+          "date": "2021-10-01",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "b32ec35c3da906e08aa53e867613996e428ed0dd",
+          "url": "https://www.semanticscholar.org/paper/b32ec35c3da906e08aa53e867613996e428ed0dd",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Pop-up cookie molds: self-folding elastomer sheets using thermal expansion of embedded air chambers",
+          "authors": [
+            "Junghan Kwon",
+            "Myungsu Park",
+            "Jaeyoun Choi",
+            "Yong‐Lae Park"
+          ],
+          "year": 2021,
+          "date": "2021-09-22",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "bd8d354ea3f072701154a698045b5d596d796546",
+          "url": "https://www.semanticscholar.org/paper/bd8d354ea3f072701154a698045b5d596d796546",
+          "abstract": "Self-folding is a promising concept in the fields of smart materials and robotics, which allows self-assembly and multi-functionality. Although there have been approaches to realize self-folding mechanisms using different techniques, and their practical applications are not sufficiently investigated. Here, we propose untethered, self-folding polymer structures with embedded air chambers, which easily transform two-dimensional flat shapes into preprogrammed three-dimensional (3D) shapes when heat energy is transferred into the structures resulting in thermal expansion of the air chambers. This mechanism is particularly useful for casting materials that require shape and phase changes simultaneously if the proposed structures are used as molds. As a practical application, we present pop-up cookie molds that can bake 3D-shaped cookies from flat cookie dough. Analytical modelings based on the ideal gas law, the principle of minimum potential energy, and the lumped capacitance method for heat transfer are established and experimentally validated using prototypes. These provide a prediction of the structure’s bending curvature during the baking process. Furthermore, other target shapes, including bending, twisting, and their combinations, are also achieved by configuring various chamber designs. Finally, practical prototypes with more complex shapes are proposed, and their performances are demonstrated.",
+          "subjects": []
+        },
+        {
+          "title": "Assessing tumor heterogeneity: integrating tissue and circulating tumor DNA (ctDNA) analysis in the era of immuno-oncology - blood TMB is not the same as tissue TMB",
+          "authors": [
+            "S. Fridland",
+            "Jaeyoun Choi",
+            "M. Nam",
+            "S. Schellenberg",
+            "Eugene Kim",
+            "G. Lee",
+            "Nathaniel Yoon",
+            "Y. Chae"
+          ],
+          "year": 2021,
+          "date": "2021-08-01",
+          "citations": 40,
+          "arxiv_id": null,
+          "paper_id": "d3ea24158bfb6c8d6bdef5e544ecfb6badde6304",
+          "url": "https://www.semanticscholar.org/paper/d3ea24158bfb6c8d6bdef5e544ecfb6badde6304",
+          "abstract": "Tissue tumor mutational burden (tTMB) is calculated to aid in cancer treatment selection. High tTMB predicts a favorable response to immunotherapy in patients with non-small cell lung cancer. Blood TMB (bTMB) from circulating tumor DNA is reported to have similar predictive power and has been proposed as an alternative to tTMB. Across many studies not only are tTMB and bTMB not concordant but also as reported previously by our group predict conflicting outcomes. This implies that bTMB is not a substitute for tTMB, but rather a composite index that may encompass tumor heterogeneity. Here, we provide a thorough overview of the predictive power of TMB, discuss the use of tumor heterogeneity alongside TMB to predict treatment response and review several methods of tumor heterogeneity assessment. Furthermore, we propose a hypothetical method of estimating tumor heterogeneity and touch on its clinical implications.",
+          "subjects": []
+        },
+        {
+          "title": "Metastatic CDK12-Mutated Neuroendocrine Tumor of Lung Showed an Exceptional Response to Olaparib and Paclitaxel.",
+          "authors": [
+            "W. Bae",
+            "J. Hwang",
+            "W. K. Hur",
+            "Jaeyoun Choi",
+            "M. Nam",
+            "Y. Choi",
+            "L. Kim",
+            "Eugene Kim",
+            "S. Fridland",
+            "Heayoon S. Cho",
+            "C. Low",
+            "E. Yu",
+            "C. Jung",
+            "E. Vagia",
+            "L. Kiedrowski",
+            "Y. Chae"
+          ],
+          "year": 2021,
+          "date": "2021-05-01",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "40d3060c20f6e52555b4593fcee7f87a610d64c8",
+          "url": "https://www.semanticscholar.org/paper/40d3060c20f6e52555b4593fcee7f87a610d64c8",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "18 New method of assessing tumor heterogeneity utilizing both circulating tumor DNA and tissue DNA to predict the response to immunotherapy",
+          "authors": [
+            "Jaeyoun Choi",
+            "M. Nam",
+            "S. Fridland",
+            "J. Hwang",
+            "C. Jung",
+            "C. Low",
+            "Y. Chae"
+          ],
+          "year": 2020,
+          "date": "2020-11-01",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "a6d742c42920e424ba98907ae040e483b1e58a33",
+          "url": "https://www.semanticscholar.org/paper/a6d742c42920e424ba98907ae040e483b1e58a33",
+          "abstract": "Tumor heterogeneity assessment may help predict response to immunotherapy. In melanoma mouse models, tumor heterogeneity impaired immune response.1 In addition, among lung cancer patients receiving immunotherapy, the high clonal neoantigen group had favorable survival and outcomes.2 Ideal methods of quantifying tumor heterogeneity are multiple biopsies or autopsy. However, these are not feasible in routine clinical practice. Circulating tumor DNA (ctDNA) is emerging as an alternative. Here, we reviewed the current state of tumor heterogeneity quantification from ctDNA. Furthermore, we propose a new tumor heterogeneity index(THI) based on our own scoring system, utilizing both ctDNA and tissue DNA.Systematic literature search on Pubmed was conducted up to August 18, 2020. A scoring system and THI were theoretically derived.Two studies suggested their own methods of assessing tumor heterogeneity. One suggested clustering mutations with Pyclone,3 and the other suggested using the ratio of allele frequency (AF) to the maximum somatic allele frequency (MSAF).4 According to the former, the mutations in the highest cellular prevalence cluster can be defined as clonal mutations. According to the latter, the mutations with AF/MSAF<10% can be defined as subclonal mutations. To date, there have been no studies on utilizing both ctDNA and tissue DNA simultaneously to quantify tumor heterogeneity. We hypothesize that a mutation found in only one of either ctDNA or tissue DNA has a higher chance of being subclonal.We suggest a scoring system based on the previously mentioned methods to estimate the probability for a mutant allele to be subclonal. Adding up the points that correspond to the conditions results in a subclonality score (table 1). In a given ctDNA, the number of alleles with a subclonality score greater than or equal to 2 divided by the total number of alleles is defined as blood THI (bTHI) (figure 1). We can repeat the same calculation in a given tissue DNA for tissue THI (tTHI) (figure 2). Finally, we define composite THI (cTHI) as the mean of bTHI and tTHI.Abstract 18 Table 1Subclonality scoreAbstract 18 Figure 1Hypothetical distribution of all alleles found in ctDNA bTHI = the number of alleles with a subclonality score greater than or equal to 2/the total number of alleles found in ctDNA = 10/20 =50%Abstract 18 Figure 2Hypothetical distribution of all alleles found in tissue DNA tTHI= the number of alleles with a subclonality score greater than or equal to 2/the total number of alleles found in tissue DNA = 16/40 = 40% cTHI= (bTHI + tTHI)/2 = 45%Tumor heterogeneity is becoming an important biomarker for predicting response to immunotherapy. Because autopsy and multiple biopsies are not feasible, utilizing both ctDNA and tissue DNA is the most comprehensive and practical approach. Therefore, we propose cTHI, for the first time, as a quantification measure of tumor heterogeneity.Wolf Y, Bartok O. UVB-Induced Tumor Heterogeneity Diminishes Immune Response in Melanoma. Cell 2019;179:219–235.McGranahan N, Swanton C. Clonal neoantigens elicit T cell immunoreactivity and sensitivity to immune checkpoint blockade. Science 2016;351:1463–1469.Ma F, Guan Y. Assessing tumor heterogeneity using ctDNA to predict and monitor therapeutic response in metastatic breast cancer. Int J Cancer 2020;146:1359–1368.Liu Z, Xie Z. Presence of allele frequency heterogeneity defined by ctDNA profiling predicts unfavorable overall survival of NSCLC. Transl Lung Cancer Res 2019;8:1045–1050.",
+          "subjects": []
+        },
+        {
+          "title": "753 The immune landscape of papillary thyroid cancer and its association with neoantigen landscape and DNA repair gene mutations",
+          "authors": [
+            "M. Nam",
+            "Woojung Yang",
+            "J. Y. Lee",
+            "Jaeyoun Choi",
+            "Hansol Choi",
+            "Eugene Kim",
+            "Emma P K Yu",
+            "J. Hwang",
+            "W. Bae",
+            "C. Jung",
+            "Victor G. Wang",
+            "Jeffrey H. Chuang",
+            "Y. Chae"
+          ],
+          "year": 2020,
+          "date": "2020-11-01",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "9de82de4431af4874f0d1c5e6fdfc94e13779511",
+          "url": "https://www.semanticscholar.org/paper/9de82de4431af4874f0d1c5e6fdfc94e13779511",
+          "abstract": "Tumors with high tumor mutational burden (TMB) or defects in mismatch repair (dMMR) respond well to immune checkpoint inhibitors (ICIs).1 2 TMB and DNA repair gene mutations including dMMR are closely related to the increase of neoantigens, which are recognized by immune cells to trigger an immune response.1 3 Although not a standard of care in thyroid cancer treatment, there are ongoing clinical trials for ICI use in differentiated thyroid carcinoma. However, not much has been explored concerning the neoantigen landscape and its association with immune traits in papillary thyroid cancer (PTC). We aim to analyze the immune landscape of PTC in association with neoantigen burden, TMB, and DNA repair gene mutations.We used the PTC cohort data from The Cancer Genome Atlas (TCGA). The mutation counts and data for neoantigen prediction were acquired from TCGA mutation calling. CloudNeo pipeline was used for neoantigen prediction. TMB was calculated as the sum of missense and indel mutation counts per megabase pairs covered by whole-exome sequencing. Tumor-infiltrating immune cells were estimated using CIBERSORT.Out of the 496 PTC patients from cBioPortal, a subset of 400 patients with available mutation counts and predicted neoantigen burden was included in the study. Immune cell infiltration estimated by CIBERSORT showed macrophage M2 as the most abundant, followed by macrophage M0 and other T cells (figure 1). The TMB ranged from 0.03 to 2.05 with a median value of 0.2. Neoantigen burden ranged from 0 to 18 with a median value of 1, which is relatively low compared to the median value of 18 in non-small cell lung cancer (NSCLC)1 (figure 2). One or more DNA repair gene mutations were discovered in 32 patients (8%). The mutation status of repair genes was not related to TMB or neoantigen burden. TMB or neoantigen burden was not related to immune traits such as infiltration of CD8+ T cells or regulatory T cells, cytolytic activity score, and PD-L1 expression.Abstract 753 Figure 1Immune cell infiltration estimated by CIBERSORTAbstract 753 Figure 2Histogram of neoantigen burdenThis is the first study to report the immune landscape of PTC in the context of neoantigen. The lack of association between TMB or neoantigen burden with immune traits may be due to the relatively low number of neoantigens in PTC compared to other immunogenic cancers such as NSCLC. Our results suggest that mutations in DNA repair genes or TMB are likely to have limited value in predicting response to ICI treatment in PTC.Chae YK, et al., Mutations in DNA repair genes are associated with increased neoantigen burden and a distinct immunophenotype in lung squamous cell carcinoma. Sci Rep 2019; 9:3235.Rizvi NA, et al., Cancer immunology. mutational landscape determines sensitivity to PD-1 blockade in non-small cell lung cancer. Science 2015; 348:124–128.Schumacher TN, Schreiber RD, Neoantigens in cancer immunotherapy. Science 2015; 348:69–74.",
+          "subjects": []
+        },
+        {
+          "title": "752 The impact of grade of differentiation and BRAF mutation status on neoantigen and immune landscape in papillary thyroid cancer",
+          "authors": [
+            "M. Nam",
+            "Woojung Yang",
+            "J. Y. Lee",
+            "Jaeyoun Choi",
+            "Hansol Choi",
+            "Emma P K Yu",
+            "Eugene Kim",
+            "J. Hwang",
+            "W. Bae",
+            "C. Jung",
+            "Victor G. Wang",
+            "Jeffrey H. Chuang",
+            "Y. Chae"
+          ],
+          "year": 2020,
+          "date": "2020-11-01",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "d17dd8b47a284b9d9183121ce3c5ed3cbb0cfe36",
+          "url": "https://www.semanticscholar.org/paper/d17dd8b47a284b9d9183121ce3c5ed3cbb0cfe36",
+          "abstract": "Background The use of immune checkpoint inhibitors (ICIs) in cancer treatment has been approved by the FDA, but its application is experimental in the treatment of papillary thyroid cancer (PTC). Induction of immune response via recognition of neoantigens is considered to be the basis for the treatment mechanism of ICIs.1 However, the neoantigen landscape has not been explored in PTC. Our aim is to investigate the immune landscape of PTC in relation to neoantigens, taking into account the BRAF mutation status and grade of differentiation as contributing factors. Methods BRAF V600E mutation status and thyroid differentiation scores (TDSs) were gathered from the PTC cohort of The Cancer Genome Atlas (TCGA). TDS was derived from the mRNA expression levels of 16 thyroid function genes to quantify the grade of differentiation. Tumors with TDSs in the 1st quartile and 4th quartile were defined as poorly differentiated and well differentiated, respectively. The neoantigen burden for each sample was predicted using CloudNeo pipeline. The infiltration of immune cells was calculated through CIBERSORT. Results Among 400 patients with predicted neoantigen data, 187 (47%) had BRAF mutations. The BRAF mutated tumors showed increased cytolytic activity score (CYT, p=0.001), increased infiltration of regulatory T cells (Treg, p Conclusions Increased CYT and higher expression of PD-L1 in the BRAF mutated or the poorly differentiated tumors imply the possible role of ICI use in these subgroups of patients. However, the immune response to these subgroups does not seem to be mediated through the increase in neoantigen formation. Further studies are warranted to explore markers for immunotherapy implication. References Schumacher TN, Schreiber RD, Neoantigens in cancer immunotherapy. Science 2015; 348:69–74.",
+          "subjects": []
+        },
+        {
+          "title": "Overcoming acquired resistance to PD-1 inhibitor with the addition of metformin in small cell lung cancer (SCLC)",
+          "authors": [
+            "Yeseul Kim",
+            "E. Vagia",
+            "P. Viveiros",
+            "C. Kang",
+            "J. Y. Lee",
+            "G. Gim",
+            "Sukjoo Cho",
+            "Horyun Choi",
+            "L. Kim",
+            "I. Park",
+            "Jaeyoun Choi",
+            "Y. Chae"
+          ],
+          "year": 2020,
+          "date": "2020-10-21",
+          "citations": 40,
+          "arxiv_id": null,
+          "paper_id": "c4f2ecd50dda3999d5fbdfd38412fa81f17bbf13",
+          "url": "https://www.semanticscholar.org/paper/c4f2ecd50dda3999d5fbdfd38412fa81f17bbf13",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "THE IMPACT OF GRADE OF DIFFERENTIATION AND BRAF MUTATION STATUS ON NEOANTIGEN AND IMMUNE LANDSCAPE IN PAPILLARY THYROID CANCER",
+          "authors": [
+            "Y. Lee",
+            "Jaeyoun Choi",
+            "Hansol Choi",
+            "Emma P K Yu",
+            "Eugene Kim",
+            "J. Hwang",
+            "M. Jung",
+            "Victor G. Wang",
+            "Jeffrey H. Chuang",
+            "K. Chae"
+          ],
+          "year": 2020,
+          "date": "2020",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "e3c9fa8f2a6d40c383462c1b455f417086a6ab90",
+          "url": "https://www.semanticscholar.org/paper/e3c9fa8f2a6d40c383462c1b455f417086a6ab90",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "A Numerical Study on the Reinforcement Method of a Pillar Using Tension Bolts at the Connecting Part between 2-Arch Tunnels and Parallel Tunnels",
+          "authors": [
+            "Yeonjun Park",
+            "Jaeyoun Choi"
+          ],
+          "year": 2015,
+          "date": "2015-10-31",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "46615d02567ef60e84eb7a309b13a5551c85539d",
+          "url": "https://www.semanticscholar.org/paper/46615d02567ef60e84eb7a309b13a5551c85539d",
+          "abstract": "Abstract Two-arch tunnels require minimal spacing between the 2 tunnels and thus occupy small amount of land compared to parallel tunnels. But it is rather expensive. The parallel tunnel is not as expensive, but it requires more land than 2-arch tunnels. This may cause a problem when there is a land shortage. The new design is to connect these two types of tunnels by another pair of parallel tunnels where the separation distance is gradually increasing. The applicability of this new design to the cases where rock condition is not even fair has to be verified since the width of the pillar between the connecting tunnels can be quite narrow. Therefore both two and three dimensional numerical analyses were conducted and pillar stability was examined for rock classes IV and V in two different ways. Results showed that this new design is still effective for poor rock conditions if central pillar is properly reinforced by tension bolts as long as overburden is less than five times of the tunnel diameter.Key words 2-arch tunnel, Parallel tunnel, Pillar 2-arch varying section tunnel, Tension bolt초 록 2-아치 터널은 터널의 간격이 매우 좁아서 병렬 터널에 비해 점유 면적이 작으나 경제적이지 못하다 . 병렬 터널은 경제적이긴 하지만 2-아치 터널보다 점유 면적이 커서 용지의 매입이 어려운 경우에는 문제가 될 수 있다. 새로운 설계는 이 두 터널을 터널의 간격이 점차 증가하는 제 3의 병렬터널로 연결시키는 것이다. 접속 터널의 필라는 폭이 매우 좁을 수 있기 때문에 이 새로운 설계를 불량한 암반에 적용하려면 검증이 필요하다 . 이에 4등급 및 5등급 암반에 대해 2차원 및 3차원 수치해석을 이용하여 2가지 방법으로 안정성 검토를 수행하였다. 검토 결과, 중앙 필라가 텐션 볼트로 적절히 보강된다면 터널 심도가 직경의 5배 이하인 경우에는 적용이 가능하였다.핵심어 2-아치 터널, 병렬 터널, 2-arch 변단면 터널, 필라, 텐션 볼트",
+          "subjects": []
+        },
+        {
+          "title": "A Case Study on the Design and Construction of a 2-arch Tunnel with Varying Section",
+          "authors": [
+            "Jaeyoun Choi",
+            "Yeonjun Park",
+            "Si-Keun Kim",
+            "Jae-Hyun Park"
+          ],
+          "year": 2012,
+          "date": "2012-10-31",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "665d73ea72389c4ed2a3bb9e0cf67ed49a002262",
+          "url": "https://www.semanticscholar.org/paper/665d73ea72389c4ed2a3bb9e0cf67ed49a002262",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Docetaxel and Cisplatin Combination Chemotherapy in Patients with Squamous Cell Carcinomas of the Head and Neck.",
+          "authors": [
+            "Jung Hyun Lee",
+            "K. Lee",
+            "Young-jin Choi",
+            "Jaeyoun Choi",
+            "H. Shin",
+            "J. Chung",
+            "G. Cho",
+            "B. Lee",
+            "Soo-Geun Wang"
+          ],
+          "year": 2003,
+          "date": "2003-06-30",
+          "citations": 3,
+          "arxiv_id": null,
+          "paper_id": "203b73b816abdd275ce00fe678c04340c6352d1d",
+          "url": "https://www.semanticscholar.org/paper/203b73b816abdd275ce00fe678c04340c6352d1d",
+          "abstract": "",
+          "subjects": []
+        }
+      ]
     ],
     [
       "Oswin So",
@@ -2780,7 +2781,7 @@
             "Zewen Yang"
           ],
           "date": "2026-03-05",
-          "citations": 1,
+          "citations": 0,
           "arxiv_id": "2603.05754v2",
           "url": "https://arxiv.org/abs/2603.05754v2",
           "abstract": "Current Vision-Language-Action (VLA) models rely primarily on RGB perception, preventing them from capturing modalities such as thermal signals that are imperceptible to conventional visual sensors. Moreover, end-to-end generative policies lack explicit safety constraints, making them fragile when encountering obstacles and novel scenarios outside the training distribution. To address these limitations, we propose Safe-Night VLA, a multimodal manipulation framework that enables robots to see the unseen while enforcing rigorous safety constraints for thermal-aware manipulation in unstructured environments. Specifically, Safe-Night VLA integrates long-wave infrared thermal perception into a pre-trained vision-language backbone, enabling semantic reasoning grounded in thermodynamic properties. To ensure safe execution under out-of-distribution conditions, we incorporate a safety filter via control barrier functions, which provide deterministic workspace constraint enforcement during policy execution. We validate our framework through real-world experiments on a Franka manipulator, introducing a novel evaluation paradigm featuring temperature-conditioned manipulation, subsurface target localization, and reflection disambiguation, while maintaining constrained execution at inference time. Results demonstrate that Safe-Night VLA outperforms RGB-only baselines and provide empirical evidence that foundation models can effectively leverage non-visible physical modalities for robust manipulation.",
@@ -2829,7 +2830,7 @@
             "Xiao He"
           ],
           "date": "2025-12-09",
-          "citations": 20,
+          "citations": 0,
           "arxiv_id": "2512.11891v2",
           "url": "https://arxiv.org/abs/2512.11891v2",
           "abstract": "Vision-Language-Action (VLA) models have demonstrated remarkable capabilities in generalizing across diverse robotic manipulation tasks. However, deploying these models in unstructured environments remains challenging due to the critical need for simultaneous task compliance and safety assurance, particularly in preventing potential collisions during physical interactions. In this work, we introduce a Vision-Language-Safe Action (VLSA) architecture, named AEGIS, which contains a plug-and-play safety constraint (SC) layer formulated via control barrier functions. AEGIS integrates directly with existing VLA models to improve safety with theoretical guarantees, while maintaining their original instruction-following performance. To evaluate the efficacy of our architecture, we construct a comprehensive safety-critical benchmark SafeLIBERO, spanning distinct manipulation scenarios characterized by varying degrees of spatial complexity and obstacle intervention. Extensive experiments demonstrate the superiority of our method over state-of-the-art baselines. Notably, AEGIS achieves over 50% improvement in obstacle avoidance rate while substantially increasing the task success rate by nearly 10%. All benchmark datasets, code, and supplementary materials are publicly available at https://vlsa-aegis.github.io/.",
@@ -2852,7 +2853,7 @@
             "Nora Ayanian"
           ],
           "date": "2025-10-03",
-          "citations": 1,
+          "citations": 0,
           "arxiv_id": "2510.03504v3",
           "url": "https://arxiv.org/abs/2510.03504v3",
           "abstract": "Connectivity is crucial in many multi-robot applications, yet balancing connectivity maintenance and fleet traversability in obstacle-rich environments remains challenging. Reactive controllers based on control barrier functions can preserve connectivity when it is initially satisfied, but often struggle with deadlocks in cluttered environments. We propose a real-time Bézier-based constrained motion planning algorithm, namely MPC--CLF--CBF, that produces trajectories and control inputs concurrently, subject to high-order control barrier function and control Lyapunov function constraints. Our motion planner supports connectivity-aware navigation in cluttered workspaces and recovers connectivity from initially disconnected configurations and after temporary obstacle-induced separation; it also provides analytic continuous-time derivatives, facilitating its application to agile differentially flat systems such as quadrotors. In simulations with $4$--$12$ robots, it maintains $95.8$--$100\\%$ graph-connected time at $20\\%$ obstacle density, compared with $48.9$--$61.3\\%$ for MPC--CBF, with no observed collisions. We further validate the planner in a physical experiment with $8$ Crazyflie nano-quadrotors.",
