@@ -803,7 +803,7 @@
         "Aaron D. Ames"
       ],
       "date": "2026-06-14",
-      "citations": 0,
+      "citations": 1,
       "arxiv_id": "2606.15942v1",
       "url": "https://arxiv.org/abs/2606.15942v1",
       "abstract": "Multi-constraint safety filters based on control barrier functions for linear systems with affine state constraints yield continuous piecewise-affine closed-loop dynamics and may introduce boundary equilibria and unstable active-set modes. Although they guarantee forward invariance, they can change nominal stability, and it remains unclear when unstable modes cause divergence versus bounded, convergent behavior. This paper develops a geometric framework to separate these cases: leveraging explicit active-set realizations, we show that equilibria associated with nonempty active sets lie on the corresponding constraint faces and that any unstable directions are tangent to those faces due to exponential enforcement of the active constraints. We characterize mode stability via a minimum-phase test, certify divergence under fixed active sets using recession cones, and derive tractable linear-matrix-inequality conditions for global exponential stability or boundedness using Lyapunov and LaSalle arguments.",
@@ -1005,7 +1005,7 @@
             "Aaron D. Ames"
           ],
           "date": "2026-06-14",
-          "citations": 0,
+          "citations": 1,
           "arxiv_id": "2606.15942v1",
           "url": "https://arxiv.org/abs/2606.15942v1",
           "abstract": "Multi-constraint safety filters based on control barrier functions for linear systems with affine state constraints yield continuous piecewise-affine closed-loop dynamics and may introduce boundary equilibria and unstable active-set modes. Although they guarantee forward invariance, they can change nominal stability, and it remains unclear when unstable modes cause divergence versus bounded, convergent behavior. This paper develops a geometric framework to separate these cases: leveraging explicit active-set realizations, we show that equilibria associated with nonempty active sets lie on the corresponding constraint faces and that any unstable directions are tangent to those faces due to exponential enforcement of the active constraints. We characterize mode stability via a minimum-phase test, certify divergence under fixed active sets using recession cones, and derive tractable linear-matrix-inequality conditions for global exponential stability or boundedness using Lyapunov and LaSalle arguments.",
@@ -1213,338 +1213,9 @@
           "subjects": [
             "eess.SY"
           ]
-        },
-        {
-          "title": "An Error-Based Safety Buffer for Safe Adaptive Control (Extended Version)",
-          "authors": [
-            "Peter A. Fisher",
-            "Johannes Autenrieb",
-            "Anuradha M. Annaswamy"
-          ],
-          "year": 2025,
-          "date": "2025-10-27",
-          "citations": 0,
-          "arxiv_id": "2510.23491",
-          "paper_id": "da04e9d72ba195daedcef9a1b7b9be4cfddbf336",
-          "url": "https://arxiv.org/abs/2510.23491",
-          "abstract": "We consider the problem of adaptive control of a class of feedback linearizable plants with matched parametric uncertainties whose states are accessible, subject to state constraints, which often arise due to safety considerations. In this paper, we combine adaptation and control barrier functions into a real-time control architecture that guarantees stability, ensures control performance, and remains safe even with the parametric uncertainties. Two problems are considered, differing in the nature of the parametric uncertainties. In both cases, the control barrier function is assumed to have an arbitrary relative degree. In addition to guaranteeing stability, it is proved that both the control objective and safety objective are met with near-zero conservatism. No excitation conditions are imposed on the command signal. Simulation results demonstrate the non-conservatism of all of the theoretical developments.",
-          "subjects": []
-        },
-        {
-          "title": "Safe and Stable Formation Control with Autonomous Multi-Agents Using Adaptive Control",
-          "authors": [
-            "Jose A. Solano-Castellanos",
-            "Peter A. Fisher",
-            "Anuradha Annaswamy"
-          ],
-          "year": 2024,
-          "date": "2024-03-23",
-          "citations": 0,
-          "arxiv_id": "2403.15674",
-          "paper_id": "dab65e947ed4a0d9fb9f330e250a97bc7ffc5869",
-          "url": "https://arxiv.org/abs/2403.15674",
-          "abstract": "This manuscript considers the problem of ensuring stability and safety during formation control with distributed multi-agent systems in the presence of parametric uncertainty in the dynamics and limited communication. We propose an integrative approach that combines Adaptive Control, Control Barrier Functions (CBFs), and connected graphs. The main elements employed in the integrative approach are an adaptive control design that ensures stability, a CBF-based safety filter that generates safe commands based on a reference model dynamics, and a reference model that ensures formation control with multi-agent systems when no uncertainties are present. The overall control design is shown to lead to a closed-loop adaptive system that is stable, avoids unsafe regions, and converges to a desired formation of the multi-agents. Numerical examples are provided to support the theoretical derivations.",
-          "subjects": []
         }
       ],
-      [
-        {
-          "title": "Effects of a Neutral Response Option on Occupational Interest Circumplex Fit",
-          "authors": [
-            "Sabah Rasheed",
-            "C. Robie",
-            "Peter A. Fisher"
-          ],
-          "year": 2023,
-          "date": "2023-05-01",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "d448f0ee56e2a5805deebe684e570b54e18eafc2",
-          "url": "https://www.semanticscholar.org/paper/d448f0ee56e2a5805deebe684e570b54e18eafc2",
-          "abstract": "Abstract: Introduction: The purpose of this study was to compare the structural validity of Holland’s circular/hexagonal model in two versions of a commonly used Realistic, Investigative, Artistic, Social, Enterprising, Conventional (RIASEC) occupational interest measure – one that used items with a neutral response option ( unsure) and one that used items without a neutral response option. Method: These comparisons were made using a sample of 1,025 undergraduate university business majors. A two-group Cosine Function Model (CFM) implemented in standard structural equation modeling software was used to investigate the circumplex fit across the two versions of the assessment. Results: CFM analyses suggested a high level of equivalence across versions such that (1) the correlation matrix of each group shows a good fit to the RIASEC circumplex, and (2) the two correlation matrices are essentially identical. Conclusion: The neutral response option (or lack thereof) did not seem to affect model fit. The generalizability of these results should be explored in future studies.",
-          "subjects": []
-        },
-        {
-          "title": "Resumes vs. application forms: Why the stubborn reliance on resumes?",
-          "authors": [
-            "Stephen D. Risavy",
-            "C. Robie",
-            "Peter A. Fisher",
-            "Sabah Rasheed"
-          ],
-          "year": 2022,
-          "date": "2022-07-28",
-          "citations": 6,
-          "arxiv_id": null,
-          "paper_id": "bb9ad9ab3c1dc01cde3c1a0a50377772f3869491",
-          "url": "https://www.semanticscholar.org/paper/bb9ad9ab3c1dc01cde3c1a0a50377772f3869491",
-          "abstract": "The focus of this Perspective article is on the comparison of two of the most popular initial applicant screening methods: Resumes and application forms. The viewpoint offered is that application forms are superior to resumes during the initial applicant screening stage of selection. This viewpoint is supported in part based on criterion-related validity evidence that favors application forms over resumes. For example, the biographical data (biodata) inventory, which can contain similar questions to those used in application forms, is one of the most valid predictors of job performance (if empirically keyed), whereas job experience and years of education, which are often inferred from resumes and cover letters, are two of the least valid predictors of job performance (among commonly used screening criteria). In addition to validity evidence, making decisions based on application forms as opposed to resumes is likely to help organizations defend against claims of discriminatory hiring while enhancing their ability to hire in a more diverse, equitable, and inclusive manner. For example, applicant names on resumes can lead to screening bias against members of identifiable subgroups, whereas an applicant’s name can be easily and automatically hidden from decision-makers when reviewing application forms (particularly digital application forms). Despite these convincing arguments focused on applicant quality and diversity, a substantial research–practice gap regarding the use of resumes and cover letters remains.",
-          "subjects": []
-        },
-        {
-          "title": "Discrete-Time Adaptive Control of a Class of Nonlinear Systems Using High-Order Tuners",
-          "authors": [
-            "Peter A. Fisher",
-            "A. Annaswamy"
-          ],
-          "year": 2022,
-          "date": "2022-04-26",
-          "citations": 0,
-          "arxiv_id": "2204.12634",
-          "paper_id": "c201161cdaa59c9cc72e8103e3459d47f6ce8282",
-          "url": "https://arxiv.org/abs/2204.12634",
-          "abstract": "This paper concerns the adaptive control of a class of discrete-time nonlinear systems with all states accessible. Recently, a high-order tuner algorithm was developed for the minimization of convex loss functions with time-varying regressors in the context of an identification problem. Based on Nesterov’s algorithm, the high-order tuner was shown to guarantee bounded parameter estimation when regressors vary with time, and to lead to accelerated convergence of the tracking error when regressors are constant. In this paper, we apply the high-order tuner to the adaptive control of a particular class of discrete-time nonlinear dynamical systems. First, we show that for plants of this class, the underlying dynamical error model can be causally converted to an algebraic error model. Second, we show that using this algebraic error model, the high-order tuner can be applied to provably stabilize the class of dynamical systems around a reference trajectory.",
-          "subjects": []
-        },
-        {
-          "title": "Little cause for concern: Analysis of gender effects in structured employment references",
-          "authors": [
-            "Peter A. Fisher",
-            "C. Robie",
-            "C. Hedricks",
-            "D. D. Rupayana",
-            "Leigh Puchalski"
-          ],
-          "year": 2022,
-          "date": "2022-03-20",
-          "citations": 3,
-          "arxiv_id": null,
-          "paper_id": "ba4a7ba2753c4286b60ae0eb3b0ed3cf34702427",
-          "url": "https://www.semanticscholar.org/paper/ba4a7ba2753c4286b60ae0eb3b0ed3cf34702427",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Integration of Adaptive Control and Reinforcement Learning for Real-Time Control and Learning",
-          "authors": [
-            "A. Annaswamy",
-            "A. Guha",
-            "Yingnan Cui",
-            "Sunbochen Tang",
-            "Peter A. Fisher",
-            "Joseph E. Gaudio"
-          ],
-          "year": 2021,
-          "date": "2021-05-13",
-          "citations": 0,
-          "arxiv_id": "2105.06577",
-          "paper_id": "7d8b932624e00da64f653e40285459c81fb16e7f",
-          "url": "https://arxiv.org/abs/2105.06577",
-          "abstract": "This article considers the problem of real-time control and learning in dynamic systems subjected to parameteric uncertainties. We propose a combination of a reinforcement learning (RL)-based policy in the outer loop suitably chosen to ensure stability and optimality for the nominal dynamics, together with adaptive control (AC) in the inner loop so that in real-time AC contracts the closed-loop dynamics toward a stable trajectory traced out by RL. In total, two classes of nonlinear dynamic systems are considered, both of which are control affine. The first class of dynamic systems utilizes equilibrium points and a Lyapunov approach, whereas second class of nonlinear systems uses contraction theory. AC-RL controllers are proposed for both classes of systems and shown to lead to online policies that guarantee stability using a high-order tuner and accommodate parameteric uncertainties and magnitude limits on the input. In addition to establishing a stability guarantee with real-time control, the AC-RL controller is also shown to lead to parameter learning with persistent excitation for the first class of systems. Numerical validations of all algorithms are carried out using a quadrotor landing task on a moving platform.",
-          "subjects": []
-        },
-        {
-          "title": "Selection tool use in Canadian tech companies: Assessing and explaining the research–practice gap.",
-          "authors": [
-            "Stephen D. Risavy",
-            "C. Robie",
-            "Peter A. Fisher",
-            "Jennifer Komar",
-            "Andrew Perossa"
-          ],
-          "year": 2021,
-          "date": "2021-04-15",
-          "citations": 2,
-          "arxiv_id": null,
-          "paper_id": "55004b2028d7ebfe697776f7b77213a30013e32a",
-          "url": "https://www.semanticscholar.org/paper/55004b2028d7ebfe697776f7b77213a30013e32a",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "International comparison of gender differences in the five-factor model of personality: An investigation across 105 countries",
-          "authors": [
-            "S. Murphy",
-            "Peter A. Fisher",
-            "C. Robie"
-          ],
-          "year": 2021,
-          "date": "2021-02-01",
-          "citations": 43,
-          "arxiv_id": null,
-          "paper_id": "d407f20fd9cabb01d65be271084de17849e8b1b5",
-          "url": "https://www.semanticscholar.org/paper/d407f20fd9cabb01d65be271084de17849e8b1b5",
-          "abstract": "Abstract Researchers have been interested in cross-cultural gender differences in personality for decades. Early research on the five factor (FFM) model of personality focused on estimating the difference between men and women on personality dimensions, however results have varied. Using a large cross-country sample of personality data and advanced analytic techniques, we uncover accurate estimates of cross-country gender differences in personality. Relatively small ( δ I ? ^ δ I ? ^ = .38) and Agreeableness ( δ I ? ^ = -.17). After controlling for socioeconomic indicators, gender indicators, and Type I error, only country-level Individualism accounted for unique variance in effect size differences for Emotional Stability. Implications and future directions are discussed.",
-          "subjects": []
-        },
-        {
-          "title": "Selection Myths",
-          "authors": [
-            "Peter A. Fisher",
-            "Stephen D. Risavy",
-            "C. Robie",
-            "Cornelius J. König",
-            "Neil D. Christiansen",
-            "R. Tett",
-            "D. Simonet"
-          ],
-          "year": 2020,
-          "date": "2020-11-12",
-          "citations": 19,
-          "arxiv_id": null,
-          "paper_id": "dc19fea452994ad22897bbb5f563b942acbc4806",
-          "url": "https://www.semanticscholar.org/paper/dc19fea452994ad22897bbb5f563b942acbc4806",
-          "abstract": "Abstract. After nearly two decades of awareness on the research–practice gap in human resource management, this study updates and expands on the seminal findings of Rynes et al. (2002) specific to personnel selection. In a sample of 453 human resource (HR) practitioners in the US and Canada, we found that the research–practice gap persists. Notably, compared to the 2002 findings, HR practitioners tended to be worse at identifying personnel selection myths than was shown by Rynes et al. over 15 years ago, while those who reported not conducting validity studies were surprisingly better at identifying several myths as false. Several potential avenues for advancement are suggested in light of the disturbing stubbornness of the research–practice gap in personnel selection.",
-          "subjects": []
-        },
-        {
-          "title": "Criterion-related Validity of Forced-Choice Personality Measures: A Cautionary Note Regarding Thurstonian IRT versus Classical Test Theory Scoring",
-          "authors": [
-            "Peter A. Fisher",
-            "C. Robie",
-            "Neil D. Christiansen",
-            "Andrew B. Speer",
-            "L. Schneider"
-          ],
-          "year": 2019,
-          "date": "2019-07-01",
-          "citations": 29,
-          "arxiv_id": null,
-          "paper_id": "d7424a6a4f286041fddced61a6edf64a4acba90a",
-          "url": "https://www.semanticscholar.org/paper/d7424a6a4f286041fddced61a6edf64a4acba90a",
-          "abstract": "This study examined criterion-related validity for job-related composites of forced-choice personality scores against job performance using both Thurstonian Item Response Theory (TIRT) and Classical Test Theory (CTT) scoring methods. Correlations were computed across 11 different samples that differed in job or role within a job. A meta-analysis of the correlations (k = 11 and N = 613) found a higher average corrected correlation for CTT (mean ρ = .38) than for TIRT (mean ρ = .00). Implications and directions for future research are discussed.",
-          "subjects": []
-        },
-        {
-          "title": "Selection Tool Use: A Focus on Personality Testing in Canada, the United States, and Germany",
-          "authors": [
-            "Stephen D. Risavy",
-            "Peter A. Fisher",
-            "C. Robie",
-            "Cornelius J. König"
-          ],
-          "year": 2019,
-          "date": "2019-07-01",
-          "citations": 20,
-          "arxiv_id": null,
-          "paper_id": "b44326718ee35c3270451d6355a4c54405f91438",
-          "url": "https://www.semanticscholar.org/paper/b44326718ee35c3270451d6355a4c54405f91438",
-          "abstract": "The purpose of this paper is to provide new data regarding the current staffing practices being used by organizations in Canada and the United States (US) as well as a comparison with existing data from Germany (Diekmann & König, 2015). Data regarding the beliefs of human resource (HR) practitioners in terms of using personality tests in personnel selection is also provided. A geographically representative sample of 453 HR practitioners across Canada and the US were surveyed. Although general mental ability testing has previously been found to be highly valid and cost effective, this selection tool was among the least commonly used in all three countries. Personality tests were also rarely used (especially in Canada and the US) and research–practice gaps still appear to be an issue (e.g., HR practitioners’ preference for personality types as opposed to traits).",
-          "subjects": []
-        },
-        {
-          "title": "Tilting at windmills and improving personality assessment practices",
-          "authors": [
-            "Neil D. Christiansen",
-            "Peter A. Fisher",
-            "C. Robie",
-            "Stuart W. Quirk"
-          ],
-          "year": 2019,
-          "date": "2019-06-01",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "8c70aed1d73dfbb8ef7d5e30cc0acba738c57cc0",
-          "url": "https://www.semanticscholar.org/paper/8c70aed1d73dfbb8ef7d5e30cc0acba738c57cc0",
-          "abstract": "Melson-Silimon, Harris, Shoenfelt, Miller, and Carter (2019) bring attention to the use of normative personality inventories for pre-employment testing in light of the Americans with Disabilities Act (ADA) and recent developments in research on personality. Although they review some of the legal guidelines and case precedent, they concede that no court case has yet taken issue with personality tests that did not contain items based on the Minnesota Multiphasic Personality Inventory (MMPI; Hathaway & McKinley, 1942) and offer some suggestions for employers who wish to conduct personality assessments without potential conflict with the ADA. In this commentary, we discuss why concerns raised in the focal article may not prove to be problematic after all and offer advice for employers based on best practice in the area.",
-          "subjects": []
-        },
-        {
-          "title": "Factors affecting compliance with reference check requests",
-          "authors": [
-            "C. Hedricks",
-            "D. D. Rupayana",
-            "Peter A. Fisher",
-            "C. Robie"
-          ],
-          "year": 2019,
-          "date": "2019-04-25",
-          "citations": 9,
-          "arxiv_id": null,
-          "paper_id": "153d7fd5e9b1a62935c8e0c34505f088d41bb6fe",
-          "url": "https://www.semanticscholar.org/paper/153d7fd5e9b1a62935c8e0c34505f088d41bb6fe",
-          "abstract": "Structured reference checks have been demonstrated to be a reliable and valid predictor of job performance. However, the reference check is a unique assessment method for personnel selection in that a third party, the reference provider, is the source of the critical information on the candidate. If a reference provider is unwilling to either partially or fully comply with a reference check request, the usefulness of the reference check is likely to be compromised. This study examined the factors affecting compliance of the potential reference provider with a reference check request. The sample consisted of 905 U.S. adults who were recruited through the Prolific online crowdsourcing platform (). We asked the participants a series of questions related to their actual experiences over the past year in responding to reference check requests. We also included a between‐subjects scenario that examined whether job candidate performance, relationship to job candidate, and method of providing the employment reference would affect hypothetical compliance. The results of the study can be used to more deeply understand the factors that are related to the compliance of the reference provider, and as a result, more fully understand the value of the reference check for selection.",
-          "subjects": []
-        },
-        {
-          "title": "A latent profile analysis of the Five Factor Model of personality: A constructive replication and extension",
-          "authors": [
-            "Peter A. Fisher",
-            "C. Robie"
-          ],
-          "year": 2019,
-          "date": "2019-03-01",
-          "citations": 44,
-          "arxiv_id": null,
-          "paper_id": "b581fa3cf7d4fbf18bea52114270e873c4fbff53",
-          "url": "https://www.semanticscholar.org/paper/b581fa3cf7d4fbf18bea52114270e873c4fbff53",
-          "abstract": "Abstract Recent research into the underlying structure of personality has created considerable debate among academics. Further, a new, person-centered approach to studying personality has recently gathered support, but results have been underwhelming and inconsistent. The present study steps into the debate from a new angle with a constructive replication and derives a model of latent personality profiles in an archival sample of over three million respondents from almost every country in the world who completed a Five-Factor Model of personality questionnaire and other work and life outcomes measures. Three latent profiles emerged from this analysis, which were characterized by the degree to which respondents endorsed the traits of Conscientiousness, Extraversion, Agreeableness, and Emotional Stability. The trait of Openness to Experience did not appear to discriminate between the three latent profiles. Consistent with socioanalytic theory, evolutionary psychology, and more nascent theory on the general factor of personality, personality profiles were labelled as maladaptive, adaptive, and highly adaptive. More adaptive personality profiles were associated with higher life satisfaction, job self-efficacy, and passion towards work, as well as favorable value systems. Theoretical implications are subsequently discussed.",
-          "subjects": []
-        },
-        {
-          "title": "The impact of psychopathy and warnings on faking behavior: A multisaturation perspective",
-          "authors": [
-            "Peter A. Fisher",
-            "C. Robie",
-            "Neil D. Christiansen",
-            "Shawn Komar"
-          ],
-          "year": 2018,
-          "date": "2018-06-01",
-          "citations": 10,
-          "arxiv_id": null,
-          "paper_id": "b82166e9e702c57ec25fa4ed52819f87e1880859",
-          "url": "https://www.semanticscholar.org/paper/b82166e9e702c57ec25fa4ed52819f87e1880859",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "International comparison of group differences in general mental ability for immigrants versus non-immigrants",
-          "authors": [
-            "C. Robie",
-            "Neil D. Christiansen",
-            "P. Hausdorf",
-            "S. Murphy",
-            "Peter A. Fisher",
-            "Stephen D. Risavy",
-            "Lisa M. Keeping"
-          ],
-          "year": 2017,
-          "date": "2017-12-01",
-          "citations": 3,
-          "arxiv_id": null,
-          "paper_id": "669d69aef92211fbcf32411266b063af6a575c89",
-          "url": "https://www.semanticscholar.org/paper/669d69aef92211fbcf32411266b063af6a575c89",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Hiding in Plain Sight: Identifying Computational Thinking in the Ontario Elementary School Curriculum",
-          "authors": [
-            "Eden J. Hennessey",
-            "Julie Mueller",
-            "D. Beckett",
-            "Peter A. Fisher"
-          ],
-          "year": 2017,
-          "date": "2017-04-10",
-          "citations": 12,
-          "arxiv_id": null,
-          "paper_id": "7617d676f58e024520ef2bbb2dbafd779bf4df1e",
-          "url": "https://www.semanticscholar.org/paper/7617d676f58e024520ef2bbb2dbafd779bf4df1e",
-          "abstract": "Given a growing digital economy with complex problems, demands are being made for education to address computational thinking (CT) – an approach to problem solving that draws on the tenets of computer science. We conducted a comprehensive content analysis of the Ontario elementary school curriculum documents for 44 CT-related terms to examine the extent to which CT may already be considered within the curriculum. The quantitative analysis strategy provided frequencies of terms, and a qualitative analysis provided information about how and where terms were being used. As predicted, results showed that while CT terms appeared mostly in Mathematics, and concepts and perspectives were more frequently cited than practices, related terms appeared across almost all disciplines and grades. Findings suggest that CT is already a relevant consideration for educators in terms of concepts and perspectives; however, CT practices should be more widely incorporated to promote 21st century skills across disciplines. Future research would benefit from continued examination of the implementation and assessment of CT and its related concepts, practices, and perspectives.",
-          "subjects": []
-        },
-        {
-          "title": "Retirement System Risk Management: Implications of the New Regulatory Order",
-          "authors": [
-            "Peter A. Fisher",
-            "O. Mitchell",
-            "Ralph Rogalla",
-            "Ivonne Siegelin",
-            "Thomas Harvey",
-            "B. Hoffman"
-          ],
-          "year": 2016,
-          "date": "2016-10-13",
-          "citations": 7,
-          "arxiv_id": null,
-          "paper_id": "642cf77cbedb7720bce2ce80b049dfb726b59665",
-          "url": "https://www.semanticscholar.org/paper/642cf77cbedb7720bce2ce80b049dfb726b59665",
-          "abstract": "",
-          "subjects": []
-        }
-      ]
+      []
     ],
     [
       "Anuradha Annaswamy",
@@ -1615,7 +1286,7 @@
             "Aaron D. Ames"
           ],
           "date": "2026-06-14",
-          "citations": 0,
+          "citations": 1,
           "arxiv_id": "2606.15942v1",
           "url": "https://arxiv.org/abs/2606.15942v1",
           "abstract": "Multi-constraint safety filters based on control barrier functions for linear systems with affine state constraints yield continuous piecewise-affine closed-loop dynamics and may introduce boundary equilibria and unstable active-set modes. Although they guarantee forward invariance, they can change nominal stability, and it remains unclear when unstable modes cause divergence versus bounded, convergent behavior. This paper develops a geometric framework to separate these cases: leveraging explicit active-set realizations, we show that equilibria associated with nonempty active sets lie on the corresponding constraint faces and that any unstable directions are tangent to those faces due to exponential enforcement of the active constraints. We characterize mode stability via a minimum-phase test, certify divergence under fixed active sets using recession cones, and derive tractable linear-matrix-inequality conditions for global exponential stability or boundedness using Lyapunov and LaSalle arguments.",
@@ -1655,7 +1326,7 @@
             "Aaron D. Ames"
           ],
           "date": "2026-06-14",
-          "citations": 0,
+          "citations": 1,
           "arxiv_id": "2606.15942v1",
           "url": "https://arxiv.org/abs/2606.15942v1",
           "abstract": "Multi-constraint safety filters based on control barrier functions for linear systems with affine state constraints yield continuous piecewise-affine closed-loop dynamics and may introduce boundary equilibria and unstable active-set modes. Although they guarantee forward invariance, they can change nominal stability, and it remains unclear when unstable modes cause divergence versus bounded, convergent behavior. This paper develops a geometric framework to separate these cases: leveraging explicit active-set realizations, we show that equilibria associated with nonempty active sets lie on the corresponding constraint faces and that any unstable directions are tangent to those faces due to exponential enforcement of the active constraints. We characterize mode stability via a minimum-phase test, certify divergence under fixed active sets using recession cones, and derive tractable linear-matrix-inequality conditions for global exponential stability or boundedness using Lyapunov and LaSalle arguments.",
@@ -1673,7 +1344,7 @@
           ],
           "year": 2026,
           "date": "2026-03-18",
-          "citations": 1,
+          "citations": 0,
           "arxiv_id": "2603.17401",
           "paper_id": "c0036bf746231a16dfbbce284f0bcf142ecd302d",
           "url": "https://arxiv.org/abs/2603.17401",
@@ -1737,9 +1408,471 @@
             "cs.RO",
             "eess.SY"
           ]
+        },
+        {
+          "title": "Explicit Control Barrier Function-based Safety Filters and their Resource-Aware Computation",
+          "authors": [
+            "Pol Mestres",
+            "S. Mousavi",
+            "Pio Ong",
+            "Lizhi Yang",
+            "Ersin Daş",
+            "J. W. Burdick",
+            "A. Ames"
+          ],
+          "year": 2025,
+          "date": "2025-12-10",
+          "citations": 0,
+          "arxiv_id": "2512.10118",
+          "paper_id": "ebe4e2b7c47bf755bebd6b8fee154a0c8cf83638",
+          "url": "https://arxiv.org/abs/2512.10118",
+          "abstract": "This paper studies the efficient implementation of safety filters that are designed using control barrier functions (CBFs), which minimally modify a nominal controller to render it safe with respect to a prescribed set of states. Although CBF-based safety filters are often implemented by solving a quadratic program (QP) in real time, the use of off-the-shelf solvers for such optimization problems poses a challenge in applications where control actions need to be computed efficiently at very high frequencies. In this paper, we introduce a closed-form expression for controllers obtained through CBF-based safety filters. This expression is obtained by partitioning the state-space into different regions, with a different closed-form solution in each region. We leverage this formula to introduce a resource-aware implementation of CBF-based safety filters that detects changes in the partition region and uses the closed-form expression between changes. We showcase the applicability of our approach in examples ranging from aerospace control to safe reinforcement learning.",
+          "subjects": []
+        },
+        {
+          "title": "Safe Payload Transfer with Ship-Mounted Cranes: A Robust Model Predictive Control Approach",
+          "authors": [
+            "Ersin Daş",
+            "W. A. Welch",
+            "Patrick Spieler",
+            "Keenan Albee",
+            "Aurelio Noca",
+            "Jeffrey A. Edlund",
+            "Jonathan Becktor",
+            "Thomas Touma",
+            "Jessica Todd",
+            "Sriramya Bhamidipati",
+            "Stella Kombo",
+            "Maíra Saboia",
+            "Anna Sabel",
+            "Grace Lim",
+            "Rohan Thakker",
+            "Amir Rahmani",
+            "J. W. Burdick"
+          ],
+          "year": 2025,
+          "date": "2025-10-19",
+          "citations": 0,
+          "arxiv_id": "2510.16953",
+          "paper_id": "582272f5106648421223dc097c9a55a325467a37",
+          "url": "https://arxiv.org/abs/2510.16953",
+          "abstract": "Ensuring safe real-time control of ship-mounted cranes in unstructured transportation environments requires handling multiple safety constraints while maintaining effective payload transfer performance. Unlike traditional crane systems, ship-mounted cranes are consistently subjected to significant external disturbances affecting underactuated crane dynamics due to the ship's dynamic motion response to harsh sea conditions, which can lead to robustness issues. To tackle these challenges, we propose a robust and safe model predictive control (MPC) framework and demonstrate it on a 5-DOF crane system, where a Stewart platform simulates the external disturbances that ocean surface motions would have on the supporting ship. The crane payload transfer operation must avoid obstacles and accurately place the payload within a designated target area. We use a robust zero-order control barrier function (R-ZOCBF)-based safety constraint in the nonlinear MPC to ensure safe payload positioning, while time-varying bounding boxes are utilized for collision avoidance. We introduce a new optimization-based online robustness parameter adaptation scheme to reduce the conservativeness of R-ZOCBFs. Experimental trials on a crane prototype demonstrate the overall performance of our safe control approach under significant perturbing motions of the crane base. While our focus is on crane-facilitated transfer, the methods more generally apply to safe robotically-assisted parts mating and parts insertion.",
+          "subjects": []
+        },
+        {
+          "title": "Safety-Critical Control with Bounded Inputs: A Closed-Form Solution for Backup Control Barrier Functions",
+          "authors": [
+            "D. V. Wijk",
+            "Ersin Daş",
+            "T. G. Molnár",
+            "A. D. Ames",
+            "J. W. Burdick"
+          ],
+          "year": 2025,
+          "date": "2025-10-06",
+          "citations": 0,
+          "arxiv_id": "2510.05436",
+          "paper_id": "4a39e734de2635c45a721bd37b6901fe9f00bb82",
+          "url": "https://arxiv.org/abs/2510.05436",
+          "abstract": "Verifying the safety of controllers is critical for many applications, but is especially challenging for systems with bounded inputs. Backup control barrier functions (bCBFs) offer a structured approach to synthesizing safe controllers that are guaranteed to satisfy input bounds by leveraging the knowledge of a backup controller. While powerful, bCBFs require solving a high-dimensional quadratic program at run-time, which may be too costly for computationally-constrained systems such as aerospace vehicles. We propose an approach that optimally interpolates between a nominal controller and the backup controller, and we derive the solution to this optimization problem in closed form. We prove that this closed-form controller is guaranteed to be safe while obeying input bounds. We demonstrate the effectiveness of the approach on a double integrator and a nonlinear fixed-wing aircraft example.",
+          "subjects": []
+        },
+        {
+          "title": "Safe Navigation Under State Uncertainty: Online Adaptation for Robust Control Barrier Functions",
+          "authors": [
+            "Ersin Daş",
+            "Rahal Nanayakkara",
+            "Xiao Tan",
+            "Ryan M. Bena",
+            "J. W. Burdick",
+            "Paulo Tabuada",
+            "A. Ames"
+          ],
+          "year": 2025,
+          "date": "2025-08-26",
+          "citations": 0,
+          "arxiv_id": "2508.19159",
+          "paper_id": "4561c4d400801da8aa22620155fa8a250943480e",
+          "url": "https://arxiv.org/abs/2508.19159",
+          "abstract": "Measurements and state estimates are often imperfect in control practice, posing challenges for safety-critical applications, where safety guarantees rely on accurate state information. In the presence of estimation errors, several prior robust control barrier function (R-CBF) formulations have imposed strict conditions on the input. These methods can be overly conservative and can introduce issues such as infeasibility, high control effort, etc. This work proposes a systematic method to improve R-CBFs, and demonstrates its advantages on a tracked vehicle that navigates among multiple obstacles. A primary contribution is a new optimization-based online parameter adaptation scheme that reduces the conservativeness of existing R-CBFs. In order to reduce the complexity of the parameter optimization, we merge several safety constraints into one unified numerical CBF via Poisson’s equation. We further address the dual relative degree issue that typically causes difficulty in vehicle tracking. Experimental trials demonstrate the overall performance improvement of our approach over existing formulations.",
+          "subjects": []
+        },
+        {
+          "title": "Uncertainty Estimators for Robust Backup Control Barrier Functions",
+          "authors": [
+            "D. V. Wijk",
+            "Ersin Daş",
+            "Anil Alan",
+            "Samuel Coogan",
+            "T. G. Molnár",
+            "J. W. Burdick",
+            "M. Majji",
+            "Kerianne L. Hobbs"
+          ],
+          "year": 2025,
+          "date": "2025-03-19",
+          "citations": 4,
+          "arxiv_id": "2503.15734",
+          "paper_id": "1440fddd8e2d1d985a4cfbb9aca51c9403bf9401",
+          "url": "https://arxiv.org/abs/2503.15734",
+          "abstract": "Designing safe controllers is crucial and notoriously challenging for input-constrained safety-critical control systems. Backup control barrier functions offer an approach for the construction of safe controllers online by considering the flow of the system under a backup controller. However, in the presence of model uncertainties, the flow cannot be accurately computed, making this method insufficient for safety assurance. To tackle this shortcoming, we integrate backup control barrier functions with uncertainty estimators and calculate the flow under a reconstruction of the model uncertainty while refining this estimate over time. We prove that the controllers resulting from the proposed Uncertainty Estimator Backup Control Barrier Function (UE-bCBF) approach guarantee safety, are robust to unknown disturbances, and satisfy input constraints.",
+          "subjects": []
+        },
+        {
+          "title": "Zero-Order Control Barrier Functions for Sampled-Data Systems with State and Input Dependent Safety Constraints",
+          "authors": [
+            "Xiao Tan",
+            "Ersin Daş",
+            "A. D. Ames",
+            "J. W. Burdick"
+          ],
+          "year": 2024,
+          "date": "2024-11-26",
+          "citations": 0,
+          "arxiv_id": "2411.17079",
+          "paper_id": "ee3f806d0e14948d8c82dbbbd5cfa62681e28d39",
+          "url": "https://arxiv.org/abs/2411.17079",
+          "abstract": "We propose a novel zero-order control barrier function (ZOCBF) for sampled-data systems to ensure system safety. Our formulation generalizes conventional control barrier functions and straightforwardly handles safety constraints with high-relative degrees or those that explicitly depend on both system states and inputs. The proposed ZOCBF condition does not require any differentiation operation. Instead, it involves computing the difference of the ZOCBF values at two consecutive sampling instants. We propose three numerical approaches to enforce the ZOCBF condition, tailored to different problem settings and available computational resources. We demonstrate the effectiveness of our approach through a collision avoidance example and a rollover prevention example on uneven terrains.",
+          "subjects": []
+        },
+        {
+          "title": "Minimizing Conservatism in Safety-Critical Control for Input-Delayed Systems via Adaptive Delay Estimation",
+          "authors": [
+            "Yitaek Kim",
+            "Ersin Daş",
+            "Jeeseop Kim",
+            "A. D. Ames",
+            "J. W. Burdick",
+            "Christoffer Sloth"
+          ],
+          "year": 2024,
+          "date": "2024-11-26",
+          "citations": 0,
+          "arxiv_id": "2411.17277",
+          "paper_id": "a6d5443f47fd9495b0e3b2a1e01dddc61045d49c",
+          "url": "https://arxiv.org/abs/2411.17277",
+          "abstract": "Input delays affect systems such as wirelessly connected autonomous vehicles, and may lead to safety violations. One promising way to ensure safety in the presence of delay is to employ control barrier functions (CBFs), and extensions thereof that account for uncertainty: delay adaptive CBFs (DaCBFs). This paper proposes an online adaptive safety control framework for reducing the conservatism of DaCBFs. The main idea is to reduce the maximum delay estimation error bound so that the state prediction error bound is monotonically non-increasing. To this end, we first leverage both delay estimation and the estimation error bound of a disturbance observer to derive an upper bound on the current state prediction error from the previous state. Second, we design two nonlinear programs to update the maximum delay estimation error bound satisfying the obtained state prediction error bound previously and afterwards update the maximum error bound of the future state prediction used in DaCBFs. The proposed method ensures the maximum state prediction error bound with the delay estimation is monotonically non-increasing, yielding less conservatism in DaCBFs. We verify the proposed method in an automated connected truck application, showing that the proposed method reduces the conservatism of DaCBFs.",
+          "subjects": []
+        },
+        {
+          "title": "Rollover Prevention for Mobile Robots With Control Barrier Functions: Differentiator-Based Adaptation and Projection-to-State Safety",
+          "authors": [
+            "Ersin Daş",
+            "A. D. Ames",
+            "J. Burdick"
+          ],
+          "year": 2024,
+          "date": "2024-03-13",
+          "citations": 0,
+          "arxiv_id": "2403.08916",
+          "paper_id": "bcf3c66558e65aac841e42b09fa0a19292b6cef3",
+          "url": "https://arxiv.org/abs/2403.08916",
+          "abstract": "This letter develops rollover prevention guarantees for mobile robots using control barrier function (CBF) theory, and demonstrates the method experimentally. We consider a safety measure based on a zero moment point condition through the lens of CBFs. However, these conditions depend on time-varying and noisy parameters. To address this issue, we present a differentiator-based safety-critical controller that estimates these parameters and pairs Input-to-State Stable (ISS) differentiator dynamics with CBFs to achieve rigorous safety guarantees. Additionally, to ensure safety in the presence of disturbances, we utilize a time-varying extension of Projection-to-State Safety (PSSf). The effectiveness of the proposed method is demonstrated via experiments on a tracked robot with a rollover potential on steep slopes.",
+          "subjects": []
+        },
+        {
+          "title": "Robust Control Barrier Functions Using Uncertainty Estimation With Application to Mobile Robots",
+          "authors": [
+            "Ersin Daş",
+            "J. Burdick"
+          ],
+          "year": 2024,
+          "date": "2024-01-03",
+          "citations": 0,
+          "arxiv_id": "2401.01881",
+          "paper_id": "80e376da25bed87259156bd45700639d91939667",
+          "url": "https://arxiv.org/abs/2401.01881",
+          "abstract": "This article proposes a safety-critical control design approach for nonlinear control affine systems in the presence of matched and unmatched uncertainties. Our constructive framework couples control barrier function (CBF) theory with a new uncertainty estimator to ensure robust safety. We use the estimated uncertainty, along with a derived upper bound on the estimation error, for synthesizing CBFs and safety-critical controllers via a quadratic program-based feedback control law that rigorously ensures robust safety while improving disturbance rejection performance. We extend the method to higher order CBFs (HOCBFs) to achieve safety under unmatched uncertainty, which may cause relative degree differences with respect to control input and disturbances. We assume the relative degree difference is at most one, resulting in a second-order cone constraint. We demonstrate the proposed robust HOCBF method through a simulation of an uncertain elastic actuator control problem and experimentally validate the efficacy of our robust CBF framework on a tracked robot with slope-induced matched and unmatched perturbations.",
+          "subjects": []
+        },
+        {
+          "title": "A Learning-Based Framework for Safe Human-Robot Collaboration with Multiple Backup Control Barrier Functions",
+          "authors": [
+            "Neil C. Janwani",
+            "Ersin Daş",
+            "Thomas Touma",
+            "Skylar X. Wei",
+            "T. G. Molnár",
+            "J. Burdick"
+          ],
+          "year": 2023,
+          "date": "2023-10-09",
+          "citations": 0,
+          "arxiv_id": "2310.05865",
+          "paper_id": "3178c11b268fddea3e4c41221de2499f9966565e",
+          "url": "https://arxiv.org/abs/2310.05865",
+          "abstract": "Ensuring robot safety in complex environments is a difficult task due to actuation limits, such as torque bounds. This paper presents a safety-critical control framework that leverages learning-based switching between multiple backup controllers to formally guarantee safety under bounded control inputs while satisfying driver intention. By leveraging backup controllers designed to uphold safety and input constraints, backup control barrier functions (BCBFs) construct implicitly defined control invariant sets via a feasible quadratic program (QP). However, BCBF performance largely depends on the design and conservativeness of the chosen backup controller, especially in our setting of human-driven vehicles in complex, e.g, off-road, conditions. While conservativeness can be reduced by using multiple backup controllers, determining when to switch is an open problem. Consequently, we develop a broadcast scheme that estimates driver intention and integrates BCBFs with multiple backup strategies for human-robot interaction. An LSTM classifier uses data inputs from the robot, human, and safety algorithms to continually choose a backup controller in real-time. We demonstrate our method’s efficacy on a dualtrack robot in obstacle avoidance scenarios. Our framework guarantees robot safety while adhering to driver intention.",
+          "subjects": []
+        },
+        {
+          "title": "Robust Control Barrier Functions with Uncertainty Estimation",
+          "authors": [
+            "Ersin Daş",
+            "Skylar X. Wei",
+            "J. Burdick"
+          ],
+          "year": 2023,
+          "date": "2023-04-17",
+          "citations": 0,
+          "arxiv_id": "2304.08538",
+          "paper_id": "d3a0552d0ad6fa23ccc40c69260bbe2cbc8bcfeb",
+          "url": "https://arxiv.org/abs/2304.08538",
+          "abstract": "This paper proposes a safety controller for control-affine nonlinear systems with unmodelled dynamics and disturbances to improve closed-loop robustness. Uncertainty estimation-based control barrier functions (CBFs) are utilized to ensure robust safety in the presence of model uncertainties, which may depend on control input and states. We present a new uncertainty/disturbance estimator with theoretical upper bounds on estimation error and estimated outputs, which are used to ensure robust safety by formulating a convex optimization problem using a high-order CBF. The possibly unsafe nominal feedback controller is augmented with the proposed estimator in two frameworks (1) an uncertainty compensator and (2) a robustifying reformulation of CBF constraint with respect to the estimator outputs. The former scheme ensures safety with performance improvement by adaptively rejecting the matched uncertainty. The second method uses uncertainty estimation to robustify higher-order CBFs for safety-critical control. The proposed methods are demonstrated in simulations of an uncertain adaptive cruise control problem and a multirotor obstacle avoidance situation.",
+          "subjects": []
+        },
+        {
+          "title": "Disturbance Observers for Robust Safety-Critical Control With Control Barrier Functions",
+          "authors": [
+            "Anil Alan",
+            "T. Molnár",
+            "Ersin Daş",
+            "A. Ames",
+            "G. Orosz"
+          ],
+          "year": 2022,
+          "date": "2022-09-16",
+          "citations": 0,
+          "arxiv_id": "2209.08123",
+          "paper_id": "e7b29676ce2c0b6f3735cac1a9d0d81b22c56b85",
+          "url": "https://arxiv.org/abs/2209.08123",
+          "abstract": "This letter provides formal safety guarantees for control systems with disturbance. A disturbance observer-based robust safety-critical controller is proposed, that estimates the effect of the disturbance on safety and utilizes this estimate with control barrier functions to attain provably safe dynamic behavior. The observer error bound – which consists of transient and steady-state parts – is quantified, and the system is endowed with robustness against this error via the proposed controller. A connected cruise control problem is used as illustrative example through simulations including real disturbance data.",
+          "subjects": []
+        },
+        {
+          "title": "Robust Safe Control Synthesis with Disturbance Observer-Based Control Barrier Functions",
+          "authors": [
+            "Ersin Daş",
+            "R. Murray"
+          ],
+          "year": 2022,
+          "date": "2022-01-15",
+          "citations": 0,
+          "arxiv_id": "2201.05758",
+          "paper_id": "1f1948540fe68850cb16adebcb1602c606ca17d9",
+          "url": "https://arxiv.org/abs/2201.05758",
+          "abstract": "In a complex real-time operating environment, external disturbances and uncertainties adversely affect the safety, stability, and performance of dynamical systems. This paper presents a robust stabilizing safety-critical controller synthesis framework with control Lyapunov functions (CLFs) and control barrier functions (CBFs) in the presence of disturbance. A high-gain input observer method is adapted to estimate the time-varying unmodelled dynamics of the CBF with an error bound using the first-order time derivative of the CBF. This approach leads to an easily tunable low-order disturbance estimator structure with a design parameter as it utilizes only the CBF constraint. The estimated unknown input and associated error bound are used to ensure robust safety by formulating a CLF-CBF quadratic program. The proposed method is applicable to both relative degree one and higher relative degree CBF constraints. The efficacy of the proposed approach is demonstrated using a numerical simulations of an adaptive cruise control system and a Segway platform with an external disturbance.",
+          "subjects": []
         }
       ],
-      []
+      [
+        {
+          "title": "AI Space Cortex: An Experimental System for Future Era Space Exploration",
+          "authors": [
+            "Thomas Touma",
+            "Ersin Daş",
+            "Erica Tevere",
+            "Martin S. Feather",
+            "K. Kolcio",
+            "Maurice Prather",
+            "Alberto Candela",
+            "Ashish Goel",
+            "Erik Kramer",
+            "Hari Nayar",
+            "L. Fesq",
+            "J. W. Burdick"
+          ],
+          "year": 2025,
+          "date": "2025-07-08",
+          "citations": 1,
+          "arxiv_id": "2507.06574",
+          "paper_id": "4c79cefa591bedd7479e2077439ed891e08dee63",
+          "url": "https://arxiv.org/abs/2507.06574",
+          "abstract": "Our Robust, Explainable Autonomy for Scientific Icy Moon Operations (REASIMO) effort contributes to National Aeronautics and Space Administration’s (NASA) Concepts for Ocean worlds Life Detection Technology (COLDTech) program, which explores science platform technologies for ocean worlds such as Europa and Enceladus. Ocean world missions pose significant operational challenges. These include long communication lags, limited power, and lifetime limitations caused by radiation damage and hostile conditions. Given these operational limitations, onboard autonomy will be vital for future ocean world missions. Besides the management of nominal lander operations, onboard autonomy must react appropriately in the event of anomalies. Traditional spacecraft rely on a transition into “safe-mode” in which nonessential components and subsystems are powered off to preserve safety and maintain communication with Earth. For a severely time-limited ocean world mission, resolutions to these anomalies that can be executed without Earth-in-the-loop communication and associated delays are paramount for completion of the mission objectives and science goals. To address these challenges, the REASIMO effort aims to demonstrate a robust level of AI-assisted autonomy for such missions, including the ability to detect and recover from anomalies, and to perform missions based on pretrained behaviors rather than hard-coded, predetermined logic like all prior space missions. We developed an AI-assisted, personality-driven, intelligent framework for control of an Ocean world mission by combining a mix of advanced technologies. To demonstrate the capabilities of the framework, we perform tests of autonomous sampling operations on a lander-manipulator testbed at the NASA Jet Propulsion Laboratory (JPL), approximating possible surface conditions such a mission might encounter. This article presents the architecture and encapsulated functionality of our intelligent mission control framework, AI Space Cortex, and reports results from deployment of this technology on a flight-relevant testbed to demonstrate its handling of the challenges of autonomous sampling operations across changing system conditions.",
+          "subjects": []
+        },
+        {
+          "title": "Bayesian Optimal Experimental Design for Robot Kinematic Calibration",
+          "authors": [
+            "Ersin Daş",
+            "Thomas Touma",
+            "J. W. Burdick"
+          ],
+          "year": 2024,
+          "date": "2024-09-17",
+          "citations": 0,
+          "arxiv_id": "2409.10802",
+          "paper_id": "ca65bb17e90732f70a24b4d53fdc8cc794f6b57e",
+          "url": "https://arxiv.org/abs/2409.10802",
+          "abstract": "This paper develops a Bayesian optimal experimental design for robot kinematic calibration on $\\mathbb{S}^{3} \\times \\mathbb{R}^{3}$. Our method builds upon a Gaussian process approach that incorporates a geometry-aware kernel based on Riemannian Matérn kernels over $\\mathbb{S}^{3}$. To learn the forward kinematics errors via Bayesian optimization with a Gaussian process, we define a geodesic distance-based objective function. Pointwise values of this function are sampled via noisy measurements taken using fiducial markers on the end-effector using a camera and computed pose with the nominal kinematics. The corrected Denavit-Hartenberg parameters are obtained using an efficient quadratic program that operates on the collected data sets. The effectiveness of the proposed method is demonstrated via simulations and calibration experiments on NASA's ocean world lander autonomy testbed (OWLAT).",
+          "subjects": []
+        },
+        {
+          "title": "Robust fixed-order H∞ controller synthesis for multi-phase converters with input voltage feed-forward",
+          "authors": [
+            "Rıdvan Keskin",
+            "Ibrahim Aliskan",
+            "Ersin Daş"
+          ],
+          "year": 2023,
+          "date": "2023-08-01",
+          "citations": 8,
+          "arxiv_id": null,
+          "paper_id": "30382f6061ddb9807395dcf1adc59a367ae545cf",
+          "url": "https://www.semanticscholar.org/paper/30382f6061ddb9807395dcf1adc59a367ae545cf",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "An Active Learning Based Robot Kinematic Calibration Framework Using Gaussian Processes",
+          "authors": [
+            "Ersin Daş",
+            "J. Burdick"
+          ],
+          "year": 2023,
+          "date": "2023-03-07",
+          "citations": 0,
+          "arxiv_id": "2303.03658",
+          "paper_id": "4f69485a557e8e3bef4fead1d79210bfdcf9e3d0",
+          "url": "https://arxiv.org/abs/2303.03658",
+          "abstract": "Future NASA lander missions to icy moons will require completely automated, accurate, and data efficient calibration methods for the robot manipulator arms that sample icy terrains in the lander's vicinity. To support this need, this paper presents a Gaussian Process (GP) approach to the classical manipulator kinematic calibration process. Instead of identifying a corrected set of Denavit-Hartenberg kinematic parameters, a set of GPs models the residual kinematic error of the arm over the workspace. More importantly, this modeling framework allows a Gaussian Process Upper Confident Bound (GP-UCB) algorithm to efficiently and adaptively select the calibration's measurement points so as to minimize the number of experiments, and therefore minimize the time needed for recalibration. The method is demonstrated in simulation on a simple 2-DOF arm, a 6 DOF arm whose geometry is a candidate for a future NASA mission, and a 7 DOF Barrett WAM arm.",
+          "subjects": []
+        },
+        {
+          "title": "Towards Robust, Resilient Ocean World Science Sampling Systems",
+          "authors": [
+            "Thomas Touma",
+            "Ersin Daş",
+            "J. Burdick",
+            "E. B. Clark",
+            "R. Mackey",
+            "M. Feather",
+            "L. Fesq",
+            "K. Kolcio",
+            "Maurice Prather"
+          ],
+          "year": 2023,
+          "date": "2023-03-04",
+          "citations": 4,
+          "arxiv_id": null,
+          "paper_id": "340c2d4f8263ae9b598631a069ef38a3fd6b7363",
+          "url": "https://www.semanticscholar.org/paper/340c2d4f8263ae9b598631a069ef38a3fd6b7363",
+          "abstract": "NASA's search for life and habitable regions in our solar system could lead to future landed missions on Europa and Enceladus, whose ocean worlds may support life. However, these destinations pose significant operational challenges - distance makes for a long communications lag, the lifetime of landed assets will be limited by radiation damage and hostile conditions, and any mission will be constrained by finite duration power. These conditions demand a high degree of autonomy in order to carry out the excavation, collection, and transfer of samples to in-situ scientific instruments, and to communicate results back to Earth. Our Robust, Explainable Autonomy for Scientific Icy Moon Operations (REASIMO) effort aims to improve the science yield and robustness of these kinds of missions by increasing the level of flight-qualifiable autonomy that can be applied to such operations. This is to be achieved by recognizing, and where possible, handling anomalies in situ, whether caused by faults, degradations, failures, or other unexpected conditions.",
+          "subjects": []
+        },
+        {
+          "title": "Combined design of robust controller and disturbance observer in a fixed-order <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" altimg=\"si102.svg\" display=\"inline\" id=\"d1e164\"><mml:msub><mml:mrow><mml:mi>H</mml:mi></mml:mrow><mml:mrow><mml:mi>∞</mml:mi></mml:mrow></mml:msub></mml:math> contr",
+          "authors": [
+            "Ersin Daş"
+          ],
+          "year": 2022,
+          "date": "2022-12-01",
+          "citations": 6,
+          "arxiv_id": null,
+          "paper_id": "e34d7c401daf080f876771e728b898634703abd7",
+          "url": "https://www.semanticscholar.org/paper/e34d7c401daf080f876771e728b898634703abd7",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Robust n-DOF H∞ feed-forward control of multi-phase converters for electric vehicles",
+          "authors": [
+            "Rıdvan Keskin",
+            "Ibrahim Aliskan",
+            "Ersin Daş"
+          ],
+          "year": 2021,
+          "date": "2021-11-25",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "d5db14fb11b196721643fa489be1adcf6a073d2d",
+          "url": "https://www.semanticscholar.org/paper/d5db14fb11b196721643fa489be1adcf6a073d2d",
+          "abstract": "The output voltage stability of any DC-DC con-verters is still challenging in voltage conditioning applications between the DC energy source and the power transmission line of any electric vehicle. Input voltage and load variations are the two main disturbances in such applications since the terminal voltage of the battery, fuel cell stack, or supercapacitor is adversely influenced by load changes. In this study, we propose a robust structured H∞ feed-forward controller synthesizing approach for non-minimum phase multi-level converters to suppress the effects of disturbance inputs. The input voltage and load current feed-forward controllers are constructed as a static function for easy implementation. The voltage mode three degrees of the freedom control scheme is tested under step load, set-point, and input voltage changes. The performances and robustness of the proposed methodology are verified via simulation and DSP-based real-time application. In these tests, the 200-W-rated power prototype has fast closed-loop dynamics against severe changes in input voltage and load current disturbances.",
+          "subjects": []
+        },
+        {
+          "title": "Multi-variable modeling and system identification of an interleaved boost converter",
+          "authors": [
+            "Rıdvan Keskin",
+            "Ibrahim Aliskan",
+            "Ersin Daş"
+          ],
+          "year": 2021,
+          "date": "2021-11-25",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "3fbf0b48b467cc024e83dfa6a422c18c0bc7c6b7",
+          "url": "https://www.semanticscholar.org/paper/3fbf0b48b467cc024e83dfa6a422c18c0bc7c6b7",
+          "abstract": "The resonant frequency region characteristics of non-minimum phase (NMP) DC-DC converter systems in the presence of input voltage and load current disturbances are crucial for controller synthesis. However, finding the high fidelity models of an interleaved boost converter system with disturbance inputs is difficult. The main goal of this study is to propose a convenient multi-variable boost converter system modeling and identification scheme. The small-signal approach is adopted to obtain the transfer functions from disturbances to the output of a 2-level interleaved boost converter. Then, an open-loop experimental system identification technique is proposed to accurately extract frequency response curves by using pseudo-random binary sequences (PRBS) input signals. We show the efficacy of this approach both in simulation and experimentally on a 200-W converter.",
+          "subjects": []
+        },
+        {
+          "title": "Robust structured controller synthesis for interleaved boost converters using an H∞ control method",
+          "authors": [
+            "Rıdvan Keskin",
+            "Ibrahim Aliskan",
+            "Ersin Daş"
+          ],
+          "year": 2021,
+          "date": "2021-06-10",
+          "citations": 9,
+          "arxiv_id": null,
+          "paper_id": "2b50db800b2211b364f677c9838f5cf84405a5e2",
+          "url": "https://www.semanticscholar.org/paper/2b50db800b2211b364f677c9838f5cf84405a5e2",
+          "abstract": "The regulation of output voltage and equivalent distribution of phase currents of multi-phase converters which have non-minimum phase characteristic are still challenges, especially in the presence of uncertainties in real parameters, duty cycle, input voltage, and load disturbances. However, in classical third-order integral-lead (Type-III) controller design methodologies, the controller is synthesized considering only the nominal performance conditions. This paper proposes a structured H ∞ synthesis framework based on an optimization methodology to the design of a robust Type-III controller for interleaved boost converters. The structured H ∞ control approach is adapted for optimization of Type-III feedback and feedforward controllers in two-degree-of-freedom (2-DOF) control system configuration. The robust stability of the closed-loop interleaved boost converter system against model uncertainties is ensured via the classical μ -analysis technique. Numerical comparisons are made among the classical, i.e. unstructured or full order, H ∞ -based controller design method, a dual-loop PI controller, and proposed 1-DOF and 2-DOF structured controller synthesis approaches on an interleaved boost converter model. Simulation results verify the effectiveness and advantages of the proposed approach from the viewpoint of the output voltage regulation under different disturbance points.",
+          "subjects": []
+        },
+        {
+          "title": "Two degree of freedom robust data-driven fixed-order controller synthesis using convex optimization.",
+          "authors": [
+            "Ersin Daş",
+            "S. Çağlar Başlamışlı"
+          ],
+          "year": 2020,
+          "date": "2020-12-16",
+          "citations": 6,
+          "arxiv_id": null,
+          "paper_id": "e90bba337f795292e2934f8dce3e43f1b3c6c918",
+          "url": "https://www.semanticscholar.org/paper/e90bba337f795292e2934f8dce3e43f1b3c6c918",
+          "abstract": "Improvement of precise reference tracking performance of positioning systems is one of the essential objectives in feedback control design process. However, since the robustness of the feedback control system normally limits the fine positioning capacity, improvement in reference tracking performance with the desired robustness is difficult to be achieved. This paper proposes a new data-driven approach based on convex optimization to design two degree of freedom robust fixed-order H∞ controller for reference tracking. Linear time-invariant systems represented by non-parametric frequency domain data are considered. A semi-definite programming algorithm is employed to compute an optimal uncertainty model and the corresponding nominal model. Then, a novel sufficient robust performance condition is developed using Nyquist stability theorem and μ-synthesis methods for feedforward control systems. The proposed method allows formulating closed-loop model matching objective and robust performance conditions by convex functions. In addition, the presented two degree of freedom robust data-driven fixed-order controller design algorithm also can be directly applied to time-delay systems without any approximation and conservatism. The theoretical design approach is experimentally verified on position control of an electromechanical control actuation system of an air vehicle. To improve the positioning accuracy of the actuation system, the full-closed loop feedback structure is considered. Obtained experimental results verify the usefulness and efficiency of the proposed approach.",
+          "subjects": []
+        },
+        {
+          "title": "Robust data‐driven fixed‐order controller synthesis: Model matching approach",
+          "authors": [
+            "Ersin Daş",
+            "S. C. Baslamisli"
+          ],
+          "year": 2020,
+          "date": "2020-12-14",
+          "citations": 5,
+          "arxiv_id": null,
+          "paper_id": "108cdddd64ca9dd9e4d2ea5fc20e46b510d7fadd",
+          "url": "https://www.semanticscholar.org/paper/108cdddd64ca9dd9e4d2ea5fc20e46b510d7fadd",
+          "abstract": "In this paper, a new data-driven ﬁxed-order H ∞ controller design method based on convex optimisation is proposed for linear single input single output systems. The proposed non-parametric frequency domain data based approach renders the need for a mathematical model of the controlled plant unnecessary. First, a semi-deﬁnite convex optimisation algo-rithm is proposed to simultaneously compute a minimal uncertainty model and an optimal nominal model from the experimental data. Then the H ∞ robust performance condition, control input constraints and the closed-loop model matching objective are described by convex functions with respect to the parameters of the controller. The usefulness and efﬁ-ciency of the proposed approach are veriﬁed experimentally with application to the control of a thrust vector control system.",
+          "subjects": []
+        },
+        {
+          "title": "Analysis and robust position control of an electromechanical control actuation system",
+          "authors": [
+            "Ersin Daş",
+            "I. I. Delice",
+            "Murat Keleş"
+          ],
+          "year": 2020,
+          "date": "2020-02-01",
+          "citations": 9,
+          "arxiv_id": null,
+          "paper_id": "82cee5c379b990f4c08a137675c5c517fd930e97",
+          "url": "https://www.semanticscholar.org/paper/82cee5c379b990f4c08a137675c5c517fd930e97",
+          "abstract": "This study investigates a modified electromechanical actuator for a guided ammunition fin control system. This modification, which is required due to space limitations, is the use of an eccentric type inverted slider crank mechanism instead of a centric type inverted slider crank mechanism. Brushless DC motor-driven mechanism is modeled experimentally. Using the obtained model, the H∞ type robust position controller is synthesized in the simulation environment and applied to the real system in hardware in the loop tests. The effectiveness of the proposed mechanism and the performance of the synthesized robust position controller are verified by comparing the pre-determined performance requirements and the obtained tests results. It has been shown that for a constant volume, the eccentric type mechanism provides about a 7.6% reduction ratio advantage over the centric type mechanism.",
+          "subjects": []
+        },
+        {
+          "title": "Data-driven fixed-order H∞ controller synthesis in frequency domain: Closed-loop system approach",
+          "authors": [
+            "Ersin Daş",
+            "S. Çağlar Başlamışlı"
+          ],
+          "year": 2019,
+          "date": "2019-05-23",
+          "citations": 8,
+          "arxiv_id": null,
+          "paper_id": "6eace430a90f334742f0c8f5cdf83fc2763d4678",
+          "url": "https://www.semanticscholar.org/paper/6eace430a90f334742f0c8f5cdf83fc2763d4678",
+          "abstract": "Control performance degradation is inevitable due to unmodeled dynamics and the requirement of using small set of parameters in parametric models. In this study, a frequency domain data-driven fixed-order H ∞ controller synthesis approach is introduced to solve above mentioned problem for linear systems. In our approach, the generalized plant is identified by using experimental data obtained from closed-loop tests. The transfer function of the structured H ∞ controller is synthesized by using only the frequency response of the plant without the need of a parametric model. The presented approach is verified experimentally for position control of an electromechanical control actuation system with proportional-derivative (PD) type controller.",
+          "subjects": []
+        }
+      ]
     ],
     [
       "Joel W. Burdick",
@@ -1960,40 +2093,6 @@
       "J. Grizzle",
       [
         {
-          "title": "Robustness of Control Barrier Functions for Safety Critical Control",
-          "authors": [
-            "Xiangru Xu",
-            "P. Tabuada",
-            "J. Grizzle",
-            "A. Ames"
-          ],
-          "year": 2016,
-          "date": "2016-12-05",
-          "citations": 0,
-          "arxiv_id": "1612.01554",
-          "paper_id": "3098826a91ba89250332fa1de1881207e619d6ea",
-          "url": "https://arxiv.org/abs/1612.01554",
-          "abstract": "Abstract Barrier functions (also called certificates) have been an important tool for the verification of hybrid systems, and have also played important roles in optimization and multi-objective control. The extension of a barrier function to a controlled system results in a control barrier function. This can be thought of as being analogous to how Sontag extended Lyapunov functions to control Lypaunov functions in order to enable controller synthesis for stabilization tasks. A control barrier function enables controller synthesis for safety requirements specified by forward invariance of a set using a Lyapunov-like condition. This paper develops several important extensions to the notion of a control barrier function. The first involves robustness under perturbations to the vector field defining the system. Input-to-State stability conditions are given that provide for forward invariance, when disturbances are present, of a “relaxation” of set rendered invariant without disturbances. A control barrier function can be combined with a control Lyapunov function in a quadratic program to achieve a control objective subject to safety guarantees. The second result of the paper gives conditions for the control law obtained by solving the quadratic program to be Lipschitz continuous and therefore to gives rise to well-defined solutions of the resulting closed-loop system.",
-          "subjects": []
-        },
-        {
-          "title": "Correctness Guarantees for the Composition of Lane Keeping and Adaptive Cruise Control",
-          "authors": [
-            "Xiangru Xu",
-            "J. Grizzle",
-            "P. Tabuada",
-            "A. Ames"
-          ],
-          "year": 2016,
-          "date": "2016-09-22",
-          "citations": 199,
-          "arxiv_id": "1609.06807",
-          "paper_id": "98af018e4e7243a5ab49a0657fbf8f7a0a3ef115",
-          "url": "https://arxiv.org/abs/1609.06807",
-          "abstract": "This paper develops a control approach with correctness guarantees for the simultaneous operation of lane keeping and adaptive cruise control. The safety specifications for these driver assistance modules are expressed in terms of set invariance. Control barrier functions (CBFs) are used to design a family of control solutions that guarantee the forward invariance of a set, which implies satisfaction of the safety specifications. The CBFs are synthesized through a combination of sum-of-squares program and physics-based modeling and optimization. A real-time quadratic program is posed to combine the CBFs with the performance-based controllers, which can be either expressed as control Lyapunov function conditions or as black-box legacy controllers. In both cases, the resulting feedback control guarantees the safety of the composed driver assistance modules in a formally correct manner. Importantly, the quadratic program admits a closed-form solution that can be easily implemented. The effectiveness of the control approach is demonstrated by simulations in the industry-standard vehicle simulator Carsim. Note to Practitioners—Safety is of paramount importance for the control of automated vehicles. This paper is motivated by the problem of designing controllers that are provably correct for the simultaneous operation of two driver assistance modules, lane keeping and adaptive cruise control. This is a challenging problem partially, because the lateral and longitudinal dynamics of the vehicles are coupled, with few results known to exist that provide formal guarantees. In this paper, we employ an assume-guarantee formalism between these two subsystems, such that they can be considered individually; based on that, we use optimization to design safe sets that serves as “supervisors” for vehicle behavior, such that the trajectories of the closed-loop system are confined within the safe sets using predetermined bounds on wheel force and steering angle. The feedback controller is constructed by solving convex quadratic programs online, which can also be given in closed form, making the implementation much easier. One particular advantage of this control approach is that the safety set and the performance controller can be designed separately, which enables the integration of a legacy controller into a correct-by-construction solution.",
-          "subjects": []
-        },
-        {
           "title": "Control Barrier Function Based Quadratic Programs for Safety Critical Systems",
           "authors": [
             "A. Ames",
@@ -2030,362 +2129,7 @@
           "subjects": []
         }
       ],
-      [
-        {
-          "title": "Zero Dynamics, Pendulum Models, and Angular Momentum in Feedback Control of Bipedal Locomotion",
-          "authors": [
-            "Yukai Gong",
-            "J. Grizzle"
-          ],
-          "year": 2021,
-          "date": "2021-05-17",
-          "citations": 0,
-          "arxiv_id": "2105.08170",
-          "paper_id": "3898f878e0a07c74cfc18776db2af0e312dbc277",
-          "url": "https://arxiv.org/abs/2105.08170",
-          "abstract": "\n Low-dimensional models are ubiquitous in the bipedal robotics literature. On the one hand is the community of researchers that bases feedback control design on pendulum models selected to capture the center of mass dynamics of the robot during walking. On the other hand is the community that bases feedback control design on virtual constraints, which induce an exact low-dimensional model in the closed-loop system. In the first case, the low-dimensional model is valued for its physical insight and analytical tractability. In the second case, the low-dimensional model is integral to a rigorous analysis of the stability of walking gaits in the full-dimensional model of the robot. This paper seeks to clarify the commonalities and differences in the two perspectives for using low-dimensional models. In the process of doing so, we argue that angular momentum about the contact point is a better indicator of robot state than linear velocity. Concretely, we show that an approximate (pendulum and zero dynamics) model parameterized by angular momentum provides better predictions for foot placement on a physical robot (e.g., legs with mass) than does a related approximate model parameterized in terms of linear velocity. We implement an associated angular-momentum-based controller on Cassie, a 3D robot, and demonstrate high agility and robustness in experiments.",
-          "subjects": []
-        },
-        {
-          "title": "IEEE Access Special Section Editorial: Real-Time Machine Learning Applications in Mobile Robotics",
-          "authors": [
-            "A. Uçar",
-            "J. Grizzle",
-            "Maani Ghaffari",
-            "M. Wahde",
-            "H. L. Akin",
-            "J. Baltes",
-            "H. I. Bozma",
-            "J. V. Miró"
-          ],
-          "year": 2021,
-          "date": "2021",
-          "citations": 2,
-          "arxiv_id": null,
-          "paper_id": "a505ce611709b8b57f05eaed016747faa859e37c",
-          "url": "https://www.semanticscholar.org/paper/a505ce611709b8b57f05eaed016747faa859e37c",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "A Roadmap for US Robotics - From Internet to Robotics 2020 Edition",
-          "authors": [
-            "Henrik I. Christensen",
-            "N. Amato",
-            "H. Yanco",
-            "M. Matarić",
-            "H. Choset",
-            "Ann W. Drobnis",
-            "Ken Goldberg",
-            "J. Grizzle",
-            "Gregory Hager",
-            "J. Hollerbach",
-            "Seth Hutchinson",
-            "V. Krovi",
-            "Daniel Lee",
-            "B. Smart",
-            "J. Trinkle",
-            "G. Sukhatme"
-          ],
-          "year": 2021,
-          "date": "2021",
-          "citations": 138,
-          "arxiv_id": null,
-          "paper_id": "bd6d8840ecbdddab31e9fbbb79fc8ce2f11830b7",
-          "url": "https://www.semanticscholar.org/paper/bd6d8840ecbdddab31e9fbbb79fc8ce2f11830b7",
-          "abstract": "Recently, the robotics industry celebrated its 60-year anniversary. We have used robots for more than six decades to empower people to do things that are typically dirty, dull and/or dangerous. The industry has progressed significantly over the period from basic mechanical assist systems to fully autonomous cars, environmental monitoring and exploration of outer space. We have seen tremendous adoption of IT technology in our daily lives for a diverse set of support tasks. Through use of robots we are starting to see a new revolution, as we not only will have IT support from tablets, phones, computers but also systems that can physically interact with the world and assist with daily tasks, work, and leisure activities. The present document is a summary of the main societal opportunities identified, the associated challenges to deliver desired solutions and a presentation of efforts to be undertaken to ensure that US will continue to be a leader in robotics both in terms of research innovation, adoption of the latest technology, and adoption of appropriate policy frameworks that ensure that the technology is utilized in a responsible fashion. H. I. Christensen, N. Amato, H. Yanco, M. Mataric, H. Choset, A. Drobnis, K. Goldberg, J. Grizzle, G. Hager, J. Hollerbach, S. Hutchinson, V. Krovi, D. Lee, W. Smart and J. Trinkle (2021), “A Roadmap for US Robotics – From Internet to Robotics 2020 Edition”, Foundations and Trends® in Robotics: Vol. 8, No. 4, pp 307–424. DOI: 10.1561/2300000066. Full text available at: http://dx.doi.org/10.1561/2300000066",
-          "subjects": []
-        },
-        {
-          "title": "A New Framework for Registration of Semantic Point Clouds from Stereo and RGB-D Cameras",
-          "authors": [
-            "Ray Zhang",
-            "Tzu-Yuan Lin",
-            "Chien-Erh Lin",
-            "Steven A. Parkison",
-            "William Clark",
-            "J. Grizzle",
-            "R. Eustice",
-            "Maani Ghaffari"
-          ],
-          "year": 2020,
-          "date": "2020-11-10",
-          "citations": 15,
-          "arxiv_id": "2012.03683",
-          "paper_id": "a8ea6d1af3f3ce8f75925941a4228d8e7cfdba2f",
-          "url": "https://arxiv.org/abs/2012.03683",
-          "abstract": "This paper reports on a novel nonparametric rigid point cloud registration framework, Semantic Continuous Visual Odometry (CVO), that jointly integrates geometric and semantic measurements such as color or semantic labels into the alignment process and does not require explicit data association. The point clouds are represented as nonparametric functions in a reproducible kernel Hilbert space. The alignment problem is formulated as maximizing the inner product between two functions, essentially a sum of weighted kernels, each of which exploits the local geometric and semantic features. As a result of the continuous models, analytical gradients can be computed, and a local solution can be obtained by optimization over the rigid body transformation group. Besides, we present a new point cloud alignment metric that is intrinsic to the proposed framework and takes into account geometric and semantic information. The evaluations using publicly available stereo and RGB-D datasets show that the proposed method outperforms state-of-the-art outdoor and indoor frame-to-frame registration methods. An open-source GPU implementation is also provided.",
-          "subjects": []
-        },
-        {
-          "title": "Bayesian Spatial Kernel Smoothing for Scalable Dense Semantic Mapping",
-          "authors": [
-            "Lu Gan",
-            "Ray Zhang",
-            "J. Grizzle",
-            "R. Eustice",
-            "Maani Ghaffari"
-          ],
-          "year": 2019,
-          "date": "2019-09-10",
-          "citations": 0,
-          "arxiv_id": "1909.04631",
-          "paper_id": "2d6abfa55b93ab9f0a697e2d6f0088ee1edb8c16",
-          "url": "https://arxiv.org/abs/1909.04631",
-          "abstract": "This article develops a Bayesian continuous 3D semantic occupancy map from noisy point clouds by generalizing the Bayesian kernel inference model for building occupancy maps, a binary problem, to semantic maps, a multi-class problem. The proposed method provides a unified probabilistic model for both occupancy and semantic probabilities and nicely reverts to the original occupancy mapping framework when only one occupied class exists in obtained measurements. The Bayesian spatial kernel inference relaxes the independent grid assumption and brings smoothness and continuity to the map inference, enabling to exploit local correlations present in the environment and increasing the performance. The accompanying software uses multi-threading and vectorization, and runs at about 2 $\\mathrm{Hz}$ on a laptop CPU. Evaluations using multiple sequences of stereo camera and LiDAR datasets show that the proposed method consistently outperforms current baselines. We also present a qualitative evaluation using data collected with a bipedal robot platform on the University of Michigan - North Campus.",
-          "subjects": []
-        },
-        {
-          "title": "Contact-aided invariant extended Kalman filtering for robot state estimation",
-          "authors": [
-            "R. Hartley",
-            "Maani Ghaffari Jadidi",
-            "R. Eustice",
-            "J. Grizzle"
-          ],
-          "year": 2019,
-          "date": "2019-04-19",
-          "citations": 0,
-          "arxiv_id": "1904.09251",
-          "paper_id": "b5e33d796b313a202200ab3715c68294509ceb04",
-          "url": "https://arxiv.org/abs/1904.09251",
-          "abstract": "Legged robots require knowledge of pose and velocity in order to maintain stability and execute walking paths. Current solutions either rely on vision data, which is susceptible to environmental and lighting conditions, or fusion of kinematic and contact data with measurements from an inertial measurement unit (IMU). In this work, we develop a contact-aided invariant extended Kalman filter (InEKF) using the theory of Lie groups and invariant observer design. This filter combines contact-inertial dynamics with forward kinematic corrections to estimate pose and velocity along with all current contact points. We show that the error dynamics follows a log-linear autonomous differential equation with several important consequences: (a) the observable state variables can be rendered convergent with a domain of attraction that is independent of the system’s trajectory; (b) unlike the standard EKF, neither the linearized error dynamics nor the linearized observation model depend on the current state estimate, which (c) leads to improved convergence properties and (d) a local observability matrix that is consistent with the underlying nonlinear system. Furthermore, we demonstrate how to include IMU biases, add/remove contacts, and formulate both world-centric and robo-centric versions. We compare the convergence of the proposed InEKF with the commonly used quaternion-based extended Kalman filter (EKF) through both simulations and experiments on a Cassie-series bipedal robot. Filter accuracy is analyzed using motion capture, while a LiDAR mapping experiment provides a practical use case. Overall, the developed contact-aided InEKF provides better performance in comparison with the quaternion-based EKF as a result of exploiting symmetries present in system.",
-          "subjects": []
-        },
-        {
-          "title": "Automotive Control Systems",
-          "authors": [
-            "Joseph S. Cook",
-            "J. Grizzle",
-            "Jing Sun",
-            "M. Liubakka",
-            "D. Rhode",
-            "James R. Winkelman",
-            "P. Kokotovic"
-          ],
-          "year": 2018,
-          "date": "2018-10-24",
-          "citations": 718,
-          "arxiv_id": null,
-          "paper_id": "552e2b143ca54b2494e8aae03c4d14b8b094ee3c",
-          "url": "https://www.semanticscholar.org/paper/552e2b143ca54b2494e8aae03c4d14b8b094ee3c",
-          "abstract": "This engineering textbook is designed to introduce advanced control systems for vehicles, including advanced automotive concepts and the next generation of vehicles for Intelligent Transportation Systems (ITS). For each automotive-control problem considered, the authors emphasize the physics and underlying principles behind the control-system concept and design. This is an exciting and rapidly developing field for which many articles and reports exist but no modern unifying text. An extensive list of references is provided at the end of each chapter for all topics covered. This is currently the only textbook, including problems and examples, that covers and integrates the topics of automotive powertrain control, vehicle control, and ITS. The emphasis is on fundamental concepts and methods for automotive control systems rather than the rapidly changing specific technologies. Many of the text examples, as well as the end-of-chapter problems, require the use of MATLAB and/or Simulink.",
-          "subjects": []
-        },
-        {
-          "title": "Obstacle Avoidance for Low-Speed Autonomous Vehicles With Barrier Function",
-          "authors": [
-            "Yuxiao Chen",
-            "Huei Peng",
-            "J. Grizzle"
-          ],
-          "year": 2018,
-          "date": "2018",
-          "citations": 182,
-          "arxiv_id": null,
-          "paper_id": "12bb592967af70686568e9077493479acdab0b1f",
-          "url": "https://www.semanticscholar.org/paper/12bb592967af70686568e9077493479acdab0b1f",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Combining trajectory optimization, supervised machine learning, and model structure for mitigating the curse of dimensionality in the control of bipedal robots",
-          "authors": [
-            "Xingye Da",
-            "J. Grizzle"
-          ],
-          "year": 2017,
-          "date": "2017-11-06",
-          "citations": 0,
-          "arxiv_id": "1711.02223",
-          "paper_id": "a83989fc2b4c87c70061d96e224db7ea56cd38e1",
-          "url": "https://arxiv.org/abs/1711.02223",
-          "abstract": "To overcome the obstructions imposed by high-dimensional bipedal models, we embed a stable walking motion in an attractive low-dimensional surface of the system’s state space. The process begins with trajectory optimization to design an open-loop periodic walking motion of the high-dimensional model and then adding to this solution a carefully selected set of additional open-loop trajectories of the model that steer toward the nominal motion. A drawback of trajectories is that they provide little information on how to respond to a disturbance. To address this shortcoming, supervised machine learning is used to extract a low-dimensional state-variable realization of the open-loop trajectories. The periodic orbit is now an attractor of the low-dimensional state-variable model but is not attractive in the full-order system. We then use the special structure of mechanical models associated with bipedal robots to embed the low-dimensional model in the original model in such a manner that the desired walking motions are locally exponentially stable. The design procedure is first developed for ordinary differential equations and illustrated on a simple model. The methods are subsequently extended to a class of hybrid models and then realized experimentally on an Atrias-series 3D bipedal robot.",
-          "subjects": []
-        },
-        {
-          "title": "Nonholonomic virtual constraints and gait optimization for robust walking control",
-          "authors": [
-            "Brent A. Griffin",
-            "J. Grizzle"
-          ],
-          "year": 2017,
-          "date": "2017-05-23",
-          "citations": 56,
-          "arxiv_id": null,
-          "paper_id": "4ac89afe1c56f9444cb423c5ce91dfca02b1e5de",
-          "url": "https://www.semanticscholar.org/paper/4ac89afe1c56f9444cb423c5ce91dfca02b1e5de",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Exponentially stabilizing continuous-time controllers for periodic orbits of hybrid systems: Application to bipedal locomotion with ground height variations",
-          "authors": [
-            "K. Hamed",
-            "B. G. Buss",
-            "J. Grizzle"
-          ],
-          "year": 2016,
-          "date": "2016-07-01",
-          "citations": 82,
-          "arxiv_id": null,
-          "paper_id": "7d0bfb58d6f8efccc128889c2ffbfffa3f217a78",
-          "url": "https://www.semanticscholar.org/paper/7d0bfb58d6f8efccc128889c2ffbfffa3f217a78",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Robust Stabilizing Continuous-Time Controllers for Periodic Orbits of Hybrid Systems : Application to Bipedal Robots",
-          "authors": [
-            "K. Hamed",
-            "B. G. Buss",
-            "J. Grizzle"
-          ],
-          "year": 2014,
-          "date": "2014",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "5500701d64bb7c6c24223939b441cc2fe1333677",
-          "url": "https://www.semanticscholar.org/paper/5500701d64bb7c6c24223939b441cc2fe1333677",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "A Finite-State Machine for Accommodating Unexpected Large Ground-Height Variations in Bipedal Robot Walking",
-          "authors": [
-            "Hae-won Park",
-            "A. Ramezani",
-            "J. Grizzle"
-          ],
-          "year": 2013,
-          "date": "2013-04-01",
-          "citations": 127,
-          "arxiv_id": null,
-          "paper_id": "a08416b324a49ed9e45318ad774a4b41e5df1c8b",
-          "url": "https://www.semanticscholar.org/paper/a08416b324a49ed9e45318ad774a4b41e5df1c8b",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Embedding active force control within the compliant hybrid zero dynamics to achieve stable, fast running on MABEL",
-          "authors": [
-            "K. Sreenath",
-            "Hae-won Park",
-            "I. Poulakakis",
-            "J. Grizzle"
-          ],
-          "year": 2013,
-          "date": "2013-03-01",
-          "citations": 156,
-          "arxiv_id": null,
-          "paper_id": "f05a6c7a10b6bf7e620ede5662a84b6b15b44bc3",
-          "url": "https://www.semanticscholar.org/paper/f05a6c7a10b6bf7e620ede5662a84b6b15b44bc3",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Torque Saturation in Bipedal Robotic Walking Through Control Lyapunov Function-Based Quadratic Programs",
-          "authors": [
-            "Kevin S. Galloway",
-            "K. Sreenath",
-            "Aaron D. Ames",
-            "J. Grizzle"
-          ],
-          "year": 2013,
-          "date": "2013-02-28",
-          "citations": 0,
-          "arxiv_id": "1302.7314",
-          "paper_id": "da20ec99ef6f6c009133d000f207ca2f82f5f037",
-          "url": "https://arxiv.org/abs/1302.7314",
-          "abstract": "This paper presents a novel method to address the actuator saturation for nonlinear hybrid systems by directly incorporating user-defined input bounds in a controller design. In particular, we consider the application of bipedal walking and show that our method [based on a quadratic programming (QP) implementation of a control Lyapunov function (CLF)-based controller] enables a gradual performance degradation while still continuing to walk under increasingly stringent input bounds. We draw on our previous work, which has demonstrated the effectiveness of the CLF-based controllers for stabilizing periodic gaits for biped walkers. This paper presents a framework, which results in more effective handling of control saturations and provides a means for incorporating a whole family of user-defined constraints into the online computation of a CLF-based controller. This paper concludes with an experimental validation of the main results on the bipedal robot MABEL, demonstrating the usefulness of the QP-based CLF approach for real-time robotic control.",
-          "subjects": []
-        },
-        {
-          "title": "A Compliant Hybrid Zero Dynamics Controller for Stable, Efficient and Fast Bipedal Walking on MABEL",
-          "authors": [
-            "K. Sreenath",
-            "Hae-won Park",
-            "I. Poulakakis",
-            "J. Grizzle"
-          ],
-          "year": 2011,
-          "date": "2011-08-01",
-          "citations": 398,
-          "arxiv_id": null,
-          "paper_id": "ef1289721229cf7b497ef252fb6df1cc9a68aff3",
-          "url": "https://www.semanticscholar.org/paper/ef1289721229cf7b497ef252fb6df1cc9a68aff3",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Identification of a Bipedal Robot with a Compliant Drivetrain",
-          "authors": [
-            "Hae-won Park",
-            "K. Sreenath",
-            "J. Hurst",
-            "J. Grizzle"
-          ],
-          "year": 2011,
-          "date": "2011-03-14",
-          "citations": 65,
-          "arxiv_id": null,
-          "paper_id": "7c32cdfb79da756332cfb6cf512b10c804cdc766",
-          "url": "https://www.semanticscholar.org/paper/7c32cdfb79da756332cfb6cf512b10c804cdc766",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Employee customer orientation in context: how the environment moderates the influence of customer orientation on performance outcomes.",
-          "authors": [
-            "J. Grizzle",
-            "A. Zablah",
-            "Tom J Brown",
-            "J. Mowen",
-            "James M. Lee"
-          ],
-          "year": 2009,
-          "date": "2009-09-01",
-          "citations": 192,
-          "arxiv_id": null,
-          "paper_id": "62ae8db75eb8e58da98b8ca82b7971fc8384d84a",
-          "url": "https://www.semanticscholar.org/paper/62ae8db75eb8e58da98b8ca82b7971fc8384d84a",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Infectious Diseases of Freshwater Mussels and Other Freshwater Bivalve Mollusks",
-          "authors": [
-            "J. Grizzle",
-            "C. J. Brunner"
-          ],
-          "year": 2009,
-          "date": "2009-06-04",
-          "citations": 77,
-          "arxiv_id": null,
-          "paper_id": "eb2eece0becbc597d02a3a60497328b987fa88b7",
-          "url": "https://www.semanticscholar.org/paper/eb2eece0becbc597d02a3a60497328b987fa88b7",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Incorporating drivability metrics into optimal energy management strategies for Hybrid Vehicles",
-          "authors": [
-            "D. Opila",
-            "D. Aswani",
-            "Ryan McGee",
-            "J. Cook",
-            "J. Grizzle"
-          ],
-          "year": 2008,
-          "date": "2008-12-01",
-          "citations": 59,
-          "arxiv_id": null,
-          "paper_id": "a84920688b3efdd2293baaf586f40724b20c04c7",
-          "url": "https://www.semanticscholar.org/paper/a84920688b3efdd2293baaf586f40724b20c04c7",
-          "abstract": "",
-          "subjects": []
-        }
-      ]
+      []
     ],
     [
       "P. Tabuada",
@@ -2567,99 +2311,9 @@
             "cs.RO",
             "eess.SY"
           ]
-        },
-        {
-          "title": "Safe Vision Language Action Models via Barrier Enhanced Flow Matching",
-          "authors": [
-            "K. Sinaei",
-            "Hung-Chieh Wu",
-            "Donald Ebeigbe"
-          ],
-          "year": 2026,
-          "date": "2026-07-31",
-          "citations": 0,
-          "arxiv_id": "2607.29569",
-          "paper_id": "9efe70f3016f1eac22a4e8c5d794edfda668b7d2",
-          "url": "https://arxiv.org/abs/2607.29569",
-          "abstract": "This article presents a modular inference framework that integrates Flow Matching generative models with formal Control Barrier Function (CBF) safety guarantees. Unlike existing methods that apply external safety filters to a model's final output, our approach modifies the Flow Matching denoising process within the model to inherently generate safe trajectories. By employing a smooth Log-Sum-Exponential aggregate barrier, we enforce safety over entire action chunks. This aggregate barrier ensures a minimal increase in computational overhead and does not alter the semantic intent of the model. We show that, within the proposed framework, the 2-Wasserstein distance between the generated distribution and the target distribution remains bounded. Our method eliminates the need for safety-specific datasets or costly model retraining, providing a versatile solution for safe inference. We validate the approach on two robotic manipulation platforms and a 2D navigation benchmark, verifying that our framework achieves reliable safety without degrading the success rate of the model.",
-          "subjects": []
-        },
-        {
-          "title": "Safety-Critical Position Control of Robots: A Model-Free Approach",
-          "authors": [
-            "K. Sinaei",
-            "Hung-Chieh Wu",
-            "Donald Ebeigbe"
-          ],
-          "year": 2025,
-          "date": "2025-07-08",
-          "citations": 2,
-          "arxiv_id": null,
-          "paper_id": "c76c0ef3e1ea48b36cb2b8e16f17579da081c5f8",
-          "url": "https://www.semanticscholar.org/paper/c76c0ef3e1ea48b36cb2b8e16f17579da081c5f8",
-          "abstract": "This letter deals with enforcing safety in position-controlled robotic systems. We propose a safety-critical position control framework that enables a robot to safely avoid unsafe reference input positions without compromising the overall tracking performance of the existing controller. Simulation results, as well as experimental results on a quadrupedal robot, validate the practicality of our proposed controller for position-controlled robots. Our proposed approach, which uses the well-known Control Barrier Functions (CBF) framework in a model-free fashion, can serve as a safety filter alongside any model-based or model-free controller.",
-          "subjects": []
         }
       ],
-      [
-        {
-          "title": "StratMamba: Strategic and Reactive Stream Partitioning for Path-Efficient LiDAR-Based Obstacle Avoidance",
-          "authors": [
-            "Hung-Chieh Wu",
-            "Xiaopan Zhang",
-            "K. Sinaei",
-            "Ryan Abnavi",
-            "Kasun Weerakoon",
-            "Christopher Bradley",
-            "S. Fakoorian",
-            "Jiachen Li",
-            "Donald Ebeigbe"
-          ],
-          "year": 2026,
-          "date": "2026-07-14",
-          "citations": 0,
-          "arxiv_id": "2607.12370",
-          "paper_id": "d43955cad82cd461ddf9c4dd0869c73105db515d",
-          "url": "https://arxiv.org/abs/2607.12370",
-          "abstract": "This paper proposes StratMamba, a dual-stream Mamba-based temporal modeling architecture, to more efficiently capture long-horizon temporal dependencies required for robot navigation in complex and obstacle-rich environments. StratMamba leverages a combination of fast-decay and slow-decay memory architectures, where the fast-decay component processes high-frequency LiDAR data for reactive obstacle avoidance, while the slow-decay component maintains longer-horizon goal information for strategic planning. We perform extensive evaluations of different obstacle avoidance scenarios in IsaacLab and Gazebo, while also validating successful sim-to-real deployment on a Unitree GO1 quadruped robot navigating in the presence of static/dynamic obstacles. Comparisons with other temporal RL baselines, such as LSTM, Transformer, and Vanilla-Mamba, show that our StratMamba achieves exceptional temporal reasoning efficiency with a lower timeout rate, while maintaining the fastest navigation speed (576 median steps, 5.0% better than Vanilla-Mamba). It also achieves the highest path optimality (0.915 path efficiency) across all baselines. Real-world evaluation reveals that StratMamba maintains more robust performance across extended LiDAR ranges compared to vanilla Mamba and the Transformer, demonstrating that dual-stream partitioning effectively balances reactive safety with strategic navigation under challenging sensing conditions.",
-          "subjects": []
-        },
-        {
-          "title": "Increasing Nebulizer Spray Efficiency Using a Baffle with a Conical Surface: A Computational Fluid Dynamics Analysis",
-          "authors": [
-            "Hung-Chieh Wu",
-            "Fu-Lun Chen",
-            "Yuan-Ching Chiang",
-            "Yi-June Lo",
-            "Chun-Li Lin",
-            "Wei-Jen Chang",
-            "Haw-Ming Huang"
-          ],
-          "year": 2025,
-          "date": "2025-06-20",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "824e641c305e619f33a0019d7f34f6ce011cd0de",
-          "url": "https://www.semanticscholar.org/paper/824e641c305e619f33a0019d7f34f6ce011cd0de",
-          "abstract": "Breath-actuated nebulizers used in aerosol therapy are vital to children and patients with disabilities and stand out for their ability to accurat ely deliver medication while minimizing waste. Their performance can be measured according to the mass output and droplet size. This study aimed to analyze how the baffle impact surface geometries affect the pressure and flow streamlines inside the nebulizer using computational fluid dynamics (CFD). Computer-aided design models of conical symmetric, conical asymmetric, and arc-shaped baffle designs were analyzed using CFD simulations, with the optimal spray output validated through the differences in mass. Conical baffles exhibited superior pressure distribution and output streamlines at 0.25 cm protrusion, suggesting that the nebulizer spray performance can be enhanced by using such a conical baffle impact surface. This result serves as a valuable reference for future research.",
-          "subjects": []
-        },
-        {
-          "title": "Utility of Central Venous Oxygen Saturation Gradient in Predicting Mortality in Dialysis with Catheter Access",
-          "authors": [
-            "Hung-Chieh Wu",
-            "Wei-jie Wang"
-          ],
-          "year": 2025,
-          "date": "2025-02-11",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "812b1303eba666797c3ed81429e144bc135e3146",
-          "url": "https://www.semanticscholar.org/paper/812b1303eba666797c3ed81429e144bc135e3146",
-          "abstract": "Background Central venous oxygen saturation (ScvO2), a biomarker that is well-correlated with arterial oxygen saturation, can predict mortality. Few studies have focused on blood volume, ScvO2, and mortality in patients on maintenance dialysis. This retrospective study used hospital record data of 144 dialysis patients with central venous catheter access (CVC) and aimed to evaluate the ScvO2 gradient, blood volume, and patient mortality. We examined the associations among absolute blood volume (ABV), mean ScvO2, intradialytic slope of ScvO2, and mortality in patients on dialysis. Material/Methods Adult patients receiving dialysis via CVC from 2022 to 2024 were enrolled. ScvO2, ABV, and protocol-based ultrafiltration were monitored using Crit-Line IV (Fresenius Medical Care, Bad Homburg, Germany). Participants were assessed and followed until death or administrative censor. Multiple fractional polynomial (MFP) regression was used to determine best-fitting polynomial function between predictors and mortality. We also constructed proportional hazard model to compare trends of ScvO2 for mortality. Results In a total of 144 eligible patients, the incidence of mortality was 14.5 per 1000 patient-months. The correlation between mean ScvO2 and mortality was weak (r=−0.05), whereas the association between ABV change and mean ScvO2 were a reverse U curve. The intradialytic slope of ScvO2 was independently associated with mortality (adjusted odds ratio [95% CI]=0.421 [0.226–0.783], P<0.05). Those with descending slope of ScvO2 had higher risk of mortality than those with an ascending slope (HR [95% CI]=3.98 [1.22–13.03], P<0.05). Conclusions A negative trend of intradialytic ScvO2 was associated with mortality.",
-          "subjects": []
-        }
-      ]
+      []
     ],
     [
       "Donald Ebeigbe",
