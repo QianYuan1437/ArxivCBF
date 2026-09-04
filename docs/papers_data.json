@@ -70,7 +70,7 @@
       ],
       "year": 2022,
       "date": "2022-06-07",
-      "citations": 0,
+      "citations": 167,
       "arxiv_id": "2206.03568",
       "paper_id": "21bcf99de4e99324375ba6a1b7dba3da64842146",
       "url": "https://arxiv.org/abs/2206.03568",
@@ -112,7 +112,7 @@
       ],
       "year": 2021,
       "date": "2021-09-25",
-      "citations": 0,
+      "citations": 115,
       "arxiv_id": "2109.12313",
       "paper_id": "d9a7ef6bb3c2a4bd8f7bb6b832a55c6bbf0039fc",
       "url": "https://arxiv.org/abs/2109.12313",
@@ -254,7 +254,7 @@
       ],
       "year": 2020,
       "date": "2020-10-30",
-      "citations": 171,
+      "citations": 0,
       "arxiv_id": "2011.00032",
       "paper_id": "029265507aefdebc132a2dd4bb4d16f95b087ab1",
       "url": "https://arxiv.org/abs/2011.00032",
@@ -337,7 +337,7 @@
       ],
       "year": 2020,
       "date": "2020-04-16",
-      "citations": 0,
+      "citations": 238,
       "arxiv_id": "2004.07584",
       "paper_id": "fa55d07755bf69dab45b8a197b8c7c28e08a5931",
       "url": "https://arxiv.org/abs/2004.07584",
@@ -384,7 +384,7 @@
       ],
       "year": 2020,
       "date": "2020-04-07",
-      "citations": 0,
+      "citations": 289,
       "arxiv_id": "2004.03315",
       "paper_id": "a8684cdff4f958a21ed95f181f120d03eb3ec321",
       "url": "https://arxiv.org/abs/2004.03315",
@@ -528,7 +528,7 @@
       ],
       "year": 2019,
       "date": "2019-03-23",
-      "citations": 174,
+      "citations": 0,
       "arxiv_id": "1903.09816",
       "paper_id": "25b489bb8934667b87dd56ae01d30fbab1a4dde1",
       "url": "https://arxiv.org/abs/1903.09816",
@@ -626,7 +626,7 @@
       ],
       "year": 2016,
       "date": "2016-12-05",
-      "citations": 696,
+      "citations": 0,
       "arxiv_id": "1612.01554",
       "paper_id": "3098826a91ba89250332fa1de1881207e619d6ea",
       "url": "https://arxiv.org/abs/1612.01554",
@@ -867,7 +867,7 @@
         "Jonathan P. How"
       ],
       "date": "2026-08-20",
-      "citations": 1,
+      "citations": 0,
       "arxiv_id": "2608.20467v1",
       "url": "https://arxiv.org/abs/2608.20467v1",
       "abstract": "Safety filters are an effective tool for enforcing constraints in safety-critical systems, but most existing methods assume perfect state information, which is rarely available in practice. Recent work has begun to close this gap by developing filtering mechanisms that are robust to state estimation error, but these methods can still exhibit safety violations or overly conservative behavior as estimation error grows. Focusing on obstacle avoidance, we develop two new control barrier function (CBF) formulations: drift-measurement-robust (DMR)-CBFs and neural measurement-robust (NMR)-CBFs. The DMR-CBF augments the standard CBF condition with an inner optimization over the worst-case uncertainty in the drift dynamics, improving robustness to estimation error. This DMR-CBF then supervises a pretraining phase for the NMR-CBF, which replaces the inner optimization with a learned term. The NMR-CBF is subsequently finetuned through differentiable trajectory rollouts, yielding a filter that achieves empirical safety comparable to the DMR-CBF while reducing both conservativeness and computational cost. We provide theoretical analysis of the DMR-CBF along with numerical results on a planar double integrator and a 12D quadrotor, where both proposed approaches prevent collisions while other robust methods either fail or are overly conservative. Finally, we deployed the NMR-CBF on a Unitree Go2, enabling successful navigation of an obstacle field under odometry errors that caused a standard CBF to collide.",
@@ -1586,7 +1586,7 @@
           ],
           "year": 2022,
           "date": "2022-06-07",
-          "citations": 0,
+          "citations": 167,
           "arxiv_id": "2206.03568",
           "paper_id": "21bcf99de4e99324375ba6a1b7dba3da64842146",
           "url": "https://arxiv.org/abs/2206.03568",
@@ -1626,7 +1626,7 @@
           ],
           "year": 2020,
           "date": "2020-10-30",
-          "citations": 171,
+          "citations": 0,
           "arxiv_id": "2011.00032",
           "paper_id": "029265507aefdebc132a2dd4bb4d16f95b087ab1",
           "url": "https://arxiv.org/abs/2011.00032",
@@ -1788,7 +1788,7 @@
           ],
           "year": 2016,
           "date": "2016-12-05",
-          "citations": 696,
+          "citations": 0,
           "arxiv_id": "1612.01554",
           "paper_id": "3098826a91ba89250332fa1de1881207e619d6ea",
           "url": "https://arxiv.org/abs/1612.01554",
@@ -1851,7 +1851,7 @@
           ],
           "year": 2021,
           "date": "2021-09-25",
-          "citations": 0,
+          "citations": 115,
           "arxiv_id": "2109.12313",
           "paper_id": "d9a7ef6bb3c2a4bd8f7bb6b832a55c6bbf0039fc",
           "url": "https://arxiv.org/abs/2109.12313",
@@ -1892,7 +1892,7 @@
           ],
           "year": 2020,
           "date": "2020-04-16",
-          "citations": 0,
+          "citations": 238,
           "arxiv_id": "2004.07584",
           "paper_id": "fa55d07755bf69dab45b8a197b8c7c28e08a5931",
           "url": "https://arxiv.org/abs/2004.07584",
@@ -2009,7 +2009,7 @@
           ],
           "year": 2022,
           "date": "2022-06-07",
-          "citations": 0,
+          "citations": 167,
           "arxiv_id": "2206.03568",
           "paper_id": "21bcf99de4e99324375ba6a1b7dba3da64842146",
           "url": "https://arxiv.org/abs/2206.03568",
@@ -2049,7 +2049,7 @@
           ],
           "year": 2020,
           "date": "2020-10-30",
-          "citations": 171,
+          "citations": 0,
           "arxiv_id": "2011.00032",
           "paper_id": "029265507aefdebc132a2dd4bb4d16f95b087ab1",
           "url": "https://arxiv.org/abs/2011.00032",
@@ -2272,7 +2272,7 @@
           ],
           "year": 2020,
           "date": "2020-04-07",
-          "citations": 0,
+          "citations": 289,
           "arxiv_id": "2004.03315",
           "paper_id": "a8684cdff4f958a21ed95f181f120d03eb3ec321",
           "url": "https://arxiv.org/abs/2004.03315",
@@ -2507,6 +2507,257 @@
       "Dimos V. Dimarogonas",
       [
         {
+          "title": "Feasibility-aware Hybrid Control for Motion Planning under Signal Temporal Logics",
+          "authors": [
+            "Panagiotis Rousseas",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2026,
+          "date": "2026-05-05",
+          "citations": 0,
+          "arxiv_id": "2605.03662",
+          "paper_id": "8d4c382f6d11331cdd54ebe6e6fc12ae0a006c6b",
+          "url": "https://arxiv.org/abs/2605.03662",
+          "abstract": "In this work, a novel method for planar task and motion planning based on hybrid modeling is proposed. By virtue of a discrete variable which models local constraint satisfaction and enables local feasibility analysis, the proposed control architecture unifies planning with control design. Concurrently, control barrier functions are designed on a transformed disk version of the original nonconvex and geometrically complex robotic workspace, thus amending the issue of deadlocks. Simulations of the proposed method indicate effective handling of multiple overlapping spatio-temporal tasks even in the face of input saturation.",
+          "subjects": []
+        },
+        {
+          "title": "Decoupled Design of Time-Varying Control Barrier Functions via Equivariances",
+          "authors": [
+            "A. Wiltz",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2025,
+          "date": "2025-12-09",
+          "citations": 0,
+          "arxiv_id": "2512.08607",
+          "paper_id": "2ff564c99ca25443c753501524d6495cea4b9082",
+          "url": "https://arxiv.org/abs/2512.08607",
+          "abstract": "This article presents a systematic method for designing time-varying Control Barrier Functions (CBF) composed of a time-invariant component and multiple time-dependent components, leveraging structural properties of the system dynamics. The method involves the construction of a specific class of time-invariant CBFs that encode the system's dynamic capabilities with respect to a given constraint, and augments them subsequently with appropriately designed time-dependent transformations. While transformations uniformly varying the time-invariant CBF can be applied to arbitrary systems, transformations exploiting structural properties in the dynamics - equivariances in particular - enable the handling of a broader and more expressive class of time-varying constraints. The article shows how to leverage such properties in the design of time-varying CBFs. The proposed method decouples the design of time variations from the computationally expensive construction of the underlying CBFs, thereby providing a computationally attractive method to the design of time-varying CBFs. The method accounts for input constraints and under-actuation, and requires only qualitative knowledge on the time-variation of the constraints making it suitable to the application in uncertain environments.",
+          "subjects": []
+        },
+        {
+          "title": "On Uniformly Time-Varying Control Barrier Functions",
+          "authors": [
+            "A. Wiltz",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2025,
+          "date": "2025-09-18",
+          "citations": 2,
+          "arxiv_id": "2509.15037",
+          "paper_id": "0e934a0c4eae97f0dbdba847ec85c1f6b47c25e4",
+          "url": "https://arxiv.org/abs/2509.15037",
+          "abstract": "This paper investigates the design of a subclass of time-varying Control Barrier Functions (CBFs), specifically that of uniformly time-varying CBFs. Leveraging the fact that CBFs encode a system's dynamic capabilities relative to a state constraint, we decouple the design of uniformly time-varying CBFs into a time-invariant and a time-varying component. We characterize the subclass of time-invariant CBFs that yield a uniformly time-varying CBF when combined with a specific type of time-varying function. A detailed analysis of those conditions under which the time-varying function preserves the CBF property of the time-invariant component is provided. These conditions allow for selecting the time-varying function such that diverse variations in the state constraints can be captured while avoiding the redesign of the time-invariant component. From a technical point of view, the analysis requires the derivation of novel relations for comparison functions, not previously reported in the literature. We further relax the requirements on the time-varying function, showing that forward invariance can still be ensured even when the uniformly time-varying value function does not strictly constitute a CBF. Finally, we discuss how existing CBF construction methods can be applied to design suitable time-invariant CBFs, and demonstrate the effectiveness of the approach through detailed numerical examples.",
+          "subjects": []
+        },
+        {
+          "title": "Leveraging Equivariances and Symmetries in the Control Barrier Function Synthesis",
+          "authors": [
+            "A. Wiltz",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2025,
+          "date": "2025-09-04",
+          "citations": 0,
+          "arxiv_id": "2509.04399",
+          "paper_id": "0ca6679c0952547acecf2fb15ebf4c6dfda9270e",
+          "url": "https://arxiv.org/abs/2509.04399",
+          "abstract": "The synthesis of Control Barrier Functions (CBFs) often involves demanding computations or a meticulous construction. However, structural properties of the system dynamics and constraints have the potential to mitigate these challenges. In this paper, we explore how equivariances in the dynamics, loosely speaking a form of symmetry, can be leveraged in the CBF synthesis. Although CBFs are generally not inherently symmetric, we show how equivariances in the dynamics and symmetries in the constraints induce symmetries in CBFs derived through reachability analysis. This insight allows us to infer their CBF values across the entire domain from their values on a subset, leading to significant computational savings. Interestingly, equivariances can be even leveraged to the CBF synthesis for non-symmetric constraints. Specifically, we show how a partially known CBF can be leveraged together with equivariances to construct a CBF for various new constraints. Throughout the paper, we provide examples illustrating the theoretical findings. Furthermore, a numerical study investigates the computational gains from invoking equivariances into the CBF synthesis.",
+          "subjects": []
+        },
+        {
+          "title": "Predictive Synthesis of Control Barrier Functions and its Application to Time-Varying Constraints",
+          "authors": [
+            "A. Wiltz",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2025,
+          "date": "2025-04-22",
+          "citations": 0,
+          "arxiv_id": "2504.15830",
+          "paper_id": "6816436a96e3c313e09010d9bd0390cb051367b4",
+          "url": "https://arxiv.org/abs/2504.15830",
+          "abstract": "This paper presents a systematic method for synthesizing a Control Barrier Function (CBF) that encodes predictive information into a CBF. Unlike other methods, the synthesized CBF can account for changes and time-variations in the constraints even when constructed for time-invariant constraints. This avoids recomputing the CBF when the constraint specifications change. The method provides an explicit characterization of the extended class K function {\\alpha} that determines the dynamic properties of the CBF, and {\\alpha} can even be explicitly chosen as a design parameter in the controller synthesis. The resulting CBF further accounts for input constraints, and its values can be determined at any point without having to compute the CBF over the entire domain. The synthesis method is based on a finite horizon optimal control problem inspired by Hamilton-Jacobi reachability analysis and does not rely on a nominal control law. The synthesized CBF is time-invariant if the constraints are. The method poses mild assumptions on the controllability of the dynamic system and assumes the knowledge of at least a subset of some control invariant set. The paper provides a detailed analysis of the properties of the synthesized CBF, including its application to time-varying constraints. A simulation study applies the proposed approach to various dynamic systems in the presence of time-varying constraints. The paper is accompanied by an online available parallelized implementation of the proposed synthesis method.",
+          "subjects": []
+        },
+        {
+          "title": "Robust Visual Servoing under Human Supervision for Assembly Tasks",
+          "authors": [
+            "Victor Nan Fernandez-Ayala",
+            "J. Silva",
+            "Meng Guo",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2025,
+          "date": "2025-04-16",
+          "citations": 0,
+          "arxiv_id": "2504.12506",
+          "paper_id": "12e4dad3fd7725b8f4f554c33a0b39acfb726e7d",
+          "url": "https://arxiv.org/abs/2504.12506",
+          "abstract": "We propose a framework enabling mobile manipulators to reliably complete pick-and-place tasks for assembling structures from construction blocks. The picking uses an eye-in-hand visual servoing controller for object tracking with Control Barrier Functions (CBFs) to ensure fiducial markers in the blocks remain visible. An additional robot with an eye-to-hand setup ensures precise placement, critical for structural stability. We integrate human-in-the-loop capabilities for flexibility and fault correction and analyze robustness to camera pose errors, proposing adapted barrier functions to handle them. Lastly, experiments validate the framework on 6-DoF mobile arms.",
+          "subjects": []
+        },
+        {
+          "title": "On the Equivalence Between Prescribed Performance Control and Control Barrier Functions",
+          "authors": [
+            "Ryo Namerikawa",
+            "A. Wiltz",
+            "Farhad Mehdifar",
+            "Toru Namerikawa",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2024,
+          "date": "2024-07-10",
+          "citations": 11,
+          "arxiv_id": null,
+          "paper_id": "ea6447005fd7b20fa3011499af843e8d5027893a",
+          "url": "https://www.semanticscholar.org/paper/ea6447005fd7b20fa3011499af843e8d5027893a",
+          "abstract": "In this paper, we show that Prescribed Performance Control (PPC) is a model-free Control Barrier Function (CBF)-based control approach. Specifically, we establish that a function utilized in the PPC design is a Time-Varying Reciprocal Control Barrier Function (TVRCBF). We demonstrate that PPC satisfies the same gradient condition that is well-known in the CBF literature, ensuring forward invariance. As a result, the control inputs generated by the PPC law belong to the input set characterized by the TVRCBF. Apart from assuming a certain controllability property, no further knowledge on the system dynamics is required. Our theoretical findings improve the understanding of the relationship between PPC and other CBF-based controllers. The theoretical results are validated through numerical simulations.",
+          "subjects": []
+        },
+        {
+          "title": "Control Barrier Functions for Stochastic Systems under Signal Temporal Logic Tasks",
+          "authors": [
+            "Arash Bahari Kordabad",
+            "Maria Charitidou",
+            "Dimos V. Dimarogonas",
+            "S. Soudjani"
+          ],
+          "year": 2024,
+          "date": "2024-06-25",
+          "citations": 15,
+          "arxiv_id": null,
+          "paper_id": "ea959ef2d3330d6b3bdbe631bfb67a059c586ebc",
+          "url": "https://www.semanticscholar.org/paper/ea959ef2d3330d6b3bdbe631bfb67a059c586ebc",
+          "abstract": "Signal Temporal Logic (STL) offers an expressive formalism for describing complex high-level tasks in dynamical systems. This paper introduces a time-varying Control Barrier Function (CBF) for control-affine nonlinear stochastic systems to fulfill STL specifications. The CBFs are used in a robust optimization problem to provide a lower bound on the satisfaction probability of a given STL specification with a predetermined robustness level. We present an online control synthesis approach to minimize a performance function while having the required satisfaction guarantee. We finally provide a tractable solution to the robust optimization for STL with linear and quadratic predicate functions. To illustrate the effectiveness of the method, we apply it to a simple linear case study and to the path-planning problem for a nonlinear wheeled mobile robot.",
+          "subjects": []
+        },
+        {
+          "title": "A Continuous-Time Violation-Free Multiagent Optimization Algorithm and Its Applications to Safe Distributed Control",
+          "authors": [
+            "Xiao Tan",
+            "Changxin Liu",
+            "K. H. Johansson",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2024,
+          "date": "2024-04-11",
+          "citations": 0,
+          "arxiv_id": "2404.07571",
+          "paper_id": "8100f5f1ed7add56f795498fc2c33328061f7c0f",
+          "url": "https://arxiv.org/abs/2404.07571",
+          "abstract": "In this work, we propose a continuous-time distributed optimization algorithm with guaranteed zero coupling constraint violation and apply it to safe distributed control in the presence of multiple control barrier functions (CBFs). The optimization problem is defined over a network that collectively minimizes a separable cost function with coupled linear constraints. An equivalent optimization problem with auxiliary decision variables and a decoupling structure is proposed. A sensitivity analysis demonstrates that the subgradient information can be computed using local information. This then leads to a subgradient algorithm for updating the auxiliary variables. A case with sparse coupling constraints is further considered, and it is shown to have better memory and communication efficiency. For the specific case of a CBF-induced time-varying quadratic program (QP), an update law is proposed that achieves finite-time convergence. Numerical results involving a static resource allocation problem and a safe coordination problem for a multiagent system demonstrate the efficiency and effectiveness of our proposed algorithms.",
+          "subjects": []
+        },
+        {
+          "title": "Prescribed performance formation control for second-order multi-agent systems with connectivity and collision constraints",
+          "authors": [
+            "Yi Huang",
+            "Ziyang Meng",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2024,
+          "date": "2024-02-01",
+          "citations": 60,
+          "arxiv_id": null,
+          "paper_id": "1fd8f1b5da4cd461d93d52ba78e0a5b7fc8eb78b",
+          "url": "https://www.semanticscholar.org/paper/1fd8f1b5da4cd461d93d52ba78e0a5b7fc8eb78b",
+          "abstract": "This paper studies the distributed formation control problem of second-order multi-agent systems (MASs) with limited communication ranges and collision avoidance constraints. A novel connectivity preservation and collision-free distributed control algorithm is proposed by combining prescribed performance control (PPC) and exponential zeroing control barrier Lyapunov functions (EZCBFs). In particular, we impose the time-varying performance constraints on the relative position and velocity errors between the neighboring agents, and then a PPC-based formation control algorithm is developed such that the connectivity of the communication graph can be preserved at all times, and the prescribed transient and steady performance on the relative position and velocity error can be achieved. Subsequently, by introducing the EZCBFs method, an inequality constraint condition on the control input is derived to guarantee the collision-free formation motion. By regarding the PPC-based formation controller as a nominal input, an actual formation control input is given by solving the quadratic programming (QP) problem such that each agent achieves collision-free formation motion while guaranteeing the connectivity and prescribed performance as much as possible. Finally, numerical simulation is carried out to validate the eﬀectiveness of the proposed algorithm.",
+          "subjects": []
+        },
+        {
+          "title": "Continuous-Time Control Synthesis Under Nested Signal Temporal Logic Specifications",
+          "authors": [
+            "Pian Yu",
+            "Xiao Tan",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2023,
+          "date": "2023-09-17",
+          "citations": 34,
+          "arxiv_id": "2309.14347",
+          "paper_id": "86297ac683dd85f522e369249dfaf4b8f4f2b201",
+          "url": "https://arxiv.org/abs/2309.14347",
+          "abstract": "In this work, we propose a novel approach for the continuous-time control synthesis of nonlinear systems under nested signal temporal logic (STL) specifications. While the majority of existing literature focuses on control synthesis for STL specifications without nested temporal operators, addressing nested temporal operators poses a notably more challenging scenario and requires new theoretical advancements. Our approach hinges on the concepts of STL tree (sTLT) and control barrier function (CBF). Specifically, we detail the construction of an sTLT from a given STL formula and a continuous-time dynamical system, the sTLT semantics (i.e., satisfaction condition), and the equivalence or underapproximation relation between sTLT and STL. Leveraging the fact that the satisfaction condition of an sTLT is essentially keeping the state within certain sets during certain time intervals, it provides explicit guidelines for the CBF design. The resulting controller is obtained through the utilization of an online CBF-based program coupled with an event-triggered scheme for online updating the activation time interval of each CBF, with which the correctness of the system behavior can be established by construction. We demonstrate the efficacy of the proposed method for single-integrator and unicycle models under nested STL formulas.",
+          "subjects": []
+        },
+        {
+          "title": "Receding Horizon Control With Online Barrier Function Design Under Signal Temporal Logic Specifications",
+          "authors": [
+            "Maria Charitidou",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2023,
+          "date": "2023-06-01",
+          "citations": 20,
+          "arxiv_id": null,
+          "paper_id": "8ee4c77b03a7dca7a0bc50308ccc9aa2959eccdf",
+          "url": "https://www.semanticscholar.org/paper/8ee4c77b03a7dca7a0bc50308ccc9aa2959eccdf",
+          "abstract": "Signal temporal logic (STL) has been found to be an expressive language for describing complex, time-constrained tasks in several robotic applications. Existing methods encode such specifications by either using integer constraints or by employing set invariance techniques. While in the first case this results in a mixed integer linear program (MILP), control problems, in the latter case, designer-specific choices may induce conservatism in the robot's performance and the satisfaction of the task. In this article, a continuous-time receding horizon control scheme (RHS) is proposed that exploits the tradeoff between task satisfaction and performance costs such as actuation and state costs, traditionally considered in RHS schemes. The satisfaction of the STL tasks is encoded using time-varying control barrier functions that are designed online, thus avoiding the integer expressions that are often used in literature. The recursive feasibility of the proposed scheme is guaranteed by the satisfaction of a time-varying terminal constraint that ensures the satisfaction of the task with predetermined robustness. The effectiveness of the method is illustrated in a multirobot simulation scenario.",
+          "subjects": []
+        },
+        {
+          "title": "Compatibility checking of multiple control barrier functions for input constrained systems",
+          "authors": [
+            "Xiao Tan",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2022,
+          "date": "2022-09-06",
+          "citations": 0,
+          "arxiv_id": "2209.02284",
+          "paper_id": "1a556bc5f2d6a01e67d6d887e7e252ed536894d9",
+          "url": "https://arxiv.org/abs/2209.02284",
+          "abstract": "State and input constraints are ubiquitous in control system design. One recently developed tool to deal with these constraints is control barrier functions (CBF) which transform state constraints into conditions in the input space. CBF-based controller design thus incorporates both the CBF conditions and input constraints in a quadratic program. However, the CBF-based controller is well-defined only if the CBF conditions are compatible. In the case of perturbed systems, robust compatibility is of relevance. In this work, we propose an algorithmic solution to verify or falsify the (robust) compatibility of given CBFs a priori. Leveraging the Lipschitz properties of the CBF conditions, a grid sampling and refinement method with theoretical analysis and guarantees is proposed.",
+          "subjects": []
+        },
+        {
+          "title": "Distributed Implementation of Control Barrier Functions for Multi-agent Systems",
+          "authors": [
+            "Xiao Tan",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2022,
+          "date": "2022",
+          "citations": 66,
+          "arxiv_id": null,
+          "paper_id": "f426fde01900bb7489ba6bdb83d1e3da6f468292",
+          "url": "https://www.semanticscholar.org/paper/f426fde01900bb7489ba6bdb83d1e3da6f468292",
+          "abstract": "In this letter, we propose a distributed implementation framework for control barrier functions induced quadratic programs for multi-agent systems. The quadratic program aims at minimally modifying nominal local controllers, which relate to the underlying system tasks, while always respecting a single coupling constraint which relates to system safety. Unlike previous implementations, no approximation or pre-allocation of the coupling constraint over the agents is needed. Instead, to solve the quadratic problem exactly, an auxiliary variable is assigned to each agent and then locally updated and transmitted among agents. The proposed distributed implementation ensures that the control barrier function constraint is enforced at every time instant, and the optimal to the quadratic program control signal is achieved in finite time. The efficacy of our method is demonstrated through two numerical examples.",
+          "subjects": []
+        },
+        {
+          "title": "On the Undesired Equilibria Induced by Control Barrier Function Based Quadratic Programs",
+          "authors": [
+            "Xiao Tan",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2021,
+          "date": "2021-04-30",
+          "citations": 0,
+          "arxiv_id": "2104.14895",
+          "paper_id": "ee5bc10cd871bf8fa0999318c1539ba701381529",
+          "url": "https://arxiv.org/abs/2104.14895",
+          "abstract": "In this paper, we analyze the system behavior for general nonlinear control-affine systems when a control barrier function-induced quadratic program-based controller is employed for feedback. In particular, we characterize the existence and locations of possible equilibrium points of the closed-loop system and also provide analytical results on how design parameters affect them. Based on this analysis, a simple modification on the existing quadratic program-based controller is provided, which, without any assumptions other than those taken in the original program, inherits the safety set forward invariance property, and further guarantees the complete elimination of undesired equilibrium points in the interior of the safety set as well as one type of boundary equilibrium points, and local asymptotic stability of the origin. Numerical examples are given alongside the theoretical discussions.",
+          "subjects": []
+        },
+        {
+          "title": "Barrier Function Based Collaborative Control of Multiple Robots Under Signal Temporal Logic Tasks",
+          "authors": [
+            "Lars Lindemann",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2020,
+          "date": "2020-12-01",
+          "citations": 0,
+          "arxiv_id": "2102.02609",
+          "paper_id": "12f1dbd76abe39270ecb4331e8a564cb81065a74",
+          "url": "https://arxiv.org/abs/2102.02609",
+          "abstract": "Motivated by the recent interest in cyber-physical and autonomous robotic systems, we study the problem of dynamically coupled multiagent systems under a set of signal temporal logic tasks. In particular, the satisfaction of each of these signal temporal logic tasks depends on the behavior of a distinct set of agents. Instead of abstracting the agent dynamics and the temporal logic tasks into a discrete domain and solving the problem therein or using optimization-based methods, we derive collaborative feedback control laws.These control laws are based on a decentralized control barrier function condition that results in discontinuous control laws, as opposed to a centralized condition resembling the single-agent case. The benefits of our approach are inherent robustness properties typically present in feedback control as well as satisfaction guarantees for continuous-time multiagent systems. More specifically, time-varying control barrier functions are used that account for the semantics of the signal temporal logic tasks at hand. For a certain fragment of signal temporal logic tasks, we further propose a systematic way to construct such control barrier functions. Finally, we show the efficacy and robustness of our framework in an experiment, including a group of three omnidirectional robots.",
+          "subjects": []
+        },
+        {
           "title": "Learning Control Barrier Functions from Expert Demonstrations",
           "authors": [
             "Alexander Robey",
@@ -2519,7 +2770,7 @@
           ],
           "year": 2020,
           "date": "2020-04-07",
-          "citations": 0,
+          "citations": 289,
           "arxiv_id": "2004.03315",
           "paper_id": "a8684cdff4f958a21ed95f181f120d03eb3ec321",
           "url": "https://arxiv.org/abs/2004.03315",
@@ -2561,7 +2812,378 @@
           "subjects": []
         }
       ],
-      []
+      [
+        {
+          "title": "Demonstration of Space Robot Teleoperation over a Lossy and Delayed Network using ATMOS",
+          "authors": [
+            "Inkyu Jang",
+            "Gregorio Marchesini",
+            "N. D. Carli",
+            "Byeongjun Kim",
+            "Sunwoo Hwang",
+            "Dabin Kim",
+            "Elias Krantz",
+            "Youngkyoung Kong",
+            "Frank J. Jiang",
+            "Annika Wong",
+            "Pedro Roque",
+            "Prasetyo W. L. Sanjaya",
+            "Nicola Bastianello",
+            "Mani H. Dhullipalla",
+            "K. H. Johansson",
+            "Hyun-Seung Shim",
+            "Dimos V. Dimarogonas",
+            "H. Kim"
+          ],
+          "year": 2026,
+          "date": "2026-08-14",
+          "citations": 0,
+          "arxiv_id": "2608.14031",
+          "paper_id": "77c35427d912e570601bd49a2c8a04052c55b1f9",
+          "url": "https://arxiv.org/abs/2608.14031",
+          "abstract": "We present a demonstration showcasing the Autonomy Testbed for Multi-purpose Orbiting Systems (ATMOS), a planar spacecraft-analog robot designed for hardware-in-the-loop evaluation of guidance and control strategies in microgravity-like conditions. Using ATMOS as the physical test platform, we investigate the design, analysis, and performance evaluation of control architectures for remotely operated spacecraft under round-trip communication delays. In this work, we develop and experimentally validate a control strategy that combines state prediction and trajectory tracking control to perform a docking maneuver, accounting for time-varying random communication latency between ground operators and the ATMOS system. The demonstration includes a long-distance remote control experiment between Seoul and Stockholm, introducing realistic intercontinental delays and variability. The results highlight the capability of ATMOS to support rapid, reliable, and cost-effective testing of spacecraft teleoperation concepts, establishing a first step toward robust validation of on-orbit operations in microgravity-like environments.",
+          "subjects": []
+        },
+        {
+          "title": "Distance-Based Formation Control with Prescribed Performance for Higher-Order Multi-Agent Systems",
+          "authors": [
+            "J. Schaa",
+            "Maria Charitidou",
+            "Dimos V. Dimarogonas",
+            "Thomas Berger"
+          ],
+          "year": 2026,
+          "date": "2026-08-13",
+          "citations": 0,
+          "arxiv_id": "2608.12896",
+          "paper_id": "5c86206a82c76e25289e8edcc8f7fb6852a2b30a",
+          "url": "https://arxiv.org/abs/2608.12896",
+          "abstract": "We consider distributed distance-based formation control with prescribed transient performance for multi-agent systems modeled by unknown nonlinear dynamics of relative degree greater than one. We introduce a virtual leader whose trajectory is tracked with prescribed transient behavior by a designated subset of agents. The undirected communication graph is either a tree graph or a minimally and infinitesimally rigid graph. In the latter case, we further consider the objective of centroid tracking. In each setting, a distributed and model-free control law is developed, and we establish the satisfaction of the prescribed funnel constraints on the formation and tracking errors, and boundedness of all closed-loop signals. Numerical simulations illustrate the effectiveness of the proposed control laws.",
+          "subjects": []
+        },
+        {
+          "title": "Topology Inference for Immune System Networks by Using Cell Amount Data",
+          "authors": [
+            "Yushan Li",
+            "R. Forlin",
+            "Dimos V. Dimarogonas",
+            "P. Brodin"
+          ],
+          "year": 2026,
+          "date": "2026-08-07",
+          "citations": 0,
+          "arxiv_id": "2608.07403",
+          "paper_id": "409303b5c28d6dfba8f5ed94aa7d2fc3b8c6a113",
+          "url": "https://arxiv.org/abs/2608.07403",
+          "abstract": "Recent years have witnessed the advanced development of topology inference research, which helps elucidate the interaction relationships of components in many biological networks. This paper focuses on inferring the topology of a group of immune cells, based on the collected data from cell-depletion based experiments. The problem is very challenging due to i) the lack of standard analytical models for the cell interactions, and ii) the restrictive data availability determined by the huge experiment and time costs. To address these issues, we first leverage certain common knowledge and observations on the experiments to characterize three properties on the cell amounts during the interaction process: state non-negativity, ratio-based convergence, and triple signs of topology weights. Then, we construct a new model with simple structure and analytical convenience, and obtain sufficient conditions for the model to accommodate all three properties. Finally, based on the constructed model, we propose a constrained quadratic programming method to infer the topology from limited number of data pairs. Validation on experiment data demonstrate the effectiveness of the proposed method.",
+          "subjects": []
+        },
+        {
+          "title": "STL-GCS: A Planner-Controller Framework for Signal Temporal Logic via Graphs of Time-varying Convex Sets",
+          "authors": [
+            "N. D. Carli",
+            "Gregorio Marchesini",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2026,
+          "date": "2026-07-21",
+          "citations": 0,
+          "arxiv_id": "2607.19196",
+          "paper_id": "a1122e551558b5c25a6b8b02595d8f8edc99a5f2",
+          "url": "https://arxiv.org/abs/2607.19196",
+          "abstract": "We present a unified trajectory planning and control framework for the satisfaction of Signal Temporal Logic (STL) specifications defined over convex predicates. At the planning layer, STL tasks are encoded as time-varying convex sets in configuration space, specifically designed so that forward invariance of the system with respect to these sets implies satisfaction of the specification with a prescribed robustness margin. This representation is then lifted to the joint time--configuration space and combined with the Graphs of Convex Sets (GCS) framework, yielding a shortest-path formulation of the planning problem over convex spatio-temporal sets. Trajectories are parameterized by B-splines, which enable continuous-time enforcement of STL satisfaction, collision avoidance, and smoothness constraints. At the control layer, the same time-varying sets used for planning are exploited to design a feedback controller that tracks the planned trajectory while prioritizing satisfaction of the STL specification during execution in the presence of tracking errors and model mismatch. We validate the proposed approach in simulation and in real-world experiments on space robotic platforms.",
+          "subjects": []
+        },
+        {
+          "title": "Modeling and Validation of Quality of Control for Edge-Offloaded Collaborative Navigation",
+          "authors": [
+            "Neelabhro Roy",
+            "Mikael Hammarling",
+            "Victor Nan Fernandez-Ayala",
+            "Gourav Prateek Sharma",
+            "Mani H. Dhullipalla",
+            "Dimos V. Dimarogonas",
+            "James Gross"
+          ],
+          "year": 2026,
+          "date": "2026-07-16",
+          "citations": 0,
+          "arxiv_id": "2607.14853",
+          "paper_id": "96c350ea26d4f19f5ce50e0e44e3d32c81578237",
+          "url": "https://arxiv.org/abs/2607.14853",
+          "abstract": "Collaborative control in complex environments is severely challenged by stochastic wireless delay and reliability variations, which can degrade navigation, tracking, and collision avoidance. These network-induced uncertainties complicate the maintenance of energy efficiency during collaborative tasks, and can potentially lead to over-provisioning of resources. In this paper, for a navigation setup with dynamic collision avoidance, we address this challenge by expanding the quality of control (QoC) framework from prior works to practical robotic models. Our approach (i) models end-to-end network effects on closed-loop performance, (ii) systematically explores the impact of various control parameters dictating robotic motion on network latency-reliability (iii) validates these models through experiments on a private 5G testbed across varying delay, reliability and control configurations. Our analysis indicates the optimal control-communication co-design operating regimes for practical robots and also compares the QoC performance of standard ROS~2 quality of service (QoS) policies under real-world conditions and showing how RELIABLE QoS offers 51.5% better QoC than BEST-EFFORT under certain experimental settings.",
+          "subjects": []
+        },
+        {
+          "title": "A Reactive Redistribution Mechanism for STL Tasks in Multi-Agent Systems Under Time-Varying Communication",
+          "authors": [
+            "Gregorio Marchesini",
+            "Bjarne Jan Jesse Moro",
+            "Siyuan Liu",
+            "Lars Lindemann",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2026,
+          "date": "2026-06-11",
+          "citations": 0,
+          "arxiv_id": "2606.13479",
+          "paper_id": "198bf1e6dfc8a3d78a6b66ca0c60838db993b1dd",
+          "url": "https://arxiv.org/abs/2606.13479",
+          "abstract": "We present a communication-aware task decomposition framework for multi-agent systems with collaborative relative configuration objectives specified in Signal Temporal Logic (STL), allowing for dynamic task reallocation under time-varying communication networks. Building on our prior work, the framework supports the direct use of existing feedback controllers for reactive task satisfaction. We address two key challenges: disjunctive STL specifications and time-varying communication networks. Disjunctive specifications are handled through a graph transition system that captures the alternative task sequences induced by logical OR operators. To address time-varying connectivity, we introduce a redistribution mechanism that transfers tasks from disconnected agents to connected ones as the network evolves while preserving decentralized execution. Simulations and experiments on a swarm of Crazyflie drones demonstrate scalability in the number of agents, communication connectivity, and specification complexity.",
+          "subjects": []
+        },
+        {
+          "title": "Quality of Control-Based Control-Communication Co-Design for Collaborative Robotics",
+          "authors": [
+            "Neelabhro Roy",
+            "Mani H. Dhullipalla",
+            "Gourav Prateek Sharma",
+            "Sara Sandberg",
+            "Dimos V. Dimarogonas",
+            "James Gross"
+          ],
+          "year": 2026,
+          "date": "2026-06-01",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "53c4f5711e35ae4f5060bcb2cc5fe668e2801c40",
+          "url": "https://www.semanticscholar.org/paper/53c4f5711e35ae4f5060bcb2cc5fe668e2801c40",
+          "abstract": "Motivated by the growing importance of flexible automation in industrial environments, this article investigates the impact of wireless solutions in collaborative robotics, toward which we provide a quality of control (QoC)-based abstraction and methodology that comprehensively captures the interplay between network-induced delays, reliability, and robotic workload parameters for wireless collaborative robotics (WCR). For such a setting, we formulate a joint control-communication co-design based optimization framework to maximize the QoC across all robots, for 5G resource dimensioning. This is crucial for identifying optimal co-design parameters maximizing the QoC for limited 5G bandwidth across different topologies of robotic connectivity, prior to the deployment of these WCRs, or when selecting appropriate connectivity priority levels. We compare the performance of our proposed algorithm to different state of the art schemes in the literature. Our simulation results highlight the latency-reliability tradeoff and its implications on the control performance. We also demonstrate that our abstraction can be utilized for control-communication co-design, identifying optimal latency-reliability points in conjunction with the maximum velocity the robots operate with, while highlighting the energy gains due to co-design as well.",
+          "subjects": []
+        },
+        {
+          "title": "An Operator-Based Approach to STL",
+          "authors": [
+            "Panagiotis Rousseas",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2026,
+          "date": "2026-05-27",
+          "citations": 0,
+          "arxiv_id": "2605.28092",
+          "paper_id": "88a403aea0f299ef9d3268d4714e28cab5ce9d9f",
+          "url": "https://arxiv.org/abs/2605.28092",
+          "abstract": "Signal Temporal Logic (STL), has recently seen extensive development, owing to its rich expressivenes for autonomous planning and control. Nevertheless, existing verification and control synthesis methods are limited with respect to the complexity and degree of nesting of the formulae. In this work, we propose a novel approach to STL based on an operator acting on reachability value functions. This constitutes a new theoretical framework for handling complex multi-nested formulae while at the same time providing tools for on-line control synthesis. In contrast to focusing on the design of STL-based reachability (or control barrier) functions, we develop operator-based nesting rules directly. Our method's expressiveness is demonstrated both theoretically, where necessary and sufficient conditions for STL formula satisfaction are extracted, as well as in simulations with complex fragments.",
+          "subjects": []
+        },
+        {
+          "title": "Preserving Topology Privacy of Network Systems by Feedback: Conditions and Distributed Design",
+          "authors": [
+            "Yu-Shan Li",
+            "Jiabao He",
+            "Julien M. Hendrickx",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2026,
+          "date": "2026-05-15",
+          "citations": 0,
+          "arxiv_id": "2605.15743",
+          "paper_id": "1c36b78fa034009337400835cd8a6ba8833923af",
+          "url": "https://arxiv.org/abs/2605.15743",
+          "abstract": "This paper develops a feedback-based method to preserve the topology privacy of consensus protocols in network systems. The key idea is to intentionally violate topology identifiability conditions, thereby preventing unique or accurate recovery of the true topology from available observations, while preserving the intended consensus behavior. This problem is challenging because the feedback magnitude directly reflects the privacy level of edges, while it is strongly coupled with the consensus convergence and constrained by local communications at each node. To begin with, we derive the feedback conditions of both partial and full observation cases, where the topology unsolvability from observation data is characterized in the former, and the solution space that enforces topology inaccuracy from data is constructed in the latter. Then, we propose a novel distributed topology modification design under limited privacy budgets, and establish the performance guarantees through a controllable tradeoff between the consensus deviation and the topology privacy. Finally, we develop a low-complexity heuristic algorithm to achieve optimal privacy preservation on existing edges. Comparative simulations validate the effectiveness and outperformance of the proposed preservation design.",
+          "subjects": []
+        },
+        {
+          "title": "Security-Aware Planning and Control of Multi-Agent Systems with LTL Tasks",
+          "authors": [
+            "Georgios Mitsos",
+            "Dimos V. Dimarogonas",
+            "Siyuan Liu"
+          ],
+          "year": 2026,
+          "date": "2026-05-13",
+          "citations": 0,
+          "arxiv_id": "2605.13134",
+          "paper_id": "ee8b4f1a6715eb5c69c29b1e4fbd61179ab05cfd",
+          "url": "https://arxiv.org/abs/2605.13134",
+          "abstract": "This paper presents a secure-by-construction planning and control framework for multi-agent systems subject to linear temporal logic (LTL) specifications. The framework protects sensitive information from a passive intruder with partial observations of the agents'motion. Security in multi-agent coordination is captured by two notions that prevent the intruder from inferring whether a secret task has been executed and from identifying the agent responsible for its execution. The proposed framework incorporates the security constraints directly into the LTL synthesis procedure by constructing a secure finite transition system that removes all paths violating these constraints. Standard LTL synthesis is then applied to this secure abstraction to generate discrete plans, which are then refined into dynamically feasible continuous trajectories. This synthesis procedure provides formal guarantees that the resulting behavior of the multi-agent system satisfies both the global LTL specification and the security constraints. The effectiveness of the proposed framework is demonstrated through a two-drone case study.",
+          "subjects": []
+        },
+        {
+          "title": "Control of Multi-agent Systems under STL Specifications based on Prescribed Performance Observers",
+          "authors": [
+            "Tommaso Zaccherini",
+            "Siyuan Liu",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2026,
+          "date": "2026-04-24",
+          "citations": 0,
+          "arxiv_id": "2604.22315",
+          "paper_id": "db08a48b4a685bba3fcb63857d02ccc44e97d6b7",
+          "url": "https://arxiv.org/abs/2604.22315",
+          "abstract": "This paper addresses decentralized control of large-scale heterogeneous multi-agent systems subject to bounded external disturbances and limited communication, with the objective of satisfying cooperative Signal Temporal Logic (STL) specifications. The considered specifications involve spatiotemporal tasks that require collaboration among multiple agents, including agents beyond direct communication neighborhoods. To address the communication constraints, a $k$-hop Prescribed Performance State Observer ($k$-hop PPSO) is designed to enable each agent to estimate the states of agents up to $k$ communication hops away using only information from $1$-hop neighbors, while guaranteeing predefined performance bounds on the estimation errors. The estimation error bounds are explicitly incorporated into a reformulation of the spatial robustness of the STL specifications, yielding robustness measures that account for worst-case estimation uncertainty. Based on the modified robustness, a decentralized continuous-time feedback control law is designed to guarantee satisfaction of the STL specifications in the presence of bounded disturbances and estimation errors. The proposed framework provides formal correctness guarantees using only local information and limited communication. Numerical simulations illustrate the theoretical results.",
+          "subjects": []
+        },
+        {
+          "title": "ADMM-Based Distributed Kalman-like Observer with Applications to Cooperative Localization",
+          "authors": [
+            "N. D. Carli",
+            "Nicola Bastianello",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2026,
+          "date": "2026-04-23",
+          "citations": 0,
+          "arxiv_id": "2604.21608",
+          "paper_id": "73cafd71bf9151751daab6f1f813c4418667af7d",
+          "url": "https://arxiv.org/abs/2604.21608",
+          "abstract": "This paper addresses distributed state estimation for multi-agent systems with local and relative measurements, motivated by cooperative localization problems in which the global state dimension scales with the size of the network. We consider a Kalman-like observer in information form and introduce a sparsity-preserving prediction step based on an exponential forgetting factor, thereby avoiding the dense Riccati recursion of the standard information filter. The correction step is recast as a strongly convex quadratic program with structure induced by the sensing graph, which enables a distributed solution based on the alternating direction method of multipliers (ADMM). In the resulting scheme, each agent updates local copies of its own correction variable and those of its neighbors using only local communication, thus avoiding centralized matrix inversion and consensus over full global-state quantities. A two-time-scale stability analysis is developed for the interconnected observer: the reduced estimation-error dynamics are shown to be uniformly exponentially stable, the ADMM dynamics define an exponentially stable fast subsystem, and these properties are combined to establish uniform exponential stability of the overall distributed observer. Numerical simulations in a multi-agent cooperative localization scenario illustrate the performance of the proposed distributed observer.",
+          "subjects": []
+        },
+        {
+          "title": "Topology Estimation for Open Multi-Agent Systems",
+          "authors": [
+            "Nana Wang",
+            "Pelin Şekercioğlu",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2026,
+          "date": "2026-04-15",
+          "citations": 0,
+          "arxiv_id": "2604.13628",
+          "paper_id": "dfed885eb3364ce4d8ca483add849415875cdd66",
+          "url": "https://arxiv.org/abs/2604.13628",
+          "abstract": "We address the problem of interaction topology identification in open multi-agent systems (OMAS) with dynamic node sets and fast switching interactions. In such systems, new agents join and interactions change rapidly, resulting in intervals with short dwell time and rendering conventional segment-wise estimation and clustering methods unreliable. To overcome this, we propose a projection-based dissimilarity measure derived from a consistency property of local least-squares operators, enabling robust mode clustering. Aggregating intervals within each cluster yields accurate topology estimates. The proposed framework offers a systematic solution for reconstructing the interaction topology of OMAS subject to fast switching. Finally, we illustrate our theoretical results via numerical simulations.",
+          "subjects": []
+        },
+        {
+          "title": "Topology Identification of Dynamical Signed Graphs",
+          "authors": [
+            "Pelin Şekercioğlu",
+            "Nana Wang",
+            "Angela Fontan",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2026,
+          "date": "2026-04-10",
+          "citations": 0,
+          "arxiv_id": "2604.09079",
+          "paper_id": "158099f0e5b9742589f83bd6bdf83c87db79f709",
+          "url": "https://arxiv.org/abs/2604.09079",
+          "abstract": "We propose an adaptive control protocol for identifying the topology of dynamical networks interconnected over undirected graphs with cooperative and antagonistic interactions. The signed network is modeled using a repelling Laplacian. Topology identification relies on an edge-based formulation of the network and adaptive control protocols through the design of a persistently excited auxiliary network. Our approach guarantees the simultaneous identification and synchronization of the unknown signed network and establishes uniform semiglobal practical asymptotic stability of the estimation errors. Numerical simulations validate our theoretical results.",
+          "subjects": []
+        },
+        {
+          "title": "ConstrucTwin: Digital Twin-Driven Multirobot Construction System Toward Industry 5.0",
+          "authors": [
+            "Zhihao Liu",
+            "Jorge Silva",
+            "Ruirui Zhong",
+            "Qiang Qin",
+            "Neelabhro Roy",
+            "Victor Nan Fernandez-Ayala",
+            "J. Lesko",
+            "U. Håkansson",
+            "Sara Sandberg",
+            "Dimos V. Dimarogonas",
+            "James Gross",
+            "Xi Vincent Wang",
+            "Lihui Wang"
+          ],
+          "year": 2026,
+          "date": "2026-04-01",
+          "citations": 4,
+          "arxiv_id": null,
+          "paper_id": "b8b25db80e89f2de068a7ef3741e5c7abc7301be",
+          "url": "https://www.semanticscholar.org/paper/b8b25db80e89f2de068a7ef3741e5c7abc7301be",
+          "abstract": "Rapid advancements in digitalization and artificial intelligence (AI) have catalyzed the adoption of digital twin technologies in the construction sector, enabling real-time synchronization between virtual models and physical systems. Simultaneously, on-site robotic automation has shown promise for reducing physical workloads, enhancing productivity, and contributing to sustainability goals that are key values of Industry 5.0. However, current digital twin implementations rarely incorporate multirobot construction systems, often relying on single-robot approaches or purely offline simulations. This gap hinders the realization of truly integrated construction environments that combine sensing, data analytics, wireless communications, and multirobot coordination. In response, this article proposes ConstrucTwin, a digital twin-driven multirobot construction framework designed to support complex construction tasks in real-world settings. By combining a 5G communication estimation-involved architecture and a cross-level planning strategy, ConstrucTwin streamlines interactions between physical robots and their digital counterparts. Essential tasks such as motion and task-level planning, as well as remote human-in-the-loop (HIL) oversight, are orchestrated within a single unified architecture. Through case studies involving rebar cage and brick wall construction, we demonstrate how an integrated approach to vision-based servoing and multirobot coordination enhances execution speed, precision, and scalability. The results underscore the system’s potential to advance human-centric, resilient, and sustainable construction, thereby aligning with the broader vision of Industry 5.0.",
+          "subjects": []
+        },
+        {
+          "title": "A Modular Platooning and Vehicle Coordination Simulator for Research and Education",
+          "authors": [
+            "Kevin Jamsahar",
+            "A. Wiltz",
+            "Maria Charitidou",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2026,
+          "date": "2026-03-25",
+          "citations": 0,
+          "arxiv_id": "2603.24540",
+          "paper_id": "e5abadeca4567ad25a0d356684e5992bd68f9925",
+          "url": "https://arxiv.org/abs/2603.24540",
+          "abstract": "This work presents a modular, Python-based simulator that simplifies the evaluation of novel vehicle control and coordination algorithms in complex traffic scenarios while keeping the implementation overhead low. It allows researchers to focus primarily on developing the control and coordination strategies themselves, while the simulator manages the setup of complex road networks, vehicle configuration, execution of the simulation and the generation of video visualizations of the results. It is thereby also well-suited to support control education by allowing instructors to create interactive exercises providing students with direct visual feedback. Thanks to its modular architecture, the simulator remains easily customizable and extensible, lowering the barrier for conducting advanced simulation studies in vehicle and traffic control research. GitHub: https://github.com/KTH-DHSG/Platooning_Simulator, Youtube: https://www.youtube.com/watch?v=7Ef_6DNhcoE",
+          "subjects": []
+        },
+        {
+          "title": "Tunable Input-to-State Safety With Input Constraints",
+          "authors": [
+            "Ming Li",
+            "Jin Chen",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2026,
+          "date": "2026-03-08",
+          "citations": 0,
+          "arxiv_id": "2603.07736",
+          "paper_id": "cbbfd1e0bf4bda0c6d3bd7b20e8bfb9e0add941c",
+          "url": "https://arxiv.org/abs/2603.07736",
+          "abstract": "Tunable input-to-state safety (TISSf) generalizes input-to-state safety (ISSf) by incorporating a tuning function that regulates safety conservatism while preserving robustness against perturbations. However, the tuning function is often designed without explicitly incorporating actuator limits, which can lead to incompatibility with input constraints. To address this issue, this letter proposes a framework that integrates general compact input constraints into the tuning function design. Using a geometric perspective, we characterize the TISSf condition as a state-dependent half-space constraint and derive a verifiable compatibility certificate using support functions. This yields an explicit lower bound on the tuning function and characterizes the admissible tunings under input constraints. The results are specialized to norm-bounded, polyhedral, and box constraints, yielding tractable design conditions. Combined with tuning function monotonicity, these conditions guarantee input compatibility and pointwise feasibility of the resulting quadratic program (QP)-based safety filter. An offline covering-based sampling strategy further upgrades the pointwise compatibility condition to a finite-dimensional linear program (LP) for parameter selection. A connected cruise control (CCC) application demonstrates robust safety under TISSf while enforcing input constraints.",
+          "subjects": []
+        },
+        {
+          "title": "Cooperative Stochastic MPC Under Hard Input Constraints and Event-Triggered Communication",
+          "authors": [
+            "Irene Perez-Salesa",
+            "Dimos V. Dimarogonas",
+            "Carlos Sagüés",
+            "Rodrigo Aldana‐López"
+          ],
+          "year": 2026,
+          "date": "2026-03-01",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "bc21a47e4b6ab6cc655652646b15ef3cd70bb7d3",
+          "url": "https://www.semanticscholar.org/paper/bc21a47e4b6ab6cc655652646b15ef3cd70bb7d3",
+          "abstract": "In this work, we develop a new distributed output-feedback stochastic model-predictive control (SMPC) proposal for a plant that is cooperatively regulated by a set of actuator nodes. Contrary to most approaches, we consider hard constraints on the actuators, and we appropriately tighten the constraints to ensure recursive feasibility with a given probability, despite the stochastic noise present in the system. To lighten the communication load, the constraint design is performed offline, and an event-triggering mechanism is included, so that the nodes only need to transmit their local state estimates to neighbors at event instants during online execution. We prove constraint satisfaction and stability of our proposal, and we include simulation results showing that similar control performance to the centralized case can be achieved by our distributed SMPC with reduced communication.",
+          "subjects": []
+        },
+        {
+          "title": "Achieving violation-free distributed optimization under coupling constraints",
+          "authors": [
+            "Changxin Liu",
+            "Xiao Tan",
+            "Xuyang Wu",
+            "Dimos V. Dimarogonas",
+            "K. H. Johansson"
+          ],
+          "year": 2026,
+          "date": "2026-03-01",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "7ab130efbaec99bc9c5d7bbdef1c9705687513b1",
+          "url": "https://www.semanticscholar.org/paper/7ab130efbaec99bc9c5d7bbdef1c9705687513b1",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Validation of Space Robotics in Underwater Environments via Disturbance Robustness Equivalency",
+          "authors": [
+            "Joris Verhagen",
+            "Elias Krantz",
+            "Chelsea Sidrane",
+            "David Dorner",
+            "Nicola De Carli",
+            "Pedro Roque",
+            "Huina Mao",
+            "Gunnar Tibert",
+            "Ivan Stenius",
+            "Christer Fuglesang",
+            "Dimos V. Dimarogonas",
+            "Jana Tumova"
+          ],
+          "year": 2026,
+          "date": "2026-02-28",
+          "citations": 0,
+          "arxiv_id": "2603.00628",
+          "paper_id": "ec6273cfb1dc2f34d8c70ca8b8f3c69005ce3f89",
+          "url": "https://arxiv.org/abs/2603.00628",
+          "abstract": "We present an experimental validation framework for space robotics that leverages underwater environments to approximate microgravity dynamics. While neutral buoyancy conditions make underwater robotics an excellent platform for space robotics validation, there are still dynamical and environmental differences that need to be overcome. Given a high-level space mission specification, expressed in terms of a Signal Temporal Logic specification, we overcome these differences via the notion of maximal disturbance robustness of the mission. We formulate the motion planning problem such that the original space mission and the validation mission achieve the same disturbance robustness degree. The validation platform then executes its mission plan using a near-identical control strategy to the space mission where the closed-loop controller considers the spacecraft dynamics. Evaluating our validation framework relies on estimating disturbances during execution and comparing them to the disturbance robustness degree, providing practical evidence of operation in the space environment. Our evaluation features a dual-experiment setup: an underwater robot operating under near-neutral buoyancy conditions to validate the planning and control strategy of either an experimental planar spacecraft platform or a CubeSat in a high-fidelity space dynamics simulator.",
+          "subjects": []
+        }
+      ]
     ],
     [
       "Shima Sadat Mousavi",
@@ -2611,7 +3233,7 @@
           ],
           "year": 2026,
           "date": "2026-03-18",
-          "citations": 1,
+          "citations": 0,
           "arxiv_id": "2603.17401",
           "paper_id": "c0036bf746231a16dfbbce284f0bcf142ecd302d",
           "url": "https://arxiv.org/abs/2603.17401",
@@ -2726,6 +3348,326 @@
           ]
         },
         {
+          "title": "Rigidity-Aware Formation Tracking under Sensing Range Constraints via Single Control Barrier Function Constraint",
+          "authors": [
+            "S. Saharsh",
+            "Pushpak Jagtap"
+          ],
+          "year": 2026,
+          "date": "2026-08-17",
+          "citations": 0,
+          "arxiv_id": "2608.16115",
+          "paper_id": "959038ff4e43b40ecf249ff0f75cd75d04eadc4b",
+          "url": "https://arxiv.org/abs/2608.16115",
+          "abstract": "This paper presents a control framework for formation tracking and rigidity maintenance in heterogeneous multi-robot systems with nonlinear dynamics under sensing range constraints. Since formation tracking alone does not ensure rigidity maintenance with a limited sensing range, despite rigidity being a prerequisite for establishing and preserving a unique formation, our work integrates both objectives through a single Control Barrier Function (CBF)-like constraint within a quadratic optimization framework. The proposed distributed controller requires only local relative information from neighbors, as verified with simulation case studies.",
+          "subjects": []
+        },
+        {
+          "title": "Control Barrier Function only Formation Tracking in Multi-Agent Systems",
+          "authors": [
+            "S. Saharsh",
+            "Pushpak Jagtap"
+          ],
+          "year": 2026,
+          "date": "2026-06-24",
+          "citations": 0,
+          "arxiv_id": "2606.25452",
+          "paper_id": "34914c216a39e7442a7f8925b39f5326328f7875",
+          "url": "https://arxiv.org/abs/2606.25452",
+          "abstract": "This paper presents a real-time control framework for formation tracking of heterogeneous multi-agent systems with non-linear dynamics. The proposed method formulates a single Control Barrier Function-like constraint within a quadratic optimization setting that addresses formation tracking. Relying on the relative information of neighboring agents, the controller is designed to operate without the need for manual parameter tuning or a separate nominal formation controller. The leader-follower framework is validated through simulations of moving formations.",
+          "subjects": []
+        },
+        {
+          "title": "Sliding Mode Control for Safe Trajectory Tracking with Moving Obstacles Avoidance: Experimental Validation on Planar Robots",
+          "authors": [
+            "Shubham Sawarkar",
+            "P. Sangeerth",
+            "S. Saharsh",
+            "Pushpak Jagtap"
+          ],
+          "year": 2026,
+          "date": "2026-04-27",
+          "citations": 0,
+          "arxiv_id": "2604.24518",
+          "paper_id": "dc60bbdee944cedbeff174aa0d4a1eac63b6016a",
+          "url": "https://arxiv.org/abs/2604.24518",
+          "abstract": "This paper presents a unified control framework for robust trajectory tracking and moving obstacle avoidance applicable to a broad class of mobile robots. By formulating a generalized kinematic transformation, we convert diverse vehicle dynamics into a strict feedback form, facilitating the design of a Sliding Mode Control (SMC) strategy for precise and robust reference tracking. To ensure operational safety in dynamic environments, the tracking controller is integrated with a Collision Cone Control Barrier Function (C3BF) based safety filter. The proposed architecture guarantees asymptotic tracking in the presence of external disturbances while strictly enforcing collision avoidance constraints. The novelty of this work lies in designing a sliding mode controller for ground robots like the Ackermann drive, which has not been done before. The efficacy and versatility of the approach are validated through numerical simulations and extensive real-world experiments on three distinct platforms: an Ackermann-steered vehicle, a differential drive robot, and a quadrotor drone. Video of the experiments are available at [video link].",
+          "subjects": []
+        },
+        {
+          "title": "Neural Control Barrier Functions for Signal Temporal Logic Specifications with Input Constraints",
+          "authors": [
+            "Vaishnavi Jagabathula",
+            "Pushpak Jagtap"
+          ],
+          "year": 2025,
+          "date": "2025-12-15",
+          "citations": 0,
+          "arxiv_id": "2512.13344",
+          "paper_id": "cb885359a33790fb39731414ab070d75733dde4a",
+          "url": "https://arxiv.org/abs/2512.13344",
+          "abstract": "Signal Temporal Logic (STL) provides a powerful framework to describe complex tasks involving temporal and logical behavior in dynamical systems. This work addresses controller synthesis for continuous-time systems subject to STL specifications and input constraints. We propose a neural network-based framework for synthesizing time-varying control barrier functions (TVCBF) and their corresponding controllers for systems to fulfill a fragment of STL specifications while respecting input constraints. We formulate barrier conditions incorporating the spatial and temporal logic of the given STL specification. We also incorporate a method to refine the time-varying set that satisfies the STL specification for the given input constraints. Additionally, we introduce a validity condition to provide formal safety guarantees across the entire state space. Finally, we demonstrate the effectiveness of the proposed approach through several simulation studies considering different STL tasks for various dynamical systems (including affine and non-affine systems).",
+          "subjects": []
+        },
+        {
+          "title": "Approximation-Free Control Barrier Functions for Prescribed-Time Reach-Avoid of Unknown Systems",
+          "authors": [
+            "Shubham Sawarkar",
+            "Pushpak Jagtap"
+          ],
+          "year": 2025,
+          "date": "2025-11-28",
+          "citations": 0,
+          "arxiv_id": "2511.23022",
+          "paper_id": "de9ef4adf0e04b2ba376150292d5ca4d8a17a00c",
+          "url": "https://arxiv.org/abs/2511.23022",
+          "abstract": "We study the prescribed-time reach-avoid (PT-RA) control problem for nonlinear systems with unknown dynamics operating in environments with moving obstacles. Unlike robust or learning based Control Barrier Function (CBF) methods, the proposed framework requires neither online model learning nor uncertainty bound estimation. A CBF-based Quadratic Program (CBF-QP) is solved on a simple virtual system to generate a safe reference satisfying PT-RA conditions with respect to time-varying, tightened obstacle and goal sets. The true system is confined to a Virtual Confinement Zone (VCZ) around this reference using an approximation-free feedback law. This construction guarantees real-time safety and prescribed-time target reachability under unknown dynamics and dynamic constraints without explicit model identification or offline precomputation. Simulation results illustrate reliable dynamic obstacle avoidance and timely convergence to the target set.",
+          "subjects": []
+        },
+        {
+          "title": "Control Barrier Functions for the Full Class of Signal Temporal Logic Tasks using Spatiotemporal Tubes",
+          "authors": [
+            "Ratnangshu Das",
+            "Subhodeep Choudhury",
+            "Pushpak Jagtap"
+          ],
+          "year": 2025,
+          "date": "2025-10-22",
+          "citations": 0,
+          "arxiv_id": "2510.19595",
+          "paper_id": "8197c8eaaaf27cbe9046d59cb5ef3abe2d114112",
+          "url": "https://arxiv.org/abs/2510.19595",
+          "abstract": "This paper introduces a new framework for synthesizing time-varying control barrier functions (TV-CBFs) for general Signal Temporal Logic (STL) specifications using spatiotemporal tubes (STT). We first formulate the STT synthesis as a robust optimization problem (ROP) and solve it through a scenario optimization problem (SOP), providing formal guarantees that the resulting tubes capture the given STL specifications. These STTs are then used to construct TV-CBFs, ensuring that under any control law rendering them invariant, the system satisfies the STL tasks. We demonstrate the framework through case studies on a differential-drive mobile robot and a quadrotor, and provide a comparative analysis showing improved efficiency over existing approaches.",
+          "subjects": []
+        },
+        {
+          "title": "Neural Network-based Co-design of Output-Feedback Control Barrier Function and Observer",
+          "authors": [
+            "Vaishnavi Jagabathula",
+            "Ahan Basu",
+            "Pushpak Jagtap"
+          ],
+          "year": 2025,
+          "date": "2025-09-30",
+          "citations": 0,
+          "arxiv_id": "2509.26597",
+          "paper_id": "594ccff442ff2e24b558d68f74a25851e753ef23",
+          "url": "https://arxiv.org/abs/2509.26597",
+          "abstract": "Control Barrier Functions (CBFs) provide a powerful framework for ensuring safety in dynamical systems. However, their application typically relies on full state information, which is often violated in real-world due to the availability of partial state information. In this work, we propose a neural network-based framework for the co-design of a safety controller, observer, and CBF for partially observed continuous-time systems with input constraints. By formulating barrier conditions over an augmented state space, our approach ensures safety without requiring bounded estimation errors or handcrafted barrier functions. All components are jointly trained by formulating appropriate loss functions, and we introduce a validity condition to provide formal safety guarantees beyond the training data. Finally, we demonstrate the effectiveness of the proposed approach through several case studies.",
+          "subjects": []
+        },
+        {
+          "title": "Safe and Performant Controller Synthesis using Gradient-based Model Predictive Control and Control Barrier Functions",
+          "authors": [
+            "Aditya Singh",
+            "Aastha Mishra",
+            "Manan Tayal",
+            "Shishir N Y Kolathaya",
+            "Pushpak Jagtap"
+          ],
+          "year": 2025,
+          "date": "2025-07-18",
+          "citations": 0,
+          "arxiv_id": "2507.13872",
+          "paper_id": "915f24e8cb8fd9899f5f443c4cfa4760a11be83f",
+          "url": "https://arxiv.org/abs/2507.13872",
+          "abstract": "Ensuring both performance and safety is critical for autonomous systems operating in real-world environments. While safety filters such as Control Barrier Functions (CBFs) enforce constraints by modifying nominal controllers in real time, they can become overly conservative when the nominal policy lacks safety awareness. Conversely, solving State-Constrained Optimal Control Problems (SC-OCPs) via dynamic programming offers formal guarantees but is intractable in high-dimensional systems. In this work, we propose a novel two-stage framework that combines gradient-based Model Predictive Control (MPC) with CBF-based safety filtering for co-optimizing safety and performance. In the first stage, we relax safety constraints as penalties in the cost function, enabling fast optimization via gradient-based methods. This step improves scalability and avoids feasibility issues associated with hard constraints. In the second stage, we modify the resulting controller using a CBF-based Quadratic Program (CBF-QP), which enforces hard safety constraints with minimal deviation from the reference. Our approach yields controllers that are both performant and provably safe. We validate the proposed framework on two case studies, showcasing its ability to synthesize scalable, safe, and high-performance controllers for complex, high-dimensional autonomous systems.",
+          "subjects": []
+        },
+        {
+          "title": "Stochastic Neural Control Barrier Functions",
+          "authors": [
+            "Hongchao Zhang",
+            "Manan Tayal",
+            "Jackson Cox",
+            "Pushpak Jagtap",
+            "Shishir N Y Kolathaya",
+            "Andrew Clark"
+          ],
+          "year": 2025,
+          "date": "2025-06-26",
+          "citations": 0,
+          "arxiv_id": "2506.21697",
+          "paper_id": "5223ab10b92f14ac0d2bd6ef5405d028eecf5f3d",
+          "url": "https://arxiv.org/abs/2506.21697",
+          "abstract": "Control Barrier Functions (CBFs) are utilized to ensure the safety of control systems. CBFs act as safety filters in order to provide safety guarantees without compromising system performance. These safety guarantees rely on the construction of valid CBFs. Due to their complexity, CBFs can be represented by neural networks, known as neural CBFs (NCBFs). Existing works on the verification of the NCBF focus on the synthesis and verification of NCBFs in deterministic settings, leaving the stochastic NCBFs (SNCBFs) less studied. In this work, we propose a verifiably safe synthesis for SNCBFs. We consider the cases of smooth SNCBFs with twice-differentiable activation functions and SNCBFs that utilize the Rectified Linear Unit or ReLU activation function. We propose a verification-free synthesis framework for smooth SNCBFs and a verification-in-the-loop synthesis framework for both smooth and ReLU SNCBFs. and we validate our frameworks in three cases, namely, the inverted pendulum, Darboux, and the unicycle model.",
+          "subjects": []
+        },
+        {
+          "title": "CP-NCBF: A Conformal Prediction-based Approach to Synthesize Verified Neural Control Barrier Functions",
+          "authors": [
+            "Manan Tayal",
+            "Aditya Singh",
+            "Pushpak Jagtap",
+            "Shishir N Y Kolathaya"
+          ],
+          "year": 2025,
+          "date": "2025-03-18",
+          "citations": 0,
+          "arxiv_id": "2503.17395",
+          "paper_id": "7969f0b3739fa91a247b1674d7aaf80f8922433b",
+          "url": "https://arxiv.org/abs/2503.17395",
+          "abstract": "Control Barrier Functions (CBFs) are a practical approach for designing safety-critical controllers, but constructing them for arbitrary nonlinear dynamical systems remains a challenge. Recent efforts have explored learning-based methods, such as neural CBFs (NCBFs), to address this issue. However, ensuring the validity of NCBFs is difficult due to potential learning errors. In this letter, we propose a novel framework that leverages split-conformal prediction to generate formally verified neural CBFs with probabilistic guarantees based on a user-defined error rate, referred to as CP-NCBF. Unlike existing methods that impose Lipschitz constraints on neural CBF-leading to scalability limitations and overly conservative safe sets--our approach is sample-efficient, scalable, and results in less restrictive safety regions. We validate our framework through case studies on obstacle avoidance in autonomous driving and geo-fencing of aerial vehicles, demonstrating its ability to generate larger and less conservative safe sets compared to conventional techniques.",
+          "subjects": []
+        },
+        {
+          "title": "Control Barrier Functions for Prescribed-Time Reach-Avoid-Stay Tasks using Spatiotemporal Tubes",
+          "authors": [
+            "Ratnangshu Das",
+            "Pranav Bakshi",
+            "Pushpak Jagtap"
+          ],
+          "year": 2025,
+          "date": "2025-03-11",
+          "citations": 0,
+          "arxiv_id": "2503.08106",
+          "paper_id": "f2d92052fad6eab0ce0aea3164829bc167129b01",
+          "url": "https://arxiv.org/abs/2503.08106",
+          "abstract": "Prescribed-time reach-avoid-stay (PT-RAS) specifications are crucial in applications requiring precise timing, state constraints, and safety guarantees. While control carrier functions (CBFs) have emerged as a promising approach, providing formal guarantees of safety, constructing CBFs that satisfy PT-RAS specifications remains challenging. In this paper, we present a novel approach using a spatiotemporal tubes (STTs) framework to construct CBFs for PT-RAS tasks. The STT framework allows for the systematic design of CBFs that dynamically manage both spatial and temporal constraints, ensuring that the system remains within a safe operational envelope while achieving the desired temporal objectives. The proposed method is validated with two case studies: temporal motion planning of an omnidirectional robot and temporal waypoint navigation with obstacles for a multi-UAV payload carrying setup, using higher-order CBFs.",
+          "subjects": []
+        },
+        {
+          "title": "Semi-Supervised Safe Visuomotor Policy Synthesis using Barrier Certificates",
+          "authors": [
+            "Manan Tayal",
+            "Aditya Singh",
+            "Pushpak Jagtap",
+            "Shishir N Y Kolathaya"
+          ],
+          "year": 2024,
+          "date": "2024-09-19",
+          "citations": 0,
+          "arxiv_id": "2409.12616",
+          "paper_id": "fd0fead071b9b627ea2cfd0c8634443c6a2a2962",
+          "url": "https://arxiv.org/abs/2409.12616",
+          "abstract": "In modern robotics, addressing the lack of accurate state space information in real-world scenarios has led to a significant focus on utilizing visuomotor observation to provide safety assurances. Although supervised learning methods, such as imitation learning, have demonstrated potential in synthesizing control policies based on visuomotor observations, they require ground truth safety labels for the complete dataset and do not provide formal safety assurances. On the other hand, traditional control-theoretic methods like Control Barrier Functions (CBFs) and Hamilton-Jacobi (HJ) Reachability provide formal safety guarantees but depend on accurate knowledge of system dynamics, which is often unavailable for high-dimensional visuomotor data. To overcome these limitations, we propose a novel approach to synthesize a semi-supervised safe visuomotor policy using barrier certificates that integrate the strengths of model-free supervised learning and model-based control methods. This framework synthesizes a provably safe controller without requiring safety labels for the complete dataset and ensures completeness guarantees for both the barrier certificate and the policy. We validate our approach through distinct case studies: an inverted pendulum system and the obstacle avoidance of an autonomous mobile robot, and compare with baselines. Simulation videos of both case studies can be viewed on the project webpage.",
+          "subjects": []
+        },
+        {
+          "title": "Real Time Safety of Fixed-wing UAVs using Collision Cone Control Barrier Functions",
+          "authors": [
+            "Aryan Agarwal",
+            "Ravi Agrawal",
+            "Manan Tayal",
+            "Pushpak Jagtap",
+            "Shishir N Y Kolathaya"
+          ],
+          "year": 2024,
+          "date": "2024-07-27",
+          "citations": 0,
+          "arxiv_id": "2407.19335",
+          "paper_id": "9eac15e817e5fe90e1b2c48c02ecbe534cc0a101",
+          "url": "https://arxiv.org/abs/2407.19335",
+          "abstract": "Fixed-wing UAVs have transformed the transportation system with their high flight speed and long endurance, yet their safe operation in increasingly cluttered environments depends heavily on effective collision avoidance techniques. This paper presents a novel method for safely navigating an aircraft along a desired route while avoiding moving obstacles. We utilize a class of control barrier functions (CBFs) based on collision cones to ensure the relative velocity between the aircraft and the obstacle consistently avoids a cone of vectors that might lead to a collision. By demonstrating that the proposed constraint is a valid CBF for the aircraft, we can leverage its real-time implementation via Quadratic Programs (QPs), termed the CBF-QPs. Validation includes simulating control law along trajectories, showing effectiveness in both static and moving obstacle scenarios.",
+          "subjects": []
+        },
+        {
+          "title": "Learning a Formally Verified Control Barrier Function in Stochastic Environment",
+          "authors": [
+            "Manan Tayal",
+            "Hongchao Zhang",
+            "Pushpak Jagtap",
+            "Andrew Clark",
+            "Shishir N Y Kolathaya"
+          ],
+          "year": 2024,
+          "date": "2024-03-28",
+          "citations": 0,
+          "arxiv_id": "2403.19332",
+          "paper_id": "4995e56b05e12b5de7cf11681c274ebec1c5f1c7",
+          "url": "https://arxiv.org/abs/2403.19332",
+          "abstract": "Safety is a fundamental requirement of control systems. Control Barrier Functions (CBFs) are proposed to ensure the safety of the control system by constructing safety filters or synthesizing control inputs. However, the safety guarantee and performance of safe controllers rely on the construction of valid CBFs. Inspired by universal approximatability, CBFs are represented by neural networks, known as neural CBFs (NCBFs). This paper presents an algorithm for synthesizing formally verified continuous-time neural Control Barrier Functions in stochastic environments in a single step. The proposed training process ensures efficacy across the entire state space with only a finite number of data points by constructing a sample-based learning framework for Stochastic Neural CBFs (SNCBFs). Our methodology eliminates the need for post hoc verification by enforcing Lipschitz bounds on the neural network, its Jacobian, and Hessian terms. We demonstrate the effectiveness of our approach through case studies on the inverted pendulum system and obstacle avoidance in autonomous driving, showcasing larger safe regions compared to baseline methods.",
+          "subjects": []
+        },
+        {
+          "title": "A Collision Cone Approach for Control Barrier Functions",
+          "authors": [
+            "Manan Tayal",
+            "Bhavya Giri Goswami",
+            "Karthik Rajgopal",
+            "Rajpal Singh",
+            "T. Rao",
+            "J. Keshavan",
+            "Pushpak Jagtap",
+            "Shishir N Y Kolathaya"
+          ],
+          "year": 2024,
+          "date": "2024-03-11",
+          "citations": 0,
+          "arxiv_id": "2403.07043",
+          "paper_id": "de15f67313a872f781063ffe529f5c37b3bfe51f",
+          "url": "https://arxiv.org/abs/2403.07043",
+          "abstract": "This work presents a general framework for collision avoidance using collision cone control barrier functions (C3BFs) in both autonomous ground vehicle (AGV) and autonomous aerial vehicle (AAV). We propose a novel control barrier function (CBF) formulation inspired by collision cones by constraining the relative velocity between the vehicle and the obstacle to always point away from each other. The proposed approach is demonstrated to effectively avoid collisions with kinematically moving obstacles through simulations and hardware implementations on the TurtleBot, Stoch-Jeep, and Crazyflie 2.1 quadrotor. The real-time safety-critical controller is developed using control barrier function-based quadratic programs (CBF-QPs) with popular AGV and AAV models in the literature. Comparison with the state-of-the-art CBF highlights the less conservative nature of the proposed approach. Broadly, this research contributes a collision cone-inspired control barrier framework that provides formal guarantees for collision avoidance in autonomous vehicles.",
+          "subjects": []
+        },
+        {
+          "title": "Collision Cone Control Barrier Functions: Experimental Validation on UGVs for Kinematic Obstacle Avoidance",
+          "authors": [
+            "Bhavya Giri Goswami",
+            "Manan Tayal",
+            "Karthik Rajgopal",
+            "Pushpak Jagtap",
+            "Shishir N Y Kolathaya"
+          ],
+          "year": 2023,
+          "date": "2023-10-16",
+          "citations": 0,
+          "arxiv_id": "2310.10839",
+          "paper_id": "e2c45b9017e80523e66f6c0c50f6937fb1bfd25b",
+          "url": "https://arxiv.org/abs/2310.10839",
+          "abstract": "This paper introduces an experimental platform designed for the validation and demonstration of a novel class of Control Barrier Functions (CBFs) tailored for Unmanned Ground Vehicles (UGVs) to proactively prevent collisions with kinematic obstacles by integrating the concept of collision cones. While existing CBF formulations excel with static obstacles, extensions to torque/acceleration-controlled unicycle and bicycle models have seen limited success. Conventional CBF applications in such nonholonomic UGV models have demonstrated control conservatism, particularly in scenarios where steering/thrust control was deemed infeasible. Drawing inspiration from collision cones in path planning, we present a pioneering C3BF formulation ensuring theoretical safety guarantees for such models. The core premise revolves around aligning the obstacle's velocity away from the vehicle, establishing a constraint to perpetually avoid vectors directed towards it. This control methodology is rigorously validated through simulations and experimental verification on the Copernicus mobile robot (Unicycle Model) and FOCAS-Car (Bicycle Model).",
+          "subjects": []
+        },
+        {
+          "title": "Barrier Function-based Distributed Symbolic Controller for Multi-Agent Systems",
+          "authors": [
+            "David Smith Sundarsingh",
+            "Ratnangshu Das",
+            "Adnane Saoud",
+            "Pushpak Jagtap"
+          ],
+          "year": 2023,
+          "date": "2023-04-04",
+          "citations": 0,
+          "arxiv_id": "2304.01652",
+          "paper_id": "5e6aaa6796a73432e7e374ea43a5d840c90ed541",
+          "url": "https://arxiv.org/abs/2304.01652",
+          "abstract": "Because of the scalability issues associated with the symbolic controller synthesis approach, employing it in a multi-agent system (MAS) framework becomes difficult. In this paper, we present a novel approach for synthesizing distributed symbolic controllers for MAS, that enforces a local Linear Temporal Logic (LTL) specification on each agent and global safety specifications on the MAS, in a computationally efficient manner by leveraging the concept of control barrier functions (CBF). In addition, we also provide an analysis on the effect of the CBF parameters on the conservatism introduced by our proposed approach in the size and domain of the synthesized controller. The effectiveness of this approach is demonstrated through a comparison with the conventional monolithic symbolic control, using simulation as well as hardware demonstrations.",
+          "subjects": []
+        },
+        {
+          "title": "Temporal Waypoint Navigation of Multi-UAV Payload System using Barrier Functions",
+          "authors": [
+            "Nishanth Rao",
+            "S. Sundaram",
+            "Pushpak Jagtap"
+          ],
+          "year": 2022,
+          "date": "2022-11-25",
+          "citations": 0,
+          "arxiv_id": "2211.14261",
+          "paper_id": "06e331a728ea1cc203cc31c912cf8371938aa429",
+          "url": "https://arxiv.org/abs/2211.14261",
+          "abstract": "Aerial package transportation often requires complex spatial and temporal specifications to be satisfied in order to ensure safe and timely delivery from one point to another. It is usually efficient to transport versatile payloads using multiple UAVs that can work collaboratively to achieve the desired task. The complex temporal specifications can be handled coherently by applying Signal Temporal Logic (STL) to dynamical systems. This paper addresses the problem of waypoint navigation of a multi-UAV payload system under temporal specifications using higher-order time-varying control barrier functions (HOCBFs). The complex nonlinear system of relative degree two is transformed into a simple linear system using input-output feedback linearization. An optimization-based control law is then derived to achieve the temporal waypoint navigation of the payload. The controller’s efficacy and real-time implementability are demonstrated by simulating a package delivery scenario inside a high-fidelity Gazebo simulation environment.",
+          "subjects": []
+        },
+        {
+          "title": "Synthesis of Partially Observed Jump-Diffusion Systems via Control Barrier Functions",
+          "authors": [
+            "N. Jahanshahi",
+            "Pushpak Jagtap",
+            "Majid Zamani"
+          ],
+          "year": 2021,
+          "date": "2021-01-01",
+          "citations": 0,
+          "arxiv_id": "2109.11477",
+          "paper_id": "ef235a7e22ea7615857b925cc9ea530288ee8970",
+          "url": "https://arxiv.org/abs/2109.11477",
+          "abstract": "In this letter, we study formal synthesis of control policies for partially observed jump-diffusion systems against complex logic specifications. Given a state estimator, we utilize a discretization-free approach for formal synthesis of control policies by using a notation of control barrier functions without requiring any knowledge of the estimation accuracy. Our goal is to synthesize an offline control policy providing (potentially maximizing) a lower bound on the probability that the trajectories of the partially observed jump-diffusion system satisfy some complex specifications expressed by deterministic finite automata. Finally, we illustrate the effectiveness of the proposed results by synthesizing a policy for a jet engine example.",
+          "subjects": []
+        },
+        {
           "title": "Control Barrier Functions for Unknown Nonlinear Systems using Gaussian Processes*",
           "authors": [
             "Pushpak Jagtap",
@@ -2745,7 +3687,345 @@
           ]
         }
       ],
-      []
+      [
+        {
+          "title": "Spatiotemporal Tubes for Probabilistic Temporal Reach–Avoid–Stay task in uncertain dynamic environment",
+          "authors": [
+            "Siddhartha Upadhyay",
+            "Ratnangshu Das",
+            "Pushpak Jagtap"
+          ],
+          "year": 2026,
+          "date": "2026-11-01",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "9272c33fab47eeb3ae26e53330db6afcab5f3a43",
+          "url": "https://www.semanticscholar.org/paper/9272c33fab47eeb3ae26e53330db6afcab5f3a43",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Rigid and Dynamic Formation Tracking Under Sensing Constraints",
+          "authors": [
+            "S. Saharsh",
+            "Vedhas Talnikar",
+            "Pushpak Jagtap"
+          ],
+          "year": 2026,
+          "date": "2026-09-01",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "3a26681580150f1d7e9e999ccf773c7579090b51",
+          "url": "https://www.semanticscholar.org/paper/3a26681580150f1d7e9e999ccf773c7579090b51",
+          "abstract": "Formation control in multi-agent systems typically assumes a rigid communication graph that is established and preserved throughout the operation, limiting applicability under real-world sensing constraints. In a dynamic communication graph, where communication links are broken or created based on a limited sensing range, this letter proposes a systematic way of acquiring a bearing rigid graph during motion, without assuming initial bearing rigidity. We also achieve tracking of the desired formation specified using only bearing measurements for heterogeneous non-linear multi-agent systems. We propose a distributed quadratic optimization framework for a leader–follower architecture using a single control barrier like function constraint that aligns the heading-dependent velocity of each agent for rigidity and tracking. Simulations and hardware experiments in a Motion capture environment are presented, which support our approach with a limited sensing range of each robot.",
+          "subjects": []
+        },
+        {
+          "title": "Spatiotemporal Tube-Based Safety-Certificate for Autonomous Navigation of Articulated Vehicles",
+          "authors": [
+            "Mohd. Faizuddin Faruqui",
+            "Ratnangshu Das",
+            "Ravi Kumar",
+            "Pushpak Jagtap"
+          ],
+          "year": 2026,
+          "date": "2026-08-14",
+          "citations": 0,
+          "arxiv_id": "2608.14531",
+          "paper_id": "1b7f907117e8f00311379f7eaffdba1142efe1f7",
+          "url": "https://arxiv.org/abs/2608.14531",
+          "abstract": "Articulated vehicles are the workhorses of freight transportation, and their autonomous navigation is challenging. Their physical characteristics and motion constraints pose significant challenges in manoeuvring these vehicles on narrow routes. This paper presents a spatiotemporal tube-based approach to plan autonomous navigation of vehicles like tractor semi-trailers, truck/ tractor trailers, towing Automated Guided Vehicles (AGVs), and road trains. This planning approach provides a certified path plan for the truck or tractor, ensuring that the towed series of trailers always remains within the road corridor, limited by permissible corrections. The planning leverages the kinematics of the linked elements along with sway constraints to arrive at a safe tube for the actuated prime mover. We modify the spatiotemporal tube using permissible corrections to provide a route safety certificate to the vehicle for the given route. The proposed planning method is verified on a truck-trailer navigation simulation for a complex route.",
+          "subjects": []
+        },
+        {
+          "title": "From Non-Rigid to Rigid: Safe Acquisition of Rigid Communication Graphs under Limited Sensing",
+          "authors": [
+            "S. Saharsh",
+            "Vedhas Talnikar",
+            "Pushpak Jagtap"
+          ],
+          "year": 2026,
+          "date": "2026-07-11",
+          "citations": 0,
+          "arxiv_id": "2607.10170",
+          "paper_id": "d8e5110b4d87d51356d2719fce3b1b21db8ec70b",
+          "url": "https://arxiv.org/abs/2607.10170",
+          "abstract": "Communication graph rigidity is a fundamental requirement in many multi robot formation control approaches. However, ensuring and maintaining a rigid communication topology becomes challenging in practice due to limited sensing ranges and dynamic operating conditions. This paper provides a method for achieving an inter robot collision free, rigid time varying communication graph, where communication links are established or broken according to limited sensing ranges, without assuming an initial rigid graph. In addition, the proposed approach guarantees the realization of a rigid graph for heterogeneous nonlinear multi robot systems. A computationally lean, distributed quadratic optimization-based controller is developed for a leader follower architecture, acquiring rigidity based on hierarchical second-order consensus among robots. Follower agents do not require global absolute positions of any agent, including their own. The proposed method is validated through both simulations and hardware experiments in a motion-capture environment, demonstrating reliable performance under the limited sensing capabilities of individual robots.",
+          "subjects": []
+        },
+        {
+          "title": "Input-Constrained Spatiotemporal Tubes for Safe Navigation of Unknown Euler-Lagrange Systems in Dynamic Environments",
+          "authors": [
+            "Siddhartha Upadhyay",
+            "Ratnangshu Das",
+            "Pushpak Jagtap"
+          ],
+          "year": 2026,
+          "date": "2026-07-09",
+          "citations": 0,
+          "arxiv_id": "2607.08189",
+          "paper_id": "c56dc3574f9c4c4fab116a2f12865de4c7a14a2c",
+          "url": "https://arxiv.org/abs/2607.08189",
+          "abstract": "Safe navigation in dynamic environments is challenging when system dynamics are unknown and actuator inputs are limited. Existing methods either rely on accurate models, require online optimization, or do not explicitly account for input constraints. This paper presents a real-time control framework for unknown Euler-Lagrange systems that guarantees finite-time reach-avoid-stay (FT-RAS) specifications while respecting actuator limits. We extend the spatiotemporal tube (STT) framework by incorporating input constraints into the controller design and derive offline-verifiable feasibility conditions that relate the available control authority to the tube design and uncertainty bounds. The resulting framework is approximation-free and computationally efficient, making it suitable for real-time implementation. The proposed approach is validated through simulations on a mobile robot, a quadrotor, and a spacecraft, together with hardware experiments on a mobile robot, demonstrating safe navigation while satisfying actuator constraints.",
+          "subjects": []
+        },
+        {
+          "title": "Learning Spatiotemporal Tubes for Full Class of Signal Temporal Logic Tasks for Control of Unknown Systems under Input Constraints",
+          "authors": [
+            "Ahan Basu",
+            "Ratnangshu Das",
+            "Soumyodipta Nath",
+            "Siyuan Liu",
+            "Pushpak Jagtap"
+          ],
+          "year": 2026,
+          "date": "2026-07-08",
+          "citations": 0,
+          "arxiv_id": "2607.07136",
+          "paper_id": "e3ddad34e5f155fb4ca35b192cc2a110a0880b2e",
+          "url": "https://arxiv.org/abs/2607.07136",
+          "abstract": "This paper presents a Spatiotemporal Tube (STT)-based control framework for general unknown nonlinear Euler-Lagrange (EL) systems subject to input constraints, with the objective of satisfying Signal Temporal Logic (STL) specifications, where confinement of the system trajectory within the STT guarantees the satisfaction of the corresponding STL task. For both single and multi-agent scenarios, the STT corresponding to each agent is modeled as a time-varying ball, whose center and radius are jointly parameterized using a physics-informed neural network (PINN). The robustness metric associated with the STL specification corresponding to the agents is incorporated into the training process as a loss function, enabling the learned tube to encode task-level temporal requirements. For a multi-agent scenario, we introduce an additional robustness metric corresponding to the global task, which, when satisfied, ensures the tubes do not collide with each other. To ensure that the system trajectory remains within the learned STT and thereby satisfies the local and global STL specifications, we propose a control strategy that explicitly accounts for input constraints. In particular, a closed-form control law is developed to keep the trajectory inside the tube while regulating the motion of the tube by enforcing bounds on its evolution depending on the input constraints of the system. The proposed approach has been validated over several case studies.",
+          "subjects": []
+        },
+        {
+          "title": "Learning from Demonstration via Spatiotemporal Tubes for Unknown Euler-Lagrange Systems",
+          "authors": [
+            "Ratnangshu Das",
+            "Puneeth Shankar",
+            "Varuni Buereddy",
+            "Ravi Prakash",
+            "Pushpak Jagtap"
+          ],
+          "year": 2026,
+          "date": "2026-07-01",
+          "citations": 0,
+          "arxiv_id": "2607.00534",
+          "paper_id": "66c060ebcd32501d93e4d1003e388d72893441c6",
+          "url": "https://arxiv.org/abs/2607.00534",
+          "abstract": "We present STT-LfD, a unified Learning from Demonstration (LfD) framework that integrates motion learning with control for unknown Euler-Lagrange systems. Unlike traditional decoupled approaches that track a fixed reference, the proposed method treats demonstrations as a data-driven safety specification. Using heteroscedastic Gaussian Processes, STT-LfD learns Spatiotemporal Tubes (STTs) as an intent envelope that capture time-varying precision requirements of a task. A closed-form feedback controller then enforces these learned constraints while respecting actuator limits, without requiring explicit system identification. The approach preserves the temporal structure of demonstrations, remains computationally efficient, and avoids explicit system identification. Hardware experiments on a mobile robot and a 7-DOF manipulator show that it outperforms baselines in robustness to disturbances and computational speed.",
+          "subjects": []
+        },
+        {
+          "title": "Glycemic Safety Tube: A Provably Safe Control Framework for Artificial Pancreas Systems under Parametric Uncertainty",
+          "authors": [
+            "Pukhrambam Akash Singh",
+            "Ratnangshu Das",
+            "Ahan Basu",
+            "Pushpak Jagtap"
+          ],
+          "year": 2026,
+          "date": "2026-05-11",
+          "citations": 0,
+          "arxiv_id": "2605.10490",
+          "paper_id": "3911980cde9dce18e4daa8c13a671c78b031b51c",
+          "url": "https://arxiv.org/abs/2605.10490",
+          "abstract": "Type 1 diabetes eliminates the body's ability to produce insulin, making glucose regulation entirely dependent on external insulin delivery and the control algorithm. Existing closed-loop methods either rely on accurate patient-specific models or do not provide formal safety guarantees, and are often computationally demanding for wearable devices. This paper proposes Glycemic Safety Tube Control (GSTC), a model-free and computationally efficient control framework for automated insulin delivery. The method enforces clinically relevant safety bounds on glucose levels by design, ensuring that glucose remains within a prescribed safe range. We also derive feasibility conditions that guarantee safety and input constraint satisfaction under bounded meal disturbances and estimation errors. The performance of GSTC is evaluated against state-of-the-art methods, including linear and nonlinear model predictive control and sliding mode control. The results demonstrate that GSTC maintains safety under varying meal patterns and patient conditions, highlighting its robustness and computational efficiency. Overall, GSTC provides a safe, efficient, and patient-independent approach for next-generation artificial pancreas systems.",
+          "subjects": []
+        },
+        {
+          "title": "Temporal Logic Resilience for Continuous-time Systems",
+          "authors": [
+            "Ratnangshu Das",
+            "Negar Monir",
+            "Youssef Ait Si",
+            "Adnane Saoud",
+            "S. Soudjani",
+            "Pushpak Jagtap"
+          ],
+          "year": 2026,
+          "date": "2026-04-16",
+          "citations": 0,
+          "arxiv_id": "2604.14714",
+          "paper_id": "1420ca6dd17d2311abb64d6ee1c02be76632ab07",
+          "url": "https://arxiv.org/abs/2604.14714",
+          "abstract": "In this paper, we present a novel framework for quantifying a lower bound on resilience in continuous-time (non)linear systems subject to external disturbances while ensuring satisfaction of signal temporal logic specifications. Unlike robustness, which evaluates how well a system satisfies a specification under a given disturbance, resilience measures the maximum disturbance a system can tolerate from a given initial state while maintaining specification satisfaction. We first derive bounds on the perturbed trajectories and then use them to formulate a computational method based on scenario optimization to efficiently compute the maximum admissible disturbance. We validate our approach through case studies, including dc motor, temperature regulation, a nonlinear numerical example, and a vehicle collision avoidance case.",
+          "subjects": []
+        },
+        {
+          "title": "Resilient and Effort-Optimal Controller Synthesis under Temporal Logic Specifications",
+          "authors": [
+            "Youssef Ait Si",
+            "Ratnangshu Das",
+            "Negar Monir",
+            "S. Soudjani",
+            "Pushpak Jagtap",
+            "Adnane Saoud"
+          ],
+          "year": 2026,
+          "date": "2026-04-12",
+          "citations": 0,
+          "arxiv_id": "2604.10680",
+          "paper_id": "edd9c3ff6ac26b4796ccc2522fd8ad737e6bf392",
+          "url": "https://arxiv.org/abs/2604.10680",
+          "abstract": "In this paper, we consider the notions of effort and resilience of a dynamical control system defined by the maximum disturbance the system can withstand while satisfying given finite temporal logic specifications. Given a dynamical system and a specification, the objective is to synthesize the controller such that the system satisfies the specification while maximizing its resilience, taking into account input constraints. In addition, we introduce a new metric, called the effort metric, which characterizes the minimal input bound necessary to satisfy a given specification for a perturbed system. The problem for both metrics is formulated as a robust optimization program where the objective is to compute the maximum resilience for the system with input constraints or the minimal effort while simultaneously synthesizing the corresponding controller parameters. Moreover, we study the trade-off between resilience and effort, where we seek to maximize resilience and minimize the control effort. For linear systems and linear controllers, exact solutions are provided for the class of time-varying polytopic specifications for the closed-loop and open-loop systems. For the case of nonlinear systems, nonlinear controllers, and more general specifications, we leverage tools from the scenario optimization approach, offering a probabilistic guarantee of the solution as well as computational feasibility. Different case studies are presented to illustrate the theoretical results.",
+          "subjects": []
+        },
+        {
+          "title": "Energetic Resilience under Temporal Logic Specifications",
+          "authors": [
+            "Ratnangshu Das",
+            "Ram Padmanabhan",
+            "M. Ornik",
+            "Pushpak Jagtap"
+          ],
+          "year": 2026,
+          "date": "2026-04-03",
+          "citations": 0,
+          "arxiv_id": "2604.14203",
+          "paper_id": "d6da29e9a6f3479055e185c73cec7f004028c2a4",
+          "url": "https://arxiv.org/abs/2604.14203",
+          "abstract": "In environments with uncertainties or undesirable influences, control systems can require additional energy to achieve their task while remaining resilient to these influences. In this paper, we present an energetic resilience metric that quantifies the maximal additional energy used by a system under undesired effects, while satisfying complex specifications encoded through temporal logic. We prove that this metric satisfies properties that enable its computation even for compositions of these specifications, thus allowing considerations of sequential reachability and safety tasks. For specifications related to finite-horizon reachability and safety, we describe how synthesizing a control input and computing this metric reduces to solving efficient quadratic programs. Two case studies on a fighter-jet model and a planar mobile robot illustrate how the synthesized control inputs satisfy given specifications despite undesired and potentially adversarial effects. Further, we demonstrate how the energetic resilience metric varies with the initial state as well as the magnitude of undesired effects.",
+          "subjects": []
+        },
+        {
+          "title": "Towards Certified Sim-to-Real Transfer via Stochastic Simulation-Gap Functions",
+          "authors": [
+            "P. Sangeerth",
+            "A. Lavaei",
+            "Pushpak Jagtap"
+          ],
+          "year": 2026,
+          "date": "2026-03-21",
+          "citations": 0,
+          "arxiv_id": "2603.20672",
+          "paper_id": "e0ebaa500c0b952bbde23116cdd927af1d04b54a",
+          "url": "https://arxiv.org/abs/2603.20672",
+          "abstract": "This paper introduces the notion of stochastic simulation-gap function, which formally quantifies the gap between an approximate mathematical model and a high-fidelity stochastic simulator. Since controllers designed for the mathematical model may fail in practice due to unmodeled gaps, the stochastic simulation-gap function enables the simulator to be interpreted as the nominal model with bounded state-and input-dependent disturbances. We propose a data-driven approach and establish a formal guarantee on the quantification of this gap. Leveraging the stochastic simulation-gap function, we design a controller for the mathematical model that ensures the desired specification is satisfied in the high-fidelity simulator with high confidence, taking a step toward bridging the sim-to-real gap. We demonstrate the effectiveness of the proposed method using a TurtleBot model and a pendulum system in stochastic simulators.",
+          "subjects": []
+        },
+        {
+          "title": "Input-to-State Stabilizing Neural Controllers for Unknown Switched Nonlinear Systems within Compact Sets",
+          "authors": [
+            "Bhabani Shankar Dey",
+            "Ahan Basu",
+            "Pushpak Jagtap"
+          ],
+          "year": 2026,
+          "date": "2026-01-21",
+          "citations": 0,
+          "arxiv_id": "2601.14643",
+          "paper_id": "36c6cc485b8dba7dd1d69a650b97623408414564",
+          "url": "https://arxiv.org/abs/2601.14643",
+          "abstract": "This paper develops a neural network based control framework that ensures system safety and input-to-state stability (ISS) for general nonlinear switched systems with unknown dynamics. Leveraging the concept of dwell time, we derive Lyapunov based sufficient conditions under which both safety and ISS of the closed-loop switched system are guaranteed. The feedback controllers and the associated Lyapunov functions are parameterized using neural networks and trained from data collected over a compact state space via deterministic sampling. To provide formal stability guarantees under the learned controllers, we introduce a validity condition based on Lipschitz continuity assumptions, which is embedded directly into the training framework. This ensures that the resulting neural network controllers satisfy provable correctness and stability guarantees beyond the sampled data. As a special case, the proposed framework recovers ISS and safety under arbitrary switching when a common Lyapunov function exists. Simulation results on a representative switched nonlinear system demonstrate the effectiveness of the proposed approach.",
+          "subjects": []
+        },
+        {
+          "title": "Practical Prescribed Performance Multi-Cluster Consensus for Euler–Lagrangian Systems With Unknown Parameters",
+          "authors": [
+            "R. Gopika",
+            "Shubham Sawarkar",
+            "V. Resmi",
+            "Rakesh R. Warier",
+            "Pushpak Jagtap",
+            "S. Dhongdi"
+          ],
+          "year": 2026,
+          "date": "2026",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "de378b72f8aa65c09fd0bbf0c0e0cbe2c69d74fc",
+          "url": "https://www.semanticscholar.org/paper/de378b72f8aa65c09fd0bbf0c0e0cbe2c69d74fc",
+          "abstract": "This article addresses the challenge of achieving a practical multi-cluster consensus among agents interacting through a matrix-weighted graph. The objective is to coordinate multiple agents to capture or escort a moving target while forming distinct clusters around it. Each agent is modeled by Euler–Lagrange (EL) dynamics with unknown parameters and is subject to external disturbances. A distributed multi-cluster control framework is proposed in which agents within the same cluster converge to a common trajectory, while different clusters maintain prescribed formations around the target. To ensure reliable performance, a prescribed performance control scheme is incorporated, guaranteeing that the relative state trajectories remain within user-defined bounds throughout the task. The closed-loop system under the proposed control scheme is analytically proven to achieve practical multi-cluster consensus and satisfaction of user-defined performance bounds without requiring knowledge of the system parameters. The proposed framework supports various consensus scenarios, including consensus, bipartite consensus, and multi-cluster consensus, offering flexibility in adjusting both the number of clusters and the number of agents in each cluster. The effectiveness of the proposed approach is verified through numerical simulations, where twelve agents achieve multiple formations around a target while strictly adhering to user-defined performance functions. Real-time hardware experiments, conducted with a team of five differential-drive robots forming a triangular formation, further validate the proposed control strategy.",
+          "subjects": []
+        },
+        {
+          "title": "Spatiotemporal Tubes for Probabilistic Temporal Reach-Avoid-Stay Task in Uncertain Dynamic Environment",
+          "authors": [
+            "Siddhartha Upadhyay",
+            "Ratnangshu Das",
+            "Pushpak Jagtap"
+          ],
+          "year": 2025,
+          "date": "2025-12-25",
+          "citations": 0,
+          "arxiv_id": "2512.21497",
+          "paper_id": "85509bfd139d03002a1b2bde6ac72428e192f1b5",
+          "url": "https://arxiv.org/abs/2512.21497",
+          "abstract": "In this work, we extend the Spatiotemporal Tube (STT) framework to address Probabilistic Temporal Reach-Avoid-Stay (PrT-RAS) tasks in dynamic environments with uncertain obstacles. We develop a real-time tube synthesis procedure that explicitly accounts for time-varying uncertain obstacles and provides formal probabilistic safety guarantees. The STT is formulated as a time-varying ball in the state space whose center and radius evolve online based on uncertain sensory information. We derive a closed-form, approximation-free control law that confines the system trajectory within the tube, ensuring both probabilistic safety and task satisfaction. Our method offers a formal guarantee for probabilistic avoidance and finite-time task completion. The resulting controller is model-free, approximation-free, and optimization-free, enabling efficient real-time execution while guaranteeing convergence to the target. The effectiveness and scalability of the framework are demonstrated through simulation studies and hardware experiments on mobile robots, a UAV, and a 7-DOF manipulator navigating in cluttered and uncertain environments.",
+          "subjects": []
+        },
+        {
+          "title": "Formal Guarantees for Incremental Stability in Piecewise Smooth Cascaded Switched Systems",
+          "authors": [
+            "Bhabani Shankar Dey",
+            "Indra Narayan Kar",
+            "Pushpak Jagtap"
+          ],
+          "year": 2025,
+          "date": "2025-12-18",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "d603edbae1ab5b0a9dd1ce99739d92a36b9ebfce",
+          "url": "https://www.semanticscholar.org/paper/d603edbae1ab5b0a9dd1ce99739d92a36b9ebfce",
+          "abstract": "This paper deals with the problem of incremental stability in interconnected systems, specifically focusing on nonlinear switched systems connected in cascade. Guaranteeing stability in an overall interconnected nonlinear system is challenging, even if the individual subsystems are stable independently. In this context, the paper establishes a set of sufficient conditions that ensures incremental stability in the interconnection. To achieve this, the contraction theory as a tool is utilised to achieve incremental convergence, which ensures a formal guarantee. The paper uses computationally feasible matrix-measure-based conditions. Two case studies are presented to validate the proposed results.",
+          "subjects": []
+        },
+        {
+          "title": "Learning Spatiotemporal Tubes for Temporal Reach-Avoid-Stay Tasks using Physics-Informed Neural Networks",
+          "authors": [
+            "Ahan Basu",
+            "Ratnangshu Das",
+            "Pushpak Jagtap"
+          ],
+          "year": 2025,
+          "date": "2025-12-09",
+          "citations": 0,
+          "arxiv_id": "2512.08248",
+          "paper_id": "ab9c5c7e906871efe9d776d676c6eef66c6e32d4",
+          "url": "https://arxiv.org/abs/2512.08248",
+          "abstract": "This paper presents a Spatiotemporal Tube (STT)-based control framework for general control-affine MIMO nonlinear pure-feedback systems with unknown dynamics to satisfy prescribed time reach-avoid-stay tasks under external disturbances. The STT is defined as a time-varying ball, whose center and radius are jointly approximated by a Physics-Informed Neural Network (PINN). The constraints governing the STT are first formulated as loss functions of the PINN, and a training algorithm is proposed to minimize the overall violation. The PINN being trained on certain collocation points, we propose a Lipschitz-based validity condition to formally verify that the learned PINN satisfies the conditions over the continuous time horizon. Building on the learned STT representation, an approximation-free closed-form controller is defined to guarantee satisfaction of the T-RAS specification. Finally, the effectiveness and scalability of the framework are validated through two case studies involving a mobile robot and an aerial vehicle navigating through cluttered environments.",
+          "subjects": []
+        },
+        {
+          "title": "Scalable Formal Verification of Incremental Stability in Large-Scale Systems Using Graph Neural Networks",
+          "authors": [
+            "Ahan Basu",
+            "Mahathi Anand",
+            "Pushpak Jagtap"
+          ],
+          "year": 2025,
+          "date": "2025-12-08",
+          "citations": 0,
+          "arxiv_id": "2512.07448",
+          "paper_id": "74a048e0b41a15f137163150031bd557e70e215d",
+          "url": "https://arxiv.org/abs/2512.07448",
+          "abstract": "This work proposes a novel distributed framework for verifying the incremental stability of large-scale systems with unknown dynamics and known interconnection structures using graph neural networks. Our proposed approach relies on the construction of local incremental Lyapunov functions for subsystems, which are then composed together to obtain a suitable Lyapunov function for the interconnected system. Graph neural networks are used to synthesize these functions in a data-driven fashion. The formal correctness guarantee is then obtained by leveraging Lipschitz bounds of the trained neural networks. Finally, the effectiveness of our approach is validated through two nonlinear case studies.",
+          "subjects": []
+        },
+        {
+          "title": "Real-Time Spatiotemporal Tubes for Dynamic Unsafe Sets",
+          "authors": [
+            "Ratnangshu Das",
+            "Siddhartha Upadhyay",
+            "Pushpak Jagtap"
+          ],
+          "year": 2025,
+          "date": "2025-12-05",
+          "citations": 0,
+          "arxiv_id": "2512.06151",
+          "paper_id": "62c6d1a46b8918ab132b8cd4b2bca9c107e9d843",
+          "url": "https://arxiv.org/abs/2512.06151",
+          "abstract": "This paper presents a real-time control framework for nonlinear pure-feedback systems with unknown dynamics to satisfy reach-avoid-stay tasks within a prescribed time in dynamic environments. To achieve this, we introduce a real-time spatiotemporal tube (STT) framework. An STT is defined as a time-varying ball in the state space whose center and radius adapt online using only real-time sensory input. A closed-form, approximation-free control law is then derived to constrain the system output within the STT, ensuring safety and task satisfaction. We provide formal guarantees for obstacle avoidance and prescribed-time task completion. The effectiveness and scalability of the framework are demonstrated through simulations and hardware experiments on a mobile robot and an aerial vehicle, navigating in cluttered dynamic environments.",
+          "subjects": []
+        },
+        {
+          "title": "Temporal Reach-Avoid-Stay Control for Differential Drive Systems via Spatiotemporal Tubes",
+          "authors": [
+            "Ratnangshu Das",
+            "Ahan Basu",
+            "Christos K. Verginis",
+            "Pushpak Jagtap"
+          ],
+          "year": 2025,
+          "date": "2025-12-05",
+          "citations": 0,
+          "arxiv_id": "2512.05495",
+          "paper_id": "37eec82946fff1a7def6ba610bc7ef5752e7160d",
+          "url": "https://arxiv.org/abs/2512.05495",
+          "abstract": "This paper presents a computationally lightweight and robust control framework for differential-drive mobile robots with dynamic uncertainties and external disturbances, guaranteeing the satisfaction of Temporal Reach-Avoid-Stay (T-RAS) specifications. The approach employs circular spatiotemporal tubes (STTs), characterized by smoothly time-varying center and radius, to define dynamic safe corridors that guide the robot from the start region to the goal while avoiding obstacles. In particular, we first develop a sampling-based synthesis algorithm to construct a feasible STT that satisfies the prescribed timing and safety constraints with formal guarantees. To ensure that the robot remains confined within this tube, we then analytically design a closed-form control that is computationally efficient and robust to disturbances. The proposed framework is validated through simulation studies on a differential-drive robot and benchmarked against state-of-the-art methods, demonstrating superior robustness, accuracy, and computational efficiency.",
+          "subjects": []
+        }
+      ]
     ],
     [
       "Johannes Autenrieb",
@@ -2911,45 +4191,7 @@
           ]
         }
       ],
-      [
-        {
-          "title": "Contract-based hierarchical control using predictive feasibility value functions",
-          "authors": [
-            "F. Berkel",
-            "K. P. Wabersich",
-            "Hongxi Xiang",
-            "E. Milios"
-          ],
-          "year": 2025,
-          "date": "2025-04-16",
-          "citations": 0,
-          "arxiv_id": "2504.12036",
-          "paper_id": "bc515d05824a099c1acf6db6c6d1dabe5d816b70",
-          "url": "https://arxiv.org/abs/2504.12036",
-          "abstract": "Today’s control systems are often characterized by modularity and safety requirements to handle complexity, resulting in hierarchical control structures. Although hierarchical model predictive control offers favorable properties, achieving a provably safe, yet modular design remains a challenge. This paper introduces a contract-based hierarchical control strategy to improve the performance of control systems facing challenges related to model inconsistency and independent controller design across hierarchies. We consider a setup where a higher-level controller generates references that affect the constraints of a lower-level controller, which is based on a soft-constrained MPC formulation. The optimal slack variables of the lower-level MPC serve as the basis for a contract that allows the higher-level controller to assess the feasibility of the reference trajectory without exact knowledge of the model, constraints, and cost of the lower-level controller. To ensure computational efficiency while maintaining model confidentiality, we propose using an explicit function approximation, such as a neural network, to represent the cost of optimal slack values. The approach is tested for a hierarchical control setup consisting of a planner and a motion controller as commonly found in autonomous driving.",
-          "subjects": []
-        },
-        {
-          "title": "Fusion of Machine Learning and MPC under Uncertainty: What Advances Are on the Horizon?",
-          "authors": [
-            "A. Mesbah",
-            "K. P. Wabersich",
-            "Angela P. Schoellig",
-            "M. Zeilinger",
-            "S. Lucia",
-            "T. Badgwell",
-            "J. Paulson"
-          ],
-          "year": 2022,
-          "date": "2022-06-08",
-          "citations": 78,
-          "arxiv_id": null,
-          "paper_id": "42ad67ba42bdb5b72873190644933fb56af0d4da",
-          "url": "https://www.semanticscholar.org/paper/42ad67ba42bdb5b72873190644933fb56af0d4da",
-          "abstract": "This paper provides an overview of the recent research efforts on the integration of machine learning and model predictive control under uncertainty. The paper is organized as a collection of four major categories: learning models from system data and prior knowledge; learning control policy parameters from closed-loop performance data; learning efficient approximations of iterative online optimization from policy data; and learning optimal cost-to-go representations from closed-loop performance data. In addition to reviewing the relevant literature, the paper also offers perspectives for future research in each of these areas.",
-          "subjects": []
-        }
-      ]
+      []
     ],
     [
       "Jason J. Choi",
@@ -2984,7 +4226,7 @@
           ],
           "year": 2020,
           "date": "2020-04-16",
-          "citations": 0,
+          "citations": 238,
           "arxiv_id": "2004.07584",
           "paper_id": "fa55d07755bf69dab45b8a197b8c7c28e08a5931",
           "url": "https://arxiv.org/abs/2004.07584",
@@ -3031,7 +4273,7 @@
           ],
           "year": 2020,
           "date": "2020-04-16",
-          "citations": 0,
+          "citations": 238,
           "arxiv_id": "2004.07584",
           "paper_id": "fa55d07755bf69dab45b8a197b8c7c28e08a5931",
           "url": "https://arxiv.org/abs/2004.07584",
@@ -3086,190 +4328,7 @@
           ]
         }
       ],
-      [
-        {
-          "title": "The Politics of Visual Indeterminacy in Abstract AI Art",
-          "authors": [
-            "M. Zeilinger"
-          ],
-          "year": 2022,
-          "date": "2022-10-20",
-          "citations": 10,
-          "arxiv_id": null,
-          "paper_id": "288339d03da0a4b116b7d49328da6d11514fd905",
-          "url": "https://www.semanticscholar.org/paper/288339d03da0a4b116b7d49328da6d11514fd905",
-          "abstract": "Abstract In Perception Engines and Synthetic Abstractions, two generative AI art projects begun in 2018, Tom White experiments with visual abstraction to explore the indeterminacy of perception, interpretation, and agency. White’s AI systems produce images that will be interpreted as abstract artworks by human viewers, but which also confront human audiences with the realization that what is here deliberately rendered indeterminable for them will remain near-perfectly legible for AI-powered image recognition systems. This difference in perceptual and interpretive agency foregrounds an underlying politics of visual indeterminacy. White’s projects thus increase awareness of how machine vision—for example in automated online filtering systems—can diminish the horizon of what human audiences can or cannot see in an AI-driven digital cultural landscape, and how, in the process, underlying biases are normalized and human viewers become habituated to the dramatic shrinking of perceivable/viewable online image content mediated by AI.",
-          "subjects": []
-        },
-        {
-          "title": "Mass-Sensitive Sensing of Melamine in Dairy Products with Molecularly Imprinted Polymers: Matrix Challenges",
-          "authors": [
-            "M. Zeilinger",
-            "Hermann F. Sussitz",
-            "Wim Cuypers",
-            "C. Jungmann",
-            "P. Lieberzeit"
-          ],
-          "year": 2019,
-          "date": "2019-05-01",
-          "citations": 17,
-          "arxiv_id": null,
-          "paper_id": "9ce4eff4e7a3335ebe43ae4335029c7bca719105",
-          "url": "https://www.semanticscholar.org/paper/9ce4eff4e7a3335ebe43ae4335029c7bca719105",
-          "abstract": "Food standards and quality control are important means to ensure public health. In the last decade, melamine has become a rather notorious example of food adulteration: Spiking products with low-cost melamine in order to feign high amino acid content exploits the lack in specificity of the established Kjeldahl method for determining organic nitrogen. This work discusses the responses of a sensor based on quartz crystal microbalances (QCM) coated with molecularly imprinted polymers (MIP) to detect melamine in real life matrices both in a selective and a sensitive manner. Experiments in pure milk revealed no significant sensor responses. However, sensor response increased to a frequency change of −30Hz after diluting the matrix ten times. Systematic evaluation of this effect by experiments in melamine solutions containing bovine serum albumin (BSA) and casein revealed that proteins noticeably influence sensor results. The signal of melamine in water (1600 mg/L) decreases to half of its initial value, if either 1% BSA or casein are present. Higher protein concentrations decrease sensor responses even further. This suggests significant interaction between the analyte and proteins in general. Follow-up experiments revealed that centrifugation of tagged serum samples results in a significant loss of sensor response, thereby further confirming the suspected interaction between protein and melamine.",
-          "subjects": []
-        },
-        {
-          "title": "Lokal emissionsfreier und leiser Güterverkehr mit dem Mercedes-Benz eActros",
-          "authors": [
-            "M. Zeilinger",
-            "Enrico Wohlfarth"
-          ],
-          "year": 2018,
-          "date": "2018-05-11",
-          "citations": 2,
-          "arxiv_id": null,
-          "paper_id": "8ba6aa25fb40fbb24bc533a8c533300674364657",
-          "url": "https://www.semanticscholar.org/paper/8ba6aa25fb40fbb24bc533a8c533300674364657",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Digital Art as ‘Monetised Graphics’: Enforcing Intellectual Property on the Blockchain",
-          "authors": [
-            "M. Zeilinger"
-          ],
-          "year": 2016,
-          "date": "2016-11-24",
-          "citations": 126,
-          "arxiv_id": null,
-          "paper_id": "fed6a8dd3d984a155ec46428539c4714ce2269c8",
-          "url": "https://www.semanticscholar.org/paper/fed6a8dd3d984a155ec46428539c4714ce2269c8",
-          "abstract": "In a global economic landscape of hyper-commodification and financialisation, efforts to assimilate digital art into the high-stakes commercial art market have so far been rather unsuccessful, presumably because digital artworks cannot easily assume the status of precious object worthy of collection. This essay explores the use of blockchain technologies in attempts to create proprietary digital art markets in which uncommodifiable digital artworks are financialised as artificially scarce commodities. Using the decentralisation techniques and distributed database protocols underlying current cryptocurrency technologies, such efforts, exemplified here by the platform Monegraph, tend to be presented as concerns with the interest of digital artists and with shifting ontologies of the contemporary work of art. I challenge this characterisation, and argue, in a discussion that combines aesthetic theory, legal and philosophical theories of intellectual property, rhetorical analysis and research in the political economy of new media, that the formation of proprietary digital art markets by emerging commercial platforms such as Monegraph constitutes a worrisome amplification of long-established, on-going efforts to fence in creative expression as private property. As I argue, the combination of blockchain-based protocols with established ambitions of intellectual property policy yields hybrid conceptual-computational financial technologies (such as self-enforcing smart contracts attached to digital artefacts) that are unlikely to empower artists but which serve to financialise digital creative practices as a whole, curtailing the critical potential of the digital as an inherently dynamic and potentially uncommodifiable mode of production and artistic expression.",
-          "subjects": []
-        },
-        {
-          "title": "Disposable (bio)chemical integrated optical waveguide sensors implemented on roll-to-roll produced platforms",
-          "authors": [
-            "S. Aikio",
-            "M. Zeilinger",
-            "J. Hiltunen",
-            "L. Hakalahti",
-            "J. Hiitola-Keinänen",
-            "M. Hiltunen",
-            "V. Kontturi",
-            "S. Siitonen",
-            "J. Puustinen",
-            "P. Lieberzeit",
-            "P. Karioja"
-          ],
-          "year": 2016,
-          "date": "2016-05-23",
-          "citations": 17,
-          "arxiv_id": null,
-          "paper_id": "a3bee7399aed7fb1889809bf5a3c8c71449b5243",
-          "url": "https://www.semanticscholar.org/paper/a3bee7399aed7fb1889809bf5a3c8c71449b5243",
-          "abstract": "To enable wide spread dissemination of sensors in cost-critical applications and resource poor settings, methods to implement sensor chips using low-cost materials and mass-manufacturing methods are developed. In this paper we demonstrate that disposable polymeric integrated Young interferometer (YI) sensor chips, implemented on roll-to-roll mass-manufactured waveguides, are applicable for analyte specific sensing of small molecules and for multi-analyte detection of biomolecules. For the chemical sensing of small molecules, a sensor chip was functionalized with a molecularly imprinted polymer (MIP). We demonstrate that the MIP receptor layer is compatible with a polymer-based evanescent wave sensor for direct refractive index sensing. For multi-analyte detection of biomolecules, antibody-based receptor layers were patterned by inkjet printing onto the sensor surface demonstrating the applicability of the method with integrated YI chips. Demonstration of the analyte specific chemical- and biosensing with disposable polymeric YI sensor chips opens new possibilities to implement low-cost (bio)chemical sensors.",
-          "subjects": []
-        },
-        {
-          "title": "Einfluss der Rauschunterdrückung auf die Reproduzierbarkeit des Apparent Diffusion Coefficient (ADC)",
-          "authors": [
-            "M. Zeilinger",
-            "M. Lell",
-            "P. Baltzer",
-            "M. Uder",
-            "M. Dietzel"
-          ],
-          "year": 2015,
-          "date": "2015-04-21",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "1b18cdc06a5791f2053777f16d91948db96c7ece",
-          "url": "https://www.semanticscholar.org/paper/1b18cdc06a5791f2053777f16d91948db96c7ece",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Chiptuning Intellectual Property: Digital Culture Between Creative Commons and Moral Economy",
-          "authors": [
-            "M. Zeilinger"
-          ],
-          "year": 2013,
-          "date": "2013-03-02",
-          "citations": 3,
-          "arxiv_id": null,
-          "paper_id": "96f56288faa7c29120fb74d80bdf5f38bbb307ae",
-          "url": "https://www.semanticscholar.org/paper/96f56288faa7c29120fb74d80bdf5f38bbb307ae",
-          "abstract": "A multitude of legal restrictions imposed on digital creative expressions impact how musicians are able (or unable) to practice their craft. This essay considers how chipmusic deals with this impact. In exploring the form’s close ties to appropriation-based production techniques and its use of Creative Commons licenses, I describe it as an active site for implicit critiques of restrictive copyright regimes. I conclude by considering the concept of a moral economy of appropriation-based creative techniques as a new framework for understanding digital creative practices that are characterized by shared cultural norms and resist conventional intellectual property policy.",
-          "subjects": []
-        },
-        {
-          "title": "\"Quit stalling…!\": Destiny and Destination on L.A.’s Inner City Roads",
-          "authors": [
-            "M. Zeilinger"
-          ],
-          "year": 2009,
-          "date": "2009-12-21",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "42f21b477406d102a0c686d7cf21e9aa985bcfa2",
-          "url": "https://www.semanticscholar.org/paper/42f21b477406d102a0c686d7cf21e9aa985bcfa2",
-          "abstract": "If driving has today really become a Western “metaphor for being” (Hutchinson), then common roadside signs proclaiming “Right lane must exit” or “Through traffic merge left”, inventions such as the automatic transmission, and the agreeable straightness of freeways can all be understood as symptoms of an ongoing socio-political struggle between the driver as democratic agent, and the state as institu-tionalized regulatory force. Nowhere is this more obvious than in the context of urban traffic, where private motorized transportation represents both the supreme (if illusory) expression of personal freedom, and official efforts to channel individualism by obliterating its sense of direction and ideological divergence. On the concrete proving grounds of the clogged inner-city freeway, “nomad science” and “state science” (Deleuze & Guattari) thus oscillate between the pseudo-liberatory expressivity of mainstream car culture and the self-effacing dromoscopic “amnesia of driving” (Baudrillard). Are a city’s multitudes of cars resistant “projectiles” (Virilio) or, rather, hegemonic “sites of containment” (Jane Jacobs)? This essay approaches the complex tensions between “untamable” democratic mobility and state-regulated transit by way of two Hollywood-produced films that focus on traffic in Los Angeles: in Collateral (2004), a cab driver comes to recognize and transcend the hopelessly directionless circularity dictated by his job; in Falling Down (1993), a frustrated civil service employee abandons his car on a rush-hour freeway and decides to walk home, forced to traverse the supposedly unwalkable city without the “masking screen of the windshield” (Virilio). As they “quit stalling”, both protagonists become dangerous variants of the defiant nomad – one a driver who remains on the road but goes “under the radar”, the other a transient pedestrian whose movement becomes viral and unpredictable. My analysis of the films’ metropolitan setting and of the incessant movement that marks both narratives links political and philosophical economies of motion, speed, and transit to a discussion of the various bandes vagabondage (Deleuze & Guattari) that are formed between city and driver, driver and car, and car and pedestrian. In this discussion, the inner-city road emerges as a primary site of conflict between civic rule and individual subject, and the flow of urban traffic comes to represent the tensions generated in spaces where movement is understood as both liberating and as a form of control. - See more at: http://www.cultureunbound.ep.liu.se/article.asp?DOI=10.3384/cu.2000.1525.09122367#sthash.OWb9TlsB.dpuf",
-          "subjects": []
-        },
-        {
-          "title": "A novel computational model of the circadian clock in Arabidopsis that incorporates PRR7 and PRR9",
-          "authors": [
-            "M. Zeilinger",
-            "E. Farré",
-            "Stephanie R. Taylor",
-            "S. Kay",
-            "F. Doyle"
-          ],
-          "year": 2006,
-          "date": "2006-11-14",
-          "citations": 264,
-          "arxiv_id": null,
-          "paper_id": "60481b13f7f5a15a43b1c19e40730084deeca615",
-          "url": "https://www.semanticscholar.org/paper/60481b13f7f5a15a43b1c19e40730084deeca615",
-          "abstract": "In plants, as in animals, the core mechanism to retain rhythmic gene expression relies on the interaction of multiple feedback loops. In recent years, molecular genetic techniques have revealed a complex network of clock components in Arabidopsis. To gain insight into the dynamics of these interactions, new components need to be integrated into the mathematical model of the plant clock. Our approach accelerates the iterative process of model identification, to incorporate new components, and to systematically test different proposed structural hypotheses. Recent studies indicate that the pseudo‐response regulators PRR7 and PRR9 play a key role in the core clock of Arabidopsis. We incorporate PRR7 and PRR9 into an existing model involving the transcription factors TIMING OF CAB (TOC1), LATE ELONGATED HYPOCOTYL (LHY) and CIRCADIAN CLOCK ASSOCIATED (CCA1). We propose candidate models based on experimental hypotheses and identify the computational models with the application of an optimization routine. Validation is accomplished through systematic analysis of various mutant phenotypes. We introduce and apply sensitivity analysis as a novel tool for analyzing and distinguishing the characteristics of proposed architectures, which also allows for further validation of the hypothesized structures.",
-          "subjects": []
-        },
-        {
-          "title": "Implementation of Computer-Aided Workout Planning at HSNS ( Army Sport Center )",
-          "authors": [
-            "Klaus Uller",
-            "M. Zeilinger"
-          ],
-          "year": 1999,
-          "date": "1999",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "e49040f0d36dac363c4f7de4930ea044be859245",
-          "url": "https://www.semanticscholar.org/paper/e49040f0d36dac363c4f7de4930ea044be859245",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "[Percutaneous endoscopic gastrostomy--a possibility for enteral feeding of patients with severe cerebral dysfunctions].",
-          "authors": [
-            "L. Peschl",
-            "M. Zeilinger",
-            "W. Munda",
-            "H. Prem",
-            "D. Schragel"
-          ],
-          "year": 1988,
-          "date": "1988-05-13",
-          "citations": 10,
-          "arxiv_id": null,
-          "paper_id": "254b496a286946de878a127cb781e51267dc2e64",
-          "url": "https://www.semanticscholar.org/paper/254b496a286946de878a127cb781e51267dc2e64",
-          "abstract": "",
-          "subjects": []
-        }
-      ]
+      []
     ],
     [
       "Anil Alan",
@@ -3285,7 +4344,7 @@
           ],
           "year": 2022,
           "date": "2022-06-07",
-          "citations": 0,
+          "citations": 167,
           "arxiv_id": "2206.03568",
           "paper_id": "21bcf99de4e99324375ba6a1b7dba3da64842146",
           "url": "https://arxiv.org/abs/2206.03568",
@@ -3332,7 +4391,7 @@
           ],
           "year": 2022,
           "date": "2022-06-07",
-          "citations": 0,
+          "citations": 167,
           "arxiv_id": "2206.03568",
           "paper_id": "21bcf99de4e99324375ba6a1b7dba3da64842146",
           "url": "https://arxiv.org/abs/2206.03568",
@@ -3379,7 +4438,7 @@
           ],
           "year": 2022,
           "date": "2022-06-07",
-          "citations": 0,
+          "citations": 167,
           "arxiv_id": "2206.03568",
           "paper_id": "21bcf99de4e99324375ba6a1b7dba3da64842146",
           "url": "https://arxiv.org/abs/2206.03568",
@@ -3524,7 +4583,7 @@
           ],
           "year": 2021,
           "date": "2021-09-25",
-          "citations": 0,
+          "citations": 115,
           "arxiv_id": "2109.12313",
           "paper_id": "d9a7ef6bb3c2a4bd8f7bb6b832a55c6bbf0039fc",
           "url": "https://arxiv.org/abs/2109.12313",
@@ -3723,7 +4782,7 @@
           ],
           "year": 2016,
           "date": "2016-12-05",
-          "citations": 696,
+          "citations": 0,
           "arxiv_id": "1612.01554",
           "paper_id": "3098826a91ba89250332fa1de1881207e619d6ea",
           "url": "https://arxiv.org/abs/1612.01554",
@@ -3934,7 +4993,7 @@
             "Nora Ayanian"
           ],
           "date": "2025-10-03",
-          "citations": 1,
+          "citations": 0,
           "arxiv_id": "2510.03504v3",
           "url": "https://arxiv.org/abs/2510.03504v3",
           "abstract": "Connectivity is crucial in many multi-robot applications, yet balancing connectivity maintenance and fleet traversability in obstacle-rich environments remains challenging. Reactive controllers based on control barrier functions can preserve connectivity when it is initially satisfied, but often struggle with deadlocks in cluttered environments. We propose a real-time Bézier-based constrained motion planning algorithm, namely MPC--CLF--CBF, that produces trajectories and control inputs concurrently, subject to high-order control barrier function and control Lyapunov function constraints. Our motion planner supports connectivity-aware navigation in cluttered workspaces and recovers connectivity from initially disconnected configurations and after temporary obstacle-induced separation; it also provides analytic continuous-time derivatives, facilitating its application to agile differentially flat systems such as quadrotors. In simulations with $4$--$12$ robots, it maintains $95.8$--$100\\%$ graph-connected time at $20\\%$ obstacle density, compared with $48.9$--$61.3\\%$ for MPC--CBF, with no observed collisions. We further validate the planner in a physical experiment with $8$ Crazyflie nano-quadrotors.",
@@ -7079,118 +8138,7 @@
           "is_robotics": false
         }
       ],
-      [
-        {
-          "title": "$(\\text{DNN})^2$: Doubly Non-Negative Relaxations for Deep Neural Networks",
-          "authors": [
-            "Hanna Jiamei Zhang",
-            "Alan Papalia",
-            "Michael Everett",
-            "David M. Rosen"
-          ],
-          "date": "2026-08-25",
-          "citations": 0,
-          "arxiv_id": "2608.24743v1",
-          "url": "https://arxiv.org/abs/2608.24743v1",
-          "abstract": "Existing linear program (LP) and semidefinite program (SDP) relaxations for rectified linear unit (ReLU) neural network (NN) verification yield overly-conservative safety guarantees due to significant relaxation gaps. While the completely positive program (CPP) formulation closes this gap, it is NP-hard to solve. Its cheapest tractable relaxation, the doubly non-negative program (DNN), retains critical constraints as an SDP, but one whose size exceeds the reach of interior-point methods at practical scale. While Burer-Monteiro (BM) factorization has been applied to make SDP-based verification scalable, no such result exists for the strictly tighter DNN formulation. A key obstacle is that additional non-negativity constraints in the DNN cause dual multipliers for optimality certification to be non-unique, making standard certification methods inapplicable. We propose a novel eigenvalue maximization procedure that searches the non-unique multiplier space for a valid certificate, i.e. a global optimality guarantee. Experiments demonstrate that our approach $(\\text{DNN})^2$ produces bounds consistently tighter than the standard SDP method, often matching the exact solution, and that our certification procedure confirms global optimality when a valid certificate exists. These results are a key step toward providing tight, certifiable, and computationally scalable verification guarantees needed to deploy neural network controllers and perception modules in safety-critical autonomous systems.",
-          "subjects": [
-            "cs.LG",
-            "cs.RO",
-            "eess.SY"
-          ],
-          "venue": "CDC",
-          "venue_year": "2026",
-          "is_cbf": false,
-          "is_robotics": true
-        },
-        {
-          "title": "Wave-Based Bilateral Teleoperation between Nonlinear Manipulators with Direct Contact Force Feedback",
-          "authors": [
-            "G. Q. Bao Tran",
-            "Takanori Miyoshi",
-            "Ho Duc Tho"
-          ],
-          "date": "2026-08-20",
-          "citations": 0,
-          "arxiv_id": "2608.20043v1",
-          "url": "https://arxiv.org/abs/2608.20043v1",
-          "abstract": "We study bilateral teleoperation between nonlinear, multi-DOF robotic manipulators in the presence of constant communication delays. Unlike classical wave-transformation architectures that transmit a coordinating force, we consider the case where the environmental force is reflected to the master side to enhance teleoperation transparency. Since direct contact force feedback might destabilize the closed-loop system, we first develop a passivity-shortage characterization for the Euler--Lagrange remote system using a linear matrix inequality (LMI) approach. An upper strictly passive communication law is then employed to compensate for the computed passivity shortage so that the closed-loop stability under delays as well as position and force synchronization are preserved under appropriate conditions. Simulations with nonlinear 2-DOF robotic manipulators in different settings illustrate our approach.",
-          "subjects": [
-            "eess.SY",
-            "cs.RO",
-            "math.DS",
-            "math.OC"
-          ],
-          "venue": "CDC",
-          "venue_year": "2026",
-          "is_cbf": false,
-          "is_robotics": true
-        },
-        {
-          "title": "A Controllability Gramain Shaping with LMI Constraints under Bures--Wasserstein Distance",
-          "authors": [
-            "Koju Nishimoto",
-            "Yuki Onishi",
-            "Riku Funada",
-            "Mitsuji Sampei"
-          ],
-          "date": "2026-08-20",
-          "citations": 0,
-          "arxiv_id": "2608.19754v1",
-          "url": "https://arxiv.org/abs/2608.19754v1",
-          "abstract": "This paper proposes a controller design method for shaping the controllability Gramian into a desired form to design the effect from exogenous inputs to the system state. Using the Bures--Wasserstein distance, we formulate the shaping problem as the minimization of the distance between the system Gramian and a desired Gramian, and the objective function is shown to be strictly convex on the set of symmetric positive definite matrices. In addition, by deriving a semidefinite programming formulation via a linear matrix inequality (LMI), computational efficiency is improved and additional LMI constraints can be incorporated. When the exogenous input is modeled as Gaussian white noise, the proposed framework is closely related to $H_2$ control, which can be interpreted as a special case of optimal transport. Numerical examples demonstrate anisotropic controllability design for a guidance robot and verify the ability to impose additional directional constraints through LMIs. The numerical examples also confirm that the proposed method approaches $H_2$ control as the desired Gramian tends to zero.",
-          "subjects": [
-            "math.OC",
-            "eess.SY"
-          ],
-          "venue": "CDC",
-          "venue_year": "2026",
-          "is_cbf": false,
-          "is_robotics": true
-        },
-        {
-          "title": "$\\texttt{Flip-Team}$: Cooperative Takeover Games with Stochastic Human Override",
-          "authors": [
-            "Sandeep Banik",
-            "Naira Hovakimyan"
-          ],
-          "date": "2026-08-17",
-          "citations": 0,
-          "arxiv_id": "2608.16311v1",
-          "url": "https://arxiv.org/abs/2608.16311v1",
-          "abstract": "Shared autonomy requires principled mechanisms for allocating and transferring control between a human and an autonomous agent. Existing approaches often rely on blending control inputs or heuristic switching rules, which lack theoretical guarantees and fail to account for the dynamics of authority transfer. This paper develops a cooperative game-theoretic framework for authority switching in shared autonomy. We formulate the control switching problem as an identical-interest dynamic game in which authority transitions are embedded into the system dynamics, yielding optimal switching policies rather than ad hoc rules. We establish the existence and characterization of team-optimal policies in pure strategies under stochastic human override, accounting for asymmetric authority where humans retain override capability. For linear-quadratic systems, we derive closed-form recursions for the optimal switching policies and value functions, enabling efficient computation independent of the continuous state. We validate the framework on scalar and multi-dimensional linear systems, demonstrating how optimal switching adapts to varying system dynamics, cost structures, and override probabilities. The results reveal fundamental trade-offs between human adaptability and autonomous efficiency, illustrating the practical benefits of grounding shared autonomy in cooperative game theory.",
-          "subjects": [
-            "cs.HC",
-            "cs.GT",
-            "eess.SY",
-            "math.DS"
-          ],
-          "venue": "CDC",
-          "venue_year": "2026",
-          "is_cbf": false,
-          "is_robotics": true
-        },
-        {
-          "title": "Stochastic Multi-Objective Kinodynamic Planning Against Adversaries",
-          "authors": [
-            "Thomas Marshall Vielmetti",
-            "Daniel Cherenson",
-            "Dimitra Panagou"
-          ],
-          "date": "2026-07-21",
-          "citations": 0,
-          "arxiv_id": "2607.19284v1",
-          "url": "https://arxiv.org/abs/2607.19284v1",
-          "abstract": "This paper addresses multi-objective kinodynamic planning in environments with stochastic hybrid adversaries that probabilistically transition to adversarial modes based on the ego state. The goal is to construct the Pareto-front of paths that trade off execution cost and the probability of safety constraint violation (risk). Existing chance-constrained planners evaluate risk over open-loop trajectories, yielding overly conservative solutions that fail to account for ego-agent reactivity. To address this limitation, we shift the planning space to sequences of closed-loop policies, and integrate sample-based risk evaluation directly into tree construction via Monte-Carlo particle rollouts. We first introduce Stochastic Multi-Objective RRT (SMO-RRT), for which we prove probabilistic completeness, followed by Stochastic Multi-Objective Stable Sparse RRT (SMO-SST), which leverages selective pruning to improve numerical performance at the cost of completeness. For both algorithms, we derive a finite-sample bound on the probability of chance constraint violation for systems with non-Gaussian, state-dependent uncertainty, enabling probabilistically safe planning in a broad class of environments applicable to multi-agent systems, social navigation, and autonomous driving.",
-          "subjects": [
-            "cs.RO"
-          ],
-          "venue": "CDC",
-          "venue_year": "2026",
-          "is_cbf": false,
-          "is_robotics": true
-        }
-      ]
+      []
     ],
     [
       "CDC 2025",
