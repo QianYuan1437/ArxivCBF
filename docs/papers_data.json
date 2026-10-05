@@ -54,7 +54,7 @@
       ],
       "year": 2022,
       "date": "2022-09-18",
-      "citations": 0,
+      "citations": 163,
       "arxiv_id": "2209.08539",
       "paper_id": "c75841c3223bac648fbf347072e38aa3373278b8",
       "url": "https://arxiv.org/abs/2209.08539",
@@ -703,7 +703,7 @@
         "Themistoklis P. Sapsis"
       ],
       "date": "2026-09-15",
-      "citations": 1,
+      "citations": 0,
       "arxiv_id": "2609.17347v1",
       "url": "https://arxiv.org/abs/2609.17347v1",
       "abstract": "Collision avoidance constraints for autonomous systems are typically formulated in position or velocity space, implicitly reacting to geometric proximity. We propose an alternative paradigm based on the adversarial time-to-collision (aTTC): the minimum time in which an adversary could achieve a collision given its dynamical constraints. By defining a control barrier function (CBF) directly in the time domain, the resulting controller is inherently anticipatory. The evading agent responds not only to whether a pursuer is on a collision course, but to how quickly it could reach one. This formulation enables velocity modulation that exploits the pursuers dynamic limits as an evasive strategy, a behavior not captured by standard distance-based CBFs. Since exact aTTC computation requires integrating the full system dynamics, we employ a lightweight neural network surrogate that admits a real-time quadratic program-based control law. We validate the approach in a 2D comparative study and a 3D multi-agent pursuit-evasion scenario, where the aTTC-based CBF outperforms a higher-order distance-based baseline by more effectively buying time against superior pursuers with a significant speed advantage.",
@@ -1272,6 +1272,22 @@
           ]
         },
         {
+          "title": "Adversarially Robust Geometric Safety Certificates for Nonholonomic Robots Against Maneuvering Obstacles",
+          "authors": [
+            "Chandan Kumar Sah",
+            "Bazeela Banday",
+            "J. Keshavan"
+          ],
+          "year": 2026,
+          "date": "2026-09-29",
+          "citations": 0,
+          "arxiv_id": "2609.37126",
+          "paper_id": "056b988150dd031465a6a1d2fc5a8d0b3cb51ba2",
+          "url": "https://arxiv.org/abs/2609.37126",
+          "abstract": "Safe navigation against obstacles that can actively maneuver within bounded capabilities remains challenging: robust control barrier function methods typically treat obstacle actions as generic disturbances, while differential-game approaches are computationally expensive for online navigation. We propose an adversarially robust geometric certificate that accounts for the worst-case effect of admissible obstacle maneuvers directly in the safe-set geometry through a closed-form contraction of the certificate parameters. The construction exploits a structural property of line-of-sight (LoS) certificates: the robot and obstacle actions enter the certificate through a common state-dependent geometric gain. This gain cancels in the worst-case comparison, reducing the differential game to a direct comparison between obstacle maneuvering capability and the weaker of the robot's longitudinal and steering authorities. Instantiated on the parabolic certificate, the construction yields Adversarially Robust Dynamic Parabolic Control Barrier Functions (AR-DPCBF), for which we establish sufficient conditions for forward invariance of the contracted safe set against all admissible obstacle maneuvers under kinematic bicycle dynamics with bounded inputs. When the obstacle capability is unknown, a sliding-window estimator supplies a high-probability upper bound, allowing the guarantee to be retained with the corresponding coverage probability. We further formulate soft and buffered variants to recover feasibility in dense environments. Simulations across obstacle capabilities, densities, and capability mismatch show substantial reductions in barrier violations and collisions and demonstrate that pointwise robustification of the barrier derivative cannot substitute for contraction of its geometry.",
+          "subjects": []
+        },
+        {
           "title": "Exact Feasibility Certification and Optimal Responsibility Allocation for Multi-Robot CBF Safety Filters",
           "authors": [
             "Chandan Kumar Sah",
@@ -1286,9 +1302,361 @@
             "cs.RO",
             "cs.MA"
           ]
+        },
+        {
+          "title": "Exact Feasibility Certification and Optimal Responsibility Allocation for Multi-Robot CBF Safety Filters",
+          "authors": [
+            "Chandan Kumar Sah",
+            "J. Keshavan"
+          ],
+          "year": 2026,
+          "date": "2026-09-14",
+          "citations": 0,
+          "arxiv_id": "2609.14935",
+          "paper_id": "0c496a1a7470d425b86d78c188caa602eea9534a",
+          "url": "https://arxiv.org/abs/2609.14935",
+          "abstract": "Multi-robot Control Barrier Function (CBF) safety filters can become infeasible, but a failed quadratic program (QP) does not indicate why the conflict occurred or how to resolve it. To address this, we develop an exact feasibility certificate for multi-agent CBF filters with heterogeneous control-affine dynamics and convex input sets. The certificate quantifies a feasibility reserve by separating the demand imposed by safety constraints from the available actuator supply. This decomposition shows when CBF gain tuning or increased actuation can and cannot resolve infeasibility, and identifies the agents and interactions responsible for the conflict. We further propose an algorithm to optimally allocate shared safety constraints by maximizing the worst local feasibility margin, yielding a linear program for polyhedral input sets. In $320$ paired closed-loop simulations, the proposed allocation reduces infeasible control steps from roughly $50\\%$ to $6.2\\%$, and reduces safety-violating runs from $118/160$ to $24/160$. In addition, across $52$ infeasibility events, the certificate identifies an interaction whose relaxation restores feasibility in $94\\%$ of cases.",
+          "subjects": []
         }
       ],
-      []
+      [
+        {
+          "title": "Beyond Self-Knowledge: Propagating Uncertainty Across Reasoning and Retrieval in LLMs",
+          "authors": [
+            "Chandan Kumar Sah",
+            "Li Zhang",
+            "Xiaoli Lian"
+          ],
+          "year": 2026,
+          "date": "2026-07-28",
+          "citations": 0,
+          "arxiv_id": "2607.25600",
+          "paper_id": "86490f45f936dc522ae06cd90e5c91cb9e29f1a2",
+          "url": "https://arxiv.org/abs/2607.25600",
+          "abstract": "Retrieval-augmented generation improves knowledge-intensive question answering, but indiscriminate retrieval can introduce irrelevant evidence and unnecessary computation. We investigate whether verbalized confidence from black-box language models can serve as an actionable signal for retrieval routing. Our method, BeyondUncertainty, first elicits a structured provisional answer and confidence estimate, then applies a model-specific threshold selected on held-out validation data and frozen before test evaluation. Low-confidence questions receive top-5 TF-IDF retrieval followed by a second answer call, whereas high-confidence questions return the provisional answer directly. We evaluate 27,000 policy instances across six QA benchmarks, three model families, and three retrieval policies. BeyondUncertainty achieves 0.483 mean token-level F1, compared with 0.467 for always retrieval and 0.401 for no retrieval, while reducing retrieved passages by 20.4\\% relative to always retrieval. When matched on the number of questions routed to retrieval within each dataset-model cell, it outperforms a post-hoc random allocation in 17 of 18 settings, with an average gain of 0.024 F1. Although poorly calibrated as an absolute probability, probe uncertainty modestly predicts question-level retrieval benefit (AUROC = 0.628). However, the additional probe increases total token usage by 28.2\\%, revealing a trade-off between more selective evidence acquisition and end-to-end token efficiency.",
+          "subjects": []
+        },
+        {
+          "title": "Beyond \"What to Retrieve\": Uncertainty in Retrieval-Augmented Code Generation",
+          "authors": [
+            "Chandan Kumar Sah",
+            "Li Zhang",
+            "Xiaoli Lian"
+          ],
+          "year": 2026,
+          "date": "2026-07-27",
+          "citations": 0,
+          "arxiv_id": "2607.24884",
+          "paper_id": "0ecd2e69355d5b41a819cf39fd777a012b15f3cc",
+          "url": "https://arxiv.org/abs/2607.24884",
+          "abstract": "Repository-level code generation relies on heterogeneous evidence whose relevance, compatibility, and completeness are inherently uncertain. Similar-code examples, repository context, and project-specific APIs may provide complementary information, but can also introduce noisy, redundant, or conflicting signals. Existing retrieval-augmented approaches primarily optimize retrieval relevance without explicitly modeling how uncertainty in retrieved evidence affects downstream generation. We introduce OpenCoder, an uncertainty-aware framework that estimates source-specific uncertainty, uses it to filter and rank heterogeneous evidence, and guides generation, verification, and repair. A factorial analysis over API knowledge, repository context, and similar-code evidence reveals no universal additive source ranking; instead, significant cross-source interactions depend on the accompanying evidence and LLM backend. On an expanded 32-task RepoExec-inline evaluation, OpenCoder improves GPT selected-output correctness over Baseline RAG from 56.25\\% to 78.13\\%. However, it matches a verification-and-repair control, and the corresponding Gemini improvement is not statistically supported, indicating backend-dependent benefits. Target-aware API refinement also substantially improves API-set retrieval. These findings support treating uncertainty as an actionable control signal for repository-level retrieval, verification, and repair.",
+          "subjects": []
+        },
+        {
+          "title": "Reintegration or Recidivism? Rethinking Indonesia’s Policies Toward Former Terrorism Convicts",
+          "authors": [
+            "Rohadhatul Aisy",
+            "Dheni Anugerah Prasetya",
+            "Chandan Kumar Sah"
+          ],
+          "year": 2026,
+          "date": "2026-06-29",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "3474f27e6d0eacaf306730da4d657fbe486a9f4f",
+          "url": "https://www.semanticscholar.org/paper/3474f27e6d0eacaf306730da4d657fbe486a9f4f",
+          "abstract": "The recurrence of terrorism cases in Indonesia remains frequent and continues to pose a threat despite the government’s efforts to promote deradicalization programs in recent years. The implementation of these programs has yet to achieve optimal outcomes, as many former terrorism inmates rejoin their networks and engage in further acts of terrorism after release. This study aims to examine the effectiveness of deradicalization programs for former terrorism inmates in Indonesia and to formulate an ideal policy framework. Employing a qualitative approach with a socio-legal method, the findings reveal that deradicalization programs have not been effective. Contributing factors include fragmented and sectoral implementation, insufficient competence and quantity of correctional officers, prison overcrowding, the uniform treatment of terrorism inmates with general prisoners, and persistent social stigma. An ideal deradicalization policy should be implemented through systematic stages Identification, Rehabilitation, Re-education, and Resocialization by fostering synergy between government and non-government institutions using a humanistic approach. In conclusion, deradicalization programs in Indonesia remain ineffective and require comprehensive policy reformulation.",
+          "subjects": []
+        },
+        {
+          "title": "SACK : Safe Active Continual Koopman Learning for Uncertain Systems with Contractive Guarantees",
+          "authors": [
+            "Chandan Kumar Sah",
+            "Rajpal Singh",
+            "J. Keshavan"
+          ],
+          "year": 2026,
+          "date": "2026-05-10",
+          "citations": 0,
+          "arxiv_id": "2605.09659",
+          "paper_id": "6c23a5f776d8a77306b0d01a43e158a698e0a38f",
+          "url": "https://arxiv.org/abs/2605.09659",
+          "abstract": "Koopman operator theory provides a powerful framework for representing nonlinear dynamics through a linear operator acting on lifted observables, enabling the use of linear control techniques for nonlinear systems. However, Koopman models are typically learned from data and often degrade in performance under model uncertainty and distributional shifts between training and deployment. Although several works have explored online adaptation to address this issue, many rely on neural network-based updates that introduce significant computational overhead and lack formal safety guarantees, limiting their suitability for real-time and safety-critical robotic applications. In this work, we propose SACK, a unified framework for continual adaptive Koopman learning that enables safe and efficient online refinement of learned models during task execution. A Koopman model is first learned offline and subsequently refined online through a contractive adaptation law, which provides theoretical convergence guarantees under distributional shifts and model uncertainty. To improve data efficiency and accelerate model refinement, the adaptation mechanism is integrated with an active learning strategy that drives the system to collect informative data while accomplishing task objectives. The resulting control problem is formulated as a nonconvex optimization problem incorporating both active learning objectives and safety constraints. We further derive theoretical bounds on model approximation error and show how these bounds can be incorporated within a robust Model Predictive Control (MPC) framework to provide formal safety guarantees. To reduce conservatism in practice, we also introduce a conformal prediction-based tightening mechanism that calibrates safety margins online from observed residuals. Extensive simulation and experimental studies demonstrate efficacy of the proposed scheme.",
+          "subjects": []
+        },
+        {
+          "title": "Uncertainty and Fairness Awareness in LLM-Based Recommendation Systems",
+          "authors": [
+            "Chandan Kumar Sah",
+            "Xiaoli Lian",
+            "Li Zhang",
+            "Tony Xu",
+            "Syed Shazaib Shah"
+          ],
+          "year": 2026,
+          "date": "2026-01-31",
+          "citations": 0,
+          "arxiv_id": "2602.02582",
+          "paper_id": "a4b04cdde2315c2184631f1809afa789fc647d21",
+          "url": "https://arxiv.org/abs/2602.02582",
+          "abstract": "Large language models (LLMs) enable powerful zero-shot recommendations by leveraging broad contextual knowledge, yet predictive uncertainty and embedded biases threaten reliability and fairness. This paper studies how uncertainty and fairness evaluations affect the accuracy, consistency, and trustworthiness of LLM-generated recommendations. We introduce a benchmark of curated metrics and a dataset annotated for eight demographic attributes (31 categorical values) across two domains: movies and music. Through in-depth case studies, we quantify predictive uncertainty (via entropy) and demonstrate that Google DeepMind’s Gemini 1.5 Flash exhibits systematic unfairness for certain sensitive attributes; measured similarity-based gaps are SNSR at 0.1363 and SNSV at 0.0507. These disparities persist under prompt perturbations such as typographical errors and multilingual inputs. We further integrate personality-aware fairness into the RecLLM evaluation pipeline to reveal personality-linked bias patterns and expose trade-offs between personalization and group fairness. We propose a novel uncertainty-aware evaluation methodology for RecLLMs, present empirical insights from deep uncertainty case studies, and introduce a personality Profile-informed fairness benchmark that advances explainability and equity in LLM recommendations. Together, these contributions establish a foundation for safer, more interpretable RecLLMs and motivate future work on multi-model benchmarks and adaptive calibration for trustworthy deployment.",
+          "subjects": []
+        },
+        {
+          "title": "Acromegaly in an elderly male with hepatic malignancy: a case report of a diagnostic dilemma",
+          "authors": [
+            "Rakesh Sah",
+            "Deekshya Devkota",
+            "Chandan Kumar Sah",
+            "Anil Pathak"
+          ],
+          "year": 2025,
+          "date": "2025-11-24",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "3e5ea5a1291cbb8ef54a0fc1771ed3e45d51f5b3",
+          "url": "https://www.semanticscholar.org/paper/3e5ea5a1291cbb8ef54a0fc1771ed3e45d51f5b3",
+          "abstract": "Introduction and importance: Acromegaly is usually caused by a growth hormone (GH)-secreting pituitary adenoma; nonpituitary causes are rare, especially in elderly patients. Paraneoplastic insulin-like growth factor-1 (IGF-1) excess from hepatic malignancy is quite uncommon, and its coexistence with a pituitary infundibular lesion presents a diagnostic challenge. Case Presentation: A 78-year-old diabetic man presented with coarse facial features, macroglossia, and increased interdental spacing. IGF-1 was elevated (218.6 ng/mL) with normal GH, ACTH, and prolactin. The 8 AM serum cortisol was high (36.27 μg/dL), suggesting ACTH-independent hypercortisolism. MRI brain revealed an enhancing pituitary infundibular lesion (pituicytoma vs granular cell tumor). CECT A + P exhibited a large hepatic mass with pulmonary metastases, elevated tumor markers (CEA, CA 19-9, AFP), and normal adrenal glands. Findings favored paraneoplastic IGF-1 excess and hypercortisolism from hepatic malignancy, with the pituitary lesion likely incidental. The family declined further workup, and the patient was lost to follow-up. Clinical discussion: Hepatic malignancy can rarely produce IGF-1 or cortisol-like substances, leading to acromegaly-like features and hypercortisolism independent of pituitary GH or ACTH secretion. The coexistence of paraneoplastic IGF-1 excess, ACTH-independent hypercortisolism, and an incidental pituitary lesion has not been previously reported. This case highlights the need to consider nonpituitary causes of acromegaly, especially in elderly patients with atypical biochemical or imaging findings. Conclusion: Non-pituitary causes of acromegaly should be considered in elderly patients with atypical biochemical profiles, as hepatic malignancy can rarely produce paraneoplastic IGF-1 excess even in the presence of incidental pituitary lesions.",
+          "subjects": []
+        },
+        {
+          "title": "Understanding Uncertainty In LLMs",
+          "authors": [
+            "Chandan Kumar Sah"
+          ],
+          "year": 2025,
+          "date": "2025-11-16",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "b1d3876346e25b1f05d130fee751a9e7629697d0",
+          "url": "https://www.semanticscholar.org/paper/b1d3876346e25b1f05d130fee751a9e7629697d0",
+          "abstract": "Large Language Models (LLMs) have revolutionized AI, yet their inherent uncertainties pose significant challenges to reliable deployment. This paper presents a comprehensive systematic review of uncertainty in LLMs, bridging theoretical foundations and cutting-edge methodologies. We analyze over 45 papers from top venues—including ASE, NeurIPS, ICML, and Nature—to trace the evolution of uncertainty quantification (UQ). We categorize uncertainty into aleatoric and epistemic types, detailing probabilistic modeling, confidence estimation, and calibration techniques. Through illustrative case studies in high-stakes domains such as medical diagnosis and code generation, we demonstrate UQ’s pivotal role in enhancing reliability. We further discuss limitations, ethical considerations, and future directions, emphasizing the need for granular interpretability and human-AI collaboration. This work advances the understanding of LLM uncertainty to enable safer, trustworthy, and responsible real-world integration.",
+          "subjects": []
+        },
+        {
+          "title": "Performance Analysis of Various FACTS Devices Incorporated in Power System Damping Controllers",
+          "authors": [
+            "Chandan Kumar Sah",
+            "K. S"
+          ],
+          "year": 2025,
+          "date": "2025-11-04",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "8aab9d58f3e2caa79a2927db761e2683c8670fff",
+          "url": "https://www.semanticscholar.org/paper/8aab9d58f3e2caa79a2927db761e2683c8670fff",
+          "abstract": "Low-frequency oscillations (LFOs) present a considerable challenge to the long-term viability of contemporary interconnected electrical networks. These oscillations may cause instability in the system, increased equipment stress, and reduced reliability in power delivery. Traditional controllers, such as Power System Stabilizers (PSS), have limitations in efficiently reducing oscillations between areas, particularly in large, multi-machine networks. To address this, Flexible AC Transmission System (FACTS) devices present a promising alternative due to their ability to dynamically control transmission line parameters and enhance system stability. This research proposes an integrated damping strategy using four FACTS controllers ‘Static VAR Compensator (SVC), Unified Power Flow Controller (UPFC), Static Synchronous Compensator (STATCOM), and Static Synchronous Series Compensator (SSSC) for effective suppression of LFOs. The controllers settings are adjusted for maximum effectiveness utilizing the Ant Colony Optimization (ACO) algorithm to adapt to changing system conditions in real-time. The proposed control approach is tested within the IEEE 30-bus system under normal, light, and heavy loading conditions. The simulation outcomes demonstrate that ACO-optimized FACTS controllers significantly outperform both the base case and non-optimized configurations by reducing settling time, overshoot, and power losses, thereby enhancing overall system stability and damping performance. Performance is measured using indices like Integral of Squared Error (ISE), Integral of Time Squared Error (ITSE), Integral of Absolute Error (IAE), Integral of Time Absolute Error (ITAE), LMN (Line Stability Index), FVSI (Fast Voltage Stability Index) and VSF (Voltage Sensitivity Factor).",
+          "subjects": []
+        },
+        {
+          "title": "Coordinated Control of FACTS Devices for Damping Power Oscillations",
+          "authors": [
+            "Chandan Kumar Sah",
+            "A. Kannan"
+          ],
+          "year": 2025,
+          "date": "2025-10-29",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "80442bcac2a9bfe4387be9405ae0fdfa71dd6c46",
+          "url": "https://www.semanticscholar.org/paper/80442bcac2a9bfe4387be9405ae0fdfa71dd6c46",
+          "abstract": "Maintaining power system stability has become increasingly challenging due to low-frequency oscillations arising from high renewable energy penetration, fluctuating loads, and inter-area interactions. Typically, these local Power Oscillation Damping (POD) controllers and decentralized FACTS-based methods that are used for damping may be slow in their reaction, have a limited degree of adaptability, and cannot effectively suppress inter-area oscillations, thus resulting in voltage, frequency, and rotor angle deviations. In order to get beyond these restrictions, this research introduces the Hierarchical Coordinated FACTS Damping Control Architecture (HCFDCA) using Hierarchical Graph Neural Network-assisted Multi-Agent Reinforcement Learning with Safety-Layered MPC (HGNN-MARL-MPC). The system merges the local POD controllers for SVC, STATCOM, TCSC, and UPFC devices with a supervisory coordination layer which by means of optimization controls the damping actions throughout the network. This approach is aimed at ensuring that oscillations are quickly brought under control, that the rotor angle and frequency deviations are kept to a minimum, that the voltage support is strengthened, and that the power flow stability is improved. The IEEE 39-bus and 118-bus test systems were used for the simulation experiments to check the effectiveness of the proposed model which, as a result, can reduce the peak rotor angle deviations by ~25%, increase the damping ratios from 0.09 to 0.23, and keep the maximum frequency deviations at 0.11 Hz. The stability margins under the 80–120% load variations have been raised from 45–60% to 80–90%, thus the method’s robustness, scalability, and readiness for the integration into modern smart grids with wide-area measurements are emphasized.",
+          "subjects": []
+        },
+        {
+          "title": "SafeRoute: Enhancing Traffic Scene Understanding via a Unified Deep Learning and Multimodal LLM",
+          "authors": [
+            "Ankit Kumar Shaw",
+            "Chandan Kumar Sah",
+            "Xiao-Li Lian",
+            "Arsalan Shahid Baig",
+            "Tuopu Wen",
+            "Kun Jiang",
+            "Meng-Meng Yang",
+            "Dian-Ge Yang",
+            "Li Zhang"
+          ],
+          "year": 2025,
+          "date": "2025-10-19",
+          "citations": 4,
+          "arxiv_id": null,
+          "paper_id": "17ad9f923c7f825f7c3484d2f17409586c0590e5",
+          "url": "https://www.semanticscholar.org/paper/17ad9f923c7f825f7c3484d2f17409586c0590e5",
+          "abstract": "Autonomous vehicles (AVs) require highly reliable traffic sign recognition and robust lane detection to navigate safely in complex and dynamic environments. This paper presents SafeRoute, a unified perception framework that integrates deep learning with instruction-tuned Multimodal Large Language Model (MLLM) for comprehensive road scene understanding. For traffic sign recognition, we benchmark three state-of-the-art architectures, ResNet-50, YOLOv8, and RT-DETR, achieving accuracies of 99.8%, 98.0%, and 96.6% respectively. To address the limitations of traditional vision-only methods in lane detection under adverse conditions (e.g. occlusion, poor lighting, road wear), we introduced a MLLM-based pipeline, fine-tuned via instruction learning without requiring large-scale pretraining. Our approach introduces a novel Multimodal Adapter that fuses CNN-derived spatial features with EVA-CLIP embeddings, enabling fine-grained visual grounding and robustness to occlusion. By integrating these visual tokens into a LLaMA-2 decoder, our system performs semantic-level reasoning and interpretable scene understanding, moving beyond segmentation to structured, language-based lane perception. Quantitatively, SafeRoute achieves a Frame Overall Accuracy (FRM) of 53.87%, Question Overall Accuracy (QNS) of 82.83%, and lane detection accuracies of 99.6% in clear conditions and 93.0% at night. It also demonstrates robust reasoning in adverse conditions, with 88.4% accuracy in rain and 95.6% under lane degradation. Overall, SafeRoute introduces a new paradigm in AV perception by offering a unified, multimodal approach, significantly improving both the robustness and explainability of lane detection in safety-critical scenarios.",
+          "subjects": []
+        },
+        {
+          "title": "Obstructive jaundice due to retroperitoneal desmoid-type fibromatosis: a case report and review of literature",
+          "authors": [
+            "Deekshya Devkota",
+            "Chandan Kumar Sah",
+            "M. Dulal",
+            "Sabnam Singh"
+          ],
+          "year": 2025,
+          "date": "2025-08-28",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "82d57de8cc4318e762853f6ba73e5befdb1ed0a8",
+          "url": "https://www.semanticscholar.org/paper/82d57de8cc4318e762853f6ba73e5befdb1ed0a8",
+          "abstract": "Introduction and importance: Desmoid-type fibromatosis (DF) is a rare, benign fibroblastic tumor arising from musculoaponeurotic structures. Despite lacking metastatic potential, it can be locally aggressive. Retroperitoneal DF is uncommon, and its presentation with obstructive jaundice is extremely rare. Case presentation: A 55-year-old male with no significant medical or family history presented with a six-month history of right upper quadrant abdominal pain and three weeks of progressive jaundice. Laboratory findings revealed a cholestatic pattern and elevated CA 19-9. Imaging, histopathological examination and immunohistochemistry were consistent with desmoid-type fibromatosis. The patient was managed with palliative chemotherapy and percutaneous transhepatic biliary drainage (PTBD) to relieve biliary obstruction. Clinical discussion: Retroperitoneal DF is typically managed with surgical excision or watchful waiting, depending on the location and symptoms. While surgical resection is preferred, it is often not feasible in cases involving extensive invasion. In this case, chemotherapy served as the primary treatment modality due to the tumor’s unresectability. Conclusion: This case highlights the importance of including retroperitoneal desmoid-type fibromatosis in the differential diagnosis of obstructive jaundice and underscores the need for larger studies and updated management guidelines.",
+          "subjects": []
+        },
+        {
+          "title": "PerFairX: Is There a Balance Between Fairness and Personality in Large Language Model Recommendations?",
+          "authors": [
+            "Chandan Kumar Sah"
+          ],
+          "year": 2025,
+          "date": "2025-08-20",
+          "citations": 0,
+          "arxiv_id": "2509.08829",
+          "paper_id": "b6e420285c613c5c736a7545819488e41024e505",
+          "url": "https://arxiv.org/abs/2509.08829",
+          "abstract": "The integration of Large Language Models (LLMs) into recommender systems has enabled zero-shot, personality-based personalization through prompt-based interactions, offering a new paradigm for user-centric recommendations. However, incorporating user personality traits via the OCEAN model highlights a critical tension between achieving psychological alignment and ensuring demo-graphic fairness. To address this, we propose PerFairX, a unified evaluation framework designed to quantify the trade-offs between personalization and demographic equity in LLM-generated recommendations. Using neutral and personality-sensitive prompts across diverse user profiles, we benchmark two state-of-the-art LLMs, ChatGPT and DeepSeek, on movie (MovieLens 10M) and music (Last.fm 360K) datasets. Our results reveal that personality-aware prompting significantly improves alignment with individual traits but can exacerbate fairness disparities across demo-graphic groups. Specifically, DeepSeek achieves stronger psychological fit but exhibits higher sensitivity to prompt variations, while ChatGPT delivers stable yet less person-alized outputs. PerFairX provides a principled benchmark to guide the development of LLM-based recommender sys-tems that are both equitable and psychologically informed, contributing to the creation of inclusive, user-centric AI applications in continual learning contexts.",
+          "subjects": []
+        },
+        {
+          "title": "CleanMAP: Distilling Multimodal LLMs for Confidence-Driven Crowdsourced HD Map Updates",
+          "authors": [
+            "Ankit Kumar Shaw",
+            "Kun Jiang",
+            "Tuopu Wen",
+            "Chandan Kumar Sah",
+            "Yining Shi",
+            "Meng-Meng Yang",
+            "Dian-Ge Yang",
+            "Xiao-Li Lian"
+          ],
+          "year": 2025,
+          "date": "2025-04-14",
+          "citations": 0,
+          "arxiv_id": "2504.10738",
+          "paper_id": "389cc983f74e60e190e845cb2264a1c6af0eea1f",
+          "url": "https://arxiv.org/abs/2504.10738",
+          "abstract": "The rapid growth of intelligent connected vehicles (ICVs) and integrated vehicle-road-cloud systems has increased the demand for accurate, real-time HD map updates. However, ensuring map reliability remains challenging due to inconsistencies in crowdsourced data, which suffer from motion blur, lighting variations, adverse weather, and lane marking degradation. This paper introduces CleanMAP, a Multimodal Large Language Model (MLLM)-based distillation framework designed to filter and refine crowdsourced data for high-confidence HD map updates. CleanMAP leverages an MLLM-driven lane visibility scoring model that systematically quantifies key visual parameters, assigning confidence scores (0–10) based on their impact on lane detection. A novel dynamic piecewise confidence-scoring function adapts scores based on lane visibility, ensuring strong alignment with human evaluations while effectively filtering unreliable data. To further optimize map accuracy, a confidence-driven local map fusion strategy ranks and selects the top-k highest-scoring local maps within an optimal confidence range (best score minus 10%), striking a balance between data quality and quantity. Experimental evaluations on a real-world autonomous vehicle dataset validate CleanMAP's effectiveness, demonstrating that fusing the top three local maps achieves the lowest mean map update error of 0.28m, outperforming the baseline (0.37m) and meeting stringent accuracy thresholds $(\\leq 0.32m)$. Further validation with real-vehicle data confirms 84.88% alignment with human evaluators, reinforcing the model's robustness and reliability. This work establishes CleanMAP as a scalable and deployable solution for Crowdsourced HD Map Updates, ensuring more precise and reliable autonomous navigation. The code will be available at https://Ankit-Zefan.github.io/CleanMap/.",
+          "subjects": []
+        },
+        {
+          "title": "FairEval: Evaluating Fairness in LLM-Based Recommendations with Personality Awareness",
+          "authors": [
+            "Chandan Kumar Sah",
+            "Xiaoli Lian",
+            "Tony Xu",
+            "Li Zhang"
+          ],
+          "year": 2025,
+          "date": "2025-04-10",
+          "citations": 0,
+          "arxiv_id": "2504.07801",
+          "paper_id": "fc28170d9687bdf4d92b08c3c52ad200e1afb4f9",
+          "url": "https://arxiv.org/abs/2504.07801",
+          "abstract": "Recent advances in Large Language Models (LLMs) have enabled their application to recommender systems (RecLLMs), yet concerns remain regarding fairness across demographic and psychological user dimensions. We introduce FairEval, a novel evaluation framework to systematically assess fairness in LLM-based recommendations. FairEval integrates personality traits with eight sensitive demographic attributes,including gender, race, and age, enabling a comprehensive assessment of user-level bias. We evaluate models, including ChatGPT 4o and Gemini 1.5 Flash, on music and movie recommendations. FairEval's fairness metric, PAFS, achieves scores up to 0.9969 for ChatGPT 4o and 0.9997 for Gemini 1.5 Flash, with disparities reaching 34.79 percent. These results highlight the importance of robustness in prompt sensitivity and support more inclusive recommendation systems.",
+          "subjects": []
+        },
+        {
+          "title": "Advancing Autonomous Vehicle Intelligence: Deep Learning and Multimodal LLM for Traffic Sign Recognition and Robust Lane Detection",
+          "authors": [
+            "Chandan Kumar Sah",
+            "Ankit Kumar Shaw",
+            "Xiaoli Lian",
+            "Arsalan Shahid Baig",
+            "Tuopu Wen",
+            "Kun Jiang",
+            "Meng-Meng Yang",
+            "Dian-Ge Yang"
+          ],
+          "year": 2025,
+          "date": "2025-03-08",
+          "citations": 0,
+          "arxiv_id": "2503.06313",
+          "paper_id": "12a7d010be3d466c48b70ba3bc352e371af5513d",
+          "url": "https://arxiv.org/abs/2503.06313",
+          "abstract": "Autonomous vehicles (AVs) require reliable traffic sign recognition and robust lane detection capabilities to ensure safe navigation in complex and dynamic environments. This paper introduces an integrated approach combining advanced deep learning techniques and Multimodal Large Language Models (MLLMs) for comprehensive road perception. For traffic sign recognition, we systematically evaluate ResNet-50, YOLOv8, and RT-DETR, achieving state-of-the-art performance of 99.8% with ResNet-50, 98.0% accuracy with YOLOv8, and achieved 96.6% accuracy in RT-DETR despite its higher computational complexity. For lane detection, we propose a CNN-based segmentation method enhanced by polynomial curve fitting, which delivers high accuracy under favorable conditions. Furthermore, we introduce a lightweight, Multimodal, LLM-based framework that directly undergoes instruction tuning using small yet diverse datasets, eliminating the need for initial pretraining. This framework effectively handles various lane types, complex intersections, and merging zones, significantly enhancing lane detection reliability by reasoning under adverse conditions. Despite constraints in available training resources, our multimodal approach demonstrates advanced reasoning capabilities, achieving a Frame Overall Accuracy (FRM) of 53.87%, a Question Overall Accuracy (QNS) of 82.83%, lane detection accuracies of 99.6% in clear conditions and 93.0% at night, and robust performance in reasoning about lane invisibility due to rain (88.4%) or road degradation (95.6%). The proposed comprehensive framework markedly enhances AV perception reliability, thus contributing significantly to safer autonomous driving across diverse and challenging road scenarios.",
+          "subjects": []
+        },
+        {
+          "title": "Event-Based Adaptive Koopman Framework for Optic Flow-Guided Landing on Moving Platforms",
+          "authors": [
+            "Bazeela Banday",
+            "Chandan Kumar Sah",
+            "J. Keshavan"
+          ],
+          "year": 2025,
+          "date": "2025-01-28",
+          "citations": 3,
+          "arxiv_id": "2501.16868",
+          "paper_id": "4288309b7bed2617b870dfe7aa44b711aae4e137",
+          "url": "https://arxiv.org/abs/2501.16868",
+          "abstract": "This paper presents an optic flow-guided approach for achieving soft landings by resource-constrained unmanned aerial vehicles (UAVs) on dynamic platforms. An offline data-driven linear model based on Koopman operator theory is developed to describe the underlying (nonlinear) dynamics of optic flow output obtained from a single monocular camera that maps to vehicle acceleration as the control input. Moreover, a novel adaptation scheme within the Koopman framework is introduced online to handle uncertainties such as unknown platform motion and ground effect, which exert a significant influence during the terminal stage of the descent process. Further, to minimize computational overhead, an event-based adaptation trigger is incorporated into an event-driven Model Predictive Control (MPC) strategy to regulate optic flow and track a desired reference. A detailed convergence analysis ensures global convergence of the tracking error to a uniform ultimate bound. Simulation results demonstrate the algorithm’s robustness and effectiveness in landing on dynamic platforms under ground effect and sensor noise, which compares favorably to non-adaptive time-triggered and time-triggered adaptive schemes.",
+          "subjects": []
+        },
+        {
+          "title": "Deep Learning and EEG Signal Based Biometric System: An Application of Brain Computer Interface",
+          "authors": [
+            "Chandan Kumar Sah",
+            "Mitul Kumar Ahirwal",
+            "D. Tomar"
+          ],
+          "year": 2025,
+          "date": "2025-01-18",
+          "citations": 3,
+          "arxiv_id": null,
+          "paper_id": "1dd43e7855391d740857df7ed8989e4cc33a1df5",
+          "url": "https://www.semanticscholar.org/paper/1dd43e7855391d740857df7ed8989e4cc33a1df5",
+          "abstract": "User identification is explored through EEG-based biometric analysis using different auditory stimuli, using the distinctiveness and security of EEG signals for reliable biometric authentication. The impact on system performance due to different auditory stimuli, namely native language songs, non-native language songs, and neutral music, was evaluated using a one-dimensional convolutional neural network (1D-CNN) model for classification. The 1D-CNN model demonstrated strong performance with an average sensitivity of 0.9666±0.10, showing its ability to correctly identify individuals using auditory stimuli. Average specificity was 0.9982±0.01, indicating excellent user differentiation and low misidentifications. The average Equal Error Rate (EER) was 0.0318±0.29, confirming the system’s reliability in recognizing users based on pattern of EEG signals.",
+          "subjects": []
+        },
+        {
+          "title": "RUL Forecasting for Wind Turbine Predictive Maintenance Based on Deep Learning",
+          "authors": [
+            "Syed Shazaib Shah",
+            "Daoliang Tan",
+            "Chandan Kumar Sah"
+          ],
+          "year": 2025,
+          "date": "2025",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "2cd341222eedfd36794ebbe88388815fdf33d37d",
+          "url": "https://www.semanticscholar.org/paper/2cd341222eedfd36794ebbe88388815fdf33d37d",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Navigating the AI Frontier: A Critical Literature Review on Integrating Artificial Intelligence into Software Engineering Education",
+          "authors": [
+            "Chandan Kumar Sah",
+            "Xiaoli Lian",
+            "M. Islam",
+            "Md. Kamrul Islam"
+          ],
+          "year": 2024,
+          "date": "2024-07-29",
+          "citations": 10,
+          "arxiv_id": null,
+          "paper_id": "d2dd80a8552cbca17acc3d075e2f64c9c98315ef",
+          "url": "https://www.semanticscholar.org/paper/d2dd80a8552cbca17acc3d075e2f64c9c98315ef",
+          "abstract": "The swift development of Artificial Intelligence (AI), namely the introduction of Large Language Models (LLMs), is drastically altering various industries and necessitating a major change in the way software engineering is taught. To equip upcoming software engineers with the knowledge and abilities to function in this AI-powered environment, curriculum and pedagogical techniques must be critically reevaluated. To better understand the integration of AI and LLMs into software engineering education, this study gives a thorough and critical analysis of the literature, looking at existing models, pedagogical frameworks, and enduring issues. We explore various approaches utilized by educational establishments, including as specialized AI and LLM courses, incorporating modules into pre-existing curricula, and utilizing open-source LLM materials. Our analysis, which is based on case studies and research data, thoroughly assesses how well these strategies enable software engineers to comprehend, make use of, and ethically create AI and LLMs. Key obstacles to the successful integration of AI and LLM are also identified by our analysis, including the inexperienced status of LLM educators, resource limitations, potential biases in AI and LLM algorithms, and insufficient instructor knowledge. Building on these discoveries, we provide solid answers to these problems and suggest interesting avenues for further study to improve the integration of AI and LLM. In the end, this study advocates for a multimodal strategy to get future software engineers ready for the impending AI and LLM future and secure their place in this quickly changing field.",
+          "subjects": []
+        },
+        {
+          "title": "An Overview of Data-Driven Paradigms for Identification and Control of Robotic Systems",
+          "authors": [
+            "Chandan Kumar Sah",
+            "Rajpal Singh",
+            "J. Keshavan"
+          ],
+          "year": 2024,
+          "date": "2024-07-01",
+          "citations": 3,
+          "arxiv_id": null,
+          "paper_id": "14425287f7897db4b401ae17f6edcfd75dc6a1af",
+          "url": "https://www.semanticscholar.org/paper/14425287f7897db4b401ae17f6edcfd75dc6a1af",
+          "abstract": "",
+          "subjects": []
+        }
+      ]
     ],
     [
       "Jishnu Keshavan",
@@ -1561,42 +1929,6 @@
           ]
         },
         {
-          "title": "LIMBO: Learning and Internalizing Model-Free Barrier Objectives for Agile and Safe Whole-Body Control",
-          "authors": [
-            "Jake Gonzales",
-            "Arturo Flores Alvarez",
-            "Yu-Ming Chen",
-            "Aaron D. Ames",
-            "Lillian J. Ratliff",
-            "Manikantan Nambi"
-          ],
-          "year": 2026,
-          "date": "2026-09-18",
-          "citations": 0,
-          "arxiv_id": "2609.22075",
-          "paper_id": "65101894fad3558bce4fbfbdf8bb6a1427d30940",
-          "url": "https://arxiv.org/abs/2609.22075",
-          "abstract": "Safe whole-body control requires coordinating collision avoidance and balance under high-dimensional, nonlinear dynamics--making safety certificates difficult to design and reuse across behaviors. We present LIMBO, a framework for synthesizing a state-action control barrier function and distilling its safety structure into a task policy. LIMBO learns the safety certificate from black-box transitions and a state-based failure specification over residual actions around a frozen base controller, making Q-CBF synthesis tractable in the full control dimension while placing the certificate in the task policy's control space. During synthesis, the learned safety value drives risk-guided sampling near the estimated boundary of recoverability; during task learning, it serves as a teacher that provides action-level safety feedback, yielding a robust task policy and alleviating the need for an online safety filter at deployment. We demonstrate LIMBO on a 29-degree-of-freedom humanoid performing dodgeball avoidance and locomotion beneath low obstacles. Beyond scaling learned Q-CBFs to whole-body control, we show that risk-guided boundary sampling provides a theoretically grounded way to explore the edge of recoverability. Under the same safety specification, ceteris paribus, varying the sampling concentration produces strategies ranging from crouching to a novel backward-leaning limbo maneuver. In both settings, the learned policies transfer to hardware without online safety filtering, showing that learned safety synthesis scales to agile whole-body control.",
-          "subjects": []
-        },
-        {
-          "title": "Safe Probabilistic Planning for Human-Robot Interaction using Conformal Risk Control",
-          "authors": [
-            "Jake Gonzales",
-            "Kazuki Mizuta",
-            "Karen Leung",
-            "Lillian J. Ratliff"
-          ],
-          "year": 2025,
-          "date": "2025-10-19",
-          "citations": 0,
-          "arxiv_id": "2603.10392",
-          "paper_id": "652e3aeda37a7568d49879e2b03a6cdb65e567e9",
-          "url": "https://arxiv.org/abs/2603.10392",
-          "abstract": "In this paper, we present a novel probabilistic safe control framework for human-robot interaction that combines control barrier functions (CBFs) with conformal risk control to provide formal safety guarantees while considering complex human behavior. The approach uses conformal risk control to quantify and control the prediction errors in CBF safety values and establishes formal guarantees on the probability of constraint satisfaction during interaction. We introduce an algorithm that dynamically adjusts the safety margins produced by conformal risk control based on the current interaction context. Through experiments on human-robot navigation scenarios, we demonstrate that our approach significantly reduces collision rates and safety violations as compared to baseline methods while maintaining high success rates in goal-reaching tasks and efficient control. The code, simulations, and other supplementary material can be found on the project website: https://jakeagonzales.github.io/crc-cbf-website/.",
-          "subjects": []
-        },
-        {
           "title": "How to Train Your Neural Control Barrier Function: Learning Safety Filters for Complex Input-Constrained Systems",
           "authors": [
             "Oswin So",
@@ -1620,155 +1952,7 @@
           ]
         }
       ],
-      [
-        {
-          "title": "Structure from Strategic Interaction & Uncertainty: Risk Sensitive Games for Robust Preference Learning",
-          "authors": [
-            "Maxim D. Horwitz",
-            "Jake Gonzales",
-            "Eric Mazumdar",
-            "Lillian J. Ratliff"
-          ],
-          "year": 2026,
-          "date": "2026-05-11",
-          "citations": 0,
-          "arxiv_id": "2605.09946",
-          "paper_id": "bcfaace2d65b805b8d65218dba882be8f59de5b8",
-          "url": "https://arxiv.org/abs/2605.09946",
-          "abstract": "A growing line of work reframes preference-based fine-tuning of large language models game-theoretically: Nash Learning from Human Feedback (NLHF) recasts the problem as a zero-sum game over policies. However, optimization is over expected pairwise payoffs, thereby conflating policies with similar win rates but different tail behavior. As such, these methods are agnostic to where in the data distribution they succeed or fail: strong average performance can mask systematic failure across prompts, annotators, or safety-critical strata. We introduce risk-sensitive preference games, in which players optimize convex risk measures of their preference loss, exploiting structure in preference uncertainty. While risk-sensitivity generally breaks the zero-sum structure, we show that translation invariance of many risk metrics ensures that we retain monotonicity, yielding fast convergence of sample-efficient self-play methods. Furthermore, we establish algorithmic stability and offline sample complexity bounds that scale with risk, requiring simultaneous control of structural bias from nonlinear risk transformations, statistical bias in risk estimation, and concentration tailored to the risk-sensitive setting. To address statistical bias, we introduce a hierarchical game formulation and a two-timescale extragradient algorithm with bias correction that converges to the Stackelberg equilibrium and is especially effective in low-sample regimes. Empirically, risk-adjusted policies are robust across data strata, stable across risk choices, and match or exceed risk-neutral performance thereby achieving robustness without a performance tax.",
-          "subjects": []
-        },
-        {
-          "title": "Strategically Robust Multi-Agent Reinforcement Learning with Linear Function Approximation",
-          "authors": [
-            "Jake Gonzales",
-            "Maxim D. Horwitz",
-            "Eric V. Mazumdar",
-            "Lillian J. Ratliff"
-          ],
-          "year": 2026,
-          "date": "2026-03-10",
-          "citations": 0,
-          "arxiv_id": "2603.09208",
-          "paper_id": "e8c26a2e4aac3b05781865add4450d67fbd0ba7b",
-          "url": "https://arxiv.org/abs/2603.09208",
-          "abstract": "Provably efficient and robust equilibrium computation in general-sum Markov games remains a core challenge in multi-agent reinforcement learning. Nash equilibrium is computationally intractable in general and brittle due to equilibrium multiplicity and sensitivity to approximation error. We study Risk-Sensitive Quantal Response Equilibrium (RQRE), which yields a unique, smooth solution under bounded rationality and risk sensitivity. We propose \\texttt{RQRE-OVI}, an optimistic value iteration algorithm for computing RQRE with linear function approximation in large or continuous state spaces. Through finite-sample regret analysis, we establish convergence and explicitly characterize how sample complexity scales with rationality and risk-sensitivity parameters. The regret bounds reveal a quantitative tradeoff: increasing rationality tightens regret, while risk sensitivity induces regularization that enhances stability and robustness. This exposes a Pareto frontier between expected performance and robustness, with Nash recovered in the limit of perfect rationality and risk neutrality. We further show that the RQRE policy map is Lipschitz continuous in estimated payoffs, unlike Nash, and RQRE admits a distributionally robust optimization interpretation. Empirically, we demonstrate that \\texttt{RQRE-OVI} achieves competitive performance under self-play while producing substantially more robust behavior under cross-play compared to Nash-based approaches. These results suggest \\texttt{RQRE-OVI} offers a principled, scalable, and tunable path for equilibrium learning with improved robustness and generalization.",
-          "subjects": []
-        },
-        {
-          "title": "OMIP-111: Immune-profiling of T helper 1 (Th1), Th2 and Th17 signatures in murine splenocytes by targeting intracellular cytokines",
-          "authors": [
-            "S. Barman",
-            "Aisling Kelly",
-            "Danica Dong",
-            "Arsh Patel",
-            "Michael J. Buonopane",
-            "Jake Gonzales",
-            "Ben Janoschek",
-            "Andrew Draghi",
-            "David J. Dowling"
-          ],
-          "year": 2025,
-          "date": "2025-03-17",
-          "citations": 4,
-          "arxiv_id": null,
-          "paper_id": "d536a79b53c330250c40979b4ce92e5744994f97",
-          "url": "https://www.semanticscholar.org/paper/d536a79b53c330250c40979b4ce92e5744994f97",
-          "abstract": "Functional cytokines shape both innate and adaptive immune responses in the host after infection or immunization. Deep immunophenotyping of the key functional cytokine signatures associated with T cells in murine lymphoid tissue, especially in the spleen, is challenging. Using spectral flow cytometry, we developed a 17‐parameter panel to profile major immune cell subsets along with T cells, memory phenotypes, and functional cytokines in murine splenocytes in steady state as well as in stimulated conditions. This panel dissects the memory T cell compartment via CD62L and CD44 expression after mitogen stimulation. To profile T helper (Th) cell distribution after mitogen stimulation, established Th1 markers IFNγ, TNF, and IL‐2; Th2 markers IL‐4/5; and the Th17 marker, IL‐17, are included. This optimized multicolor spectral flow panel allows a detailed immune‐profiling of functional cytokines in the murine T cell compartment and might be useful for exploratory analysis of how these functional cytokines shape host immunity after infection or vaccination. Our panel could be easily modified if researchers wish to tailor the panel to their specific needs.",
-          "subjects": []
-        },
-        {
-          "title": "Immune-profiling of T helper 1 (Th1), Th2 and Th17 signatures in murine splenocytes by targeting intracellular cytokines",
-          "authors": [
-            "S. Barman",
-            "Aisling Kelly",
-            "Danica Dong",
-            "Arsh Patel",
-            "Michael J. Buonopane",
-            "Jake Gonzales",
-            "Ben Janoschek",
-            "Andrew Draghi",
-            "David J. Dowling"
-          ],
-          "year": 2024,
-          "date": "2024-04-29",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "5081f64360a6918323a4395a32c490625811fda6",
-          "url": "https://www.semanticscholar.org/paper/5081f64360a6918323a4395a32c490625811fda6",
-          "abstract": "Functional cytokines shape both innate and adaptive immune responses in the host after infection or immunization. Deep immunophenotyping of the key functional cytokine signatures associated with T cells in murine lymphoid tissue, especially in the spleen, is challenging. Using spectral flow cytometry, we developed a 17-parameter panel to profile major immune cell subsets along with T cells, memory phenotypes and functional cytokines in murine splenocytes in steady state as well as in stimulated conditions. This panel dissects the memory T cell compartment via CD62L and CD44 expression after mitogen stimulation. To profile T helper (Th) cells distribution after mitogen stimulation, established Th1 markers IFNγ, TNF and IL-2; Th2 markers IL-4/5 and the Th17 marker, IL-17, are included. This optimized multicolor spectral flow panel allows a detailed immune profiling of functional cytokines in the murine T cell compartment and might be useful for exploratory analysis of how these functional cytokines shape host immunity after infection or vaccination. Our panel could be easily modified, if researchers wish to tailor the panel to their specific needs.",
-          "subjects": []
-        },
-        {
-          "title": "Data-Driven Stochastic Optimal Control Using Kernel Gradients",
-          "authors": [
-            "Adam J. Thorpe",
-            "Jake Gonzales",
-            "Meeko Oishi"
-          ],
-          "year": 2022,
-          "date": "2022-09-19",
-          "citations": 0,
-          "arxiv_id": "2209.09205",
-          "paper_id": "454b3c1c6ff23fc02ae845eaac4c19e713b5dd24",
-          "url": "https://arxiv.org/abs/2209.09205",
-          "abstract": "We present an empirical, gradient-based method for solving data-driven stochastic optimal control problems using the theory of kernel embeddings of distributions. By embedding the integral operator of a stochastic kernel in a reproducing kernel Hilbert space (RKHS), we can compute an empirical approximation of stochastic optimal control problems, which can then be solved efficiently using the properties of the RKHS. Existing approaches typically rely upon finite control spaces or optimize over policies with finite support to enable optimization. In contrast, our approach uses kernel-based gradients computed using observed data to approximate the cost surface of the optimal control problem, which can then be optimized using gradient descent. We apply our technique to the area of data-driven stochastic optimal control, and demonstrate our proposed approach on a linear regulation problem for comparison and on a nonlinear target tracking problem.",
-          "subjects": []
-        },
-        {
-          "title": "System Engineering Leveraging a Commercial Gaming Platform.",
-          "authors": [
-            "Ruby Ta",
-            "Jake Gonzales"
-          ],
-          "year": 2022,
-          "date": "2022-09-01",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "d11534d76b362f8119f5fe1091d53befc265b726",
-          "url": "https://www.semanticscholar.org/paper/d11534d76b362f8119f5fe1091d53befc265b726",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Integrating MBSE and MCAD Models in Virtual Reality.",
-          "authors": [
-            "Timothy Wiseley",
-            "Ruby Ta",
-            "Jake Gonzales"
-          ],
-          "year": 2022,
-          "date": "2022-06-01",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "ff0a91f733d8ff33625e7f85aebd23edcda9e262",
-          "url": "https://www.semanticscholar.org/paper/ff0a91f733d8ff33625e7f85aebd23edcda9e262",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "The origin and fate of malaria-associated atypical memory B cells",
-          "authors": [
-            "E. Bunnik",
-            "G. Batugedara",
-            "Ashley E. Braddom",
-            "Richard T. Sullivan",
-            "Jake Gonzales",
-            "R. Reyes",
-            "I. Ssewanyana",
-            "B. Greenhouse",
-            "Sebastiaan Bol"
-          ],
-          "year": 2021,
-          "date": "2021-05-01",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "34f6e1212fca49dfe8aa800d1d1874d01ad2dfbf",
-          "url": "https://www.semanticscholar.org/paper/34f6e1212fca49dfe8aa800d1d1874d01ad2dfbf",
-          "abstract": "\n Chronic and frequently recurring infectious diseases, such as malaria, are commonly associated with expanded populations of atypical memory B cells (atMBCs, here defined as CD19+CD20+CD21−CD27− B cells). While the phenotype and conditions leading to the generation of atMBCs in malaria-experienced individuals have extensively been studied, the origin and fate of these cells remain largely elusive. Using B cell receptor (BCR) sequencing to track clonally related cells present before and after a malaria episode in 5-year-old Ugandan children, we observed that IgM+ atMBCs were predominantly derived from naïve B cells, while IgG+ atMBCs present after a malaria episode mainly originated from FcRL5+IgG+ classical MBCs (cMBCs, CD19+CD20+CD21+CD27+ B cells). IgM+ atMBCs showed fewer connections with other B cell subsets and higher turnover than IgG+ atMBCs. Single-cell transcriptomics analysis revealed that IgG+ atMBCs could be divided into two distinct clusters, one of which was maintained up to 6 months after infection. These results underscore the heterogeneity among atMBCs and highlight differences in their longevity. Finally, we observed that atMBCs from malaria-naïve and malaria-experienced donors showed many similarities in BCR characteristics, such as levels of somatic hypermutation, suggesting that atMBCs undergo similar differentiation pathways in response to different types of pathogens. In terms of BCR characteristics, IgM+ atMBCs of all donors closely resembled NBCs, while IgG+ atMBCs were more similar to IgG+ cMBCs. Collectively, our results highlight differences between unswitched and switched atMBC populations and shed light on the origin and fate of atMBCs in malaria-experienced individuals.",
-          "subjects": []
-        }
-      ]
+      []
     ],
     [
       "Shima Sadat Mousavi",
@@ -1876,6 +2060,75 @@
       "P. Tabuada",
       [
         {
+          "title": "Control Barrier Function-Based Quadratic Programs Introduce Undesirable Asymptotically Stable Equilibria",
+          "authors": [
+            "Matheus F. Reis",
+            "Antonio Pedro Aguiar",
+            "P. Tabuada"
+          ],
+          "year": 2020,
+          "date": "2020-03-17",
+          "citations": 0,
+          "arxiv_id": "2003.07819",
+          "paper_id": "41efa4d755cff2bd72071d0bbeb326c7ed73b717",
+          "url": "https://arxiv.org/abs/2003.07819",
+          "abstract": "Control Lyapunov functions (CLFs) and control barrier functions (CBFs) have been used to develop provably safe controllers by means of quadratic programs (QPs), guaranteeing safety in the form of trajectory invariance with respect to a given set. In this letter, we show that this framework can introduce equilibrium points (particularly at the boundary of the safe set) other than the minimum of the Lyapunov function into the closed-loop system. We derive explicit conditions under which these undesired equilibria (which can even appear in the simple case of linear systems with just one convex unsafe set) are asymptotically stable. To address this issue, we propose an extension to the QP-based controller unifying CLFs and CBFs such that the resulting system trajectories avoid the undesirable equilibria problem on the boundary of the safe set. The solution is illustrated in the design of a collision-free controller.",
+          "subjects": []
+        },
+        {
+          "title": "Control Barrier Functions: Theory and Applications",
+          "authors": [
+            "A. Ames",
+            "Samuel Coogan",
+            "M. Egerstedt",
+            "Gennaro Notomista",
+            "K. Sreenath",
+            "P. Tabuada"
+          ],
+          "year": 2019,
+          "date": "2019-03-27",
+          "citations": 0,
+          "arxiv_id": "1903.11199",
+          "paper_id": "2a9fd99d95d857b4d9283ea80cb6f31f72569bc6",
+          "url": "https://arxiv.org/abs/1903.11199",
+          "abstract": "This paper provides an introduction and overview of recent work on control barrier functions and their use to verify and enforce safety properties in the context of (optimization based) safety-critical controllers. We survey the main technical results and discuss applications to several domains including robotic systems.",
+          "subjects": []
+        },
+        {
+          "title": "Robustness of Control Barrier Functions for Safety Critical Control",
+          "authors": [
+            "Xiangru Xu",
+            "P. Tabuada",
+            "J. Grizzle",
+            "A. Ames"
+          ],
+          "year": 2016,
+          "date": "2016-12-05",
+          "citations": 0,
+          "arxiv_id": "1612.01554",
+          "paper_id": "3098826a91ba89250332fa1de1881207e619d6ea",
+          "url": "https://arxiv.org/abs/1612.01554",
+          "abstract": "Abstract Barrier functions (also called certificates) have been an important tool for the verification of hybrid systems, and have also played important roles in optimization and multi-objective control. The extension of a barrier function to a controlled system results in a control barrier function. This can be thought of as being analogous to how Sontag extended Lyapunov functions to control Lypaunov functions in order to enable controller synthesis for stabilization tasks. A control barrier function enables controller synthesis for safety requirements specified by forward invariance of a set using a Lyapunov-like condition. This paper develops several important extensions to the notion of a control barrier function. The first involves robustness under perturbations to the vector field defining the system. Input-to-State stability conditions are given that provide for forward invariance, when disturbances are present, of a “relaxation” of set rendered invariant without disturbances. A control barrier function can be combined with a control Lyapunov function in a quadratic program to achieve a control objective subject to safety guarantees. The second result of the paper gives conditions for the control law obtained by solving the quadratic program to be Lipschitz continuous and therefore to gives rise to well-defined solutions of the resulting closed-loop system.",
+          "subjects": []
+        },
+        {
+          "title": "Correctness Guarantees for the Composition of Lane Keeping and Adaptive Cruise Control",
+          "authors": [
+            "Xiangru Xu",
+            "J. Grizzle",
+            "P. Tabuada",
+            "A. Ames"
+          ],
+          "year": 2016,
+          "date": "2016-09-22",
+          "citations": 0,
+          "arxiv_id": "1609.06807",
+          "paper_id": "98af018e4e7243a5ab49a0657fbf8f7a0a3ef115",
+          "url": "https://arxiv.org/abs/1609.06807",
+          "abstract": "This paper develops a control approach with correctness guarantees for the simultaneous operation of lane keeping and adaptive cruise control. The safety specifications for these driver assistance modules are expressed in terms of set invariance. Control barrier functions (CBFs) are used to design a family of control solutions that guarantee the forward invariance of a set, which implies satisfaction of the safety specifications. The CBFs are synthesized through a combination of sum-of-squares program and physics-based modeling and optimization. A real-time quadratic program is posed to combine the CBFs with the performance-based controllers, which can be either expressed as control Lyapunov function conditions or as black-box legacy controllers. In both cases, the resulting feedback control guarantees the safety of the composed driver assistance modules in a formally correct manner. Importantly, the quadratic program admits a closed-form solution that can be easily implemented. The effectiveness of the control approach is demonstrated by simulations in the industry-standard vehicle simulator Carsim. Note to Practitioners—Safety is of paramount importance for the control of automated vehicles. This paper is motivated by the problem of designing controllers that are provably correct for the simultaneous operation of two driver assistance modules, lane keeping and adaptive cruise control. This is a challenging problem partially, because the lateral and longitudinal dynamics of the vehicles are coupled, with few results known to exist that provide formal guarantees. In this paper, we employ an assume-guarantee formalism between these two subsystems, such that they can be considered individually; based on that, we use optimization to design safe sets that serves as “supervisors” for vehicle behavior, such that the trajectories of the closed-loop system are confined within the safe sets using predetermined bounds on wheel force and steering angle. The feedback controller is constructed by solving convex quadratic programs online, which can also be given in closed form, making the implementation much easier. One particular advantage of this control approach is that the safety set and the performance controller can be designed separately, which enables the integration of a legacy controller into a correct-by-construction solution.",
+          "subjects": []
+        },
+        {
           "title": "Control Barrier Function Based Quadratic Programs for Safety Critical Systems",
           "authors": [
             "A. Ames",
@@ -1912,7 +2165,347 @@
           "subjects": []
         }
       ],
-      []
+      [
+        {
+          "title": "Satellite Attitude Control",
+          "authors": [
+            "R. Wiśniewski",
+            "A. Astolfi",
+            "T. Bak",
+            "M. Blanke",
+            "P. Lima",
+            "K. Spindler",
+            "P. Tabuada",
+            "P. Tavares"
+          ],
+          "year": null,
+          "date": "",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "2718633814ec6636a93bec6cca50b7531ec07a6b",
+          "url": "https://www.semanticscholar.org/paper/2718633814ec6636a93bec6cca50b7531ec07a6b",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Towards a Performance-Driven Device-Edge-Cloud Relationship",
+          "authors": [
+            "Pragya Sharma",
+            "Brian Wang",
+            "Xiaomin Ouyang",
+            "Rahal Nanayakkara",
+            "Bharathan Balaji",
+            "P. Tabuada",
+            "Mani B. Srivastava"
+          ],
+          "year": 2025,
+          "date": "2025-02-26",
+          "citations": 3,
+          "arxiv_id": null,
+          "paper_id": "5658a308ba2cd78bb234d22ed0afda5803fa6a5f",
+          "url": "https://www.semanticscholar.org/paper/5658a308ba2cd78bb234d22ed0afda5803fa6a5f",
+          "abstract": "Real-time cyber-physical systems (CPS) rely on Perception-Cognition-Actuation (PCA) pipelines to enable autonomous observation, decisionmaking, and action execution. Closed-loop PCA systems utilize feedback-driven control to iteratively adapt actions in response to real-time environmental changes whereas open-loop PCA systems execute single actions without iterative feedback. The overall performance of these systems is inherently tied to the models selected for each pipeline component. Recent advancements in neural networks, particularly for perception tasks, have substantially enhanced CPS capabilities but have introduced significant complexity into the PCA pipeline. While traditional research [1] often evaluates perception models in static, controlled settings, it fails to account for the cascading latency and accuracy trade-offs that manifest across interconnected PCA modules in dynamic, real-time applications. Additionally, the proliferation of distributed device-edge-cloud architectures [2] has expanded computational possibilities but introduced new challenges in balancing latency and accuracy with resource constraints. The holistic impact of model selection, deployment platforms, and network conditions on application performance in real-time scenarios remains under-explored.",
+          "subjects": []
+        },
+        {
+          "title": "Taming AI Bots: Controllability of Neural States in Large Language Models",
+          "authors": [
+            "Stefan 0 Soatto",
+            "P. Tabuada",
+            "P. Chaudhari",
+            "T. Liu"
+          ],
+          "year": 2023,
+          "date": "2023-05-29",
+          "citations": 0,
+          "arxiv_id": "2305.18449",
+          "paper_id": "9132b8abd2b3e07422abc6fc6cdb7f6fbe4fd2b0",
+          "url": "https://arxiv.org/abs/2305.18449",
+          "abstract": "We tackle the question of whether an agent can, by suitable choice of prompts, control an AI bot to any state. To that end, we first introduce a formal definition of ``meaning'' that is amenable to analysis. Then, we characterize ``meaningful data'' on which large language models (LLMs) are ostensibly trained, and ``well-trained LLMs'' through conditions that are largely met by today's LLMs. While a well-trained LLM constructs an embedding space of meanings that is Euclidean, meanings themselves do not form a vector (linear) subspace, but rather a quotient space within. We then characterize the subset of meanings that can be reached by the state of the LLMs for some input prompt, and show that a well-trained bot can reach any meaning albeit with small probability. We then introduce a stronger notion of controllability as {\\em almost certain reachability}, and show that, when restricted to the space of meanings, an AI bot is controllable. We do so after introducing a functional characterization of attentive AI bots, and finally derive necessary and sufficient conditions for controllability. The fact that AI bots are controllable means that an adversary could steer them towards any state. However, the sampling process can be designed to counteract adverse actions and avoid reaching undesirable regions of state space before their boundary is crossed.",
+          "subjects": []
+        },
+        {
+          "title": "Universal Approximation Power of Deep Residual Neural Networks Through the Lens of Control",
+          "authors": [
+            "P. Tabuada",
+            "B. Gharesifard"
+          ],
+          "year": 2023,
+          "date": "2023-05-01",
+          "citations": 64,
+          "arxiv_id": null,
+          "paper_id": "b3ab7600b657b97df12913966196b532fdd43750",
+          "url": "https://www.semanticscholar.org/paper/b3ab7600b657b97df12913966196b532fdd43750",
+          "abstract": "In this article, we show that deep residual neural networks have the power of universal approximation by using, in an essential manner, the observation that these networks can be modeled as nonlinear control systems. We first study the problem of using a deep residual neural network to exactly memorize training data by formulating it as a controllability problem for an ensemble control system. Using techniques from geometric control theory, we identify a class of activation functions that allow us to ensure controllability on an open and dense submanifold of sample points. Using this result, and resorting to the notion of monotonicity, we establish that any continuous function can be approximated on a compact set to arbitrary accuracy, with respect to the uniform norm, by this class of neural networks. Moreover, we provide optimal bounds on the number of required neurons.",
+          "subjects": []
+        },
+        {
+          "title": "Decentralized Learning Robust to Data Poisoning Attacks",
+          "authors": [
+            "Yanwen Mao",
+            "Deepesh Data",
+            "S. Diggavi",
+            "P. Tabuada"
+          ],
+          "year": 2022,
+          "date": "2022-12-06",
+          "citations": 6,
+          "arxiv_id": null,
+          "paper_id": "3c7739fee53c69bd51f1e8960ea217e413ef2fae",
+          "url": "https://www.semanticscholar.org/paper/3c7739fee53c69bd51f1e8960ea217e413ef2fae",
+          "abstract": "This paper addresses the problem of decentralized learning in the presence of data poisoning attacks. In this problem, we consider a collection of nodes connected through a network, each equipped with a local function. The objective is to compute the global minimizer of the aggregated local functions, in a decentralized manner, i.e., each node can only use its local function and data exchanged with nodes it is connected to. Moreover, each node is to agree on the said minimizer despite an adversary that can arbitrarily change the local functions of a fraction of the nodes. This problem setting has applications in robust learning, where nodes in a network are collectively training a model that minimizes the empirical loss with possibly attacked local data sets. In this paper, we propose a novel decentralized learning algorithm that enables all nodes to reach consensus on the optimal model, in the absence of attacks, and approximate consensus in the presence of data poisoning attacks.",
+          "subjects": []
+        },
+        {
+          "title": "Decentralized Secure State-Tracking in Multiagent Systems",
+          "authors": [
+            "Yanwen Mao",
+            "P. Tabuada"
+          ],
+          "year": 2021,
+          "date": "2021-09-17",
+          "citations": 12,
+          "arxiv_id": "2109.08264",
+          "paper_id": "d0fbad010ac90b40000d5dd5039ee5556b27fb32",
+          "url": "https://arxiv.org/abs/2109.08264",
+          "abstract": "This article addresses the problem of decentralized state-tracking in the presence of sensor attacks. We consider a network of nodes where each node has the objective of tracking the state of a linear dynamical system based on its measurements and messages exchanged with neighboring nodes notwithstanding some measurements being spoofed by an adversary. We propose a novel decentralized attack-resilient state-tracking algorithm based on the simple observation that a compressed version of all the network measurements suffices to reconstruct the state. This motivates a 2-step solution to the decentralized secure state-tracking problem: first, each node tracks the compressed version of all the network measurements, and second, each node asymptotically reconstructs the state from the output of the first step. We prove that, under mild technical assumptions, our algorithm enables each node to track the state of the linear system and thus solves the decentralized secure state-tracking problem.",
+          "subjects": []
+        },
+        {
+          "title": "Controlled Invariant Sets: Implicit Closed-Form Representations and Applications",
+          "authors": [
+            "Tzanis Anevlavis",
+            "Zexiang Liu",
+            "N. Ozay",
+            "P. Tabuada"
+          ],
+          "year": 2021,
+          "date": "2021-07-19",
+          "citations": 24,
+          "arxiv_id": "2107.08566",
+          "paper_id": "2740586b120c28cbacf9e8ab12c11ab457e54a15",
+          "url": "https://arxiv.org/abs/2107.08566",
+          "abstract": "In this article, we revisit the problem of computing (robust) controlled invariant sets for discrete-time linear systems. Departing from previous approaches, we consider implicit, rather than explicit, representations for controlled invariant sets. Moreover, by considering such representations in the space of states and finite input sequences we obtain closed-form expressions for controlled invariant sets. An immediate advantage is the ability to handle high-dimensional systems since the closed-form expression is computed in a single step rather than iteratively. To validate the proposed method, we present thorough case studies illustrating that in safety-critical scenarios the implicit representation suffices in place of the explicit invariant set. The proposed method is complete in the absence of disturbances, and we provide a weak completeness result when disturbances are present.",
+          "subjects": []
+        },
+        {
+          "title": "Joint Continuous and Discrete Model Selection via Submodularity",
+          "authors": [
+            "Jonathan Bunton",
+            "P. Tabuada"
+          ],
+          "year": 2021,
+          "date": "2021-02-17",
+          "citations": 0,
+          "arxiv_id": "2102.09029",
+          "paper_id": "7a418d03c7481f9dfb0747874de5df190d79aa45",
+          "url": "https://arxiv.org/abs/2102.09029",
+          "abstract": "In model selection problems for machine learning, the desire for a well-performing model with meaningful structure is typically expressed through a regularized optimization problem. In many scenarios, however, the meaningful structure is specified in some discrete space, leading to difficult nonconvex optimization problems. In this paper, we connect the model selection problem with structure-promoting regularizers to submodular function minimization with continuous and discrete arguments. In particular, we leverage the theory of submodular functions to identify a class of these problems that can be solved exactly and efficiently with an agnostic combination of discrete and continuous optimization routines. We show how simple continuous or discrete constraints can also be handled for certain problem classes and extend these ideas to a robust optimization framework. We also show how some problems outside of this class can be embedded within the class, further extending the class of problems our framework can accommodate. Finally, we numerically validate our theoretical results with several proof-of-concept examples with synthetic and real-world data, comparing against state-of-the-art algorithms.",
+          "subjects": []
+        },
+        {
+          "title": "On the Computational Complexity of the Secure State-Reconstruction Problem",
+          "authors": [
+            "Yanwen Mao",
+            "A. Mitra",
+            "S. Sundaram",
+            "P. Tabuada"
+          ],
+          "year": 2021,
+          "date": "2021-01-06",
+          "citations": 0,
+          "arxiv_id": "2101.01827",
+          "paper_id": "aa4d957f2db8688cdd66c0866b6885165fe45ed0",
+          "url": "https://arxiv.org/abs/2101.01827",
+          "abstract": "In this paper, we discuss the computational complexity of reconstructing the state of a linear system from sensor measurements that have been corrupted by an adversary. The first result establishes that the problem is, in general, NP-hard. We then introduce the notion of eigenvalue observability and show that the state can be reconstructed in polynomial time when each eigenvalue is observable by at least $2s+1$ sensors and at most $s$ sensors are corrupted by an adversary. However, there is a gap between eigenvalue observability and the possibility of reconstructing the state despite attacks - this gap has been characterized in the literature by the notion of sparse observability. To better understand this, we show that when the $\\mathbf{A}$ matrix of the linear system has unitary geometric multiplicity, the gap disappears, i.e., eigenvalue observability coincides with sparse observability, and there exists a polynomial time algorithm to reconstruct the state provided the state can be reconstructed.",
+          "subjects": []
+        },
+        {
+          "title": "Training deep residual networks for uniform approximation guarantees",
+          "authors": [
+            "Matteo Marchi",
+            "B. Gharesifard",
+            "P. Tabuada"
+          ],
+          "year": 2021,
+          "date": "2021",
+          "citations": 11,
+          "arxiv_id": null,
+          "paper_id": "717f091a77c8c9fadde02dd611ecc1cd26d28d00",
+          "url": "https://www.semanticscholar.org/paper/717f091a77c8c9fadde02dd611ecc1cd26d28d00",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Universal approximation power of deep residual neural networks via nonlinear control theory",
+          "authors": [
+            "P. Tabuada",
+            "B. Gharesifard"
+          ],
+          "year": 2020,
+          "date": "2020-07-12",
+          "citations": 0,
+          "arxiv_id": "2007.06007",
+          "paper_id": "ac4d9ff742c5b778934e3eaee1c3cf9ed6c82232",
+          "url": "https://arxiv.org/abs/2007.06007",
+          "abstract": "In this paper, we explain the universal approximation capabilities of deep residual neural networks through geometric nonlinear control. Inspired by recent work establishing links between residual networks and control systems, we provide a general sufficient condition for a residual network to have the power of universal approximation by asking the activation function, or one of its derivatives, to satisfy a quadratic differential equation. Many activation functions used in practice satisfy this assumption, exactly or approximately, and we show this property to be sufficient for an adequately deep neural network with $n+1$ neurons per layer to approximate arbitrarily well, on a compact set and with respect to the supremum norm, any continuous function from $\\mathbb{R}^n$ to $\\mathbb{R}^n$. We further show this result to hold for very simple architectures for which the weights only need to assume two values. The first key technical contribution consists of relating the universal approximation problem to controllability of an ensemble of control systems corresponding to a residual network and to leverage classical Lie algebraic techniques to characterize controllability. The second technical contribution is to identify monotonicity as the bridge between controllability of finite ensembles and uniform approximability on compact sets.",
+          "subjects": []
+        },
+        {
+          "title": "Sum-of-Squares methods for controlled invariant sets with applications to model-predictive control",
+          "authors": [
+            "B. Legat",
+            "P. Tabuada",
+            "R. Jungers"
+          ],
+          "year": 2020,
+          "date": "2020-05-01",
+          "citations": 13,
+          "arxiv_id": null,
+          "paper_id": "551c0fd2a3619d0aa0bc4478133b598a69086e60",
+          "url": "https://www.semanticscholar.org/paper/551c0fd2a3619d0aa0bc4478133b598a69086e60",
+          "abstract": "Abstract We develop a method for computing controlled invariant sets of discrete-time affine systems using Sum-of-Squares programming. We apply our method to the controller design problem for switching affine systems with polytopic safe sets but our work also improves the state of the art for the particular case of LTI systems. The task is reduced to a semidefinite programming problem by enforcing an invariance relation in the dual space of the geometric problem. The paper ends with an application to safety critical model predictive control.",
+          "subjects": []
+        },
+        {
+          "title": "A simple hierarchy for computing controlled invariant sets",
+          "authors": [
+            "Tzanis Anevlavis",
+            "P. Tabuada"
+          ],
+          "year": 2020,
+          "date": "2020-04-17",
+          "citations": 8,
+          "arxiv_id": null,
+          "paper_id": "afbbc3d7ff6ac8a7dd57520a53edba868fe14120",
+          "url": "https://www.semanticscholar.org/paper/afbbc3d7ff6ac8a7dd57520a53edba868fe14120",
+          "abstract": "In this paper we revisit the problem of computing controlled invariant sets for controllable discrete-time linear systems and present a novel hierarchy for their computation. The key insight is to lift the problem to a higher dimensional space where the maximal controlled invariant set can be computed exactly and in closed-form for the lifted system. By projecting this set into the original space we obtain a controlled invariant set that is a subset of the maximal controlled invariant set for the original system. Building upon this insight we describe in this paper a hierarchy of spaces where the original problem can be lifted into so as to obtain a sequence of increasing controlled invariant sets. The algorithm that results from the proposed hierarchy does not rely on iterative computations. We illustrate the performance of the proposed method on a variety of scenarios exemplifying its appeal.",
+          "subjects": []
+        },
+        {
+          "title": "Data-driven Stabilization of SISO Feedback Linearizable Systems",
+          "authors": [
+            "P. Tabuada",
+            "Lucas Fraile"
+          ],
+          "year": 2020,
+          "date": "2020-03-30",
+          "citations": 0,
+          "arxiv_id": "2003.14240",
+          "paper_id": "766713d7de8c74284d918720e7506012225d1294",
+          "url": "https://arxiv.org/abs/2003.14240",
+          "abstract": "In this paper we propose a methodology for stabilizing single-input single-output feedback linearizable systems when no system model is known and no prior data is available to identify a model. Conceptually, we have been greatly inspired by the work of Fliess and Join on intelligent PID controllers and the results in this paper provide sufficient conditions under which a modified version of their approach is guaranteed to result in asymptotically stable behavior. One of the key advantages of the proposed results is that, contrary to other approaches to controlling systems without a model (or with a partial model), such as reinforcement learning, there is no need for extensive training neither large amounts of data. Technically, our results draw heavily from the work of Nesic and co-workers on observer and controller design based on approximate models. Along the way we also make connections with other well established results such as high-gain observers and adaptive control. Although we focus on the simple setting of single-input single-output feedback linearizable systems we believe the presented results are already theoretically insightful and practically useful, the last point being substantiated by experimental evidence.",
+          "subjects": []
+        },
+        {
+          "title": "Plausible deniability as a notion of privacy",
+          "authors": [
+            "Nima Monshizadeh",
+            "P. Tabuada"
+          ],
+          "year": 2019,
+          "date": "2019-12-01",
+          "citations": 17,
+          "arxiv_id": null,
+          "paper_id": "f4a3c597656d22498fba5cfe69d5d6af88e57f15",
+          "url": "https://www.semanticscholar.org/paper/f4a3c597656d22498fba5cfe69d5d6af88e57f15",
+          "abstract": "This work is motivated by privacy concerns as a result of the growing rate of information exchange among components of complex cyber-physical systems, agents in a network, or actuators/sensors of a process. We propose a deterministic notion of privacy for a dynamical system, and completely characterize it for linear time-invariant dynamics. The proposed notion relies on a \"plausible deniability\" principle, which implies that a curious party will always be in doubt about the actual value of private variables of the system. In case privacy is guaranteed, we propose analytical metrics to assess the degree of privacy or privacy margin of the system. The size of the latter depends on the amount and structure of the information on the system which can be accessed by a curious party. We study the proposed notions and metrics for a class of distributed averaging algorithms.",
+          "subjects": []
+        },
+        {
+          "title": "Position paper on the challenges posed by modern applications to cyber-physical systems theory",
+          "authors": [
+            "F. Allgöwer",
+            "João Borges de Sousa",
+            "J. Kapinski",
+            "P. Mosterman",
+            "Jens Oehlerking",
+            "P. Panciatici",
+            "M. Prandini",
+            "A. Rajhans",
+            "P. Tabuada",
+            "Philipp Wenzelburger"
+          ],
+          "year": 2019,
+          "date": "2019-11-01",
+          "citations": 38,
+          "arxiv_id": null,
+          "paper_id": "f729c5a421dfdc257ef99937266b2607478b41d1",
+          "url": "https://www.semanticscholar.org/paper/f729c5a421dfdc257ef99937266b2607478b41d1",
+          "abstract": "Abstract Cyber-physical systems theory offers a powerful framework for modeling, analyzing, and designing real engineering systems integrating communication, control, and computation functionalities (the cyber part) within a natural and/or man-made system governed by the laws of physics (the physical part). New methodological developments in cyber-physical systems theory are required by traditional application domains such as manufacturing, transportation, and energy systems, which are currently experiencing significant and – to some extent – revolutionary changes to address the needs of our modern society. The goal of this position paper is to provide the cyber-physical systems community, and especially young researchers, a clear view on what are research directions worth pursuing motivated by the challenges posed by modern applications.",
+          "subjects": []
+        },
+        {
+          "title": "Symmetries and Isomorphisms for Privacy in Control Over the Cloud",
+          "authors": [
+            "A. Sultangazin",
+            "P. Tabuada"
+          ],
+          "year": 2019,
+          "date": "2019-06-18",
+          "citations": 0,
+          "arxiv_id": "1906.07460",
+          "paper_id": "74a2cd4f388c987732892cf851935c04d9cc7d0d",
+          "url": "https://arxiv.org/abs/1906.07460",
+          "abstract": "Cloud computing platforms are being increasingly used for closing feedback control loops, especially when computationally expensive algorithms, such as model-predictive control, are used to optimize performance. Outsourcing of control algorithms entails an exchange of data between the control system and the cloud and, naturally, raises concerns about the privacy of the control system's data (e.g., state trajectory and control objective). Moreover, any attempt at enforcing privacy needs to add minimal computational overhead to avoid degrading control performance. In this article, we propose several transformation-based methods for enforcing data privacy. We also quantify the amount of provided privacy and discuss how much privacy is lost when the adversary has access to side knowledge. We address three different scenarios: 1) the cloud has no knowledge about the system being controlled; 2) the cloud knows what sensors and actuators the system employs but not the system dynamics; and 3) the cloud knows the system dynamics, its sensors, and actuators. In all of these three scenarios, the proposed methods allow for the control over the cloud without compromising private information (which information is considered private depends on the considered scenario).",
+          "subjects": []
+        },
+        {
+          "title": "Cloud-Based Quadratic Optimization With Partially Homomorphic Encryption",
+          "authors": [
+            "Andreea B. Alexandru",
+            "Konstantinos Gatsis",
+            "Yasser Shoukry",
+            "S. Seshia",
+            "P. Tabuada",
+            "George Pappas"
+          ],
+          "year": 2018,
+          "date": "2018-09-07",
+          "citations": 91,
+          "arxiv_id": "1809.02267",
+          "paper_id": "1ab80a16063175afc67ec6a3597adbf7d7c74797",
+          "url": "https://arxiv.org/abs/1809.02267",
+          "abstract": "This article develops a cloud-based protocol for a constrained quadratic optimization problem involving multiple parties, each holding private data. The protocol is based on the projected gradient ascent on the Lagrange dual problem and exploits partially homomorphic encryption and secure communication techniques. Using formal cryptographic definitions of indistinguishability, the protocol is shown to achieve computational privacy. We show the implementation results of the protocol and discuss its computational and communication complexity. We conclude this article with a discussion on privacy notions.",
+          "subjects": []
+        },
+        {
+          "title": "Periodic event-triggered control of nonlinear systems using overapproximation techniques",
+          "authors": [
+            "D. P. Borgers",
+            "R. Postoyan",
+            "Adolfo Anta",
+            "P. Tabuada",
+            "D. Nešić",
+            "W. Heemels"
+          ],
+          "year": 2018,
+          "date": "2018-08-01",
+          "citations": 94,
+          "arxiv_id": null,
+          "paper_id": "0563903da1f81819c54564a2a1b75be505e69db7",
+          "url": "https://www.semanticscholar.org/paper/0563903da1f81819c54564a2a1b75be505e69db7",
+          "abstract": "In event-triggered control, the control task consisting of sampling the plant’s output and updating the control input is executed whenever a certain event function exceeds a given threshold. The event function typically needs to be monitored continuously, which is difficult to realize in digital implementations. This has led to the development of periodic event-triggered control (PETC), in which the event function is only evaluated periodically. In this paper, we consider general nonlinear continuous event-triggered control (CETC) systems, and present a method to transform the CETC system into a PETC system. In particular, we provide an explicit sampling period at which the event function is evaluated and we present a constructive procedure to redesign the triggering condition. The latter is obtained by upper-bounding the evolution of the event function of the CETC system between two successive sampling instants by a linear time-invariant system and then by using convex overapproximation techniques. Using this approach, we are able to preserve the control performance guarantees (e.g., asymptotic stability with a certain decay rate) of the original CETC system.",
+          "subjects": []
+        },
+        {
+          "title": "Data driven stability analysis of black-box switched linear systems",
+          "authors": [
+            "Joris Kenanian",
+            "Ayca Balkan",
+            "R. Jungers",
+            "P. Tabuada"
+          ],
+          "year": 2018,
+          "date": "2018-03-09",
+          "citations": 0,
+          "arxiv_id": "1803.03687",
+          "paper_id": "8de84e16690c2fc526619f6bbff2274794793fb7",
+          "url": "https://arxiv.org/abs/1803.03687",
+          "abstract": "Can we conclude the stability of an unknown dynamical system from the knowledge of a finite number of snapshots of trajectories? We tackle this black-box problem for switched linear systems. We show that, for any given random set of observations, one can give probabilistic stability guarantees. The probabilistic nature of these guarantees implies a trade-off between their quality and the desired level of confidence. We provide an explicit way of computing the best stability-like guarantee, as a function of both the number of observations and the required level of confidence. Our proof techniques rely on geometrical analysis, chance-constrained optimization, and stability analysis tools for switched systems, including the joint spectral radius.",
+          "subjects": []
+        }
+      ]
     ],
     [
       "Seunghwan Jang",
@@ -2050,9 +2643,486 @@
             "math.OC",
             "eess.SY"
           ]
+        },
+        {
+          "title": "Banach Control Barrier Functions for Large-Scale Swarm Control",
+          "authors": [
+            "Xuting Gao",
+            "Guillem Pascual",
+            "Scott Brown",
+            "Sonia Martínez"
+          ],
+          "year": 2026,
+          "date": "2026-02-04",
+          "citations": 6,
+          "arxiv_id": "2602.05011",
+          "paper_id": "e50739eb7ecbd25e2c0dcc82c0e22c0fa60ad0a8",
+          "url": "https://arxiv.org/abs/2602.05011",
+          "abstract": "This paper studies the safe control of very large multi-agent systems via a generalized framework that employs so-called Banach Control Barrier Functions (B-CBFs). Modeling a large swarm as probability distribution over a spatial domain, we show how B-CBFs can be used to appropriately capture a variety of macroscopic constraints that can integrate with large-scale swarm objectives. Leveraging this framework, we define stable and filtered gradient flows for large swarms, paying special attention to optimal transport algorithms. Further, we show how to derive agent-level, microscopical algorithms that are consistent with macroscopic counterparts in the large-scale limit. We then identify conditions for which a group of agents can compute a distributed solution that only requires local information from other agents within a communication range. Finally, we showcase the theoretical results over swarm systems in the simulations section.",
+          "subjects": []
         }
       ],
-      []
+      [
+        {
+          "title": "Data-Driven Distributed Spectrum Estimation for Linear Time-Invariant Systems",
+          "authors": [
+            "Shenyu Liu",
+            "Jorge Cortés",
+            "Sonia Martínez"
+          ],
+          "year": 2025,
+          "date": "2025-03-01",
+          "citations": 3,
+          "arxiv_id": null,
+          "paper_id": "80da9d3f800d5758aa66d3b7f53bfb7ead3f81e6",
+          "url": "https://www.semanticscholar.org/paper/80da9d3f800d5758aa66d3b7f53bfb7ead3f81e6",
+          "abstract": "This article tackles spectrum estimation of a linear time-invariant system by a multiagent network using data. We consider a group of agents that communicate over a strongly connected, aperiodic graph and do not have any knowledge of the system dynamics. Each agent only measures some signals that are linear functions of the system states or inputs, and does not know the functional form of this dependence. The proposed distributed algorithm consists of two steps that rely on the collected data: first, the identification of an unforced trajectory of the system, and second, the estimation of the coefficients of the characteristic polynomial of the system matrix using this unforced trajectory. We show that each step can be formulated as a problem of finding a common solution to a set of linear algebraic equations, which are amenable to distributed algorithmic solutions. We prove that under mild assumptions on the collected data, when the initial condition of the system is random, the proposed distributed algorithm accurately estimates the spectrum with probability 1.",
+          "subjects": []
+        },
+        {
+          "title": "Gastrointestinal symptoms and nutritional intake among participants in a non-professional cycling event",
+          "authors": [
+            "P. Martínez",
+            "Sonia Martínez",
+            "J. Mingorance",
+            "Aina Riera-Sampol",
+            "A. Aguiló",
+            "P. Tauler"
+          ],
+          "year": 2024,
+          "date": "2024-09-17",
+          "citations": 5,
+          "arxiv_id": null,
+          "paper_id": "c8032f86ebb99958ec58bc4cdc3f24d18364b576",
+          "url": "https://www.semanticscholar.org/paper/c8032f86ebb99958ec58bc4cdc3f24d18364b576",
+          "abstract": "To determine the occurrence of gastrointestinal (GI) symptoms in different settings among cyclists participating in a non-professional cycling event. The nutritional intake during the event and the association between GI symptoms and both nutritional and non-nutritional factors were also analyzed. A descriptive correlational study was performed among participants in the 2023 ‘Mallorca 312-Milestone Series’ cycling event. A pre-race questionnaire was completed by 247 participants (37 women) while a post-race questionnaire was completed by 138 participants (24 women). The prevalence of GI symptoms in training sessions and in previous cycling events were 22–26%. GI complaints during the race were reported by 38.4% of participants. GI symptoms during training (p = 0.003), in previous cycling events (p = 0.012) and in the Mallorca 312 event (during: p = 0.010; after p = 0.014) were associated with rest GI symptoms. Furthermore, GI symptoms during the Mallorca 312 event were associated with an immediately previous more nervous feeling (p = 0.016). Participants with shorter previous experience in similar events reported a more nervous feeling (p = 0.023). On average, participants in the Mallorca 312 achieved the recommended carbohydrate intake (59.2 g/h; recommended 30–60 g/h) and the fluid intake (500 ml; recommended 400–800 ml/h) rates. No association was found between GI symptoms and nutritional parameters or food intake. GI symptoms at rest could be considered the main factor associated with GI symptoms in cyclists. GI symptoms during the event were also associated with a more nervous feeling, which could be explained, at least in part, by shorter previous experience.",
+          "subjects": []
+        },
+        {
+          "title": "Multi-agent Coverage Control: From Discrete Assignments to Continuous Multi-agent Distribution Matching",
+          "authors": [
+            "Solmaz S. Kia",
+            "Sonia Martínez"
+          ],
+          "year": 2024,
+          "date": "2024-07-18",
+          "citations": 2,
+          "arxiv_id": "2407.13890",
+          "paper_id": "72e0b852fc5a34df0eb5bb2a8efea8d189d21916",
+          "url": "https://arxiv.org/abs/2407.13890",
+          "abstract": "The multi-agent spatial coverage control problem encompasses a broad research domain, dealing with both dynamic and static deployment strategies, discrete-task assignments, and spatial distribution-matching deployment. Coverage control may involve the deployment of a finite number of agents or a continuum through centralized or decentralized, locally-interacting schemes. All these problems can be solved via a different taxonomy of deployment algorithms for multiple agents. Depending on the application scenario, these problems involve from purely discrete descriptions of tasks (finite loads) and agents (finite resources), to a mixture of discrete and continuous elements, to fully continuous descriptions of the same. Yet, it is possible to find common features that underline all the above formulations, which we aim to illustrate here. By doing so, we aim to point the reader to novel references related to these problems. The short article outline is the following: Static coverage via concurrent area partitioning and assignment; Static coverage as a discrete task assignment; and Continuum task assignment for large-scale swarms.",
+          "subjects": []
+        },
+        {
+          "title": "SETD8 inhibition targets cancer cells with increased rates of ribosome biogenesis",
+          "authors": [
+            "M. Murga",
+            "Gema Lopez-Pernas",
+            "R. Soliva",
+            "Elena Fueyo-Marcos",
+            "Corina Amor",
+            "I. Faustino",
+            "Marina Serna",
+            "Alicia G. Serrano",
+            "Lucía Díaz",
+            "Sonia Martínez",
+            "C. Blanco-Aparicio",
+            "M. E. Antón",
+            "B. Seashore-Ludlow",
+            "Joaquín Pastor",
+            "R. Jafari",
+            "M. Lafarga",
+            "Oscar Llorca",
+            "Modesto Orozco",
+            "O. Fernández-Capetillo"
+          ],
+          "year": 2024,
+          "date": "2024-06-12",
+          "citations": 4,
+          "arxiv_id": null,
+          "paper_id": "34c400b8e087b3f0a67c44aedcff4fdbff03f047",
+          "url": "https://www.semanticscholar.org/paper/34c400b8e087b3f0a67c44aedcff4fdbff03f047",
+          "abstract": "SETD8 is a methyltransferase that is overexpressed in several cancers, which monomethylates H4K20 as well as other non-histone targets such as PCNA or p53. We here report novel SETD8 inhibitors, which were discovered while trying to identify chemicals that prevent 53BP1 foci formation, an event mediated by H4K20 methylation. Consistent with previous reports, SETD8 inhibitors induce p53 expression, although they are equally toxic for p53-deficient cells. Thermal stability proteomics revealed that the compounds had a particular impact on nucleoli, which was confirmed by fluorescent and electron microscopy. Similarly, Setd8 deletion generated nucleolar stress and impaired ribosome biogenesis, confirming that this was an on-target effect of SETD8 inhibitors. Furthermore, a genome-wide CRISPR screen identified an enrichment of nucleolar factors among those modulating the toxicity of SETD8 inhibitors. Accordingly, the toxicity of SETD8 inhibitors correlated with MYC or mTOR activity, key regulators of ribosome biogenesis. Together, our study provides a new class of SETD8 inhibitors and a novel biomarker to identify tumors most likely to respond to this therapy.",
+          "subjects": []
+        },
+        {
+          "title": "Opinion Dynamics for Utility Maximizing Agents: Exploring the Impact of the Resource Penalty",
+          "authors": [
+            "Prashil Wankhede",
+            "Nirabhra Mandal",
+            "Sonia Martínez",
+            "Pavankumar Tallapragada"
+          ],
+          "year": 2024,
+          "date": "2024-04-07",
+          "citations": 0,
+          "arxiv_id": "2404.04912",
+          "paper_id": "f8823d3974040386e5707f504063b816a023a95a",
+          "url": "https://arxiv.org/abs/2404.04912",
+          "abstract": "We propose a continuous-time nonlinear model of opinion dynamics with utility-maximizing agents connected via a social influence network. A distinguishing feature of the proposed model is the inclusion of an opinion-dependent resource-penalty term in the utilities, which limits the agents from holding opinions of large magnitude. This model is applicable in scenarios where the opinions pertain to the usage of resources, such as money, time, computational resources, etc. Each agent myopically seeks to maximize its utility by revising its opinion in the gradient ascent direction of its utility function, thus leading to the proposed opinion dynamics. We show that for any arbitrary social influence network, opinions are ultimately bounded. For networks with weak antagonistic relations, we show that there exists a globally exponentially stable equilibrium using contraction theory. We establish conditions for the existence of consensus equilibrium and analyze the relative dominance of the agents at consensus. We also conduct a game-theoretic analysis of the underlying opinion formation game, including on Nash equilibria and on prices of anarchy in terms of satisfaction ratios. In addition, we also investigate the oscillatory behavior of opinions in a two-agent scenario. Finally, simulations illustrate our findings.",
+          "subjects": []
+        },
+        {
+          "title": "Robotic Exploration Using Generalized Behavioral Entropy",
+          "authors": [
+            "A. Suresh",
+            "Carlos Nieto-Granda",
+            "Sonia Martínez"
+          ],
+          "year": 2024,
+          "date": "2024-02-15",
+          "citations": 0,
+          "arxiv_id": "2402.10161",
+          "paper_id": "78fb304ec760bca83c7d612bbda228896c88179f",
+          "url": "https://arxiv.org/abs/2402.10161",
+          "abstract": "This letter presents and evaluates a novel strategy for robotic exploration that leverages human models of uncertainty perception. To do this, we introduce a measure of uncertainty that we term “Behavioral entropy”, which builds on Prelec's probability weighting from Behavioral Economics. We show that the new operator is an admissible generalized entropy, analyze its theoretical properties and compare it with other common formulations such as Shannon's and Renyi's. In particular, we discuss how the new formulation is more expressive in the sense of measures of sensitivity and perceptiveness to uncertainty introduced here. Then we use Behavioral entropy to define a new type of utility function that can guide a frontier-based environment exploration process. The approach's benefits are illustrated and compared in a Proof-of-Concept and ROS-Unity simulation environment with a Clearpath Warthog robot. We show that the robot equipped with Behavioral entropy explores faster than Shannon and Renyi entropies.",
+          "subjects": []
+        },
+        {
+          "title": "Distributed Resilient Interval Observer Synthesis for Nonlinear Discrete-Time Systems",
+          "authors": [
+            "Mohammad Khajenejad",
+            "Scott Brown",
+            "Sonia Martínez"
+          ],
+          "year": 2024,
+          "date": "2024-01-27",
+          "citations": 0,
+          "arxiv_id": "2401.15511",
+          "paper_id": "007d54185ff6232838735b5d38736a3bed59a516",
+          "url": "https://arxiv.org/abs/2401.15511",
+          "abstract": "This article introduces a novel recursive distributed estimation algorithm aimed at synthesizing input and state interval observers for nonlinear bounded-error discrete-time multiagent systems. The considered systems have sensors and actuators that are susceptible to unknown or adversarial inputs. To solve this problem, we first identify conditions that allow agents to obtain nonlinear bounded-error equations characterizing the input. Then, we propose a distributed interval-valued observer that is guaranteed to contain the disturbance and system states. To do this, we first detail a gain design procedure that uses global problem data to minimize an upper bound on the signal norm of the observer error. We then propose a gain design approach that does not require global information, using only values that are local to each agent. The second method improves on the computational tractability of the first, at the expense of some added conservatism. Further, we discuss some possible ways of extending the results to a broader class of systems. We conclude by demonstrating our observer on two examples. The first is a unicycle system, for which we apply the first gain design method. The second is a 145-bus power system, which showcases the benefits of the second method, due to the first approach being intractable for systems with high dimensional state spaces.",
+          "subjects": []
+        },
+        {
+          "title": "Data-Driven Distributionally Robust Coverage Control by Mobile Robots",
+          "authors": [
+            "Dimitris Boskos",
+            "Jorge Cortés",
+            "Sonia Martínez"
+          ],
+          "year": 2023,
+          "date": "2023-12-13",
+          "citations": 4,
+          "arxiv_id": null,
+          "paper_id": "f8115e3acec5442c5049cf521456bfe7430b86d7",
+          "url": "https://www.semanticscholar.org/paper/f8115e3acec5442c5049cf521456bfe7430b86d7",
+          "abstract": "This paper provides a data-driven solution to the problem of coverage control by which a team of robots aims to optimally deploy in a spatial region where certain event of interest may occur. This event is random and described by a probability density function, which is unknown and can only be learned by collecting data. In this work, we hedge against this uncertainty by designing a distributionally robust algorithm that optimizes the locations of the robots against the worst-case probability density from an ambiguity set. This ambiguity set is constructed from data initially collected by the agents, and contains the true density function with prescribed confidence. However, the objective function that the robots seek to minimize is non-smooth. To address this issue, we employ the so-called gradient sampling algorithm, which approximates the Clarke generalized gradient by sampling the derivative of the objective function at nearby locations and stabilizes the choice of descent directions around points where the function may fail to be differentiable. This enables us to prove that the algorithm converges to a stationary point from any initial location of the robots, in analogy to the well-known Lloyd algorithm for differentiable costs when the spatial density is known.",
+          "subjects": []
+        },
+        {
+          "title": "Distributed Task Allocation for Self-Interested Agents With Partially Unknown Rewards",
+          "authors": [
+            "Nirabhra Mandal",
+            "Mohammad Khajenejad",
+            "Sonia Martínez"
+          ],
+          "year": 2023,
+          "date": "2023-11-01",
+          "citations": 0,
+          "arxiv_id": "2311.00222",
+          "paper_id": "18670f03422443e74767fc04387e406977d7fc16",
+          "url": "https://arxiv.org/abs/2311.00222",
+          "abstract": "This article provides a novel solution to a task allocation problem, by which a group of agents assigns a discrete set of tasks in a distributed manner. In this setting, heterogeneous agents have individual preferences and associated rewards for doing each task; however, these rewards are only known asymptotically. The assignment problem is formulated by means of a combinatorial partition game for known rewards, with no constraints on the number of tasks per agent. We relax this into a weight game, which together with the former, are shown to contain the optimal task allocation in the corresponding set of Nash equilibria (NE). We then propose a projected, best-response, ascending gradient dynamics (PBRAG) that converges to an NE in finite time. This forms the basis of a distributed online version that can deal with a converging sequence of rewards by means of an agreement subroutine. We present simulations that support our results.",
+          "subjects": []
+        },
+        {
+          "title": "Parallel Quantum Rapidly-Exploring Random Trees",
+          "authors": [
+            "P. Lathrop",
+            "Beth L. Boardman",
+            "Sonia Martínez"
+          ],
+          "year": 2023,
+          "date": "2023-10-23",
+          "citations": 0,
+          "arxiv_id": "2310.15303",
+          "paper_id": "f356491136b34f708e9f6ab3c2e4759f89f34cd5",
+          "url": "https://arxiv.org/abs/2310.15303",
+          "abstract": "In this paper, we present the Parallel Quantum Rapidly-Exploring Random Tree (Pq-RRT) algorithm, a parallel version of the Quantum Rapidly-Exploring Random Trees (q-RRT) algorithm. Parallel Quantum RRT is a parallel quantum algorithm formulation of a sampling-based motion planner that uses Quantum Amplitude Amplification to search databases of reachable states for addition to a tree. In this work we investigate how parallel quantum devices can more efficiently search a database, as the quantum measurement process involves the collapse of the superposition to a base state, erasing probability information and therefore the ability to efficiently find multiple solutions. Pq-RRT uses a manager/parallel-quantum-workers formulation, inspired by traditional parallel motion planning, to perform simultaneous quantum searches of a feasible state database. We present symbolic runtime comparisons between parallel architectures, then results regarding likelihoods of multiple parallel units finding any and all solutions contained with a shared database, with and without reachability errors, allowing efficiency predictions to be made. We offer simulations in dense obstacle environments showing efficiency, density/heatmap, and speed comparisons for Pq-RRT against q-RRT, classical RRT, and classical parallel RRT. We then present Quantum Database Annealing, a database construction strategy that uses a temperature construct to define database creation over time for balancing exploration and exploitation.",
+          "subjects": []
+        },
+        {
+          "title": "Guaranteed Privacy-Preserving H∞-Optimal Interval Observer Design for Bounded-Error LTI Systems",
+          "authors": [
+            "Mohammad Khajenejad",
+            "Sonia Martínez"
+          ],
+          "year": 2023,
+          "date": "2023-09-25",
+          "citations": 0,
+          "arxiv_id": "2309.13873",
+          "paper_id": "da0dd461ef1ab015a65132116d2d048c44c7f1ae",
+          "url": "https://arxiv.org/abs/2309.13873",
+          "abstract": "This paper furthers current research into the notion of guaranteed privacy, which provides a deterministic characterization of the privacy of output signals of a dynamical system or mechanism. Unlike stochastic differential privacy, guaranteed privacy offers strict bounds on the proximity between the ranges of two sets of estimated data. Our approach relies on synthesizing an interval observer for a perturbed linear time-invariant (LTI) bounded-error system. The design procedure incorporates a bounded noise perturbation factor computation and observer gains synthesis. Consequently, the observer simultaneously provides guaranteed private and stable interval-valued estimates for a desired variable. We demonstrate the optimality of our design by minimizing the ${\\mathcal{H}}_{\\infty}$ norm of the observer error system. Furthermore, we assess the accuracy of our proposed mechanism by quantifying the loss incurred when considering guaranteed privacy specifications. Finally, we illustrate the outperformance of the proposed approach to differential privacy through simulations.",
+          "subjects": []
+        },
+        {
+          "title": "Machine learning identifies experimental brain metastasis subtypes based on their influence on neural circuits",
+          "authors": [
+            "A. Sánchez-Aguilera",
+            "M. Masmudi-Martín",
+            "A. Navas-Olive",
+            "P. Baena",
+            "C. Hernández-Oliver",
+            "N. Priego",
+            "Lluís Cordón-Barris",
+            "Laura Alvaro-Espinosa",
+            "S. García",
+            "Sonia Martínez",
+            "M. Lafarga",
+            "Michael Z. Lin",
+            "F. Al-Shahrour",
+            "L. Menendez de la Prida",
+            "M. Valiente",
+            "Cecilia Sobrino",
+            "Nuria Ajenjo",
+            "M. Artiga",
+            "Eva Ortega-Paino",
+            "Virginia García-Calvo",
+            "Á. Pérez-Núñez",
+            "P. González-León",
+            "L. Jiménez-Roldán",
+            "Luis Miguel Moreno",
+            "Olga Esteban",
+            "J. Sepúlveda",
+            "O. Toldos",
+            "A. Laín",
+            "Alicia Arenas",
+            "Guillermo Blasco",
+            "J. Alén",
+            "A. de la Lama Zaragoza",
+            "A. Núñez",
+            "L. Calero",
+            "Concepción Fiaño Valverde",
+            "Ana González Pińeiro",
+            "Pedro David Delgado López",
+            "M. Pascual",
+            "Gerard Plans Ahicart",
+            "Begoña Escolano Otín"
+          ],
+          "year": 2023,
+          "date": "2023-08-01",
+          "citations": 34,
+          "arxiv_id": null,
+          "paper_id": "31ac2c68a0bd88a3aab26e1dacaa8f8fbe74267c",
+          "url": "https://www.semanticscholar.org/paper/31ac2c68a0bd88a3aab26e1dacaa8f8fbe74267c",
+          "abstract": "Summary A high percentage of patients with brain metastases frequently develop neurocognitive symptoms; however, understanding how brain metastasis co-opts the function of neuronal circuits beyond a tumor mass effect remains unknown. We report a comprehensive multidimensional modeling of brain functional analyses in the context of brain metastasis. By testing different preclinical models of brain metastasis from various primary sources and oncogenic profiles, we dissociated the heterogeneous impact on local field potential oscillatory activity from cortical and hippocampal areas that we detected from the homogeneous inter-model tumor size or glial response. In contrast, we report a potential underlying molecular program responsible for impairing neuronal crosstalk by scoring the transcriptomic and mutational profiles in a model-specific manner. Additionally, measurement of various brain activity readouts matched with machine learning strategies confirmed model-specific alterations that could help predict the presence and subtype of metastasis.",
+          "subjects": []
+        },
+        {
+          "title": "Robot Navigation in Risky, Crowded Environments: Understanding Human Preferences",
+          "authors": [
+            "A. Suresh",
+            "Angelique M. Taylor",
+            "L. Riek",
+            "Sonia Martínez"
+          ],
+          "year": 2023,
+          "date": "2023-03-15",
+          "citations": 0,
+          "arxiv_id": "2303.08284",
+          "paper_id": "cd319b58f4fee0bc4e65bbca84839e0b041261c9",
+          "url": "https://arxiv.org/abs/2303.08284",
+          "abstract": "The effective deployment of robots in risky and crowded environments (RCE) requires the specification of robot plans that are consistent with humans' behaviors. As is well known, humans perceive uncertainty and risk in a biased way, which can lead to a diversity of actions and expectations when interacting with others. To gain a better understanding of these behaviors, this work presents new data that aims to verify how these biases translate into a human navigational setting. More precisely, we conduct a novel study that recreates a COVID-19 pandemic grocery shopping scenario and asks participants to select among various paths with different levels of} time-risk tradeoffs. The data shows that participants exhibit a variety of path preferences: from risky and urgent to safe and relaxed. To model users' decision making, we evaluate three popular risk models and found that CPT captures people's decisions more accurately, corroborating previous theoretical results that CPT is more expressive and inclusive. We also find that people's self assessments of risk and time-urgency do not correlate with their path preferences in RCEs. Finally, we conduct thematic analysis of custom open-ended questions to gauge interest and preferences of navigational Explainable AI (XAI) in robots. A large majority also showed interest in understanding robot's intention (path plans and decisions) through various modalities like speech, touchscreen and gestures. Our work provides crucial XAI design insights for deployment of robots in RCEs.",
+          "subjects": []
+        },
+        {
+          "title": "Experimental testing of a 300 kWth open volumetric air receiver (OVAR) coupled with a small-scale Brayton cycle. Operating experience and lessons learnt",
+          "authors": [
+            "F. Zaversky",
+            "J. Fernández-Reche",
+            "M. Casanova",
+            "R. Monterreal",
+            "Raúl Enrique",
+            "A. Ávila-Marín",
+            "Sonia Martínez",
+            "Mark Schmitz",
+            "A. Castellanos",
+            "Ricardo Mallo",
+            "S. Herrero",
+            "S. Lopez",
+            "I. Mesonero",
+            "Ion Pérez",
+            "J. Mcguire",
+            "Flavien Berard"
+          ],
+          "year": 2023,
+          "date": "2023",
+          "citations": 4,
+          "arxiv_id": null,
+          "paper_id": "ec6ef670e52eb4482ab30fc5475d1fb16f8e0327",
+          "url": "https://www.semanticscholar.org/paper/ec6ef670e52eb4482ab30fc5475d1fb16f8e0327",
+          "abstract": ". This paper summarizes the objectives and experimental activity of the H2020 research project CAPTure, which officially lasted from May 2015 to July 2020. The main objective of the CAPTure project was the development and testing of several key components that allow the implementation of a solar powered combined cycle plant (topping Brayton cycle and bottoming Rankine steam cycle). The main innovation was related to the coupling of the open volumetric air receiver (OVAR) with the pressurized air stream of the Brayton cycle, i",
+          "subjects": []
+        },
+        {
+          "title": "Effects of Caffeine and 5-Caffeoylquinic Acid on Blood Cell In Vitro Cytokine Production in Response to Lipopolysaccharide Stimulation",
+          "authors": [
+            "Lluis Rodas",
+            "Sonia Martínez",
+            "Aina Riera-Sampol",
+            "H. Moir",
+            "P. Tauler"
+          ],
+          "year": 2022,
+          "date": "2022-07-21",
+          "citations": 3,
+          "arxiv_id": null,
+          "paper_id": "55939aef9e56e584a5de4731dba39df2c7500eb1",
+          "url": "https://www.semanticscholar.org/paper/55939aef9e56e584a5de4731dba39df2c7500eb1",
+          "abstract": "Previous in vitro studies the have suggested anti-inflammatory properties of caffeine. Coffee is also rich in phenolic acids with several potential health benefits (chlorogenic acids), mainly 5-caffeoylquinic acid (5-CQA). The aim of the present study was to determine the effect of caffeine and 5-CQA, using concentrations comparable to typical human consumption, on LPS-induced cytokine production in whole blood in vitro cultures. Whole blood samples (n = 10) were stimulated for 24 h with LPS in the presence of caffeine or 5-CQA. The concentrations of various cytokines, malondialdehyde (MDA) and adenosine-3′,5′-cyclic monophosphate (cAMP) were determined in the culture media. Significant effects of caffeine were found only for the stimulated production of TNF-α (p = 0.014) and cAMP (p = 0.001). However, only the highest caffeine concentration (50 μM) induced lower TNF-α (p = 0.016) and higher cAMP (p = 0.006) levels in comparison to the control. The 5-CQA only influenced the stimulated production of IL-6 (p = 0.002), with lower values for the highest 5-CQA concentrations (2 μM: p = 0.012; 20 μM: p < 0.001). Neither caffeine (p = 0.227) nor 5-CQA (p = 0.259) influenced MDA concentrations. In conclusion, both caffeine and 5-CQA exerted limited in vitro anti-inflammatory effects. For caffeine, these effects were attained with high physiological concentrations. However, for 5-CQA, supraphysiological concentrations were needed.",
+          "subjects": []
+        },
+        {
+          "title": "Caffeine Intake among Undergraduate Students: Sex Differences, Sources, Motivations, and Associations with Smoking Status and Self-Reported Sleep Quality",
+          "authors": [
+            "Aina Riera-Sampol",
+            "Lluis Rodas",
+            "Sonia Martínez",
+            "H. Moir",
+            "P. Tauler"
+          ],
+          "year": 2022,
+          "date": "2022-04-01",
+          "citations": 60,
+          "arxiv_id": null,
+          "paper_id": "228f3b35542bb2c7e2fbf15547edc0e4f392bfe2",
+          "url": "https://www.semanticscholar.org/paper/228f3b35542bb2c7e2fbf15547edc0e4f392bfe2",
+          "abstract": "Due to its stimulatory effects, caffeine is one of the most frequently consumed mood and behavior altering drugs. University students report using caffeine-containing products to enhance mood and performance or for a desire of alertness. The current study investigated caffeine consumption in university undergraduate students, and associations with smoking status, alcohol and cannabis consumption, fruit and vegetable consumption, and sleep quality. Motivations for caffeine intake were also ascertained. A total of 886 undergraduates aged 18–25 years from the University of the Balearic Islands participated in a cross-sectional survey. Caffeine was consumed by 91.1% of participants. Caffeine consumers were more likely to be female, smokers, and alcohol and cannabis consumers. Coffee was found to be the main source of caffeine intake in both men and women (48.9% of total caffeine intake). Higher percentages of women consumed coffee (56.4 vs. 42.1%, p = 0.01) and tea (40.3 vs. 19.8%, p < 0.001), whereas a higher percentage of men consumed energy drinks (18.0 vs. 7.4%, p < 0.001). Main motivations for caffeine intake were those related to cognitive enhancement. Caffeine intake was associated with poorer subjective sleep quality (p < 0.001). In conclusion, undergraduate students that were female and smokers reported higher caffeine intakes. Coffee was found as the main caffeine contributor, with higher contributions of tea in women and energy drinks in men. Universities should consider the implementation of health campaigns and educational programs to educate students of the risks of high caffeine consumption together with associated behaviors such as smoking, alcohol consumption and poor sleep quality to physical health and academic performance.",
+          "subjects": []
+        },
+        {
+          "title": "A clinically compatible drug‐screening platform based on organotypic cultures identifies vulnerabilities to prevent and treat brain metastasis",
+          "authors": [
+            "Lucía Zhu",
+            "Diana Retana",
+            "P. García-Gómez",
+            "Laura Alvaro-Espinosa",
+            "N. Priego",
+            "M. Masmudi-Martín",
+            "N. Yebra",
+            "Lauritz Miarka",
+            "Elena Hernández-Encinas",
+            "C. Blanco-Aparicio",
+            "Sonia Martínez",
+            "Cecilia Sobrino",
+            "Nuria Ajenjo",
+            "M. Artiga",
+            "Eva Ortega-Paino",
+            "R. Torres-Ruíz",
+            "S. Rodríguez-Perales",
+            "R. Soffietti",
+            "L. Bertero",
+            "P. Cassoni",
+            "T. Weiss",
+            "J. Muñoz",
+            "J. Sepúlveda",
+            "P. González-León",
+            "L. Jiménez-Roldán",
+            "Luis Miguel Moreno",
+            "Olga Esteban",
+            "Á. Pérez-Núñez",
+            "A. Hernández-Laín",
+            "O. Toldos",
+            "Y. Ruano",
+            "L. Alcázar",
+            "Guillermo Blasco",
+            "J. Fernández-Alén",
+            "E. Caleiras",
+            "M. Lafarga",
+            "D. Megías",
+            "O. Graña-Castro",
+            "C. Nör",
+            "M. Taylor",
+            "L. Young",
+            "D. Varešlija",
+            "Nicola Cosgrove",
+            "F. Couch",
+            "L. Cussó",
+            "M. Desco",
+            "S. Mourón",
+            "M. Quintela-Fandino",
+            "Michael Weller",
+            "J. Pastor",
+            "M. Valiente",
+            "Adolfo de la Lama-Zaragoza",
+            "L. Calero‐Felix",
+            "C. Fiaño-Valverde",
+            "P. Delgado-López",
+            "Antonio Montalvo-Afonso",
+            "M. Pascual-Llorente",
+            "Ángela Díaz-Piqueras",
+            "S. Nam-Cha",
+            "Cristina Barrena López",
+            "Gerard Plans Ahicart",
+            "E. Martínez-Sáez",
+            "S. R. Y. Cajal",
+            "P. Nicolás"
+          ],
+          "year": 2022,
+          "date": "2022-02-17",
+          "citations": 35,
+          "arxiv_id": null,
+          "paper_id": "e00d4c75bd165ab92f7867446cbbcb79a329d596",
+          "url": "https://www.semanticscholar.org/paper/e00d4c75bd165ab92f7867446cbbcb79a329d596",
+          "abstract": "We report a medium‐throughput drug‐screening platform (METPlatform) based on organotypic cultures that allows to evaluate inhibitors against metastases growing in situ. By applying this approach to the unmet clinical need of brain metastasis, we identified several vulnerabilities. Among them, a blood–brain barrier permeable HSP90 inhibitor showed high potency against mouse and human brain metastases at clinically relevant stages of the disease, including a novel model of local relapse after neurosurgery. Furthermore, in situ proteomic analysis applied to metastases treated with the chaperone inhibitor uncovered a novel molecular program in brain metastasis, which includes biomarkers of poor prognosis and actionable mechanisms of resistance. Our work validates METPlatform as a potent resource for metastasis research integrating drug‐screening and unbiased omic approaches that is compatible with human samples. Thus, this clinically relevant strategy is aimed to personalize the management of metastatic disease in the brain and elsewhere.",
+          "subjects": []
+        },
+        {
+          "title": "Distributionally Safe Path Planning: Wasserstein Safe RRT",
+          "authors": [
+            "P. Lathrop",
+            "Beth L. Boardman",
+            "Sonia Martínez"
+          ],
+          "year": 2022,
+          "date": "2022-01-01",
+          "citations": 25,
+          "arxiv_id": null,
+          "paper_id": "fbc0a0af1592e6721ba2b861598834f5665277ac",
+          "url": "https://www.semanticscholar.org/paper/fbc0a0af1592e6721ba2b861598834f5665277ac",
+          "abstract": "In this paper, we propose a Wasserstein metric-based random path planning algorithm. Wasserstein Safe RRT (W-Safe RRT) provides finite-sample probabilistic guarantees on the safety of a returned path in an uncertain obstacle environment. Vehicle and obstacle states are modeled as distributions based upon state and model observations. We define limits on distributional sampling error so the Wasserstein distance between a vehicle state distribution and obstacle distributions can be bounded. This enables the algorithm to return safe paths with a confidence bound through combining finite sampling error bounds with calculations of the Wasserstein distance between discrete distributions. W-Safe RRT is compared against a baseline minimum encompassing ball algorithm, which ensures balls that minimally encompass discrete state and obstacle distributions do not overlap. The improved performance is verified in a 3D environment using single, multi, and rotating non-convex obstacle cases, with and without forced obstacle error in adversarial directions, showing that W-Safe RRT can handle poorly modeled complex environments.",
+          "subjects": []
+        },
+        {
+          "title": "Blood Cell In Vitro Cytokine Production in Response to Lipopolysaccharide Stimulation in a Healthy Population: Effects of Age, Sex, and Smoking",
+          "authors": [
+            "Lluis Rodas",
+            "Sonia Martínez",
+            "Aina Riera-Sampol",
+            "H. Moir",
+            "P. Tauler"
+          ],
+          "year": 2021,
+          "date": "2021-12-29",
+          "citations": 11,
+          "arxiv_id": null,
+          "paper_id": "41ff26ac67d195757eaa4d881b365a924402644a",
+          "url": "https://www.semanticscholar.org/paper/41ff26ac67d195757eaa4d881b365a924402644a",
+          "abstract": "Immune system functionality has been commonly assessed by a whole-blood or isolated-cell stimulation assay. The aim of this study was to determine whether cytokine production in whole-blood-stimulated samples is influenced by age, sex, and smoking. A descriptive cross-sectional study in 253 healthy participants aged 18–55 years was conducted. Whole blood samples were stimulated for 24 h with LPS and concentrations of IL-6, IL-10, and TNF-α were determined in the culture media. Among parameters considered, statistical regression analysis indicated that smoking (change in R2 = 0.064, p < 0.001) and sex (change in R2 = 0.070, p < 0.001) were the main predictors for IL-10 production, with higher values for women and non-smokers. Age was also found to be a significant predictor (change in R2 = 0.021, p < 0.001), with higher values for younger ages. Age (change in R2 = 0.089, p = 0.013) and smoking (change in R2 = 0.037, p = 0.002) were found to be negative predictors for IL-6 production. Regarding TNF-α-stimulated production, age (change in R2 = 0.029, p = 0.009) and smoking (change in R2 = 0.022, p = 0.022) were found to be negative predictors. Furthermore, sex (change in R2 = 0.016, p = 0.045) was found to be a significant predictor, with lower values for women. In conclusion, sex, age, and smoking were found to be independent determinants of stimulated cytokine production. While female sex is associated with higher IL-10 and lower TNF-α production, aging and smoking are associated with lower IL-6, IL-10, and TNF-α production.",
+          "subjects": []
+        },
+        {
+          "title": "Nutritional Status and Implementation of a Nutritional Education Program in Young Female Artistic Gymnasts",
+          "authors": [
+            "A. Aguiló",
+            "Leticia Lozano",
+            "P. Tauler",
+            "Mar Nafría",
+            "Miquel Colom",
+            "Sonia Martínez"
+          ],
+          "year": 2021,
+          "date": "2021-04-21",
+          "citations": 13,
+          "arxiv_id": null,
+          "paper_id": "19a95e5ba780157980b7fab8c2b18a263590606c",
+          "url": "https://www.semanticscholar.org/paper/19a95e5ba780157980b7fab8c2b18a263590606c",
+          "abstract": "Adolescent high-performance gymnasts are considered to be at risk for low energy intake. The aim of the present study was to determine the effects of implementing a nutritional education program during the sports season on the nutritional status and nutrition knowledge of the female artistic gymnasts from the Technification Center of the Balearic Islands (n = 24; age, 14.1 ± 2.3 years). A quasi-experimental intervention design was applied, which consisted of implementing a nutritional education program of seven sessions given during eight months. Measurements of nutritional intake, nutrition knowledge, and anthropometric parameters, as well as hematological and biochemical blood parameters, were performed. Gymnasts reported low energy and carbohydrate intakes, with significant increases during the study (energy, 28.3 ± 1.4 vs. 32.8 ± 1.4 kcal kg−1, p = 0.015, carbohydrate 3.2 ± 0.2 vs. 3.9 ± 0.2 g kg−1, p = 0.004). The average values for parameters such as hemoglobin, ferritin, lipoprotein, and vitamin C and E levels in the plasma were within normal ranges. Low intakes of most of the food groups were observed during the study, with similar initial and final values. Nutrition knowledge did not change as a result of the study (28.0 ± 1.7 vs. 31.1 ± 1.3, p = 0.185). In conclusion, gymnasts reported low energy intakes. However, blood markers and most of the anthropometrical parameters measured were within normal ranges. The nutrition education program implemented did not produce significant improvements in the dietary habits or nutritional knowledge of gymnasts.",
+          "subjects": []
+        }
+      ]
     ],
     [
       "Pranit Mohnot",
@@ -5471,7 +6541,7 @@
             "Themistoklis P. Sapsis"
           ],
           "date": "2026-09-15",
-          "citations": 1,
+          "citations": 0,
           "arxiv_id": "2609.17347v1",
           "url": "https://arxiv.org/abs/2609.17347v1",
           "abstract": "Collision avoidance constraints for autonomous systems are typically formulated in position or velocity space, implicitly reacting to geometric proximity. We propose an alternative paradigm based on the adversarial time-to-collision (aTTC): the minimum time in which an adversary could achieve a collision given its dynamical constraints. By defining a control barrier function (CBF) directly in the time domain, the resulting controller is inherently anticipatory. The evading agent responds not only to whether a pursuer is on a collision course, but to how quickly it could reach one. This formulation enables velocity modulation that exploits the pursuers dynamic limits as an evasive strategy, a behavior not captured by standard distance-based CBFs. Since exact aTTC computation requires integrating the full system dynamics, we employ a lightweight neural network surrogate that admits a real-time quadratic program-based control law. We validate the approach in a 2D comparative study and a 3D multi-agent pursuit-evasion scenario, where the aTTC-based CBF outperforms a higher-order distance-based baseline by more effectively buying time against superior pursuers with a significant speed advantage.",
@@ -6225,7 +7295,7 @@
             "Sonia Martínez"
           ],
           "date": "2026-02-04",
-          "citations": 0,
+          "citations": 6,
           "arxiv_id": "2602.05011v1",
           "url": "https://arxiv.org/abs/2602.05011v1",
           "abstract": "This paper studies the safe control of very large multi-agent systems via a generalized framework that employs so-called Banach Control Barrier Functions (B-CBFs). Modeling a large swarm as probability distribution over a spatial domain, we show how B-CBFs can be used to appropriately capture a variety of macroscopic constraints that can integrate with large-scale swarm objectives. Leveraging this framework, we define stable and filtered gradient flows for large swarms, paying special attention to optimal transport algorithms. Further, we show how to derive agent-level, microscopical algorithms that are consistent with macroscopic counterparts in the large-scale limit. We then identify conditions for which a group of agents can compute a distributed solution that only requires local information from other agents within a communication range. Finally, we showcase the theoretical results over swarm systems in the simulations section.",
