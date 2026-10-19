@@ -1,6 +1,26 @@
 {
   "high_citation": [
     {
+      "title": "GCBF+: A Neural Graph Control Barrier Function Framework for Distributed Safe Multiagent Control",
+      "authors": [
+        "Song-Yuan Zhang",
+        "Oswin So",
+        "Kunal Garg",
+        "Chuchu Fan"
+      ],
+      "year": 2024,
+      "date": "2024-01-25",
+      "citations": 102,
+      "arxiv_id": "2401.14554",
+      "paper_id": "8f4857384e0573e45e74154704fc89468ab17988",
+      "url": "https://arxiv.org/abs/2401.14554",
+      "abstract": "Distributed, scalable, and safe control of large-scale multiagent systems is a challenging problem. In this article, we design a distributed framework for safe multiagent control in large-scale environments with obstacles, where a large number of agents are required to maintain safety using only local information and reach their goal locations. We introduce a new class of certificates, termed graph control barrier function (GCBF), which are based on the well-established control barrier function theory for safety guarantees and utilize a graph structure for scalable and generalizable distributed control of MAS. We develop a novel theoretical framework to prove the safety of an arbitrary-sized MAS with a single GCBF. We propose a new training framework GCBF+ that uses graph neural networks to parameterize a candidate GCBF and a distributed control policy. The proposed framework is distributed and is capable of taking point clouds from LiDAR, instead of actual state information, for real-world robotic applications. We illustrate the efficacy of the proposed method through various hardware experiments on a swarm of drones with objectives ranging from exchanging positions to docking on a moving target without collision. In addition, we perform extensive numerical experiments, where the number and density of agents, as well as the number of obstacles, increase. Empirical results show that in complex environments with agents with nonlinear dynamics (e.g., Crazyflie drones), GCBF+ outperforms the hand-crafted CBF-based method with the best performance by up to 20% for relatively small-scale MAS with up to 256 agents, and leading reinforcement learning (RL) methods by up to 40% for MAS with 1024 agents. Furthermore, the proposed method does not compromise on the performance, in terms of goal reaching, for achieving high safety rates, which is a common tradeoff in RL-based methods. Project website: https://mit-realm.github.io/gcbfplus/",
+      "subjects": [
+        "cs.RO",
+        "math.OC"
+      ]
+    },
+    {
       "title": "How to Train Your Neural Control Barrier Function: Learning Safety Filters for Complex Input-Constrained Systems",
       "authors": [
         "Oswin So",
@@ -13,7 +33,7 @@
       ],
       "year": 2023,
       "date": "2023-10-24",
-      "citations": 0,
+      "citations": 110,
       "arxiv_id": "2310.15478",
       "paper_id": "f35f6f542da9a3d6da7fe69cbcf9c2399607c16a",
       "url": "https://arxiv.org/abs/2310.15478",
@@ -54,7 +74,7 @@
       ],
       "year": 2022,
       "date": "2022-09-18",
-      "citations": 0,
+      "citations": 166,
       "arxiv_id": "2209.08539",
       "paper_id": "c75841c3223bac648fbf347072e38aa3373278b8",
       "url": "https://arxiv.org/abs/2209.08539",
@@ -110,6 +130,26 @@
       "url": "https://www.semanticscholar.org/paper/efb2073d738f7255fda32a5d713604b877643859",
       "abstract": "This letter considers the problem of obstacle avoidance for multiple robotic agents moving in an environment with obstacles. A decentralized supervisory controller is synthesized based on control barrier functions (CBF) that guarantees obstacle avoidance with limited actuation capability. The proposed method is applicable to general nonlinear robot dynamics and is scalable to an arbitrary number of agents. Agent-to-agent communication is not required, yet a simple broadcasting scheme improves the performance of the algorithm. The key idea is based on a control barrier function constructed with a backup controller, and we show that by assuming other agents respecting the same CBF condition, the supervisory control algorithm can be implemented decentrally and guarantees obstacle avoidance for all agents.",
       "subjects": []
+    },
+    {
+      "title": "Barrier Function Based Collaborative Control of Multiple Robots Under Signal Temporal Logic Tasks",
+      "authors": [
+        "L. Lindemann",
+        "D. Dimarogonas"
+      ],
+      "year": 2020,
+      "date": "2020-12-01",
+      "citations": 0,
+      "arxiv_id": "2102.02609",
+      "paper_id": "12f1dbd76abe39270ecb4331e8a564cb81065a74",
+      "url": "https://arxiv.org/abs/2102.02609",
+      "abstract": "Motivated by the recent interest in cyber-physical and autonomous robotic systems, we study the problem of dynamically coupled multiagent systems under a set of signal temporal logic tasks. In particular, the satisfaction of each of these signal temporal logic tasks depends on the behavior of a distinct set of agents. Instead of abstracting the agent dynamics and the temporal logic tasks into a discrete domain and solving the problem therein or using optimization-based methods, we derive collaborative feedback control laws.These control laws are based on a decentralized control barrier function condition that results in discontinuous control laws, as opposed to a centralized condition resembling the single-agent case. The benefits of our approach are inherent robustness properties typically present in feedback control as well as satisfaction guarantees for continuous-time multiagent systems. More specifically, time-varying control barrier functions are used that account for the semantics of the signal temporal logic tasks at hand. For a certain fragment of signal temporal logic tasks, we further propose a systematic way to construct such control barrier functions. Finally, we show the efficacy and robustness of our framework in an experiment, including a group of three omnidirectional robots.",
+      "subjects": [
+        "eess.SY",
+        "cs.FL",
+        "cs.RO",
+        "math.OC"
+      ]
     },
     {
       "title": "Safe reinforcement learning: A control barrier function optimization approach",
@@ -227,7 +267,7 @@
       ],
       "year": 2014,
       "date": "2014-12-01",
-      "citations": 1099,
+      "citations": 1100,
       "arxiv_id": null,
       "paper_id": "14e3102e6d9cd166f3a7eac1acf1eb36ed4c961b",
       "url": "https://www.semanticscholar.org/paper/14e3102e6d9cd166f3a7eac1acf1eb36ed4c961b",
@@ -1298,7 +1338,7 @@
           ],
           "year": 2014,
           "date": "2014-12-01",
-          "citations": 1099,
+          "citations": 1100,
           "arxiv_id": null,
           "paper_id": "14e3102e6d9cd166f3a7eac1acf1eb36ed4c961b",
           "url": "https://www.semanticscholar.org/paper/14e3102e6d9cd166f3a7eac1acf1eb36ed4c961b",
@@ -1359,7 +1399,7 @@
           ],
           "year": 2014,
           "date": "2014-12-01",
-          "citations": 1099,
+          "citations": 1100,
           "arxiv_id": null,
           "paper_id": "14e3102e6d9cd166f3a7eac1acf1eb36ed4c961b",
           "url": "https://www.semanticscholar.org/paper/14e3102e6d9cd166f3a7eac1acf1eb36ed4c961b",
@@ -1563,9 +1603,432 @@
           "subjects": [
             "eess.SY"
           ]
+        },
+        {
+          "title": "Enforcing a Strict Safety Margin in LLM Text Generation via Barrier Lyapunov Control",
+          "authors": [
+            "Anand Singh",
+            "Shubham Singh",
+            "Anjali Tiwari",
+            "Katsuki Fujisawa"
+          ],
+          "year": 2026,
+          "date": "2026-10-13",
+          "citations": 0,
+          "arxiv_id": "2610.17929",
+          "paper_id": "8e939b99d71f831f84a05567ece8be8a6f2c43d1",
+          "url": "https://arxiv.org/abs/2610.17929",
+          "abstract": "Large language models are increasingly deployed without formal guarantees against toxic text generation. Existing control barrier function (CBF) based safety filters can keep the generation trajectory within a toxicity-free region, but do not enforce a positive distance from its boundary, allowing formally safe trajectories to approach the toxicity threshold arbitrarily closely and leaving little buffer against modelling errors or disturbances. We address this limitation with a Barrier Lyapunov Function (BLF) safety filter that enforces a prescribed clearance margin throughout generation while retaining the continuous-time transformer dynamics, including feedforward layers. The resulting safe input set is a half-space defined by a constraint affine in the control input, and is non-empty under certified surjectivity and classifier-nondegeneracy conditions. For margin-compatible initial conditions we prove that the clearance margin is never violated and that the prescribed clearance is restored exponentially, yielding an explicit clearance floor, and show that, as the margin vanishes, the admissible trajectories satisfy the exponential second-order CBF condition. We further derive an explicitly computable sufficient disturbance budget under which the clearance guarantee degrades gracefully. Simulations on a small transformer illustrate the resulting improvement in safety clearance.",
+          "subjects": []
+        },
+        {
+          "title": "Safe Unicycle Navigation Among Multiple Obstacles Under Bounded Disturbances: A Learning-Augmented CLF-CBF Approach (Extended Version)",
+          "authors": [
+            "Shubham Singh",
+            "Anjali Tiwari",
+            "Anand Singh",
+            "Katsuki Fujisawa"
+          ],
+          "year": 2026,
+          "date": "2026-10-13",
+          "citations": 0,
+          "arxiv_id": "2610.17916",
+          "paper_id": "b38e3940143e51c06af6d11a294ae2c812dabad5",
+          "url": "https://arxiv.org/abs/2610.17916",
+          "abstract": "This paper presents a robust control framework for safe navigation of a unicycle robot to a goal among multiple static obstacles under an unknown, time-varying disturbance. The controller solves a single real-time quadratic program (QP) that combines a goal-reaching term with one safety term per obstacle. The goal-reaching term is a cross-track control Lyapunov function built from body-frame tracking errors rather than a bearing angle, which keeps its Lie derivatives bounded everywhere, including the goal. Safety is encoded using robust control barrier functions, one per obstacle, each tightened by a closed-form, state-dependent disturbance bound. When stabilization and safety conflict, a slack variable relaxes only the convergence requirement, so that the safety constraints remain strictly enforced. Whenever the QP is feasible, the robust barrier constraints guarantee forward invariance of every obstacle's safe set under all admissible disturbances. Complementing this safety guarantee, a Lyapunov analysis yields an explicit ultimate bound on the distance to the goal. A learning-augmented variant replaces the fixed objective with a reinforcement-learning reference, which accelerates convergence when multiple constraints are simultaneously active. We further derive the obstacle separation below which the gap between two obstacles becomes too narrow to pass through under the robust constraints. For such gaps, a learned virtual goal for the Lyapunov function steers the robot around the obstacles without compromising safety. Simulations, a Monte Carlo study, and a comparison against a sampled-data robust baseline support the theoretical results.",
+          "subjects": []
+        },
+        {
+          "title": "Ensuring safe robust control design through optimal control with switching strategy",
+          "authors": [
+            "Anjali Tiwari",
+            "N. S. Tripathy",
+            "M. Chamanbaz",
+            "Roland Bouffanais"
+          ],
+          "year": 2026,
+          "date": "2026-03-26",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "8600a7398e7ca7a4fe2c20454ca776bcccc0c42c",
+          "url": "https://www.semanticscholar.org/paper/8600a7398e7ca7a4fe2c20454ca776bcccc0c42c",
+          "abstract": "\n This paper presents the design of a safe‐ robust control law for a class of nonlinear systems subjected to model and input uncertainties. Safety is addressed by means of control barrier functions. The design method involves defining an over‐approximate region of the safe set and using it as a constraint. We then convert this safe‐ robust control problem into a constrained‐optimal control problem for a nominal system with a modified cost‐functional. Subsequently, this constrained‐optimal control problem is reformulated as a minimization of a Hamilton‐Jacobi‐Bellman equation subjected to safety constraints, which is solved using the Karush‐Kuhn‐Tucker multiplier method. The design of the control law is facilitated by the use of a switching function when moving from safe to unsafe regions. This approach is termed the modular design approach, which maintains the system's robustness while preserving safety. Finally, numerical simulations are carried out to validate the proposed controller and test its efficacy on nonlinear systems with uncertainties.",
+          "subjects": []
+        },
+        {
+          "title": "A Unified Framework for Robust Stabilization and Safety of Uncertain Nonlinear Systems",
+          "authors": [
+            "Anjali Tiwari",
+            "N. S. Tripathy"
+          ],
+          "year": 2026,
+          "date": "2026-02-28",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "39bd65733cbb5a7e73348fecf9e6f074b3bcf5fc",
+          "url": "https://www.semanticscholar.org/paper/39bd65733cbb5a7e73348fecf9e6f074b3bcf5fc",
+          "abstract": "\n Control barrier functions (CBFs) are widely employed to ensure safety in nonlinear systems; however, the presence of uncertainties can impact their effectiveness, leading to safety violations. In this context, we present the design of a safe-robust control law that unifies the objective of robust stabilization and safety for a nonlinear system in the presence of mismatched uncertainty. This unified framework is achieved through a switching strategy that operates based on safety requirements, resulting in a slightly larger CBF. Thereby, guaranteeing the forward invariance of a larger CBF ensures that states avoid the actual unsafe region. To derive the proposed control law, the safe-robust control problem for an uncertain system is transformed into a safe-optimal control problem for auxiliary dynamics with appropriate cost. Furthermore, we draw connections between two prominent robust control techniques and show how safety can be integrated using the proposed approach. Finally, numerical simulation is provided to demonstrate the efficacy of the safe-robust control law.",
+          "subjects": []
         }
       ],
-      []
+      [
+        {
+          "title": "AI leadership: employee perceptions and pathways to compliance",
+          "authors": [
+            "Cao Tuan",
+            "Mai Nguyen",
+            "Tuan Phong Nham",
+            "Ashish Malik",
+            "Anjali Tiwari"
+          ],
+          "year": 2026,
+          "date": "2026-10-08",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "f9150605489ead9f5721569a0265acb5687ef7d0",
+          "url": "https://www.semanticscholar.org/paper/f9150605489ead9f5721569a0265acb5687ef7d0",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "A Quantum Attack Pipeline on DNA-Based Encryption: PRNG Vulnerabilities and QRNG-Based Defenses",
+          "authors": [
+            "Mohammed Misbhahuddin",
+            "Anjali Tiwari"
+          ],
+          "year": 2026,
+          "date": "2026-09-10",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "df3b52ba0a631a317dd3655fe48206933e049997",
+          "url": "https://www.semanticscholar.org/paper/df3b52ba0a631a317dd3655fe48206933e049997",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Pulmonary venous baffle stenosis following atrial switch repair for transposition of the great arteries",
+          "authors": [
+            "S. Padala",
+            "Aaditya Sirohi",
+            "P. G. Kumbhar",
+            "Anjali Tiwari"
+          ],
+          "year": 2026,
+          "date": "2026-09-01",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "65d62d1300364266e10a60db92afdae9394743e7",
+          "url": "https://www.semanticscholar.org/paper/65d62d1300364266e10a60db92afdae9394743e7",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Gender Dynamics in Healthcare Utilization: Assessing the Coverage and Experiences of Women under PM Jan Arogya Yojana",
+          "authors": [
+            "Anjali Tiwari",
+            "S. Yadav"
+          ],
+          "year": 2026,
+          "date": "2026-06-15",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "0a3102d17954fd7328800e1d1d5d268f0fb66bcc",
+          "url": "https://www.semanticscholar.org/paper/0a3102d17954fd7328800e1d1d5d268f0fb66bcc",
+          "abstract": "A major goal of modern-day public health policy is to provide equitable access to healthcare; this is especially true in developing countries where gender-based inequities continue to have an impact on demand for and the use of healthcare services. In India, the Pradhan Mantri Jan Arogya Yojana (PM-JAY) program created under the Ayushman Bharat initiative was created to improve financial security for vulnerable populations by expanding access to secondary and tertiary health care services. The expansion of the PM-JAY program has improved insurance coverage and reduced financial barriers for millions of households, but there still exists a question whether the expansion of PM-JAY program has resulted in equal health care service utilization by women. The purpose of this research is to examine the impact of gender on the use of health care services by women who are covered by the PM-JAY program. The study will explore the various factors (social norms, household decision-making, institutional arrangements and economics) and relationships that may impede women from accessing health care services even though they are entitled to receive publicly funded health care services. Special attention will be focused on understanding the difference between Policy coverage and actual utilization of health care services. The design of the study is qualitative and analytical and will be based on a review of policy documents, government reports, public health journals, and recent scholarship related to gender and health care utilization. A gender-sensitive analytical framework was applied to evaluate the use of health services by women and to identify the structural barriers to women’s experiences in accessing these services. The analysis suggests that PM-JAY has contributed to helping reduce direct financial constraints on access to healthcare and helps improve healthcare accessibility. Nonetheless, women continue to experience challenges connecting with healthcare services due to barriers regarding: awareness of services; mobility; responsiveness of institutions; and unequal decision-making authority within households. Additionally, the utilization of health services is impacted by a variety of social conditions and regional characteristics. The conclusion of this study is that health insurance coverage alone does not provide the means for achieving gender equity in health outcomes; outreach to improve awareness of services; improving the responsiveness of services to women; and enhancing monitoring methods to be specific to women must all contribute to allowing formal entitlements to healthcare be effectively and equitably utilized.",
+          "subjects": []
+        },
+        {
+          "title": "Predicting online motor learning after stroke in lower limb task using machine learning",
+          "authors": [
+            "Anjali Tiwari",
+            "Hunter Paxton",
+            "Stefan Delmas",
+            "P. Diwakar",
+            "Gaurav Misra",
+            "Neha Lodha"
+          ],
+          "year": 2026,
+          "date": "2026-05-06",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "7c7afd669d7c241a972074a7e7593fd979de6f28",
+          "url": "https://www.semanticscholar.org/paper/7c7afd669d7c241a972074a7e7593fd979de6f28",
+          "abstract": "Online motor learning is central to effective learning and a crucial determinant of functional recovery after stroke. Despite its clinical significance, predictors of online motor learning remain understudied. Machine Learning (ML) offers a data-driven approach to identify predictors of online motor learning that would otherwise be limited using traditional statistical approaches, such as logistic regression. This study leveraged ML to determine key predictors and their relative importance in online motor learning after stroke. One hundred and seven stroke survivors completed assessments of sociodemographic, stroke characteristics, health-related, functional, cognitive, and physical capacity. Online motor learning was quantified using a goal-directed ankle task. To predict those with and without online motor learning capacity, we applied and compared XGBoost and logistic regression approaches. The XGBoost model outperformed logistic regression, achieving a precision = 0.82, recall = 0.78, F1 score = 0.80, and an area under the precision-recall curve = 0.84. The feature importance analysis identified logical memory, DGT-backward, selective attention, functional capacity index, and physical capacity as the key predictors of online motor learning. Online motor learning after stroke is not solely a motor-driven process but is predicted by cognitive and functional capacity. ML identified multidomain predictors, offering a framework for understanding individual differences in learning potential during the session, laying the foundation for precision rehabilitation.",
+          "subjects": []
+        },
+        {
+          "title": "Poststroke Fatigue: An Overlooked Barrier to Functional Recovery",
+          "authors": [
+            "Anjali Tiwari",
+            "Stefan Delmas",
+            "Neha Lodha",
+            "A. Casamento-Moran"
+          ],
+          "year": 2026,
+          "date": "2026-03-28",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "e46565ffcca21a37103f62d6201c93180cfb7c8a",
+          "url": "https://www.semanticscholar.org/paper/e46565ffcca21a37103f62d6201c93180cfb7c8a",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Bacterial Cellulose Coatings for Improved Air and Moisture Barrier Properties of Kraft Paper",
+          "authors": [
+            "T. Bhuvana",
+            "Ramchandra Tiwari",
+            "Murli Manohar",
+            "Anjali Tiwari",
+            "K. Balani",
+            "C. Chandraprakash"
+          ],
+          "year": 2026,
+          "date": "2026-03-07",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "e8f2b596bdc20a6e43031a00e298181dfc896238",
+          "url": "https://www.semanticscholar.org/paper/e8f2b596bdc20a6e43031a00e298181dfc896238",
+          "abstract": "This work presents an investigation on bacterial cellulose (BC) as coatings over kraft paper for improvement in the barrier properties. The 100‐ μ m‐thick papers were coated with 3 g/m2 of BC by wet casting. Comparisons of surface characteristics were made with kraft paper coated with chitosan, another widely used biodegradable polymer. Electron micrographs revealed that these coatings provided a conformal filling of the asperities on the surface and reduced the roughness. Coating with BC made the kraft paper more lyophobic. The water vapor transmission rate (WVTR) and air permeability of the kraft paper were reduced by 387±11  g/m2/day and 0.41±0.02   μ m/Pa s, upon coating with BC. These barrier properties and changes in surface wettability were either quantitatively similar or better than those when coated with chitosan and achieved with a thin coating (2  μ m). Both these key characteristics were achieved while maintaining nearly the same chemical, mechanical and thermal characteristics of the coated and uncoated papers. These results suggest that BC can be explored as a biopolymer coating to improve the barrier properties of paper for packaging applications.",
+          "subjects": []
+        },
+        {
+          "title": "In silico analysis of physio-chemical and structural characteristics of selected neurotoxins from scorpion, snake, cone snail, spider and sea anemone",
+          "authors": [
+            "Vikas Chandra",
+            "H. Yadav",
+            "Kushal Kant Pant",
+            "Anjali Tiwari",
+            "C. Soni"
+          ],
+          "year": 2026,
+          "date": "2026-01-31",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "39fa283ec55c0ca795a5decbd2f8a4114e4f57c8",
+          "url": "https://www.semanticscholar.org/paper/39fa283ec55c0ca795a5decbd2f8a4114e4f57c8",
+          "abstract": "Venoms are complex mixtures of bioactive proteins and\npeptides produced by various animals and they are\noften lethal due to their diverse toxic effects. Among the\nmajor toxin classes: cytotoxins, neurotoxins,\nmyotoxins, cardiotoxins and haemotoxins, neurotoxins\nare particularly significant for their interference with\nnerve signal transmission by modulating\nneurotransmitter release, receptor function and ion\nchannel activity.\nThis study provides an in silico overview of selected\nneurotoxins, focusing on their physiochemical\nproperties, phylogenetic relationships, secondary\nstructures and three-dimensional structural features.\nPhysiochemical characterization was performed using\nProtParam, phylogenetic analysis with MEGA,\nsecondary structure prediction using SOPMA and 3D\nstructure modeling and visualization with Swiss model\nfor 25 neurotoxins from scorpion, snake, cone snail,\nspider and sea anemone venoms.",
+          "subjects": []
+        },
+        {
+          "title": "Driving behavior in simulator and on-road assessments in brain injury and stroke: a scoping review",
+          "authors": [
+            "Junpei Kubota",
+            "Anjali Tiwari",
+            "Takao Kaneko",
+            "Neha Lodha",
+            "Tasuku Sotokawa"
+          ],
+          "year": 2026,
+          "date": "2026-01-23",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "10331e9279b5c98d8e52c601ad984b8d9da08cbc",
+          "url": "https://www.semanticscholar.org/paper/10331e9279b5c98d8e52c601ad984b8d9da08cbc",
+          "abstract": "ABSTRACT Introduction Driving requires the coordination of complex cognitive and motor abilities that are often impaired after brain injury or stroke. This scoping review aimed to synthesize the driving behaviors observed in individuals with brain injury through simulator-based and on-road driving assessments using Michon’s hierarchical framework. Methods Following the PRISMA extension for Scoping reviews, we systematically searched five databases in July 2024. The eligible studies included adults with brain injuries assessed using either simulators or on-road evaluations. Driving behaviors were categorized as operational, tactical, or strategic. Results Thirty-eight studies met the inclusion criteria. Individuals with brain injury who failed the driving assessments (i.e. simulator or on-road) exhibited more frequent tactical-level errors, including lane deviations, and inadequate visual scanning than those with brain injury who passed. Simulator assessments are often used in studies comparing individuals with brain injury with healthy controls, whereas on-road assessments are more commonly used in studies assessing pass/fail outcomes. Conclusion Tactical-level errors, such as those involving decision-making and maneuvering in response to traffic, were consistently observed in individuals with brain injury. Assessment tools should prioritize the evaluation of operational and tactical abilities while expanding their capacity to capture strategic-level performance, which remains underassessed.",
+          "subjects": []
+        },
+        {
+          "title": "Seasonal variations in leaf essential oil of Eucalyptus tereticornis clones: Yield, composition analysis and antioxidant potential",
+          "authors": [
+            "Mamta Khaiper",
+            "P. Poonia",
+            "S. Dhanda",
+            "Preety Verma",
+            "Anjali Tiwari",
+            "Vikas Kumar"
+          ],
+          "year": 2026,
+          "date": "2026",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "bd7172d37bbad05bedc10b3753dc10b72cd9a6be",
+          "url": "https://www.semanticscholar.org/paper/bd7172d37bbad05bedc10b3753dc10b72cd9a6be",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Signal in the Noise: Dispersion as a Marker of Post-Stroke Cognitive Impairment",
+          "authors": [
+            "Stefan Delmas",
+            "Anjali Tiwari",
+            "Neha Lodha"
+          ],
+          "year": 2025,
+          "date": "2025-12-30",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "8f477e9fc696789c1573438f283a26bc97d48fc1",
+          "url": "https://www.semanticscholar.org/paper/8f477e9fc696789c1573438f283a26bc97d48fc1",
+          "abstract": "Stroke often results in lasting cognitive impairments that severely reduce independence and quality of life. Traditional neuropsychological assessments rely on mean scores that provide an average estimate of overall cognitive function but neglect the fluctuations in performance. The variability in performance can be captured as inconsistency, i.e., fluctuations across multiple trials within a single task or as dispersion, i.e., fluctuations across multiple tasks. While inconsistency has been extensively studied, the impact of post-stroke cognitive impairment on cognitive dispersion is unknown. In this study, ninety-five stroke survivors (41 cognitively impaired and 54 cognitively normal) completed a neuropsychological battery that captured performance across five cognitive domains: executive function, attention, memory, language, and processing speed. We compared the stroke groups on across- and within-domain cognitive dispersion. Cognitively impaired stroke individuals showed elevated dispersion within executive function compared to cognitively normal individuals. The two groups did not differ on any other within-domain or across-domain cognitive dispersion. Post-stroke cognitive impairment increased variability within executive functioning. Incorporating cognitive dispersion into routine post-stroke assessment can advance clinical practice by identifying subtle cognitive instability, anticipate supportive needs, and tailor rehabilitation plans for improving stroke care.",
+          "subjects": []
+        },
+        {
+          "title": "Phylogenetic Analysis of Annexin Genes in Selected Monocot and Dicot Plants",
+          "authors": [
+            "Gurucharan Sahu",
+            "Abhishek Dadsena",
+            "Samanvay Singh",
+            "Kushal Kant Pant",
+            "Anjali Tiwari",
+            "C. Soni",
+            "Vikas Chandra"
+          ],
+          "year": 2025,
+          "date": "2025-12-03",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "fbb4365d3d5e2b6d6fd4b26de019c66df4031308",
+          "url": "https://www.semanticscholar.org/paper/fbb4365d3d5e2b6d6fd4b26de019c66df4031308",
+          "abstract": "Annexins are a diverse family of calcium-dependent phospholipid-binding proteins involved in membrane transport, signal transduction, and various stress responses in plants. This study presents a comprehensive phylogenetic analysis of annexin genes across multiple monocot and dicot plant species. The study involved downloading the complete annexin gene sequences from reliable databases. Phylogenetic trees were carefully constructed for individual plant species, followed by a comparative analysis that distinguished the evolutionary approach of annexin genes among monocots and dicots. The analysis revealed significant evolutionary divergence and conserved clades within the annexin gene family, suggesting both lineage-specific expansions and ancient gene duplications. The results of this study provide new insights into the molecular evolution of annexins and highlight their potential role in plant adaptation and resilience. The comprehensive phylogenetic analyses performed in this work not only contribute to the understanding of annexin gene evolution but also lay the foundation for future functional studies aimed at exploiting annexins for crop improvement and stress management.",
+          "subjects": []
+        },
+        {
+          "title": "Linking behavioral variability to daily function in stroke survivors: the mediating role of cognitive and motor mechanisms",
+          "authors": [
+            "Stefan Delmas",
+            "Anjali Tiwari",
+            "Han-Yun Tseng",
+            "Sharon N. Poisson",
+            "M. Diehl",
+            "Neha Lodha"
+          ],
+          "year": 2025,
+          "date": "2025-11-21",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "651cdc2f97653f0133f9ce3a7c7281d6a098b5bd",
+          "url": "https://www.semanticscholar.org/paper/651cdc2f97653f0133f9ce3a7c7281d6a098b5bd",
+          "abstract": "Stroke significantly impacts an individual’s ability to perform instrumental activities of daily living (IADLs). Intraindividual variability (IIV) is characterized by heightened fluctuations across multiple attempts at a task. IIV is a behavioral indicator of central nervous system instability that may contribute directly to compromised capacity to perform IADLs following stroke. This study aimed to investigate the relationship between IIV and IADL performance in stroke survivors and determine whether executive control and/or motor capacity serve as mediating pathways. In this cross-sectional observational study, 84 stroke survivors and 35 healthy older adults participated. We derived latent factor scores for IIV from reaction time and goal directed tasks, IADL performance from the Observed Task of Daily Living and Functional Activities Questionnaire, executive control from tests of divided attention, selective attention, cognitive flexibility, and processing speed, and motor capacity from grip and ankle strength. We examined the association between IIV and IADL performance and conducted a parallel mediation analysis to determine whether executive control and motor capacity mediated this relationship. Higher IIV was associated with compromised IADL performance. Mediation analyses showed that the relationship between IIV and IADL performance was significantly mediated by executive control but not motor capacity while controlling for the covariate of age. Behavioral variability after stroke impacts everyday function primarily through a cognitive pathway. These findings highlight executive control as a key therapeutic target in stroke rehabilitation to mitigate the functional consequences of neural instability on instrumental activities of daily living.",
+          "subjects": []
+        },
+        {
+          "title": "Unravelling the UV-B response in two Withania species: biochemical and molecular insights into W. somnifera and W. coagulans",
+          "authors": [
+            "Anjali Tiwari",
+            "Saumya Tripathi",
+            "Lakee Sharma",
+            "Neha Pandey"
+          ],
+          "year": 2025,
+          "date": "2025-10-31",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "d7d4cb74b0793b1cd0ac0bb0d5b5100d2d57ccc5",
+          "url": "https://www.semanticscholar.org/paper/d7d4cb74b0793b1cd0ac0bb0d5b5100d2d57ccc5",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Application of hyperspectral remote sensing, GIS, GPS and artificial intelligence in floriculture and horticulture",
+          "authors": [
+            "Samikhya Jena",
+            "S. Patil",
+            "Anjali Tiwari",
+            "Amanvir Singh",
+            "Shashi Rawat",
+            "M. Anas",
+            "Vikash Kumar",
+            "R. Mondal",
+            "N. Pavani",
+            "S. Jena"
+          ],
+          "year": 2025,
+          "date": "2025-10-01",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "b5e51e10bc47893282e6ec4c80682419b2308b7f",
+          "url": "https://www.semanticscholar.org/paper/b5e51e10bc47893282e6ec4c80682419b2308b7f",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Silviculture",
+          "authors": [
+            "Prabal Kumar",
+            "Nikita Rai",
+            "S. Parveen",
+            "Anjali Tiwari",
+            "Vikas Kumar",
+            "Tanu Shree Lakra"
+          ],
+          "year": 2025,
+          "date": "2025-09-11",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "c0c1f9b0f2e9f74a8b60686f55019754abf7b325",
+          "url": "https://www.semanticscholar.org/paper/c0c1f9b0f2e9f74a8b60686f55019754abf7b325",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Change and Continuity of Coastal Mangroves in Greater Mumbai, India: Towards the Sustainable Governance of Blue-Green Infrastructure",
+          "authors": [
+            "Sujayita Bhattacharjee",
+            "Madhuri Sharma",
+            "Anjali Tiwari"
+          ],
+          "year": 2025,
+          "date": "2025-08-27",
+          "citations": 5,
+          "arxiv_id": null,
+          "paper_id": "18bd4aa11889f0d2b258d04e81d6de904c45e5c6",
+          "url": "https://www.semanticscholar.org/paper/18bd4aa11889f0d2b258d04e81d6de904c45e5c6",
+          "abstract": "In the coastal megacities of the Global South, where urbanization is steeply accelerating, it is a complex undertaking to navigate and govern for ecological sustainability while working to address mounting pressures to develop the physical and natural environment. In this study, we closely analyze the legality of coastal mangroves in Greater Mumbai through the lens of Blue-Green Infrastructure (BGI), sustainable governance, and environmental policy processes. While there is the constitutional and legislative protection of mangroves, they continue to disappear from the Greater Mumbai landscape, raising legitimate concerns about governance failures writ large. Using a mixed-method approach, we employ geospatial analysis of mangrove cover change from 1994 through to 2024, along with a thematic review of policy and institutional perspectives. The geospatial analysis indicated a −3.91% reduction in mangrove cover because of land-use developments, infrastructure encroachments, and the weak enforcement of existing regulations. The policy review identified limited regulatory coherence, institutional fragmentation, and low levels of community engagement. We advocate for the conservation of mangrove ecosystems in Mumbai, not just as an environmental resource, but also as vital urban infrastructure. We argue for the need to identify opportunities for reform, such as enhanced community contribution and participation, policy harmonization, and uniform incorporation of BGI principles into spatial planning and climate adaptation planning in Greater Mumbai.",
+          "subjects": []
+        },
+        {
+          "title": "Cognitive Impairments Impact Functional Mobility in Stroke Survivors",
+          "authors": [
+            "Anjali Tiwari",
+            "Stefan Delmas",
+            "Sharon N. Poisson",
+            "Brian K Kaiser",
+            "M. Diehl",
+            "Neha Lodha"
+          ],
+          "year": 2025,
+          "date": "2025-08-26",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "5a684ee734a80f7ea70152b9f00ea14eb8f1da4b",
+          "url": "https://www.semanticscholar.org/paper/5a684ee734a80f7ea70152b9f00ea14eb8f1da4b",
+          "abstract": "Background Functional mobility is essential for maintaining independence and relies on both motor and cognitive processes. Although the impact of motor impairments on functional mobility in stroke survivors has been extensively studied, the influence of post-stroke cognitive impairments has been largely overlooked. The aim of the current study is 2-fold. First, to determine the impact of post-stroke cognitive impairments on functional mobility across a broad spectrum of tasks. Second, to determine if cognitive impairment has a differential impact on various forms of mobility. Method Forty individuals with stroke (20 cognitively normal and 20 cognitively impaired) and 30 healthy older adults participated in the study. Participants performed cognitive, motor, and mobility assessments. Cognitive tests included global and domain-specific assessments on an extensive neuropsychological battery. Motor tests included the Modified Rankin Scale and strength assessments. Functional mobility included the assessment of balance, overground walking, and driving in a simulator. Results Findings indicated that stroke survivors with cognitive impairment demonstrated significant deteriorations in functional mobility across multiple domains, compared to both cognitively normal stroke survivors and healthy older adults. Cognitive impairment significantly interferes with functional mobility, with driving showing greatest deterioration compared to balance and walking performance. Notably, this impact is independent of the level of disability and motor strength. Conclusion Cognitive impairments in stroke survivors are associated with significant mobility disturbances, with the most pronounced deficits in driving performance. This study highlights the importance of including and prioritizing cognitive evaluation and intervention for enhancing functional mobility and independence in stroke survivors.",
+          "subjects": []
+        },
+        {
+          "title": "Predicting cognitive status in stroke survivors from driving performance",
+          "authors": [
+            "Stefan Delmas",
+            "Anjali Tiwari",
+            "Sharon N. Poisson",
+            "M. Diehl",
+            "Neha Lodha"
+          ],
+          "year": 2025,
+          "date": "2025-07-01",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "d51ace18405bc2acd6d35796835b81e13addf9e8",
+          "url": "https://www.semanticscholar.org/paper/d51ace18405bc2acd6d35796835b81e13addf9e8",
+          "abstract": "This study aimed to determine whether simulated driving performance can reliably predict cognitive impairment in stroke survivors.",
+          "subjects": []
+        },
+        {
+          "title": "Protest Paradox: Examining Disparity in Protests After Rapes in India",
+          "authors": [
+            "Anjali Tiwari"
+          ],
+          "year": 2025,
+          "date": "2025-06-17",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "3f73138fc6bc280e211b1d46114022926108a01b",
+          "url": "https://www.semanticscholar.org/paper/3f73138fc6bc280e211b1d46114022926108a01b",
+          "abstract": "This study investigates the disparity in public protest following rape cases by taking numerous factors into account such as societal attitude, intersectionality ,media’s influence. Through use of survey ,podcast and a detailed literature review research finds how media framing ,victim’s social identity, transparency interplay to shape public reaction. Preliminary finding indicates geographical location, intersectionality, media interplays to shape public opinions towards a particular rape incident which in turn leads to perpetuation of rape culture due to spontaneous not a perpetual efforts to tackle it.",
+          "subjects": []
+        }
+      ]
     ],
     [
       "Katsuki Fujisawa",
@@ -1603,455 +2066,9 @@
           "subjects": [
             "eess.SY"
           ]
-        },
-        {
-          "title": "Safe Unicycle Navigation Among Multiple Obstacles Under Bounded Disturbances: A Learning-Augmented CLF-CBF Approach (Extended Version)",
-          "authors": [
-            "Shubham Singh",
-            "Anjali Tiwari",
-            "Anand Singh",
-            "Katsuki Fujisawa"
-          ],
-          "year": 2026,
-          "date": "2026-10-13",
-          "citations": 0,
-          "arxiv_id": "2610.17916",
-          "paper_id": "b38e3940143e51c06af6d11a294ae2c812dabad5",
-          "url": "https://arxiv.org/abs/2610.17916",
-          "abstract": "This paper presents a robust control framework for safe navigation of a unicycle robot to a goal among multiple static obstacles under an unknown, time-varying disturbance. The controller solves a single real-time quadratic program (QP) that combines a goal-reaching term with one safety term per obstacle. The goal-reaching term is a cross-track control Lyapunov function built from body-frame tracking errors rather than a bearing angle, which keeps its Lie derivatives bounded everywhere, including the goal. Safety is encoded using robust control barrier functions, one per obstacle, each tightened by a closed-form, state-dependent disturbance bound. When stabilization and safety conflict, a slack variable relaxes only the convergence requirement, so that the safety constraints remain strictly enforced. Whenever the QP is feasible, the robust barrier constraints guarantee forward invariance of every obstacle's safe set under all admissible disturbances. Complementing this safety guarantee, a Lyapunov analysis yields an explicit ultimate bound on the distance to the goal. A learning-augmented variant replaces the fixed objective with a reinforcement-learning reference, which accelerates convergence when multiple constraints are simultaneously active. We further derive the obstacle separation below which the gap between two obstacles becomes too narrow to pass through under the robust constraints. For such gaps, a learned virtual goal for the Lyapunov function steers the robot around the obstacles without compromising safety. Simulations, a Monte Carlo study, and a comparison against a sampled-data robust baseline support the theoretical results.",
-          "subjects": []
-        },
-        {
-          "title": "Enforcing a Strict Safety Margin in LLM Text Generation via Barrier Lyapunov Control",
-          "authors": [
-            "Anand Singh",
-            "Shubham Singh",
-            "Anjali Tiwari",
-            "Katsuki Fujisawa"
-          ],
-          "year": 2026,
-          "date": "2026-10-13",
-          "citations": 0,
-          "arxiv_id": "2610.17929",
-          "paper_id": "8e939b99d71f831f84a05567ece8be8a6f2c43d1",
-          "url": "https://arxiv.org/abs/2610.17929",
-          "abstract": "Large language models are increasingly deployed without formal guarantees against toxic text generation. Existing control barrier function (CBF) based safety filters can keep the generation trajectory within a toxicity-free region, but do not enforce a positive distance from its boundary, allowing formally safe trajectories to approach the toxicity threshold arbitrarily closely and leaving little buffer against modelling errors or disturbances. We address this limitation with a Barrier Lyapunov Function (BLF) safety filter that enforces a prescribed clearance margin throughout generation while retaining the continuous-time transformer dynamics, including feedforward layers. The resulting safe input set is a half-space defined by a constraint affine in the control input, and is non-empty under certified surjectivity and classifier-nondegeneracy conditions. For margin-compatible initial conditions we prove that the clearance margin is never violated and that the prescribed clearance is restored exponentially, yielding an explicit clearance floor, and show that, as the margin vanishes, the admissible trajectories satisfy the exponential second-order CBF condition. We further derive an explicitly computable sufficient disturbance budget under which the clearance guarantee degrades gracefully. Simulations on a small transformer illustrate the resulting improvement in safety clearance.",
-          "subjects": []
         }
       ],
-      [
-        {
-          "title": "BRIDGE: Bilevel Retrieval-Credit-Aware Agentic Reinforcement Learning",
-          "authors": [
-            "Quan Xiao",
-            "Ming-Da Liu",
-            "Gao-Wen Liu",
-            "Katsuki Fujisawa",
-            "Tian-Yi Chen"
-          ],
-          "year": 2026,
-          "date": "2026-09-29",
-          "citations": 0,
-          "arxiv_id": "2609.36505",
-          "paper_id": "eafd8b4d9b3eccac260ad9d6ef5f046f65c80d87",
-          "url": "https://arxiv.org/abs/2609.36505",
-          "abstract": "Agentic reinforcement learning (ARL) with verifiable rewards improves the ability of large language models (LLMs) to tackle knowledge-intensive tasks by learning to interleave search and reasoning. However, most existing ARL methods optimize only LLM-generated tokens and treat retrieved evidence as environment observations. This creates an information-credit gap: failures caused by missing or misleading evidence are attributed to the LLM policy rather than to the retriever, which motivates training the LLM and the retriever jointly. In this paper, we show that retrieval and LLM policy learning are order-sensitive: adapting the retriever before optimizing the policy yields a larger reward gain than the reverse order. To preserve this hierarchy while allowing both components to co-adapt, we formulate retrieval-augmented agentic RL as a bilevel optimization problem. To solve it efficiently, we introduce BRIDGE, a memory-efficient first-order bilevel method motivated by a loss-landscape analysis of the RL and retrieval objectives. Across seven open-domain QA benchmarks, BRIDGE achieves the highest average accuracy with both 3B and 7B backbones, improving the multi-hop average over the strongest baseline by 9.6 and 3.4 EM points, respectively. It also achieves the best averaged answer accuracy and reasoning quality across medical QA benchmarks.",
-          "subjects": []
-        },
-        {
-          "title": "Vehicle scheduling in single-loop automated guided vehicle system via mixed-integer programming",
-          "authors": [
-            "Masahiko Sugimura",
-            "Hiroki Ishikura",
-            "Akihiro Yoshida",
-            "Keiichiro Yamamura",
-            "Hiroyuki Koshiro",
-            "Katsuki Fujisawa"
-          ],
-          "year": 2026,
-          "date": "2026-06-16",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "d9dd57cca88a0c3482b32c592b6170b93c62e9ac",
-          "url": "https://www.semanticscholar.org/paper/d9dd57cca88a0c3482b32c592b6170b93c62e9ac",
-          "abstract": "A single-loop automated guided vehicle (AGV) system, in which multiple vehicles run on a single closed loop, is widely used in smart factories for material transport. The advantages of the system include its cost-effectiveness, ease of installation, and expansion capabilities. However, scheduling vehicles in a single-loop system is challenging because of potential interference among vehicles. For example, when a vehicle is picking up or dropping off loads at a station, the following vehicles must wait until the station becomes free. This paper presents a novel mixed-integer programming (MIP) approach to optimize vehicle scheduling while considering such interference. Building upon the core concept of modeling cycles in a looped path as consecutive linear paths, we develop a MIP formulation that incorporates both an objective function minimizing the total completion time for a set of transportation jobs and the constraints addressing interference among vehicles. We validate our approach through experiments using real-world data from a smart factory of a major pharmaceutical company. The results demonstrate that our proposed method reduces the completion time for a set of jobs by 10% compared to a baseline method based on a nearest neighbor heuristic. This research contributes to the productivity and efficiency of smart factories by providing an effective solution for vehicle scheduling in single-loop AGV systems.",
-          "subjects": []
-        },
-        {
-          "title": "Interaction-Limited Safe Continuous-Time RL for Dynamical Medical Treatment",
-          "authors": [
-            "Xun Shen",
-            "Yue-Peng Wang",
-            "Akifumi Wachi",
-            "Yong Zhou",
-            "Richard Weiss",
-            "Yoshihiko Fujisawa",
-            "Ken Kawano",
-            "Mehrshad Sadria",
-            "Ying Chen",
-            "Xin Liu",
-            "Sebastien Gros",
-            "Xiao Hu",
-            "Kyoung-Sook Kim",
-            "Mengmou Li",
-            "Katsuki Fujisawa",
-            "Kenji Wakabayashi"
-          ],
-          "year": 2026,
-          "date": "2026-05-31",
-          "citations": 0,
-          "arxiv_id": "2606.01051",
-          "paper_id": "1079d55483da98d34b16df2a0cc28fe0795b4e64",
-          "url": "https://arxiv.org/abs/2606.01051",
-          "abstract": "Dynamic medical treatment requires deciding treatment intensity and intervention timing, while patient states evolve continuously and adverse events may occur between clinical interactions. Most existing treatment learning methods assume fixed schedules or enforce safety only at discrete decision points. We propose Interaction-Limited Safe Continuous-Time Reinforcement Learning, a framework that jointly optimizes treatment administration and clinical interaction timing under trajectory-level safety constraints. Our key idea is to reformulate the continuous time treatment problem as an option-based semi-Markov decision process, where each option specifies a continuous-time treatment policy and its duration. We develop a safety-tightening mechanism showing that suitably constructed constraints at interaction times guarantee safety over the full continuous-time trajectory with high probability. We further establish finite-sample guarantees for policy learning from logged treatment trajectories and introduce a practical data-driven conservative surrogate. Experiments show that the proposed adaptive interaction-timing mechanism improves both safety and treatment effectiveness over equidistant interaction schemes across different safe policy optimization methods.",
-          "subjects": []
-        },
-        {
-          "title": "MedGym:A Unified Continuous-Time Benchmark for Dynamic Medical Treatment Reinforcement Learning",
-          "authors": [
-            "Yue-Peng Wang",
-            "Ken Kawano",
-            "Yong Zhou",
-            "Yoshihiko Fujisawa",
-            "Richard Weiss",
-            "Akifumi Wachi",
-            "Katsuki Fujisawa",
-            "Ying Chen",
-            "Mehrshad Sadria",
-            "Xin Liu",
-            "Kyoung-Sook Kim",
-            "Xiao Hu",
-            "Sebastien Gros",
-            "Xun Shen"
-          ],
-          "year": 2026,
-          "date": "2026-05-31",
-          "citations": 0,
-          "arxiv_id": "2606.01028",
-          "paper_id": "1f6e6a38b552c1cc7cb2870904bfee96be0db9d5",
-          "url": "https://arxiv.org/abs/2606.01028",
-          "abstract": "Medical treatment recommendation poses several challenges to reinforcement learning (RL): patient physiology evolves in continuous time, measurements and interventions are performed at irregular intervals, and treatment effects vary substantially across individuals. Existing RL formulations and simulated environments, however, are based on discrete-time MDPs with fixed decision intervals. Thus, it remains difficult to evaluate whether RL methods can handle time-interval-dependent disease progression, personalized treatment response, and safety between consecutive measurement points. To address this gap, we introduce MedGym, a benchmark environment for dynamic treatment recommendation. MedGym models longitudinal patient evolution in a continuous-time framework and constructs a configurable medical RL benchmark from clinical data by using Physics-Informed Neural Networks. The resulting benchmark enables direct comparison between discrete-time and continuous-time methods under irregular treatment timing and patient-specific dynamics. Furthermore, MedGym supports evaluation from clinically important perspectives, such as personalization and trajectory-level safety. By providing a standardized and configurable benchmark for continuous-time dynamic treatment, MedGym enables more realistic and informative evaluation of medical RL methods.",
-          "subjects": []
-        },
-        {
-          "title": "Integrating learning-based and TSP solvers for the cylinder replacement problem",
-          "authors": [
-            "Akihiro Yoshida",
-            "Nozomi Hata",
-            "Keiichiro Yamamura",
-            "Hiroki Ishikura",
-            "Katsuki Fujisawa"
-          ],
-          "year": 2026,
-          "date": "2026-05-23",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "f78ed79b7ba9d04bf73d6dbb067b97046182cea9",
-          "url": "https://www.semanticscholar.org/paper/f78ed79b7ba9d04bf73d6dbb067b97046182cea9",
-          "abstract": "In the liquefied petroleum gas industry, service providers must regularly visit customers to replace gas cylinders. Efficiently scheduling these visits gives rise to the Cylinder Replacement Problem (CRP), a variant of the classical capacitated vehicle routing problem that involves additional complexity due to strict, customer-specific time windows determined by remaining gas levels. Recently, neural combinatorial solvers have been actively studied as a means of quickly inferring heuristic solutions. However, existing solvers are unsuitable for directly solving CRPs because (i) they cannot adequately handle strict customer-specific delivery constraints, and (ii) obtaining optimal solutions for training is computationally expensive. To address these issues, we propose a hybrid optimization framework that combines a neural combinatorial solver with traveling salesperson problem (TSP) solvers. We observe that the delivery constraints in the bilevel approach can be reformulated as an optimal transport problem. For end-to-end training, we first train a surrogate network to estimate the optimal TSP cost and then freeze its parameters before training the cost-estimation network. The remaining route optimization consists of a collection of small traveling salesperson problems, which can be solved efficiently. Experimental results show that our framework significantly outperforms the Gurobi Optimizer in both feasibility and computational efficiency. In particular, it achieves more than a 2×\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\times $$\\end{document} speedup and improves feasibility up to 31%. Moreover, solutions from our framework can serve as high-quality initializations for traditional solvers, further accelerating convergence-especially valuable in real-world scenarios that require flexible and rapid rescheduling due to fluctuating gas consumption.",
-          "subjects": []
-        },
-        {
-          "title": "Signs Beat Floats: Low-Rank Double-Binary Adaptation for On-Device Fine-Tuning",
-          "authors": [
-            "Yoshihiko Fujisawa",
-            "Yuma Ichikawa",
-            "Yudai Fujimoto",
-            "Akira Sakai",
-            "Katsuki Fujisawa"
-          ],
-          "year": 2026,
-          "date": "2026-05-22",
-          "citations": 0,
-          "arxiv_id": "2605.24058",
-          "paper_id": "a494e7b015bf952c5fa9cea24b5896512a3d3123",
-          "url": "https://arxiv.org/abs/2605.24058",
-          "abstract": "On-device adaptation of large language models commonly keeps a quantized base model frozen while training and deploying a small, task-specific LoRA adapter. In the unmerged adapter-mode setting, however, the adapter is more than a compact storage module; it introduces an additional dense floating-point branch, maintains a trainable state for local updates, and acts as a unit of communication and hot-swapping.We introduce LoRDBA, a LoRA-compatible adapter that replaces both low-rank factors with binary sign carriers while representing magnitudes through lightweight, channel-wise scales, converting the dense adapter branch into two sign-accumulation matrix multiplications interleaved with channel-wise scaling. A finite-sample analysis shows that reconstruction quality is governed by the residual-to-magnitude ratio of the original LoRA factors. In adapter-mode experiments, LoRDBA outperforms low-bit baselines at matched model sizes while matching fp16 LoRA quality in selected regimes. The unmerged adapter incurs at most 8% prefill latency overhead at matched rank r=16 despite an over 10x reduction in adapter footprint, with moderate training memory overhead of approximately 1.6x that of fp16 LoRA.",
-          "subjects": []
-        },
-        {
-          "title": "OneComp: One-Line Revolution for Generative AI Model Compression",
-          "authors": [
-            "Yuma Ichikawa",
-            "Keiji Kimura",
-            "Akihiro Yoshida",
-            "Yudai Fujimoto",
-            "Hiroki Tokura",
-            "Yamato Arai",
-            "Yoshiyuki Ishii",
-            "Yusei Kawakami",
-            "Genki Shikada",
-            "Achille Jacquemond",
-            "Yoshihiko Fujisawa",
-            "Katsuki Fujisawa",
-            "Takumi Honda",
-            "Akira Sakai"
-          ],
-          "year": 2026,
-          "date": "2026-03-30",
-          "citations": 3,
-          "arxiv_id": "2603.28845",
-          "paper_id": "79af49a84b915c4adc7f830b4a3f42dc494b8141",
-          "url": "https://arxiv.org/abs/2603.28845",
-          "abstract": "Deploying foundation models is increasingly constrained by memory footprint, latency, and hardware costs. Post-training compression can mitigate these bottlenecks by reducing the precision of model parameters without significantly degrading performance; however, its practical implementation remains challenging as practitioners navigate a fragmented landscape of quantization algorithms, precision budgets, data-driven calibration strategies, and hardware-dependent execution regimes. We present OneComp, an open-source compression framework that transforms this expert workflow into a reproducible, resource-adaptive pipeline. Given a model identifier and available hardware, OneComp automatically inspects the model, plans mixed-precision assignments, and executes progressive quantization stages, ranging from layer-wise compression to block-wise refinement and global refinement. A key architectural choice is treating the first quantized checkpoint as a deployable pivot, ensuring that each subsequent stage improves the same model and that quality increases as more compute is invested. By converting state-of-the-art compression research into an extensible, open-source, hardware-aware pipeline, OneComp bridges the gap between algorithmic innovation and production-grade model deployment.",
-          "subjects": []
-        },
-        {
-          "title": "Norm Anchors Make Model Edits Last",
-          "authors": [
-            "Ming-Dao Liu",
-            "Zhen Zhu",
-            "Z. Miao",
-            "Katsuki Fujisawa"
-          ],
-          "year": 2026,
-          "date": "2026-01-30",
-          "citations": 0,
-          "arxiv_id": "2602.02543",
-          "paper_id": "48659644ed393013ac13b57769fa48a0fe299bba",
-          "url": "https://arxiv.org/abs/2602.02543",
-          "abstract": "Sequential Locate-and-Edit (L&E) model editing can fail abruptly after many edits. We identify and formalize this failure as a positive norm-feedback loop, in which solved value vectors and edited MLP weights progressively amplify each other, degrading edit quality and eventually collapsing model capabilities. Our analysis shows that this feedback can yield approximately exponential norm growth under standard L&E dynamics, and can remain unresolved by existing increment-level regularizers or update clamps. We propose Norm-Anchor Scaling (NAS), a plug-in stabilizer that breaks this loop by rescaling each solved value vector to an original-model reference norm. Across multiple LLM backbones, datasets, and L&E editors, NAS extends the usable editing horizon by more than 4x and improves long-run editing performance by 72.2% on average, while preserving single-edit efficacy, with only a one-line modification and negligible computational overhead.",
-          "subjects": []
-        },
-        {
-          "title": "QUBO-Based Subset Selection for Efficient Fine-Tuning of Vision-Language Models",
-          "authors": [
-            "Akihiro Yoshida",
-            "Keiichiro Yamamura",
-            "Hiroki Ishikura",
-            "S. Hirai",
-            "Kenta Kawano",
-            "Yoshihiko Fujisawa",
-            "Katsuki Fujisawa"
-          ],
-          "year": 2026,
-          "date": "2026",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "47ad4551d60fa1bef20fd4004e76c04e13de8b6d",
-          "url": "https://www.semanticscholar.org/paper/47ad4551d60fa1bef20fd4004e76c04e13de8b6d",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "More Than Bits: Multi-Envelope Double Binary Factorization for Extreme Quantization",
-          "authors": [
-            "Yuma Ichikawa",
-            "Yoshihiko Fujisawa",
-            "Yudai Fujimoto",
-            "Akira Sakai",
-            "Katsuki Fujisawa"
-          ],
-          "year": 2025,
-          "date": "2025-12-31",
-          "citations": 0,
-          "arxiv_id": "2512.24545",
-          "paper_id": "c7543e861b3d2af705253eec2ce8ba2ca479e1e8",
-          "url": "https://arxiv.org/abs/2512.24545",
-          "abstract": "For extreme low-bit quantization of large language models (LLMs), Double Binary Factorization (DBF) is attractive as it enables efficient inference without sacrificing accuracy. However, the scaling parameters of DBF are too restrictive; after factoring out signs, all rank components share the same magnitude profile, resulting in performance saturation. We propose Multi-envelope DBF (MDBF), which retains a shared pair of 1-bit sign bases but replaces the single envelope with a rank-$l$ envelope. By sharing sign matrices among envelope components, MDBF effectively maintains a binary carrier and utilizes the limited memory budget for magnitude expressiveness. We also introduce a closed-form initialization and an alternating refinement method to optimize MDBF. Across the LLaMA and Qwen families, MDBF enhances perplexity and zero-shot accuracy over previous binary formats at matched bits per weight while preserving the same deployment-friendly inference primitive.",
-          "subjects": []
-        },
-        {
-          "title": "Automated Tabu Tenure Tuning by Trajectory Metrics for Quadratic Unconstrained Binary Optimization",
-          "authors": [
-            "Masahiko Sugimura",
-            "Keiichiro Yamamura",
-            "Hiroki Ishikura",
-            "Akihiro Yoshida",
-            "Ken Kawano",
-            "Matthieu Parizy",
-            "Katsuki Fujisawa"
-          ],
-          "year": 2025,
-          "date": "2025-12-27",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "75b147ae4cc2213d6659dc9e14567283f5524cd6",
-          "url": "https://www.semanticscholar.org/paper/75b147ae4cc2213d6659dc9e14567283f5524cd6",
-          "abstract": "Tabu Search is a promising approach for solving quadratic unconstrained binary optimization (QUBO) problems. A key parameter in Tabu Search is tabu tenure, which governs the balance between intensification and diversification in the search process. In this work, we aim to develop a systematic method for determining the effective tabu tenure tailored to each QUBO instance, thereby enhancing overall solver performance. To achieve this, we focus on the statistics obtained during the search, which we term “trajectory metrics.” We consolidate existing trajectory metrics from the literature with newly proposed ones and analyze their responses to variations in tabu tenure using three criteria: suitability for tuning, noise robustness, and classification potential. Based on this analysis, we introduce a method for determining the effective tabu tenure and evaluate its performance across several problem instances. Experimental results demonstrate that the proposed approach improves solving performance compared to a well-known standard Tabu Search-based method.",
-          "subjects": []
-        },
-        {
-          "title": "Superpixel Attack - Enhancing Black-Box Adversarial Attack with Image-Driven Division Areas",
-          "authors": [
-            "Issa Oe",
-            "Keiichiro Yamamura",
-            "Hiroki Ishikura",
-            "Ryo Hamahira",
-            "Katsuki Fujisawa"
-          ],
-          "year": 2025,
-          "date": "2025-11-29",
-          "citations": 0,
-          "arxiv_id": "2512.02062",
-          "paper_id": "cadca14ae168b41f9a7f38953371265b6b3433d9",
-          "url": "https://arxiv.org/abs/2512.02062",
-          "abstract": "Deep learning models are used in safety-critical tasks such as automated driving and face recognition. However, small perturbations in the model input can significantly change the predictions. Adversarial attacks are used to identify small perturbations that can lead to misclassifications. More powerful black-box adversarial attacks are required to develop more effective defenses. A promising approach to black-box adversarial attacks is to repeat the process of extracting a specific image area and changing the perturbations added to it. Existing attacks adopt simple rectangles as the areas where perturbations are changed in a single iteration. We propose applying superpixels instead, which achieve a good balance between color variance and compactness. We also propose a new search method, versatile search, and a novel attack method, Superpixel Attack, which applies superpixels and performs versatile search. Superpixel Attack improves attack success rates by an average of 2.10% compared with existing attacks. Most models used in this study are robust against adversarial attacks, and this improvement is significant for black-box adversarial attacks. The code is avilable at https://github.com/oe1307/SuperpixelAttack.git.",
-          "subjects": []
-        },
-        {
-          "title": "Optimization of transporting time through load shuffling in automated storage and retrieval system and evaluation via demonstration experiments",
-          "authors": [
-            "Hiroki Ishikura",
-            "Makoto Tsukamoto",
-            "Shingo Egi",
-            "Keiichiro Yamamura",
-            "Yoshihiko Fujisawa",
-            "Akihiro Yoshida",
-            "Hiroyuki Koshiro",
-            "Katsuki Fujisawa"
-          ],
-          "year": 2025,
-          "date": "2025-05-27",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "1fd2481002265f93cb4037f26926e3fbe44659a1",
-          "url": "https://www.semanticscholar.org/paper/1fd2481002265f93cb4037f26926e3fbe44659a1",
-          "abstract": "An automated storage and retrieval system (AS/RS) is a system that automates storing and retrieving raw materials and products in factories and distribution centers. The storage/retrieval machines (S/R machines) can automatically transport loads without human labor. In this paper, we focus on “load shuffling,” which is changing the storage location of the load once it is stored in the AS/RS. In the proposed method, load shuffling is formulated to minimize the transporting time by S/R machines as a relocation problem of loads in the AS/RS, using a 0–1 integer programming problem. By solving this problem and reallocating the loads, we aim to reduce the time spent transporting loads during the production process in factory operations. Two types of numerical experiments were conducted: one using simulation and the other using an actual factory. Simulation experiments confirmed that using load shuffling reduced the time transporting loads. The demonstration experiment using an actual factory confirmed that load shuffling reduces the time required for the machine to transport loads despite the restrictions imposed by actual production activities.",
-          "subjects": []
-        },
-        {
-          "title": "Enhancing Quantum-ready QUBO-based Suppression for Object Detection with Appearance and Confidence Features",
-          "authors": [
-            "Keiichiro Yamamura",
-            "Toru Mitsutake",
-            "Hiroki Ishikura",
-            "Daiki Kusuhara",
-            "Akihiro Yoshida",
-            "Katsuki Fujisawa"
-          ],
-          "year": 2025,
-          "date": "2025-02-05",
-          "citations": 0,
-          "arxiv_id": "2502.02895",
-          "paper_id": "6e8bc1db4bfead2033fc84666dbe7a46fe8cc8f7",
-          "url": "https://arxiv.org/abs/2502.02895",
-          "abstract": "Quadratic Unconstrained Binary Optimization (QUBO)-based suppression in object detection is known to have superiority to conventional Non-Maximum Suppression (NMS), especially for crowded scenes where NMS possibly suppresses the (partially-) occluded true positives with low confidence scores. Whereas existing QUBO formulations are less likely to miss occluded objects than NMS, there is room for improvement because existing QUBO formulations naively consider confidence scores and pairwise scores based on spatial overlap between predictions. This study proposes new QUBO formulations that aim to distinguish whether the overlap between predictions is due to the occlusion of objects or due to redundancy in prediction, i.e., multiple predictions for a single object. The proposed QUBO formulation integrates two features into the pairwise score of the existing QUBO formulation: i) the appearance feature calculated by the image similarity metric and ii) the product of confidence scores. These features are derived from the hypothesis that redundant predictions share a similar appearance feature and (partially-) occluded objects have low confidence scores, respectively. The proposed methods demonstrate significant advancement over state-of-the-art QUBO-based suppression without a notable increase in runtime, achieving up to 4.54 points improvement in mAP and 9.89 points gain in mAR.",
-          "subjects": []
-        },
-        {
-          "title": "Doubling Graph Traversal Efficiency to 198 TeraTEPS on the Supercomputer Fugaku",
-          "authors": [
-            "Junya Arai",
-            "M. Nakao",
-            "Yuto Inoue",
-            "Kanto Teranishi",
-            "Koji Ueno",
-            "Keiichiro Yamamura",
-            "Mitsuhisa Sato",
-            "Katsuki Fujisawa"
-          ],
-          "year": 2024,
-          "date": "2024-11-17",
-          "citations": 7,
-          "arxiv_id": null,
-          "paper_id": "bd4e2e38d5a0f7a68452a93937d0bb1a76f857e9",
-          "url": "https://www.semanticscholar.org/paper/bd4e2e38d5a0f7a68452a93937d0bb1a76f857e9",
-          "abstract": "Breadth-first search (BFS) is a fundamental building block of various high-performance computing applications beyond graph analysis and also known as a benchmark problem in the Graph 500 list. The increasing volume of global data demands efficient distributed BFS, which, however, is hindered by the high communication costs of exchanging vertex data between compute nodes. To address this challenge, this paper introduces four techniques: (i) forest pruning, which reduces the number of vertices by eliminating those unnecessary for the search; (ii) group reordering and (iii) multilevel bitmap compression, which decrease the memory footprint of graph data, thereby enabling fewer nodes to manage larger graphs; and (iv) adaptive parameter tuning, which quickly optimizes the hyperparameters of the BFS algorithm. In the evaluation using 152,064 nodes of the supercomputer Fugaku, our implementation achieved 198 tera-traversed edges per second, doubling the performance reported in the latest Graph500-related study on Fugaku.",
-          "subjects": []
-        },
-        {
-          "title": "Comprehensive and practical optimal delivery planning system for replacing liquefied petroleum gas cylinders",
-          "authors": [
-            "Akihiro Yoshida",
-            "Haruki Sato",
-            "Shiori Uchiumi",
-            "Nariaki Tateiwa",
-            "Daisuke Kataoka",
-            "Akira Tanaka",
-            "Nozomi Hata",
-            "Yousuke Yatsushiro",
-            "Ayano Ide",
-            "Hiroki Ishikura",
-            "Shingo Egi",
-            "Miyu Fuji",
-            "Hiroki Kai",
-            "Katsuki Fujisawa"
-          ],
-          "year": 2024,
-          "date": "2024-09-03",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "64ab419808b7586071ca58f03ec1ceee12628e74",
-          "url": "https://www.semanticscholar.org/paper/64ab419808b7586071ca58f03ec1ceee12628e74",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Enhancing Output Diversity Improves Conjugate Gradient-based Adversarial Attacks",
-          "authors": [
-            "Keiichiro Yamamura",
-            "Issa Oe",
-            "Hiroki Ishikura",
-            "Katsuki Fujisawa"
-          ],
-          "year": 2024,
-          "date": "2024-08-07",
-          "citations": 0,
-          "arxiv_id": "2408.03972",
-          "paper_id": "a8fcb7e9ebc6782b5f230cd3dc613298c62f899d",
-          "url": "https://arxiv.org/abs/2408.03972",
-          "abstract": "Deep neural networks are vulnerable to adversarial examples, and adversarial attacks that generate adversarial examples have been studied in this context. Existing studies imply that increasing the diversity of model outputs contributes to improving the attack performance. This study focuses on the Auto Conjugate Gradient (ACG) attack, which is inspired by the conjugate gradient method and has a high diversification performance. We hypothesized that increasing the distance between two consecutive search points would enhance the output diversity. To test our hypothesis, we propose Rescaling-ACG (ReACG), which automatically modifies the two components that significantly affect the distance between two consecutive search points, including the search direction and step size. ReACG showed higher attack performance than that of ACG, and is particularly effective for ImageNet models with several classification classes. Experimental results show that the distance between two consecutive search points enhances the output diversity and may help develop new potent attacks. The code is available at \\url{https://github.com/yamamura-k/ReACG}",
-          "subjects": []
-        },
-        {
-          "title": "Appropriate Balance of Diversification and Intensification Improves Performance and Efficiency of Adversarial Attacks",
-          "authors": [
-            "Keiichiro Yamamura",
-            "Issa Oe",
-            "Nozomi Hata",
-            "Hiroki Ishikura",
-            "Katsuki Fujisawa"
-          ],
-          "year": 2024,
-          "date": "2024",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "cf4cbc4b27d69e2955187fd2a753cc17abbba476",
-          "url": "https://www.semanticscholar.org/paper/cf4cbc4b27d69e2955187fd2a753cc17abbba476",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Optimization of film-type optical fiber wiring design using mixed-integer programming problem",
-          "authors": [
-            "Hiroki Ishikura",
-            "Takashi Wakamatsu",
-            "Nozomi Hata",
-            "Katsuki Fujisawa"
-          ],
-          "year": 2023,
-          "date": "2023-12-29",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "b43888546193028f57c40a6922de7236f65f74e4",
-          "url": "https://www.semanticscholar.org/paper/b43888546193028f57c40a6922de7236f65f74e4",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Scheduling system for automated storage and retrieval system with multiple machines using a time-expanded network",
-          "authors": [
-            "Hiroki Ishikura",
-            "Nariaki Tateiwa",
-            "Shingo Egi",
-            "Issa Oe",
-            "Nozomi Hata",
-            "Toru Mitsutake",
-            "Keiichiro Yamamura",
-            "Miyu Fujii",
-            "Katsuki Fujisawa"
-          ],
-          "year": 2023,
-          "date": "2023-10-12",
-          "citations": 5,
-          "arxiv_id": null,
-          "paper_id": "25b99aac347a263ac4c219baea5b207ebf0a400b",
-          "url": "https://www.semanticscholar.org/paper/25b99aac347a263ac4c219baea5b207ebf0a400b",
-          "abstract": "",
-          "subjects": []
-        }
-      ]
+      []
     ],
     [
       "Felipe Arenas-Uribe",
@@ -2175,8 +2192,212 @@
       []
     ],
     [
+      "Oswin So",
+      [
+        {
+          "title": "GCBF+: A Neural Graph Control Barrier Function Framework for Distributed Safe Multiagent Control",
+          "authors": [
+            "Song-Yuan Zhang",
+            "Oswin So",
+            "Kunal Garg",
+            "Chuchu Fan"
+          ],
+          "year": 2024,
+          "date": "2024-01-25",
+          "citations": 102,
+          "arxiv_id": "2401.14554",
+          "paper_id": "8f4857384e0573e45e74154704fc89468ab17988",
+          "url": "https://arxiv.org/abs/2401.14554",
+          "abstract": "Distributed, scalable, and safe control of large-scale multiagent systems is a challenging problem. In this article, we design a distributed framework for safe multiagent control in large-scale environments with obstacles, where a large number of agents are required to maintain safety using only local information and reach their goal locations. We introduce a new class of certificates, termed graph control barrier function (GCBF), which are based on the well-established control barrier function theory for safety guarantees and utilize a graph structure for scalable and generalizable distributed control of MAS. We develop a novel theoretical framework to prove the safety of an arbitrary-sized MAS with a single GCBF. We propose a new training framework GCBF+ that uses graph neural networks to parameterize a candidate GCBF and a distributed control policy. The proposed framework is distributed and is capable of taking point clouds from LiDAR, instead of actual state information, for real-world robotic applications. We illustrate the efficacy of the proposed method through various hardware experiments on a swarm of drones with objectives ranging from exchanging positions to docking on a moving target without collision. In addition, we perform extensive numerical experiments, where the number and density of agents, as well as the number of obstacles, increase. Empirical results show that in complex environments with agents with nonlinear dynamics (e.g., Crazyflie drones), GCBF+ outperforms the hand-crafted CBF-based method with the best performance by up to 20% for relatively small-scale MAS with up to 256 agents, and leading reinforcement learning (RL) methods by up to 40% for MAS with 1024 agents. Furthermore, the proposed method does not compromise on the performance, in terms of goal reaching, for achieving high safety rates, which is a common tradeoff in RL-based methods. Project website: https://mit-realm.github.io/gcbfplus/",
+          "subjects": [
+            "cs.RO",
+            "math.OC"
+          ]
+        },
+        {
+          "title": "How to Train Your Neural Control Barrier Function: Learning Safety Filters for Complex Input-Constrained Systems",
+          "authors": [
+            "Oswin So",
+            "Zachary Serlin",
+            "Makai Mann",
+            "Jake Gonzales",
+            "Kwesi J. Rutledge",
+            "Nicholas Roy",
+            "Chu-Chu Fan"
+          ],
+          "year": 2023,
+          "date": "2023-10-24",
+          "citations": 110,
+          "arxiv_id": "2310.15478",
+          "paper_id": "f35f6f542da9a3d6da7fe69cbcf9c2399607c16a",
+          "url": "https://arxiv.org/abs/2310.15478",
+          "abstract": "Control barrier functions (CBFs) have become popular as a safety filter to guarantee the safety of nonlinear dynamical systems for arbitrary inputs. However, it is difficult to construct functions that satisfy the CBF constraints for high relative degree systems with input constraints. To address these challenges, recent work has explored learning CBFs using neural networks via neural CBFs (NCBFs). However, such methods face difficulties when scaling to higher dimensional systems under input constraints. In this work, we first identify challenges that NCBFs face during training. Next, to address these challenges, we propose policy neural CBFs (PNCBFs), a method of constructing CBFs by learning the value function of a nominal policy, and show that the value function of the maximum-over-time cost is a CBF. We demonstrate the effectiveness of our method in simulation on a variety of systems ranging from toy linear systems to a jet aircraft with a 16-dimensional state space. Finally, we validate our approach on a two-agent quadcopter system on hardware under tight input constraints.",
+          "subjects": [
+            "math.OC",
+            "cs.RO"
+          ]
+        }
+      ],
+      []
+    ],
+    [
       "Xiangru Xu",
       [
+        {
+          "title": "Proxy Control Barrier Functions: Integrating Barrier-Based and Lyapunov-Based Safety-Critical Control Design",
+          "authors": [
+            "Yujie Wang",
+            "Xiangru Xu"
+          ],
+          "year": 2025,
+          "date": "2025-01-07",
+          "citations": 0,
+          "arxiv_id": "2501.03552",
+          "paper_id": "00565225da8ca76fb4fb8a47ee8b4fcba890bc2a",
+          "url": "https://arxiv.org/abs/2501.03552",
+          "abstract": "This work introduces a novel Proxy Control Barrier Function (PCBF) scheme that integrates barrier-based and Lyapunov-based safety-critical control strategies for strict-feedback systems with potentially unknown dynamics. The proposed method employs a modular design procedure, decomposing the original system into a proxy subsystem and a virtual tracking subsystem that are controlled by the control barrier function (CBF)-based and Lyapunov-based controllers, respectively. By integrating these separately designed controllers, the overall system's safety is ensured. Moreover, a new filter-based disturbance observer is utilized to design a PCBF-based safe controller for strict-feedback systems subject to mismatched disturbances. This approach broadens the class of systems to which CBF-based methods can be applied and significantly simplifies CBF construction by requiring only the model of the proxy subsystem. The effectiveness of the proposed method is demonstrated through numerical simulations.",
+          "subjects": []
+        },
+        {
+          "title": "Immersion and Invariance-Based Disturbance Observer and Its Application to Safe Control",
+          "authors": [
+            "Yujie Wang",
+            "Xiangru Xu"
+          ],
+          "year": 2023,
+          "date": "2023-09-13",
+          "citations": 0,
+          "arxiv_id": "2309.06718",
+          "paper_id": "8e921344bc56bf249933c367d32cf417e94bae90",
+          "url": "https://arxiv.org/abs/2309.06718",
+          "abstract": "When the disturbance input matrix is nonlinear, existing disturbance observer design methods rely on the solvability of a partial differential equation or the existence of an output function with a uniformly well-defined disturbance relative degree, which can pose significant limitations. This note introduces a systematic approach for designing an immersion and invariance-based disturbance observer (IIDOB) that circumvents these strong assumptions. The proposed IIDOB ensures the disturbance estimation error is globally uniformly ultimately bounded by approximately solving a partial differential equation while compensating for the approximation error. Furthermore, by integrating IIDOB into the framework of control barrier functions, a filter-based safe control design method for control-affine systems with disturbances is established, where the filter is used to generate an alternative disturbance estimation signal with a known derivative. Sufficient conditions are established to guarantee the safety of the disturbed systems. Simulation results demonstrate the effectiveness of the proposed method.",
+          "subjects": []
+        },
+        {
+          "title": "Safe Control of Euler-Lagrange Systems with Limited Model Information",
+          "authors": [
+            "Yujie Wang",
+            "Xiangru Xu"
+          ],
+          "year": 2023,
+          "date": "2023-09-09",
+          "citations": 0,
+          "arxiv_id": "2309.04839",
+          "paper_id": "d16eb142c62670a02d2088e8f3e8a7a13a174cbd",
+          "url": "https://arxiv.org/abs/2309.04839",
+          "abstract": "This work presents a new safe control framework for Euler-Lagrange (EL) systems with limited model information, external disturbances, and measurement uncertainties. The EL system is decomposed into two subsystems called the proxy subsystem and the virtual tracking subsystem. An adaptive safe controller based on barrier Lyapunov functions is designed for the virtual tracking subsystem to ensure the boundedness of the safe velocity tracking error, and a safe controller based on control barrier functions is designed for the proxy subsystem to ensure controlled invariance of the safe set defined either in the joint space or task space. Theorems that guarantee the safety of the proposed controllers are provided. In contrast to existing safe control strategies for EL systems, the proposed method requires much less model information and can ensure safety rather than input-to-state safety. Simulation results are provided to illustrate the effectiveness of the proposed method.",
+          "subjects": []
+        },
+        {
+          "title": "Adaptive Safety-Critical Control for a Class of Nonlinear Systems with Parametric Uncertainties: A Control Barrier Function Approach",
+          "authors": [
+            "Yujie Wang",
+            "Xiangru Xu"
+          ],
+          "year": 2023,
+          "date": "2023-02-16",
+          "citations": 20,
+          "arxiv_id": "2302.08601",
+          "paper_id": "7153c9b0bda6374643abf5ff77261ea8fa9121b0",
+          "url": "https://arxiv.org/abs/2302.08601",
+          "abstract": "This paper presents a novel approach for the safe control design of systems with parametric uncertainties in both drift terms and control-input matrices. The method combines control barrier functions and adaptive laws to generate a safe controller through a nonlinear program with an explicitly given closed-form solution. The proposed approach verifies the non-emptiness of the admissible control set independently of online parameter estimations, which can ensure the safe controller is singularity-free. A data-driven algorithm is also developed to improve the performance of the proposed controller by tightening the bounds of the unknown parameters. The effectiveness of the control scheme is demonstrated through numerical simulations.",
+          "subjects": []
+        },
+        {
+          "title": "Disturbance Observer-based Robust Control Barrier Functions",
+          "authors": [
+            "Yujie Wang",
+            "Xiangru Xu"
+          ],
+          "year": 2022,
+          "date": "2022-03-24",
+          "citations": 0,
+          "arxiv_id": "2203.12855",
+          "paper_id": "6ff84f296bf045e09bf57c93798705674cf22bcc",
+          "url": "https://arxiv.org/abs/2203.12855",
+          "abstract": "This work presents a safe control design approach that integrates the disturbance observer (DOB) and the control barrier function (CBF) for systems with external disturbances. Different from existing robust CBF results that consider the \"worst case\" of disturbances, this work utilizes a DOB to estimate and compensate for the disturbances. DOB-CBF-based controllers are constructed with provably safe guarantees by solving convex quadratic programs online, to achieve a better tradeoff between safety and performance. Two types of systems are considered individually depending on the magnitude of the input and disturbance relative degrees. The effectiveness of the proposed methods is illustrated via numerical simulations.",
+          "subjects": []
+        },
+        {
+          "title": "Flatness-Based Quadcopter Trajectory Planning and Tracking With Continuous-Time Safety Guarantees",
+          "authors": [
+            "Victor Freire",
+            "Xiangru Xu"
+          ],
+          "year": 2021,
+          "date": "2021-11-01",
+          "citations": 0,
+          "arxiv_id": "2111.00951",
+          "paper_id": "0802da56c5742f11c357b26090bc8697a08fe8f9",
+          "url": "https://arxiv.org/abs/2111.00951",
+          "abstract": "This work proposes a convex optimization-based framework for the trajectory planning and tracking of quadcopters that ensures continuous-time safety guarantees. Using the convexity property of B-spline curves and the differential flatness property of quadcopters, a second-order cone program is formulated to generate an optimal nominal trajectory that respects state and input constraints, including position, linear velocity, angle, angular velocity, thrust, waypoints, and obstacle avoidance constraints, rigorously in the continuous-time sense. To ensure safe trajectory tracking, a convex quadratic program is proposed based on control barrier functions, which guarantees that the actual trajectory of the quadcopter remains within a prescribed safe tube of the nominal trajectory in continuous time. Furthermore, conditions that ensure the safe tracking controller respects thrust, roll, and pitch constraints are also presented. Both the planning and control approaches are suitable for online implementation, and the effectiveness of the proposed framework is demonstrated through simulations and experiments with a Crazyflie2.1 nano quadcopter.",
+          "subjects": []
+        },
+        {
+          "title": "Observer-based Control Barrier Functions for Safety Critical Systems",
+          "authors": [
+            "Yujie Wang",
+            "Xiangru Xu"
+          ],
+          "year": 2021,
+          "date": "2021-10-03",
+          "citations": 0,
+          "arxiv_id": "2110.00923",
+          "paper_id": "905943619de5341d9f58ec1507d09f0887af31fa",
+          "url": "https://arxiv.org/abs/2110.00923",
+          "abstract": "This paper considers the safety-critical control design problem with output measurements. An observer-based safety control framework that integrates the estimation error quantified observer and the control barrier function (CBF) approach is proposed. The function approximation technique is employed to approximate the uncertainties introduced by the state estimation error, and an adaptive CBF approach is proposed to design the safe controller which is obtained by solving a convex quadratic program (QP). Theoretical results for CBFs with a relative degree 1 and a higher relative degree are given individually. The effectiveness of the proposed control approach is demonstrated by two numerical examples.",
+          "subjects": []
+        },
+        {
+          "title": "Control Barrier Function Meets Interval Analysis: Safety-Critical Control with Measurement and Actuation Uncertainties",
+          "authors": [
+            "Yu-Hao Zhang",
+            "Sequoyah Walters",
+            "Xiangru Xu"
+          ],
+          "year": 2021,
+          "date": "2021-10-03",
+          "citations": 22,
+          "arxiv_id": "2110.00915",
+          "paper_id": "8dd446d9a4cf67b974d361ee76e2c5b92143bb46",
+          "url": "https://arxiv.org/abs/2110.00915",
+          "abstract": "This paper presents a framework for designing provably safe feedback controllers for sampled-data control affine systems with measurement and actuation uncertainties. Based on the interval Taylor model of nonlinear functions, a sampled-data control barrier function (CBF) condition is proposed which ensures the forward invariance of a safe set for sampled-data systems. ℝeachable set overapproximation and Lasserre’s hierarchy of polynomial optimization are used for finding a margin term in the sampled-data CBF condition. Sufficient conditions for a safe controller in the presence of measurement and actuation uncertainties are proposed. The effectiveness of the proposed method is illustrated by a numerical example and an experimental example that implements the proposed controller on the Crazyflie quadcopter in real-time.",
+          "subjects": []
+        },
+        {
+          "title": "Robustness of Control Barrier Functions for Safety Critical Control",
+          "authors": [
+            "Xiangru Xu",
+            "P. Tabuada",
+            "J. Grizzle",
+            "A. Ames"
+          ],
+          "year": 2016,
+          "date": "2016-12-05",
+          "citations": 0,
+          "arxiv_id": "1612.01554",
+          "paper_id": "3098826a91ba89250332fa1de1881207e619d6ea",
+          "url": "https://arxiv.org/abs/1612.01554",
+          "abstract": "Abstract Barrier functions (also called certificates) have been an important tool for the verification of hybrid systems, and have also played important roles in optimization and multi-objective control. The extension of a barrier function to a controlled system results in a control barrier function. This can be thought of as being analogous to how Sontag extended Lyapunov functions to control Lypaunov functions in order to enable controller synthesis for stabilization tasks. A control barrier function enables controller synthesis for safety requirements specified by forward invariance of a set using a Lyapunov-like condition. This paper develops several important extensions to the notion of a control barrier function. The first involves robustness under perturbations to the vector field defining the system. Input-to-State stability conditions are given that provide for forward invariance, when disturbances are present, of a “relaxation” of set rendered invariant without disturbances. A control barrier function can be combined with a control Lyapunov function in a quadratic program to achieve a control objective subject to safety guarantees. The second result of the paper gives conditions for the control law obtained by solving the quadratic program to be Lipschitz continuous and therefore to gives rise to well-defined solutions of the resulting closed-loop system.",
+          "subjects": []
+        },
+        {
+          "title": "Correctness Guarantees for the Composition of Lane Keeping and Adaptive Cruise Control",
+          "authors": [
+            "Xiangru Xu",
+            "J. Grizzle",
+            "P. Tabuada",
+            "A. Ames"
+          ],
+          "year": 2016,
+          "date": "2016-09-22",
+          "citations": 0,
+          "arxiv_id": "1609.06807",
+          "paper_id": "98af018e4e7243a5ab49a0657fbf8f7a0a3ef115",
+          "url": "https://arxiv.org/abs/1609.06807",
+          "abstract": "This paper develops a control approach with correctness guarantees for the simultaneous operation of lane keeping and adaptive cruise control. The safety specifications for these driver assistance modules are expressed in terms of set invariance. Control barrier functions (CBFs) are used to design a family of control solutions that guarantee the forward invariance of a set, which implies satisfaction of the safety specifications. The CBFs are synthesized through a combination of sum-of-squares program and physics-based modeling and optimization. A real-time quadratic program is posed to combine the CBFs with the performance-based controllers, which can be either expressed as control Lyapunov function conditions or as black-box legacy controllers. In both cases, the resulting feedback control guarantees the safety of the composed driver assistance modules in a formally correct manner. Importantly, the quadratic program admits a closed-form solution that can be easily implemented. The effectiveness of the control approach is demonstrated by simulations in the industry-standard vehicle simulator Carsim. Note to Practitioners—Safety is of paramount importance for the control of automated vehicles. This paper is motivated by the problem of designing controllers that are provably correct for the simultaneous operation of two driver assistance modules, lane keeping and adaptive cruise control. This is a challenging problem partially, because the lateral and longitudinal dynamics of the vehicles are coupled, with few results known to exist that provide formal guarantees. In this paper, we employ an assume-guarantee formalism between these two subsystems, such that they can be considered individually; based on that, we use optimization to design safe sets that serves as “supervisors” for vehicle behavior, such that the trajectories of the closed-loop system are confined within the safe sets using predetermined bounds on wheel force and steering angle. The feedback controller is constructed by solving convex quadratic programs online, which can also be given in closed form, making the implementation much easier. One particular advantage of this control approach is that the safety set and the performance controller can be designed separately, which enables the integration of a legacy controller into a correct-by-construction solution.",
+          "subjects": []
+        },
         {
           "title": "Control Barrier Function Based Quadratic Programs for Safety Critical Systems",
           "authors": [
@@ -2198,6 +2419,23 @@
           ]
         },
         {
+          "title": "Control Barrier Function Based Quadratic Programs with Application to Automotive Safety Systems",
+          "authors": [
+            "A. Ames",
+            "Xiangru Xu",
+            "J. Grizzle",
+            "P. Tabuada"
+          ],
+          "year": 2016,
+          "date": "2016-09-21",
+          "citations": 27,
+          "arxiv_id": null,
+          "paper_id": "8bcceb6f2904149495a00ce33119d2961410e548",
+          "url": "https://www.semanticscholar.org/paper/8bcceb6f2904149495a00ce33119d2961410e548",
+          "abstract": "",
+          "subjects": []
+        },
+        {
           "title": "Control barrier function based quadratic programs with application to bipedal robotic walking",
           "authors": [
             "Shao-Chen Hsu",
@@ -2214,7 +2452,454 @@
           "subjects": []
         }
       ],
-      []
+      [
+        {
+          "title": "Metagenomics-guided targeted isolation and mechanistic elucidation of haloalkaliphilic bisphenol A-degrading microorganisms.",
+          "authors": [
+            "Sai Yang",
+            "K. Xing",
+            "Yu Tao",
+            "Jia-Yu Wang",
+            "Ke-Hang Liu",
+            "Meng Zhang",
+            "Xiangru Xu",
+            "Lin Zhu",
+            "Wei Wei"
+          ],
+          "year": 2026,
+          "date": "2026-06-01",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "358e8398ad2bdd0e77b3ef059936285da9541dad",
+          "url": "https://www.semanticscholar.org/paper/358e8398ad2bdd0e77b3ef059936285da9541dad",
+          "abstract": "Bisphenol A (BPA), a typical endocrine-disrupting compound, poses significant environmental risks. Efficient bioremediation in high-salinity and alkaline environments, such as saline-alkaline industrial wastewater and landfill leachate, remains challenging due to the lack of microorganisms capable of maintaining activity under extreme conditions. Here, this study developed a strategy integrating metagenomic functional prediction with targeted enrichment and isolation. Soil microcosm experiments combined with metagenomic analyses identified soda saline-alkaline soils with high BPA degradation potential, and predicted microbial degradation predominantly via hydroxylation, with archaeal involvement also suggested. Guided by these predictions, 14 saline-alkaline-tolerant BPA-degrading bacterial strains (13 genera) and 20 haloalkaliphilic archaeal strains (16 genera) were successfully isolated. The proportion of BPA-degrading archaea (95.24%) was higher than bacteria (58.33%), challenging the view that this function is restricted to bacteria and fungi. Genomic analyses revealed bacterium Pseudomonas reidholzensis SAS-B12 and archaeon Natronomonas gomsonensis SR-A11 degrade BPA via hydroxylation, with differing downstream ring-cleavage pathways. SR-A11 also exhibited high laccase activity, suggesting multi-enzyme synergistic degradation. Response surface methodology optimization showed SAS-B12 achieved ∼50% BPA degradation under simulated saline-alkaline wastewater (pH 8.3, salinity 2.3%), and SR-A11 achieved similar efficiency under extreme conditions (pH 9.8, salinity 23.6%). This study expands the phylogenetic diversity of BPA-degrading microorganisms and provides microbial resources, enzymatic insights, and methodological support for targeted bioremediation in saline-alkaline wastewater.",
+          "subjects": []
+        },
+        {
+          "title": "Advances and prospects of closed-loop precision irrigation for synergistic water-salt-phosphorus regulation in saline-alkali soils",
+          "authors": [
+            "L. Huang",
+            "Shu-Ke Zheng",
+            "Mostafa Elshobary",
+            "Tengfei Li",
+            "Wei Liu",
+            "Xiangru Xu",
+            "Xin-Juan Hu",
+            "Fei-Fei Zhu",
+            "M. el-Sheekh",
+            "Shu-Hao Huo"
+          ],
+          "year": 2026,
+          "date": "2026-03-01",
+          "citations": 7,
+          "arxiv_id": null,
+          "paper_id": "572e48b655f1bb53b443cc29cdfd2de5141d0316",
+          "url": "https://www.semanticscholar.org/paper/572e48b655f1bb53b443cc29cdfd2de5141d0316",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Unlocking the potential of microalgae biofertilizers: Analysis of nutrient supply mechanisms and industrial challenges for sustainable agriculture",
+          "authors": [
+            "Xianhui Xue",
+            "Yu Wang",
+            "Fengzheng Gao",
+            "Xin-Juan Hu",
+            "Fei-Fei Zhu",
+            "Xiangru Xu",
+            "Zhen Yu",
+            "Lei Huang",
+            "Shu-Hao Huo"
+          ],
+          "year": 2026,
+          "date": "2026",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "c0f85e075f1d15734c1622bda437c9a0d8556ed9",
+          "url": "https://www.semanticscholar.org/paper/c0f85e075f1d15734c1622bda437c9a0d8556ed9",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Harnessing breeding and biotechnological innovations for global food security under climate change",
+          "authors": [
+            "O. Ur Rehman",
+            "Fei-Fei Zhu",
+            "Xin-Juan Hu",
+            "Xiangru Xu",
+            "Muhammad Uzair",
+            "Jian-Ya Qian",
+            "S. Fiaz",
+            "Shu-Hao Huo"
+          ],
+          "year": 2025,
+          "date": "2025-10-23",
+          "citations": 4,
+          "arxiv_id": null,
+          "paper_id": "d5fe78877c23911a9387a1ab5a324eb48c3c813e",
+          "url": "https://www.semanticscholar.org/paper/d5fe78877c23911a9387a1ab5a324eb48c3c813e",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Combined Fusarium Crown Rot and Drought Stress Leads to Overlapping and Unique Proteomic Responses in Wheat.",
+          "authors": [
+            "Yu-Tian Gao",
+            "Jingjing Jin",
+            "Hongyao Lou",
+            "Shuo-Nan Duan",
+            "Xiaohan Zhou",
+            "Xiangru Xu",
+            "Yuqing Su",
+            "Jiatian Yang",
+            "Jinlong Li",
+            "Zhi Zheng",
+            "Chao-Jie Xie",
+            "Sheng-Quan Zhang",
+            "Wenchao Zhen",
+            "Zhencai Sun",
+            "Jun Ma"
+          ],
+          "year": 2025,
+          "date": "2025-09-09",
+          "citations": 3,
+          "arxiv_id": null,
+          "paper_id": "cac9836d7a45a1ba494689ed9b9ade815cc1f7be",
+          "url": "https://www.semanticscholar.org/paper/cac9836d7a45a1ba494689ed9b9ade815cc1f7be",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Integrated hybrid Nested-bottled photobioreactor for enhanced mixing, mass transfer, and CO₂ fixation in Arthrospira platensis raceway pond cultivation systems",
+          "authors": [
+            "A. A. Kubar",
+            "Shahid Mehmood",
+            "Michael Schagerl",
+            "Santosh Kumar",
+            "Xin-Juan Hu",
+            "Fei-Fei Zhu",
+            "Xiangru Xu",
+            "Jiheng Ni",
+            "Shu-Hao Huo"
+          ],
+          "year": 2025,
+          "date": "2025-07-02",
+          "citations": 12,
+          "arxiv_id": null,
+          "paper_id": "bd67b6b3a06b28cf52b8357afaf91e4b307bc85a",
+          "url": "https://www.semanticscholar.org/paper/bd67b6b3a06b28cf52b8357afaf91e4b307bc85a",
+          "abstract": "This study introduces a novel hybrid photobioreactor system that integrates an open raceway pond (ORWP) with a Nested-bottled photobioreactor (NB-PBR) in a closed-loop configuration to enhance microalgal biomass production and CO₂ fixation. The system facilitates continuous culture circulation, improving mass transfer and mixing efficiency while ensuring optimal light exposure and CO₂ dissolution. This design resulted in a 38% increase in dry mass (3.1 g/L) and improved mass transfer and mixing times by 16.6% and 15.3%, respectively. The optimized cultivation conditions led to a 39.9% enhancement in CO₂ fixation and an 8.7% increase in photosynthetic efficiency (Fv/Fm) compared to traditional systems. The strategic movement of poorly illuminated ORWP to the NB-PBR maximized light absorption and nutrient uptake, significantly boosting overall productivity. These findings highlight the potential of hybrid photobioreactor systems in improving microalgal growth efficiency and advancing sustainable algal cultivation for commercial applications.",
+          "subjects": []
+        },
+        {
+          "title": "Colorimetric films of carboxymethyl cellulose and sodium alginate incorporating Spirulina extract (phycobiliproteins) and gallic acid for real-time shrimp freshness monitoring.",
+          "authors": [
+            "Dr. Muhammad Abdur Rehman Shah",
+            "Yajie Zhang",
+            "Obaid Ur Rehman",
+            "Fei-Fei Zhu",
+            "Santosh Kumar",
+            "Xin-Juan Hu",
+            "S. Kayani",
+            "Xiangru Xu",
+            "Shu-Hao Huo"
+          ],
+          "year": 2025,
+          "date": "2025-04-01",
+          "citations": 14,
+          "arxiv_id": null,
+          "paper_id": "5734d77e975aee92a0815ef9b8ca89e941b64d46",
+          "url": "https://www.semanticscholar.org/paper/5734d77e975aee92a0815ef9b8ca89e941b64d46",
+          "abstract": "This study developed edible colorimetric films by incorporating 1 % ultrasonic-assisted aqueous extract of Spirulina platensis (UAAESP; 76.83 % protein), and 0.125-0.250 % gallic acid (GA) into 2 % carboxymethyl cellulose (CMC) and sodium alginate (SA) matrices. The films were evaluated for structural, optical, mechanical, antimicrobial, antioxidant, and calorimetric properties. UAAESP exhibited a blue-grey colour at pH 3-9 and yellowish-green at pH 10, reflecting higher UV-visible absorption. The addition of 1 % UAAESP and 0.25 % GA reduced moisture content (7.73 %), water solubility (12.06 %), and water vapor and oxygen permeability, while increasing film thickness (10.97 %) and tensile strength (38.53 %). Film opacity increased due to the blue colour of UAAESP. SEM showed homogeneous surfaces, with minor cracks in cross-sections, while FTIR confirmed strong physical interactions between CMC, SA, UAAESP, and GA. Antioxidant activity improved with UAAESP and higher GA levels, while 0.25 % GA expanded inhibition zones by 74.25 % and 81.09 % against S. aureus and E. coli. The GA not only improve the antioxidant and antimicrobial activities but also sensitize the UAAESP incorporated in the matrices to better sense the spoilage levels. The films' colour changes (blue, bluish-grey, dark grey) corresponded shrimp spoilage levels. Thus, UAAESP-GA films offer real-time freshness indicators and sustainable, recyclable alternatives to plastic packaging.",
+          "subjects": []
+        },
+        {
+          "title": "A Holistic Indirect Contact Identification Method for Soft Robot Proprioception",
+          "authors": [
+            "Shuoqi Wang",
+            "Keng-Yu Lin",
+            "Xiangru Xu",
+            "Michael Wehner"
+          ],
+          "year": 2025,
+          "date": "2025-02-24",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "dabdea5b124e429d8cf0c6e0b473c7fecfc5c502",
+          "url": "https://www.semanticscholar.org/paper/dabdea5b124e429d8cf0c6e0b473c7fecfc5c502",
+          "abstract": "Soft robots hold great promise but are notoriously difficult to control due to their compliance and back-drivability. In order to implement useful controllers, improved methods of perceiving robot pose (position and orientation of the entire robot body) in free and perturbed states are needed. In this work, we present a holistic approach to robot pose perception in free bending and with external contact, using multiple soft strain sensors on the robot (not collocated with the point of contact). By comparing the deviation of these sensors from their value in an unperturbed pose, we are able to perceive the mode and magnitude of deformation and thereby estimate the resulting perturbed pose of the soft actuator. We develop a sample 2 degree-of-freedom soft finger with two sensors, and we characterize sensor response to front, lateral, and twist deformation to perceive the mode and magnitude of external perturbation. We develop a data-driven model of free-bending deformation, we impose our perturbation perception method, and we demonstrate the ability to perceive perturbed pose on a single-finger and a two-finger gripper. Our holistic contact identification method provides a generalizable approach to perturbed pose perception needed for the control of soft robots.",
+          "subjects": []
+        },
+        {
+          "title": "Identification of genetic loci and candidate genes underlying Fusarium crown rot resistance in wheat",
+          "authors": [
+            "Yuqing Su",
+            "Xiangru Xu",
+            "Yun-Qiao Wang",
+            "Tong-Zhu Wang",
+            "Jiazheng Yu",
+            "Jiatian Yang",
+            "Jinlong Li",
+            "Yu-Tian Gao",
+            "Yi-Xin Wang",
+            "W. Sang",
+            "Congcong Li",
+            "Xingyi Wang",
+            "Zhi Zheng",
+            "Chao-Jie Xie",
+            "Jian Ma",
+            "Jun Ma"
+          ],
+          "year": 2025,
+          "date": "2025-01-01",
+          "citations": 13,
+          "arxiv_id": null,
+          "paper_id": "cff697c4c6923b9841d763ccf194f1a808664610",
+          "url": "https://www.semanticscholar.org/paper/cff697c4c6923b9841d763ccf194f1a808664610",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Analysis of Microbial Diversity Dominating Nitrite Enzymatic Degradation and Acidic Degradation in the Fermentation Broth of Northeast Sauerkraut",
+          "authors": [
+            "Xiangru Xu",
+            "Meng Zhang",
+            "Yu Tao",
+            "Wei Wei"
+          ],
+          "year": 2024,
+          "date": "2024-12-01",
+          "citations": 10,
+          "arxiv_id": null,
+          "paper_id": "f4b4b5a7bc8803a9bff605bb4c2162532f3f02c7",
+          "url": "https://www.semanticscholar.org/paper/f4b4b5a7bc8803a9bff605bb4c2162532f3f02c7",
+          "abstract": "Nitrite hazard is an important food safety issue in the production process of Chinese Northeastern sauerkraut, but this nitrite can be eliminated through microbial enzymatic degradation and acidic degradation as fermentation progresses. Therefore, analyzing the microbial diversity that dominates nitrite degradation in Chinese Northeastern sauerkraut can provide a reference for its safe production. In this study, based on the dynamic monitoring of nitrite concentration, pH, and the abundance of nitrite reductase genes (nirK and nirS) and the application of high-throughput sequencing technology and various statistical analysis methods, the microbial groups associated with nitrite enzymatic degradation and acidic degradation in Northeast sauerkraut fermentation broth were analyzed. During the nitrite peak period of Northeast sauerkraut fermentation broth, the nitrite concentration reached 32.15 mg/kg, the pH was 4.7, and the abundances of the nitrite reductase genes nirK and nirS were 3.0 × 104 and 4.9 × 104 copies/μL, respectively. At this stage, nitrite degradation was likely dominated by enzymatic activities. Microbial phyla such as Bacteroidetes (38.8%), Proteobacteria (19.2%), and the archaeal phylum Euryarchaeota (1.1%) showed strong correlations with nitrite. Among the genera within these three phyla, Chryseobacterium, Elizabethkingia, and Aeromonas exhibited significant differences in abundance compared to the late fermentation stage and were identified as the primary microbial groups likely driving the enzymatic degradation. During the nitrite degradation period, the nitrite concentration decreased to 0.04 mg/kg, the pH dropped to 3.6, and the abundances of nirK and nirS genes were reduced to 1.0 × 103 copies/μL. At this stage, the nitrite degradation was primarily driven by acid activity. The bacterial phylum Firmicutes (99%) exhibited a strong correlation with pH. Within this phylum, the genus Lactobacillus, which showed significant differences in abundance compared to the early fermentation stage, was identified as the primary microbial group indirectly contributing to acidic degradation. This study provides guidance for the isolation of food-grade prokaryotic microbial strains capable of nitrite degradation. Additionally, the findings offer a methodological reference for conducting future research on nitrite-degrading microorganisms in fermented vegetable broths.",
+          "subjects": []
+        },
+        {
+          "title": "A Model-Driven Approach to Extract Multi-Source Fault Features of a Screw Pump",
+          "authors": [
+            "Weigang Wen",
+            "Jingqi Qin",
+            "Xiangru Xu",
+            "Kaifu Mi",
+            "Meng Zhou"
+          ],
+          "year": 2024,
+          "date": "2024-11-17",
+          "citations": 9,
+          "arxiv_id": null,
+          "paper_id": "4ec2d24b8bbfd4c7345e6855431f9a522e2505af",
+          "url": "https://www.semanticscholar.org/paper/4ec2d24b8bbfd4c7345e6855431f9a522e2505af",
+          "abstract": "Screw pumps’ faulty working conditions affect the stability of oil production. At project sites, different sensors are used simultaneously to collect multi-dimensional signals; the data fault labels and location are not clear, and how to comprehensively use multi-source information in effective fault feature extraction has become an urgent issue. Existing diagnostic methods use a single signal or part of a signal and do not fully utilize the acquired signal, which makes it difficult to achieve the required accuracy of diagnostic results. This paper focuses on the model-driven approach to extract multi-source fault features of screw pumps. Firstly, it constructs a fault data model (FDM) by analyzing the fault mechanism of the screw pump. Secondly, it uses the FDM to select an effective data set. Thirdly, it constructs a multi-dimensional fault feature extraction model (MDFEM) to extract featured signal features and data features, for which we also comprehensively used multi-source signals in effective fault feature extraction, while other traditional methods only use one or two signals. Finally, after feature selection, unsupervised fault diagnosis was achieved by using the k-means method. After experimental verification, the method can comprehensively use multi-source information to construct an effective data set and extract multi-dimensional, effective fault features for screw pump fault diagnosis.",
+          "subjects": []
+        },
+        {
+          "title": "Prediction strategy for screening functional Haloarchaea strains with qPCR assays.",
+          "authors": [
+            "Xinyu Hu",
+            "Wen Sun",
+            "Meng Zhang",
+            "Wenjun Guo",
+            "Shu-Jing Yang",
+            "Lin Zhu",
+            "Xiang Xiao",
+            "Xiangru Xu",
+            "Wei Wei"
+          ],
+          "year": 2024,
+          "date": "2024-09-01",
+          "citations": 3,
+          "arxiv_id": null,
+          "paper_id": "d82b6210c866ac761d12a1c4fba5a1387d20d2be",
+          "url": "https://www.semanticscholar.org/paper/d82b6210c866ac761d12a1c4fba5a1387d20d2be",
+          "abstract": "As an extremophile resource, functional Haloarchaea strains are extremely time-consuming to screen. Here, taking the screening of low-salt-tolerant strains as an example, based on the qPCR assays that shortened time by 4-7 times and achieved 100 % accuracy, a universal strategy for rapid and accurate screening of functional Haloarchaea strains was established.",
+          "subjects": []
+        },
+        {
+          "title": "A MYB family transcription factor TdRCA1 from wild emmer wheat regulates anthocyanin biosynthesis in coleoptile",
+          "authors": [
+            "Jinlong Li",
+            "Chao-Zhong Zhang",
+            "Xiangru Xu",
+            "Yuqing Su",
+            "Yu-Tian Gao",
+            "Jiatian Yang",
+            "Chao-Jie Xie",
+            "Jun Ma"
+          ],
+          "year": 2024,
+          "date": "2024-08-24",
+          "citations": 9,
+          "arxiv_id": null,
+          "paper_id": "077208846e41f3c07dc6c2634fdb23a7cc5e10d0",
+          "url": "https://www.semanticscholar.org/paper/077208846e41f3c07dc6c2634fdb23a7cc5e10d0",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Does the Daily Light Integral Influence the Sowing Density of Tomato Plug Seedlings in a Controlled Environment?",
+          "authors": [
+            "Xiangru Xu",
+            "Fulin Yang",
+            "Jin-Xiu Song",
+            "Rong Zhang",
+            "Wei Cai"
+          ],
+          "year": 2024,
+          "date": "2024-07-11",
+          "citations": 14,
+          "arxiv_id": null,
+          "paper_id": "60b4b68dffbafdbb3068f69a3814b97eeb89eb74",
+          "url": "https://www.semanticscholar.org/paper/60b4b68dffbafdbb3068f69a3814b97eeb89eb74",
+          "abstract": "To achieve high-density tomato seedlings in a plant factory with artificial lighting, tomatoes (Solanum lycopersicum Mill. cv. “Zhongza NO.9”) were used as the experimental material. This study expected to analyze the effects of light intensity (150, 200, 250, and 300 μmol·m−2·s−1) and light time (12 and 14 h), as well as daily light integral (DLI, 10.80, 12.60, and 12.96 mol·m−2·d−1) and sowing density (50, 72, and 105 holes per tray), on seedling quality. The results indicated that biomass accumulation, seedling quality, and energy use efficiency of seedlings significantly improved with an increase in DLI. At a DLI of 12.96 mol·m−2·d−1, seedlings sown at a density of 72 holes per tray exhibited comparable growth characteristics and biomass accumulation to those sown at 50 holes per tray. However, under lower DLIs, seedlings at 50 holes per tray displayed superior growth morphology and seedling quality compared to those at 72 holes per tray. This indicates that increasing the DLI can partially mitigate the negative effects of higher sowing density on seedling quality. Light use efficiency (LUE) and energy use efficiency (EUE) were not significantly different between seedlings at 72 and 105 holes per tray but were higher than those at 50 holes per tray. Therefore, optimizing parameters such as DLI and sowing density can effectively enhance the seedling quality, spatial use efficiency, and light use efficiency in industrial seedling production. Based on the results of this study, a DLI of 12.96 mol·m−2·d−1 (achieved with a light intensity of 300 μmol·m−2·s−1 and a light time of 12 h) and sowing density of 72 holes per tray are recommended for cultivating high-quality tomato seedlings while reducing energy consumption.",
+          "subjects": []
+        },
+        {
+          "title": "Common Bean (Phaseolus vulgaris L.) NAC Transcriptional Factor PvNAC52 Enhances Transgenic Arabidopsis Resistance to Salt, Alkali, Osmotic, and ABA Stress by Upregulating Stress-Responsive Genes",
+          "authors": [
+            "Song Yu",
+            "Mingxu Wu",
+            "Xiaoqin Wang",
+            "Mukai Li",
+            "Xinhan Gao",
+            "Xiangru Xu",
+            "Yu-Tao Zhang",
+            "Xinran Liu",
+            "Li-He Yu",
+            "Yi-Fei Zhang"
+          ],
+          "year": 2024,
+          "date": "2024-05-27",
+          "citations": 10,
+          "arxiv_id": null,
+          "paper_id": "2831d94555c6ea84c9f354818601f9e2551c404f",
+          "url": "https://www.semanticscholar.org/paper/2831d94555c6ea84c9f354818601f9e2551c404f",
+          "abstract": "The NAC family of transcription factors includes no apical meristem (NAM), Arabidopsis thaliana transcription activator 1/2 (ATAF1/2), and cup-shaped cotyledon (CUC2) proteins, which are unique to plants, contributing significantly to their adaptation to environmental challenges. In the present study, we observed that the PvNAC52 protein is predominantly expressed in the cell membrane, cytoplasm, and nucleus. Overexpression of PvNAC52 in Arabidopsis strengthened plant resilience to salt, alkali, osmotic, and ABA stresses. PvNAC52 significantly (p < 0.05) reduced the degree of oxidative damage to cell membranes, proline content, and plant water loss by increasing the expression of MSD1, FSD1, CSD1, POD, PRX69, CAT, and P5CS2. Moreover, the expression of genes associated with abiotic stress responses, such as SOS1, P5S1, RD29A, NCED3, ABIs, LEAs, and DREBs, was enhanced by PvNAC52 overexpression. A yeast one-hybrid assay showed that PvNAC52 specifically binds to the cis-acting elements ABRE (abscisic acid-responsive elements, ACGTG) within the promoter. This further suggests that PvNAC52 is responsible for the transcriptional modulation of abiotic stress response genes by identifying the core sequence, ACGTG. These findings provide a theoretical foundation for the further analysis of the targeted cis-acting elements and genes downstream of PvNAC52 in the common bean.",
+          "subjects": []
+        },
+        {
+          "title": "Integrated partial nitrification and Tribonema minus cultivation for cost-effective ammonia recovery and lipid production from slaughterhouse wastewater",
+          "authors": [
+            "Huiying Wang",
+            "Xin-Juan Hu",
+            "Mostafa E. Elshobary",
+            "Mostafa Sobhi",
+            "Fei-Fei Zhu",
+            "Yixin Cui",
+            "Xiangru Xu",
+            "Jiheng Ni",
+            "M. El-sheekh",
+            "Shu-Hao Huo"
+          ],
+          "year": 2024,
+          "date": "2024-05-01",
+          "citations": 26,
+          "arxiv_id": null,
+          "paper_id": "5fb1208cd9674ad1f929d09b282e31e94ee1d576",
+          "url": "https://www.semanticscholar.org/paper/5fb1208cd9674ad1f929d09b282e31e94ee1d576",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Transcriptome Analysis Reveals POD as an Important Indicator for Assessing Low-Temperature Tolerance in Maize Radicles during Germination",
+          "authors": [
+            "Yi-Fei Zhang",
+            "Jiayu Li",
+            "Wei-Qing Li",
+            "Xinhan Gao",
+            "Xiangru Xu",
+            "Chun-Yu Zhang",
+            "Song Yu",
+            "Yi Dou",
+            "Wenqi Luo",
+            "Li-He Yu"
+          ],
+          "year": 2024,
+          "date": "2024-05-01",
+          "citations": 9,
+          "arxiv_id": null,
+          "paper_id": "d7a946d47783bae1bd67a62d8479ac96bbfe45cf",
+          "url": "https://www.semanticscholar.org/paper/d7a946d47783bae1bd67a62d8479ac96bbfe45cf",
+          "abstract": "Low-temperature stress (TS) limits maize (Zea mays L.) seed germination and agricultural production. Exposure to TS during germination inhibits radicle growth, triggering seedling emergence disorders. Here, we aimed to analyse the changes in gene expression in the radicles of maize seeds under TS by comparing Demeiya1 (DMY1) and Zhengdan958 (ZD958) (the main Northeast China cultivars) and exposing them to two temperatures: 15 °C (control) and 5 °C (TS). TS markedly decreased radicle growth as well as fresh and dry weights while increasing proline and malondialdehyde contents in both test varieties. Under TS treatment, the expression levels of 5301 and 4894 genes were significantly different in the radicles of DMY1 and ZD958, respectively, and 3005 differentially expressed genes coexisted in the radicles of both varieties. The phenylpropanoid biosynthesis pathway was implicated within the response to TS in maize radicles, and peroxidase may be an important indicator for assessing low-temperature tolerance during maize germination. Peroxidase-encoding genes could be important candidate genes for promoting low-temperature resistance in maize germinating radicles. We believe that this study enhances the knowledge of mechanisms of response and adaptation of the maize seed germination process to TS and provides a theoretical basis for efficiently assessing maize seed low-temperature tolerance and improving maize adversity germination performance.",
+          "subjects": []
+        },
+        {
+          "title": "Oerskovia flava sp. nov., a deoxynivalenol (DON)-degrading actinomycete isolated from the rhizosphere soil of long-term continuous cropping cucumber",
+          "authors": [
+            "Wei Wei",
+            "Wenjun Guo",
+            "Bi-Yue Yang",
+            "Kaili Wang",
+            "Xinyu Hu",
+            "Guan-Ya Ji",
+            "Xiangru Xu",
+            "Shen-Kui Liu",
+            "Lin Zhu"
+          ],
+          "year": 2024,
+          "date": "2024-04-27",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "90214190b348ed272a70d63b547072e84e8b1363",
+          "url": "https://www.semanticscholar.org/paper/90214190b348ed272a70d63b547072e84e8b1363",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Rapid Development of an Autonomous Vehicle for the SAE AutoDrive Challenge II Competition",
+          "authors": [
+            "Sriram Ashokkumar",
+            "Anirudh Jayendra",
+            "S. Tobin",
+            "Ariel Leykin",
+            "R. Stegeman",
+            "Abhiraj Dashora",
+            "B. Look",
+            "Joseph Koenig",
+            "Brian Hu",
+            "M. Crooks",
+            "Ishaan Mahajan",
+            "Pravin Boopathy",
+            "M. Krishnakumar",
+            "Nevindu Batagoda",
+            "Hanwei Wang",
+            "Aaron Young",
+            "Victor Freire",
+            "Glenn Bower",
+            "Xiangru Xu",
+            "D. Negrut"
+          ],
+          "year": 2024,
+          "date": "2024-04-09",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "b8c837eba02b6bee8f01a80dd0e3a3e3e43483ec",
+          "url": "https://www.semanticscholar.org/paper/b8c837eba02b6bee8f01a80dd0e3a3e3e43483ec",
+          "abstract": "The SAE AutoDrive Challenge II is a four-year collegiate competition dedicated to developing a Level 4 autonomous vehicle by 2025. In January 2023, the participating teams each received a Chevy Bolt EUV. Within a span of five months, the second phase of the competition took place in Ann Arbor, MI. The authors of this contribution, who participated in this event as team Wisconsin Autonomous representing the University of Wisconsin–Madison, secured second place in static events and third place in dynamic events. This has been accomplished by reducing reliance on the actual vehicle platform and instead leveraging physical analogs and simulation. This paper outlines the software and hardware infrastructure of the competing vehicle, touching on issues pertaining sensors, hardware, and the software architecture employed on the autonomous vehicle. We discuss the LiDAR-camera fusion approach for object detection and the three-tier route planning and following systems. One of the defining aspects of our approach was leveraging early simulation and the use of physical analogs, which accelerated the development of the autonomy algorithms. In the process, we established a rapid autonomous vehicle development methodology that will anchor our technical effort in the third stage of the SAE AutoDrive Challenge II competition.",
+          "subjects": []
+        },
+        {
+          "title": "Hierarchical driving factors of ammonia emissions from cropland in China",
+          "authors": [
+            "Chen Wang",
+            "Yi-Nan Feng",
+            "Xiangru Xu",
+            "Xiu-Ming Zhang",
+            "Hongbin Liu",
+            "Jian-Ming Xu",
+            "Bao-Jing Gu"
+          ],
+          "year": 2024,
+          "date": "2024-04-01",
+          "citations": 9,
+          "arxiv_id": null,
+          "paper_id": "3743e82dfb05a744346cbc200b4bea72df43a3c1",
+          "url": "https://www.semanticscholar.org/paper/3743e82dfb05a744346cbc200b4bea72df43a3c1",
+          "abstract": "",
+          "subjects": []
+        }
+      ]
     ],
     [
       "J. Grizzle",
@@ -2248,7 +2933,7 @@
           ],
           "year": 2014,
           "date": "2014-12-01",
-          "citations": 1099,
+          "citations": 1100,
           "arxiv_id": null,
           "paper_id": "14e3102e6d9cd166f3a7eac1acf1eb36ed4c961b",
           "url": "https://www.semanticscholar.org/paper/14e3102e6d9cd166f3a7eac1acf1eb36ed4c961b",
@@ -2277,9 +2962,42 @@
             "cs.MA",
             "cs.RO"
           ]
+        },
+        {
+          "title": "Robust Multi-Agent Pursuit with Preemptive Communication via Reachability-Based Control Barrier Functions",
+          "authors": [
+            "Madison Book",
+            "Justin M. Bradley"
+          ],
+          "year": 2026,
+          "date": "2026-10-15",
+          "citations": 0,
+          "arxiv_id": "2610.22198",
+          "paper_id": "7fe6af33dd6615ed7731e9b3042dc8cbee51cd48",
+          "url": "https://arxiv.org/abs/2610.22198",
+          "abstract": "Safe multi-agent coordination typically assumes what real-world, deployed, resource-constrained robots cannot provide: continuous, perfect state sharing. Robust control strategies must be complemented with robust communication strategies to deliver resilient deployments. In this work, we propose a unified control/communication strategy that provides safe control to guarantee inter-agent safety under intermittent communication and demonstrate its effectiveness in a pursuit-evasion scenario. Each agent computes the reachable set of neighboring agents based on the last state information received, then solves for a safe control input based on control barrier functions to ensure agents avoid collision. We prove that inter-agent collision avoidance is guaranteed provided communication staleness remains bounded. As the reachable set inflates between state transmissions, each agent reasons about when to preemptively transmit its state information to neighboring agents based on novel metrics characterizing uncertainty risk and kinematic risk. We implement and simulate a variety of pursuit-evasion scenarios and show that preemptive communication reduces messages by 77.5% compared to periodic and event-triggered baselines with zero collisions.",
+          "subjects": []
         }
       ],
-      []
+      [
+        {
+          "title": "Investigating Academic Confidence, Workload Stress, and Performance in a BlendFlex Computer Science Course",
+          "authors": [
+            "Madison Book",
+            "Lina Battestilli",
+            "Sarah Khan",
+            "Elaine Bohórquez"
+          ],
+          "year": 2024,
+          "date": "2024-07-03",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "c9d16de081227a2725fdf21b65e1921cc73fdac4",
+          "url": "https://www.semanticscholar.org/paper/c9d16de081227a2725fdf21b65e1921cc73fdac4",
+          "abstract": "This study explored the impact of learning flexibility and academic stress in a blended-flexible (BlendFlex) introductory computer science course. We delved into the fluctuation of students' choices between online and in-person attendance throughout the semester, considering factors such as gender and distance from campus. Additionally, we examined the impact of learning modality choices on course performance alongside academic stress, utilizing a combination of survey data and academic records for 412 students. The findings revealed that in-person attendance declined as the semester progressed but remained relatively stable overall. Notably, this trend was significantly affected by students' gender. The proximity to the campus did not influence students' utilization of attendance flexibility. Although the choice of learning modality did not directly influence test scores, it positively contributed to the students' ability to keep pace with the course content and, consequently, their final course grades. The study also indicates that students with lower reported levels of academic stress tended to derive greater benefits from the blended-flexible classroom setting. This suggests that flexible learning environments may be especially advantageous for students who effectively manage academic stress. Overall, this research provides valuable insights into the dynamics of under-explored blended-flexible learning environments, offering implications for instructors seeking to tailor teaching strategies to address the diverse needs and preferences of students in computer science education.",
+          "subjects": []
+        }
+      ]
     ],
     [
       "Justin Bradley",
@@ -2321,6 +3039,21 @@
           "subjects": [
             "cs.RO"
           ]
+        },
+        {
+          "title": "CBF-Based Control Allocation for Omnidirectional Tiltrotor Aerial Robots",
+          "authors": [
+            "Seobeom Lee",
+            "Hyondong Oh"
+          ],
+          "year": 2026,
+          "date": "2026-10-15",
+          "citations": 0,
+          "arxiv_id": "2610.22057",
+          "paper_id": "5d5cb79e3ba1184ac8a354cc930cbb44e8f8c7cd",
+          "url": "https://arxiv.org/abs/2610.22057",
+          "abstract": "Actively tilting aerial robots can generate six-dimensional wrenches, but slow servo response can make a desired wrench infeasible during reconfiguration. This paper develops a control barrier function (CBF) allocator that preserves wrench feasibility under bounded servo-configuration mismatch. An exact equivalent-wrench identity connects the thrust required at nominal and actual configurations. For a nonsingular six-channel allocation map, inverse allocation reduces robust wrench containment to twelve thrust margins tightened by an ellipsoidal reserve. Their complete derivatives yield a six-variable servo-rate quadratic program, followed by differential thrust allocation for tracking. A conditional forward-invariance result establishes actual-configuration feasibility under reserve coverage, feasible initialization, and admissible CBF inputs. A complementary MuJoCo study evaluates a measured-angle implementation against geometric, augmented differential, and normalized differential allocation in circular and cartwheel maneuvers, with and without disturbances. The proposed implementation achieves lower position error in all four recorded scenarios, with an attitude tradeoff in circular tracking. During the disturbed cartwheel, the desired wrench is feasible at all 1751 stored samples of continuous rotation; baseline violation rates range from 60.8% to 100%. These comparisons evaluate sampled feasibility; validation of the nominal-trajectory certificate requires nominal-state and reserve-coverage records.",
+          "subjects": []
         }
       ],
       []
@@ -2463,9 +3196,257 @@
           "subjects": [
             "cs.RO"
           ]
+        },
+        {
+          "title": "BubbleCBF: Constructive Safety for Second-Order Systems and Application to Autonomous Robot Navigation in Unknown Environments",
+          "authors": [
+            "Mani Amani",
+            "Mohammed M. J. Alyaseen",
+            "Zhi-Rui Dai",
+            "K. Lee",
+            "Nikolay Atanasov",
+            "Jorge Cortés"
+          ],
+          "year": 2026,
+          "date": "2026-10-14",
+          "citations": 0,
+          "arxiv_id": "2610.20895",
+          "paper_id": "7570a2f3200c140232973c0b055699ec7801b3bf",
+          "url": "https://arxiv.org/abs/2610.20895",
+          "abstract": "Satisfying safety constraints for systems with second-order dynamics is challenging because a position constraint may require infeasible deceleration. Higher-order control barrier functions (CBFs) provide an approach for expressing safety conditions for such systems but feasibility depends on the system dynamics and available control authority. We develop a constructive approach for designing feasible safety constraints for second-order control-affine systems. Starting from a signed distance function (SDF), we construct collision-free spheres, i.e., bubbles, in position space, and use their quadratic geometry and overlap to construct a velocity-dependent safety constraint. The associated safe set is represented as a union of intersections and enforced through a quadratic-program safety filter. Under mild assumptions on the dynamics, bubble overlap, and design parameters, we prove that the quadratic-program-based controller is well defined, continuous in the system state, and renders the set forward invariant. We also derive sufficient conditions for feasibility under bounded inputs. We demonstrate that our BubbleCBF, applied to a differential-drive robot, achieves safe autonomous navigation in unknown environments. Videos and results are available at: https://existentialrobotics.org/bubblecbf/.",
+          "subjects": []
         }
       ],
-      []
+      [
+        {
+          "title": "Semantic-Gravity Iterative Closest Point and AI-assisted navigation for Robot-Ready Construction Digital Twins",
+          "authors": [
+            "Reza Akhavian",
+            "Mani Amani",
+            "Johannes Mootz",
+            "Behrad Beheshti",
+            "Robert Ashe"
+          ],
+          "year": 2026,
+          "date": "2026-10-01",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "b64358d52f6c76163ac9b9e200b746cc140c1e63",
+          "url": "https://www.semanticscholar.org/paper/b64358d52f6c76163ac9b9e200b746cc140c1e63",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Kernel-SDF: An Open-Source Library for Real-Time Signed Distance Function Estimation Using Kernel Regression",
+          "authors": [
+            "Zhi-Rui Dai",
+            "Tian-Xing Fan",
+            "Mani Amani",
+            "Jaemin Seo",
+            "K. Lee",
+            "Hyondong Oh",
+            "Nikolay Atanasov"
+          ],
+          "year": 2026,
+          "date": "2026-03-31",
+          "citations": 0,
+          "arxiv_id": "2603.29227",
+          "paper_id": "2a49a797a82a118da5247bcb28969ca08281d9bb",
+          "url": "https://arxiv.org/abs/2603.29227",
+          "abstract": "Accurate and efficient scene representation is crucial for robotic tasks such as motion planning, manipulation, and navigation. Signed distance functions (SDFs) have emerged as a powerful representation for encoding distance to obstacle boundaries, enabling efficient collision-checking and trajectory optimization. However, existing methods are limited for large-scale uncertainty-aware SDF estimation from streaming sensor data: voxel-based approaches have fixed resolution and lack uncertainty quantification, neural network methods require significant training time, and Gaussian process (GP) methods struggle with scalability, sign estimation, and uncertainty calibration. In this letter, we develop an open-source library, Kernel-SDF, using kernel regression to learn SDF with calibrated uncertainty in real time. It combines a front-end learning a continuous occupancy field via kernel regression with a back-end that estimates accurate SDF via GP regression using samples from the front-end surface boundaries. Kernel-SDF provides accurate SDF, gradient, uncertainty, and mesh construction in real time. Evaluations show it achieves superior accuracy over existing methods while maintaining real-time performance, making it suitable for robotics tasks requiring reliable uncertainty-aware geometry.",
+          "subjects": []
+        },
+        {
+          "title": "A Customized Quadruped Control and Sensor Integration Framework with a Construction Worker Activity Recognition Module",
+          "authors": [
+            "Robert Ashe",
+            "Mani Amani",
+            "Conner Sommerfield",
+            "Reza Akhavian"
+          ],
+          "year": 2026,
+          "date": "2026-01-28",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "3ea27add515ddd3f62bfb9176f7931279ceb7068",
+          "url": "https://www.semanticscholar.org/paper/3ea27add515ddd3f62bfb9176f7931279ceb7068",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Bootstrapped LLM Semantics for Context-Aware Path Planning",
+          "authors": [
+            "Mani Amani",
+            "Behrad Beheshti",
+            "Reza Akhavian"
+          ],
+          "year": 2025,
+          "date": "2025-11-15",
+          "citations": 0,
+          "arxiv_id": "2511.11967",
+          "paper_id": "7c914171528083c6aabdb3078bdf1f4744e1182e",
+          "url": "https://arxiv.org/abs/2511.11967",
+          "abstract": "Prompting robots with natural language (NL) has largely been studied as what task to execute (goal selection, skill sequencing) rather than how to execute that task safely and efficiently in semantically rich, human-centric spaces. We address this gap with a framework that turns a large language model (LLM) into a stochastic semantic sensor whose outputs modulate a classical planner. Given a prompt and a semantic map, we draw multiple LLM\"danger\"judgments and apply a Bayesian bootstrap to approximate a posterior over per-class risk. Using statistics from the posterior, we create a potential cost to formulate a path planning problem. Across simulated environments and a BIM-backed digital twin, our method adapts how the robot moves in response to explicit prompts and implicit contextual information. We present qualitative and quantitative results.",
+          "subjects": []
+        },
+        {
+          "title": "Digital Twin-Guided Robot Path Planning: A Beta-Bernoulli Fusion with Large Language Model as a Sensor",
+          "authors": [
+            "Mani Amani",
+            "Reza Akhavian"
+          ],
+          "year": 2025,
+          "date": "2025-09-25",
+          "citations": 0,
+          "arxiv_id": "2509.20709",
+          "paper_id": "7f3c47141c69172db53c77419ef33c3edcc97b44",
+          "url": "https://arxiv.org/abs/2509.20709",
+          "abstract": "Integrating natural language (NL) prompts into robotic mission planning has attracted significant interest in recent years. In the construction domain, Building Information Models (BIM) encapsulate rich NL descriptions of the environment. We present a novel framework that fuses NL directives with BIM-derived semantic maps via a Beta-Bernoulli Bayesian fusion by interpreting the LLM as a sensor: each obstacle's design-time repulsive coefficient is treated as a Beta(alpha, beta) random variable and LLM-returned danger scores are incorporated as pseudo-counts to update alpha and beta. The resulting posterior mean yields a continuous, context-aware repulsive gain that augments a Euclidean-distance-based potential field for cost heuristics. By adjusting gains based on sentiment and context inferred from user prompts, our method guides robots along safer, more context-aware paths. This provides a numerically stable method that can chain multiple natural commands and prompts from construction workers and foreman to enable planning while giving flexibility to be integrated in any learned or classical AI framework. Simulation results demonstrate that this Beta-Bernoulli fusion yields both qualitative and quantitative improvements in path robustness and validity.",
+          "subjects": []
+        },
+        {
+          "title": "Building Information Models to Robot-Ready Site Digital Twins (BIM2RDT): An Agentic AI Safety-First Framework",
+          "authors": [
+            "Reza Akhavian",
+            "Mani Amani",
+            "Johannes Mootz",
+            "Robert Ashe",
+            "Behrad Beheshti"
+          ],
+          "year": 2025,
+          "date": "2025-09-25",
+          "citations": 0,
+          "arxiv_id": "2509.20705",
+          "paper_id": "cd09876d5b75b830c818589b198b8a3ea55d2d85",
+          "url": "https://arxiv.org/abs/2509.20705",
+          "abstract": "The adoption of cyber-physical systems and jobsite intelligence that connects design models, real-time site sensing, and autonomous field operations can dramatically enhance digital management in the construction industry. This paper introduces BIM2RDT (Building Information Models to Robot-Ready Site Digital Twins), an agentic artificial intelligence (AI) framework designed to transform static Building Information Modeling (BIM) into dynamic, robot-ready digital twins (DTs) that prioritize safety during execution. The framework bridges the gap between pre-existing BIM data and real-time site conditions by integrating three key data streams: geometric and semantic information from BIM models, activity data from IoT sensor networks, and visual-spatial data collected by robots during site traversal. The methodology introduces Semantic-Gravity ICP (SG-ICP), a point cloud registration algorithm that leverages large language model (LLM) reasoning. Unlike traditional methods, SG-ICP utilizes an LLM to infer object-specific, plausible orientation priors based on BIM semantics, improving alignment accuracy by avoiding convergence on local minima. This creates a feedback loop where robot-collected data updates the DT, which in turn optimizes paths for missions. The framework employs YOLOE object detection and Shi-Tomasi corner detection to identify and track construction elements while using BIM geometry as a priori maps. The framework also integrates real-time Hand-Arm Vibration (HAV) monitoring, mapping sensor-detected safety events to the digital twin using IFC standards for intervention. Experiments demonstrate SG-ICP's superiority over standard ICP, achieving RMSE reductions of 64.3%--88.3% in alignment across scenarios with occluded features, ensuring plausible orientations. HAV integration triggers warnings upon exceeding exposure limits, enhancing compliance with ISO 5349-1.",
+          "subjects": []
+        },
+        {
+          "title": "Bayesian BIM-Guided Construction Robot Navigation with NLP Safety Prompts in Dynamic Environments",
+          "authors": [
+            "Mani Amani",
+            "Reza Akhavian"
+          ],
+          "year": 2025,
+          "date": "2025-01-29",
+          "citations": 0,
+          "arxiv_id": "2501.17437",
+          "paper_id": "3c491d8c606b30dece4eaa8b9022d6f361197d1d",
+          "url": "https://arxiv.org/abs/2501.17437",
+          "abstract": "Construction robotics increasingly relies on natural language processing for task execution, creating a need for robust methods to interpret commands in complex, dynamic environments. While existing research primarily focuses on what tasks robots should perform, less attention has been paid to how these tasks should be executed safely and efficiently. This paper presents a novel probabilistic framework that uses sentiment analysis from natural language commands to dynamically adjust robot navigation policies in construction environments. The framework leverages Building Information Modeling (BIM) data and natural language prompts to create adaptive navigation strategies that account for varying levels of environmental risk and uncertainty. We introduce an object-aware path planning approach that combines exponential potential fields with a grid-based representation of the environment, where the potential fields are dynamically adjusted based on the semantic analysis of user prompts. The framework employs Bayesian inference to consolidate multiple information sources: the static data from BIM, the semantic content of natural language commands, and the implied safety constraints from user prompts. We demonstrate our approach through experiments comparing three scenarios: baseline shortest-path planning, safety-oriented navigation, and risk-aware routing. Results show that our method successfully adapts path planning based on natural language sentiment, achieving a 50\\% improvement in minimum distance to obstacles when safety is prioritized, while maintaining reasonable path lengths. Scenarios with contrasting prompts, such as\"dangerous\"and\"safe\", demonstrate the framework's ability to modify paths. This approach provides a flexible foundation for integrating human knowledge and safety considerations into construction robot navigation.",
+          "subjects": []
+        },
+        {
+          "title": "Intelligent ergonomic optimization in bimanual worker-robot interaction: A Reinforcement Learning approach",
+          "authors": [
+            "Mani Amani",
+            "Reza Akhavian"
+          ],
+          "year": 2024,
+          "date": "2024-12-01",
+          "citations": 19,
+          "arxiv_id": null,
+          "paper_id": "85d2d842c0c94788ed4459771b405e85bb543700",
+          "url": "https://www.semanticscholar.org/paper/85d2d842c0c94788ed4459771b405e85bb543700",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Safe and trustworthy robot pathfinding with BIM, MHA*, and NLP",
+          "authors": [
+            "Mani Amani",
+            "Reza Akhavian"
+          ],
+          "year": 2024,
+          "date": "2024-11-22",
+          "citations": 0,
+          "arxiv_id": "2411.15371",
+          "paper_id": "e553b6b2bc4dfe75fe03d4666316c6ea300fc9db",
+          "url": "https://arxiv.org/abs/2411.15371",
+          "abstract": "Construction robotics has gained significant traction in research and development, yet deploying robots in construction environments presents unique challenges. Construction sites are characterized by indeterminate processes, domain-specific tasks, and complex navigation requirements that make traditional robot pathfinding approaches insufficient. While methods like simultaneous localization and mapping (SLAM) offer viable solutions for robot navigation, they often require considerable computational resources due to their sensor precision demands and data processing needs. In the context of construction robotics, building information modeling (BIM) has emerged as the leading map representation for robot planning. However, the assumption of having a perfectly accurate model is dangerously flawed, and thus algorithms such as A* do not constitute a reliable approach for general robot planning. We integrate a multi-heuristic A* (MHA*) algorithm with artificial potential fields (APF) derived from BIM spatial data, while employing large language models (LLMs) to process BIM’s textual information for dynamic obstacle avoidance. Our experimental results demonstrate an 80% improvement in robot-obstacle clearance while maintaining comparable path lengths to traditional methods. This approach provides a computationally efficient solution for safe robot navigation in complex construction environments.",
+          "subjects": []
+        },
+        {
+          "title": "Adaptive Robot Perception in Construction Environments using 4D BIM",
+          "authors": [
+            "Mani Amani",
+            "Reza Akhavian"
+          ],
+          "year": 2024,
+          "date": "2024-09-20",
+          "citations": 0,
+          "arxiv_id": "2409.13837",
+          "paper_id": "48802037559d4459be0f1e1c4828583a66c02ffd",
+          "url": "https://arxiv.org/abs/2409.13837",
+          "abstract": "Human Activity Recognition (HAR) is a pivotal component of robot perception for physical Human Robot Interaction (pHRI) tasks. In construction robotics, it is vital that robots have an accurate and robust perception of worker activities. This enhanced perception is the foundation of trustworthy and safe Human-Robot Collaboration (HRC) in an industrial setting. Many developed HAR algorithms lack the robustness and adaptability to ensure seamless HRC. Recent works have employed multi-modal approaches to increase feature considerations. This paper further expands previous research to include 4D building information modeling (BIM) schedule data. We created a pipeline that transforms high-level BIM schedule activities into a set of low-level tasks in real-time. The framework then utilizes this subset as a tool to restrict the solution space that the HAR algorithm can predict activities from. By limiting this subspace through 4D BIM schedule data, the algorithm has a higher chance of predicting the true possible activities from a smaller pool of possibilities in a localized setting as compared to calculating all global possibilities at every point. Results indicate that the proposed approach achieves higher confidence predictions over the base model without leveraging the BIM data.",
+          "subjects": []
+        },
+        {
+          "title": "Noise and Parameter Mismatch in a Ring Network for Sensing Extremely Low Electric Fields",
+          "authors": [
+            "Antonio Palacios",
+            "J. Tamez",
+            "Mani Amani",
+            "V. In"
+          ],
+          "year": 2024,
+          "date": "2024-07-17",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "d8c122b8cfddbf9139a41dc6370812bbce75abb8",
+          "url": "https://www.semanticscholar.org/paper/d8c122b8cfddbf9139a41dc6370812bbce75abb8",
+          "abstract": "Over the past years, we have exploited the bistability features that are commonly found in many individual sensors to develop a network-based [Acebrón et al., 2003; Bulsara et al., 2004; In et al., 2003a; In et al., 2003b; In et al., 2005; In et al., 2006; In et al., 2012; Palacios et al., 2005] approach to modeling, designing, and fabricating extremely sensitive magnetic- and electric-field sensors capable of resolving field changes as low as 150[Formula: see text]pT and 100[Formula: see text]fAmps, respectively. Higher sensitivity is achieved by exploiting the symmetry of the network to create infinite-period bifurcations that render the ensuing oscillations highly sensitive to symmetry-breaking effects from external signals. In this paper, we study the effects of noise on the response of a network-based electric-field sensor as well as the effects of parameter mismatch, which appear naturally due to material imperfections and noise. The results show that Signal-to-Noise Ratio (SNR) increases sharply near the onset of the infinite-period bifurcation, and they increase further as the coupling strength in the network increases while passing the threshold that leads to oscillatory behavior. Overall, the SNR indicates that the negative effects of highly contaminated signals are well-mitigated by the sensitivity response of the system. In addition, computer simulations show the network-based system to be robust enough to mismatches in system parameters, while the deviations from the nominal parameter values form regions where the oscillations persist. Noise has a smoothing effect over the boundaries of these regions.",
+          "subjects": []
+        },
+        {
+          "title": "Disorder-Induced Dynamics in Complex Networks",
+          "authors": [
+            "Antonio Palacios",
+            "V. In",
+            "Mani Amani"
+          ],
+          "year": 2024,
+          "date": "2024-04-18",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "ca109f42f2daac2f613381d50175d61b28e3c1ba",
+          "url": "https://www.semanticscholar.org/paper/ca109f42f2daac2f613381d50175d61b28e3c1ba",
+          "abstract": "Disorder in parameters appears to influence the collective behavior of complex adaptive networks in ways that might seem unconventional. For instance, heterogeneities may, unexpectedly, lead to enhanced regions of existence of stable synchronization states. This behavior is unexpected because synchronization appears, generically, in symmetric networks with homogeneous components. Related works have, however, misidentified cases where disorder seems to play a critical role in enhancing synchronization, where it is actually not the case. Thus, in order to clarify the role of disorder in adaptive networks, we use normal forms to study, mathematically, when and how the presence of disorder can facilitate the emergence of collective patterns. We employ parameter symmetry breaking to study the interplay between disorder and the underlying bifurcations that determine the conditions for the existence and stability of collective behavior. This work provides a rigorous justification for a certain barycentric condition to be imposed on the heterogeneity of the parameters while studying the synchronization state. Theoretical results are accompanied by numerical simulations, which help clarify incorrect claims of disorder purportedly enhancing synchronization states.",
+          "subjects": []
+        },
+        {
+          "title": "Ergonomic Optimization in Worker-Robot Bimanual Object Handover: Implementing REBA Using Reinforcement Learning in Virtual Reality",
+          "authors": [
+            "Mani Amani",
+            "Reza Akhavian"
+          ],
+          "year": 2024,
+          "date": "2024-03-18",
+          "citations": 0,
+          "arxiv_id": "2403.12149",
+          "paper_id": "488b15970d01b67dbc4df54d75f0c65467a372df",
+          "url": "https://arxiv.org/abs/2403.12149",
+          "abstract": "Robots can serve as safety catalysts on construction job sites by taking over hazardous and repetitive tasks while alleviating the risks associated with existing manual workflows. Research on the safety of physical human-robot interaction (pHRI) is traditionally focused on addressing the risks associated with potential collisions. However, it is equally important to ensure that the workflows involving a collaborative robot are inherently safe, even though they may not result in an accident. For example, pHRI may require the human counterpart to use non-ergonomic body postures to conform to the robot hardware and physical configurations. Frequent and long-term exposure to such situations may result in chronic health issues. Safety and ergonomics assessment measures can be understood by robots if they are presented in algorithmic fashions so optimization for body postures is attainable. While frameworks such as Rapid Entire Body Assessment (REBA) have been an industry standard for many decades, they lack a rigorous mathematical structure which poses challenges in using them immediately for pHRI safety optimization purposes. Furthermore, learnable approaches have limited robustness outside of their training data, reducing generalizability. In this paper, we propose a novel framework that approaches optimization through Reinforcement Learning, ensuring precise, online ergonomic scores as compared to approximations, while being able to generalize and tune the regiment to any human and any task. To ensure practicality, the training is done in virtual reality utilizing Inverse Kinematics to simulate human movement mechanics. Experimental findings are compared to ergonomically naive object handover heuristics and indicate promising results where the developed framework can find the optimal object handover coordinates in pHRI contexts for manual material handling exemplary situations.",
+          "subjects": []
+        },
+        {
+          "title": "Expanding Frozen Vision-Language Models without Retraining: Towards Improved Robot Perception",
+          "authors": [
+            "Riley Tavassoli",
+            "Mani Amani",
+            "Reza Akhavian"
+          ],
+          "year": 2023,
+          "date": "2023-08-31",
+          "citations": 5,
+          "arxiv_id": "2308.16493",
+          "paper_id": "f1dc0b8b844332f08b7503d9728e4831e8bd3607",
+          "url": "https://arxiv.org/abs/2308.16493",
+          "abstract": "Vision-language models (VLMs) have shown powerful capabilities in visual question answering and reasoning tasks by combining visual representations with the abstract skill set large language models (LLMs) learn during pretraining. Vision, while the most popular modality to augment LLMs with, is only one representation of a scene. In human-robot interaction scenarios, robot perception requires accurate scene understanding by the robot. In this paper, we define and demonstrate a method of aligning the embedding spaces of different modalities (in this case, inertial measurement unit (IMU) data) to the vision embedding space through a combination of supervised and contrastive training, enabling the VLM to understand and reason about these additional modalities without retraining. We opt to give the model IMU embeddings directly over using a separate human activity recognition model that feeds directly into the prompt to allow for any nonlinear interactions between the query, image, and IMU signal that would be lost by mapping the IMU data to a discrete activity label. Further, we demonstrate our methodology's efficacy through experiments involving human activity recognition using IMU data and visual inputs. Our results show that using multiple modalities as input improves the VLM's scene understanding and enhances its overall performance in various tasks, thus paving the way for more versatile and capable language models in multi-modal contexts.",
+          "subjects": []
+        }
+      ]
     ],
     [
       "Mohammed Alyaseen",
@@ -2515,7 +3496,63 @@
           ]
         }
       ],
-      []
+      [
+        {
+          "title": "Econometric Analysis on Education and Technology in Maoming",
+          "authors": [
+            "Yan-Li Xu",
+            "Fei Huang",
+            "Zhirui Dai",
+            "Dan Liu"
+          ],
+          "year": 2023,
+          "date": "2023",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "46a2f7fb4f6b4342fb948c5166f8bcbff1d901c0",
+          "url": "https://www.semanticscholar.org/paper/46a2f7fb4f6b4342fb948c5166f8bcbff1d901c0",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "BEV-Net: Assessing Social Distancing Compliance by Joint People Localization and Geometric Reasoning",
+          "authors": [
+            "Zhirui Dai",
+            "Yue-Ren Jiang",
+            "Yi Li",
+            "Bo Liu",
+            "Antoni B. Chan",
+            "Nuno Vasconcelos"
+          ],
+          "year": 2021,
+          "date": "2021-10-01",
+          "citations": 0,
+          "arxiv_id": "2110.04931",
+          "paper_id": "a455dd6682cea9261bd8964329452a5f96e42d96",
+          "url": "https://arxiv.org/abs/2110.04931",
+          "abstract": "Social distancing, an essential public health measure to limit the spread of contagious diseases, has gained significant attention since the outbreak of the COVID-19 pandemic. In this work, the problem of visual social distancing compliance assessment in busy public areas, with wide field-of-view cameras, is considered. A dataset of crowd scenes with people annotations under a bird’s eye view (BEV) and ground truth for metric distances is introduced, and several measures for the evaluation of social distance detection systems are proposed. A multi-branch network, BEV-Net, is proposed to localize individuals in world coordinates and identify high-risk regions where social distancing is violated. BEV-Net combines detection of head and feet locations, camera pose estimation, a differentiable homography module to map image into BEV coordinates, and geometric reasoning to produce a BEV map of the people locations in the scene. Experiments on complex crowded scenes demonstrate the power of the approach and show superior performance over baselines derived from methods in the literature. Applications of interest for public health decision makers are finally discussed. Datasets, code and pretrained models are publicly available at GitHub1.",
+          "subjects": []
+        },
+        {
+          "title": "BEV-Net: Assessing Social Distancing Compliance by Joint People Localization and Geometric Reasoning Supplemental Material",
+          "authors": [
+            "Zhirui Dai",
+            "Yuepeng Jiang",
+            "Yi Li",
+            "Bo Liu",
+            "Antoni B. Chan",
+            "Nuno Vasconcelos"
+          ],
+          "year": 2021,
+          "date": "2021",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "922f7d70d5638125e5eb12371e06f033140c4553",
+          "url": "https://www.semanticscholar.org/paper/922f7d70d5638125e5eb12371e06f033140c4553",
+          "abstract": "",
+          "subjects": []
+        }
+      ]
     ],
     [
       "Ki Myung Brian Lee",
@@ -2585,28 +3622,6 @@
           "arxiv_id": "2610.20895v1",
           "url": "https://arxiv.org/abs/2610.20895v1",
           "abstract": "Satisfying safety constraints for systems with second-order dynamics is challenging because a position constraint may require infeasible deceleration. Higher-order control barrier functions (CBFs) provide an approach for expressing safety conditions for such systems but feasibility depends on the system dynamics and available control authority. We develop a constructive approach for designing feasible safety constraints for second-order control-affine systems. Starting from a signed distance function (SDF), we construct collision-free spheres, i.e., bubbles, in position space, and use their quadratic geometry and overlap to construct a velocity-dependent safety constraint. The associated safe set is represented as a union of intersections and enforced through a quadratic-program safety filter. Under mild assumptions on the dynamics, bubble overlap, and design parameters, we prove that the quadratic-program-based controller is well defined, continuous in the system state, and renders the set forward invariant. We also derive sufficient conditions for feasibility under bounded inputs. We demonstrate that our BubbleCBF, applied to a differential-drive robot, achieves safe autonomous navigation in unknown environments. Videos and results are available at: https://existentialrobotics.org/bubblecbf/.",
-          "subjects": [
-            "cs.RO"
-          ]
-        }
-      ],
-      []
-    ],
-    [
-      "Siwei Ju",
-      [
-        {
-          "title": "Safe Reinforcement Learning with Receding-Horizon Safety Critic and Differentiable Action Shields",
-          "authors": [
-            "Siwei Ju",
-            "Jan Peters",
-            "Oleg Arenz"
-          ],
-          "date": "2026-10-14",
-          "citations": 0,
-          "arxiv_id": "2610.20255v1",
-          "url": "https://arxiv.org/abs/2610.20255v1",
-          "abstract": "Despite the Markov assumption, safety failures in robot reinforcement learning rarely occur instantaneously; they typically emerge over several steps as the policy enters unfamiliar states under disturbances and domain shift. We address this limitation by learning a receding-horizon safety critic that predicts whether a state will remain non-terminating over the next receding horizon, enabling anticipatory detection of impending locomotion failures. The critic is trained from rollout-derived horizon labels with a composite objective that combines horizon classification, control-barrier-function-inspired temporal consistency, and smoothness regularization, and we aggregate an ensemble of critics with a conservative Conditional Value at Risk estimate to account for uncertainty. Building on the learned critic, we derive a closed-form, differentiable CBF-style safety filter that minimally modifies the policy action to improve predicted safety, and integrate it into PPO with an anticipation loss to reduce policy-filter mismatch during training. In simulated quadruped locomotion, our method improves robustness under action noise, external perturbations, and terrain shifts, reducing catastrophic failures while maintaining competitive returns.",
           "subjects": [
             "cs.RO"
           ]
