@@ -848,7 +848,7 @@
         "John M. Dolan"
       ],
       "date": "2026-10-06",
-      "citations": 0,
+      "citations": 1,
       "arxiv_id": "2610.08765v1",
       "url": "https://arxiv.org/abs/2610.08765v1",
       "abstract": "Control barrier functions (CBFs) certify commands through an assumed dynamics model, so an abrupt, unmeasured regime change can undermine the certificate exactly when safety matters most. We present Look-Back Adaptive Control Barrier Functions (LBA-CBF), which rank a finite bank of candidate dynamics by recent prediction error over a short look-back window and enforce the high-order CBF condition against every model within a tolerance of the best, spanning best-fit adaptation to full-bank robust filtering. The dynamics may depend nonlinearly on the unknown parameters, and no switching model or continuously parameterized estimator is required. We prove that any feasible filtered input satisfies the true CBF condition whenever a safety-representative candidate is retained. In quadrotor simulation with abrupt wind reversals and an unknown payload, LBA-CBF is safe and reaches the goal from all random initial conditions, matching an oracle, while adaptive and robust baselines achieve 0-88% success. Banks of up to 250,000 models run inside the control loop, and Crazyflie 2.1 and F1TENTH experiments demonstrate adaptation to wind, payload release, and varying tire-road friction. Code, videos, and project details are available at: https://lla-control.github.io",
@@ -1943,6 +1943,75 @@
       "J. Grizzle",
       [
         {
+          "title": "CLF-CBF Constraints for Real-Time Avoidance of Multiple Obstacles in Bipedal Locomotion and Navigation",
+          "authors": [
+            "Jinze Liu",
+            "Min-Zhe Li",
+            "J. Grizzle",
+            "Jiunn-Kai Huang"
+          ],
+          "year": 2023,
+          "date": "2023-10-01",
+          "citations": 17,
+          "arxiv_id": null,
+          "paper_id": "83c9c9c6c21f07e565b2d9e45b5a7630366ce1cb",
+          "url": "https://www.semanticscholar.org/paper/83c9c9c6c21f07e565b2d9e45b5a7630366ce1cb",
+          "abstract": "This paper presents a reactive planning system that allows a Cassie-series bipedal robot to avoid multiple non-overlapping obstacles via a single, continuously differentiable control barrier function (CBF). The overall system detects an individual obstacle via a height map derived from a LiDAR point cloud and computes an elliptical outer approximation, which is then turned into a CBF. The QP-CLF-CBF formalism developed by Ames et al. is applied to ensure that safe trajectories are generated. Safe planning in environments with multiple obstacles is demonstrated both in simulation and experimentally on the Cassie biped.",
+          "subjects": []
+        },
+        {
+          "title": "Robustness of Control Barrier Functions for Safety Critical Control",
+          "authors": [
+            "Xiangru Xu",
+            "P. Tabuada",
+            "J. Grizzle",
+            "A. Ames"
+          ],
+          "year": 2016,
+          "date": "2016-12-05",
+          "citations": 0,
+          "arxiv_id": "1612.01554",
+          "paper_id": "3098826a91ba89250332fa1de1881207e619d6ea",
+          "url": "https://arxiv.org/abs/1612.01554",
+          "abstract": "Abstract Barrier functions (also called certificates) have been an important tool for the verification of hybrid systems, and have also played important roles in optimization and multi-objective control. The extension of a barrier function to a controlled system results in a control barrier function. This can be thought of as being analogous to how Sontag extended Lyapunov functions to control Lypaunov functions in order to enable controller synthesis for stabilization tasks. A control barrier function enables controller synthesis for safety requirements specified by forward invariance of a set using a Lyapunov-like condition. This paper develops several important extensions to the notion of a control barrier function. The first involves robustness under perturbations to the vector field defining the system. Input-to-State stability conditions are given that provide for forward invariance, when disturbances are present, of a “relaxation” of set rendered invariant without disturbances. A control barrier function can be combined with a control Lyapunov function in a quadratic program to achieve a control objective subject to safety guarantees. The second result of the paper gives conditions for the control law obtained by solving the quadratic program to be Lipschitz continuous and therefore to gives rise to well-defined solutions of the resulting closed-loop system.",
+          "subjects": []
+        },
+        {
+          "title": "3D dynamic walking on stepping stones with control barrier functions",
+          "authors": [
+            "Quan Nguyen",
+            "Ayonga Hereid",
+            "J. Grizzle",
+            "A. Ames",
+            "K. Sreenath"
+          ],
+          "year": 2016,
+          "date": "2016-12-01",
+          "citations": 126,
+          "arxiv_id": null,
+          "paper_id": "0db80b12b1049209da1caccd9b0606f02e9e4dce",
+          "url": "https://www.semanticscholar.org/paper/0db80b12b1049209da1caccd9b0606f02e9e4dce",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Correctness Guarantees for the Composition of Lane Keeping and Adaptive Cruise Control",
+          "authors": [
+            "Xiangru Xu",
+            "J. Grizzle",
+            "P. Tabuada",
+            "A. Ames"
+          ],
+          "year": 2016,
+          "date": "2016-09-22",
+          "citations": 0,
+          "arxiv_id": "1609.06807",
+          "paper_id": "98af018e4e7243a5ab49a0657fbf8f7a0a3ef115",
+          "url": "https://arxiv.org/abs/1609.06807",
+          "abstract": "This paper develops a control approach with correctness guarantees for the simultaneous operation of lane keeping and adaptive cruise control. The safety specifications for these driver assistance modules are expressed in terms of set invariance. Control barrier functions (CBFs) are used to design a family of control solutions that guarantee the forward invariance of a set, which implies satisfaction of the safety specifications. The CBFs are synthesized through a combination of sum-of-squares program and physics-based modeling and optimization. A real-time quadratic program is posed to combine the CBFs with the performance-based controllers, which can be either expressed as control Lyapunov function conditions or as black-box legacy controllers. In both cases, the resulting feedback control guarantees the safety of the composed driver assistance modules in a formally correct manner. Importantly, the quadratic program admits a closed-form solution that can be easily implemented. The effectiveness of the control approach is demonstrated by simulations in the industry-standard vehicle simulator Carsim. Note to Practitioners—Safety is of paramount importance for the control of automated vehicles. This paper is motivated by the problem of designing controllers that are provably correct for the simultaneous operation of two driver assistance modules, lane keeping and adaptive cruise control. This is a challenging problem partially, because the lateral and longitudinal dynamics of the vehicles are coupled, with few results known to exist that provide formal guarantees. In this paper, we employ an assume-guarantee formalism between these two subsystems, such that they can be considered individually; based on that, we use optimization to design safe sets that serves as “supervisors” for vehicle behavior, such that the trajectories of the closed-loop system are confined within the safe sets using predetermined bounds on wheel force and steering angle. The feedback controller is constructed by solving convex quadratic programs online, which can also be given in closed form, making the implementation much easier. One particular advantage of this control approach is that the safety set and the performance controller can be designed separately, which enables the integration of a legacy controller into a correct-by-construction solution.",
+          "subjects": []
+        },
+        {
           "title": "Control Barrier Function Based Quadratic Programs for Safety Critical Systems",
           "authors": [
             "A. Ames",
@@ -1979,7 +2048,371 @@
           "subjects": []
         }
       ],
-      []
+      [
+        {
+          "title": "Standing Tall: Robust Fall Prediction for Bipedal Robots",
+          "authors": [
+            "Gokul Prabhakaran",
+            "J. Grizzle",
+            "M. E. Mungai"
+          ],
+          "year": 2025,
+          "date": "2025",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "59fd87c8f945ec87e054d674b5f590f1d541cd56",
+          "url": "https://www.semanticscholar.org/paper/59fd87c8f945ec87e054d674b5f590f1d541cd56",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Stair Climbing Using the Angular Momentum Linear Inverted Pendulum Model and Model Predictive Control",
+          "authors": [
+            "O. Dosunmu-Ogunbi",
+            "Aayush Shrivastava",
+            "G. Gibson",
+            "J. Grizzle"
+          ],
+          "year": 2023,
+          "date": "2023-07-05",
+          "citations": 0,
+          "arxiv_id": "2307.02448",
+          "paper_id": "6b314173bfd97084f4388a75a4b2d4a28f2fef43",
+          "url": "https://arxiv.org/abs/2307.02448",
+          "abstract": "A new control paradigm using angular momentum and foot placement as state variables in the linear inverted pendulum model has expanded the realm of possibilities for the control of bipedal robots. This new paradigm, known as the ALIP model, has shown effectiveness in cases where a robot's center of mass height can be assumed to be constant or near constant as well as in cases where there are no non-kinematic restrictions on foot placement. Walking up and down stairs violates both of these assumptions, where center of mass height varies significantly within a step and the geometry of the stairs restrict the effectiveness of foot placement. In this paper, we explore a variation of the ALIP model that allows the length of the virtual pendulum formed by the robot's stance foot and center of mass to follow smooth trajectories during a step. We couple this model with a control strategy constructed from a novel combination of virtual constraint-based control and a model predictive control algorithm to stabilize a stair climbing gait that does not soley rely on foot placement. Simulations on a 20-degree of freedom model of the Cassie biped in the SimMechanics simulation environment show that the controller is able to achieve periodic gait.",
+          "subjects": []
+        },
+        {
+          "title": "Exploring Kinodynamic Fabrics for Reactive Whole-Body Control of Underactuated Humanoid Robots",
+          "authors": [
+            "Alphonsus Adu-Bredu",
+            "G. Gibson",
+            "J. Grizzle"
+          ],
+          "year": 2023,
+          "date": "2023-03-07",
+          "citations": 0,
+          "arxiv_id": "2303.04279",
+          "paper_id": "ce25bc678e70170507b0da8727888a5a0f96da64",
+          "url": "https://arxiv.org/abs/2303.04279",
+          "abstract": "For bipedal humanoid robots to successfully operate in the real world, they must be competent at simultaneously executing multiple motion tasks while reacting to unforeseen external disturbances in real-time. We propose Kinodynamic Fabrics as an approach for the specification, solution and simultaneous execution of multiple motion tasks in real-time while being reactive to dynamism in the environment. Kinodynamic Fabrics allows for the specification of prioritized motion tasks as forced spectral semi-sprays and solves for desired robot joint accelerations at real-time frequencies. We evaluate the capabilities of Kinodynamic fabrics on diverse physically-challenging whole-body control tasks with a bipedal humanoid robot both in simulation and in the real-world. Kinodynamic Fabrics outperforms the state-of-the-art Quadratic Program based whole-body controller on a variety of whole-body control tasks on run-time and reactivity metrics in our experiments. Our open-source implementation of Kinodynamic Fabrics as well as robot demonstration videos can be found at this url: https://adubredu.github.io/kinofabs",
+          "subjects": []
+        },
+        {
+          "title": "Terrain-Adaptive, ALIP-Based Bipedal Locomotion Controller via Model Predictive Control and Virtual Constraints",
+          "authors": [
+            "G. Gibson",
+            "O. Dosunmu-Ogunbi",
+            "Yu-Kai Gong",
+            "J. Grizzle"
+          ],
+          "year": 2021,
+          "date": "2021-09-30",
+          "citations": 0,
+          "arxiv_id": "2109.14862",
+          "paper_id": "1406abbae2831d8bef655641f83d2d47ac80fc6d",
+          "url": "https://arxiv.org/abs/2109.14862",
+          "abstract": "This paper presents a gait controller for bipedal robots to achieve highly agile walking over various terrains given local slope and friction cone information. Without these considerations, untimely impacts can cause a robot to trip and inadequate tangential reaction forces at the stance foot can cause slippages. We address these challenges by combining, in a novel manner, a model based on an Angular Momentum Linear Inverted Pendulum (ALIP) and a Model Predictive Control (MPC) foot placement planner that is executed by the method of virtual constraints. The process starts with abstracting from the full dynamics of a Cassie 3D bipedal robot, an exact low-dimensional representation of its center of mass dynamics, parameterized by angular momentum. Under a piecewise planar terrain assumption and the elimination of terms for the angular momentum about the robot's center of mass, the centroidal dynamics about the contact point become linear and have dimension four. Importantly, we include the intra-step dynamics at uniformly-spaced intervals in the MPC formulation so that realistic workspace constraints on the robot's evolution can be imposed from step-to-step. The output of the low-dimensional MPC controller is directly implemented on a high-dimensional Cassie robot through the method of virtual constraints. In experiments, we validate the performance of our control strategy for the robot on a variety of surfaces with varied inclinations and textures.",
+          "subjects": []
+        },
+        {
+          "title": "One-Step Ahead Prediction of Angular Momentum about the Contact Point for Control of Bipedal Locomotion: Validation in a LIP-inspired Controller",
+          "authors": [
+            "Yu-Kai Gong",
+            "J. Grizzle"
+          ],
+          "year": 2021,
+          "date": "2021-05-30",
+          "citations": 55,
+          "arxiv_id": null,
+          "paper_id": "3c6c2af89b34351d43115080880031c0c5d04e31",
+          "url": "https://www.semanticscholar.org/paper/3c6c2af89b34351d43115080880031c0c5d04e31",
+          "abstract": "Ultimately, feedback control is about making adjustments using current state information in order to meet an objective in the future. In the control of bipedal locomotion, linear velocity of the center of mass has been widely accepted as the primary variable around which feedback control objectives are formulated. In this paper, we argue that it is easier to predict the one-step ahead evolution of angular momentum about the contact point than it is to make a similar prediction for linear velocity, and hence it provides a superior quantity for feedback control. So as not to confuse the benefits of predicting angular momentum with any other control design decisions, we reformulate the standard LIP model in terms of angular momentum and show how to regulate swing foot touchdown position at the end of the current step so as to meet an angular momentum objective at the end of the next step. We implement the resulting feedback controller on the 20 degree-of-freedom bipedal robot, Cassie Blue, where each leg accounts for nearly one-third of the robot’s total mass of 32 Kg. Under this controller, the robot achieves fast walking, rapid turning while walking, large disturbance rejection, and locomotion on rough terrain.",
+          "subjects": []
+        },
+        {
+          "title": "Zero Dynamics, Pendulum Models, and Angular Momentum in Feedback Control of Bipedal Locomotion",
+          "authors": [
+            "Yu-Kai Gong",
+            "J. Grizzle"
+          ],
+          "year": 2021,
+          "date": "2021-05-17",
+          "citations": 0,
+          "arxiv_id": "2105.08170",
+          "paper_id": "3898f878e0a07c74cfc18776db2af0e312dbc277",
+          "url": "https://arxiv.org/abs/2105.08170",
+          "abstract": "\n Low-dimensional models are ubiquitous in the bipedal robotics literature. On the one hand is the community of researchers that bases feedback control design on pendulum models selected to capture the center of mass dynamics of the robot during walking. On the other hand is the community that bases feedback control design on virtual constraints, which induce an exact low-dimensional model in the closed-loop system. In the first case, the low-dimensional model is valued for its physical insight and analytical tractability. In the second case, the low-dimensional model is integral to a rigorous analysis of the stability of walking gaits in the full-dimensional model of the robot. This paper seeks to clarify the commonalities and differences in the two perspectives for using low-dimensional models. In the process of doing so, we argue that angular momentum about the contact point is a better indicator of robot state than linear velocity. Concretely, we show that an approximate (pendulum and zero dynamics) model parameterized by angular momentum provides better predictions for foot placement on a physical robot (e.g., legs with mass) than does a related approximate model parameterized in terms of linear velocity. We implement an associated angular-momentum-based controller on Cassie, a 3D robot, and demonstrate high agility and robustness in experiments.",
+          "subjects": []
+        },
+        {
+          "title": "LiDARTag: A Real-Time Fiducial Tag System for Point Clouds",
+          "authors": [
+            "Jiunn-Kai Huang",
+            "Shoutian Wang",
+            "Maani Ghaffari",
+            "J. Grizzle"
+          ],
+          "year": 2021,
+          "date": "2021-03-31",
+          "citations": 36,
+          "arxiv_id": null,
+          "paper_id": "7e1aa9e751bd9656114ad5de38109490dec1ff22",
+          "url": "https://www.semanticscholar.org/paper/7e1aa9e751bd9656114ad5de38109490dec1ff22",
+          "abstract": "Image-based fiducial markers are useful in problems such as object tracking in cluttered or textureless environments, camera (and multi-sensor) calibration tasks, and vision-based simultaneous localization and mapping (SLAM). The state-of-the-art fiducial marker detection algorithms rely on the consistency of the ambient lighting. This article introduces LiDARTag, a novel fiducial tag design and detection algorithm suitable for light detection and ranging (LiDAR) point clouds. The proposed method runs in real-time and can process data at 100 Hz, which is faster than the currently available LiDAR sensor frequencies. Because of the LiDAR sensors’ nature, rapidly changing ambient lighting will not affect the detection of a LiDARTag; hence, the proposed fiducial marker can operate in a completely dark environment. In addition, the LiDARTag nicely complements and is compatible with existing visual fiducial markers, such as AprilTags, allowing for efficient multi-sensor fusion and calibration tasks. We further propose a concept of minimizing a fitting error between a point cloud and the marker's template to estimate the marker's pose. The proposed method achieves millimeter error in translation and a few degrees in rotation. Due to LiDAR returns’ sparsity, the point cloud is lifted to a continuous function in a reproducing kernel Hilbert space where the inner product can be used to determine a marker's ID. The experimental results, verified by a motion capture system, confirm that the proposed method can reliably provide a tag's pose and unique ID code. The rejection of false positives is validated on the Google Cartographer indoor dataset and the Honda H3D outdoor dataset. All implementations are coded in C++ and are available at https://github.com/UMich-BipedLab/LiDARTag.",
+          "subjects": []
+        },
+        {
+          "title": "Feedback Control Design for Robust Comfortable Sit-to-Stand Motions of 3D Lower-Limb Exoskeletons",
+          "authors": [
+            "M. E. Mungai",
+            "J. Grizzle"
+          ],
+          "year": 2021,
+          "date": "2021",
+          "citations": 13,
+          "arxiv_id": null,
+          "paper_id": "14fb7e00c53b30bbaac662a9cd8208f62f4c2134",
+          "url": "https://www.semanticscholar.org/paper/14fb7e00c53b30bbaac662a9cd8208f62f4c2134",
+          "abstract": "Lower-limb exoskeletons provide people who suffer from lower limb impairments with an opportunity to stand up and ambulate. Standing up is a crucial task for lower-limb exoskeletons as it allows the user to transfer to the exoskeleton from a wheelchair, with no assistance, and can be a precursor to walking. Achieving a safe sit-to-stand motion for the exoskeleton + user system can be challenging because of the need to balance user comfort while respecting hardware bounds and being robust to changes in the user characteristics and the user’s environment. We successfully achieve safe sit-to-stand motions by using constrained optimization to generate two types of dynamic sit-to-stand motions based on two hybrid system descriptions for the exoskeleton, Atalante. Due to the highly constrained nature of the equations of motions, we introduce a method to systematically design virtual constraints for highly constrained systems. We also design two quadratic program-based computed-torque controllers to achieve the sit-to-stand motion and to safely come to a stop in a standing position. We then analyze the closed-loop behaviors of the two sit-to-stand motions under the two controllers using physically motivated robustness tests. The criteria used to determine a successful sit-to-stand motion are: tracking error, the pitch acceleration of the torso, the amount of user force needed to perform the motion, and the adherence to the Zero Moment Point (ZMP), friction, and joint constraints.",
+          "subjects": []
+        },
+        {
+          "title": "A Roadmap for US Robotics - From Internet to Robotics 2020 Edition",
+          "authors": [
+            "Henrik I. Christensen",
+            "N. Amato",
+            "H. Yanco",
+            "M. Matarić",
+            "H. Choset",
+            "Ann W. Drobnis",
+            "Ken Goldberg",
+            "J. Grizzle",
+            "Gregory Hager",
+            "J. Hollerbach",
+            "Seth Hutchinson",
+            "V. Krovi",
+            "Daniel Lee",
+            "W. Smart",
+            "J. Trinkle",
+            "G. Sukhatme"
+          ],
+          "year": 2021,
+          "date": "2021",
+          "citations": 139,
+          "arxiv_id": null,
+          "paper_id": "bd6d8840ecbdddab31e9fbbb79fc8ce2f11830b7",
+          "url": "https://www.semanticscholar.org/paper/bd6d8840ecbdddab31e9fbbb79fc8ce2f11830b7",
+          "abstract": "Recently, the robotics industry celebrated its 60-year anniversary. We have used robots for more than six decades to empower people to do things that are typically dirty, dull and/or dangerous. The industry has progressed significantly over the period from basic mechanical assist systems to fully autonomous cars, environmental monitoring and exploration of outer space. We have seen tremendous adoption of IT technology in our daily lives for a diverse set of support tasks. Through use of robots we are starting to see a new revolution, as we not only will have IT support from tablets, phones, computers but also systems that can physically interact with the world and assist with daily tasks, work, and leisure activities. The present document is a summary of the main societal opportunities identified, the associated challenges to deliver desired solutions and a presentation of efforts to be undertaken to ensure that US will continue to be a leader in robotics both in terms of research innovation, adoption of the latest technology, and adoption of appropriate policy frameworks that ensure that the technology is utilized in a responsible fashion. H. I. Christensen, N. Amato, H. Yanco, M. Mataric, H. Choset, A. Drobnis, K. Goldberg, J. Grizzle, G. Hager, J. Hollerbach, S. Hutchinson, V. Krovi, D. Lee, W. Smart and J. Trinkle (2021), “A Roadmap for US Robotics – From Internet to Robotics 2020 Edition”, Foundations and Trends® in Robotics: Vol. 8, No. 4, pp 307–424. DOI: 10.1561/2300000066. Full text available at: http://dx.doi.org/10.1561/2300000066",
+          "subjects": []
+        },
+        {
+          "title": "Bayesian Spatial Kernel Smoothing for Scalable Dense Semantic Mapping",
+          "authors": [
+            "Lu Gan",
+            "Ray Zhang",
+            "J. Grizzle",
+            "Ryan M. Eustice",
+            "Maani Ghaffari"
+          ],
+          "year": 2019,
+          "date": "2019-09-10",
+          "citations": 0,
+          "arxiv_id": "1909.04631",
+          "paper_id": "2d6abfa55b93ab9f0a697e2d6f0088ee1edb8c16",
+          "url": "https://arxiv.org/abs/1909.04631",
+          "abstract": "This article develops a Bayesian continuous 3D semantic occupancy map from noisy point clouds by generalizing the Bayesian kernel inference model for building occupancy maps, a binary problem, to semantic maps, a multi-class problem. The proposed method provides a unified probabilistic model for both occupancy and semantic probabilities and nicely reverts to the original occupancy mapping framework when only one occupied class exists in obtained measurements. The Bayesian spatial kernel inference relaxes the independent grid assumption and brings smoothness and continuity to the map inference, enabling to exploit local correlations present in the environment and increasing the performance. The accompanying software uses multi-threading and vectorization, and runs at about 2 $\\mathrm{Hz}$ on a laptop CPU. Evaluations using multiple sequences of stereo camera and LiDAR datasets show that the proposed method consistently outperforms current baselines. We also present a qualitative evaluation using data collected with a bipedal robot platform on the University of Michigan - North Campus.",
+          "subjects": []
+        },
+        {
+          "title": "Contact-aided invariant extended Kalman filtering for robot state estimation",
+          "authors": [
+            "R. Hartley",
+            "Maani Ghaffari Jadidi",
+            "Ryan M. Eustice",
+            "J. Grizzle"
+          ],
+          "year": 2019,
+          "date": "2019-04-19",
+          "citations": 0,
+          "arxiv_id": "1904.09251",
+          "paper_id": "b5e33d796b313a202200ab3715c68294509ceb04",
+          "url": "https://arxiv.org/abs/1904.09251",
+          "abstract": "Legged robots require knowledge of pose and velocity in order to maintain stability and execute walking paths. Current solutions either rely on vision data, which is susceptible to environmental and lighting conditions, or fusion of kinematic and contact data with measurements from an inertial measurement unit (IMU). In this work, we develop a contact-aided invariant extended Kalman filter (InEKF) using the theory of Lie groups and invariant observer design. This filter combines contact-inertial dynamics with forward kinematic corrections to estimate pose and velocity along with all current contact points. We show that the error dynamics follows a log-linear autonomous differential equation with several important consequences: (a) the observable state variables can be rendered convergent with a domain of attraction that is independent of the system’s trajectory; (b) unlike the standard EKF, neither the linearized error dynamics nor the linearized observation model depend on the current state estimate, which (c) leads to improved convergence properties and (d) a local observability matrix that is consistent with the underlying nonlinear system. Furthermore, we demonstrate how to include IMU biases, add/remove contacts, and formulate both world-centric and robo-centric versions. We compare the convergence of the proposed InEKF with the commonly used quaternion-based extended Kalman filter (EKF) through both simulations and experiments on a Cassie-series bipedal robot. Filter accuracy is analyzed using motion capture, while a LiDAR mapping experiment provides a practical use case. Overall, the developed contact-aided InEKF provides better performance in comparison with the quaternion-based EKF as a result of exploiting symmetries present in system.",
+          "subjects": []
+        },
+        {
+          "title": "Data-Driven Computation of Minimal Robust Control Invariant Set",
+          "authors": [
+            "Yuxiao Chen",
+            "Huei Peng",
+            "J. Grizzle",
+            "N. Ozay"
+          ],
+          "year": 2018,
+          "date": "2018-12-01",
+          "citations": 45,
+          "arxiv_id": null,
+          "paper_id": "9aa5b9672a8266003630023bbacabd226051fbe6",
+          "url": "https://www.semanticscholar.org/paper/9aa5b9672a8266003630023bbacabd226051fbe6",
+          "abstract": "We propose a data-driven framework to compute an approximation of a minimal robust control invariant set (mRCI) for an uncertain dynamical system where the model of the system is also unknown and should be learned from data. First, the set of admissible models is characterized via a set of linear constraints extracted from the experimental data. Each model in the set of admissible models contains information about the nominal model, as well as the characterization of the model uncertainty, including additive and multiplicative uncertainties. Then an iterative algorithm based on robust optimization is proposed to simultaneously compute a minimal robust control invariant set while selecting an optimal model from the admissible set. The numerical results show that the proposed method greatly reduces the size of the invariant set compared to a benchmark method that sequentially selects a model with least squares and then computes the invariant set.",
+          "subjects": []
+        },
+        {
+          "title": "Automotive Control Systems",
+          "authors": [
+            "Joseph S. Cook",
+            "J. Grizzle",
+            "Jing Sun",
+            "M. Liubakka",
+            "D. Rhode",
+            "James R. Winkelman",
+            "P. Kokotovic"
+          ],
+          "year": 2018,
+          "date": "2018-10-24",
+          "citations": 706,
+          "arxiv_id": null,
+          "paper_id": "552e2b143ca54b2494e8aae03c4d14b8b094ee3c",
+          "url": "https://www.semanticscholar.org/paper/552e2b143ca54b2494e8aae03c4d14b8b094ee3c",
+          "abstract": "This engineering textbook is designed to introduce advanced control systems for vehicles, including advanced automotive concepts and the next generation of vehicles for Intelligent Transportation Systems (ITS). For each automotive-control problem considered, the authors emphasize the physics and underlying principles behind the control-system concept and design. This is an exciting and rapidly developing field for which many articles and reports exist but no modern unifying text. An extensive list of references is provided at the end of each chapter for all topics covered. This is currently the only textbook, including problems and examples, that covers and integrates the topics of automotive powertrain control, vehicle control, and ITS. The emphasis is on fundamental concepts and methods for automotive control systems rather than the rapidly changing specific technologies. Many of the text examples, as well as the end-of-chapter problems, require the use of MATLAB and/or Simulink.",
+          "subjects": []
+        },
+        {
+          "title": "Feedback Control of a Cassie Bipedal Robot: Walking, Standing, and Riding a Segway",
+          "authors": [
+            "Yu-Kai Gong",
+            "R. Hartley",
+            "Xingye Da",
+            "Ayonga Hereid",
+            "Omar Harib",
+            "Jiunn-Kai Huang",
+            "J. Grizzle"
+          ],
+          "year": 2018,
+          "date": "2018-09-19",
+          "citations": 0,
+          "arxiv_id": "1809.07279",
+          "paper_id": "76a89e10661d5ccb96af2c76625c24e909ab3b84",
+          "url": "https://arxiv.org/abs/1809.07279",
+          "abstract": "The Cassie bipedal robot designed by Agility Robotics is providing academics with a common platform for sharing and comparing algorithms for locomotion, perception, and navigation. This paper focuses on feedback control for standing and walking using the methods of virtual constraints and gait libraries. The designed controller was implemented six weeks after the robot arrived at the University of Michigan and allowed it to stand in place as well as walk over sidewalks, grass, snow, sand, and burning brush. The controller for standing also enables the robot to ride a Segway. Software supporting the work in this paper is available on GitHub.",
+          "subjects": []
+        },
+        {
+          "title": "Feedback Control of an Exoskeleton for Paraplegics: Toward Robustly Stable, Hands-Free Dynamic Walking",
+          "authors": [
+            "Omar Harib",
+            "Ayonga Hereid",
+            "Ayush Agrawal",
+            "Thomas Gurriet",
+            "Sylvain Finet",
+            "G. Boéris",
+            "Alexis Duburcq",
+            "M. E. Mungai",
+            "Mattieu Masselin",
+            "A. Ames",
+            "K. Sreenath",
+            "J. Grizzle"
+          ],
+          "year": 2018,
+          "date": "2018-02-22",
+          "citations": 0,
+          "arxiv_id": "1802.08322",
+          "paper_id": "0330cc5bb7a43f6c8098af76b54dbdff519d6ddf",
+          "url": "https://arxiv.org/abs/1802.08322",
+          "abstract": "\"I will never forget the emotion of my first steps [&hellip;],\" were the words of Fran?oise, the first user during initial trials of the exoskeleton ATALANTE [1]. \"I am tall again!\" were the words of Sandy (the fourth user) after standing up in the exoskeleton. During these early tests, complete paraplegic patients dynamically walked up to 10 m without crutches or other assistance using a feedback control method originally invented for bipedal robots. As discussed in \"Summary,\" this article describes the hardware (shown in Figure 1) that was designed to achieve hands-free dynamic walking, the control laws that were deployed (and those being developed) to provide enhanced mobility and robustness, and preliminary test results. In this article, dynamic walking refers to a motion that is orbitally stable as opposed to statically stable.",
+          "subjects": []
+        },
+        {
+          "title": "Obstacle Avoidance for Low-Speed Autonomous Vehicles With Barrier Function",
+          "authors": [
+            "Yuxiao Chen",
+            "Huei Peng",
+            "J. Grizzle"
+          ],
+          "year": 2018,
+          "date": "2018",
+          "citations": 186,
+          "arxiv_id": null,
+          "paper_id": "12bb592967af70686568e9077493479acdab0b1f",
+          "url": "https://www.semanticscholar.org/paper/12bb592967af70686568e9077493479acdab0b1f",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Legged Robot State-Estimation Through Combined Forward Kinematic and Preintegrated Contact Factors",
+          "authors": [
+            "R. Hartley",
+            "Josh Mangelson",
+            "Lu Gan",
+            "Maani Ghaffari Jadidi",
+            "Jeffrey M. Walls",
+            "Ryan M. Eustice",
+            "J. Grizzle"
+          ],
+          "year": 2017,
+          "date": "2017-12-15",
+          "citations": 0,
+          "arxiv_id": "1712.05873",
+          "paper_id": "072efec6c62b50a50e4a15318e84561d240e9958",
+          "url": "https://arxiv.org/abs/1712.05873",
+          "abstract": "State-of-the-art robotic perception systems have achieved sufficiently good performance using Inertial Measurement Units (IMUs), cameras, and nonlinear optimization techniques, that they are now being deployed as technologies. However, many of these methods rely significantly on vision and often fail when visual tracking is lost due to lighting or scarcity of features. This paper presents a state-estimation technique for legged robots that takes into account the robot's kinematic model as well as its contact with the environment. We introduce forward kinematic factors and preintegrated contact factors into a factor graph framework that can be incrementally solved in real-time. The forward kinematic factor relates the robot's base pose to a contact frame through noisy encoder measurements. The preintegrated contact factor provides odometry measurements of this contact frame while accounting for possible foot slippage. Together, the two developed factors constrain the graph optimization problem allowing the robot's trajectory to be estimated. The paper evaluates the method using simulated and real sensory IMU and kinematic data from experiments with a Cassie-series robot designed by Agility Robotics. These preliminary experiments show that using the proposed method in addition to IMU decreases drift and improves localization accuracy, suggesting that its use can enable successful recovery from a loss of visual tracking.",
+          "subjects": []
+        },
+        {
+          "title": "Combining trajectory optimization, supervised machine learning, and model structure for mitigating the curse of dimensionality in the control of bipedal robots",
+          "authors": [
+            "Xingye Da",
+            "J. Grizzle"
+          ],
+          "year": 2017,
+          "date": "2017-11-06",
+          "citations": 0,
+          "arxiv_id": "1711.02223",
+          "paper_id": "a83989fc2b4c87c70061d96e224db7ea56cd38e1",
+          "url": "https://arxiv.org/abs/1711.02223",
+          "abstract": "To overcome the obstructions imposed by high-dimensional bipedal models, we embed a stable walking motion in an attractive low-dimensional surface of the system’s state space. The process begins with trajectory optimization to design an open-loop periodic walking motion of the high-dimensional model and then adding to this solution a carefully selected set of additional open-loop trajectories of the model that steer toward the nominal motion. A drawback of trajectories is that they provide little information on how to respond to a disturbance. To address this shortcoming, supervised machine learning is used to extract a low-dimensional state-variable realization of the open-loop trajectories. The periodic orbit is now an attractor of the low-dimensional state-variable model but is not attractive in the full-order system. We then use the special structure of mechanical models associated with bipedal robots to embed the low-dimensional model in the original model in such a manner that the desired walking motions are locally exponentially stable. The design procedure is first developed for ordinary differential equations and illustrated on a simple model. The methods are subsequently extended to a class of hybrid models and then realized experimentally on an Atrias-series 3D bipedal robot.",
+          "subjects": []
+        },
+        {
+          "title": "Realizing simultaneous lane keeping and adaptive speed regulation on accessible mobile robot testbeds",
+          "authors": [
+            "Xiangru Xu",
+            "T. Waters",
+            "Daniel Pickem",
+            "Paul Glotfelter",
+            "M. Egerstedt",
+            "P. Tabuada",
+            "J. Grizzle",
+            "A. Ames"
+          ],
+          "year": 2017,
+          "date": "2017-08-01",
+          "citations": 56,
+          "arxiv_id": null,
+          "paper_id": "ba6101d9de3000107c73c10e141b912c603dbab4",
+          "url": "https://www.semanticscholar.org/paper/ba6101d9de3000107c73c10e141b912c603dbab4",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Symmetry in legged locomotion: a new method for designing stable periodic gaits",
+          "authors": [
+            "H. Razavi",
+            "A. Bloch",
+            "C. Chevallereau",
+            "J. Grizzle"
+          ],
+          "year": 2017,
+          "date": "2017-06-01",
+          "citations": 37,
+          "arxiv_id": null,
+          "paper_id": "ac1387cd8af6ea8567f6b97650c36f3e926f5e58",
+          "url": "https://www.semanticscholar.org/paper/ac1387cd8af6ea8567f6b97650c36f3e926f5e58",
+          "abstract": "",
+          "subjects": []
+        }
+      ]
     ],
     [
       "Ege C. Altunkaya",
@@ -2023,318 +2456,9 @@
           "subjects": [
             "eess.SY"
           ]
-        },
-        {
-          "title": "History-Aware Control Barrier Functionals with Nonsingular Fading-Memory Kernels",
-          "authors": [
-            "E. C. Altunkaya",
-            "Esra Demir",
-            "M. Abu-Khalaf",
-            "Ibrahim Ozkol"
-          ],
-          "year": 2026,
-          "date": "2026-10-22",
-          "citations": 0,
-          "arxiv_id": "2610.31525",
-          "paper_id": "8eb851e391ca1cebf55f3762c0bb5f6048fba818",
-          "url": "https://arxiv.org/abs/2610.31525",
-          "abstract": "Safety-critical protection often depends not only on the state and physical limits of the system, but on how that state evolved over time. Here, the safety margin measures the remaining allowance before a physical limit is reached. In this context, the objective is to enforce both physical safety and history-dependent retention of this margin for integer-order control-affine systems. To this end, changes in this margin are converted into memory through fading-memory kernels with finite nonnegative weights. A history-aware control barrier functional (HA-CBFal) is constructed explicitly, with nonnegativity equivalent to retaining a prescribed fraction of this margin's weighted historical value. This condition is enforced by an affine input constraint and proved to imply physical safety under stated kernel, initialization, and feasibility conditions, without finite-dimensional memory realization. In 36 calibration cases on the ADMIRE flight-control benchmark, mean per-case tracking-RMSE reductions of 27.2\\% and 7.0\\% are obtained relative to calibrated state-only CBF and moving-average control barrier functional (MA-CBFal), respectively, with both constraints preserved to numerical tolerance. In a shorter-recovery maneuver outside calibration with frozen gains, both constraints are preserved to tolerance by HA-CBFal and state-only CBF, but the retention requirement is violated despite MA-CBFal nonnegativity.",
-          "subjects": []
         }
       ],
-      [
-        {
-          "title": "PİR-İ TÜRKİSTAN AHMET YESEVİ’NİN ANADOLU’DA İZDÜŞÜMÜ: PİR-İ SANİ ABDAL MUSA VE NASİHATNAME ÜZERİNE BETİMSEL BİR ANALİZ",
-          "authors": [
-            "Ramazan Uçar",
-            "Esra Demir"
-          ],
-          "year": 2025,
-          "date": "2025-12-18",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "962842df1b361f1811403f3899df758888415275",
-          "url": "https://www.semanticscholar.org/paper/962842df1b361f1811403f3899df758888415275",
-          "abstract": "Türklerin İslamlaşması ile İslam dininin dünya üzerinde yaygınlık kazanması arasında \ngüçlü bir ilişki bulunmaktadır. Türkler, İslam dininin siyasi olarak yayılmasına hizmet ederken, \ndinin evrensel mesajlarını insanlığa sunarak İslam düşüncesine büyük katkılarda bulunmuştur. \nBu itibarla bir Türk-İslam Medeniyetinden söz edilmektedir. Türklerin Anadolu’yu yurt \nedinerek İslam’ın bu coğrafyada kök salmasında öne çıkan aktörlerinden biri Abdal Musa’dır \n(ö. 1380). Abdal Musa, Ahmet Yesevi (ö. 1166) ve Hacı Bektaş Veli (ö. 1271) yolunun takipçisi \nolarak Teke yöresi ve çevresinin Türkleşmesi ve İslamlaşmasında karizmatik kişiliği ile önemli \nrol oynamıştır. Antalya Elmalı’da adına kurulan Tekke’de yetişen müritleriyle Afrika’dan \nBalkanlara kadar uzanan geniş alanda toplumun manevi mimarı olmuştur. Kendisine atfedilen \nNasihatname’de; erdemli birey ve erdemli toplum düşüncesi ön plana çıkmaktadır. Çalışma \ndokümantasyon tekniği kullanılarak gerçekleştirilmiştir. Ahmet Yesevi’nin ahlaki öğretileri ile \nAbdal Musa’nın Nasihatname’de vurguladığı normlar arasındaki paralellik araştırmanın temel \nproblematiğini oluşturmaktadır. Söz konusu durum dindarlık tipolojileri bağlamında analiz \nedilmiş ve yorumlarda bulunulmuştur. Böylece dönemin dindarlık anlayışı hakkında sosyolojik \nbir bakış açısı ortaya konulmuş ve Türk toplumunun tarihten günümüze sosyal, kültürel ve dini \nyönelimleri hakkında bakış açısı oluşturmak hedeflenmiştir.",
-          "subjects": []
-        },
-        {
-          "title": "Annexin A1 levels in polycystic ovary syndrome: impact of professional mechanical plaque removal",
-          "authors": [
-            "C. Yasar",
-            "Seda Ateş",
-            "Turgut Aksoy",
-            "Ayşegül Yabacı Tak",
-            "Esra Demir",
-            "Sadiye Gunpınar"
-          ],
-          "year": 2025,
-          "date": "2025-08-12",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "c1160bdd6a0423790b2e1be58192ba8ffde9b2d0",
-          "url": "https://www.semanticscholar.org/paper/c1160bdd6a0423790b2e1be58192ba8ffde9b2d0",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Fractional-based nonlinear mechanical system modeling with FELEs: numerical analysis of oscillatory and nonoscillatory behavior of the inverted pendulum system",
-          "authors": [
-            "Esra Demir",
-            "Ibrahim Ozkol"
-          ],
-          "year": 2025,
-          "date": "2025-06-21",
-          "citations": 6,
-          "arxiv_id": null,
-          "paper_id": "2841de18101005551fde29552b04dfdd705110b5",
-          "url": "https://www.semanticscholar.org/paper/2841de18101005551fde29552b04dfdd705110b5",
-          "abstract": "This paper examines the behavior of the inverted pendulum, a notably nonlinear system, in fractional dimensions using different fractional derivative types and order. The inverted pendulum, a two-degree-of-freedom system, exhibits both linear behavior due to the cart’s motion in the horizontal plane and oscillatory behavior due to the pendulum’s angular motion. Initially, the system’s equations of motion have been derived using the classical Euler–Lagrange equation (CELE), thereby obtaining the classical integer-order model. Subsequently, the fractional model has been developed using the fractional Euler–Lagrange equation (FELE) with the Riemann-Liouville and the Caputo–Fabrizio fractional derivatives. The results of the models obtained were shown in the simulation platform and presented comparatively. In this paper, the impact of fractional-order modeling on both oscillatory and nonoscillatory motions of mechanical systems is analyzed. This is achieved by introducing the inverted pendulum model and employing two different types of fractional-order derivatives.",
-          "subjects": []
-        },
-        {
-          "title": "Effects of Experimental Periodontitis and Periodontal Treatment on Alzheimer‐Like Pathology in Rats",
-          "authors": [
-            "S. Yavuz",
-            "Birsen Elibol",
-            "Esra Demir",
-            "Beyza Kinsiz",
-            "Ozlem Toluk",
-            "Sadiye Gunpınar"
-          ],
-          "year": 2025,
-          "date": "2025-06-16",
-          "citations": 4,
-          "arxiv_id": null,
-          "paper_id": "244720e78757128a9b62f0fd5310430f5c5a2c70",
-          "url": "https://www.semanticscholar.org/paper/244720e78757128a9b62f0fd5310430f5c5a2c70",
-          "abstract": "This study investigated the effects of periodontitis (P) and non‐surgical periodontal therapy (NSPT) on behavior, neurodegeneration, and neuroinflammation in rats with Alzheimer's disease (AD)‐like pathology.",
-          "subjects": []
-        },
-        {
-          "title": "Precision Comparison of Analytical and Semi-numerical Analytical Methods for Highly Non-linear Coupled Mechanical Problems",
-          "authors": [
-            "Esra Demir",
-            "Ibrahim Ozkol"
-          ],
-          "year": 2025,
-          "date": "2025-02-23",
-          "citations": 2,
-          "arxiv_id": null,
-          "paper_id": "29ecdf3d0e554e69d3d89ee3771c485b89110920",
-          "url": "https://www.semanticscholar.org/paper/29ecdf3d0e554e69d3d89ee3771c485b89110920",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Rize’nin Damarlı Bitki Çeşitliliği ve Korunması",
-          "authors": [
-            "Vagif Atamov",
-            "Abdülkadir Süzen",
-            "Esra Demir",
-            "Hüseyin Baykal"
-          ],
-          "year": 2024,
-          "date": "2024-11-07",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "a0fcdc36c03404d0c3a45c6191d0a622a6a17176",
-          "url": "https://www.semanticscholar.org/paper/a0fcdc36c03404d0c3a45c6191d0a622a6a17176",
-          "abstract": "Bu çalışma Rize İli için damarlı bitki çeşitliliği envanteri, hedef türlerce zengin habitatlar, korumada öncelikli taksonlar, çalışma alanının ekosistem çeşitliliği, özellikle bitki birlikleri ve gösterge taksonlar, alanın Avrupa Doğa Bilgi Sistemi (EUNIS) habitat tipleri ve çeşitlilik indeks değerleri, tür, habitat, ekosistem ve bölgesel düzeyde izleme planları ile biyolojik çeşitliliğe ilişkin tehditler ve öneriler sunulmuştur. Araştırma sonuçlarına göre Rize ilinde 110 familyada 440 cinse ait 1663 damarlı bitki taksonu saptanmıştır.",
-          "subjects": []
-        },
-        {
-          "title": "Muhasebe Programından Mezun Olanların Muhasebe Mesleğine Devam Etmelerini Engelleyen Nedenler Üzerine Bir Araştırma",
-          "authors": [
-            "Esra Demir",
-            "Ali Apalı"
-          ],
-          "year": 2024,
-          "date": "2024-11-04",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "68fef400af18358b488fc21e4f9b0f163ccc8dc2",
-          "url": "https://www.semanticscholar.org/paper/68fef400af18358b488fc21e4f9b0f163ccc8dc2",
-          "abstract": "Kişinin okulda mesleki bilgi ve becerileri kazandırılarak donanımlı bir şekilde iş dünyasına hazırlanması işinde verimliliği, takdiri, mutluluğu ve böylelikle meslekte devamlılığı sağlamaktadır. Ancak muhasebe programı mezunlarının mezuniyet sonrası çeşitli nedenlerle meslekte rol oynadıkları gözlemlenmiştir. Mesleğin tercih aşaması, eğitimi, çalışma şartları ve iş yaşam arasındaki dengesi düşünüldüğünde bu mesleğe devam edilmemesi sorusu araştırmanın problematiğini oluşturmuştur. \nAraştırma muhasebe mezunlarının muhasebe mesleğine devam etmelerini engelleyen nedenleri Balıkesir ili evreni üzerinden incelemek amacıyla yapılmıştır. Araştırmanın yöntemi nitel araştırma tekniklerinden derinlemesine görüşme tekniğidir. Yarı yapılandırılmış görüşme formu kullanılarak 21 muhasebe mezununun katılımıyla gerçekleşen derinlemesine görüşmeler sonucunda elde edilen veriler analiz edilerek kodlanmıştır. \nAraştırma sonucunda muhasebe mezunlarının gelir, iş başvurularında deneyimli eleman istenmesi, aile, iş bulamama ve çalışma isteğinin kalmaması gibi nedenlerle mesleğe devam etmedikleri tespit edilmiştir. Mesleğin iş yükü psikolojik açıdan muhasebe mezunlarını korkutmakta, özel yaşamlarına ve ailelerine zaman ayıramayacakları düşüncesinin öne çıktığı ortaya çıkmıştır.",
-          "subjects": []
-        },
-        {
-          "title": "Exploring medical students’ perspectives on online education in medical education",
-          "authors": [
-            "Ahmet Kaya",
-            "S. Bostan",
-            "Yasemin Kaya",
-            "Esra Demir",
-            "Nur Abdullah",
-            "Samet Yesil"
-          ],
-          "year": 2024,
-          "date": "2024-05-14",
-          "citations": 2,
-          "arxiv_id": null,
-          "paper_id": "4ac9903e71dfc2ca5691d6a62cbb93ca3b4a4840",
-          "url": "https://www.semanticscholar.org/paper/4ac9903e71dfc2ca5691d6a62cbb93ca3b4a4840",
-          "abstract": "Aim: Medical education has traditionally been a face-to-face and hands-on field of education. Recently, the development of educational technologies, epidemics, and disasters have made it necessary to use online education method in addition to the traditional method in medical education. The purpose of this study is to evaluate medical students’ perspectives on online medical education.\nMethods: This study was carried out as a descriptive, cross-sectional and cohort research with the participation of 906 medical faculty students in Türkiye. Data were collected with “distance education evaluation scale for medical faculty students” scale. Descriptive statistics and significance tests (t-test, ANOVA, and Tukey tests) were used to analyze the data.\nResults: Medical students stated that online education was economically and time-efficient, that they had difficulty in following the courses, and that they could not manage patients with the knowledge and skills they would gain through online education.\nConclusions: Medical students do not recommend that medical education should be done only through online education. However, it was evaluated that online education should also be utilized, in other words, it would be beneficial to develop hybrid education models.",
-          "subjects": []
-        },
-        {
-          "title": "Ecological, Morphological and Anatomical Investigation of Sorbus L. (Rosaceae) Taxa Distributing in Rize Province (Turkey)",
-          "authors": [
-            "V. Atamov",
-            "K. Aksoy",
-            "Esra Demir"
-          ],
-          "year": 2023,
-          "date": "2023-12-23",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "628bbdf9119e1d79ad8f4021997dcb2f2e858e66",
-          "url": "https://www.semanticscholar.org/paper/628bbdf9119e1d79ad8f4021997dcb2f2e858e66",
-          "abstract": "This research was carried out to determine the Sorbus L. species distributed within the borders of Rize Province between 2011-2013 and to reveal the differences (morphological, anatomical and ecological) between them. It has been determined that there are 4 taxa belonging to the genus Sorbus L. in the research area, which is located in the A8 square according to the grid system. Identified taxa; Sorbus aucuparia L., Sorbus subfusca (Ledeb) Boiss, Sorbus caucasica (Zinserl) There var. yaltırikii Gökşin and Sorbus umbellata. var. cretica (Lindl) Schneidear . The morphological, anatomical, and ecological characteristics of these taxa, which are naturally distributed in the flora of the research area, were examined comparatively. Localities of Sorbus L. taxa distributed in the region, characteristics of habitats, and species identification keys have been contributed. The localities of the taxa that naturally spread in the region were determined, and their maps were processed according to the GPS coordinates data.",
-          "subjects": []
-        },
-        {
-          "title": "Some Critical Issues in Application of Lagrangian Mechanics to Air Vehicles Analysis: An Example of Quadrotor",
-          "authors": [
-            "Esra Demir",
-            "I. Ozkol"
-          ],
-          "year": 2023,
-          "date": "2023-01-19",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "646c40964d76c5546bbff39a22ffd34dcb0c08fa",
-          "url": "https://www.semanticscholar.org/paper/646c40964d76c5546bbff39a22ffd34dcb0c08fa",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Relationship Between Pica and Laboratory Values in Patients with Iron Deficiency",
-          "authors": [
-            "Muhammet Özbilen",
-            "Samet Yesil",
-            "Esra Demir"
-          ],
-          "year": 2023,
-          "date": "2023",
-          "citations": 4,
-          "arxiv_id": null,
-          "paper_id": "11726c380f72c2f402d29aaf5aa13f3bdae8940b",
-          "url": "https://www.semanticscholar.org/paper/11726c380f72c2f402d29aaf5aa13f3bdae8940b",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Serviks Dokularında HPV DNA Pozitifliği ve Osteopontin Düzeyi Arasındaki İlişkinin Araştırılması",
-          "authors": [
-            "Esra Demir",
-            "Merve Aydın Terzioğlu",
-            "Mehmet Kulhan",
-            "Aytekin Çıkman",
-            "B. Gulhan",
-            "N.Gözde Kulhan",
-            "Ilyas Sayar",
-            "Y. Arslan",
-            "Cuma Mertoğlu"
-          ],
-          "year": 2022,
-          "date": "2022",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "71461a53180e5ace2cf7c364793ff04e22398339",
-          "url": "https://www.semanticscholar.org/paper/71461a53180e5ace2cf7c364793ff04e22398339",
-          "abstract": "Objective: This study aimed to investigate the osteopontin levels in HPV-positive and HPV-negative cervical tissues and evaluate the clinical significance of osteopontin as a prognostic biomarker. Methods: A total of 82 individuals admitted to the outpatient clinic of Obstetrics and Gynecology Department of Erzincan Binali Yıldırım University, Mengücek Gazi Training and Research Hospital in Turkey and underwent cervical cancer screening between June 2015 and April 2017 were included in the study. Cervicovaginal swabs were collected according to the standard procedure. A slide for traditional Pap cytology was prepared and stained according to standard protocols, and the results were categorized according to the 2004 Bethesda classification system. All cervical specimens were analyzed using the Digene® HC2 High-Risk HPV DNA Kit. Genotyping was performed on the samples with HPV DNA positivity with the Clark kit. Osteopontin levels of 41 HPV positive patients and 41 HPV negative control were investigated in tissue samples with an ELISA kit. Results: The osteopontin levels were found to be 31.55 ± 7.11 ng/ml and 28.81 ± 5.44 ng/ml in the study and control groups, respectively, which indicated a statistically significant difference between the groups (p=0.048). There was no statistically significant difference between the osteopontin level and age, delivery method, history of disease, surgical method, HPV type, preoperative and postoperative pathology, gravida and parity (p>0.05). Conclusion: The detection of cervical intraepithelial neoplasia in only five of 41 HPV-positive patients constitutes a limitation for this study. Although the level of osteopontin was high in HPV-positive patients, further studies with more cervical intraepithelial neoplasia cases are required.",
-          "subjects": []
-        },
-        {
-          "title": "Ambalajlanmış Su Hakkında Bilgi Tutum ve Davranışları",
-          "authors": [
-            "Özkan Yaşayancan",
-            "Cihat Zülfüoğulları",
-            "Esra Demir",
-            "Seyhan Özelce"
-          ],
-          "year": 2017,
-          "date": "2017",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "9320255ba7695291ab1093e38888fbba2fda619c",
-          "url": "https://www.semanticscholar.org/paper/9320255ba7695291ab1093e38888fbba2fda619c",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Tokat Halk Sağlığı Müdürlüğünce Organize Edilen Farkındalık Çalışmalarında Görsel Materyallerin Kullanımı",
-          "authors": [
-            "Cihat Zülfüoğulları",
-            "Nimet Pınar Baysan",
-            "S. Gökçe",
-            "Duygu Türk",
-            "Aysun Korkmaz",
-            "Seyhan Özelce",
-            "Zülfiye Ateş",
-            "Esra Demir",
-            "Nihal Oflaz",
-            "Meryem Mantar",
-            "F. Bulut",
-            "Fatma Sünger"
-          ],
-          "year": 2015,
-          "date": "2015-09-04",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "4c5105abe3d79b4d109c6a6aba6bc008af5c896d",
-          "url": "https://www.semanticscholar.org/paper/4c5105abe3d79b4d109c6a6aba6bc008af5c896d",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "TOKAT İLİNDE AKTİF KANSER KAYITÇILIĞI ÇALIŞMALARI VE 2013 YILI AKTİF KANSER KAYIT VERİLERİNİN DEĞERLENDİRİLMESİ",
-          "authors": [
-            "Nimet Pınar Baysan",
-            "Cihat Zülfüoğulları",
-            "Duygu Türk",
-            "Mustafa Yörür",
-            "S. Tiryaki",
-            "Dilek Karayakalı",
-            "Esra Demir",
-            "Emine Tekiner",
-            "Seda Dehşet",
-            "Nurhan Eryücel"
-          ],
-          "year": 2015,
-          "date": "2015-08-19",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "f9f5bc75dd143f8b3df0171b5ceab8102b8dd09f",
-          "url": "https://www.semanticscholar.org/paper/f9f5bc75dd143f8b3df0171b5ceab8102b8dd09f",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "TOKAT İLİ 2013 YILI AKTİF VE PASİF KANSER KAYITÇILIĞI VERİLERİNİN DEĞERLENDİRİLMESİ",
-          "authors": [
-            "Nimet Pınar Baysan",
-            "Cihat Zülfüoğulları",
-            "Duygu Türk",
-            "Mustafa Yörür",
-            "S. Tiryaki",
-            "Dilek Karayakalı",
-            "Esra Demir",
-            "Emine Tekiner",
-            "Seda Dehşet",
-            "Nurhan Eryücel"
-          ],
-          "year": 2015,
-          "date": "2015-08-18",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "dc845c9562edd45bc2a3b3a18f1f541bef0b2ccf",
-          "url": "https://www.semanticscholar.org/paper/dc845c9562edd45bc2a3b3a18f1f541bef0b2ccf",
-          "abstract": "",
-          "subjects": []
-        }
-      ]
+      []
     ],
     [
       "Murad Abu-Khalaf",
