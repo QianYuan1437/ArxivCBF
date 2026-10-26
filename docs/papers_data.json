@@ -74,7 +74,7 @@
       ],
       "year": 2022,
       "date": "2022-09-18",
-      "citations": 0,
+      "citations": 169,
       "arxiv_id": "2209.08539",
       "paper_id": "c75841c3223bac648fbf347072e38aa3373278b8",
       "url": "https://arxiv.org/abs/2209.08539",
@@ -212,7 +212,7 @@
       ],
       "year": 2016,
       "date": "2016-09-21",
-      "citations": 0,
+      "citations": 3071,
       "arxiv_id": "1609.06408",
       "paper_id": "291a176dc906f31e8faf760911a61f0ca9bde444",
       "url": "https://arxiv.org/abs/1609.06408",
@@ -1294,7 +1294,7 @@
           ],
           "year": 2016,
           "date": "2016-09-21",
-          "citations": 0,
+          "citations": 3071,
           "arxiv_id": "1609.06408",
           "paper_id": "291a176dc906f31e8faf760911a61f0ca9bde444",
           "url": "https://arxiv.org/abs/1609.06408",
@@ -1371,7 +1371,7 @@
           ],
           "year": 2016,
           "date": "2016-09-21",
-          "citations": 0,
+          "citations": 3071,
           "arxiv_id": "1609.06408",
           "paper_id": "291a176dc906f31e8faf760911a61f0ca9bde444",
           "url": "https://arxiv.org/abs/1609.06408",
@@ -1565,7 +1565,209 @@
           ]
         }
       ],
-      []
+      [
+        {
+          "title": "Homotopic Information Gain for Sparse Active Target Tracking",
+          "authors": [
+            "Jennifer Wakulicz",
+            "Ki Myung Brian Lee",
+            "Teresa Vidal-Calleja",
+            "Robert Fitch"
+          ],
+          "year": 2026,
+          "date": "2026-02-20",
+          "citations": 0,
+          "arxiv_id": "2602.17926",
+          "paper_id": "1b9b2e7ff27a511d511f35a7488de7844e37c39b",
+          "url": "https://arxiv.org/abs/2602.17926",
+          "abstract": "The problem of planning sensing trajectories for a mobile robot to collect observations of a target and predict its future trajectory is known as active target tracking. Enabled by probabilistic motion models, one may solve this problem by exploring the belief space of all trajectory predictions given future sensing actions to maximize information gain. However, for multimodal motion models the notion of information gain is often ill-defined. This article proposes a planning approach designed around maximizing information regarding the target’s homotopy class, or high-level motion. We introduce homotopic information gain, a measure of the expected high-level trajectory information given by a measurement. We show that homotopic information gain is a lower bound for metric or low-level information gain, and is as sparsely distributed in the environment as obstacles are. Planning sensing trajectories to maximize homotopic information results in highly accurate trajectory estimates with fewer measurements than a metric information approach, as supported by our empirical evaluation on real and simulated pedestrian data.",
+          "subjects": []
+        },
+        {
+          "title": "Multiquery Robotic Manipulator Task Sequencing With Gromov-Hausdorff Approximations",
+          "authors": [
+            "F. Sukkar",
+            "Jennifer Wakulicz",
+            "Ki Myung Brian Lee",
+            "Wei-Ming Zhi",
+            "R. Fitch"
+          ],
+          "year": 2022,
+          "date": "2022-09-11",
+          "citations": 0,
+          "arxiv_id": "2209.04800",
+          "paper_id": "063b84004c1509d8797e7eb4f09e9631d0d12c53",
+          "url": "https://arxiv.org/abs/2209.04800",
+          "abstract": "Robotic manipulator applications often require efficient online motion planning. When completing multiple tasks, sequence order and choice of goal configuration can have a drastic impact on planning performance. This is well known as the robot task sequencing problem (RTSP). Existing general-purpose RTSP algorithms are susceptible to producing poor-quality solutions or failing entirely when available computation time is restricted. We propose a new multiquery task sequencing method designed to operate in semistructured environments with a combination of static and nonstatic obstacles. Our method intentionally trades off workspace generality for planning efficiency. Given a user-defined task space with static obstacles, we compute a subspace decomposition. The key idea is to establish approximate isometries known as $\\epsilon$-Gromov-Hausdorff approximations that identify points that are close to one another in both task and configuration space. Importantly, we prove bounded suboptimality guarantees on the lengths of paths within these subspaces. These bounding relations further imply that paths within the same subspace can be smoothly concatenated, which we show is useful for determining efficient task sequences. We evaluate our method with several kinematic configurations in a complex simulated environment, achieving up to 3× faster motion planning and 5× lower maximum trajectory jerk compared to baselines.",
+          "subjects": []
+        },
+        {
+          "title": "Log-GPIS-MOP: A Unified Representation for Mapping, Odometry, and Planning",
+          "authors": [
+            "Lan Wu",
+            "Ki Myung Brian Lee",
+            "Cedric Le Gentil",
+            "Teresa Vidal-Calleja"
+          ],
+          "year": 2022,
+          "date": "2022-06-19",
+          "citations": 0,
+          "arxiv_id": "2206.09506",
+          "paper_id": "851cb6e813371628ef660fd1cbb836c6ecc269a8",
+          "url": "https://arxiv.org/abs/2206.09506",
+          "abstract": "Whereas dedicated scene representations are required for each different task in conventional robotic systems, this article demonstrates that a unified representation can be used directly for multiple key tasks. We propose the log-Gaussian process implicit surface for mapping, odometry, and planning (Log-GPIS-MOP): a probabilistic framework for surface reconstruction, localization, and navigation based on a unified representation. Our framework applies a logarithmic transformation to a Gaussian process implicit surface (GPIS) formulation to recover a global representation that accurately captures the Euclidean distance field with gradients and, at the same time, the implicit surface. By directly estimating the distance field and its gradient through Log-GPIS inference, the proposed incremental odometry technique computes the optimal alignment of an incoming frame and fuses it globally to produce a map. Concurrently, an optimization-based planner computes a safe collision-free path using the same Log-GPIS surface representation. We validate the proposed framework on simulated and real datasets in 2-D and 3-D, and benchmark against the state-of-the-art approaches. Our experiments show that Log-GPIS-MOP produces competitive results in sequential odometry, surface mapping, and obstacle avoidance.",
+          "subjects": []
+        },
+        {
+          "title": "Decentralised Intelligence, Surveillance, and Reconnaissance in Unknown Environments with Heterogeneous Multi-Robot Systems",
+          "authors": [
+            "Ki Myung Brian Lee",
+            "Felix H. Kong",
+            "Ricardo Cannizzaro",
+            "J. Palmer",
+            "David Johnson",
+            "C. Yoo",
+            "R. Fitch"
+          ],
+          "year": 2021,
+          "date": "2021-06-17",
+          "citations": 0,
+          "arxiv_id": "2106.09219",
+          "paper_id": "d25bddaa316796d1a00eef67520e8e60236ccc25",
+          "url": "https://arxiv.org/abs/2106.09219",
+          "abstract": "We present the design and implementation of a decentralised, heterogeneous multi-robot system for performing intelligence, surveillance and reconnaissance (ISR) in an unknown environment. The team consists of functionally specialised robots that gather information and others that perform a mission-specific task, and is coordinated to achieve simultaneous exploration and exploitation in the unknown environment. We present a practical implementation of such a system, including decentralised inter-robot localisation, mapping, data fusion and coordination. The system is demonstrated in an efficient distributed simulation. We also describe an UAS platform for hardware experiments, and the ongoing progress.",
+          "subjects": []
+        },
+        {
+          "title": "Field trial on Ocean Estimation for Multi-Vessel Multi-Float-based Active perception",
+          "authors": [
+            "Giovanni D'Urso",
+            "James Ju Heon Lee",
+            "Ki Myung Brian Lee",
+            "J. Shields",
+            "Brenton Leighton",
+            "O. Pizarro",
+            "C. Yoo",
+            "R. Fitch"
+          ],
+          "year": 2021,
+          "date": "2021-06-17",
+          "citations": 0,
+          "arxiv_id": "2106.09279",
+          "paper_id": "27f94cd8cc53e9d3d3b5d38820a9c7dfc2768954",
+          "url": "https://arxiv.org/abs/2106.09279",
+          "abstract": "Marine vehicles have been used for various scientific missions where information over features of interest is collected. In order to maximise efficiency in collecting information over a large search space, we should be able to deploy a large number of autonomous vehicles that make a decision based on the latest understanding of the target feature in the environment. In our previous work, we have presented a hierarchical framework for the multi-vessel multi-float (MVMF) problem where surface vessels drop and pick up underactuated floats in a time-minimal way. In this paper, we present the field trial results using the framework with a number of drifters and floats. We discovered a number of important aspects that need to be considered in the proposed framework, and present the potential approaches to address the challenges.",
+          "subjects": []
+        },
+        {
+          "title": "Signal Temporal Logic Synthesis as Probabilistic Inference",
+          "authors": [
+            "Ki Myung Brian Lee",
+            "C. Yoo",
+            "R. Fitch"
+          ],
+          "year": 2021,
+          "date": "2021-05-13",
+          "citations": 0,
+          "arxiv_id": "2105.06121",
+          "paper_id": "34326474fd9e88c2809bb68db8aede05d8f32047",
+          "url": "https://arxiv.org/abs/2105.06121",
+          "abstract": "We reformulate the signal temporal logic (STL) synthesis problem as a maximum a-posteriori (MAP) inference problem. To this end, we introduce the notion of random STL (RSTL), which extends deterministic STL with random predicates. This new probabilistic extension naturally leads to a synthesis-as-inference approach. The proposed method allows for differentiable, gradient-based synthesis while extending the class of possible uncertain semantics. We demonstrate that the proposed framework scales well with GPU-acceleration, and present realistic applications of uncertain semantics in robotics that involve target tracking and the use of occupancy grids.",
+          "subjects": []
+        },
+        {
+          "title": "Estimation of Spatially-Correlated Ocean Currents from Ensemble Forecasts and Online Measurements",
+          "authors": [
+            "K. Y. C. To",
+            "Felix H. Kong",
+            "Ki Myung Brian Lee",
+            "C. Yoo",
+            "S. Anstee",
+            "R. Fitch"
+          ],
+          "year": 2021,
+          "date": "2021-03-06",
+          "citations": 0,
+          "arxiv_id": "2103.04036",
+          "paper_id": "26c00bd5e8ba132afe43964a9a89290d7f3c6691",
+          "url": "https://arxiv.org/abs/2103.04036",
+          "abstract": "We present a method to estimate two-dimensional, time-invariant oceanic flow fields based on data from both ensemble forecasts and online measurements. Our method produces a realistic estimate in a computationally efficient manner suitable for use in marine robotics for path planning and related applications. We use kernel methods and singular value decomposition to find a compact model of the ensemble data that is represented as a linear combination of basis flow fields and that preserves the spatial correlations present in the data. Online measurements of ocean current, taken for example by marine robots, can then be incorporated using recursive Bayesian estimation. We provide computational analysis, performance comparisons with related methods, and demonstration with real-world ensemble data to show the computational efficiency and validity of our method. Possible applications in addition to path planning include active perception for model improvement through deliberate choice of measurement locations.",
+          "subjects": []
+        },
+        {
+          "title": "Faithful Euclidean Distance Field From Log-Gaussian Process Implicit Surfaces",
+          "authors": [
+            "Lan Wu",
+            "Ki Myung Brian Lee",
+            "Liyang Liu",
+            "Teresa Vidal-Calleja"
+          ],
+          "year": 2020,
+          "date": "2020-10-22",
+          "citations": 0,
+          "arxiv_id": "2010.11487",
+          "paper_id": "63cffd136703a2a17a06c1a03f06641a96a5581b",
+          "url": "https://arxiv.org/abs/2010.11487",
+          "abstract": "In this letter, we introduce the Log-Gaussian Process Implicit Surface (Log-GPIS), a novel continuous and probabilistic mapping representation suitable for surface reconstruction and local navigation. Our key contribution is the realisation that the regularised Eikonal equation can be simply solved by applying the logarithmic transformation to a GPIS formulation to recover the accurate Euclidean distance field (EDF) and, at the same time, the implicit surface. To derive the proposed representation, Varadhan's formula is exploited to approximate the non-linear Eikonal partial differential equation (PDE) of the EDF by the logarithm of a linear PDE. We show that members of the Matérn covariance family directly satisfy this linear PDE. The proposed approach does not require post-processing steps to recover the EDF. Moreover, unlike sampling-based methods, Log-GPIS does not use sample points inside and outside the surface as the derivative of the covariance allow direct estimation of the surface normals and distance gradients. We benchmarked the proposed method on simulated and real data against state-of-the-art mapping frameworks that also aim at recovering both the surface and a distance field. Our experiments show that Log-GPIS produces the most accurate results for the EDF and comparable results for surface reconstruction and its computation time still allows online operations.",
+          "subjects": []
+        },
+        {
+          "title": "Broadcast Your Weaknesses: Cooperative Active Pose-Graph SLAM for Multiple Robots",
+          "authors": [
+            "Yong-Bo Chen",
+            "Liang Zhao",
+            "Ki Myung Brian Lee",
+            "C. Yoo",
+            "Shou-Dong Huang",
+            "R. Fitch"
+          ],
+          "year": 2020,
+          "date": "2020-04-01",
+          "citations": 28,
+          "arxiv_id": null,
+          "paper_id": "0be11592cd2baa0cf970eb15e4601157ad655d6c",
+          "url": "https://www.semanticscholar.org/paper/0be11592cd2baa0cf970eb15e4601157ad655d6c",
+          "abstract": "In this letter, we propose a low-cost, high-efficiency framework for cooperative active pose-graph simultaneous localization and mapping (SLAM) for multiple robots in three-dimensional (3D) environments based on graph topology. Based on the selection of weak connections in pose graphs, this method aims to find the best trajectories for optimal information exchange to repair these weaknesses opportunistically when robots move near them. Based on tree-connectivity, which is greatly related to the D-optimality metric of the Fisher information matrix (FIM), we explore the relationship between measurement (edge) selection and pose-measurement (node-edge) selection, which often occurs in active SLAM, in terms of information increment. The measurement selection problem is formulated as a submodular optimization problem and solved by an exhaustive method using rank-1 updates. We decide which robot takes the selected measurements through a bidding framework where each robot computes its predicted cost. Finally, based on a novel continuous trajectory optimization method, these additional measurements collected by the winning robot are sent to the requesting robot to strengthen its pose graph. In simulations and experiments, we validate our approach by comparing against existing methods. Further, we demonstrate online communication based on offline planning results using two unmanned aerial vehicles (UAVs).",
+          "subjects": []
+        },
+        {
+          "title": "Online Estimation of Ocean Current from Sparse GPS Data for Underwater Vehicles",
+          "authors": [
+            "Ki Myung Brian Lee",
+            "C. Yoo",
+            "B. Hollings",
+            "S. Anstee",
+            "Shou-Dong Huang",
+            "R. Fitch"
+          ],
+          "year": 2019,
+          "date": "2019-01-28",
+          "citations": 0,
+          "arxiv_id": "1901.09513",
+          "paper_id": "7f93c21ef714c1d7336e583f24b2b43da1780f90",
+          "url": "https://arxiv.org/abs/1901.09513",
+          "abstract": "Underwater robots are subject to position drift due to the effect of ocean currents and the lack of accurate localisation while submerged. We are interested in exploiting such position drift to estimate the ocean current in the surrounding area, thereby assisting navigation and planning. We present a Gaussian process (GP)-based expectation-maximisation (EM) algorithm that estimates the underlying ocean current using sparse GPS data obtained on the surface and dead-reckoned position estimates. We first develop a specialised GP regression scheme that exploits the incompressibility of ocean currents to counteract the underdetermined nature of the problem. We then use the proposed regression scheme in an EM algorithm that estimates the best-fitting ocean current in between each GPS fix. The proposed algorithm is validated in simulation and on a real dataset, and is shown to be capable of reconstructing the underlying ocean current field. We expect to use this algorithm to close the loop between planning and estimation for underwater navigation in unknown ocean currents.",
+          "subjects": []
+        },
+        {
+          "title": "Streamlines for Motion Planning in Underwater Currents",
+          "authors": [
+            "K. Y. C. To",
+            "Ki Myung Brian Lee",
+            "C. Yoo",
+            "S. Anstee",
+            "R. Fitch"
+          ],
+          "year": 2019,
+          "date": "2019-01-28",
+          "citations": 0,
+          "arxiv_id": "1901.09512",
+          "paper_id": "33ed32f44410b3519827cbea32006940be395464",
+          "url": "https://arxiv.org/abs/1901.09512",
+          "abstract": "Motion planning for underwater vehicles must consider the effect of ocean currents. We present an efficient method to compute reachability and cost between sample points in sampling-based motion planning that supports long-range planning over hundreds of kilometres in complicated flows. The idea is to search a reduced space of control inputs that consists of stream functions whose level sets, or streamlines, optimally connect two given points. Such stream functions are generated by superimposing a control input onto the underlying current flow. A streamline represents the resulting path that a vehicle would follow as it is carried along by the current given that control input. We provide rigorous analysis that shows how our method avoids exhaustive search of the control space, and demonstrate simulated examples in complicated flows including a traversal along the east coast of Australia, using actual current predictions, between Sydney and Brisbane.",
+          "subjects": []
+        }
+      ]
     ],
     [
       "Anand Singh",
@@ -1852,6 +2054,111 @@
       "Oswin So",
       [
         {
+          "title": "LEAP-CBF: A Safety Filter for Uncertain Systems with Least-Effort Adversarial Potentials",
+          "authors": [
+            "Oswin So",
+            "E. Yu",
+            "Chu-Chu Fan"
+          ],
+          "year": 2026,
+          "date": "2026-09-23",
+          "citations": 0,
+          "arxiv_id": "2609.28364",
+          "paper_id": "01c20f7a34a83ee44a6a3db7f0ade9027b1941c4",
+          "url": "https://arxiv.org/abs/2609.28364",
+          "abstract": "Control barrier functions (CBF) are a popular safety filter to ensure safety for nonlinear dynamical systems. However, when the system is subject to uncertainties and disturbances, this requires the use of robust variants of CBFs, which can be difficult to construct and can be overly conservative, especially for high-dimensional systems under input constraints. In this work, we propose a new approach to solve these challenges by introducing Least-Effort Adversarial Potentials (LEAP), a certificate that quantifies the robustness of a given state against disturbances in terms of the effort required by the disturbance to cause failure. We show that LEAP is a CBF for the undisturbed system, but can also be used to construct a safety filter that is robust to disturbances whose cumulative effort is bounded. We propose a method for constructing LEAPs with on-policy deep reinforcement learning. Next, we demonstrate LEAPs in simulation on a variety of multi-agent systems with disturbances and uncertainties. Finally, hardware experiments on a quadruped and quadrotors validate that LEAPs are well suited to tackle the disturbances and uncertainties from real-world robotic systems.",
+          "subjects": []
+        },
+        {
+          "title": "Safe and Scalable Multi-Drone Payload Transport via CBF-Based Reinforcement Learning With Zero-Shot Sim-to-Real Transfer",
+          "authors": [
+            "Jaeyoun Choi",
+            "Oswin So",
+            "Song-Yuan Zhang",
+            "Cooper Taylor",
+            "Chu-Chu Fan"
+          ],
+          "year": 2026,
+          "date": "2026-07-22",
+          "citations": 0,
+          "arxiv_id": "2607.20665",
+          "paper_id": "2cd983addd6378b3d340fae3c8e982e512407a38",
+          "url": "https://arxiv.org/abs/2607.20665",
+          "abstract": "Multi-drone payload transportation has emerged as a promising research paradigm with potential applications in construction, logistics, and disaster response. However, the complex coupled dynamics among drones, cables, and payloads pose significant challenges, and existing approaches remain limited in safety and scalability, particularly in dynamic and unstructured environments. In this work, we propose a learning-based framework for safe and scalable multi-drone cooperative payload transport. We introduce a minimal 2D abstraction that preserves the task-relevant drone–payload coupling required for coordination and safety, while remaining computationally efficient for large-scale learning. Using domain randomization over team size and physical parameters, we train a fully distributed policy via Discrete Graph Control Barrier Function Proximal Policy Optimization (DGPPO), enabling robust zero-shot sim-to-real transfer without fine-tuning. Extensive real-world evaluations demonstrate that a single learned policy generalizes across varying team sizes and task scenarios. Furthermore, multi-group hardware experiments show that the same policy can safely operate in dynamic environments, where other drone teams act as moving obstacles. These results indicate that the proposed framework enables efficient, safe, and scalable multi-drone payload transportation with strong generalization to complex real-world conditions.",
+          "subjects": []
+        },
+        {
+          "title": "Safe Beyond the Horizon: Efficient Sampling-based MPC with Neural Control Barrier Functions",
+          "authors": [
+            "Ji Yin",
+            "Oswin So",
+            "E. Yu",
+            "Chu-Chu Fan",
+            "Panagiotis Tsiotras"
+          ],
+          "year": 2025,
+          "date": "2025-02-20",
+          "citations": 0,
+          "arxiv_id": "2502.15006",
+          "paper_id": "42e9c65d55e9e1c81e5f0571343eb96af95dba5e",
+          "url": "https://arxiv.org/abs/2502.15006",
+          "abstract": "A common problem when using model predictive control (MPC) in practice is the satisfaction of safety specifications beyond the prediction horizon. While theoretical works have shown that safety can be guaranteed by enforcing a suitable terminal set constraint or a sufficiently long prediction horizon, these techniques are difficult to apply and thus are rarely used by practitioners, especially in the case of general nonlinear dynamics. To solve this problem, we impose a tradeoff between exact recursive feasibility, computational tractability, and applicability to ``black-box''dynamics by learning an approximate discrete-time control barrier function and incorporating it into a variational inference MPC (VIMPC), a sampling-based MPC paradigm. To handle the resulting state constraints, we further propose a new sampling strategy that greatly reduces the variance of the estimated optimal control, improving the sample efficiency, and enabling real-time planning on a CPU. The resulting Neural Shield-VIMPC (NS-VIMPC) controller yields substantial safety improvements compared to existing sampling-based MPC controllers, even under badly designed cost functions. We validate our approach in both simulation and real-world hardware experiments. Project website: https://mit-realm.github.io/ns-vimpc/.",
+          "subjects": []
+        },
+        {
+          "title": "Discrete GCBF Proximal Policy Optimization for Multi-agent Safe Optimal Control",
+          "authors": [
+            "Song-Yuan Zhang",
+            "Oswin So",
+            "Mitchell Black",
+            "Chu-Chu Fan"
+          ],
+          "year": 2025,
+          "date": "2025-02-05",
+          "citations": 0,
+          "arxiv_id": "2502.03640",
+          "paper_id": "538d341ecd5934843798adfc31aa36397222df3e",
+          "url": "https://arxiv.org/abs/2502.03640",
+          "abstract": "Control policies that can achieve high task performance and satisfy safety constraints are desirable for any system, including multi-agent systems (MAS). One promising technique for ensuring the safety of MAS is distributed control barrier functions (CBF). However, it is difficult to design distributed CBF-based policies for MAS that can tackle unknown discrete-time dynamics, partial observability, changing neighborhoods, and input constraints, especially when a distributed high-performance nominal policy that can achieve the task is unavailable. To tackle these challenges, we propose DGPPO, a new framework that simultaneously learns both a discrete graph CBF which handles neighborhood changes and input constraints, and a distributed high-performance safe policy for MAS with unknown discrete-time dynamics. We empirically validate our claims on a suite of multi-agent tasks spanning three different simulation engines. The results suggest that, compared with existing methods, our DGPPO framework obtains policies that achieve high task performance (matching baselines that ignore the safety constraints), and high safety rates (matching the most conservative baselines), with a constant set of hyperparameters across all environments.",
+          "subjects": []
+        },
+        {
+          "title": "Comment(s) on “Control barrier functions for stochastic systems” [Automatica 130 (2021) 109688]",
+          "authors": [
+            "Oswin So",
+            "Chu-Chu Fan"
+          ],
+          "year": 2025,
+          "date": "2025-02-01",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "71308b7abf86d04715088cd6f7eed0a1cf0811e6",
+          "url": "https://www.semanticscholar.org/paper/71308b7abf86d04715088cd6f7eed0a1cf0811e6",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Safety on the Fly: Constructing Robust Safety Filters via Policy Control Barrier Functions at Runtime",
+          "authors": [
+            "L. Knoedler",
+            "Oswin So",
+            "Ji Yin",
+            "Mitchell Black",
+            "Zachary Serlin",
+            "Panagiotis Tsiotras",
+            "Javier Alonso-Mora",
+            "Chu-Chu Fan"
+          ],
+          "year": 2024,
+          "date": "2024-10-15",
+          "citations": 0,
+          "arxiv_id": "2410.11157",
+          "paper_id": "b7d86e120e93279dedc24e489a35b6dfeb8ecab3",
+          "url": "https://arxiv.org/abs/2410.11157",
+          "abstract": "Control Barrier Functions (CBFs) have proven to be an effective tool for performing safe control synthesis for nonlinear systems. However, guaranteeing safety in the presence of disturbances and input constraints for high relative degree systems is a difficult problem. In this work, we propose the Robust Policy CBF (RPCBF), a practical approach for constructing robust CBF approximations online via the estimation of a value function. We establish conditions under which the approximation qualifies as a valid CBF and demonstrate the effectiveness of the RPCBF-safety filter in simulation on a variety of high relative degree input-constrained systems. Finally, we demonstrate the benefits of our method in compensating for model errors on a hardware quadcopter platform by treating the model errors as disturbances.",
+          "subjects": []
+        },
+        {
           "title": "GCBF+: A Neural Graph Control Barrier Function Framework for Distributed Safe Multiagent Control",
           "authors": [
             "Song-Yuan Zhang",
@@ -1870,6 +2177,43 @@
             "cs.RO",
             "math.OC"
           ]
+        },
+        {
+          "title": "RPCBF: Constructing Safety Filters Robust to Model Error and Disturbances via Policy Control Barrier Functions",
+          "authors": [
+            "Luzia Knödler",
+            "Oswin So",
+            "Ji Yin",
+            "Mitchell Black",
+            "Zachary Serlin",
+            "Panagiotis Tsiotras",
+            "Javier Alonso-Mora",
+            "Chu-Chu Fan"
+          ],
+          "year": 2024,
+          "date": "2024",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "657a223a8721e45da7d1f2d423bd62acaa92860b",
+          "url": "https://www.semanticscholar.org/paper/657a223a8721e45da7d1f2d423bd62acaa92860b",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Almost-Sure Safety Guarantees of Stochastic Zero-Control Barrier Functions Do Not Hold",
+          "authors": [
+            "Oswin So",
+            "A. Clark",
+            "Chu-Chu Fan"
+          ],
+          "year": 2023,
+          "date": "2023-12-05",
+          "citations": 0,
+          "arxiv_id": "2312.02430",
+          "paper_id": "31ba58fb7d50155650d9d4fa82f3869d70df7e5d",
+          "url": "https://arxiv.org/abs/2312.02430",
+          "abstract": "The 2021 paper\"Control barrier functions for stochastic systems\"provides theorems that give almost sure safety guarantees given stochastic zero control barrier function (ZCBF). Unfortunately, both the theorem and its proof is invalid. In this letter, we illustrate on a toy example that the almost sure safety guarantees for stochastic ZCBF do not hold and explain why the proof is flawed. Although stochastic reciprocal barrier functions (RCBF) also uses the same proof technique, we provide a different proof technique that verifies that stochastic RCBFs are indeed safe with probability one. Using the RCBF, we derive a modified ZCBF condition that guarantees safety with probability one. Finally, we provide some discussion on the role of unbounded controls in the almost-sure safety guarantees of RCBFs, and show that the rate of divergence of the ratio of the drift and diffusion is the key for whether a system has almost sure safety guarantees.",
+          "subjects": []
         },
         {
           "title": "How to Train Your Neural Control Barrier Function: Learning Safety Filters for Complex Input-Constrained Systems",
@@ -1893,9 +2237,408 @@
             "math.OC",
             "cs.RO"
           ]
+        },
+        {
+          "title": "Decentralized Safe Multi-agent Stochastic Optimal Control using Deep FBSDEs and ADMM",
+          "authors": [
+            "M. Pereira",
+            "A. Saravanos",
+            "Oswin So",
+            "Evangelos A. Theodorou"
+          ],
+          "year": 2022,
+          "date": "2022-02-22",
+          "citations": 0,
+          "arxiv_id": "2202.10658",
+          "paper_id": "d162a2e413c1402a0c34510776d5657ff3a4558a",
+          "url": "https://arxiv.org/abs/2202.10658",
+          "abstract": "In this work, we propose a novel safe and scalable decentralized solution for multi-agent control in the presence of stochastic disturbances. Safety is mathematically encoded using stochastic control barrier functions and safe controls are computed by solving quadratic programs. Decentralization is achieved by augmenting to each agent's optimization variables, copy variables, for its neighbors. This allows us to decouple the centralized multi-agent optimization problem. However, to ensure safety, neighboring agents must agree on\"what is safe for both of us\"and this creates a need for consensus. To enable safe consensus solutions, we incorporate an ADMM-based approach. Specifically, we propose a Merged CADMM-OSQP implicit neural network layer, that solves a mini-batch of both, local quadratic programs as well as the overall consensus problem, as a single optimization problem. This layer is embedded within a Deep FBSDEs network architecture at every time step, to facilitate end-to-end differentiable, safe and decentralized stochastic optimal control. The efficacy of the proposed approach is demonstrated on several challenging multi-robot tasks in simulation. By imposing requirements on safety specified by collision avoidance constraints, the safe operation of all agents is ensured during the entire training process. We also demonstrate superior scalability in terms of computational and memory savings as compared to a centralized approach.",
+          "subjects": []
         }
       ],
-      []
+      [
+        {
+          "title": "MIT Open Access",
+          "authors": [
+            "Student Member Ieee Songyuan Zhang",
+            "Oswin So",
+            "Member Ieee Kunal Garg",
+            "Member Ieee Chuchu Fan"
+          ],
+          "year": null,
+          "date": "",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "ab0b74ac5ab7baa00748bb00a17d6ed19433f677",
+          "url": "https://www.semanticscholar.org/paper/ab0b74ac5ab7baa00748bb00a17d6ed19433f677",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Annual Reviews in Control",
+          "authors": [
+            "Kunal Garg",
+            "Song-Yuan Zhang",
+            "Oswin So",
+            "Charles Dawson",
+            "Chuchu Fan"
+          ],
+          "year": null,
+          "date": "",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "fa59eecb11fbacbdd646edac191b22ae14044fa5",
+          "url": "https://www.semanticscholar.org/paper/fa59eecb11fbacbdd646edac191b22ae14044fa5",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "LASER: Latent Space Adjoint Matching for Support-Constrained Entropy-Regularized Offline RL",
+          "authors": [
+            "Song-Yuan Zhang",
+            "Oswin So",
+            "E. Yu",
+            "Matthew Cleaveland",
+            "Peter Crowley-Dolen",
+            "Chu-Chu Fan"
+          ],
+          "year": 2026,
+          "date": "2026-10-06",
+          "citations": 0,
+          "arxiv_id": "2610.08989",
+          "paper_id": "c7aff80e3ed64a9c15b23f53be11d2e65d9754e0",
+          "url": "https://arxiv.org/abs/2610.08989",
+          "abstract": "While offline reinforcement learning (RL) enables policy optimization from static datasets without costly online interaction, it remains bottlenecked by the risk of executing out-of-distribution (OOD) actions. Recent approaches mitigate this by learning a behavior-cloning policy through flow matching and then performing RL within its constrained latent space. However, naively optimizing the latent policy can easily cause the policy to collapse into a brittle mode or exploit sharp artifacts of the learned critic. In this work, we find that entropy regularization is essential in latent-space RL for addressing these challenges. We introduce LASER, a novel offline RL algorithm that applies latent-space adjoint matching to achieve entropy-regularized latent-space RL with expressive flow policies while avoiding backpropagation through time. Through comprehensive experiments on 40 challenging OGBench tasks with varying dataset qualities, we show that LASER achieves state-of-the-art performance. Notably, LASER uses fixed method-specific hyperparameters across all tasks and outperforms the evaluated baselines, including those with task- and dataset-specific tuning, which highlights the robust applicability of LASER. Project website: https://mit-realm.github.io/laser/.",
+          "subjects": []
+        },
+        {
+          "title": "Value Functions for Temporal Logic: Optimal Policies and Safety Filters",
+          "authors": [
+            "Oswin So",
+            "Will Sharpless",
+            "Sylvia L. Herbert",
+            "Chu-Chu Fan"
+          ],
+          "year": 2026,
+          "date": "2026-05-01",
+          "citations": 0,
+          "arxiv_id": "2605.01051",
+          "paper_id": "3cbdd4161c5cb4a8facf18106c8b7ccd01684f47",
+          "url": "https://arxiv.org/abs/2605.01051",
+          "abstract": "While Bellman equations for basic reach, avoid, and reach-avoid problems are well studied, the relationship between value optimality and policy optimality becomes subtle in the undiscounted infinite-horizon setting, particularly for more complicated tasks. Greedily maximizing the Q-function can produce policies that indefinitely defer task completion for reach-avoid problems, or equivalently, Until specifications, even when the value function is optimal. Building upon recent results decomposing the value function for temporal logic (TL) into a graph of constituent value functions, we construct non-Markovian policies based on state history that avoid this pathology and prove their optimality with respect to the quantitative robustness score for nested Until, Globally, and Globally-Until specifications. We further show how the Q function can serve as a safety filter for complex TL specifications, extending prior results beyond simple avoid or reach-avoid tasks.",
+          "subjects": []
+        },
+        {
+          "title": "Bellman Value Decomposition for Task Logic in Safe Optimal Control",
+          "authors": [
+            "Will Sharpless",
+            "Oswin So",
+            "Dylan Hirsch",
+            "Sylvia Herbert",
+            "Chu-Chu Fan"
+          ],
+          "year": 2026,
+          "date": "2026-02-23",
+          "citations": 0,
+          "arxiv_id": "2602.19532",
+          "paper_id": "955821cc81472c09c67d38c420fdd7464c02498e",
+          "url": "https://arxiv.org/abs/2602.19532",
+          "abstract": "Real-world tasks involve nuanced combinations of goal and safety specifications. In high dimensions, the challenge is exacerbated: formal automata become cumbersome, and the combination of sparse rewards tends to require laborious tuning. In this work, we consider the innate structure of the Bellman Value as a means to naturally organize the problem for improved automatic performance. Namely, we prove the Bellman Value for a complex task defined in temporal logic can be decomposed into a graph of Bellman Values, connected by a set of well-known Bellman equations (BEs): the Reach-Avoid BE, the Avoid BE, and a novel type, the Reach-Avoid-Loop BE. To solve the Value and optimal policy, we propose VDPPO, which embeds the decomposed Value graph into a two-layer neural net, bootstrapping the implicit dependencies. We conduct a variety of simulated and hardware experiments to test our method on complex, high-dimensional tasks involving heterogeneous teams and nonlinear dynamics. Ultimately, we find this approach greatly improves performance over existing baselines, balancing safety and liveness automatically.",
+          "subjects": []
+        },
+        {
+          "title": "Solving Parameter-Robust Avoid Problems with Unknown Feasibility using Reinforcement Learning",
+          "authors": [
+            "Oswin So",
+            "E. Yu",
+            "Song-Yuan Zhang",
+            "Matthew Cleaveland",
+            "Mitchell Black",
+            "Chu-Chu Fan"
+          ],
+          "year": 2026,
+          "date": "2026-02-17",
+          "citations": 0,
+          "arxiv_id": "2602.15817",
+          "paper_id": "11be3dcd5c7ab4aba1c23481605bf77aed2816a9",
+          "url": "https://arxiv.org/abs/2602.15817",
+          "abstract": "Recent advances in deep reinforcement learning (RL) have achieved strong results on high-dimensional control tasks, but applying RL to reachability problems raises a fundamental mismatch: reachability seeks to maximize the set of states from which a system remains safe indefinitely, while RL optimizes expected returns over a user-specified distribution. This mismatch can result in policies that perform poorly on low-probability states that are still within the safe set. A natural alternative is to frame the problem as a robust optimization over a set of initial conditions that specify the initial state, dynamics and safe set, but whether this problem has a solution depends on the feasibility of the specified set, which is unknown a priori. We propose Feasibility-Guided Exploration (FGE), a method that simultaneously identifies a subset of feasible initial conditions under which a safe policy exists, and learns a policy to solve the reachability problem over this set of initial conditions. Empirical results demonstrate that FGE learns policies with over 50% more coverage than the best existing method for challenging initial conditions across tasks in the MuJoCo simulator and the Kinetix simulator with pixel observations.",
+          "subjects": []
+        },
+        {
+          "title": "Discrete Adjoint Matching",
+          "authors": [
+            "Oswin So",
+            "B. Karrer",
+            "Chu-Chu Fan",
+            "Ricky T. Q. Chen",
+            "Guan-Horng Liu"
+          ],
+          "year": 2026,
+          "date": "2026-02-06",
+          "citations": 0,
+          "arxiv_id": "2602.07132",
+          "paper_id": "760e184feb7e68c1ba3222afd20b1f3a5107424e",
+          "url": "https://arxiv.org/abs/2602.07132",
+          "abstract": "Computation methods for solving entropy-regularized reward optimization -- a class of problems widely used for fine-tuning generative models -- have advanced rapidly. Among those, Adjoint Matching (AM, Domingo-Enrich et al., 2025) has proven highly effective in continuous state spaces with differentiable rewards. Transferring these practical successes to discrete generative modeling, however, remains particularly challenging and largely unexplored, mainly due to the drastic shift in generative model classes to discrete state spaces, which are nowhere differentiable. In this work, we propose Discrete Adjoint Matching (DAM) -- a discrete variant of AM for fine-tuning discrete generative models characterized by Continuous-Time Markov Chains, such as diffusion-based large language models. The core of DAM is the introduction of discrete adjoint-an estimator of the optimal solution to the original problem but formulated on discrete domains-from which standard matching frameworks can be applied. This is derived via a purely statistical standpoint, in contrast to the control-theoretic viewpoint in AM, thereby opening up new algorithmic opportunities for general adjoint-based estimators. We showcase DAM's effectiveness on synthetic and mathematical reasoning tasks.",
+          "subjects": []
+        },
+        {
+          "title": "ReFORM: Reflected Flows for On-support Offline RL via Noise Manipulation",
+          "authors": [
+            "Song-Yuan Zhang",
+            "Oswin So",
+            "H. M. Sabbir Ahmad",
+            "E. Yu",
+            "Matthew Cleaveland",
+            "Mitchell Black",
+            "Chu-Chu Fan"
+          ],
+          "year": 2026,
+          "date": "2026-02-04",
+          "citations": 0,
+          "arxiv_id": "2602.05051",
+          "paper_id": "4095b5578c0659be6bdcf50b80014d75fe6de680",
+          "url": "https://arxiv.org/abs/2602.05051",
+          "abstract": "Offline reinforcement learning (RL) aims to learn the optimal policy from a fixed dataset generated by behavior policies without additional environment interactions. One common challenge that arises in this setting is the out-of-distribution (OOD) error, which occurs when the policy leaves the training distribution. Prior methods penalize a statistical distance term to keep the policy close to the behavior policy, but this constrains policy improvement and may not completely prevent OOD actions. Another challenge is that the optimal policy distribution can be multimodal and difficult to represent. Recent works apply diffusion or flow policies to address this problem, but it is unclear how to avoid OOD errors while retaining policy expressiveness. We propose ReFORM, an offline RL method based on flow policies that enforces the less restrictive support constraint by construction. ReFORM learns a behavior cloning (BC) flow policy with a bounded source distribution to capture the support of the action distribution, then optimizes a reflected flow that generates bounded noise for the BC flow while keeping the support, to maximize the performance. Across 40 challenging tasks from the OGBench benchmark with datasets of varying quality and using a constant set of hyperparameters for all tasks, ReFORM dominates all baselines with hand-tuned hyperparameters on the performance profile curves.",
+          "subjects": []
+        },
+        {
+          "title": "Maximizing Reach-Avoid Probabilities for Linear Stochastic Systems via Control Architectures",
+          "authors": [
+            "Niklas Schmid",
+            "Jaeyoun Choi",
+            "Oswin So",
+            "Chu-Chu Fan"
+          ],
+          "year": 2026,
+          "date": "2026-01-22",
+          "citations": 0,
+          "arxiv_id": "2601.16290",
+          "paper_id": "933b6bcf3ae671306c4683c1ed574d3e96d4c7ab",
+          "url": "https://arxiv.org/abs/2601.16290",
+          "abstract": "The maximization of reach-avoid probabilities for stochastic systems is a central topic in the control literature. Yet, the available methods are either restricted to low-dimensional systems or suffer from conservative approximations. To address these limitations, we propose control architectures that combine the flexibility of Markov Decision Processes with the scalability of Model Predictive Controllers. The Model Predictive Controller tracks reference signals while remaining agnostic to the stochasticity and reach-avoid objective. Instead, the reach-avoid probability is maximized by optimally updating the controller's reference online. To achieve this, the closed-loop system, consisting of the system and Model Predictive Controller, is abstracted as a Markov Decision Process in which a new reference can be chosen at every time-step. A feedback policy generating optimal references is then computed via Dynamic Programming. If the state space of the system is continuous, the Dynamic Programming algorithm must be executed on a finite system approximation. Modifications to the Model Predictive Controller enable a computationally efficient robustification of the Dynamic Programming algorithm to approximation errors, preserving bounds on the achieved reach-avoid probability. The approach is validated on a perturbed 12D quadcopter model in cluttered reach-avoid environments proving its flexibility and scalability.",
+          "subjects": []
+        },
+        {
+          "title": "AirTaxiSim: A Simulator for Autonomous Air Taxis",
+          "authors": [
+            "Ayoosh Bansal",
+            "M. Yeghiazaryan",
+            "Hyung-Jin Yoon",
+            "Duo Wang",
+            "Ashik E. Rasul",
+            "Chuyuan Tao",
+            "Yang Zhao",
+            "Tianyi Zhu",
+            "Oswin So",
+            "Chu-Chu Fan",
+            "Petros G. Voulgaris",
+            "N. Hovakimyan",
+            "Lui Sha"
+          ],
+          "year": 2025,
+          "date": "2025-07-16",
+          "citations": 4,
+          "arxiv_id": null,
+          "paper_id": "c979ed56b67ec1db74e2b88a7749b069a627539c",
+          "url": "https://www.semanticscholar.org/paper/c979ed56b67ec1db74e2b88a7749b069a627539c",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Active ramp-down control and trajectory design for tokamaks with neural differential equations and reinforcement learning",
+          "authors": [
+            "Allen M. Wang",
+            "C. Rea",
+            "Oswin So",
+            "Charles Dawson",
+            "Darren T. Garnier",
+            "Chuchu Fan"
+          ],
+          "year": 2025,
+          "date": "2025-06-04",
+          "citations": 6,
+          "arxiv_id": null,
+          "paper_id": "aa45ac1b17d5ad4f8d3f2fec066b83d3fcbc114f",
+          "url": "https://www.semanticscholar.org/paper/aa45ac1b17d5ad4f8d3f2fec066b83d3fcbc114f",
+          "abstract": "The tokamak offers a promising path to fusion energy, but disruptions pose a major economic risk, motivating solutions to manage their consequence. This work develops a reinforcement learning approach to this problem by training a policy to ramp-down the plasma current while avoiding limits on a number of quantities correlated with disruptions. The policy training environment is a hybrid physics and machine learning model trained on simulations of the SPARC primary reference discharge (PRD) ramp-down, an upcoming burning plasma scenario which we use as a testbed. To address physics uncertainty and model inaccuracies, the simulation is massively parallelized on GPU with randomized physics parameters during policy training. The trained policy is then run in feedback on a transport simulator as a demonstration. We also directly address the crucial issue of control validation by demonstrating that a constraint-conditioned policy can be a trajectory design assistant that designs a library of feed-forward trajectories to handle different physics conditions and user constraint settings, a promising approach for the sensitive context of burning plasma tokamaks. Finally, we demonstrate that the training environment can be a useful platform for feed-forward optimization approaches by optimizing feed-forward trajectories that are robust to physics uncertainty. The robust termination of tokamak fusion plasmas poses massive simulation and control challenges. In this work, the authors provide simulation demonstrations of how techniques like neural differential equations and reinforcement learning can help with both real-time feedback control and offline trajectory design.",
+          "subjects": []
+        },
+        {
+          "title": "Solving Multi-Agent Safe Optimal Control with Distributed Epigraph Form MARL",
+          "authors": [
+            "Song-Yuan Zhang",
+            "Oswin So",
+            "Mitchell Black",
+            "Zachary Serlin",
+            "Chu-Chu Fan"
+          ],
+          "year": 2025,
+          "date": "2025-04-21",
+          "citations": 0,
+          "arxiv_id": "2504.15425",
+          "paper_id": "4509aaa8dcff1928a677dee749dcc581b8fc4b5a",
+          "url": "https://arxiv.org/abs/2504.15425",
+          "abstract": "Tasks for multi-robot systems often require the robots to collaborate and complete a team goal while maintaining safety. This problem is usually formalized as a constrained Markov decision process (CMDP), which targets minimizing a global cost and bringing the mean of constraint violation below a user-defined threshold. Inspired by real-world robotic applications, we define safety as zero constraint violation. While many safe multi-agent reinforcement learning (MARL) algorithms have been proposed to solve CMDPs, these algorithms suffer from unstable training in this setting. To tackle this, we use the epigraph form for constrained optimization to improve training stability and prove that the centralized epigraph form problem can be solved in a distributed fashion by each agent. This results in a novel centralized training distributed execution MARL algorithm named Def-MARL. Simulation experiments on 8 different tasks across 2 different simulators show that Def-MARL achieves the best overall performance, satisfies safety constraints, and maintains stable training. Real-world hardware experiments on Crazyflie quadcopters demonstrate the ability of Def-MARL to safely coordinate agents to complete complex collaborative tasks compared to other methods.",
+          "subjects": []
+        },
+        {
+          "title": "Learning plasma dynamics and robust rampdown trajectories with predict-first experiments at TCV",
+          "authors": [
+            "Allen M. Wang",
+            "A. Pau",
+            "C. Rea",
+            "Oswin So",
+            "Charles Dawson",
+            "O. Sauter",
+            "M. D. Boyer",
+            "A. Vu",
+            "C. Galperti",
+            "Chuchu Fan",
+            "A. Merle",
+            "Y. Poels",
+            "C. Venturini",
+            "F. Felici",
+            "S. Marchioni"
+          ],
+          "year": 2025,
+          "date": "2025-02-17",
+          "citations": 0,
+          "arxiv_id": "2502.12327",
+          "paper_id": "8abfce3d2ab980a867a4ad9abc79172c589aeea9",
+          "url": "https://arxiv.org/abs/2502.12327",
+          "abstract": "The rampdown phase of a tokamak pulse is difficult to simulate and often exacerbates multiple plasma instabilities. To reduce the risk of disrupting operations, we leverage advances in Scientific Machine Learning (SciML) to combine physics with data-driven models, developing a neural state-space model (NSSM) that predicts plasma dynamics during Tokamak à Configuration Variable (TCV) rampdowns. The NSSM efficiently learns dynamics from a modest dataset of 311 pulses with only five pulses in a reactor-relevant high-performance regime. The NSSM is parallelized across uncertainties, and reinforcement learning (RL) is applied to design trajectories that avoid instability limits. High-performance experiments at TCV show statistically significant improvements in relevant metrics. A predict-first experiment, increasing plasma current by 20% from baseline, demonstrates the NSSM’s ability to make small extrapolations. The developed approach paves the way for designing tokamak controls with robustness to considerable uncertainty and demonstrates the relevance of SciML for fusion experiments. The authors report on the implementation of a data-efficient machine learning approach to predict plasma dynamics. This enables offline design of robust trajectories to terminate the plasma without disruptive instabilities. Experimental results at the TCV tokamak show statistically significant improvements in key figures of merit and the ability to a priori predict the dynamics of key plasma properties.",
+          "subjects": []
+        },
+        {
+          "title": "Solving Minimum-Cost Reach Avoid using Reinforcement Learning",
+          "authors": [
+            "Oswin So",
+            "Cheng Ge",
+            "Chu-Chu Fan"
+          ],
+          "year": 2024,
+          "date": "2024-10-29",
+          "citations": 0,
+          "arxiv_id": "2410.22600",
+          "paper_id": "6a07440cd5d56b5e6bcdaf36784748804cc8032c",
+          "url": "https://arxiv.org/abs/2410.22600",
+          "abstract": "Current reinforcement-learning methods are unable to directly learn policies that solve the minimum cost reach-avoid problem to minimize cumulative costs subject to the constraints of reaching the goal and avoiding unsafe states, as the structure of this new optimization problem is incompatible with current methods. Instead, a surrogate problem is solved where all objectives are combined with a weighted sum. However, this surrogate objective results in suboptimal policies that do not directly minimize the cumulative cost. In this work, we propose RC-PPO, a reinforcement-learning-based method for solving the minimum-cost reach-avoid problem by using connections to Hamilton-Jacobi reachability. Empirical results demonstrate that RC-PPO learns policies with comparable goal-reaching rates to while achieving up to 57% lower cumulative costs compared to existing methods on a suite of minimum-cost reach-avoid benchmarks on the Mujoco simulator. The project page can be found at https://oswinso.xyz/rcppo.",
+          "subjects": []
+        },
+        {
+          "title": "Second-order constrained dynamic optimization",
+          "authors": [
+            "Yuichiro Aoyama",
+            "Oswin So",
+            "A. Saravanos",
+            "Evangelos A. Theodorou"
+          ],
+          "year": 2024,
+          "date": "2024-09-18",
+          "citations": 0,
+          "arxiv_id": "2409.11649",
+          "paper_id": "695adbb6afb345c3774ad9fcd6e653cb7da7b3f4",
+          "url": "https://arxiv.org/abs/2409.11649",
+          "abstract": "This paper provides an overview, analysis, and comparison of second-order dynamic optimization algorithms, that is, constrained differential dynamic programming (DDP) and sequential quadratic programming (SQP). Although a variety of these algorithms have been proposed and used successfully, there exists a gap in understanding the key differences and advantages, which we aim to provide in this work. For constrained DDP, we choose methods that incorporate nonlinear programming techniques to handle state and control constraints, including augmented Lagrangian (AL), interior point, primal-dual augmented Lagrangian (PDAL), and alternating direction method of multipliers (ADMM). Both DDP and SQP are provided in single- and multiple-shooting formulations, where constraints that arise from dynamics are encoded implicitly and explicitly, respectively. As a byproduct of the review, we propose a single-shooting PDAL DDP that has more favorable properties than the standard AL variant, such as the robustness to the growth of penalty parameters. We perform extensive numerical experiments on a variety of systems with increasing complexity to investigate the quality of the solutions, the levels of constraint violation, and the sensitivity of final solutions with respect to initialization, as well as targets. The results show that single-shooting PDAL DDP and multiple-shooting SQP are the most robust methods. For multiple-shooting formulation, both DDP and SQP can enjoy informed initial guesses, while the latter appears to be more advantageous in complex systems. It is also worth highlighting that DDP provides favorable computational complexity and feedback gains as a byproduct of optimization as is.",
+          "subjects": []
+        },
+        {
+          "title": "Active Disruption Avoidance and Trajectory Design for Tokamak Ramp-downs with Neural Differential Equations and Reinforcement Learning",
+          "authors": [
+            "Allen M. Wang",
+            "Oswin So",
+            "Charles Dawson",
+            "Darren T. Garnier",
+            "C. Rea",
+            "Chuchu Fan"
+          ],
+          "year": 2024,
+          "date": "2024-02-14",
+          "citations": 0,
+          "arxiv_id": "2402.09387",
+          "paper_id": "4313a5b2b0f6116cd83ec17049627f54a456b53a",
+          "url": "https://arxiv.org/abs/2402.09387",
+          "abstract": "The tokamak offers a promising path to fusion energy, but plasma disruptions pose a major economic risk, motivating considerable advances in disruption avoidance. This work develops a reinforcement learning approach to this problem by training a policy to safely ramp-down the plasma current while avoiding limits on a number of quantities correlated with disruptions. The policy training environment is a hybrid physics and machine learning model trained on simulations of the SPARC primary reference discharge (PRD) ramp-down, an upcoming burning plasma scenario which we use as a testbed. To address physics uncertainty and model inaccuracies, the simulation environment is massively parallelized on GPU with randomized physics parameters during policy training. The trained policy is then successfully transferred to a higher fidelity simulator where it successfully ramps down the plasma while avoiding user-specified disruptive limits. We also address the crucial issue of safety criticality by demonstrating that a constraint-conditioned policy can be used as a trajectory design assistant to design a library of feed-forward trajectories to handle different physics conditions and user settings. As a library of trajectories is more interpretable and verifiable offline, we argue such an approach is a promising path for leveraging the capabilities of reinforcement learning in the safety-critical context of burning plasma tokamaks. Finally, we demonstrate how the training environment can be a useful platform for other feed-forward optimization approaches by using an evolutionary algorithm to perform optimization of feed-forward trajectories that are robust to physics uncertainty",
+          "subjects": []
+        },
+        {
+          "title": "Learning safe control for multi-robot systems: Methods, verification, and open challenges",
+          "authors": [
+            "Kunal Garg",
+            "Song-Yuan Zhang",
+            "Oswin So",
+            "Charles Dawson",
+            "Chuchu Fan"
+          ],
+          "year": 2024,
+          "date": "2024",
+          "citations": 39,
+          "arxiv_id": null,
+          "paper_id": "b993a15371c5bb03f0b9aba5c28a28f109118eed",
+          "url": "https://www.semanticscholar.org/paper/b993a15371c5bb03f0b9aba5c28a28f109118eed",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Learning Safe Control for Multi-Robot Systems: Methods, Verification, and Open Challenges",
+          "authors": [
+            "Kunal Garg",
+            "Song-Yuan Zhang",
+            "Oswin So",
+            "Charles Dawson",
+            "Chuchu Fan"
+          ],
+          "year": 2023,
+          "date": "2023-11-22",
+          "citations": 0,
+          "arxiv_id": "2311.13714",
+          "paper_id": "5902f5f86d34c04d29465153698ea4ae9d537bbb",
+          "url": "https://arxiv.org/abs/2311.13714",
+          "abstract": "In this survey, we review the recent advances in control design methods for robotic multi-agent systems (MAS), focussing on learning-based methods with safety considerations. We start by reviewing various notions of safety and liveness properties, and modeling frameworks used for problem formulation of MAS. Then we provide a comprehensive review of learning-based methods for safe control design for multi-robot systems. We start with various types of shielding-based methods, such as safety certificates, predictive filters, and reachability tools. Then, we review the current state of control barrier certificate learning in both a centralized and distributed manner, followed by a comprehensive review of multi-agent reinforcement learning with a particular focus on safety. Next, we discuss the state-of-the-art verification tools for the correctness of learning-based methods. Based on the capabilities and the limitations of the state of the art methods in learning and verification for MAS, we identify various broad themes for open challenges: how to design methods that can achieve good performance along with safety guarantees; how to decompose single-agent based centralized methods for MAS; how to account for communication-related practical issues; and how to assess transfer of theoretical guarantees to practice.",
+          "subjects": []
+        },
+        {
+          "title": "Solving Stabilize-Avoid via Epigraph Form Optimal Control using Deep Reinforcement Learning",
+          "authors": [
+            "Oswin So",
+            "Chuchu Fan"
+          ],
+          "year": 2023,
+          "date": "2023-07-10",
+          "citations": 6,
+          "arxiv_id": null,
+          "paper_id": "743cd9b0c4aef4538b9cf731378c8578d1b618c6",
+          "url": "https://www.semanticscholar.org/paper/743cd9b0c4aef4538b9cf731378c8578d1b618c6",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "NashFormer: Leveraging Local Nash Equilibria for Semantically Diverse Trajectory Prediction",
+          "authors": [
+            "Justin Lidard",
+            "Oswin So",
+            "Yanxia Zhang",
+            "Jonathan A. DeCastro",
+            "Xiongyi Cui",
+            "Xin Huang",
+            "Yen-Ling Kuo",
+            "John Leonard",
+            "Avinash Balachandran",
+            "N. Leonard",
+            "G. Rosman"
+          ],
+          "year": 2023,
+          "date": "2023-05-28",
+          "citations": 0,
+          "arxiv_id": "2305.17600",
+          "paper_id": "e624cbaf00f9ad9dfd3e4256d62df702d014ee1d",
+          "url": "https://arxiv.org/abs/2305.17600",
+          "abstract": "Interactions between road agents present a significant challenge in trajectory prediction, especially in cases involving multiple agents. Because existing diversity-aware predictors do not account for the interactive nature of multi-agent predictions, they may miss these important interaction outcomes. In this paper, we propose NashFormer, a framework for trajectory prediction that leverages game-theoretic inverse reinforcement learning to improve coverage of multi-modal predictions. We use a training-time game-theoretic analysis as an auxiliary loss resulting in improved coverage and accuracy without presuming a taxonomy of actions for the agents. We demonstrate our approach on the interactive split of the Waymo Open Motion Dataset, including four subsets involving scenarios with high interaction complexity. Experiment results show that our predictor produces accurate predictions while covering $33\\%$ more potential interactions versus a baseline model.",
+          "subjects": []
+        }
+      ]
     ],
     [
       "Xiangru Xu",
@@ -1910,7 +2653,7 @@
           ],
           "year": 2016,
           "date": "2016-09-21",
-          "citations": 0,
+          "citations": 3071,
           "arxiv_id": "1609.06408",
           "paper_id": "291a176dc906f31e8faf760911a61f0ca9bde444",
           "url": "https://arxiv.org/abs/1609.06408",
@@ -1943,75 +2686,6 @@
       "J. Grizzle",
       [
         {
-          "title": "CLF-CBF Constraints for Real-Time Avoidance of Multiple Obstacles in Bipedal Locomotion and Navigation",
-          "authors": [
-            "Jinze Liu",
-            "Min-Zhe Li",
-            "J. Grizzle",
-            "Jiunn-Kai Huang"
-          ],
-          "year": 2023,
-          "date": "2023-10-01",
-          "citations": 17,
-          "arxiv_id": null,
-          "paper_id": "83c9c9c6c21f07e565b2d9e45b5a7630366ce1cb",
-          "url": "https://www.semanticscholar.org/paper/83c9c9c6c21f07e565b2d9e45b5a7630366ce1cb",
-          "abstract": "This paper presents a reactive planning system that allows a Cassie-series bipedal robot to avoid multiple non-overlapping obstacles via a single, continuously differentiable control barrier function (CBF). The overall system detects an individual obstacle via a height map derived from a LiDAR point cloud and computes an elliptical outer approximation, which is then turned into a CBF. The QP-CLF-CBF formalism developed by Ames et al. is applied to ensure that safe trajectories are generated. Safe planning in environments with multiple obstacles is demonstrated both in simulation and experimentally on the Cassie biped.",
-          "subjects": []
-        },
-        {
-          "title": "Robustness of Control Barrier Functions for Safety Critical Control",
-          "authors": [
-            "Xiangru Xu",
-            "P. Tabuada",
-            "J. Grizzle",
-            "A. Ames"
-          ],
-          "year": 2016,
-          "date": "2016-12-05",
-          "citations": 0,
-          "arxiv_id": "1612.01554",
-          "paper_id": "3098826a91ba89250332fa1de1881207e619d6ea",
-          "url": "https://arxiv.org/abs/1612.01554",
-          "abstract": "Abstract Barrier functions (also called certificates) have been an important tool for the verification of hybrid systems, and have also played important roles in optimization and multi-objective control. The extension of a barrier function to a controlled system results in a control barrier function. This can be thought of as being analogous to how Sontag extended Lyapunov functions to control Lypaunov functions in order to enable controller synthesis for stabilization tasks. A control barrier function enables controller synthesis for safety requirements specified by forward invariance of a set using a Lyapunov-like condition. This paper develops several important extensions to the notion of a control barrier function. The first involves robustness under perturbations to the vector field defining the system. Input-to-State stability conditions are given that provide for forward invariance, when disturbances are present, of a “relaxation” of set rendered invariant without disturbances. A control barrier function can be combined with a control Lyapunov function in a quadratic program to achieve a control objective subject to safety guarantees. The second result of the paper gives conditions for the control law obtained by solving the quadratic program to be Lipschitz continuous and therefore to gives rise to well-defined solutions of the resulting closed-loop system.",
-          "subjects": []
-        },
-        {
-          "title": "3D dynamic walking on stepping stones with control barrier functions",
-          "authors": [
-            "Quan Nguyen",
-            "Ayonga Hereid",
-            "J. Grizzle",
-            "A. Ames",
-            "K. Sreenath"
-          ],
-          "year": 2016,
-          "date": "2016-12-01",
-          "citations": 126,
-          "arxiv_id": null,
-          "paper_id": "0db80b12b1049209da1caccd9b0606f02e9e4dce",
-          "url": "https://www.semanticscholar.org/paper/0db80b12b1049209da1caccd9b0606f02e9e4dce",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Correctness Guarantees for the Composition of Lane Keeping and Adaptive Cruise Control",
-          "authors": [
-            "Xiangru Xu",
-            "J. Grizzle",
-            "P. Tabuada",
-            "A. Ames"
-          ],
-          "year": 2016,
-          "date": "2016-09-22",
-          "citations": 0,
-          "arxiv_id": "1609.06807",
-          "paper_id": "98af018e4e7243a5ab49a0657fbf8f7a0a3ef115",
-          "url": "https://arxiv.org/abs/1609.06807",
-          "abstract": "This paper develops a control approach with correctness guarantees for the simultaneous operation of lane keeping and adaptive cruise control. The safety specifications for these driver assistance modules are expressed in terms of set invariance. Control barrier functions (CBFs) are used to design a family of control solutions that guarantee the forward invariance of a set, which implies satisfaction of the safety specifications. The CBFs are synthesized through a combination of sum-of-squares program and physics-based modeling and optimization. A real-time quadratic program is posed to combine the CBFs with the performance-based controllers, which can be either expressed as control Lyapunov function conditions or as black-box legacy controllers. In both cases, the resulting feedback control guarantees the safety of the composed driver assistance modules in a formally correct manner. Importantly, the quadratic program admits a closed-form solution that can be easily implemented. The effectiveness of the control approach is demonstrated by simulations in the industry-standard vehicle simulator Carsim. Note to Practitioners—Safety is of paramount importance for the control of automated vehicles. This paper is motivated by the problem of designing controllers that are provably correct for the simultaneous operation of two driver assistance modules, lane keeping and adaptive cruise control. This is a challenging problem partially, because the lateral and longitudinal dynamics of the vehicles are coupled, with few results known to exist that provide formal guarantees. In this paper, we employ an assume-guarantee formalism between these two subsystems, such that they can be considered individually; based on that, we use optimization to design safe sets that serves as “supervisors” for vehicle behavior, such that the trajectories of the closed-loop system are confined within the safe sets using predetermined bounds on wheel force and steering angle. The feedback controller is constructed by solving convex quadratic programs online, which can also be given in closed form, making the implementation much easier. One particular advantage of this control approach is that the safety set and the performance controller can be designed separately, which enables the integration of a legacy controller into a correct-by-construction solution.",
-          "subjects": []
-        },
-        {
           "title": "Control Barrier Function Based Quadratic Programs for Safety Critical Systems",
           "authors": [
             "A. Ames",
@@ -2021,7 +2695,7 @@
           ],
           "year": 2016,
           "date": "2016-09-21",
-          "citations": 0,
+          "citations": 3071,
           "arxiv_id": "1609.06408",
           "paper_id": "291a176dc906f31e8faf760911a61f0ca9bde444",
           "url": "https://arxiv.org/abs/1609.06408",
@@ -2048,371 +2722,7 @@
           "subjects": []
         }
       ],
-      [
-        {
-          "title": "Standing Tall: Robust Fall Prediction for Bipedal Robots",
-          "authors": [
-            "Gokul Prabhakaran",
-            "J. Grizzle",
-            "M. E. Mungai"
-          ],
-          "year": 2025,
-          "date": "2025",
-          "citations": 2,
-          "arxiv_id": null,
-          "paper_id": "59fd87c8f945ec87e054d674b5f590f1d541cd56",
-          "url": "https://www.semanticscholar.org/paper/59fd87c8f945ec87e054d674b5f590f1d541cd56",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Stair Climbing Using the Angular Momentum Linear Inverted Pendulum Model and Model Predictive Control",
-          "authors": [
-            "O. Dosunmu-Ogunbi",
-            "Aayush Shrivastava",
-            "G. Gibson",
-            "J. Grizzle"
-          ],
-          "year": 2023,
-          "date": "2023-07-05",
-          "citations": 0,
-          "arxiv_id": "2307.02448",
-          "paper_id": "6b314173bfd97084f4388a75a4b2d4a28f2fef43",
-          "url": "https://arxiv.org/abs/2307.02448",
-          "abstract": "A new control paradigm using angular momentum and foot placement as state variables in the linear inverted pendulum model has expanded the realm of possibilities for the control of bipedal robots. This new paradigm, known as the ALIP model, has shown effectiveness in cases where a robot's center of mass height can be assumed to be constant or near constant as well as in cases where there are no non-kinematic restrictions on foot placement. Walking up and down stairs violates both of these assumptions, where center of mass height varies significantly within a step and the geometry of the stairs restrict the effectiveness of foot placement. In this paper, we explore a variation of the ALIP model that allows the length of the virtual pendulum formed by the robot's stance foot and center of mass to follow smooth trajectories during a step. We couple this model with a control strategy constructed from a novel combination of virtual constraint-based control and a model predictive control algorithm to stabilize a stair climbing gait that does not soley rely on foot placement. Simulations on a 20-degree of freedom model of the Cassie biped in the SimMechanics simulation environment show that the controller is able to achieve periodic gait.",
-          "subjects": []
-        },
-        {
-          "title": "Exploring Kinodynamic Fabrics for Reactive Whole-Body Control of Underactuated Humanoid Robots",
-          "authors": [
-            "Alphonsus Adu-Bredu",
-            "G. Gibson",
-            "J. Grizzle"
-          ],
-          "year": 2023,
-          "date": "2023-03-07",
-          "citations": 0,
-          "arxiv_id": "2303.04279",
-          "paper_id": "ce25bc678e70170507b0da8727888a5a0f96da64",
-          "url": "https://arxiv.org/abs/2303.04279",
-          "abstract": "For bipedal humanoid robots to successfully operate in the real world, they must be competent at simultaneously executing multiple motion tasks while reacting to unforeseen external disturbances in real-time. We propose Kinodynamic Fabrics as an approach for the specification, solution and simultaneous execution of multiple motion tasks in real-time while being reactive to dynamism in the environment. Kinodynamic Fabrics allows for the specification of prioritized motion tasks as forced spectral semi-sprays and solves for desired robot joint accelerations at real-time frequencies. We evaluate the capabilities of Kinodynamic fabrics on diverse physically-challenging whole-body control tasks with a bipedal humanoid robot both in simulation and in the real-world. Kinodynamic Fabrics outperforms the state-of-the-art Quadratic Program based whole-body controller on a variety of whole-body control tasks on run-time and reactivity metrics in our experiments. Our open-source implementation of Kinodynamic Fabrics as well as robot demonstration videos can be found at this url: https://adubredu.github.io/kinofabs",
-          "subjects": []
-        },
-        {
-          "title": "Terrain-Adaptive, ALIP-Based Bipedal Locomotion Controller via Model Predictive Control and Virtual Constraints",
-          "authors": [
-            "G. Gibson",
-            "O. Dosunmu-Ogunbi",
-            "Yu-Kai Gong",
-            "J. Grizzle"
-          ],
-          "year": 2021,
-          "date": "2021-09-30",
-          "citations": 0,
-          "arxiv_id": "2109.14862",
-          "paper_id": "1406abbae2831d8bef655641f83d2d47ac80fc6d",
-          "url": "https://arxiv.org/abs/2109.14862",
-          "abstract": "This paper presents a gait controller for bipedal robots to achieve highly agile walking over various terrains given local slope and friction cone information. Without these considerations, untimely impacts can cause a robot to trip and inadequate tangential reaction forces at the stance foot can cause slippages. We address these challenges by combining, in a novel manner, a model based on an Angular Momentum Linear Inverted Pendulum (ALIP) and a Model Predictive Control (MPC) foot placement planner that is executed by the method of virtual constraints. The process starts with abstracting from the full dynamics of a Cassie 3D bipedal robot, an exact low-dimensional representation of its center of mass dynamics, parameterized by angular momentum. Under a piecewise planar terrain assumption and the elimination of terms for the angular momentum about the robot's center of mass, the centroidal dynamics about the contact point become linear and have dimension four. Importantly, we include the intra-step dynamics at uniformly-spaced intervals in the MPC formulation so that realistic workspace constraints on the robot's evolution can be imposed from step-to-step. The output of the low-dimensional MPC controller is directly implemented on a high-dimensional Cassie robot through the method of virtual constraints. In experiments, we validate the performance of our control strategy for the robot on a variety of surfaces with varied inclinations and textures.",
-          "subjects": []
-        },
-        {
-          "title": "One-Step Ahead Prediction of Angular Momentum about the Contact Point for Control of Bipedal Locomotion: Validation in a LIP-inspired Controller",
-          "authors": [
-            "Yu-Kai Gong",
-            "J. Grizzle"
-          ],
-          "year": 2021,
-          "date": "2021-05-30",
-          "citations": 55,
-          "arxiv_id": null,
-          "paper_id": "3c6c2af89b34351d43115080880031c0c5d04e31",
-          "url": "https://www.semanticscholar.org/paper/3c6c2af89b34351d43115080880031c0c5d04e31",
-          "abstract": "Ultimately, feedback control is about making adjustments using current state information in order to meet an objective in the future. In the control of bipedal locomotion, linear velocity of the center of mass has been widely accepted as the primary variable around which feedback control objectives are formulated. In this paper, we argue that it is easier to predict the one-step ahead evolution of angular momentum about the contact point than it is to make a similar prediction for linear velocity, and hence it provides a superior quantity for feedback control. So as not to confuse the benefits of predicting angular momentum with any other control design decisions, we reformulate the standard LIP model in terms of angular momentum and show how to regulate swing foot touchdown position at the end of the current step so as to meet an angular momentum objective at the end of the next step. We implement the resulting feedback controller on the 20 degree-of-freedom bipedal robot, Cassie Blue, where each leg accounts for nearly one-third of the robot’s total mass of 32 Kg. Under this controller, the robot achieves fast walking, rapid turning while walking, large disturbance rejection, and locomotion on rough terrain.",
-          "subjects": []
-        },
-        {
-          "title": "Zero Dynamics, Pendulum Models, and Angular Momentum in Feedback Control of Bipedal Locomotion",
-          "authors": [
-            "Yu-Kai Gong",
-            "J. Grizzle"
-          ],
-          "year": 2021,
-          "date": "2021-05-17",
-          "citations": 0,
-          "arxiv_id": "2105.08170",
-          "paper_id": "3898f878e0a07c74cfc18776db2af0e312dbc277",
-          "url": "https://arxiv.org/abs/2105.08170",
-          "abstract": "\n Low-dimensional models are ubiquitous in the bipedal robotics literature. On the one hand is the community of researchers that bases feedback control design on pendulum models selected to capture the center of mass dynamics of the robot during walking. On the other hand is the community that bases feedback control design on virtual constraints, which induce an exact low-dimensional model in the closed-loop system. In the first case, the low-dimensional model is valued for its physical insight and analytical tractability. In the second case, the low-dimensional model is integral to a rigorous analysis of the stability of walking gaits in the full-dimensional model of the robot. This paper seeks to clarify the commonalities and differences in the two perspectives for using low-dimensional models. In the process of doing so, we argue that angular momentum about the contact point is a better indicator of robot state than linear velocity. Concretely, we show that an approximate (pendulum and zero dynamics) model parameterized by angular momentum provides better predictions for foot placement on a physical robot (e.g., legs with mass) than does a related approximate model parameterized in terms of linear velocity. We implement an associated angular-momentum-based controller on Cassie, a 3D robot, and demonstrate high agility and robustness in experiments.",
-          "subjects": []
-        },
-        {
-          "title": "LiDARTag: A Real-Time Fiducial Tag System for Point Clouds",
-          "authors": [
-            "Jiunn-Kai Huang",
-            "Shoutian Wang",
-            "Maani Ghaffari",
-            "J. Grizzle"
-          ],
-          "year": 2021,
-          "date": "2021-03-31",
-          "citations": 36,
-          "arxiv_id": null,
-          "paper_id": "7e1aa9e751bd9656114ad5de38109490dec1ff22",
-          "url": "https://www.semanticscholar.org/paper/7e1aa9e751bd9656114ad5de38109490dec1ff22",
-          "abstract": "Image-based fiducial markers are useful in problems such as object tracking in cluttered or textureless environments, camera (and multi-sensor) calibration tasks, and vision-based simultaneous localization and mapping (SLAM). The state-of-the-art fiducial marker detection algorithms rely on the consistency of the ambient lighting. This article introduces LiDARTag, a novel fiducial tag design and detection algorithm suitable for light detection and ranging (LiDAR) point clouds. The proposed method runs in real-time and can process data at 100 Hz, which is faster than the currently available LiDAR sensor frequencies. Because of the LiDAR sensors’ nature, rapidly changing ambient lighting will not affect the detection of a LiDARTag; hence, the proposed fiducial marker can operate in a completely dark environment. In addition, the LiDARTag nicely complements and is compatible with existing visual fiducial markers, such as AprilTags, allowing for efficient multi-sensor fusion and calibration tasks. We further propose a concept of minimizing a fitting error between a point cloud and the marker's template to estimate the marker's pose. The proposed method achieves millimeter error in translation and a few degrees in rotation. Due to LiDAR returns’ sparsity, the point cloud is lifted to a continuous function in a reproducing kernel Hilbert space where the inner product can be used to determine a marker's ID. The experimental results, verified by a motion capture system, confirm that the proposed method can reliably provide a tag's pose and unique ID code. The rejection of false positives is validated on the Google Cartographer indoor dataset and the Honda H3D outdoor dataset. All implementations are coded in C++ and are available at https://github.com/UMich-BipedLab/LiDARTag.",
-          "subjects": []
-        },
-        {
-          "title": "Feedback Control Design for Robust Comfortable Sit-to-Stand Motions of 3D Lower-Limb Exoskeletons",
-          "authors": [
-            "M. E. Mungai",
-            "J. Grizzle"
-          ],
-          "year": 2021,
-          "date": "2021",
-          "citations": 13,
-          "arxiv_id": null,
-          "paper_id": "14fb7e00c53b30bbaac662a9cd8208f62f4c2134",
-          "url": "https://www.semanticscholar.org/paper/14fb7e00c53b30bbaac662a9cd8208f62f4c2134",
-          "abstract": "Lower-limb exoskeletons provide people who suffer from lower limb impairments with an opportunity to stand up and ambulate. Standing up is a crucial task for lower-limb exoskeletons as it allows the user to transfer to the exoskeleton from a wheelchair, with no assistance, and can be a precursor to walking. Achieving a safe sit-to-stand motion for the exoskeleton + user system can be challenging because of the need to balance user comfort while respecting hardware bounds and being robust to changes in the user characteristics and the user’s environment. We successfully achieve safe sit-to-stand motions by using constrained optimization to generate two types of dynamic sit-to-stand motions based on two hybrid system descriptions for the exoskeleton, Atalante. Due to the highly constrained nature of the equations of motions, we introduce a method to systematically design virtual constraints for highly constrained systems. We also design two quadratic program-based computed-torque controllers to achieve the sit-to-stand motion and to safely come to a stop in a standing position. We then analyze the closed-loop behaviors of the two sit-to-stand motions under the two controllers using physically motivated robustness tests. The criteria used to determine a successful sit-to-stand motion are: tracking error, the pitch acceleration of the torso, the amount of user force needed to perform the motion, and the adherence to the Zero Moment Point (ZMP), friction, and joint constraints.",
-          "subjects": []
-        },
-        {
-          "title": "A Roadmap for US Robotics - From Internet to Robotics 2020 Edition",
-          "authors": [
-            "Henrik I. Christensen",
-            "N. Amato",
-            "H. Yanco",
-            "M. Matarić",
-            "H. Choset",
-            "Ann W. Drobnis",
-            "Ken Goldberg",
-            "J. Grizzle",
-            "Gregory Hager",
-            "J. Hollerbach",
-            "Seth Hutchinson",
-            "V. Krovi",
-            "Daniel Lee",
-            "W. Smart",
-            "J. Trinkle",
-            "G. Sukhatme"
-          ],
-          "year": 2021,
-          "date": "2021",
-          "citations": 139,
-          "arxiv_id": null,
-          "paper_id": "bd6d8840ecbdddab31e9fbbb79fc8ce2f11830b7",
-          "url": "https://www.semanticscholar.org/paper/bd6d8840ecbdddab31e9fbbb79fc8ce2f11830b7",
-          "abstract": "Recently, the robotics industry celebrated its 60-year anniversary. We have used robots for more than six decades to empower people to do things that are typically dirty, dull and/or dangerous. The industry has progressed significantly over the period from basic mechanical assist systems to fully autonomous cars, environmental monitoring and exploration of outer space. We have seen tremendous adoption of IT technology in our daily lives for a diverse set of support tasks. Through use of robots we are starting to see a new revolution, as we not only will have IT support from tablets, phones, computers but also systems that can physically interact with the world and assist with daily tasks, work, and leisure activities. The present document is a summary of the main societal opportunities identified, the associated challenges to deliver desired solutions and a presentation of efforts to be undertaken to ensure that US will continue to be a leader in robotics both in terms of research innovation, adoption of the latest technology, and adoption of appropriate policy frameworks that ensure that the technology is utilized in a responsible fashion. H. I. Christensen, N. Amato, H. Yanco, M. Mataric, H. Choset, A. Drobnis, K. Goldberg, J. Grizzle, G. Hager, J. Hollerbach, S. Hutchinson, V. Krovi, D. Lee, W. Smart and J. Trinkle (2021), “A Roadmap for US Robotics – From Internet to Robotics 2020 Edition”, Foundations and Trends® in Robotics: Vol. 8, No. 4, pp 307–424. DOI: 10.1561/2300000066. Full text available at: http://dx.doi.org/10.1561/2300000066",
-          "subjects": []
-        },
-        {
-          "title": "Bayesian Spatial Kernel Smoothing for Scalable Dense Semantic Mapping",
-          "authors": [
-            "Lu Gan",
-            "Ray Zhang",
-            "J. Grizzle",
-            "Ryan M. Eustice",
-            "Maani Ghaffari"
-          ],
-          "year": 2019,
-          "date": "2019-09-10",
-          "citations": 0,
-          "arxiv_id": "1909.04631",
-          "paper_id": "2d6abfa55b93ab9f0a697e2d6f0088ee1edb8c16",
-          "url": "https://arxiv.org/abs/1909.04631",
-          "abstract": "This article develops a Bayesian continuous 3D semantic occupancy map from noisy point clouds by generalizing the Bayesian kernel inference model for building occupancy maps, a binary problem, to semantic maps, a multi-class problem. The proposed method provides a unified probabilistic model for both occupancy and semantic probabilities and nicely reverts to the original occupancy mapping framework when only one occupied class exists in obtained measurements. The Bayesian spatial kernel inference relaxes the independent grid assumption and brings smoothness and continuity to the map inference, enabling to exploit local correlations present in the environment and increasing the performance. The accompanying software uses multi-threading and vectorization, and runs at about 2 $\\mathrm{Hz}$ on a laptop CPU. Evaluations using multiple sequences of stereo camera and LiDAR datasets show that the proposed method consistently outperforms current baselines. We also present a qualitative evaluation using data collected with a bipedal robot platform on the University of Michigan - North Campus.",
-          "subjects": []
-        },
-        {
-          "title": "Contact-aided invariant extended Kalman filtering for robot state estimation",
-          "authors": [
-            "R. Hartley",
-            "Maani Ghaffari Jadidi",
-            "Ryan M. Eustice",
-            "J. Grizzle"
-          ],
-          "year": 2019,
-          "date": "2019-04-19",
-          "citations": 0,
-          "arxiv_id": "1904.09251",
-          "paper_id": "b5e33d796b313a202200ab3715c68294509ceb04",
-          "url": "https://arxiv.org/abs/1904.09251",
-          "abstract": "Legged robots require knowledge of pose and velocity in order to maintain stability and execute walking paths. Current solutions either rely on vision data, which is susceptible to environmental and lighting conditions, or fusion of kinematic and contact data with measurements from an inertial measurement unit (IMU). In this work, we develop a contact-aided invariant extended Kalman filter (InEKF) using the theory of Lie groups and invariant observer design. This filter combines contact-inertial dynamics with forward kinematic corrections to estimate pose and velocity along with all current contact points. We show that the error dynamics follows a log-linear autonomous differential equation with several important consequences: (a) the observable state variables can be rendered convergent with a domain of attraction that is independent of the system’s trajectory; (b) unlike the standard EKF, neither the linearized error dynamics nor the linearized observation model depend on the current state estimate, which (c) leads to improved convergence properties and (d) a local observability matrix that is consistent with the underlying nonlinear system. Furthermore, we demonstrate how to include IMU biases, add/remove contacts, and formulate both world-centric and robo-centric versions. We compare the convergence of the proposed InEKF with the commonly used quaternion-based extended Kalman filter (EKF) through both simulations and experiments on a Cassie-series bipedal robot. Filter accuracy is analyzed using motion capture, while a LiDAR mapping experiment provides a practical use case. Overall, the developed contact-aided InEKF provides better performance in comparison with the quaternion-based EKF as a result of exploiting symmetries present in system.",
-          "subjects": []
-        },
-        {
-          "title": "Data-Driven Computation of Minimal Robust Control Invariant Set",
-          "authors": [
-            "Yuxiao Chen",
-            "Huei Peng",
-            "J. Grizzle",
-            "N. Ozay"
-          ],
-          "year": 2018,
-          "date": "2018-12-01",
-          "citations": 45,
-          "arxiv_id": null,
-          "paper_id": "9aa5b9672a8266003630023bbacabd226051fbe6",
-          "url": "https://www.semanticscholar.org/paper/9aa5b9672a8266003630023bbacabd226051fbe6",
-          "abstract": "We propose a data-driven framework to compute an approximation of a minimal robust control invariant set (mRCI) for an uncertain dynamical system where the model of the system is also unknown and should be learned from data. First, the set of admissible models is characterized via a set of linear constraints extracted from the experimental data. Each model in the set of admissible models contains information about the nominal model, as well as the characterization of the model uncertainty, including additive and multiplicative uncertainties. Then an iterative algorithm based on robust optimization is proposed to simultaneously compute a minimal robust control invariant set while selecting an optimal model from the admissible set. The numerical results show that the proposed method greatly reduces the size of the invariant set compared to a benchmark method that sequentially selects a model with least squares and then computes the invariant set.",
-          "subjects": []
-        },
-        {
-          "title": "Automotive Control Systems",
-          "authors": [
-            "Joseph S. Cook",
-            "J. Grizzle",
-            "Jing Sun",
-            "M. Liubakka",
-            "D. Rhode",
-            "James R. Winkelman",
-            "P. Kokotovic"
-          ],
-          "year": 2018,
-          "date": "2018-10-24",
-          "citations": 706,
-          "arxiv_id": null,
-          "paper_id": "552e2b143ca54b2494e8aae03c4d14b8b094ee3c",
-          "url": "https://www.semanticscholar.org/paper/552e2b143ca54b2494e8aae03c4d14b8b094ee3c",
-          "abstract": "This engineering textbook is designed to introduce advanced control systems for vehicles, including advanced automotive concepts and the next generation of vehicles for Intelligent Transportation Systems (ITS). For each automotive-control problem considered, the authors emphasize the physics and underlying principles behind the control-system concept and design. This is an exciting and rapidly developing field for which many articles and reports exist but no modern unifying text. An extensive list of references is provided at the end of each chapter for all topics covered. This is currently the only textbook, including problems and examples, that covers and integrates the topics of automotive powertrain control, vehicle control, and ITS. The emphasis is on fundamental concepts and methods for automotive control systems rather than the rapidly changing specific technologies. Many of the text examples, as well as the end-of-chapter problems, require the use of MATLAB and/or Simulink.",
-          "subjects": []
-        },
-        {
-          "title": "Feedback Control of a Cassie Bipedal Robot: Walking, Standing, and Riding a Segway",
-          "authors": [
-            "Yu-Kai Gong",
-            "R. Hartley",
-            "Xingye Da",
-            "Ayonga Hereid",
-            "Omar Harib",
-            "Jiunn-Kai Huang",
-            "J. Grizzle"
-          ],
-          "year": 2018,
-          "date": "2018-09-19",
-          "citations": 0,
-          "arxiv_id": "1809.07279",
-          "paper_id": "76a89e10661d5ccb96af2c76625c24e909ab3b84",
-          "url": "https://arxiv.org/abs/1809.07279",
-          "abstract": "The Cassie bipedal robot designed by Agility Robotics is providing academics with a common platform for sharing and comparing algorithms for locomotion, perception, and navigation. This paper focuses on feedback control for standing and walking using the methods of virtual constraints and gait libraries. The designed controller was implemented six weeks after the robot arrived at the University of Michigan and allowed it to stand in place as well as walk over sidewalks, grass, snow, sand, and burning brush. The controller for standing also enables the robot to ride a Segway. Software supporting the work in this paper is available on GitHub.",
-          "subjects": []
-        },
-        {
-          "title": "Feedback Control of an Exoskeleton for Paraplegics: Toward Robustly Stable, Hands-Free Dynamic Walking",
-          "authors": [
-            "Omar Harib",
-            "Ayonga Hereid",
-            "Ayush Agrawal",
-            "Thomas Gurriet",
-            "Sylvain Finet",
-            "G. Boéris",
-            "Alexis Duburcq",
-            "M. E. Mungai",
-            "Mattieu Masselin",
-            "A. Ames",
-            "K. Sreenath",
-            "J. Grizzle"
-          ],
-          "year": 2018,
-          "date": "2018-02-22",
-          "citations": 0,
-          "arxiv_id": "1802.08322",
-          "paper_id": "0330cc5bb7a43f6c8098af76b54dbdff519d6ddf",
-          "url": "https://arxiv.org/abs/1802.08322",
-          "abstract": "\"I will never forget the emotion of my first steps [&hellip;],\" were the words of Fran?oise, the first user during initial trials of the exoskeleton ATALANTE [1]. \"I am tall again!\" were the words of Sandy (the fourth user) after standing up in the exoskeleton. During these early tests, complete paraplegic patients dynamically walked up to 10 m without crutches or other assistance using a feedback control method originally invented for bipedal robots. As discussed in \"Summary,\" this article describes the hardware (shown in Figure 1) that was designed to achieve hands-free dynamic walking, the control laws that were deployed (and those being developed) to provide enhanced mobility and robustness, and preliminary test results. In this article, dynamic walking refers to a motion that is orbitally stable as opposed to statically stable.",
-          "subjects": []
-        },
-        {
-          "title": "Obstacle Avoidance for Low-Speed Autonomous Vehicles With Barrier Function",
-          "authors": [
-            "Yuxiao Chen",
-            "Huei Peng",
-            "J. Grizzle"
-          ],
-          "year": 2018,
-          "date": "2018",
-          "citations": 186,
-          "arxiv_id": null,
-          "paper_id": "12bb592967af70686568e9077493479acdab0b1f",
-          "url": "https://www.semanticscholar.org/paper/12bb592967af70686568e9077493479acdab0b1f",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Legged Robot State-Estimation Through Combined Forward Kinematic and Preintegrated Contact Factors",
-          "authors": [
-            "R. Hartley",
-            "Josh Mangelson",
-            "Lu Gan",
-            "Maani Ghaffari Jadidi",
-            "Jeffrey M. Walls",
-            "Ryan M. Eustice",
-            "J. Grizzle"
-          ],
-          "year": 2017,
-          "date": "2017-12-15",
-          "citations": 0,
-          "arxiv_id": "1712.05873",
-          "paper_id": "072efec6c62b50a50e4a15318e84561d240e9958",
-          "url": "https://arxiv.org/abs/1712.05873",
-          "abstract": "State-of-the-art robotic perception systems have achieved sufficiently good performance using Inertial Measurement Units (IMUs), cameras, and nonlinear optimization techniques, that they are now being deployed as technologies. However, many of these methods rely significantly on vision and often fail when visual tracking is lost due to lighting or scarcity of features. This paper presents a state-estimation technique for legged robots that takes into account the robot's kinematic model as well as its contact with the environment. We introduce forward kinematic factors and preintegrated contact factors into a factor graph framework that can be incrementally solved in real-time. The forward kinematic factor relates the robot's base pose to a contact frame through noisy encoder measurements. The preintegrated contact factor provides odometry measurements of this contact frame while accounting for possible foot slippage. Together, the two developed factors constrain the graph optimization problem allowing the robot's trajectory to be estimated. The paper evaluates the method using simulated and real sensory IMU and kinematic data from experiments with a Cassie-series robot designed by Agility Robotics. These preliminary experiments show that using the proposed method in addition to IMU decreases drift and improves localization accuracy, suggesting that its use can enable successful recovery from a loss of visual tracking.",
-          "subjects": []
-        },
-        {
-          "title": "Combining trajectory optimization, supervised machine learning, and model structure for mitigating the curse of dimensionality in the control of bipedal robots",
-          "authors": [
-            "Xingye Da",
-            "J. Grizzle"
-          ],
-          "year": 2017,
-          "date": "2017-11-06",
-          "citations": 0,
-          "arxiv_id": "1711.02223",
-          "paper_id": "a83989fc2b4c87c70061d96e224db7ea56cd38e1",
-          "url": "https://arxiv.org/abs/1711.02223",
-          "abstract": "To overcome the obstructions imposed by high-dimensional bipedal models, we embed a stable walking motion in an attractive low-dimensional surface of the system’s state space. The process begins with trajectory optimization to design an open-loop periodic walking motion of the high-dimensional model and then adding to this solution a carefully selected set of additional open-loop trajectories of the model that steer toward the nominal motion. A drawback of trajectories is that they provide little information on how to respond to a disturbance. To address this shortcoming, supervised machine learning is used to extract a low-dimensional state-variable realization of the open-loop trajectories. The periodic orbit is now an attractor of the low-dimensional state-variable model but is not attractive in the full-order system. We then use the special structure of mechanical models associated with bipedal robots to embed the low-dimensional model in the original model in such a manner that the desired walking motions are locally exponentially stable. The design procedure is first developed for ordinary differential equations and illustrated on a simple model. The methods are subsequently extended to a class of hybrid models and then realized experimentally on an Atrias-series 3D bipedal robot.",
-          "subjects": []
-        },
-        {
-          "title": "Realizing simultaneous lane keeping and adaptive speed regulation on accessible mobile robot testbeds",
-          "authors": [
-            "Xiangru Xu",
-            "T. Waters",
-            "Daniel Pickem",
-            "Paul Glotfelter",
-            "M. Egerstedt",
-            "P. Tabuada",
-            "J. Grizzle",
-            "A. Ames"
-          ],
-          "year": 2017,
-          "date": "2017-08-01",
-          "citations": 56,
-          "arxiv_id": null,
-          "paper_id": "ba6101d9de3000107c73c10e141b912c603dbab4",
-          "url": "https://www.semanticscholar.org/paper/ba6101d9de3000107c73c10e141b912c603dbab4",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Symmetry in legged locomotion: a new method for designing stable periodic gaits",
-          "authors": [
-            "H. Razavi",
-            "A. Bloch",
-            "C. Chevallereau",
-            "J. Grizzle"
-          ],
-          "year": 2017,
-          "date": "2017-06-01",
-          "citations": 37,
-          "arxiv_id": null,
-          "paper_id": "ac1387cd8af6ea8567f6b97650c36f3e926f5e58",
-          "url": "https://www.semanticscholar.org/paper/ac1387cd8af6ea8567f6b97650c36f3e926f5e58",
-          "abstract": "",
-          "subjects": []
-        }
-      ]
+      []
     ],
     [
       "Ege C. Altunkaya",
