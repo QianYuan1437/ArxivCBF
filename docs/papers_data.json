@@ -13,7 +13,7 @@
       ],
       "year": 2023,
       "date": "2023-10-24",
-      "citations": 112,
+      "citations": 0,
       "arxiv_id": "2310.15478",
       "paper_id": "f35f6f542da9a3d6da7fe69cbcf9c2399607c16a",
       "url": "https://arxiv.org/abs/2310.15478",
@@ -159,7 +159,7 @@
         "Warren E. Dixon"
       ],
       "date": "2026-10-28",
-      "citations": 0,
+      "citations": 1,
       "arxiv_id": "2610.38781v1",
       "url": "https://arxiv.org/abs/2610.38781v1",
       "abstract": "Control barrier functions (CBFs) provide formal safety guarantees for dynamical systems by rendering a safe set forward-invariant via pointwise-optimal feedback control. While the CBF framework is well established for dynamical systems in Euclidean space, there exist gaps for systems evolving on non-Euclidean manifolds. For systems modeled as constrained control differential inclusions, we introduce the Sheaf-CBF: a sheaf-theoretic framework for CBFs on smooth manifolds and vector bundles. The differential inclusions are formulated intrinsically on the control bundle, and analogous regularity properties in the Euclidean case are established fiberwise under local trivializations. Regularity conditions are given under which a pointwise-optimal feedback law is single-valued and continuous over local charts. Framed as a local-to-global optimization problem, sheaf-theoretic restriction and gluing compatibility conditions on overlapping charts are shown to uniquely determine a continuous global section of the control bundle, thereby guaranteeing forward invariance of the safe set. Numerical simulations on a nontrivial M{ö}bius strip demonstrate that failure of sheaf compatibility results in violations of safety, whereas the Sheaf-CBF maintains forward invariance.",
@@ -1763,9 +1763,410 @@
           "subjects": [
             "eess.SY"
           ]
+        },
+        {
+          "title": "Epigenetic mechanism of abiotic stress responses in plants",
+          "authors": [
+            "Abdullah Zaid",
+            "Anand Singh",
+            "K. Uddin"
+          ],
+          "year": 2026,
+          "date": "2026-03-10",
+          "citations": 9,
+          "arxiv_id": null,
+          "paper_id": "9ce0492fe8ca869d6f88f731f8b7f180e6ded49f",
+          "url": "https://www.semanticscholar.org/paper/9ce0492fe8ca869d6f88f731f8b7f180e6ded49f",
+          "abstract": "\n \n Abiotic stress severely restricts plant growth, necessitating swift and, at times, heritable reprogramming of gene expression. To regulate chromatin states and fine-tune stress-responsive pathways, plants rely on four key epigenetic mechanisms: DNA methylation, histone modifications, small RNA-mediated silencing, and chromatin remodeling. Cytosine methylation in CG, CHG, and CHH contexts, mediated by\n Methyltransferase 1\n (\n MET1\n ),\n Chromomethylase 3\n (\n CMT3\n ), and\n Domains Rearranged Methyltransferase 2\n (\n DRM2\n ), controls promoter accessibility, transposable-element activity, and stress-induced transcription at loci such as\n High-Affinity K⁺ Transporter 1\n (\n HKT1\n ),\n Nine-cis-epoxycarotenoid dioxygenase 3\n (\n NCED3\n ), and\n Chromatin Remodeling 12\n (\n CBF\n ). Histone acetylation and methylation are catalyzed by\n General Control Non-Repressed 5\n (\n GCN5\n ),\n Arabidopsis Trithorax 1/SET Domain Group\n (\n ATX/SDG\n ) methyltransferases, and reversed by\n Histone Deacetylase/HISTONE DEACETYLASE2C\n (\n HDA6/19/HD2C\n ) or\n Jumonji-C Domain-Containing Protein\n (\n JMJ\n ) demethylases. Small RNAs, produced\n via\n the RdDM pathway (Pol IV/V, RDR2, DCLs), direct non-CG methylation, enabling rapid and reversible modulation of transcription in ion transporters, ABA signaling genes, and stress-related transcription factors. Chromatin remodelers like\n Chromatin Remodeling 12\n (\n CHR12\n ) and\n Pickle Chromatin Remodeler\n (\n PKL\n ), alongside epitranscriptomic modifications, such as m\n 6\n A and m\n 5\n C (written by\n MTA/MTB\n and\n NSUN2\n , and erased by\n ALKBH\n demethylases), further influence transcript stability, translation, and heat-responsive transposable-element activation. These interconnected processes also generate stress memory, marked by sustained H3K4me3, persistent CHH hypomethylation, and siRNA loss at transposable-element loci, enabling faster reactivation during recurrent stress or, in some cases, transgenerational inheritance. This review offers an integrated framework that links molecular epigenetic mechanisms with adaptive stress physiology and highlights emerging opportunities for epigenetic priming, targeted epigenome editing, and trait engineering to develop climate-resilient crops.\n",
+          "subjects": []
         }
       ],
-      []
+      [
+        {
+          "title": "Abstract 2064: miR-1293 suppresses diffuse pleural mesothelioma growth by targeting a novel S100A16-Hippo-EMT axis.",
+          "authors": [
+            "Vivek Singh",
+            "Anand Singh",
+            "Nathanael Pruett",
+            "So-Hyun Yoon",
+            "Smrity Sahu",
+            "Yelixza I. Avila",
+            "C. Hoang"
+          ],
+          "year": 2026,
+          "date": "2026-04-03",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "f4ae8ad92acaa5f0134a5c01ad8f5395dc09bc4d",
+          "url": "https://www.semanticscholar.org/paper/f4ae8ad92acaa5f0134a5c01ad8f5395dc09bc4d",
+          "abstract": "\n \n \n Diffuse pleural mesothelioma (DPM) features frequent NF2 loss, Hippo pathway disruption, and limited therapies. We identify miR-1293 as a tumor-suppressive miRNA that targets an S100A16-centered Hippo/EMT axis involving Hippo/YAP and epithelial-mesenchymal transition (EMT) in DPM.\n \n \n \n We performed a high-throughput human miRNA mimic screen across multiple DPM cell lines with proliferation assays to identify anti-tumor miRNAs. miR-1293 expression was measured by qRT-PCR in DPM tumors and normal pleura. Targets were mapped by biotin-miR-1293 pulldown plus RNA-seq and in silico prediction, then integrated with pathway and DepMap data to define an S100A16-Hippo/EMT module. Functional effects of miR-1293 re-expression were tested in NF2-wild-type and NF2/Hippo-deficient DPM lines and in MB52 xenografts using local hydrogel-based (SFH-miR-1293) delivery in subcutaneous and orthotopic pleural models.\n \n \n \n The screen identified miR-1293 as a top antiproliferative miRNA, and miR-1293 was significantly underexpressed in DPM versus normal pleura. Re-expression in miR-1293-low DPM lines reduced proliferation, colony and soft-agar growth, with minimal impact on non-malignant mesothelial cells, and induced apoptosis and cell-cycle arrest. Target mapping yielded 345 genes enriched for Hippo signaling and EMT, with additional mTORC1, IL-2/STAT5, and hypoxia signatures, and a 19-gene core S100A16-Hippo-EMT module. Within this module, S100A16 was the most essential and strongest adverse prognostic gene, highly expressed in NF2/Hippo-deficient lines (H2052, MB52, MB24) with activated YAP/TAZ/TEAD and EMT-like features. miR-1293 re-expression preferentially impaired viability and clonogenicity in these NF2/Hippo-deficient cells, with coordinated suppression of S100A16, YAP/TAZ/TEAD, and EMT markers. In vivo, SFH-miR-1293 significantly reduced tumor burden, Ki-67, and bioluminescence, increased cleaved caspase-3, and prolonged survival in xenograft and orthotopic pleural models.\n \n \n \n miR-1293 is a tumor-suppressive miRNA in DPM that targets an S100A16-Hippo-EMT axis and shows preferential activity in NF2/Hippo-deficient mesothelioma. Local hydrogel-based delivery elicits strong antitumor effects in vivo, supporting miR-1293 as a therapeutic candidate for DPM and a rational partner for Hippo/YAP-directed and immunotherapy strategies.\n \n \n \n Vivek Singh, Anand Singh, Nathanael Pruett, So-Hyun Yoon, Smrity Sahu, Yelixza Avila, Chuong D. Hoang. miR-1293 suppresses diffuse pleural mesothelioma growth by targeting a novel S100A16-Hippo-EMT axis [abstract]. In: Proceedings of the American Association for Cancer Research Annual Meeting 2026; Part 1 (Regular Abstracts); 2026 Apr 17-22; San Diego, CA. Philadelphia (PA): AACR; Cancer Res 2026;86(7 Suppl):Abstract nr 2064.\n",
+          "subjects": []
+        },
+        {
+          "title": "Abstract 2052: miR-342-5p: A promising tumor suppressor in diffuse pleural mesothelioma.",
+          "authors": [
+            "So-Hyun Yoon",
+            "Anand Singh",
+            "Nathanael Pruett",
+            "Vivek Singh",
+            "Smrity Sahu",
+            "Yelixza I. Avila",
+            "C. Hoang"
+          ],
+          "year": 2026,
+          "date": "2026-04-03",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "90794c0290a840d6613c3dd362407e52cea9b263",
+          "url": "https://www.semanticscholar.org/paper/90794c0290a840d6613c3dd362407e52cea9b263",
+          "abstract": "\n Diffuse pleural mesothelioma (DPM) is an incurable, aggressive neoplasm with limited therapies. Moving beyond conventional approaches, we posit that microRNAs (miRNA), short, non-coding RNA that coherently regulate gene expression, can uniquely disrupt the molecular networks involved in DPM. In this study, we identified miR-342-5p as a novel DPM-associated miRNA. We used a human miRNA mimic library to screen for miRNAs with antiproliferative effects on a panel of DPM cell lines. Among the most potent candidates was miR-342-5p. We profiled the downregulation of miR-342-5p in DPM patient specimens compared to normal pleura (Normal=22, Tumor=50). TCGA-MESO analysis revealed that miR-342-5p downregulation is significantly associated with poor survival outcomes. Our results demonstrated that the re-expression of miR-342-5p significantly impaired DPM cell viability, reduced 2D colony foci formation, and inhibited anchorage-independent cell growth in soft-agar and sphere assays. Additionally, Annexin-V assays showed a significant increase in early and late apoptotic cells in miR-342-5p transfected DPM cells compared to controls. Furthermore, we confirmed the induction of apoptosis in miR-342-5p-treated DPM cells through PARP cleavage and the activation of caspase-3/7. Importantly, no significant biological effects were observed when normal human mesothelial cells (NP1 line) were treated with miR-342-5p. Next, we performed a Biotin-miRNA (Bi-miR) pull-down assay, a direct binding assay in which a biotin-tagged miR-342-5p probe captures its associated mRNA transcripts in a pooled lysate. Then, RNA-seq analysis is conducted to identify direct target genes associated with apoptosis and cell death pathways in DPM. We identified the top transcripts targeted by miR-342-5p that are also involved in its tumor-suppressive activity in DPM. Overall, our findings highlight the tumor suppressive effects and therapeutic potential of miR-342-5p for DPM treatment.\n \n \n So-Hyun Yoon, Anand Singh, Nathanael Pruett, Vivek Singh, Smrity Sahu, Yelixza Avila, Chuong Hoang. miR-342-5p: A promising tumor suppressor in diffuse pleural mesothelioma [abstract]. In: Proceedings of the American Association for Cancer Research Annual Meeting 2026; Part 1 (Regular Abstracts); 2026 Apr 17-22; San Diego, CA. Philadelphia (PA): AACR; Cancer Res 2026;86(7 Suppl):Abstract nr 2052.\n",
+          "subjects": []
+        },
+        {
+          "title": "Abstract 2505: Dual siRNAs for precision targeting of synthetic lethal vulnerabilities in Diffuse Pleural Mesothelioma",
+          "authors": [
+            "Yelixza I. Avila",
+            "Anand Singh",
+            "Vivek Singh",
+            "So-Hyun Yoon",
+            "Smrity Sahu",
+            "Nathanael Pruett",
+            "C. Hoang"
+          ],
+          "year": 2026,
+          "date": "2026-04-03",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "38009d57feb6895349b5fbfe56d915d1e1584725",
+          "url": "https://www.semanticscholar.org/paper/38009d57feb6895349b5fbfe56d915d1e1584725",
+          "abstract": "\n Diffuse pleural mesothelioma (DPM) remains a lethal malignancy with limited benefit from existing therapies, underscoring the urgent need for molecularly precise treatments that act directly at the disease interface. Previously, we identified WEE1 and PKMYT1 as consistently overexpressed in DPM and demonstrated that their combined inhibition induces synthetic lethality. Here, we evaluate a dual-siRNA therapeutic strategy targeting this kinase pair and position it within a platform engineered for localized RNA delivery. Across three DPM subtypes (epithelioid, sarcomatoid, and biphasic), siRNA constructs achieved robust knockdown of WEE1 and PKMYT1, with >70% reduction in mRNA levels at 48-96 h post-transfection. Single-gene silencing induced only modest reductions in cell viability, with >70-80% survival across most lines relative to controls. In contrast, combined WEE1/PKMYT1 knockdown consistently elicited a marked decrease in viability, ranging from 60% to 85% depending on the cell line (p < 0.001). Cell-cycle analysis revealed that dual knockdown, unlike individual siRNAs, induced significant G2/M arrest accompanied by a depletion of S-phase cells, indicating disruption of DNA damage checkpoints. Flow cytometry demonstrated a 3- to 5-fold increase in apoptotic cell fractions compared with single knockdowns and controls (p < 0.0001), confirming synergistic induction of programmed cell death. These data show that although individual siRNAs exert limited effects, their combination produces robust anti-proliferative, pro-apoptotic, and cell-cycle disruptive phenotypes consistent with synthetic lethality. Collectively, these data validate dual-siRNA synthetic lethality as a promising therapeutic approach for DPM and underscore the potential of a nanoparticle-hydrogel delivery system that we have developed for precise, localized RNA therapy. This work paves the way for RNA nanomedicine in mesothelioma and other anatomically restricted, treatment-refractory cancers.\n \n \n Yelixza I. Avila, Anand Singh, Vivek Singh, So-Hyun Yoon, Smrity Sahu, Nathanael Pruett, Chuong D. Hoang. Dual siRNAs for precision targeting of synthetic lethal vulnerabilities in Diffuse Pleural Mesothelioma [abstract]. In: Proceedings of the American Association for Cancer Research Annual Meeting 2026; Part 1 (Regular Abstracts); 2026 Apr 17-22; San Diego, CA. Philadelphia (PA): AACR; Cancer Res 2026;86(7 Suppl):Abstract nr 2505.\n",
+          "subjects": []
+        },
+        {
+          "title": "AI-powered open-source infrastructure for accelerating materials discovery and advanced manufacturing",
+          "authors": [
+            "Mariangeles Salas",
+            "Anand Singh",
+            "C. Pignataro",
+            "Lokendra Pal"
+          ],
+          "year": 2026,
+          "date": "2026-02-17",
+          "citations": 29,
+          "arxiv_id": null,
+          "paper_id": "4542dbafb237d47f80d99fa90f251997abfde2e7",
+          "url": "https://www.semanticscholar.org/paper/4542dbafb237d47f80d99fa90f251997abfde2e7",
+          "abstract": "Recent advances in artificial intelligence (AI) offer significant opportunities to drive industrial transformation by addressing growing societal demands for products, techno-economic efficiency, and reduced carbon footprints. This review presents a structured framework for building transparent, scalable, and sustainable AI-driven infrastructures spanning conceptualization to commercialization for materials discovery and advanced manufacturing. The framework traces the evolution of materials development from empirical approaches toward integrated AI-enabled platforms, emphasizing open-source tools that unify data acquisition, modeling, simulation, and deployment to democratize access, foster collaboration, and enhance reproducibility. Key enabling components include self-driving laboratories for real-time optimization, advanced computational approaches for high-fidelity data, and blockchain-based mechanisms for secure data sharing, provenance, and supply-chain traceability. The review further discusses the importance of machine learning for materials property prediction, synthesis and process optimization, together with scalable cloud–edge architectures that improve efficiency and reduce latency. Emphasis is placed on lifecycle-aware design, techno-economic analysis, and ethical AI principles to align industrial development with global sustainability goals. Recent advances in AI present opportunities to transform industries by meeting demands for efficiency and sustainability. Here, the authors propose a framework for AI-driven infrastructures in materials discovery and manufacturing, highlighting open-source tools and scalable architectures to democratize access, enhance collaboration, and align with global sustainability goals.",
+          "subjects": []
+        },
+        {
+          "title": "Dual-Stage Deep Learning Framework for Brain Tumor Classification and Localization Using Multimodal MRI Scans",
+          "authors": [
+            "Deependra Rastogi",
+            "Prashant Johri",
+            "S. Dhanda",
+            "Anand Singh",
+            "S. Yadav",
+            "A. Khan",
+            "Seifedien Kadry"
+          ],
+          "year": 2026,
+          "date": "2026-02-01",
+          "citations": 14,
+          "arxiv_id": null,
+          "paper_id": "50e516de37097a9939856e99462759656282810b",
+          "url": "https://www.semanticscholar.org/paper/50e516de37097a9939856e99462759656282810b",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "AI-powered municipal solid waste management: a comprehensive review from generation to utilization",
+          "authors": [
+            "Raman Rao",
+            "Simran Singh",
+            "Mariangeles Salas",
+            "Aditya Sarker",
+            "Rakshit Kumar",
+            "Yixuan Wang",
+            "Lucian A. Lucia",
+            "Ashutosh Mittal",
+            "John Yarbrough",
+            "M. Barlaz",
+            "Anand Singh",
+            "Lokendra Pal"
+          ],
+          "year": 2025,
+          "date": "2025-12-01",
+          "citations": 21,
+          "arxiv_id": null,
+          "paper_id": "bbf515abbbaa7f7a8dfd75357dad08436e7291d6",
+          "url": "https://www.semanticscholar.org/paper/bbf515abbbaa7f7a8dfd75357dad08436e7291d6",
+          "abstract": "\n The accumulation of municipal solid waste (MSW) continues to rise due to burgeoning population, rapid global urbanization and economic growth, intensifying ecological concerns associated with landfills and greenhouse gas (GHG) emissions. Over the past 2 decades, global waste generation has surged by 50%, with one-third remaining uncollected and about 70% sent to landfills. This review examines the critical role of integrating emerging technologies, such as advanced sensors and artificial intelligence (AI), into end-to-end MSW management to alleviate landfill burdens. The suitability of various AI tools for different stages of MSW management is assessed, alongside the deployment of advanced sensors including hyperspectral cameras, computer vision systems, and internet of things (IoT) devices for material identification. Applications of genetic algorithms and reinforcement learning for optimizing collection routes, reducing costs, and lowering emissions are highlighted. Life cycle assessment (LCA) across all stages of MSW management is also reviewed, along with future trends in leveraging generative AI, natural language processing (NLP), and agent-based AI systems to analyze waste generation patterns and public sentiment. Efficient collection and handling can be enhanced through route optimization with geographic information systems and real-time bin-level monitoring. Furthermore, sensor-embedded, real-time object detection systems paired with robotics enable material characterization and automated sorting, thereby lowering costs and diverting waste from landfills into value-added products for diverse industrial sectors including packaging, chemicals, textiles, metals and glass, transportation, and electronics industries. Without intervention, global waste is projected to reach 4.54 billion tons by 2050, contributing direct economic costs of $400 billion and roughly 2.38 billion tons of CO\n 2\n -equivalent emissions annually. This review demonstrates how AI-driven, end-to-end solutions for MSW management can mitigate economic and environmental challenges, while directly supporting the United Nations Sustainable Development (UNDP) goals related to innovation and infrastructure (SDG 9), sustainable cities (SDG 11), responsible consumption and production (SDG 12), and climate action (SDG 13).\n",
+          "subjects": []
+        },
+        {
+          "title": "Tailoring Precursor‐Solvent Coordination Controls the Crystallization Kinetics and Nuclei Growth for Phase Homogenization in Wide‐Bandgap Perovskite Solar Cells",
+          "authors": [
+            "Saurabh Srivastava",
+            "S. Ranjan",
+            "Harishankar Suman",
+            "S. Sah",
+            "Shashikant Gupta",
+            "Subhakar Mangam",
+            "Shambhavi Rai",
+            "Jayant Jain",
+            "S. Yadavalli",
+            "Shivam Tripathi",
+            "Anand Singh",
+            "R. Gupta",
+            "Ashish Garg"
+          ],
+          "year": 2025,
+          "date": "2025-11-14",
+          "citations": 18,
+          "arxiv_id": null,
+          "paper_id": "7e13cd636fd6ac426e9aaa5f301ba7f41aee16c8",
+          "url": "https://www.semanticscholar.org/paper/7e13cd636fd6ac426e9aaa5f301ba7f41aee16c8",
+          "abstract": "Wide‐bandgap (WBG) perovskites are promising top‐cell absorbers for tandem photovoltaics but suffer from unbalanced nucleation‐growth driven by strong coordination between polar aprotic solvents and perovskite precursors. This promotes the formation of hexagonal intermediate polytypes, stacking defects, halide‐cation migration, and phase segregation. Although long‐chain alkyl ammonium chlorides are used to control crystallization, the role of volatile ammonium chloride (AC) in altering the precursor chemistry and crystallization pathways in WBG perovskites remains unexplored. Present study, shows that AC weakens precursor‐solvent coordination and destabilizes undesired hexagonal polytypes. In situ characterizations indicate that AC induces high‐valence, de‐intercalated solvated iodoplumbate complexes that inhibit the sol–gel state and balance nucleation‐growth kinetics. Concurrently, Cl‐rich intermediates provide heterogeneous nucleation sites and, via cation exchange between NH4+ and Cs+/FA+ ions, retard uncontrolled crystal growth. The combined effect suppresses the formation of undesired phases, promotes transformation to the cubic perovskite phase, and enables defect self‐elimination during crystallization, yielding more homogeneous, higher‐quality films. As a result, AC‐treated perovskite films yield high‐quality 1.73 eV WBG perovskite solar cells with ≈18% PCE and a high Voc of 1.22 V, along with enhanced photostability.",
+          "subjects": []
+        },
+        {
+          "title": "Pine cone waste from pine tree as a sustainable coarse aggregate for lightweight concrete: physical and mechanical properties",
+          "authors": [
+            "Anand Singh",
+            "Bikarama Prasad Yadav",
+            "B. Giri"
+          ],
+          "year": 2025,
+          "date": "2025-09-30",
+          "citations": 6,
+          "arxiv_id": null,
+          "paper_id": "29da79bf3e1e0683f42d36f5e67bd82afaaa7244",
+          "url": "https://www.semanticscholar.org/paper/29da79bf3e1e0683f42d36f5e67bd82afaaa7244",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Slim-SC: Thought Pruning for Efficient Scaling with Self-Consistency",
+          "authors": [
+            "Colin Hong",
+            "Xu Guo",
+            "Anand Singh",
+            "Esha Choukse",
+            "D. Ustiugov"
+          ],
+          "year": 2025,
+          "date": "2025-09-17",
+          "citations": 0,
+          "arxiv_id": "2509.13990",
+          "paper_id": "5e2ac18334af51aa36fa619316d687ef74778306",
+          "url": "https://arxiv.org/abs/2509.13990",
+          "abstract": "Recently, Test-Time Scaling (TTS) has gained increasing attention for improving LLM reasoning performance at test time without retraining the model. A notable TTS technique is Self-Consistency (SC), which generates multiple reasoning chains in parallel and selects the final answer via majority voting. While effective, the order-of-magnitude computational overhead limits its broad deployment. Prior attempts to accelerate SC mainly rely on model-based confidence scores or heuristics with limited empirical support. For the first time, we theoretically and empirically analyze the inefficiencies of SC and reveal actionable opportunities for improvement. Building on these insights, we propose Slim-SC, a step-wise pruning strategy that identifies and removes redundant chains using inter-chain similarity at the thought level. Experiments on three STEM reasoning datasets and two recent LLM architectures show that Slim-SC reduces inference latency and KVC usage by up to 45% and 26%, respectively, with R1-Distill, while maintaining or improving accuracy, thus offering a simple yet efficient TTS alternative for SC.",
+          "subjects": []
+        },
+        {
+          "title": "Machine learning and RSM-CCD analysis of sustainable concrete using pine cone waste from pine tree: towards performance and optimization",
+          "authors": [
+            "Anand Singh",
+            "Bikarama Prasad Yadav",
+            "Mayank Saklani"
+          ],
+          "year": 2025,
+          "date": "2025-08-13",
+          "citations": 4,
+          "arxiv_id": null,
+          "paper_id": "77f469f156cddaf350bde8ba994a43625f84c651",
+          "url": "https://www.semanticscholar.org/paper/77f469f156cddaf350bde8ba994a43625f84c651",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Hyperspectral imaging for real-time waste materials characterization and recovery using endmember extraction and abundance detection",
+          "authors": [
+            "Mariangeles Salas",
+            "Simran Singh",
+            "Raman Rao",
+            "R. Thiyagarajan",
+            "Ashutosh Mittal",
+            "John Yarbrough",
+            "Anand Singh",
+            "Lucian A. Lucia",
+            "Lokendra Pal"
+          ],
+          "year": 2025,
+          "date": "2025-08-01",
+          "citations": 19,
+          "arxiv_id": null,
+          "paper_id": "33300a12ca623a7d9cdf9fab5bb2184e6289d631",
+          "url": "https://www.semanticscholar.org/paper/33300a12ca623a7d9cdf9fab5bb2184e6289d631",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Advancement in public health through machine learning: a narrative review of opportunities and ethical considerations",
+          "authors": [
+            "S. Dhanda",
+            "Deepak Panwar",
+            "Chia-Chen Lin",
+            "Tarun Kumar Sharma",
+            "Deependra Rastogi",
+            "Shantanu Bindewari",
+            "Anand Singh",
+            "Yung-Hui Li",
+            "Neha Agarwal",
+            "Saurabh Agarwal"
+          ],
+          "year": 2025,
+          "date": "2025-07-04",
+          "citations": 28,
+          "arxiv_id": null,
+          "paper_id": "50d514b9330e7b2993b5177072716d792f1de808",
+          "url": "https://www.semanticscholar.org/paper/50d514b9330e7b2993b5177072716d792f1de808",
+          "abstract": "This narrative review presents a comprehensive and state-of-the-art synthesis of how machine learning (ML) is transforming public health through enhanced prediction, personalized treatment, real-time surveillance, and intelligent resource optimization. Drawing from 170 peer-reviewed studies published up to 2024/2025, this work uniquely integrates cross-domain insights spanning disease outbreak forecasting, genomic data analysis, personalized medicine, mental health monitoring, and public health infrastructure planning. The novelty of this review lies in its multidimensionality. It merges technical efficacy, ethical challenges, and future trends into a unified narrative. Our findings show substantial performance gains across domains: for example, ML models such as LightGBM, GRU neural networks, and LSTM achieved disease prediction accuracies ranging from 88 to 95%. In genomics, ML methods enabled nuanced disease subtype discovery and improved the accuracy of cancer risk assessment and pharmacogenomic modeling. Mental health prediction systems based on NLP and wearable data delivered up to 91% accuracy in stress and depression detection, while hospital resource forecasting models using deep learning minimized errors in predicting emergency admissions. Ethically, this review surfaces critical issues, including algorithmic bias, data privacy concerns in mental health analytics, and the interpretability of black-box models used in outbreak surveillance. A forward-looking discussion identifies future priorities such as the integration of multi-omics data, deployment of explainable AI, and equitable data inclusion frameworks. This review stands out by not only cataloguing applications but also offering a systems-level perspective on how ML can equitably and ethically scale to support public health strategies globally. It is among the first narrative reviews to concurrently evaluate ML’s predictive power, ethical constraints, and domain-specific improvements across all core pillars of public health.",
+          "subjects": []
+        },
+        {
+          "title": "microRNA-497-5p-based screening identifies a novel synthetic lethal-type interaction via PKMYT1 and WEE1 in pleural mesothelioma",
+          "authors": [
+            "Nathanael Pruett",
+            "Sierra F. Wilferd",
+            "Anand Singh",
+            "Agnes Choi",
+            "Shivani Dixit",
+            "Vivek Singh",
+            "Charlize Nguyen",
+            "Olivia Lin",
+            "D. Schrump",
+            "C. Plaisier",
+            "C. Hoang"
+          ],
+          "year": 2025,
+          "date": "2025-06-01",
+          "citations": 4,
+          "arxiv_id": null,
+          "paper_id": "c45c4d1c9879fe5b60a587ba151b4b5b9cb9af7a",
+          "url": "https://www.semanticscholar.org/paper/c45c4d1c9879fe5b60a587ba151b4b5b9cb9af7a",
+          "abstract": "Diffuse pleural mesothelioma (DPM) is an incurable surface neoplasm governed by tumor suppressor losses with limited therapeutic options. Despite the advantages of leveraging the tumor suppressive activity of microRNA (miRNA/miR), clinical translation remains limited due to incomplete understanding of their context-specific gene targets. Here, we employed a biotinylated-miRNA pull-down approach to systematically identify direct targets of miR-497-5p, an miRNA markedly downregulated in DPM. Surprisingly, multiple identified targets were not predicted by in silico algorithms. Using patient samples, cell lines, murine xenograft models, and our localized nanoparticle miRNA delivery platform, we validated miR-497-5p anti-tumor mechanisms, which consisted of pro-apoptotic and anti-cell-cycle effects. Of multiple additional gene associations to DPM biology, we identified a synthetic lethal-type interaction whereby miR-497-5p co-inhibits PKMYT1 and WEE1 cell-cycle kinases (G2/M regulators). They were significantly overexpressed (poorly prognostic) in DPM, suggesting an efficacious treatment regimen to be explored. We demonstrate the utility of experimentally deriving the miR-497-5p targetome, explaining its pathophysiological role in DPM and why it is a rational therapeutic for further development.",
+          "subjects": []
+        },
+        {
+          "title": "Characterization of structurally complex granitic basement rocks using multi‐geophysical data: Insights into subsurface weathered bedrock zones and groundwater exploration",
+          "authors": [
+            "S. Maurya",
+            "R. M. Pradhan",
+            "Anand Singh"
+          ],
+          "year": 2025,
+          "date": "2025-04-29",
+          "citations": 8,
+          "arxiv_id": null,
+          "paper_id": "ca50e04b8e16169a278d6ffe3cf6968cd9fb7caf",
+          "url": "https://www.semanticscholar.org/paper/ca50e04b8e16169a278d6ffe3cf6968cd9fb7caf",
+          "abstract": "Globally, basement rocks cover a large portion of the land surface and are the primary source for the formation of soil and regolith, or the weathered bedrock zones where groundwater circulates freely. However, groundwater flow in basement rock aquifers is often irregular and complex due to the heterogeneous nature of the subsurface bedrock. This complexity underscores the importance of conducting detailed studies to better understand weathered bedrock zones and groundwater dynamics in granitic basement rocks. This study focuses on the granitic basement rocks in North Gujarat, India, examining the complexities associated with weathered bedrock zones and groundwater potentials. We employed a combination of multi‐geophysical techniques, Shuttle Radar Topography Missiondigital elevation model hill‐shaded imagery, and field observations to delineate subsurface weathered zones and identify potential groundwater sites. The analysis revealed significant structural lineaments, including faulting and fracturing, which contribute to the formation of weathered bedrock zones with enhanced porosity and permeability. Based on the field observations and structural features, the areas were classified into ductile (Zone‐A), brittle (Zone‐B) and brittle‐ductile (Zone‐C) zones, with the brittle‐ductile zones showing the most promising sites for groundwater exploration due to their dense fracture networks. Near‐surface geophysical methods, such as electrical resistivity tomography, very‐low‐frequency electromagnetics and magnetic surveys, were used to map the subsurface properties like resistivity and magnetic susceptibility. The results indicated that areas with low resistivity and low magnetic susceptibility are associated with weathered bedrock and transition zones, which have emerged as the most promising targets for groundwater exploration. Further, this study demonstrates that integrating multiple geophysical techniques improves the reliability of subsurface imaging and reduces the risk of misinterpretation, providing a comprehensive framework for identifying optimal sites for groundwater exploration.",
+          "subjects": []
+        },
+        {
+          "title": "Role of inflammasomes in cancer immunity: mechanisms and therapeutic potential",
+          "authors": [
+            "Vivek Singh",
+            "Saba Ubaid",
+            "M. Kashif",
+            "T. Singh",
+            "Gaurav Singh",
+            "R. Pahwa",
+            "Anand Singh"
+          ],
+          "year": 2025,
+          "date": "2025-03-29",
+          "citations": 40,
+          "arxiv_id": null,
+          "paper_id": "7c2b9c787fd3460a0b6dc26862c7b1001093369f",
+          "url": "https://www.semanticscholar.org/paper/7c2b9c787fd3460a0b6dc26862c7b1001093369f",
+          "abstract": "Inflammasomes are multi-protein complexes that detect pathogenic and damage-associated molecular patterns, activating caspase-1, pyroptosis, and the maturation of pro-inflammatory cytokines such as IL-1β and IL-18Within the tumor microenvironment, inflammasomes like NLRP3 play critical roles in cancer initiation, promotion, and progression. Their activation influences the crosstalk between innate and adaptive immunity by modulating immune cell recruitment, cytokine secretion, and T-cell differentiation. While inflammasomes can contribute to tumor growth and metastasis through chronic inflammation, their components also present novel therapeutic targets. Several inhibitors targeting inflammasome components- such as sensor proteins (e.g., NLRP3, AIM2), adaptor proteins (e.g., ASC), caspase-1, and downstream cytokines- are being explored to modulate inflammasome activity. These therapeutic strategies aim to modulate inflammasome activity to enhance anti-tumor immune responses and improve clinical outcomes. Understanding the role of inflammasomes in cancer immunity is crucial for developing interventions that effectively bridge innate and adaptive immune responses for better therapeutic outcomes.",
+          "subjects": []
+        },
+        {
+          "title": "RSM-CCD analysis of sustainable concrete with complete replacement of natural coarse aggregate using pine cone waste: towards performance and optimization",
+          "authors": [
+            "Anand Singh",
+            "Bikarama Prasad Yadav"
+          ],
+          "year": 2025,
+          "date": "2025",
+          "citations": 3,
+          "arxiv_id": null,
+          "paper_id": "8c9cb669c83732a9d0588f1bd53aa7401a05af8b",
+          "url": "https://www.semanticscholar.org/paper/8c9cb669c83732a9d0588f1bd53aa7401a05af8b",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Energy-Efficient OIRS-Aided VLC Systems Employing ML-Based User Orientation and Obstacle Awareness",
+          "authors": [
+            "Anand Singh",
+            "H. B. Salameh",
+            "M. Ayyash",
+            "Hany Elgala"
+          ],
+          "year": 2024,
+          "date": "2024-12-15",
+          "citations": 4,
+          "arxiv_id": null,
+          "paper_id": "c8542dd85f9aa66e4b8539927bc9be6d645c7ac0",
+          "url": "https://www.semanticscholar.org/paper/c8542dd85f9aa66e4b8539927bc9be6d645c7ac0",
+          "abstract": "Visible light (VL) for optical wireless communication (OWC) in indoor environments is a promising approach to achieving high-speed and energy-efficient (EE) wireless connectivity and sensing. Unlike traditional radio frequency (RF) systems, the OWC channel is not isotropic, making the orientation of the user equipment (UE) and the existing obstacles significant factors affecting the link gain and EE in VL communication (VLC) systems. Specifically, VLC performance degrades when users or obstacles block the line-of-sight (LoS) link, and the received power fluctuates due to random UE orientation in non-LoS (NLoS) scenarios. This article tackles these challenges by proposing an EE framework that integrates optical intelligent reflecting surfaces (OIRSs) in indoor VLC systems while considering users as obstacles causing link blockage. The proposed framework introduces a machine learning (ML)-based mechanism to align OIRS elements with UE directions. To this end, we mathematically formulate the EE maximization problem in OIRS-aided indoor VLC systems in the presence of obstacles while considering a set of design and quality of service (QoS) constraints. The transmit power, the offset management, and the modulation size are jointly optimized under the transmit signal nonnegativity, the optical and electrical powers, the minimum rate demand, and the bit error rate (BER) constraints. The formulated EE optimization problem is demonstrated in a semiclosed-form solution. The simulation results confirm the performance superiority of the proposed design compared to existing designs.",
+          "subjects": []
+        },
+        {
+          "title": "Characterization of Dynamic Blockages for VLC-Enabled Indoor Industrial Networks",
+          "authors": [
+            "Anand Singh",
+            "H. B. Salameh",
+            "M. Ayyash",
+            "Hany Elagla"
+          ],
+          "year": 2024,
+          "date": "2024-12-01",
+          "citations": 10,
+          "arxiv_id": null,
+          "paper_id": "5e10e2fbd2b98db6db3e680d5472448ce56bffd5",
+          "url": "https://www.semanticscholar.org/paper/5e10e2fbd2b98db6db3e680d5472448ce56bffd5",
+          "abstract": "Recent advancements in autonomous aerial vehicles (AAVs) and visible light communication (VLC) can revolutionize indoor networks in the era of 6G, offering benefits, such as high accuracy, cost-effectiveness, power efficiency, and improved security. However, VLC-enabled indoor networks face several deployment challenges, including line-of-sight disruptions caused by dynamic obstacles, such as human obstacles and UAVs operating within an indoor area. These dynamic obstacles in the 3-D space can lead to a nonuniform distribution of the received power across the indoor area, adversely impacting the quality of service for indoor users. Therefore, it is crucial to analyze the performance of VLC-enabled indoor networks in the presence of dynamic blockages. This analysis is essential to effectively mitigate the impact of dynamic obstacles and enhance the performance and reliability of indoor networks. This letter provides a performance analysis of VLC-enabled indoor networks for multiple light-emitting-diode configurations in the presence of various blockages, where the blockages (both humans and UAVs) can pause during movement for different pause times. Based on the provided analysis, we develop a model to calculate the blockage probability in indoor networks, and the bit-error-rate performance with varying blockage density is analyzed.",
+          "subjects": []
+        },
+        {
+          "title": "Sustainable innovations and future prospects in construction material: a review on natural fiber-reinforced cement composites",
+          "authors": [
+            "Anand Singh",
+            "Bikarama Prasad Yadav"
+          ],
+          "year": 2024,
+          "date": "2024-10-29",
+          "citations": 38,
+          "arxiv_id": null,
+          "paper_id": "8c13ccff1944d176b4149b34ec8a3525646092cd",
+          "url": "https://www.semanticscholar.org/paper/8c13ccff1944d176b4149b34ec8a3525646092cd",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Performance Analysis of OIRS-Aided Indoor VLC Systems Under Dynamic Human Blockages and Random UE Orientation",
+          "authors": [
+            "Anand Singh",
+            "H. B. Salameh",
+            "M. Ayyash",
+            "Hany Elgala"
+          ],
+          "year": 2024,
+          "date": "2024-10-15",
+          "citations": 25,
+          "arxiv_id": null,
+          "paper_id": "8ceeaee848a92aaf83e8592ff89eed979ed39e29",
+          "url": "https://www.semanticscholar.org/paper/8ceeaee848a92aaf83e8592ff89eed979ed39e29",
+          "abstract": "Visible light communication (VLC) is a key enabler for high-speed indoor connectivity and the Internet of Things (IoT) devices. Unlike radio frequency (RF) communication systems, the VLC coverage is typically not uniform, which means that the user equipment’s (UEs) orientation and obstacles significantly affect the communication performance. Specifically, the performance of VLC may severely deteriorate when the Line-of-Sight (LoS) link is blocked by other users/obstructions in crowded indoor scenarios, such as shopping malls, airports, factories, and industrial facilities. Further, the received power may also fluctuate due to the random orientation of UE as Non-LoS (NLoS) power varies. This article characterizes the impact of human blockages and random UE orientation when optical intelligent reflecting surfaces (OIRSs) are integrated with VLC systems. We consider a realistic scenario by assuming the presence of multiple human blockages and random UE orientations. Specifically, this article utilizes a random process model to capture the random UE orientations in OIRS-aided indoor VLC systems. The proposed model characterizes the NLoS channel gain, calculates the received signal-to-noise ratio (SNR) statistics, and derives the probability density function (PDF) of the received SNR. Furthermore, the derived SNR statistics determine the optimal light-emitting-diode semi-angle and receiver Field-of-View (FoV) to maximize received power throughout a given indoor area. In addition, the optimal OIRS element size is computed to achieve the highest average received power within the specified indoor space. Finally, the bit error rate (BER), delay spread, and average data rate are analyzed under blockage and nonblockage scenarios. Simulation results demonstrate a 4–8 dB improvement in the required SNR to achieve a minimum BER of $10^{-3}$ with the proposed OIRS-aided VLC system, attributed to its awareness of human blockages and random UE orientation.",
+          "subjects": []
+        }
+      ]
     ],
     [
       "Shubham Singh",
@@ -1843,434 +2244,9 @@
           "subjects": [
             "eess.SY"
           ]
-        },
-        {
-          "title": "Safe Unicycle Navigation Among Multiple Obstacles Under Bounded Disturbances: A Learning-Augmented CLF-CBF Approach (Extended Version)",
-          "authors": [
-            "Shubham Singh",
-            "Anjali Tiwari",
-            "Anand Singh",
-            "Katsuki Fujisawa"
-          ],
-          "year": 2026,
-          "date": "2026-10-13",
-          "citations": 0,
-          "arxiv_id": "2610.17916",
-          "paper_id": "b38e3940143e51c06af6d11a294ae2c812dabad5",
-          "url": "https://arxiv.org/abs/2610.17916",
-          "abstract": "This paper presents a robust control framework for safe navigation of a unicycle robot to a goal among multiple static obstacles under an unknown, time-varying disturbance. The controller solves a single real-time quadratic program (QP) that combines a goal-reaching term with one safety term per obstacle. The goal-reaching term is a cross-track control Lyapunov function built from body-frame tracking errors rather than a bearing angle, which keeps its Lie derivatives bounded everywhere, including the goal. Safety is encoded using robust control barrier functions, one per obstacle, each tightened by a closed-form, state-dependent disturbance bound. When stabilization and safety conflict, a slack variable relaxes only the convergence requirement, so that the safety constraints remain strictly enforced. Whenever the QP is feasible, the robust barrier constraints guarantee forward invariance of every obstacle's safe set under all admissible disturbances. Complementing this safety guarantee, a Lyapunov analysis yields an explicit ultimate bound on the distance to the goal. A learning-augmented variant replaces the fixed objective with a reinforcement-learning reference, which accelerates convergence when multiple constraints are simultaneously active. We further derive the obstacle separation below which the gap between two obstacles becomes too narrow to pass through under the robust constraints. For such gaps, a learned virtual goal for the Lyapunov function steers the robot around the obstacles without compromising safety. Simulations, a Monte Carlo study, and a comparison against a sampled-data robust baseline support the theoretical results.",
-          "subjects": []
-        },
-        {
-          "title": "Enforcing a Strict Safety Margin in LLM Text Generation via Barrier Lyapunov Control",
-          "authors": [
-            "Anand Singh",
-            "Shubham Singh",
-            "Anjali Tiwari",
-            "Katsuki Fujisawa"
-          ],
-          "year": 2026,
-          "date": "2026-10-13",
-          "citations": 0,
-          "arxiv_id": "2610.17929",
-          "paper_id": "8e939b99d71f831f84a05567ece8be8a6f2c43d1",
-          "url": "https://arxiv.org/abs/2610.17929",
-          "abstract": "Large language models are increasingly deployed without formal guarantees against toxic text generation. Existing control barrier function (CBF) based safety filters can keep the generation trajectory within a toxicity-free region, but do not enforce a positive distance from its boundary, allowing formally safe trajectories to approach the toxicity threshold arbitrarily closely and leaving little buffer against modelling errors or disturbances. We address this limitation with a Barrier Lyapunov Function (BLF) safety filter that enforces a prescribed clearance margin throughout generation while retaining the continuous-time transformer dynamics, including feedforward layers. The resulting safe input set is a half-space defined by a constraint affine in the control input, and is non-empty under certified surjectivity and classifier-nondegeneracy conditions. For margin-compatible initial conditions we prove that the clearance margin is never violated and that the prescribed clearance is restored exponentially, yielding an explicit clearance floor, and show that, as the margin vanishes, the admissible trajectories satisfy the exponential second-order CBF condition. We further derive an explicitly computable sufficient disturbance budget under which the clearance guarantee degrades gracefully. Simulations on a small transformer illustrate the resulting improvement in safety clearance.",
-          "subjects": []
-        },
-        {
-          "title": "Ensuring safe robust control design through optimal control with switching strategy",
-          "authors": [
-            "Anjali Tiwari",
-            "N. S. Tripathy",
-            "M. Chamanbaz",
-            "Roland Bouffanais"
-          ],
-          "year": 2026,
-          "date": "2026-03-26",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "8600a7398e7ca7a4fe2c20454ca776bcccc0c42c",
-          "url": "https://www.semanticscholar.org/paper/8600a7398e7ca7a4fe2c20454ca776bcccc0c42c",
-          "abstract": "\n This paper presents the design of a safe‐ robust control law for a class of nonlinear systems subjected to model and input uncertainties. Safety is addressed by means of control barrier functions. The design method involves defining an over‐approximate region of the safe set and using it as a constraint. We then convert this safe‐ robust control problem into a constrained‐optimal control problem for a nominal system with a modified cost‐functional. Subsequently, this constrained‐optimal control problem is reformulated as a minimization of a Hamilton‐Jacobi‐Bellman equation subjected to safety constraints, which is solved using the Karush‐Kuhn‐Tucker multiplier method. The design of the control law is facilitated by the use of a switching function when moving from safe to unsafe regions. This approach is termed the modular design approach, which maintains the system's robustness while preserving safety. Finally, numerical simulations are carried out to validate the proposed controller and test its efficacy on nonlinear systems with uncertainties.",
-          "subjects": []
-        },
-        {
-          "title": "A Unified Framework for Robust Stabilization and Safety of Uncertain Nonlinear Systems",
-          "authors": [
-            "Anjali Tiwari",
-            "N. S. Tripathy"
-          ],
-          "year": 2026,
-          "date": "2026-02-28",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "39bd65733cbb5a7e73348fecf9e6f074b3bcf5fc",
-          "url": "https://www.semanticscholar.org/paper/39bd65733cbb5a7e73348fecf9e6f074b3bcf5fc",
-          "abstract": "\n Control barrier functions (CBFs) are widely employed to ensure safety in nonlinear systems; however, the presence of uncertainties can impact their effectiveness, leading to safety violations. In this context, we present the design of a safe-robust control law that unifies the objective of robust stabilization and safety for a nonlinear system in the presence of mismatched uncertainty. This unified framework is achieved through a switching strategy that operates based on safety requirements, resulting in a slightly larger CBF. Thereby, guaranteeing the forward invariance of a larger CBF ensures that states avoid the actual unsafe region. To derive the proposed control law, the safe-robust control problem for an uncertain system is transformed into a safe-optimal control problem for auxiliary dynamics with appropriate cost. Furthermore, we draw connections between two prominent robust control techniques and show how safety can be integrated using the proposed approach. Finally, numerical simulation is provided to demonstrate the efficacy of the safe-robust control law.",
-          "subjects": []
         }
       ],
-      [
-        {
-          "title": "Eco-Bond Fly Ash Brick",
-          "authors": [
-            "Amarjit Singh",
-            "Kirti Mishra",
-            "M. Kashyap",
-            "Himanshu Tiwari",
-            "Anjali Tiwari"
-          ],
-          "year": null,
-          "date": "",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "e5a31f187d93cccbd895d190f3ae1220d3d439c7",
-          "url": "https://www.semanticscholar.org/paper/e5a31f187d93cccbd895d190f3ae1220d3d439c7",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Clinical and etiological profile of children hospitalized with acute undifferentiated febrile illness in South-Eastern Rajasthan, India: a prospective observational study",
-          "authors": [
-            "Anjali Tiwari",
-            "R. Nagar",
-            "Poorva Tiwari"
-          ],
-          "year": 2026,
-          "date": "2026-10-27",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "8bf245147c18f45c5380d693e23cfa9a040c6738",
-          "url": "https://www.semanticscholar.org/paper/8bf245147c18f45c5380d693e23cfa9a040c6738",
-          "abstract": "Background: Etiological data on acute undifferentiated febrile illness (AUFI) in India come mainly from adults in humid, high-endemicity regions; pediatric data from semi-arid north-west India are sparse. We determined the etiology, laboratory profile, outcomes and laboratory discriminators in hospitalized children in south-eastern Rajasthan.\nMethods: Prospective observational study at a tertiary teaching hospital in Jhalawar, Rajasthan. Two hundred children aged 2 months–18 years with fever ≤7 days and no identifiable focus after baseline assessment underwent a standardized diagnostic panel. Proportions carry Wilson 95% confidence intervals (CIs). Sparse cell counts required Monte Carlo permutation testing (100 000 replicates) with Holm adjustment across 16 comparisons; threshold performance was assessed post hoc.\nResults: No etiology was identified in 105 children (52.5%, 95% CI 45.6–59.3). Scrub typhus predominated (33, 16.5%, CI 12.0–22.3; 34.7% of resolved diagnoses), then urinary tract infection (25, 12.5%), dengue (22, 11.0%), malaria (10, 5.0%) and enteric fever (5, 2.5%). Enrollment peaked in August–October (88, 44.0%; p<0.001). All laboratory parameters except creatinine differed by diagnosis (adjusted p≤0.002), as did length of stay, complications and defervescence time. Thresholds were specific but insensitive: hemoglobin <80 g/l for scrub typhus (specificity 97.0%, sensitivity 45.5%, likelihood ratio 15.2), platelets <100×10⁹/l for dengue (86.0%, 68.2%, 4.9). Complications affected 39 children (19.5%), intensive care 25 (12.5%); none died.\nConclusions: Scrub typhus, not dengue or malaria, led identifiable causes and accounted for most transfusions. Empirical doxycycline warrants evaluation in post-monsoon fever. Routine thresholds modify suspicion but cannot replace specific testing; the unresolved half defines the gap molecular diagnostics must close.",
-          "subjects": []
-        },
-        {
-          "title": "AI leadership: employee perceptions and pathways to compliance",
-          "authors": [
-            "Cao Tuan",
-            "Mai Nguyen",
-            "Tuan Phong Nham",
-            "Ashish Malik",
-            "Anjali Tiwari"
-          ],
-          "year": 2026,
-          "date": "2026-10-08",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "f9150605489ead9f5721569a0265acb5687ef7d0",
-          "url": "https://www.semanticscholar.org/paper/f9150605489ead9f5721569a0265acb5687ef7d0",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Pulmonary venous baffle stenosis following atrial switch repair for transposition of the great arteries",
-          "authors": [
-            "S. Padala",
-            "Aaditya Sirohi",
-            "P. G. Kumbhar",
-            "Anjali Tiwari"
-          ],
-          "year": 2026,
-          "date": "2026-09-01",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "65d62d1300364266e10a60db92afdae9394743e7",
-          "url": "https://www.semanticscholar.org/paper/65d62d1300364266e10a60db92afdae9394743e7",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "A Quantum Attack Pipeline on DNA-Based Encryption: PRNG Vulnerabilities and QRNG-Based Defenses",
-          "authors": [
-            "Mohammed Misbhahuddin",
-            "Anjali Tiwari"
-          ],
-          "year": 2026,
-          "date": "2026-09-01",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "df3b52ba0a631a317dd3655fe48206933e049997",
-          "url": "https://www.semanticscholar.org/paper/df3b52ba0a631a317dd3655fe48206933e049997",
-          "abstract": "DNA steganography conceals binary-encoded messages within biological sequences, deriving security from biochemical indistinguishability over algebraic hardness. The insertion positions constitute the cryptographic key, yet the mechanism generating those positions has not been examined under a quantum adversary model. This paper identifies pseudorandom position generation as the attack surface, proposing a taxonomy classifying pseudorandom number generators by whether their state transition admits an abelian group structure, this being the condition under which the Quantum Fourier Transform yields advantage on the hidden subgroup problem. It then characterises the limits of classical statistical detection on the strongest of those groups. Screening full-round ChaCha20 output, a false-positive rate of approximately 28% is observed at the nominal 5% significance level, motivating an empirically calibrated detection threshold of $p=0.005$. Under this threshold, corroborated by the NIST SP 800-22 battery and a two-sample Kolmogorov-Smirnov comparison $(D=0.11, p=0.58)$, full-round output is statistically indistinguishable from a true random baseline, with autocorrelation magnitudes matching those of the baseline within one standard error. A three-layer quantum-safe defense comprising quantum random number generation, full-round cipher implementation, and post-quantum key encapsulation is proposed.",
-          "subjects": []
-        },
-        {
-          "title": "Gender Dynamics in Healthcare Utilization: Assessing the Coverage and Experiences of Women under PM Jan Arogya Yojana",
-          "authors": [
-            "Anjali Tiwari",
-            "S. Yadav"
-          ],
-          "year": 2026,
-          "date": "2026-06-15",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "0a3102d17954fd7328800e1d1d5d268f0fb66bcc",
-          "url": "https://www.semanticscholar.org/paper/0a3102d17954fd7328800e1d1d5d268f0fb66bcc",
-          "abstract": "A major goal of modern-day public health policy is to provide equitable access to healthcare; this is especially true in developing countries where gender-based inequities continue to have an impact on demand for and the use of healthcare services. In India, the Pradhan Mantri Jan Arogya Yojana (PM-JAY) program created under the Ayushman Bharat initiative was created to improve financial security for vulnerable populations by expanding access to secondary and tertiary health care services. The expansion of the PM-JAY program has improved insurance coverage and reduced financial barriers for millions of households, but there still exists a question whether the expansion of PM-JAY program has resulted in equal health care service utilization by women. The purpose of this research is to examine the impact of gender on the use of health care services by women who are covered by the PM-JAY program. The study will explore the various factors (social norms, household decision-making, institutional arrangements and economics) and relationships that may impede women from accessing health care services even though they are entitled to receive publicly funded health care services. Special attention will be focused on understanding the difference between Policy coverage and actual utilization of health care services. The design of the study is qualitative and analytical and will be based on a review of policy documents, government reports, public health journals, and recent scholarship related to gender and health care utilization. A gender-sensitive analytical framework was applied to evaluate the use of health services by women and to identify the structural barriers to women’s experiences in accessing these services. The analysis suggests that PM-JAY has contributed to helping reduce direct financial constraints on access to healthcare and helps improve healthcare accessibility. Nonetheless, women continue to experience challenges connecting with healthcare services due to barriers regarding: awareness of services; mobility; responsiveness of institutions; and unequal decision-making authority within households. Additionally, the utilization of health services is impacted by a variety of social conditions and regional characteristics. The conclusion of this study is that health insurance coverage alone does not provide the means for achieving gender equity in health outcomes; outreach to improve awareness of services; improving the responsiveness of services to women; and enhancing monitoring methods to be specific to women must all contribute to allowing formal entitlements to healthcare be effectively and equitably utilized.",
-          "subjects": []
-        },
-        {
-          "title": "Predicting online motor learning after stroke in lower limb task using machine learning",
-          "authors": [
-            "Anjali Tiwari",
-            "Hunter Paxton",
-            "Stefan Delmas",
-            "P. Diwakar",
-            "Gaurav Misra",
-            "Neha Lodha"
-          ],
-          "year": 2026,
-          "date": "2026-05-06",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "7c7afd669d7c241a972074a7e7593fd979de6f28",
-          "url": "https://www.semanticscholar.org/paper/7c7afd669d7c241a972074a7e7593fd979de6f28",
-          "abstract": "Online motor learning is central to effective learning and a crucial determinant of functional recovery after stroke. Despite its clinical significance, predictors of online motor learning remain understudied. Machine Learning (ML) offers a data-driven approach to identify predictors of online motor learning that would otherwise be limited using traditional statistical approaches, such as logistic regression. This study leveraged ML to determine key predictors and their relative importance in online motor learning after stroke. One hundred and seven stroke survivors completed assessments of sociodemographic, stroke characteristics, health-related, functional, cognitive, and physical capacity. Online motor learning was quantified using a goal-directed ankle task. To predict those with and without online motor learning capacity, we applied and compared XGBoost and logistic regression approaches. The XGBoost model outperformed logistic regression, achieving a precision = 0.82, recall = 0.78, F1 score = 0.80, and an area under the precision-recall curve = 0.84. The feature importance analysis identified logical memory, DGT-backward, selective attention, functional capacity index, and physical capacity as the key predictors of online motor learning. Online motor learning after stroke is not solely a motor-driven process but is predicted by cognitive and functional capacity. ML identified multidomain predictors, offering a framework for understanding individual differences in learning potential during the session, laying the foundation for precision rehabilitation.",
-          "subjects": []
-        },
-        {
-          "title": "Poststroke Fatigue: An Overlooked Barrier to Functional Recovery",
-          "authors": [
-            "Anjali Tiwari",
-            "Stefan Delmas",
-            "Neha Lodha",
-            "A. Casamento-Moran"
-          ],
-          "year": 2026,
-          "date": "2026-03-28",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "e46565ffcca21a37103f62d6201c93180cfb7c8a",
-          "url": "https://www.semanticscholar.org/paper/e46565ffcca21a37103f62d6201c93180cfb7c8a",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Bacterial Cellulose Coatings for Improved Air and Moisture Barrier Properties of Kraft Paper",
-          "authors": [
-            "T. Bhuvana",
-            "Ramchandra Tiwari",
-            "Murli Manohar",
-            "Anjali Tiwari",
-            "K. Balani",
-            "C. Chandraprakash"
-          ],
-          "year": 2026,
-          "date": "2026-03-07",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "e8f2b596bdc20a6e43031a00e298181dfc896238",
-          "url": "https://www.semanticscholar.org/paper/e8f2b596bdc20a6e43031a00e298181dfc896238",
-          "abstract": "This work presents an investigation on bacterial cellulose (BC) as coatings over kraft paper for improvement in the barrier properties. The 100‐ μ m‐thick papers were coated with 3 g/m2 of BC by wet casting. Comparisons of surface characteristics were made with kraft paper coated with chitosan, another widely used biodegradable polymer. Electron micrographs revealed that these coatings provided a conformal filling of the asperities on the surface and reduced the roughness. Coating with BC made the kraft paper more lyophobic. The water vapor transmission rate (WVTR) and air permeability of the kraft paper were reduced by 387±11  g/m2/day and 0.41±0.02   μ m/Pa s, upon coating with BC. These barrier properties and changes in surface wettability were either quantitatively similar or better than those when coated with chitosan and achieved with a thin coating (2  μ m). Both these key characteristics were achieved while maintaining nearly the same chemical, mechanical and thermal characteristics of the coated and uncoated papers. These results suggest that BC can be explored as a biopolymer coating to improve the barrier properties of paper for packaging applications.",
-          "subjects": []
-        },
-        {
-          "title": "In silico analysis of physio-chemical and structural characteristics of selected neurotoxins from scorpion, snake, cone snail, spider and sea anemone",
-          "authors": [
-            "Vikas Chandra",
-            "H. Yadav",
-            "Kushal Kant Pant",
-            "Anjali Tiwari",
-            "C. Soni"
-          ],
-          "year": 2026,
-          "date": "2026-01-31",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "39fa283ec55c0ca795a5decbd2f8a4114e4f57c8",
-          "url": "https://www.semanticscholar.org/paper/39fa283ec55c0ca795a5decbd2f8a4114e4f57c8",
-          "abstract": "Venoms are complex mixtures of bioactive proteins and\npeptides produced by various animals and they are\noften lethal due to their diverse toxic effects. Among the\nmajor toxin classes: cytotoxins, neurotoxins,\nmyotoxins, cardiotoxins and haemotoxins, neurotoxins\nare particularly significant for their interference with\nnerve signal transmission by modulating\nneurotransmitter release, receptor function and ion\nchannel activity.\nThis study provides an in silico overview of selected\nneurotoxins, focusing on their physiochemical\nproperties, phylogenetic relationships, secondary\nstructures and three-dimensional structural features.\nPhysiochemical characterization was performed using\nProtParam, phylogenetic analysis with MEGA,\nsecondary structure prediction using SOPMA and 3D\nstructure modeling and visualization with Swiss model\nfor 25 neurotoxins from scorpion, snake, cone snail,\nspider and sea anemone venoms.",
-          "subjects": []
-        },
-        {
-          "title": "Driving behavior in simulator and on-road assessments in brain injury and stroke: a scoping review",
-          "authors": [
-            "Junpei Kubota",
-            "Anjali Tiwari",
-            "Takao Kaneko",
-            "Neha Lodha",
-            "Tasuku Sotokawa"
-          ],
-          "year": 2026,
-          "date": "2026-01-23",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "10331e9279b5c98d8e52c601ad984b8d9da08cbc",
-          "url": "https://www.semanticscholar.org/paper/10331e9279b5c98d8e52c601ad984b8d9da08cbc",
-          "abstract": "ABSTRACT Introduction Driving requires the coordination of complex cognitive and motor abilities that are often impaired after brain injury or stroke. This scoping review aimed to synthesize the driving behaviors observed in individuals with brain injury through simulator-based and on-road driving assessments using Michon’s hierarchical framework. Methods Following the PRISMA extension for Scoping reviews, we systematically searched five databases in July 2024. The eligible studies included adults with brain injuries assessed using either simulators or on-road evaluations. Driving behaviors were categorized as operational, tactical, or strategic. Results Thirty-eight studies met the inclusion criteria. Individuals with brain injury who failed the driving assessments (i.e. simulator or on-road) exhibited more frequent tactical-level errors, including lane deviations, and inadequate visual scanning than those with brain injury who passed. Simulator assessments are often used in studies comparing individuals with brain injury with healthy controls, whereas on-road assessments are more commonly used in studies assessing pass/fail outcomes. Conclusion Tactical-level errors, such as those involving decision-making and maneuvering in response to traffic, were consistently observed in individuals with brain injury. Assessment tools should prioritize the evaluation of operational and tactical abilities while expanding their capacity to capture strategic-level performance, which remains underassessed.",
-          "subjects": []
-        },
-        {
-          "title": "Seasonal variations in leaf essential oil of Eucalyptus tereticornis clones: Yield, composition analysis and antioxidant potential",
-          "authors": [
-            "Mamta Khaiper",
-            "P. Poonia",
-            "S. Dhanda",
-            "Preety Verma",
-            "Anjali Tiwari",
-            "Vikas Kumar"
-          ],
-          "year": 2026,
-          "date": "2026",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "bd7172d37bbad05bedc10b3753dc10b72cd9a6be",
-          "url": "https://www.semanticscholar.org/paper/bd7172d37bbad05bedc10b3753dc10b72cd9a6be",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Signal in the Noise: Dispersion as a Marker of Post-Stroke Cognitive Impairment",
-          "authors": [
-            "Stefan Delmas",
-            "Anjali Tiwari",
-            "Neha Lodha"
-          ],
-          "year": 2025,
-          "date": "2025-12-30",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "8f477e9fc696789c1573438f283a26bc97d48fc1",
-          "url": "https://www.semanticscholar.org/paper/8f477e9fc696789c1573438f283a26bc97d48fc1",
-          "abstract": "Stroke often results in lasting cognitive impairments that severely reduce independence and quality of life. Traditional neuropsychological assessments rely on mean scores that provide an average estimate of overall cognitive function but neglect the fluctuations in performance. The variability in performance can be captured as inconsistency, i.e., fluctuations across multiple trials within a single task or as dispersion, i.e., fluctuations across multiple tasks. While inconsistency has been extensively studied, the impact of post-stroke cognitive impairment on cognitive dispersion is unknown. In this study, ninety-five stroke survivors (41 cognitively impaired and 54 cognitively normal) completed a neuropsychological battery that captured performance across five cognitive domains: executive function, attention, memory, language, and processing speed. We compared the stroke groups on across- and within-domain cognitive dispersion. Cognitively impaired stroke individuals showed elevated dispersion within executive function compared to cognitively normal individuals. The two groups did not differ on any other within-domain or across-domain cognitive dispersion. Post-stroke cognitive impairment increased variability within executive functioning. Incorporating cognitive dispersion into routine post-stroke assessment can advance clinical practice by identifying subtle cognitive instability, anticipate supportive needs, and tailor rehabilitation plans for improving stroke care.",
-          "subjects": []
-        },
-        {
-          "title": "Phylogenetic Analysis of Annexin Genes in Selected Monocot and Dicot Plants",
-          "authors": [
-            "Gurucharan Sahu",
-            "Abhishek Dadsena",
-            "Samanvay Singh",
-            "Kushal Kant Pant",
-            "Anjali Tiwari",
-            "C. Soni",
-            "Vikas Chandra"
-          ],
-          "year": 2025,
-          "date": "2025-12-03",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "fbb4365d3d5e2b6d6fd4b26de019c66df4031308",
-          "url": "https://www.semanticscholar.org/paper/fbb4365d3d5e2b6d6fd4b26de019c66df4031308",
-          "abstract": "Annexins are a diverse family of calcium-dependent phospholipid-binding proteins involved in membrane transport, signal transduction, and various stress responses in plants. This study presents a comprehensive phylogenetic analysis of annexin genes across multiple monocot and dicot plant species. The study involved downloading the complete annexin gene sequences from reliable databases. Phylogenetic trees were carefully constructed for individual plant species, followed by a comparative analysis that distinguished the evolutionary approach of annexin genes among monocots and dicots. The analysis revealed significant evolutionary divergence and conserved clades within the annexin gene family, suggesting both lineage-specific expansions and ancient gene duplications. The results of this study provide new insights into the molecular evolution of annexins and highlight their potential role in plant adaptation and resilience. The comprehensive phylogenetic analyses performed in this work not only contribute to the understanding of annexin gene evolution but also lay the foundation for future functional studies aimed at exploiting annexins for crop improvement and stress management.",
-          "subjects": []
-        },
-        {
-          "title": "Linking behavioral variability to daily function in stroke survivors: the mediating role of cognitive and motor mechanisms",
-          "authors": [
-            "Stefan Delmas",
-            "Anjali Tiwari",
-            "Han-Yun Tseng",
-            "Sharon N. Poisson",
-            "M. Diehl",
-            "Neha Lodha"
-          ],
-          "year": 2025,
-          "date": "2025-11-21",
-          "citations": 2,
-          "arxiv_id": null,
-          "paper_id": "651cdc2f97653f0133f9ce3a7c7281d6a098b5bd",
-          "url": "https://www.semanticscholar.org/paper/651cdc2f97653f0133f9ce3a7c7281d6a098b5bd",
-          "abstract": "Stroke significantly impacts an individual’s ability to perform instrumental activities of daily living (IADLs). Intraindividual variability (IIV) is characterized by heightened fluctuations across multiple attempts at a task. IIV is a behavioral indicator of central nervous system instability that may contribute directly to compromised capacity to perform IADLs following stroke. This study aimed to investigate the relationship between IIV and IADL performance in stroke survivors and determine whether executive control and/or motor capacity serve as mediating pathways. In this cross-sectional observational study, 84 stroke survivors and 35 healthy older adults participated. We derived latent factor scores for IIV from reaction time and goal directed tasks, IADL performance from the Observed Task of Daily Living and Functional Activities Questionnaire, executive control from tests of divided attention, selective attention, cognitive flexibility, and processing speed, and motor capacity from grip and ankle strength. We examined the association between IIV and IADL performance and conducted a parallel mediation analysis to determine whether executive control and motor capacity mediated this relationship. Higher IIV was associated with compromised IADL performance. Mediation analyses showed that the relationship between IIV and IADL performance was significantly mediated by executive control but not motor capacity while controlling for the covariate of age. Behavioral variability after stroke impacts everyday function primarily through a cognitive pathway. These findings highlight executive control as a key therapeutic target in stroke rehabilitation to mitigate the functional consequences of neural instability on instrumental activities of daily living.",
-          "subjects": []
-        },
-        {
-          "title": "Unravelling the UV-B response in two Withania species: biochemical and molecular insights into W. somnifera and W. coagulans",
-          "authors": [
-            "Anjali Tiwari",
-            "Saumya Tripathi",
-            "Lakee Sharma",
-            "Neha Pandey"
-          ],
-          "year": 2025,
-          "date": "2025-10-31",
-          "citations": 2,
-          "arxiv_id": null,
-          "paper_id": "d7d4cb74b0793b1cd0ac0bb0d5b5100d2d57ccc5",
-          "url": "https://www.semanticscholar.org/paper/d7d4cb74b0793b1cd0ac0bb0d5b5100d2d57ccc5",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Application of hyperspectral remote sensing, GIS, GPS and artificial intelligence in floriculture and horticulture",
-          "authors": [
-            "Samikhya Jena",
-            "S. Patil",
-            "Anjali Tiwari",
-            "Amanvir Singh",
-            "Shashi Rawat",
-            "M. Anas",
-            "Vikash Kumar",
-            "R. Mondal",
-            "N. Pavani",
-            "S. Jena"
-          ],
-          "year": 2025,
-          "date": "2025-10-01",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "b5e51e10bc47893282e6ec4c80682419b2308b7f",
-          "url": "https://www.semanticscholar.org/paper/b5e51e10bc47893282e6ec4c80682419b2308b7f",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Silviculture",
-          "authors": [
-            "Prabal Kumar",
-            "Nikita Rai",
-            "S. Parveen",
-            "Anjali Tiwari",
-            "Vikas Kumar",
-            "Tanu Shree Lakra"
-          ],
-          "year": 2025,
-          "date": "2025-09-11",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "c0c1f9b0f2e9f74a8b60686f55019754abf7b325",
-          "url": "https://www.semanticscholar.org/paper/c0c1f9b0f2e9f74a8b60686f55019754abf7b325",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Change and Continuity of Coastal Mangroves in Greater Mumbai, India: Towards the Sustainable Governance of Blue-Green Infrastructure",
-          "authors": [
-            "Sujayita Bhattacharjee",
-            "Madhuri Sharma",
-            "Anjali Tiwari"
-          ],
-          "year": 2025,
-          "date": "2025-08-27",
-          "citations": 5,
-          "arxiv_id": null,
-          "paper_id": "18bd4aa11889f0d2b258d04e81d6de904c45e5c6",
-          "url": "https://www.semanticscholar.org/paper/18bd4aa11889f0d2b258d04e81d6de904c45e5c6",
-          "abstract": "In the coastal megacities of the Global South, where urbanization is steeply accelerating, it is a complex undertaking to navigate and govern for ecological sustainability while working to address mounting pressures to develop the physical and natural environment. In this study, we closely analyze the legality of coastal mangroves in Greater Mumbai through the lens of Blue-Green Infrastructure (BGI), sustainable governance, and environmental policy processes. While there is the constitutional and legislative protection of mangroves, they continue to disappear from the Greater Mumbai landscape, raising legitimate concerns about governance failures writ large. Using a mixed-method approach, we employ geospatial analysis of mangrove cover change from 1994 through to 2024, along with a thematic review of policy and institutional perspectives. The geospatial analysis indicated a −3.91% reduction in mangrove cover because of land-use developments, infrastructure encroachments, and the weak enforcement of existing regulations. The policy review identified limited regulatory coherence, institutional fragmentation, and low levels of community engagement. We advocate for the conservation of mangrove ecosystems in Mumbai, not just as an environmental resource, but also as vital urban infrastructure. We argue for the need to identify opportunities for reform, such as enhanced community contribution and participation, policy harmonization, and uniform incorporation of BGI principles into spatial planning and climate adaptation planning in Greater Mumbai.",
-          "subjects": []
-        },
-        {
-          "title": "Cognitive Impairments Impact Functional Mobility in Stroke Survivors",
-          "authors": [
-            "Anjali Tiwari",
-            "Stefan Delmas",
-            "Sharon N. Poisson",
-            "Brian K Kaiser",
-            "M. Diehl",
-            "Neha Lodha"
-          ],
-          "year": 2025,
-          "date": "2025-08-26",
-          "citations": 2,
-          "arxiv_id": null,
-          "paper_id": "5a684ee734a80f7ea70152b9f00ea14eb8f1da4b",
-          "url": "https://www.semanticscholar.org/paper/5a684ee734a80f7ea70152b9f00ea14eb8f1da4b",
-          "abstract": "Background Functional mobility is essential for maintaining independence and relies on both motor and cognitive processes. Although the impact of motor impairments on functional mobility in stroke survivors has been extensively studied, the influence of post-stroke cognitive impairments has been largely overlooked. The aim of the current study is 2-fold. First, to determine the impact of post-stroke cognitive impairments on functional mobility across a broad spectrum of tasks. Second, to determine if cognitive impairment has a differential impact on various forms of mobility. Method Forty individuals with stroke (20 cognitively normal and 20 cognitively impaired) and 30 healthy older adults participated in the study. Participants performed cognitive, motor, and mobility assessments. Cognitive tests included global and domain-specific assessments on an extensive neuropsychological battery. Motor tests included the Modified Rankin Scale and strength assessments. Functional mobility included the assessment of balance, overground walking, and driving in a simulator. Results Findings indicated that stroke survivors with cognitive impairment demonstrated significant deteriorations in functional mobility across multiple domains, compared to both cognitively normal stroke survivors and healthy older adults. Cognitive impairment significantly interferes with functional mobility, with driving showing greatest deterioration compared to balance and walking performance. Notably, this impact is independent of the level of disability and motor strength. Conclusion Cognitive impairments in stroke survivors are associated with significant mobility disturbances, with the most pronounced deficits in driving performance. This study highlights the importance of including and prioritizing cognitive evaluation and intervention for enhancing functional mobility and independence in stroke survivors.",
-          "subjects": []
-        }
-      ]
+      []
     ],
     [
       "Katsuki Fujisawa",
@@ -2409,13 +2385,49 @@
             "Warren E. Dixon"
           ],
           "date": "2026-10-28",
-          "citations": 0,
+          "citations": 1,
           "arxiv_id": "2610.38781v1",
           "url": "https://arxiv.org/abs/2610.38781v1",
           "abstract": "Control barrier functions (CBFs) provide formal safety guarantees for dynamical systems by rendering a safe set forward-invariant via pointwise-optimal feedback control. While the CBF framework is well established for dynamical systems in Euclidean space, there exist gaps for systems evolving on non-Euclidean manifolds. For systems modeled as constrained control differential inclusions, we introduce the Sheaf-CBF: a sheaf-theoretic framework for CBFs on smooth manifolds and vector bundles. The differential inclusions are formulated intrinsically on the control bundle, and analogous regularity properties in the Euclidean case are established fiberwise under local trivializations. Regularity conditions are given under which a pointwise-optimal feedback law is single-valued and continuous over local charts. Framed as a local-to-global optimization problem, sheaf-theoretic restriction and gluing compatibility conditions on overlapping charts are shown to uniquely determine a continuous global section of the control bundle, thereby guaranteeing forward invariance of the safe set. Numerical simulations on a nontrivial M{ö}bius strip demonstrate that failure of sheaf compatibility results in violations of safety, whereas the Sheaf-CBF maintains forward invariance.",
           "subjects": [
             "eess.SY"
           ]
+        },
+        {
+          "title": "From Local to Global: Sheaf-Theoretic Control Barrier Functions on Manifolds",
+          "authors": [
+            "Keith A. Currier",
+            "Wilmer Leal",
+            "Brandon C. Fallin",
+            "James P. Fairbanks",
+            "Warren E. Dixon"
+          ],
+          "year": 2026,
+          "date": "2026-10-28",
+          "citations": 1,
+          "arxiv_id": "2610.38781",
+          "paper_id": "f12dc5bd0b719d164a71601610f8dd095480412a",
+          "url": "https://arxiv.org/abs/2610.38781",
+          "abstract": "Control barrier functions (CBFs) provide formal safety guarantees for dynamical systems by rendering a safe set forward-invariant via pointwise-optimal feedback control. While the CBF framework is well established for dynamical systems in Euclidean space, there exist gaps for systems evolving on non-Euclidean manifolds. For systems modeled as constrained control differential inclusions, we introduce the Sheaf-CBF: a sheaf-theoretic framework for CBFs on smooth manifolds and vector bundles. The differential inclusions are formulated intrinsically on the control bundle, and analogous regularity properties in the Euclidean case are established fiberwise under local trivializations. Regularity conditions are given under which a pointwise-optimal feedback law is single-valued and continuous over local charts. Framed as a local-to-global optimization problem, sheaf-theoretic restriction and gluing compatibility conditions on overlapping charts are shown to uniquely determine a continuous global section of the control bundle, thereby guaranteeing forward invariance of the safe set. Numerical simulations on a nontrivial M{\\\"o}bius strip demonstrate that failure of sheaf compatibility results in violations of safety, whereas the Sheaf-CBF maintains forward invariance.",
+          "subjects": []
+        },
+        {
+          "title": "Pointwise Optimal Feedback Laws for Hybrid Inclusions using Multiple Control Barrier Functions",
+          "authors": [
+            "Carlos A. Montenegro G.",
+            "Hannah M. Sweatland",
+            "Keith A. Currier",
+            "W. Dixon",
+            "Ricardo G. Sanfelice"
+          ],
+          "year": 2025,
+          "date": "2025-12-09",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "49027651f0decd828ac2fe410f71d4b8312ac2e9",
+          "url": "https://www.semanticscholar.org/paper/49027651f0decd828ac2fe410f71d4b8312ac2e9",
+          "abstract": "This paper studies the problem of designing optimization-based controllers, with desired regularity properties, encoding the satisfaction of multiple state constraints via barrier functions for hybrid systems, modeled as hybrid inclusions. Sufficient conditions are given to guarantee forward invariance or asymptotic stability of a closed set K for a hybrid closed-loop system, even with discontinuous feedback laws. However, robustness of such properties is not necessarily guaranteed. Thus, we present sufficient conditions for the continuity of the optimization-based feedback laws that render the hybrid closed-loop system well-posed. A numerical simulation of a one-degree-of-freedom juggling system illustrating the main result of the paper is presented.",
+          "subjects": []
         }
       ],
       []
@@ -2433,7 +2445,7 @@
             "Warren E. Dixon"
           ],
           "date": "2026-10-28",
-          "citations": 0,
+          "citations": 1,
           "arxiv_id": "2610.38781v1",
           "url": "https://arxiv.org/abs/2610.38781v1",
           "abstract": "Control barrier functions (CBFs) provide formal safety guarantees for dynamical systems by rendering a safe set forward-invariant via pointwise-optimal feedback control. While the CBF framework is well established for dynamical systems in Euclidean space, there exist gaps for systems evolving on non-Euclidean manifolds. For systems modeled as constrained control differential inclusions, we introduce the Sheaf-CBF: a sheaf-theoretic framework for CBFs on smooth manifolds and vector bundles. The differential inclusions are formulated intrinsically on the control bundle, and analogous regularity properties in the Euclidean case are established fiberwise under local trivializations. Regularity conditions are given under which a pointwise-optimal feedback law is single-valued and continuous over local charts. Framed as a local-to-global optimization problem, sheaf-theoretic restriction and gluing compatibility conditions on overlapping charts are shown to uniquely determine a continuous global section of the control bundle, thereby guaranteeing forward invariance of the safe set. Numerical simulations on a nontrivial M{ö}bius strip demonstrate that failure of sheaf compatibility results in violations of safety, whereas the Sheaf-CBF maintains forward invariance.",
@@ -2457,7 +2469,7 @@
             "Warren E. Dixon"
           ],
           "date": "2026-10-28",
-          "citations": 0,
+          "citations": 1,
           "arxiv_id": "2610.38781v1",
           "url": "https://arxiv.org/abs/2610.38781v1",
           "abstract": "Control barrier functions (CBFs) provide formal safety guarantees for dynamical systems by rendering a safe set forward-invariant via pointwise-optimal feedback control. While the CBF framework is well established for dynamical systems in Euclidean space, there exist gaps for systems evolving on non-Euclidean manifolds. For systems modeled as constrained control differential inclusions, we introduce the Sheaf-CBF: a sheaf-theoretic framework for CBFs on smooth manifolds and vector bundles. The differential inclusions are formulated intrinsically on the control bundle, and analogous regularity properties in the Euclidean case are established fiberwise under local trivializations. Regularity conditions are given under which a pointwise-optimal feedback law is single-valued and continuous over local charts. Framed as a local-to-global optimization problem, sheaf-theoretic restriction and gluing compatibility conditions on overlapping charts are shown to uniquely determine a continuous global section of the control bundle, thereby guaranteeing forward invariance of the safe set. Numerical simulations on a nontrivial M{ö}bius strip demonstrate that failure of sheaf compatibility results in violations of safety, whereas the Sheaf-CBF maintains forward invariance.",
@@ -2481,7 +2493,7 @@
             "Warren E. Dixon"
           ],
           "date": "2026-10-28",
-          "citations": 0,
+          "citations": 1,
           "arxiv_id": "2610.38781v1",
           "url": "https://arxiv.org/abs/2610.38781v1",
           "abstract": "Control barrier functions (CBFs) provide formal safety guarantees for dynamical systems by rendering a safe set forward-invariant via pointwise-optimal feedback control. While the CBF framework is well established for dynamical systems in Euclidean space, there exist gaps for systems evolving on non-Euclidean manifolds. For systems modeled as constrained control differential inclusions, we introduce the Sheaf-CBF: a sheaf-theoretic framework for CBFs on smooth manifolds and vector bundles. The differential inclusions are formulated intrinsically on the control bundle, and analogous regularity properties in the Euclidean case are established fiberwise under local trivializations. Regularity conditions are given under which a pointwise-optimal feedback law is single-valued and continuous over local charts. Framed as a local-to-global optimization problem, sheaf-theoretic restriction and gluing compatibility conditions on overlapping charts are shown to uniquely determine a continuous global section of the control bundle, thereby guaranteeing forward invariance of the safe set. Numerical simulations on a nontrivial M{ö}bius strip demonstrate that failure of sheaf compatibility results in violations of safety, whereas the Sheaf-CBF maintains forward invariance.",
@@ -2505,7 +2517,7 @@
             "Warren E. Dixon"
           ],
           "date": "2026-10-28",
-          "citations": 0,
+          "citations": 1,
           "arxiv_id": "2610.38781v1",
           "url": "https://arxiv.org/abs/2610.38781v1",
           "abstract": "Control barrier functions (CBFs) provide formal safety guarantees for dynamical systems by rendering a safe set forward-invariant via pointwise-optimal feedback control. While the CBF framework is well established for dynamical systems in Euclidean space, there exist gaps for systems evolving on non-Euclidean manifolds. For systems modeled as constrained control differential inclusions, we introduce the Sheaf-CBF: a sheaf-theoretic framework for CBFs on smooth manifolds and vector bundles. The differential inclusions are formulated intrinsically on the control bundle, and analogous regularity properties in the Euclidean case are established fiberwise under local trivializations. Regularity conditions are given under which a pointwise-optimal feedback law is single-valued and continuous over local charts. Framed as a local-to-global optimization problem, sheaf-theoretic restriction and gluing compatibility conditions on overlapping charts are shown to uniquely determine a continuous global section of the control bundle, thereby guaranteeing forward invariance of the safe set. Numerical simulations on a nontrivial M{ö}bius strip demonstrate that failure of sheaf compatibility results in violations of safety, whereas the Sheaf-CBF maintains forward invariance.",
@@ -2562,425 +2574,9 @@
             "eess.SY",
             "math.OC"
           ]
-        },
-        {
-          "title": "A Recursive CBF Framework for Safety under State Uncertainty",
-          "authors": [
-            "Rahal Nanayakkara",
-            "A. Ames",
-            "Paulo Tabuada"
-          ],
-          "year": 2026,
-          "date": "2026-09-16",
-          "citations": 0,
-          "arxiv_id": "2609.18268",
-          "paper_id": "c7175f65cffc224a405f98429e7a9aa3558c113c",
-          "url": "https://arxiv.org/abs/2609.18268",
-          "abstract": "The practical implementation of Control Barrier Functions (CBFs) for safety-critical control is often hindered by uncertainty in the knowledge of the state. While existing robust CBF methods address state uncertainty, they often lack recursive feasibility guarantees or fail when uncertainty levels are high, allowing the system to enter regions where no safe control input exists. To resolve this, we propose a novel framework of enforcing recursive CBFs. Rather than merely ensuring the invariance of the original safe set, this approach enforces the forward invariance of a subset of the safe region where a robustly safe control input is guaranteed to exist. This holistic framework ensures that the system never strays into ambiguous regions, providing continued feasibility and safety guarantees, regardless of the level of state uncertainty.",
-          "subjects": []
-        },
-        {
-          "title": "A Duality-Based Optimization Formulation of Safe Control Design With State Uncertainties",
-          "authors": [
-            "Xiao Tan",
-            "Rahal Nanayakkara",
-            "Paulo Tabuada",
-            "A. Ames"
-          ],
-          "year": 2026,
-          "date": "2026-03-27",
-          "citations": 0,
-          "arxiv_id": "2603.26999",
-          "paper_id": "314a7514146b0ea9fd5e5f3bc4212f1fadda9de3",
-          "url": "https://arxiv.org/abs/2603.26999",
-          "abstract": "State estimation uncertainty is prevalent in real-world applications, hindering the application of safety-critical control. Existing methods address this by strengthening a Control Barrier Function (CBF) condition either to handle actuation errors induced by state uncertainty, or to enforce stricter, more conservative sufficient conditions. In this work, we take a more direct approach and formulate a robust safety filter by analyzing the image of the set of all possible states under the CBF dynamics. We first prove that convexifying this image set does not change the set of possible inputs. Then, by leveraging duality, we propose an equivalent and tractable reformulation for cases where this convex hull can be expressed as a polytope or ellipsoid. Simulation results show the approach in this letter to be less conservative than existing alternatives.",
-          "subjects": []
-        },
-        {
-          "title": "Stopping LLMs from Going Rogue: A Control Barrier Approach to Text Generation",
-          "authors": [
-            "João Pedro Silvestre",
-            "Álvaro Rodríguez Abella",
-            "Paulo Tabuada"
-          ],
-          "year": 2025,
-          "date": "2025-12-09",
-          "citations": 2,
-          "arxiv_id": null,
-          "paper_id": "d9ddf24e68850a0075858e757a8dca6afd608288",
-          "url": "https://www.semanticscholar.org/paper/d9ddf24e68850a0075858e757a8dca6afd608288",
-          "abstract": "The rapid integration of large language models (LLMs) into our everyday lives has outpaced safety considerations aimed at protecting users from toxic outputs and preventing malicious actors from generating harmful text at scale. As a result, LLMs have been exploited by bots capable of producing vast amounts of harmful and toxic content, enabling users to manipulate online opinions and, in some cases, create dangerous online environments.Our work addresses this issue by developing a framework for designing safety filters that preclude toxic outputs. To achieve this, we leverage Control Barrier Functions (CBFs) which enable the design of closed-loop systems that remain safe. We consider the continuous-time model of an LLM, where tokens are regarded as the state of the model, and prove that by only controlling the first token, any function satisfying mild assumptions becomes a CBF. Our approach can be utilized to design LLMs capable of ensuring safety of its outputs without significantly affecting the original model’s behavior.",
-          "subjects": []
-        },
-        {
-          "title": "Safe Navigation Under State Uncertainty: Online Adaptation for Robust Control Barrier Functions",
-          "authors": [
-            "Ersin Daş",
-            "Rahal Nanayakkara",
-            "Xiao Tan",
-            "Ryan M. Bena",
-            "Joel W. Burdick",
-            "Paulo Tabuada",
-            "A. Ames"
-          ],
-          "year": 2025,
-          "date": "2025-08-26",
-          "citations": 0,
-          "arxiv_id": "2508.19159",
-          "paper_id": "4561c4d400801da8aa22620155fa8a250943480e",
-          "url": "https://arxiv.org/abs/2508.19159",
-          "abstract": "Measurements and state estimates are often imperfect in control practice, posing challenges for safety-critical applications, where safety guarantees rely on accurate state information. In the presence of estimation errors, several prior robust control barrier function (R-CBF) formulations have imposed strict conditions on the input. These methods can be overly conservative and can introduce issues such as infeasibility, high control effort, etc. This work proposes a systematic method to improve R-CBFs, and demonstrates its advantages on a tracked vehicle that navigates among multiple obstacles. A primary contribution is a new optimization-based online parameter adaptation scheme that reduces the conservativeness of existing R-CBFs. In order to reduce the complexity of the parameter optimization, we merge several safety constraints into one unified numerical CBF via Poisson’s equation. We further address the dual relative degree issue that typically causes difficulty in vehicle tracking. Experimental trials demonstrate the overall performance improvement of our approach over existing formulations.",
-          "subjects": []
-        },
-        {
-          "title": "Safety Under State Uncertainty: Robustifying Control Barrier Functions",
-          "authors": [
-            "Rahal Nanayakkara",
-            "A. Ames",
-            "Paulo Tabuada"
-          ],
-          "year": 2025,
-          "date": "2025-08-24",
-          "citations": 0,
-          "arxiv_id": "2508.17226",
-          "paper_id": "1ff04e5d95145708300ce614f53759d016e83ec1",
-          "url": "https://arxiv.org/abs/2508.17226",
-          "abstract": "Safety-critical control is a crucial aspect of modern systems, and Control Barrier Functions (CBFs) have gained popularity as the framework of choice for ensuring safety. However, implementing a CBF requires exact knowledge of the true state, a requirement that is often violated in real-world applications where only noisy or estimated state information is available. This paper introduces the notion of Robust Control Barrier Functions (R-CBF) for ensuring safety under such state uncertainty. Crucially, this framework does not require knowledge of the magnitude of uncertainty for the synthesis of a robust safe controller. We formally characterize the class of robustifying terms that ensure robust closed-loop safety and show how a robustly safe controller can be constructed. We demonstrate the effectiveness of this approach through simulations and compare it to existing methods, highlighting the additional robustness and convergence guarantees it provides.",
-          "subjects": []
         }
       ],
-      [
-        {
-          "title": "Chronically Online: Nonlinear estimation with online error bounds",
-          "authors": [
-            "João Pedro Silvestre",
-            "Jonathan Bunton",
-            "Paulo Tabuada"
-          ],
-          "year": 2026,
-          "date": "2026-11-01",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "5e40dfe2a4d465fb7dd1089d79a84e82f33d87aa",
-          "url": "https://www.semanticscholar.org/paper/5e40dfe2a4d465fb7dd1089d79a84e82f33d87aa",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Deep Learning From a Control Vantage Point: Feedforward, Residual, Transformers, Large Language Models, And Selective State-Space Models",
-          "authors": [
-            "Álvaro Rodríguez Abella",
-            "J. Silvestre",
-            "B. Gharesifard",
-            "Paulo Tabuada"
-          ],
-          "year": 2026,
-          "date": "2026-10-01",
-          "citations": 0,
-          "arxiv_id": "2610.14385",
-          "paper_id": "e400e136638bed6116a591109cf9dc233f111335",
-          "url": "https://arxiv.org/abs/2610.14385",
-          "abstract": "This article provides a gentle introduction to recent advances in deep learning from a control theory perspective. Building upon old and new connections between deep learning and control, it discusses how control theory has recently been used to better understand and design deep neural networks. The focus is on important results as well as nascent research directions.",
-          "subjects": []
-        },
-        {
-          "title": "The Attention Within: Consensus Dynamics in Selective State Space Models",
-          "authors": [
-            "João Pedro Silvestre",
-            "Álvaro Rodríguez Abella",
-            "Paulo Tabuada"
-          ],
-          "year": 2026,
-          "date": "2026-09-16",
-          "citations": 0,
-          "arxiv_id": "2609.17997",
-          "paper_id": "65e818dc42672f7364372aa763a6bdb417ed7618",
-          "url": "https://arxiv.org/abs/2609.17997",
-          "abstract": "Selective state space models (SSMs) have recently emerged as a compelling alternative to transformers, combining competitive performance with substantially improved inference efficiency. At each SSM layer, a sequence of hidden states are propagated by a recurrence, mixing information of different tokens. Despite using a different mechanism, this mixing plays a role analogous to attention in transformers. In fact, recent works have shown that the two architectures may be closer than they first appear, as this recurrence admits a formulation akin to linear attention. In transformers, attention is known to drive the tokens to cluster, i.e., to reach consensus, collapsing in the limit to a single direction. Thus, we ask: does the recurrence at the core of SSMs drive the tokens to consensus, as attention does in transformers? To answer this question, we take a dynamical systems perspective on SSMs, modeling the evolution of tokens across layers as an ordinary differential equation. By exploiting input-to-state stability arguments, we establish local exponential stability of the consensus equilibria and characterize their domain of attraction for time-varying weight matrices, a setting not addressed by previous results. We thereby show that the resemblance between SSMs and transformers does run deeper: the recurrence at the core of SSMs aggregates tokens just as attention does. Numerical experiments on a pretrained Mamba-2 model point to the output gate as the component that regulates the extent of this consensus, preventing the tokens from reaching it in full.",
-          "subjects": []
-        },
-        {
-          "title": "Preventing Model Collapse: A Fisher-Rao Perspective on the Dynamics of Training with Synthetic Data",
-          "authors": [
-            "Matteo Marchi",
-            "João Pedro Silvestre",
-            "Bahman Gharesifard",
-            "Paulo Tabuada"
-          ],
-          "year": 2026,
-          "date": "2026-09-16",
-          "citations": 0,
-          "arxiv_id": "2609.18878",
-          "paper_id": "cbeb8e6d5814e69df372e14271b04ff8f0b81d33",
-          "url": "https://arxiv.org/abs/2609.18878",
-          "abstract": "Large Language Models (LLMs) are now routinely trained using synthetic data, since high-quality human data has been exhausted by the ever increasing needs of larger and larger models. However, recursive training on synthetic data frequently induces model collapse, a degenerative feedback loop where models progressively forget the true underlying data distribution. Training on a mixture of synthetic and fresh human data is a logical countermeasure and can prevent model collapse. However, it is an open question as to what is the exact minimum required ratio of human-to-synthetic data to maintain training stability. In this paper, we establish rigorous theoretical guarantees on the minimum rate of human data required to prevent model collapse. Although previous work established a formal lower bound for this ratio, such bound can be vacuous for very high dimensions, as the analysis relies on the usual Euclidean metric in R^n and is not adapted to the space of categorical probability distributions. Instead, in this paper we explicitly leverage the information-geometric structure of the probability simplex by analyzing the dynamics of the process under the Fisher-Rao metric. We derive quantitative contraction and invariance bounds that are stable and do not become trivial as the dimensions increase. Thus, we show that the effective required data ratio to prevent model collapse is different than previously implied.",
-          "subjects": []
-        },
-        {
-          "title": "PESTO: Formally Correct Registration of LiDAR Point Clouds with Limited Overlap",
-          "authors": [
-            "Valen Yamamoto",
-            "Matteo Marchi",
-            "Paulo Tabuada"
-          ],
-          "year": 2026,
-          "date": "2026-09-16",
-          "citations": 0,
-          "arxiv_id": "2609.18082",
-          "paper_id": "97a160d36a6b4e1f73f9786079a186eddcd3d57c",
-          "url": "https://arxiv.org/abs/2609.18082",
-          "abstract": "In this paper we tackle the problem of aligning LiDAR point clouds also known as the point cloud registration problem. We propose a new algorithm, PESTO, that exploits tetrahedra as\"universal features\"for LiDAR data, i.e., features that are agnostic to the environment where the LiDAR sensors are deployed. We show empirically that PESTO is competitive with existing solutions for aligning LiDAR point clouds, especially in environments with occlusions. Moreover, we establish PESTO's formal correctness by proving worst-case bounds on the alignment error.",
-          "subjects": []
-        },
-        {
-          "title": "Predicting Viral Evolution from a Single Early Measurement Using the Target Cell Limited Model",
-          "authors": [
-            "Rahal Nanayakkara",
-            "Paulo Tabuada"
-          ],
-          "year": 2026,
-          "date": "2026-09-15",
-          "citations": 0,
-          "arxiv_id": "2609.17862",
-          "paper_id": "a666fe7c9652f872a016a40b3bcbdb6b7674a4fc",
-          "url": "https://arxiv.org/abs/2609.17862",
-          "abstract": "Recent advances in diagnostic techniques have enabled the accurate quantification of early-stage viral loads. A key problem of interest is translating these measurements into predictive clinical insights, such as forecasting a patient's onset of infectiousness and peak infection severity. In this work, we address this problem using the Target Cell Limited (TCL) model. Because the host's internal biological states are practically unobservable, predicting the viral trajectory from a single noisy viral load measurement is highly nontrivial. To overcome this, we introduce a novel coordinate transformation that converts the nonlinear viral dynamics into a monotone system. By leveraging monotone systems theory and taking into account invariant subspaces of the transformed system, we derive explicit analytical formulae that establish a strict upper bound on the peak viral load and a guaranteed lower bound on the time to infectiousness using a single early viral observation.",
-          "subjects": []
-        },
-        {
-          "title": "Event-Triggered Newton Extremum Seeking for Multivariable Optimization",
-          "authors": [
-            "V. H. P. Rodrigues",
-            "Tiago Roux Oliveira",
-            "M. Krstic",
-            "Paulo Tabuada"
-          ],
-          "year": 2026,
-          "date": "2026-01-20",
-          "citations": 0,
-          "arxiv_id": "2601.14416",
-          "paper_id": "dad7ef0717a3259d4172c5a69217061c0aa7f7f7",
-          "url": "https://arxiv.org/abs/2601.14416",
-          "abstract": "This paper presents a static event-triggered control strategy for multivariable Newton-based extremum seeking. The proposed method integrates event-triggered actuation into the Newton-based optimization framework to reduce control updates while maintaining rapid convergence to the extremum. Unlike traditional gradient-based extremum seeking, where the convergence rate depends on the unknown Hessian of the cost function, the proposed approach employs a dynamic estimator of the Hessian inverse, formulated as a Riccati equation, enabling user-assignable convergence rates. The event-triggering mechanism is designed to minimize unnecessary actuation updates while preserving stability and performance. Using averaging theory, we establish local stability results and exponential convergence to a neighborhood of the unknown extremum point. Additionally, numerical simulations illustrate the benefits of the proposed approach over gradient-based and continuously actuated Newton-based extremum seeking, showing improved convergence rates and reduced control update frequency, leading to more efficient implementation in real-time optimization scenarios.",
-          "subjects": []
-        },
-        {
-          "title": "Boiling Frogs: Generative Models, Synthetic Data, and the Opinions of their Users",
-          "authors": [
-            "Matteo Marchi",
-            "João Pedro Silvestre",
-            "S. Soatto",
-            "Pratik Chaudhari",
-            "Paulo Tabuada"
-          ],
-          "year": 2025,
-          "date": "2025-12-09",
-          "citations": 2,
-          "arxiv_id": null,
-          "paper_id": "a0fca00fc2a4099f733abaa0b4fd146a487d9394",
-          "url": "https://www.semanticscholar.org/paper/a0fca00fc2a4099f733abaa0b4fd146a487d9394",
-          "abstract": "Recent advancements in generative models have made their output often indistinguishable from human generated data. As a result, training large language models (LLMs) exclusively on human generated data is becoming infeasible; not only due to the difficulty of determining the data provenance but also due to the cost of curating the large amounts of data required to meet the demands of ever-larger models. Although several works have empirically demonstrated the dangers of training models on AI-generated data, these studies often overlook a broader phenomenon: LLMs are not merely passive products of internet data but active agents that shape its contents.In this paper we study the interaction between LLMs and humans when the latter are influenced by LLM-generated data or have immutable opinions. We prove that if a sufficient proportion of content is produced by stubborn humans, the limit set of the opinion dynamics inflates, preventing total model collapse. However, we note that such outcome can also be interpreted as stubborn humans driving the opinion dynamics thereby shaping and controlling online discourse.",
-          "subjects": []
-        },
-        {
-          "title": "Preventing Model Collapse when Training LLMs with Synthetic Data",
-          "authors": [
-            "Bahman Gharesifard",
-            "Paulo Tabuada"
-          ],
-          "year": 2025,
-          "date": "2025-12-09",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "4058e948c1a787739eff1ce3cf821ab364bca3d8",
-          "url": "https://www.semanticscholar.org/paper/4058e948c1a787739eff1ce3cf821ab364bca3d8",
-          "abstract": "The use of synthetic data in the training of generative models is a common approach to address the lack of large amounts of high quality training data. It has been reported in the literature that using synthetic data can lead to model degeneration, i.e., the model stops producing useful outputs. In this paper we propose a very simple strategy to combine synthetic data and human-generated data so as to prevent model degeneration. At the technical level we show that the evolution of a generative model, caused by re-training, can be described by a differential equation and provide conditions on the ratio of synthetic and human-generated data to ensure the existence of an asymptotically stable equilibrium.",
-          "subjects": []
-        },
-        {
-          "title": "Time-varying Distributed Optimization with Derivative Estimation",
-          "authors": [
-            "João Pedro Silvestre",
-            "Matteo Marchi",
-            "Paulo Tabuada"
-          ],
-          "year": 2025,
-          "date": "2025-12-09",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "2e13df008990fbcc536e4c8dac17a1f31e575f67",
-          "url": "https://www.semanticscholar.org/paper/2e13df008990fbcc536e4c8dac17a1f31e575f67",
-          "abstract": "Optimization algorithms for time-varying cost functions extend classical methods, which cannot track dynamic minima. However, they typically assume access to the partial derivative of the cost function with respect to time. This is an assumption not satisfied in many situations where, although the time-varying parameters can be measured, either their time-derivatives or their model are unknown.Distributed optimization algorithms for time-varying costs typically inherit these limitations and introduce additional challenges, such as requiring each node to measure the time-varying parameters its local cost depends on. This work addresses these issues by first developing a centralized time-varying optimization algorithm that ensures convergence to a bounded neighborhood of the optimal trajectory. We then extend it to a distributed framework, relaxing the aforementioned measurement requirements. The effectiveness of our approach is validated through numerical examples of varying complexity.",
-          "subjects": []
-        },
-        {
-          "title": "Event-Triggered Newton-Based Extremum Seeking Control",
-          "authors": [
-            "V. H. P. Rodrigues",
-            "Tiago Roux Oliveira",
-            "M. Krstic",
-            "Paulo Tabuada"
-          ],
-          "year": 2025,
-          "date": "2025-02-02",
-          "citations": 0,
-          "arxiv_id": "2502.00930",
-          "paper_id": "5821ade28e4580de8a22e3744539169d8a12f14e",
-          "url": "https://arxiv.org/abs/2502.00930",
-          "abstract": "This paper proposes the incorporation of static event-triggered control in the actuation path of Newton-based extremum seeking and its comparison with the earlier gradient version. As in the continuous methods, the convergence rate of the gradient approach depends on the unknown Hessian of the nonlinear map to be optimized, whereas the proposed event-triggered Newton-based extremum seeking eliminates this dependence, becoming user-assignable. This is achieved by means of a dynamic estimator for the Hessian's inverse, implemented as a Riccati equation filter. Lyapunov stability and averaging theory for discontinuous systems are applied to analyze the closed-loop system. Local exponential practical stability is guaranteed to a small neighborhood of the extremum point of scalar and static maps. Numerical simulations illustrate the advantages of the proposed approach over the previous gradient method, including improved convergence speed, followed by a reduction in the amplitude and updating frequency of the control signals.",
-          "subjects": []
-        },
-        {
-          "title": "Consensus Is All You Get: The Role of Attention in Transformers",
-          "authors": [
-            "Álvaro Rodríguez Abella",
-            "João Pedro Silvestre",
-            "Paulo Tabuada"
-          ],
-          "year": 2025,
-          "date": "2025",
-          "citations": 12,
-          "arxiv_id": null,
-          "paper_id": "54ff9c8e9b3d78d5f054b64086770c184d831504",
-          "url": "https://www.semanticscholar.org/paper/54ff9c8e9b3d78d5f054b64086770c184d831504",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Observability of Latent States in Generative AI Models",
-          "authors": [
-            "T. Liu",
-            "S. Soatto",
-            "Matteo Marchi",
-            "Pratik Chaudhari",
-            "Paulo Tabuada"
-          ],
-          "year": 2025,
-          "date": "2025",
-          "citations": 2,
-          "arxiv_id": null,
-          "paper_id": "27f1a67290e3a4603d813a71c7d139de277bcb30",
-          "url": "https://www.semanticscholar.org/paper/27f1a67290e3a4603d813a71c7d139de277bcb30",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Static Event-Triggered Newton-Based Extremum Seeking",
-          "authors": [
-            "Victor Hugo Pereira Rodrigues",
-            "Tiago Roux Oliveira",
-            "Miroslav Krstic",
-            "Paulo Tabuada"
-          ],
-          "year": 2025,
-          "date": "2025",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "cf02d0545610977f7b59024f3a519db190e3d9a3",
-          "url": "https://www.semanticscholar.org/paper/cf02d0545610977f7b59024f3a519db190e3d9a3",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Nonlinear Observers with Tighter Online Error Bounds",
-          "authors": [
-            "João Pedro Silvestre",
-            "Rahal Nanayakkara",
-            "Paulo Tabuada"
-          ],
-          "year": 2024,
-          "date": "2024-12-16",
-          "citations": 4,
-          "arxiv_id": null,
-          "paper_id": "c79f23b45e40fa49c8e2a08ffd6464896f542640",
-          "url": "https://www.semanticscholar.org/paper/c79f23b45e40fa49c8e2a08ffd6464896f542640",
-          "abstract": "Estimation algorithms and nonlinear observers are widespread tools used in a variety of real-world applications, from satellite control to epidemiological studies. Their primary purpose is to provide an estimate of the state computed from available measurements and a model of the dynamics. When state estimates are used to enforce safety properties, it is essential to understand and characterize how accurate these estimates are so that safety is still guaranteed. While several observer design techniques provide bounds for the estimation error, they are either computationally expensive or too conservative and thus difficult to use in practice. Our work tackles these issues by providing error bounds for observers based on Savitzky-Golay filtering which are applicable to nonlinear systems satisfying a suitable observability assumption. Moreover, the error bounds are computed online based on measured data are thus tighter than offline bounds based on worst case assumptions. We generalize prior theoretical results by some of the authors from polynomial approximations to other functions and use this added flexibility to obtain tighter bounds. Finally, we illustrate the results using multiple examples, including an application to in-host models used in epidemiology.",
-          "subjects": []
-        },
-        {
-          "title": "The Asymptotic Behavior of Attention in Transformers",
-          "authors": [
-            "Álvaro Rodríguez Abella",
-            "João Pedro Silvestre",
-            "Paulo Tabuada"
-          ],
-          "year": 2024,
-          "date": "2024-12-03",
-          "citations": 0,
-          "arxiv_id": "2412.02682",
-          "paper_id": "29342327112d48d017ee7f4d7cc59c73508b8441",
-          "url": "https://arxiv.org/abs/2412.02682",
-          "abstract": "The transformer architecture has become the foundation of modern Large Language Models (LLMs), yet its theoretical properties are still not well understood. As with classic neural networks, a common approach to improve these models is to increase their size and depth. However, such strategies may be suboptimal, as several works have shown that adding more layers yields increasingly diminishing returns. More importantly, prior studies have shown that increasing depth may lead to model collapse, i.e., all the tokens converge to a single cluster, undermining the ability of LLMs to generate diverse outputs. Building on differential equation models for the transformer dynamics, we prove that all the tokens in a transformer asymptotically converge to a cluster as depth increases. At the technical level we leverage tools from control theory, including consensus dynamics on manifolds and input-to-state stability (ISS). We then extend our analysis to autoregressive models, exploiting their structure to further generalize the theoretical guarantees.",
-          "subjects": []
-        },
-        {
-          "title": "Confidently Incorrect: Nonlinear Observers with Online Error Bounds",
-          "authors": [
-            "Jonathan Bunton",
-            "Paulo Tabuada"
-          ],
-          "year": 2024,
-          "date": "2024-07-10",
-          "citations": 3,
-          "arxiv_id": null,
-          "paper_id": "a7d7fabbe290db459f2d4015820ed451c1e53e66",
-          "url": "https://www.semanticscholar.org/paper/a7d7fabbe290db459f2d4015820ed451c1e53e66",
-          "abstract": "Feedback control typically relies on an estimate of the system state provided by an estimation scheme. These estimates, however, are always affected by errors that have non-negligible impacts on control performance. Various stabilizing and safety-critical control frameworks address this issue, but all require some characterization of the current estimation error to determine when to apply more or less conservative control inputs. Current methods of bounding these errors either take a very coarse worst-case bound or employ computationally expensive time-varying set-valued methods. This paper fills the missing gap in these works, presenting new deterministic worst-case error bounds for a state estimation scheme for generic nonlinear systems. Crucially, these error bounds can be efficiently computed in real-time and shrink or grow depending on the current system behavior and the current measurement quality. These new, lightweight, “online” error bounds can directly interface with the aforementioned measurement-robust control frameworks, resulting in less conservative control actions while retaining safety and stability guarantees.",
-          "subjects": []
-        },
-        {
-          "title": "Meanings and Feelings of Large Language Models: Observability of Latent States in Generative AI",
-          "authors": [
-            "T. Liu",
-            "S. Soatto",
-            "Matteo Marchi",
-            "Pratik Chaudhari",
-            "Paulo Tabuada"
-          ],
-          "year": 2024,
-          "date": "2024-05-22",
-          "citations": 0,
-          "arxiv_id": "2405.14061",
-          "paper_id": "ab98284565a7c36768852e6f5191dc627c89da44",
-          "url": "https://arxiv.org/abs/2405.14061",
-          "abstract": "We tackle the question of whether Large Language Models (LLMs), viewed as dynamical systems with state evolving in the embedding space of symbolic tokens, are observable. That is, whether there exist multiple 'mental' state trajectories that yield the same sequence of generated tokens, or sequences that belong to the same Nerode equivalence class ('meaning'). If not observable, mental state trajectories ('experiences') evoked by an input ('perception') or by feedback from the model's own state ('thoughts') could remain self-contained and evolve unbeknown to the user while being potentially accessible to the model provider. Such\"self-contained experiences evoked by perception or thought\"are akin to what the American Psychological Association (APA) defines as 'feelings'. Beyond the lexical curiosity, we show that current LLMs implemented by autoregressive Transformers cannot have 'feelings' according to this definition: The set of state trajectories indistinguishable from the tokenized output is a singleton. But if there are 'system prompts' not visible to the user, then the set of indistinguishable trajectories becomes non-trivial, and there can be multiple state trajectories that yield the same verbalized output. We prove these claims analytically, and show examples of modifications to standard LLMs that engender such 'feelings.' Our analysis sheds light on possible designs that would enable a model to perform non-trivial computation that is not visible to the user, as well as on controls that the provider of services using the model could take to prevent unintended behavior.",
-          "subjects": []
-        },
-        {
-          "title": "Heat Death of Generative Models in Closed-Loop Learning",
-          "authors": [
-            "Matteo Marchi",
-            "S. Soatto",
-            "Pratik Chaudhari",
-            "Paulo Tabuada"
-          ],
-          "year": 2024,
-          "date": "2024-04-02",
-          "citations": 0,
-          "arxiv_id": "2404.02325",
-          "paper_id": "78e96f372a96b70c5516a270091e6dc24731cc09",
-          "url": "https://arxiv.org/abs/2404.02325",
-          "abstract": "Improvement and adoption of generative machine learning models is rapidly accelerating, as exemplified by the popularity of LLMs (Large Language Models) for text, and diffusion models for image generation. As generative models become widespread, data they generate is incorporated into shared content through the public web. This opens the question of what happens when data generated by a model is fed back to the model in subsequent training campaigns. This is a question about the stability of the training process, whether the distribution of publicly accessible content, which we refer to as “knowledge”, remains stable or collapses. Small scale empirical experiments reported in the literature show that this closed-loop training process is prone to degenerating. Models may start producing gibberish data, or sample from only a small subset of the desired data distribution (a phenomenon referred to as mode collapse). So far there has been only limited theoretical understanding of this process, in part due to the complexity of the deep networks underlying these generative models. The aim of this paper is to provide insights into this process (that we refer to as “generative closed-loop learning”) by studying the learning dynamics of generative models that are fed back their own produced content in addition to their original training dataset. The sampling of many of these models can be controlled via a “temperature” parameter. Using dynamical systems tools, we show that, unless a sufficient amount of external data is introduced at each iteration, any non-trivial temperature leads the model to asymptotically degenerate. In fact, either the generative distribution collapses to a small set of outputs, or becomes uniform over a large set of outputs.",
-          "subjects": []
-        },
-        {
-          "title": "A Framework for Time-Varying Optimization via Derivative Estimation",
-          "authors": [
-            "Matteo Marchi",
-            "Jonathan Bunton",
-            "João Pedro Silvestre",
-            "Paulo Tabuada"
-          ],
-          "year": 2024,
-          "date": "2024-03-28",
-          "citations": 0,
-          "arxiv_id": "2403.19088",
-          "paper_id": "405346cf71bd6e2fa664795b96eaeecf1c90058d",
-          "url": "https://arxiv.org/abs/2403.19088",
-          "abstract": "Optimization algorithms have a rich and funda-mental relationship with ordinary differential equations given by its continuous-time limit. When the cost function varies with time - typically in response to a dynamically changing environment - online optimization becomes a continuous-time trajectory tracking problem. To accommodate these time vari-ations, one typically requires some inherent knowledge about their nature such as a time derivative. In this paper, we propose a novel construction and analysis of a continuous-time derivative estimation scheme based on “dirty-derivatives”, and show how it naturally interfaces with continuous- time optimization algorithms using the language of ISS (Input-to-State Stability). More generally, we show how a simple Lyapunov redesign technique leads to provable sub optimality guarantees when composing this estimator with any well-behaved optimization algorithm for time-varying costs.",
-          "subjects": []
-        }
-      ]
+      []
     ],
     [
       "Saber Jafarpour",
@@ -3198,7 +2794,7 @@
             "Nader Motee"
           ],
           "date": "2026-09-16",
-          "citations": 0,
+          "citations": 1,
           "arxiv_id": "2609.19330v1",
           "url": "https://arxiv.org/abs/2609.19330v1",
           "abstract": "Autonomous robots operating in partially observed environments must navigate safely while acquiring observations that improve future planning. Existing safety formulations generally reason primarily about geometry. Consequently, geometrically similar scene elements may induce comparable control responses despite having different semantic consequences. We present a semantic risk aware safe-active perception framework for navigation in attributed 3D Gaussian maps. Semantic attributes modulate an Average Value-at-Risk collision clearance model through class dependent risk weights, allowing safety-critical Gaussian primitives to receive greater influence in the composite barrier. The resulting weighted clearances are aggregated into a control barrier function, while a trajectory-relevant active perception barrier promotes observations that reduce geometric map uncertainty along the robot's anticipated motion. Both objectives are integrated in a unified CBF-QP that enforces semantic risk-aware collision avoidance as a hard constraint while relaxing information acquisition when it conflicts with safety or task progress. Experiments demonstrate efficient safety constraint, improved navigation through active perception, semantic dependent trajectory adaptation, and real-robot execution under Ackermann dynamics.",
@@ -3351,7 +2947,7 @@
             "Zewen Yang"
           ],
           "date": "2026-03-05",
-          "citations": 6,
+          "citations": 0,
           "arxiv_id": "2603.05754v3",
           "url": "https://arxiv.org/abs/2603.05754v3",
           "abstract": "Current Vision-Language-Action (VLA) models rely primarily on RGB perception, preventing them from capturing modalities such as thermal signals that are imperceptible to conventional visual sensors. Moreover, end-to-end generative policies lack explicit safety constraints, making them fragile when encountering obstacles and novel scenarios outside the training distribution. To address these limitations, we propose Safe-Night VLA, a multimodal manipulation framework that enables robots to see the unseen while enforcing rigorous safety constraints for thermal-aware manipulation in unstructured environments. Specifically, Safe-Night VLA integrates long-wave infrared thermal perception into a pre-trained vision-language backbone, enabling semantic reasoning grounded in thermodynamic properties. To ensure safe execution under out-of-distribution conditions, we incorporate a safety filter via control barrier functions, which provide deterministic workspace constraint enforcement during policy execution. We validate our framework through real-world experiments on a Franka manipulator, introducing a novel evaluation paradigm featuring temperature-conditioned manipulation, subsurface target localization, and reflection disambiguation, while maintaining constrained execution at inference time. Results demonstrate that Safe-Night VLA outperforms RGB-only baselines and provide empirical evidence that foundation models can effectively leverage non-visible physical modalities for robust manipulation.",
