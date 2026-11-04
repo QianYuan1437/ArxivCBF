@@ -1041,7 +1041,7 @@
         "Aaron D. Ames"
       ],
       "date": "2026-10-07",
-      "citations": 0,
+      "citations": 1,
       "arxiv_id": "2610.10987v1",
       "url": "https://arxiv.org/abs/2610.10987v1",
       "abstract": "Underactuated systems with nontrivial geometry are abundant in practical robotic problems. However, little is known about constructive safety-critical control design in the presence of underactuation. In this work, we provide a constructive framework for synthesizing safe control architectures and control barrier functions for a class of quadrotor-like underactuated systems. By studying the geometry of their underactuation, we characterize when these systems have natural layered architectures useful for safety-critical control design. Using these architectures, we devise a constructive, hierarchical CBF synthesis procedure and provide conditions under which it succeeds.",
@@ -1213,7 +1213,7 @@
             "Aaron D. Ames"
           ],
           "date": "2026-10-07",
-          "citations": 0,
+          "citations": 1,
           "arxiv_id": "2610.10987v1",
           "url": "https://arxiv.org/abs/2610.10987v1",
           "abstract": "Underactuated systems with nontrivial geometry are abundant in practical robotic problems. However, little is known about constructive safety-critical control design in the presence of underactuation. In this work, we provide a constructive framework for synthesizing safe control architectures and control barrier functions for a class of quadrotor-like underactuated systems. By studying the geometry of their underactuation, we characterize when these systems have natural layered architectures useful for safety-critical control design. Using these architectures, we devise a constructive, hierarchical CBF synthesis procedure and provide conditions under which it succeeds.",
@@ -1344,7 +1344,7 @@
             "Aaron D. Ames"
           ],
           "date": "2026-10-07",
-          "citations": 0,
+          "citations": 1,
           "arxiv_id": "2610.10987v1",
           "url": "https://arxiv.org/abs/2610.10987v1",
           "abstract": "Underactuated systems with nontrivial geometry are abundant in practical robotic problems. However, little is known about constructive safety-critical control design in the presence of underactuation. In this work, we provide a constructive framework for synthesizing safe control architectures and control barrier functions for a class of quadrotor-like underactuated systems. By studying the geometry of their underactuation, we characterize when these systems have natural layered architectures useful for safety-critical control design. Using these architectures, we devise a constructive, hierarchical CBF synthesis procedure and provide conditions under which it succeeds.",
@@ -1778,7 +1778,431 @@
           ]
         }
       ],
-      []
+      [
+        {
+          "title": "Comment on “Increased Long‐Term Risks of Gastroesophageal Reflux Disease Phenotypes: A Global Propensity‐Matched Cohort Study”",
+          "authors": [
+            "Prateek Pandey",
+            "Amit Kumar Mishra",
+            "Shubham Singh"
+          ],
+          "year": 2026,
+          "date": "2026-08-01",
+          "citations": 3,
+          "arxiv_id": null,
+          "paper_id": "54a2b974a2252ff5ea03c3beb8e675fa74254c63",
+          "url": "https://www.semanticscholar.org/paper/54a2b974a2252ff5ea03c3beb8e675fa74254c63",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Microplastics in agriculture: Hidden soil contaminants, sustainability risks and policy pathways",
+          "authors": [
+            "Munny Chinyo",
+            "K. Bisht",
+            "Meniari Taku",
+            "T. M. Nandipamu",
+            "Akash",
+            "Shubham Singh",
+            "Riya Mehrotra",
+            "S. Singh",
+            "Hritik Srivastava",
+            "A. Mazeed",
+            "Priyanka Tewary",
+            "Sandeep Kumar"
+          ],
+          "year": 2026,
+          "date": "2026-07-01",
+          "citations": 3,
+          "arxiv_id": null,
+          "paper_id": "c8366a40c5623cefadbd97e3abd5b026ebe35949",
+          "url": "https://www.semanticscholar.org/paper/c8366a40c5623cefadbd97e3abd5b026ebe35949",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Antibiotics stimulate protein transfer to persister cells.",
+          "authors": [
+            "Alice X. Wen",
+            "Julia Bos",
+            "D. Panda",
+            "Katelin M Hagstrom",
+            "Shubham Singh",
+            "S. Mageswaran",
+            "Xiaoli Wang",
+            "Bo Hu",
+            "Kobie T Welch",
+            "M. Cooke",
+            "J. Halliday",
+            "Laura Deus Ramirez",
+            "Antoinette E Martinez",
+            "Yi-Wei Chang",
+            "D. Weitz",
+            "Christophe Herman"
+          ],
+          "year": 2026,
+          "date": "2026-06-25",
+          "citations": 4,
+          "arxiv_id": null,
+          "paper_id": "5342367b6defcee44b769ef73daedc38017a96f9",
+          "url": "https://www.semanticscholar.org/paper/5342367b6defcee44b769ef73daedc38017a96f9",
+          "abstract": "The exchange of biological matter between bacterial cells drives adaptation and evolution. However, whether bacteria can exchange functional proteins remains unclear. In this work, we found that antibiotic treatment can induce vesicle-mediated horizontal protein transfer within and between bacterial species. We developed a genetic system in Escherichia coli to track transfer events and performed single-cell transcriptomic profiling on an isogenic population of bacteria. Antibiotics stimulated the differentiation of this isogenic population into distinct cell states: donor cells that activated a membrane stress response to release protein-containing vesicles and recipient cells that suppressed this response to acquire protein from their neighbors. Protein uptake enhanced the antibiotic persistence of recipient cells, revealing that vesicle exchange promotes bacterial survival during antibiotic treatment.",
+          "subjects": []
+        },
+        {
+          "title": "Optimizing cancer classification using Krill Herd optimization with advanced feature selection techniques",
+          "authors": [
+            "Shubham Singh",
+            "Shruti Mishra",
+            "S. Satapathy",
+            "Sung-Bae Cho",
+            "S. Mohanty",
+            "M. M. Venkata Chalapathi"
+          ],
+          "year": 2026,
+          "date": "2026-06-01",
+          "citations": 3,
+          "arxiv_id": null,
+          "paper_id": "e59edf7a65f4ab021a42631e8fbbd7b1b47d85fa",
+          "url": "https://www.semanticscholar.org/paper/e59edf7a65f4ab021a42631e8fbbd7b1b47d85fa",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "When AI Benchmarks Plateau: A Systematic Study of Benchmark Saturation",
+          "authors": [
+            "Mubashara Akhtar",
+            "Anka Reuel",
+            "Prajna Soni",
+            "Sanchit Ahuja",
+            "Pawan Sasanka Ammanamanchi",
+            "Ruchit Rawal",
+            "Vilém Zouhar",
+            "Srishti Yadav",
+            "Chenxi Whitehouse",
+            "Dayeon Ki",
+            "Jennifer Mickel",
+            "Leshem Choshen",
+            "Marek Suppa",
+            "Jan Batzner",
+            "Jenny Chim",
+            "Jeba Sania",
+            "Ya-Nan Long",
+            "Hossein A. Rahmani",
+            "Christina Q. Knight",
+            "Yiyang Nan",
+            "Jyoutir Raj",
+            "Yu Fan",
+            "Shubham Singh",
+            "Subramanyam Sahoo",
+            "Eliya Habba",
+            "Usman Gohar",
+            "S. Pawar",
+            "Robert Scholz",
+            "Arjun Subramonian",
+            "Jingwei Ni",
+            "M. Kochenderfer",
+            "O. Koyejo",
+            "Mrinmaya Sachan",
+            "Stella Biderman",
+            "Z. Talat",
+            "Avijit Ghosh",
+            "Irene Solaiman"
+          ],
+          "year": 2026,
+          "date": "2026-02-18",
+          "citations": 0,
+          "arxiv_id": "2602.16763",
+          "paper_id": "c947a3c4cc64f33b4c6d90a599590f8c65a87261",
+          "url": "https://arxiv.org/abs/2602.16763",
+          "abstract": "Artificial intelligence benchmarks are an important mechanism to measure model progress and guide deployment decisions. However, benchmarks quickly\"saturate\", making it difficult to differentiate models and diminishing their long-term value. In this study, we define benchmark saturation and analyze it across 60 language model benchmarks using 14 properties that relate to saturation. We find that nearly half of our benchmarks exhibit saturation, with rates increasing with age. Further, we find that resilience to saturation is impacted by expert-curation, not by public test data. Our results suggest that design choices can extend benchmark longevity and inform more durable evaluation approaches.",
+          "subjects": []
+        },
+        {
+          "title": "Innovative Lipid-Based Nanobiotechnology: Diagnostics and Medicine.",
+          "authors": [
+            "Sung Eun Seo",
+            "Kyung Ho Kim",
+            "Shubham Singh",
+            "Jia-Sin Chen",
+            "S. Iijima",
+            "Chi-An Cheng",
+            "Yong-Sang Ryu",
+            "H. Song",
+            "Wei-Peng Li",
+            "Oh Seok Kwon"
+          ],
+          "year": 2026,
+          "date": "2026-01-29",
+          "citations": 5,
+          "arxiv_id": null,
+          "paper_id": "895442cda38b6b3f448081b2225d6a6dcf27b6df",
+          "url": "https://www.semanticscholar.org/paper/895442cda38b6b3f448081b2225d6a6dcf27b6df",
+          "abstract": "The aim of this review article is to provide a summary of the state-of-the-art technology for the integration of lipid-based natural biomaterials, emphasizing mainly broad applications, especially in therapeutics and diagnostics. Herein, we focused mainly on the utilization of bioengineered lipid-based nanomaterials as medicine and diagnostic agents, which constitute the primary focus of the field of bioengineered lipid-based nanomaterials. Each property of diverse classes of lipid-based nanomaterials is determined by their chemical structure, functionality, and synthesis methodology, and they are versatile for use as drug-delivery nanocarriers, for targeting certain types of cancer cells and for controlled immune therapies. In addition, lipid-based biomaterials have been applied in various research fields with subsequent surface engineering with modulation moieties for the integration of functional nanomaterials (signaling pathway mediators, nucleic acid drugs, and active targeting proteins). The overall manuscript is organized in sections describing materials, fabrication processes, and applications based on innovative lipid-based nanobiotechnology.",
+          "subjects": []
+        },
+        {
+          "title": "Comment on \"Fennel essential oil and its nanoemulsion modulate macrophage-mediated inflammatory responses and promote pressure ulcer healing\".",
+          "authors": [
+            "D. Rajput",
+            "Mitul Bhoi",
+            "Shubham Singh"
+          ],
+          "year": 2026,
+          "date": "2026-01-23",
+          "citations": 4,
+          "arxiv_id": null,
+          "paper_id": "2b62fc526f24be4476d87ecd2ed14c81e133badc",
+          "url": "https://www.semanticscholar.org/paper/2b62fc526f24be4476d87ecd2ed14c81e133badc",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Propolis ameliorates thioacetamide induced hepatic fibrosis in rats: an in vivo and in silico approach",
+          "authors": [
+            "Shubham Singh",
+            "S. K. Nirala",
+            "Prashant Singh",
+            "Monika Bhadauria"
+          ],
+          "year": 2026,
+          "date": "2026-01-02",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "2d8ffe6ac68c1fc6dc6fb096c6893dea68b5b680",
+          "url": "https://www.semanticscholar.org/paper/2d8ffe6ac68c1fc6dc6fb096c6893dea68b5b680",
+          "abstract": "Abstract Propolis or bee glue is a resinous mixture with several biological properties, which is collected by honey bees from flowers and plants sap. The current study was carried out to ascertain whether propolis provides defence against thioacetamide induced hepatic fibrosis. Wistar rats were randomly assigned into six groups having six animals in every group. Thioacetamide (200 mg/kg) was administered orally three times per week, whereas propolis at three different doses (100, 150 and 200 mg/kg) was administered three times per week alternatively to thioacetamide for continuous eight weeks. Hematology, serology, tissue biochemistry, and histology were carried out to assess thioacetamide induced fibrosis and hepatic injury as well as recovery pattern due to propolis. Five major compounds present in propolis were subjected to molecular docking analysis. Propolis decreased serological activity of AST, ALT, ALP, γ-GT, cholesterol, HDL, TG, bilirubin, triglycerides and increased level of albumin, glucose, and LDL. Propolis protected tissues from oxidative stress induced by thioacetamide in terms of LPO. Hydroxyproline, a marker of liver fibrosis was restored by propolis treatment toward control. Level of SOD, catalase, GSH, GR, GPx, GST, G6PDH in liver were upshifted in propolis treated groups. Molecular docking analysis interpreted interaction of phytochemicals present in propolis in ameliorating effects and role in preventing liver fibrosis. In vivo and in silico analysis concluded that propolis has hepatoprotective activity by reducing thioacetamide induced liver fibrosis in rats.",
+          "subjects": []
+        },
+        {
+          "title": "Imitation learning for legged robot locomotion: a survey",
+          "authors": [
+            "Khojasteh Z. Mirza",
+            "Shubham Singh"
+          ],
+          "year": 2025,
+          "date": "2025-12-01",
+          "citations": 14,
+          "arxiv_id": null,
+          "paper_id": "6a55d77ad03c5da9d8d5db5eba8c171d0fc823cc",
+          "url": "https://www.semanticscholar.org/paper/6a55d77ad03c5da9d8d5db5eba8c171d0fc823cc",
+          "abstract": "Imitation learning (IL) has fundamentally transformed the field of legged robot locomotion, removing the dependence on hand-engineered reward functions. Since 2019, this area of research has progressed rapidly, from simple motion-capture replication to the generation of sophisticated policies using diffusion models. This survey offers a comprehensive analysis of 35 pivotal research works, using a structured six-dimensional framework to investigate advancements using quadrupedal and humanoid platforms. The review also pinpoints significant challenges related to deployment and outlines new research directions. A key finding from the survey indicates that behavior cloning is utilized in almost half of the analyzed studies. Moreover, data generated through model-predictive control (MPC) now represents the most frequently used training data source for advanced imitation learning systems.",
+          "subjects": []
+        },
+        {
+          "title": "Modeling nonlocal damage via fractional-order constitutive relations",
+          "authors": [
+            "Malapeta Hemasundara Rao",
+            "Shubham Singh",
+            "M. Ramji",
+            "Sai Sidhardh"
+          ],
+          "year": 2025,
+          "date": "2025-12-01",
+          "citations": 3,
+          "arxiv_id": null,
+          "paper_id": "7aef2325a39282049af48af2d494072df6222dc9",
+          "url": "https://www.semanticscholar.org/paper/7aef2325a39282049af48af2d494072df6222dc9",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Resilient microservices: an investigation into Istio effectiveness in Kubernetes",
+          "authors": [
+            "Shubham Singh",
+            "C. Muntean",
+            "Shaguna Gupta"
+          ],
+          "year": 2025,
+          "date": "2025-11-11",
+          "citations": 4,
+          "arxiv_id": null,
+          "paper_id": "0baa799e84f9ef699398693253d36ab6dd55585b",
+          "url": "https://www.semanticscholar.org/paper/0baa799e84f9ef699398693253d36ab6dd55585b",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Single Cell Transcriptomics of Traditional Chinese Medicine Bioactives: Mapping Immune, Neural and Hepatic Responses.",
+          "authors": [
+            "Shubham Singh",
+            "Sakshi Singh",
+            "Sayli Saw",
+            "Sanjesh G. Rathi",
+            "Bhawna Sharma"
+          ],
+          "year": 2025,
+          "date": "2025-11-10",
+          "citations": 6,
+          "arxiv_id": null,
+          "paper_id": "9bff059df44cfd1168f2a8f9dc5158137d9729c0",
+          "url": "https://www.semanticscholar.org/paper/9bff059df44cfd1168f2a8f9dc5158137d9729c0",
+          "abstract": "Traditional Chinese medicine (TCM) bioactives display wide pharmacological effects, yet bulk transcriptomic studies mask their cell-specific actions. This study applied single-cell RNA sequencing to delineate immune, neural and hepatic responses to chemically characterized TCM constituents. Murine splenic, hippocampal and hepatic tissues were dissociated into single-cell suspensions, processed on a 10× Genomics platform, sequenced at high depth and analyzed with Seurat for clustering, marker annotation, differential expression and pathway enrichment; ligand-receptor interactions were inferred by CellChat, with RT-qPCR and immunofluorescence validation. From over 42,000 high-quality cells, we resolved 15 immune, 12 neural and 10 hepatic subtypes. TCM exposure induced NF-κB modulators in macrophages, neurotrophic gene expression in astrocytes and xenobiotic-metabolism programs in hepatocytes, while pathway analysis highlighted coordinated immune-hepatic detoxification and neuroprotective signaling. Ligand-receptor mapping revealed strengthened IL-10-STAT3 and hepatocyte-Kupffer cross-talk. These findings demonstrate that single-cell transcriptomics exposes previously hidden, cell-type-specific pharmacodynamics of TCM bioactives, laying a mechanistic foundation for precision-oriented herbal pharmacology and rational drug development.",
+          "subjects": []
+        },
+        {
+          "title": "V2Se2O and Janus V2SeTeO: Monolayer altermagnets for the thermoelectric recovery of low-temperature waste heat",
+          "authors": [
+            "Shubham Singh",
+            "P. C. Rout",
+            "Mohammed Ghadiyali",
+            "U. Schwingenschlögl"
+          ],
+          "year": 2025,
+          "date": "2025-09-01",
+          "citations": 17,
+          "arxiv_id": null,
+          "paper_id": "a64da7d77ccb3e9721b006ec6d57f602c4c00a64",
+          "url": "https://www.semanticscholar.org/paper/a64da7d77ccb3e9721b006ec6d57f602c4c00a64",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Evaluation of XR device’s real-world tracking accuracy and depth perception from an industrial point of view",
+          "authors": [
+            "Shubham Singh",
+            "Yash Sharma",
+            "Amer Liaqat",
+            "Roy Kalawsky"
+          ],
+          "year": 2025,
+          "date": "2025-07-22",
+          "citations": 5,
+          "arxiv_id": null,
+          "paper_id": "7d099c7269b5e8e125590cc12e37d17d8cd7d56b",
+          "url": "https://www.semanticscholar.org/paper/7d099c7269b5e8e125590cc12e37d17d8cd7d56b",
+          "abstract": "The advancements in the field of XR devices and systems are interesting from an industrial point of view, as they present new opportunities for improving productivity and operations through—smart tooling, digitally enhanced assembly and maintenance, inspection, remote collaborations, etc. Typically, the XR headsets claim to provide a full 6-DoF tracking, while this may be good enough for consumer or entertainment applications; for an industrial application, we need to determine the exact errors and tolerances of the tracking for practical applications. In this paper, we present our methods and critical measurements from evaluating HTC Vive XR Elite and Magic Leap 2 for full 6-DoF tracking, depth perception accuracy, and drift accumulation over time. Through these tests, we measured a significant difference between individual XR devices’ tracking accuracy, depth perception, and drifts, which could range from moderate to severe impact for the on-job deployment of these devices. By systematically analyzing error margins and tracking fidelity, this study aims to provide new valuable insights into the strengths and limitations of tracking capabilities of these XR devices, and the methodology which can be adopted to evaluate others. Further, this study could also help design AR symbology and user experience for an industrial application.",
+          "subjects": []
+        },
+        {
+          "title": "Advances in authentication and security protocols for 5G networks: a comprehensive survey",
+          "authors": [
+            "S. Patel",
+            "S. Verma",
+            "B. K. Gupta",
+            "Shubham Singh",
+            "E. Naresh",
+            "P. Pareek"
+          ],
+          "year": 2025,
+          "date": "2025-07-01",
+          "citations": 10,
+          "arxiv_id": null,
+          "paper_id": "ac658c0c0f8e39ceeda2e1cc8db7e2b0ab031b8e",
+          "url": "https://www.semanticscholar.org/paper/ac658c0c0f8e39ceeda2e1cc8db7e2b0ab031b8e",
+          "abstract": "5G networks, the newest generation of wireless communication in an era of quick technical breakthroughs, promise unmatched speed, dependability, and connection. With this ground-breaking innovation, it is crucial to have strong authentication and security processes to preserve critical data and shield consumers from any dangers. We thoroughly analyze authentication and security mechanisms created expressly for 5G networks in this study. We examine this sophisticated networking paradigm’s numerous difficulties and weaknesses, emphasizing the requirement for rigorous security measures. We also look at encryption algorithms essential for preserving the availability, confidentiality, and integrity of data transferred across 5G networks. Additionally, we go through cutting-edge technologies and standards like network slicing, edge computing, and virtualization that solve the security issues unique to 5G networks. We examine how they could affect authentication and security processes, highlighting both the opportunities and difficulties they present.",
+          "subjects": []
+        },
+        {
+          "title": "A scalable, tunable, electrochemical dissolution method for anchoring single-atom catalysts on 2d sheets of molybdenum disulfide",
+          "authors": [
+            "S. Shetty",
+            "A. Bukhamsin",
+            "Mario Soto Martinez",
+            "M. Harfouche",
+            "Shubham Singh",
+            "Mohammed Ghadiyali",
+            "M. Hedhili",
+            "Saravanan Yuvaraja",
+            "U. Schwingenschlögl",
+            "K. Salama"
+          ],
+          "year": 2025,
+          "date": "2025-07-01",
+          "citations": 4,
+          "arxiv_id": null,
+          "paper_id": "a50917254caaabbac522f1474a2bc3a2e3fe87ae",
+          "url": "https://www.semanticscholar.org/paper/a50917254caaabbac522f1474a2bc3a2e3fe87ae",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Alignment Quality Index (AQI) : Beyond Refusals: AQI as an Intrinsic Alignment Diagnostic via Latent Geometry, Cluster Divergence, and Layer wise Pooled Representations",
+          "authors": [
+            "Abhilekh Borah",
+            "Chhavi Sharma",
+            "Danush Khanna",
+            "Utkarsh Bhatt",
+            "Gurpreet Singh",
+            "H. Abdullah",
+            "Raghav Kaushik Ravi",
+            "Vinija Jain",
+            "Jyoti Patel",
+            "Shubham Singh",
+            "Vasu Sharma",
+            "A. Vats",
+            "Rahul Raja",
+            "Aman Chadha",
+            "Amitava Das"
+          ],
+          "year": 2025,
+          "date": "2025-06-16",
+          "citations": 0,
+          "arxiv_id": "2506.13901",
+          "paper_id": "0b5ca1b10a6e6dde2a4a51c73aa0366bcc720e3b",
+          "url": "https://arxiv.org/abs/2506.13901",
+          "abstract": "Alignment is no longer a luxury, it is a necessity. As large language models (LLMs) enter high-stakes domains like education, healthcare, governance, and law, their behavior must reliably reflect human-aligned values and safety constraints. Yet current evaluations rely heavily on behavioral proxies such as refusal rates, G-Eval scores, and toxicity classifiers, all of which have critical blind spots. Aligned models are often vulnerable to jailbreaking, stochasticity of generation, and alignment faking. To address this issue, we introduce the Alignment Quality Index (AQI). This novel geometric and prompt-invariant metric empirically assesses LLM alignment by analyzing the separation of safe and unsafe activations in latent space. By combining measures such as the Davies-Bouldin Score (DBS), Dunn Index (DI), Xie-Beni Index (XBI), and Calinski-Harabasz Index (CHI) across various formulations, AQI captures clustering quality to detect hidden misalignments and jailbreak risks, even when outputs appear compliant. AQI also serves as an early warning signal for alignment faking, offering a robust, decoding invariant tool for behavior agnostic safety auditing. Additionally, we propose the LITMUS dataset to facilitate robust evaluation under these challenging conditions. Empirical tests on LITMUS across different models trained under DPO, GRPO, and RLHF conditions demonstrate AQI's correlation with external judges and ability to reveal vulnerabilities missed by refusal metrics. We make our implementation publicly available to foster future research in this area.",
+          "subjects": []
+        },
+        {
+          "title": "Towards Machine Unlearning for Paralinguistic Speech Processing",
+          "authors": [
+            "Orchid Chetia Phukan",
+            "Girish",
+            "Mohd Mujtaba Akhtar",
+            "Shubham Singh",
+            "S. Behera",
+            "Vandana Rajan",
+            "Muskaan Singh",
+            "Arun Balaji Buduru",
+            "Rajesh Sharma"
+          ],
+          "year": 2025,
+          "date": "2025-06-02",
+          "citations": 0,
+          "arxiv_id": "2506.02230",
+          "paper_id": "23bab5f8321f6deda0d9a0b0810ba79b4d66853c",
+          "url": "https://arxiv.org/abs/2506.02230",
+          "abstract": "In this work, we pioneer the study of Machine Unlearning (MU) for Paralinguistic Speech Processing (PSP). We focus on two key PSP tasks: Speech Emotion Recognition (SER) and Depression Detection (DD). To this end, we propose, SISA++, a novel extension to previous state-of-the-art (SOTA) MU method, SISA by merging models trained on different shards with weight-averaging. With such modifications, we show that SISA++ preserves performance more in comparison to SISA after unlearning in benchmark SER (CREMA-D) and DD (E-DAIC) datasets. Also, to guide future research for easier adoption of MU for PSP, we present ``cookbook recipes'' - actionable recommendations for selecting optimal feature representations and downstream architectures that can mitigate performance degradation after the unlearning process.",
+          "subjects": []
+        },
+        {
+          "title": "Role of remote sensing and geotechnical studies in assessing the landslide vulnerability in the Chamoli region of Uttarakhand, India",
+          "authors": [
+            "Shubham Singh",
+            "N. Nayak",
+            "A. Aggarwal",
+            "H. Verma"
+          ],
+          "year": 2025,
+          "date": "2025-06-01",
+          "citations": 5,
+          "arxiv_id": null,
+          "paper_id": "3ddacf894409be5b31fe9c2cefc039b79fa59037",
+          "url": "https://www.semanticscholar.org/paper/3ddacf894409be5b31fe9c2cefc039b79fa59037",
+          "abstract": "Landslides are the most common of all natural hazards. Climatic changes, increasing population, unplanned urbanisation and increasing connectivity to the hilly regions are the prime contributors to landslides. Chamoli, the second largest district of Uttarakhand state, is home to many pilgrims and tourist spots that are visited by millions every year. It is also a zone surrounded by several thrusts/faults that in association with human interference initiate the risk of landslides and land subsidence in the region. The district holds limited studies related to landslide susceptibility and risk assessment compared to the other districts of the state. Thus, the current review article focuses on comprehensively analysing various remote sensing and geotechnical investigation-based methods deployed for the monitoring, evaluation and prediction of landslide susceptibility and risk in the region of Chamoli. Lack of connectivity, unscientific planning and improper implementation of technologies in past were the factors for not having a proper landslide risk assessment in the zone. Among the various remote sensing and geotechnical investigation-based methods that are being used globally for landslide susceptibility and risk assessment, only a few have been used in the Chamoli region of which the multi-class index overlay techniques and hybrid machine learning methods were the most widely used in the region. Thus, the study area requires more scientific exploration and studies to have a better assessment of landslide susceptibility and risk which couldn’t be possible due to poor connectivity and unavailability of proper data in the past. Detailed landslide vulnerability assessment of Chamoli, considering its geology & socio-economic importance. Integration of geotechnical and remote sensing techniques for landslide assessment in the Chamoli region. Multi-class overlay and hybrid machine-learning methods were most used and require implementation of other methods. Detailed landslide vulnerability assessment of Chamoli, considering its geology & socio-economic importance. Integration of geotechnical and remote sensing techniques for landslide assessment in the Chamoli region. Multi-class overlay and hybrid machine-learning methods were most used and require implementation of other methods.",
+          "subjects": []
+        },
+        {
+          "title": "Orally Disintegrating Films: Innovations, Advancements, and Challenges",
+          "authors": [
+            "Manasi Chogale",
+            "Aditya Gawde",
+            "Armaan Kazi",
+            "Vaishnavi Satose",
+            "Shubham Singh",
+            "P. Kalamkar"
+          ],
+          "year": 2025,
+          "date": "2025-05-01",
+          "citations": 3,
+          "arxiv_id": null,
+          "paper_id": "1dbfc2202e96167fc5a557495cfb6591d5f84980",
+          "url": "https://www.semanticscholar.org/paper/1dbfc2202e96167fc5a557495cfb6591d5f84980",
+          "abstract": "",
+          "subjects": []
+        }
+      ]
     ],
     [
       "Anjali Tiwari",
@@ -2096,7 +2520,270 @@
           ]
         }
       ],
-      []
+      [
+        {
+          "title": "Approches symboliques pour le contrôle des systèmes non linéaires",
+          "authors": [
+            "A. Girard",
+            "Pierre-Jean Meyer",
+            "A. Saoud"
+          ],
+          "year": 2024,
+          "date": "2024-09-01",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "09c692f76d7663f2e05bf83a971169a04624484a",
+          "url": "https://www.semanticscholar.org/paper/09c692f76d7663f2e05bf83a971169a04624484a",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Rédaction d’un protocole de coopération local permettant à l’IDE référente SEP d’évaluer et d’orienter le patient présentant une suspicion de poussée",
+          "authors": [
+            "A. Saoud",
+            "Jérémie Thezenas",
+            "E. Manchon",
+            "Anaïs Ouederni"
+          ],
+          "year": 2024,
+          "date": "2024-04-01",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "4650a62ccfeca8c7a5ceb2e545a88ab28042817b",
+          "url": "https://www.semanticscholar.org/paper/4650a62ccfeca8c7a5ceb2e545a88ab28042817b",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Intelligent Anti-Seismic Foundation: The Role of Fractal Geometry",
+          "authors": [
+            "A. Saoud",
+            "D. Queiros-Condé",
+            "A. Omar",
+            "T. Michelitsch"
+          ],
+          "year": 2023,
+          "date": "2023-07-25",
+          "citations": 3,
+          "arxiv_id": null,
+          "paper_id": "6a67bf0ef21986fbd0c19ce709c63de4abb8493f",
+          "url": "https://www.semanticscholar.org/paper/6a67bf0ef21986fbd0c19ce709c63de4abb8493f",
+          "abstract": "Safe and resistant infrastructure is an essential component of public safety. However, existing structures are vulnerable to damage resulting from excessive ground movement due to seismic activity or underground explosions. The aim of this paper, which is part of an extensive study, is to develop an isolation system based on periodic materials with H-fractal geometry in order to obstruct, absorb or completely modify the pattern of seismic energy before it reaches the foundations of structures. Fractal metamaterial structures have shown promise for increasing the frequency range prohibited for seismic protection. We report the anti-seismic properties of a seismic metamaterial model based on an H-shaped quasi-fractal cell. The fractal design, also known as seismic metamaterials, has an important impact on the band structures of seismic crystals. Using the fractal as a base unit, anti-seismic phononic crystals were developed, and their band-gap characteristics were shown to display unique features due to the increasing wave propagation path and hybridization between local resonances and Bragg scattering. The seismic–mechanical duality is supposed to provide flexible solutions capable of increasing/widening the band-gaps to improve the level of seismic protection.",
+          "subjects": []
+        },
+        {
+          "title": "Cradle-to-grave life cycle assessment of an air to water heat pump: Case study for the Lebanese context and comparison with solar and conventional electric water heaters for residential application",
+          "authors": [
+            "A. Saoud",
+            "H. Harajli",
+            "Rima Manneh"
+          ],
+          "year": 2021,
+          "date": "2021-12-01",
+          "citations": 19,
+          "arxiv_id": null,
+          "paper_id": "1183b78fd28bc7914b378bfd8a90e2e0fdfc1ea3",
+          "url": "https://www.semanticscholar.org/paper/1183b78fd28bc7914b378bfd8a90e2e0fdfc1ea3",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Evaluation of Physicochemical Properties and Sensory Qualities of Pasta Enriched with Freeze-Dried Sweet Whey",
+          "authors": [
+            "S. Boudalia",
+            "Y. Gueroui",
+            "B. Boumaza",
+            "A. Bousbia",
+            "M. Benada",
+            "C. Leksir",
+            "E. Mezroua",
+            "K. R. Zemmouchi",
+            "A. Saoud",
+            "M. Chemmam"
+          ],
+          "year": 2020,
+          "date": "2020-09-01",
+          "citations": 7,
+          "arxiv_id": null,
+          "paper_id": "6deadc613bd141e0c919b3a9ce8e3b7384299012",
+          "url": "https://www.semanticscholar.org/paper/6deadc613bd141e0c919b3a9ce8e3b7384299012",
+          "abstract": "Abstract For food industry, the production of functional pasta from non-conventional raw materials represents a challenge. This study aims to evaluate the potential of animal proteins of freeze-dried whey as a component for pasta production and its effect on the pasta qualities and consumer acceptance. Sweet whey was freeze-dried, then directly incorporated to pasta at a 20% level. Two pasta types (pasta non-enriched vs. enriched with whey powder) were manufactured following a small-scale pilot procedure, and then evaluated for their physicochemical and sensory qualities. Results of all analyses (whey, semolina and pasta) met the standards according to international legislation; however, the characteristics of enriched pasta differed. Whey addition significantly increased ash, proteins content, optimal cooking time and water uptake (P < 0.05); it significantly decreased moisture levels, colour parameters (CIE system: a* redness, b* yellowness) and the swelling index (P < 0.05). Sensory analysis revealed that overall sensory and product quality of enriched pasta was not affected by whey fortification and it was found acceptable by panelists. This study points out that whey powder could be used for the functional pasta production to increase proteins levels.",
+          "subjects": []
+        },
+        {
+          "title": "Germinome pinéal : à propos de deux cas",
+          "authors": [
+            "A. Saoud",
+            "C. Neftah",
+            "J. Boulaarab",
+            "H. Jerguigue",
+            "Y. Omor",
+            "R. Latib",
+            "S.-H. Touimi",
+            "S. Jaba",
+            "I. Mbarki",
+            "H. Elkacemi",
+            "S. ElMajjaoui",
+            "T. Kebdani",
+            "N. Benjaafar"
+          ],
+          "year": 2020,
+          "date": "2020-03-01",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "9fd3965d2c0dc6eec8d0b3a791683061b4831f69",
+          "url": "https://www.semanticscholar.org/paper/9fd3965d2c0dc6eec8d0b3a791683061b4831f69",
+          "abstract": "Introduction Le germinome pineal est la tumeur la plus commune de la region pineale representant ∼50 % de toutes les tumeurs, et la majorite (∼80 %) des tumeurs germinales intracrâniennes. L’IRM est la modalite de choix pour leur evaluation, cependant, l’etude anatomopathologique permet de poser le diagnostic definitif. L’objectif de ce travail est de rapporter les aspects en imagerie de deux patients porteurs d’un germinome pineal avec extension lepto-meningee. Observations 1er cas : patient de 25 ans qui a presente un syndrome d’hypertension intracrânienne (HTIC). Une IRM cerebrale a montre un processus de la region pineale en iso T1 et T2 avec rehaussement intense et homogene apres injection ( Fig. 1 ), avec localisation secondaire meningee. 2e cas : patient de 13 ans qui a presente un syndrome d’HTIC. Une IRM cerebrale a montre un processus de la glande pineale, de signal tissulaire rehausse par le gadolinium avec hydrocephalie sus jacente ( Fig. 2 ). La biopsie est revenue en faveur d’un germinome pineal et un complement par IRM medullaire a montre une formation nodulaire dans la partie posterieure des racines de la queue de cheval en hypersignal T1 hyposignal T2 avec prise de contraste annulaire. Discussion Le germinome pineal est une tumeur maligne representant 60 % des tumeurs germinales. Il a une predominance masculine (M :F de 13 :1). La plupart des patients ont  L’IRM permet la delimitation precise des masses pineales avant la chirurgie et permet de distinguer les vraies masses pineales des masses parapineales qui touchent la glande pineale. Les germinomes sont radiosensibles avec des taux de survie d’environ 85 % et de guerison de 80 a 90 %. Conclusion L’IRM est l’examen de choix en cas de suspicion d’une tumeur de la glande pineale.",
+          "subjects": []
+        },
+        {
+          "title": "Le traitement endovasculaire des anévrysmes intracrâniens rompus : expérience du service de neuroradiologie de l’hôpital des spécialités de Rabat",
+          "authors": [
+            "A. Saoud",
+            "B. Taibi",
+            "M. Outznit",
+            "M. E. El Hassani",
+            "M. Jiddane",
+            "M. Fikri"
+          ],
+          "year": 2020,
+          "date": "2020-03-01",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "64178c2b8ab19342180dc7ea1d56784c45aed26a",
+          "url": "https://www.semanticscholar.org/paper/64178c2b8ab19342180dc7ea1d56784c45aed26a",
+          "abstract": "Objectifs La rupture anevrysmale est une urgence diagnostique et therapeutique. Le traitement endovasculaire (TEV) est privilegie chaque fois que possible. Nous decrivons, dans cette etude, les resultats obtenus dans notre service. Materiel et methodes Etude retrospective de 132 cas d’anevrysmes arteriels intracrâniens (AI) rompus diagnostiques et traites au service de neuroradiologie de l’hopital des specialites de Rabat sur une periode de 9 ans. Les anevrysmes geants et post-traumatiques ont ete exclus. Resultats Le taux d’anevrysmes rompus retrouve sur l’ensemble des AI traite est de 93 %. La mediane d’âge de la rupture anevrysmale est de 51,5 ans avec une predominance feminine (55,3 %). L’hypertension arterielle a ete retrouvee chez le quart des patients. La symptomatologie clinique est dominee par les cephalees (76,5 %), avec une predominance du grade WFNS 1 (56 %). La tomodensitometrie a l’admission objective l’hemorragie sous-arachnoidienne avec 52,5 % des cas Fisher 2. L’arteriographie est realisee dans tous les cas, objectivant une predominance de l’atteinte de la circulation anterieure, precisement de la communicante anterieure (28,4 %). Tous nos malades ont ete traites par mise en place de coils, avec une exclusion totale dans 74 % des cas, une opacification intra-mailles dans 24,8 % des cas et un collet residuel dans 17,1 % des cas. Le TEV a ete complique de rupture dans 6,1 % des cas, d’incident thromboembolique dans 9,9 % des cas et de protrusion du coil dans 10,6 % des cas. Nos resultats rejoignent les donnees de la litterature en ce qui concerne le traitement par coils. Conclusion Les AI rompus entrainent une mortalite et une morbidite tres importantes. Le TEV represente actuellement le traitement de premiere intention, efficace dans la prevention du risque de recidive hemorragique, mais n’est pas exempte de complications.",
+          "subjects": []
+        },
+        {
+          "title": "Atlas iconographique des métastases du système nerveux central",
+          "authors": [
+            "A. Saoud",
+            "C. Neftah",
+            "J. Boulaarab",
+            "H. Jerguigue",
+            "Y. Omor",
+            "R. Latib",
+            "S.-H. Touimi",
+            "S. Jaba",
+            "I. Mbarki",
+            "H. Elkacemi",
+            "S. ElMajjaoui",
+            "T. Kebdani",
+            "N. Benjaafar"
+          ],
+          "year": 2020,
+          "date": "2020-03-01",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "b8533f8ac90749434a5161107d6313f04640b9fe",
+          "url": "https://www.semanticscholar.org/paper/b8533f8ac90749434a5161107d6313f04640b9fe",
+          "abstract": "Introduction Devant l’amelioration des traitements en oncologie, les metastases cerebrales sont devenues de plus en plus frequentes, et l’IRM est l’examen le plus sensible pour leur detection. Objectifs (1) Decrire les differents aspects radiologiques des differentes atteintes secondaire du systeme nerveux central (SNC). (2) Connaitre la technique de leur exploration. Discussion Les metastases cerebrales sont les tumeurs les plus frequentes du SNC. L’exploration radiologique peut etre faite par TDM, mais l’IRM reste plus sensible notamment avec l’apport de la diffusion, la perfusion et de la spectroscopie. On distingue dans les metastases cerebrales : –l’atteinte intraparenchymateuse : souvent sous forme de lesions multiples a rehaussement annulaire ou nodulaire, avec œdeme en doigt de gant ; un ratio de volume sanguin cerebral augmente a la perfusion et a la spectroscopie une elevation de la choline, des lipides et des lactates, et une diminution du N-acetylaspartate (NAA) ; –l’atteinte leptomeningee : rehaussement gyriforme de la meninge d’aspect feuillete, et parfois de forme nodulaire ; –l’atteinte durale : souvent par extension d’une atteinte osseuse. Pour ce qui est des metastases medullaires on distingue : –l’atteinte intramedullaire : lesions rehaussees de facon le plus souvent annulaire complete ou incomplete, ou en flammeche, avec un œdeme extensif s’etendant sur plus de 3 vertebres ; –l’atteinte leptomeningee : prises de contraste nodulaires le long du cordon medullaire et des racines de la queue de cheval ; –l’atteinte de la dure-mere : lesion tissulaire en fuseau pouvant entrainer une compression medullaire. Conclusion Les metastases du SNC sont frequentes et peuvent se presenter sous differents aspects. Leur connaissance est primordiale pour le diagnostic et l’IRM est l’examen le plus sensible pour leur depistage. La perfusion, la diffusion, la spectroscopie permettent de differencier les metastases des tumeurs primitives et des processus non tumoraux ( Fig. 1 , Fig. 2 ).",
+          "subjects": []
+        },
+        {
+          "title": "Place de l’IRM dans les complications neurologiques de la radiothérapie",
+          "authors": [
+            "C. Neftah",
+            "A. Saoud",
+            "H. Jerguigue",
+            "R. Latib",
+            "Y. Omor",
+            "S.-H. Touimi",
+            "I. Mbarki",
+            "S. Jaba",
+            "H. Elkacemi",
+            "S. ElMajjaoui",
+            "T. Kebdani",
+            "N. Benjaafar"
+          ],
+          "year": 2020,
+          "date": "2020-03-01",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "4bfb7019c117b622e8721f7258a728323e4f7fea",
+          "url": "https://www.semanticscholar.org/paper/4bfb7019c117b622e8721f7258a728323e4f7fea",
+          "abstract": "Introduction La radiotherapie occupe une place primordiale dans le traitement anticancereux, or, elle est associee a une toxicite non negligeable responsable de multiples complications precoces et tardives. Nous discutons dans notre travail uniquement les complications neurologiques du SNC. Objectifs Definir le role de l’IRM dans la detection des complications neurologiques de la radiotherapie.Decrire et illustrer les differentes complications neurologiques du SNC de la radiotherapie. Materiels et methodes Etude retrospective portant sur 29 patients explores dans le service de radiologie de l’institut national d’oncologie de Rabat, sur une periode de 2 ans (de septembre 2017 au septembre 2019). Tous les patients ont beneficie d’une IRM cerebrale et/medullaire, sur un machine de 3 TESLA. Le protocole realise comportait des sequences ponderees en T1, T2, FLAIR, T2*, sequence de diffusion, sequence injectee en ponderation T1. Sequence de spectroscopie a ete realisee selon les cas. Resultats Les complications neurologiques etaient comme suit : radionecrose (n = 8), leuco-encephalopathie (n = 14), myelopathie (n = 2), atrophie cerebrale avec troubles cognitifs (n = 5). Discussion Le SNC presente une radiosensibilite tres particuliere dont les complications sont redoutables pour la qualite de vie des patients. Elles sont classees en fonction de leurs presentations cliniques et leur delai d’apparition apres l’irradiation. L’IRM est l’examen de choix pour l’exploration de ces complications, permet de les confirmer et d’eliminer d’autres origines, cependant elle reste non specifique. Le couplage avec l’etude dynamique est alors necessaire pour etudier la perfusion du parenchyme cerebrale ( Fig. 1 ).",
+          "subjects": []
+        },
+        {
+          "title": "Apport de l’IRM dans le bilan pré- et post-thérapeutique des cancers du cavum",
+          "authors": [
+            "C. Neftah",
+            "A. Saoud",
+            "H. Jerguigue",
+            "R. Latib",
+            "Y. Omor",
+            "S.-H. Touimi",
+            "I. Mbarki",
+            "S. Jaba",
+            "H. Elkacemi",
+            "S. ElMajjaoui",
+            "T. Kebdani",
+            "N. Benjaafar"
+          ],
+          "year": 2020,
+          "date": "2020-03-01",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "24eb5e562b0403138936d5131fa49b9ace76fbf0",
+          "url": "https://www.semanticscholar.org/paper/24eb5e562b0403138936d5131fa49b9ace76fbf0",
+          "abstract": "Introduction Le cancer du nasopharynx constitue une entite clinique, histologique et biologique qui se singularise des autres carcinomes de la tete et du cou par sa latence clinique, son diagnostic tardif, son potentiel metastatique eleve et sa radio-sensibilite et chimiosensibilite. Objectif Illustrer l’interet de l’imagerie par resonance magnetique sur la stadification TNM dans le bilan d’extension ainsi que son interet dans le bilan d’evaluation et de surveillance. Discussion La localisation profonde du rhinopharynx et des espaces associes, la proximite de la base du crâne et des structures encephaliques sus-jacentes font de l’imagerie la pierre angulaire du bilan pre-therapeutique, l’examen clinique etant insuffisant pour apprecier l’extension en profondeur. L’IRM a demontre sa precision dans l’analyse de l’extension tumorale et la profondeur de son infiltration. Son utilisation a entraine des changements spectaculaires dans les resultats du stade T et de la stadification clinique. En termes de surveillance post-therapeutique des patients, elle est plus sensible dans la detection des modifications et complications liees aux traitements notamment les inflammations chroniques ( Fig. 1 , Fig. 2 ).",
+          "subjects": []
+        },
+        {
+          "title": "Improvement of Flow Velocity Measurement Algorithms Based on Correlation Function and Twin Plane Electrical Capacitance Tomography",
+          "authors": [
+            "V. Mosorov",
+            "M. Zych",
+            "R. Hanus",
+            "D. Sankowski",
+            "A. Saoud"
+          ],
+          "year": 2020,
+          "date": "2020-01-01",
+          "citations": 34,
+          "arxiv_id": null,
+          "paper_id": "91f7a5948a2f3e613e52fc8a0cb15c49a1abe031",
+          "url": "https://www.semanticscholar.org/paper/91f7a5948a2f3e613e52fc8a0cb15c49a1abe031",
+          "abstract": "This article discusses the correlation method for time delay estimation, its disadvantages, and drawbacks. It is shown that the correlation method for material velocity measurement based on images of instantaneous changes of the concentration material inside measured by twin planes electrical tomography has serious limitations, especially in the case of plug regime. The basic problem is the non-stationarity of measured data, therefore the requirement of correlability of input data should be fulfilled. The requirement correlatability of input data imposes limitations on the possibility of continuous velocity measurement. This means that the material velocity can only be calculated when data are correlatable. An original algorithm of automatic extraction of the suitable time intervals to calculate material velocity is proposed. The algorithm allows measuring the flow velocity in a proper and accurate way. The examples of the correct velocity calculation, using the proposed concept for the gas-solid flow regime, are presented.",
+          "subjects": []
+        },
+        {
+          "title": "Treacher Collins syndrome: A case report",
+          "authors": [
+            "A. Saoud",
+            "B. Taibi",
+            "A. El Farouki",
+            "L. Chat",
+            "S. el Haddad",
+            "N. Allali"
+          ],
+          "year": 2020,
+          "date": "2020",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "e42813ffec20ba772a35665a525a11fad7ac6fbc",
+          "url": "https://www.semanticscholar.org/paper/e42813ffec20ba772a35665a525a11fad7ac6fbc",
+          "abstract": "Introduction: Treacher Collins syndrome (TCS) is a congenital craniofacial morphogenesis disorder of autosomal dominant inheritance, which symptoms vary greatly ranging from almost unnoticeable to severe. The most common clinical features include hypoplasia of the malar bones and the lower jaw, antimongoloid slanting of palpebral fissures, and ear abnormalities. Imaging, especially computed tomography (CT), enables both a quantitative and qualitative analysis of the malformations, allowing the diagnosis and the planning of surgical interventions. Case Report: We report a case of a fully expressed Treacher Collins syndrome in a 3-month-old male child brought by his mother for dental malocclusion causing difficulties in breastfeeding. The examination revealed hypertelorism with antimongoloid slanting of palpebral fissures, hypoplasia of the malar and zygomatic bones, the mandible, and a microtia with no external auditory canal identified. The CT of the facial area revealed bilateral and symmetrical hypoplasia of the zygomatic bones, the mandible, the maxillary bones, and the temporal bone with agenesis of the bony external auditory canals. Conclusion: Treacher Collins syndrome is a malformative craniofacial congenital disorder that can be well managed if the diagnosis is done early.",
+          "subjects": []
+        },
+        {
+          "title": "Bacillary angiomatosis following the use of long-term methotrexate therapy: a case report.",
+          "authors": [
+            "T. Kreitzer",
+            "A. Saoud"
+          ],
+          "year": 2006,
+          "date": "2006",
+          "citations": 4,
+          "arxiv_id": null,
+          "paper_id": "a340c0ddb1fde46180cba48ee8843462451f69b3",
+          "url": "https://www.semanticscholar.org/paper/a340c0ddb1fde46180cba48ee8843462451f69b3",
+          "abstract": "",
+          "subjects": []
+        }
+      ]
     ],
     [
       "Duc Cuong Vu",
@@ -2140,7 +2827,365 @@
           ]
         }
       ],
-      []
+      [
+        {
+          "title": "EMT-EMT Co-Simulation for Large-Scale Offshore Wind Integration in the New York State Grid",
+          "authors": [
+            "Lokesh Saravana",
+            "Trong-Linh Vu",
+            "Quang-Ha Ngo",
+            "Jian-Hua Zhang",
+            "Tuyen Vu",
+            "Thomas Ortmeyer",
+            "V. Paduani",
+            "R. Kadavil",
+            "Thai-Thanh Nguyen",
+            "Tung Lam Nguyen"
+          ],
+          "year": 2026,
+          "date": "2026-10-01",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "7a00dcf275b2a33698173c9a65427fc58a1d0e95",
+          "url": "https://www.semanticscholar.org/paper/7a00dcf275b2a33698173c9a65427fc58a1d0e95",
+          "abstract": "The rapid integration of large-scale offshore wind (OSW) farms and inverter-based resources (IBRs) presents unprecedented challenges for power system stability and protection. While electromagnetic transient (EMT) simulation provides the necessary fidelity to capture fast control interactions, modeling an entire regional grid alongside detailed OSW models exceeds the computational capacity of single real-time simulators. This paper presents the practical design, implementation, and validation of a distributed real-time EMT–EMT co-simulation framework to evaluate the integration of 9 GW of offshore wind into the New York State (NYS) power grid. By interfacing heterogeneous real-time simulators of RTDS and OPAL-RT via an Aurora-based fiber-optic communication link and a Transmission Line Model (TLM), the computational burden is effectively distributed. A comprehensive experimental evaluation is conducted, including a direct comparison between analog and fiber-optic interconnections. The results demonstrate that the Aurora-based fiber interface significantly improves latency, synchronization accuracy, and transient waveform fidelity compared to traditional analog setups. Ultimately, this application study demonstrates how the proposed framework overcomes the limitations of traditional interfaces, enabling high-fidelity, real-time stability assessment of the NYS grid under severe fault conditions and providing actionable insights to de-risk large-scale OSW deployment.",
+          "subjects": []
+        },
+        {
+          "title": "A K-Means–based Gaussian Process Regression Model for Human Motion Prediction in Human–Robot Collaboration",
+          "authors": [
+            "Ba Hung Nguyen",
+            "Anh Duc Nguyen",
+            "Van Duy Tran",
+            "Viet Thang Dang",
+            "Tung Lam Nguyen",
+            "Van Trong Dang"
+          ],
+          "year": 2026,
+          "date": "2026-07-01",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "05e05e4d6a62006ce7c2a13d53ac077ccee49415",
+          "url": "https://www.semanticscholar.org/paper/05e05e4d6a62006ce7c2a13d53ac077ccee49415",
+          "abstract": "Human motion prediction plays a critical role in ensuring safe and efficient coordination in human–robot collaboration within manufacturing and service environments. However, human movements exhibit nonlinear and stochastic characteristics, making accurate prediction and reliability assessment challenging. To tackle these issues, the present study introduces a model that combines Gaussian process regression (GPR) with Elbow method-based K-Means, allowing both motion prediction and uncertainty quantification through predictive variance while significantly reducing computational complexity. Results from two-dimensional motion prediction demonstrate that the proposed model achieves reliable prediction accuracy compared with standard GPR while significantly reducing the computational load, thereby decreasing inference time by approximately a factor of eight. Furthermore, the model effectively captures predictive uncertainty, reflecting performance degradation during abrupt changes in human motion.",
+          "subjects": []
+        },
+        {
+          "title": "Fuzzy-enhanced finite-time sliding mode disturbance rejection control for electric stabilizer bars",
+          "authors": [
+            "T. Nguyen",
+            "Tung Lam Nguyen"
+          ],
+          "year": 2026,
+          "date": "2026-05-08",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "6a57a75966a391d38e8a40ac28d8676b77e6532f",
+          "url": "https://www.semanticscholar.org/paper/6a57a75966a391d38e8a40ac28d8676b77e6532f",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Robust Prescribed Performance Control for Heavy-Haul Freight Trains Under Actuator Faults and Input Time Delays",
+          "authors": [
+            "Tien-Dung Nguyen",
+            "Tung Lam Nguyen",
+            "Duc Thinh Le"
+          ],
+          "year": 2026,
+          "date": "2026-05-07",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "6c475228fbb26c5aca78bac8d8d486a9ddc2e66f",
+          "url": "https://www.semanticscholar.org/paper/6c475228fbb26c5aca78bac8d8d486a9ddc2e66f",
+          "abstract": "\n With the rapid development of autonomous vehicles, heavy-haul freight trains (HhFT), with their capability of transporting large volumes of cargo over long distances, are emerging as promising subjects for research in automatic control. One of the main challenges in operating HhFT lies in ensuring accurate trajectory tracking performance under the influence of adverse factors such as external disturbances, model uncertainties, and actuator-related issues, including actuator faults and input time delays. If not effectively addressed, these factors can significantly degrade the control performance of the system. This paper presents a robust trajectory tracking control system with prescribed performance for HhFTs using multiple electric locomotives. In this framework, a prescribed performance function (PPF) is designed to ensure that the position tracking errors of the locomotives remain within a predefined bound. Simultaneously, an extended state observer (ESO) is employed to estimate the states and the lumped disturbances representing the adverse effects. Based on the outputs of the PPF and the ESO, a robust sliding mode controller is designed. The stability of the closed-loop system is proven through Lyapunov stability theory, showing that all system states converge to a neighborhood of the origin in finite time. Computer simulation results clearly demonstrate the superior control performance of the proposed system compared to previously introduced methods.",
+          "subjects": []
+        },
+        {
+          "title": "Fixed-time fault-tolerant control for electro-mechanical braking systems under input saturation and time-delay.",
+          "authors": [
+            "Xuan Duc Pham",
+            "Tung Lam Nguyen",
+            "Duc Thinh Le"
+          ],
+          "year": 2026,
+          "date": "2026-05-01",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "490a102d718d34f95d70ad3716f2170ca6946d85",
+          "url": "https://www.semanticscholar.org/paper/490a102d718d34f95d70ad3716f2170ca6946d85",
+          "abstract": "This paper proposes a novel fault-tolerant control strategy for electro-mechanical brakes (EMB) subject to supply faults, input saturation, and time delays, aiming to enhance vehicle safety and align with the development of high-precision fault-tolerant anti-lock braking systems (ABS). The proposed strategy employs a fixed-time controller with a time-varying funnel constraint to maintain the slip ratio within its optimal range, thereby ensuring maximum braking efficiency and enabling the vehicle to achieve the shortest possible stopping distance during emergency braking. Furthermore, a fixed-time command filter is introduced to mitigate the derivative explosion problem, while a fractional-order compensation strategy with auxiliary compensation signals is developed to counteract filtering inaccuracies and input saturation effects. To improve robustness and fault tolerance against external disturbances, supply faults, and input delays, fixed-time extended state observers (FESO) are integrated, enabling the ABS to effectively handle lumped disturbances under various road conditions. The global fixed-time stability of the entire system is rigorously established using Lyapunov theory, and simulation results under dry, wet, and snowy road conditions-along with analyses of key performance indicators (KPIs)-demonstrate the effectiveness, robustness, and novelty of the proposed control strategy.",
+          "subjects": []
+        },
+        {
+          "title": "Neural Network‐Driven Adaptive Control for Swing‐Free Trajectory Tracking in Double‐Link Overhead Cranes With Uncertain Dynamics",
+          "authors": [
+            "Manh Cuong Nguyen",
+            "Nhat Huy Vo",
+            "Dinh Hiep Nguyen",
+            "Thi Van Anh Nguyen",
+            "Tung Lam Nguyen"
+          ],
+          "year": 2026,
+          "date": "2026-04-24",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "6284dde7ad9f1bcb0791493c56db72ad17ed4790",
+          "url": "https://www.semanticscholar.org/paper/6284dde7ad9f1bcb0791493c56db72ad17ed4790",
+          "abstract": "Overhead cranes are widely used in industry owing to their capability of handling heavy payloads and providing flexible operation. However, they are inherently underactuated systems with complex dynamics, subject to system uncertainties and external disturbances during operation. Consequently, achieving high‐performance control while ensuring safe payload transportation remains a challenging task. To address these challenges, this paper proposes a novel control framework that integrates radial basis function neural networks (RBFNNs) with adaptive sliding mode control (ASMC) for three‐dimensional overhead crane (3DOC) systems with double‐link dynamics, aiming to enhance trajectory tracking accuracy and suppress payload oscillations during motion. Compared with existing methods, the proposed approach overcomes fundamental limitations in overhead crane control by employing RBFNNs for accurate estimation of system uncertainties while exploiting the robustness of ASMC against external disturbances and approximation errors. The stability of the closed‐loop system is rigorously established using Lyapunov theory. Finally, simulation studies on a quasi‐physical model, with comparative evaluations against state‐of‐the‐art controllers, demonstrate the feasibility and superior performance of the proposed controller in achieving precise trajectory tracking and effective payload oscillation suppression.",
+          "subjects": []
+        },
+        {
+          "title": "Input and output constraints control strategy-based model predictive control for double-link overhead cranes",
+          "authors": [
+            "Mai Hoang Thi",
+            "Hien Nguyen Thi",
+            "Tung Lam Nguyen",
+            "H. Thi"
+          ],
+          "year": 2026,
+          "date": "2026-04-21",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "e5e461eb1371f0a61ae8e09a1fd1f7006fad421f",
+          "url": "https://www.semanticscholar.org/paper/e5e461eb1371f0a61ae8e09a1fd1f7006fad421f",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Adaptive finite-time hybrid tension-velocity control of uncertain multi-section web machines with uniform ultimate boundedness.",
+          "authors": [
+            "Van Trong Dang",
+            "V. Dang",
+            "X. Nguyen",
+            "H. Pham",
+            "Tung Lam Nguyen",
+            "Văn Triệu Phạm"
+          ],
+          "year": 2026,
+          "date": "2026-02-01",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "9d7fedce799ea267a07fd015dab3d000f4a3604a",
+          "url": "https://www.semanticscholar.org/paper/9d7fedce799ea267a07fd015dab3d000f4a3604a",
+          "abstract": "Multi-section web machines are widely employed in manufacturing environments that are subjected to complex external disturbances. In addition, other adverse factors such as parametric uncertainties and measurement noises also significantly degrade the operating performance of multi-section web machines, raising the challenges in control design. In the paper, an adaptive finite-time hybrid tension-velocity control approach for multi-section web machines is evolved to ensure the operating performance against parametric uncertainties, external disturbances, and measurement noises. First of all, a filter-based extended state observer is proposed to simultaneously estimate uncertainties and disturbances while mitigating the effects of measurement noises on the feedback states. The proposed observer not only improves estimation performance but also achieves practical finite-time stability. Leveraging the critical information from the observer, a dynamic surface control is developed by combining the backstepping technique with a proposed nonlinear low-pass filter to guarantee the high-precision performance of multi-section web machines after a finite-time interval. By integrating an adaptive mechanism into the control framework, the proposed method can eliminate the requirement for knowledge of moments of inertia. Rigorous analysis based on Lyapunov theory confirms that both the proposed observer and the closed-loop systems are uniformly ultimately bounded stable within the explicit settling times. Finally, the effectiveness of our approach is validated through several comparative simulation scenarios against other state-of-the-art methods.",
+          "subjects": []
+        },
+        {
+          "title": "A fast terminal fractional-order backstepping sliding mode control for ball-balancing robots",
+          "authors": [
+            "M. Pham",
+            "Cong M. Pham",
+            "Phuong Thao Dao",
+            "Thu Giang Do",
+            "Nhật Minh Nguyễn",
+            "Van Trong Dang",
+            "Tung Lam Nguyen"
+          ],
+          "year": 2026,
+          "date": "2026",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "6f5940894aa71f5fee8499082c62d19c524a6d66",
+          "url": "https://www.semanticscholar.org/paper/6f5940894aa71f5fee8499082c62d19c524a6d66",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Observer-based nonlinear cascade control approach of rewinding systems with uncertainties and disturbances compensation",
+          "authors": [
+            "Van Trong Dang",
+            "Dieu Hien Tran Thi",
+            "Dinh Bao-Hung Nguyen",
+            "Tung Lam Nguyen"
+          ],
+          "year": 2026,
+          "date": "2026",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "ebf71f800f8990886290c50efaffff22713a0a64",
+          "url": "https://www.semanticscholar.org/paper/ebf71f800f8990886290c50efaffff22713a0a64",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Glocal trajectory generation and tracking control for autonomous underwater vehicles with optimal coverage sensor networks",
+          "authors": [
+            "Duc Cuong Vu",
+            "Son Tran",
+            "Tung Lam Nguyen",
+            "Duc Chinh Hoang"
+          ],
+          "year": 2025,
+          "date": "2025-12-01",
+          "citations": 5,
+          "arxiv_id": null,
+          "paper_id": "f7d0c5c3d49d7d6622b5a1ad55d7d5e84679c01b",
+          "url": "https://www.semanticscholar.org/paper/f7d0c5c3d49d7d6622b5a1ad55d7d5e84679c01b",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Effect of Intake Temperature on the Combustion Characteristics of Gasoline Fuel with Compression Combustion Mode",
+          "authors": [
+            "Tung Lam Nguyen",
+            "Tuong Vi Nguyen",
+            "Van Thanh Ngo"
+          ],
+          "year": 2025,
+          "date": "2025-11-05",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "ea1b5a5f0e19de4f345f9bcdefe537e0052c1c22",
+          "url": "https://www.semanticscholar.org/paper/ea1b5a5f0e19de4f345f9bcdefe537e0052c1c22",
+          "abstract": "Intake air temperature plays a critical role in governing the combustion characteristics of the Gasoline Partially Premixed Compression (GPPC) combustion concept. It influences the onset of diffuse combustion and directly affects the formation of harmful emissions, including unburned hydrocarbons (HC), carbon monoxide (CO), nitrogen oxides (NOx), and soot. This study examines the impact of intake air temperature on combustion behavior under fixed operating conditions: an injection mass ratio of 50/50, pilot injection at −35 crank angle degrees (CAD) after top dead center (ATDC), main injection at 0 CAD, engine speed of 1500 rpm, intake pressure of 1 bar, and injection pressure of 400 bar. The intake air temperature was varied between 165 °C and 205 °C. Experimental results were analyzed to assess the combined effects of cold flame development and the penetration of the main injection jet on the combustion rate of the primary combustion phase. Furthermore, the influence of intake air temperature on maximum combustion temperature, cylinder pressure rise rate, combustion efficiency, and indicated efficiency was evaluated to elucidate its role in determining the overall operating characteristics of the GPPC engine.",
+          "subjects": []
+        },
+        {
+          "title": "Robust Nonlinear Control for Lateral Dynamics of Autonomous Six-Wheel-Driving/Six-Wheel Steering Vehicle",
+          "authors": [
+            "D. Phan",
+            "Ba Pham Tuan Vo",
+            "H. Nguyen",
+            "Van Dien Tran",
+            "Gia Khiem Dinh",
+            "Tung Lam Nguyen",
+            "H. Thi"
+          ],
+          "year": 2025,
+          "date": "2025-11-05",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "21aa1f07f8aa46589f90a49e6b8150b4b6ec9cc0",
+          "url": "https://www.semanticscholar.org/paper/21aa1f07f8aa46589f90a49e6b8150b4b6ec9cc0",
+          "abstract": "This paper presents a robust trajectory tracking control strategy for an autonomous 6WD/6WS vehicle, based on a Sliding Mode Controller (SMC) integrated with an Extended State Observer (ESO). The lateral dynamics of the 6WD/6WS vehicle are highly nonlinear and subject to parameter uncertainties and external disturbances. To address these challenges, the ESO is employed to estimate and compensate for lumped disturbances in real time, while the SMC is designed to ensure global convergence of the lateral tracking error. The closed-loop stability of the proposed control system is rigorously proven using Lyapunov analysis. Simulation results demonstrate that the proposed SMC-based ESO controller outperforms conventional PID control in terms of tracking accuracy and robustness, with the lateral tracking errors converging to zero under various disturbance scenarios.",
+          "subjects": []
+        },
+        {
+          "title": "Modeling and Control of Three-E-Shaped Axial Magnetic Bearings Considering Eddy Current Effects",
+          "authors": [
+            "Ngoc-Hoi Le",
+            "T. Ngo",
+            "M. Phan",
+            "Tung Lam Nguyen",
+            "Q. Nguyen",
+            "Duc Thinh Le"
+          ],
+          "year": 2025,
+          "date": "2025-11-01",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "ffbe81885562664e956dd38598e34c0e8bea84e0",
+          "url": "https://www.semanticscholar.org/paper/ffbe81885562664e956dd38598e34c0e8bea84e0",
+          "abstract": "In this study, we build a mathematical model and controller of three-E-Shaped axial magnetic bearings considering eddy current effects. First, the authors developed a mathematical model of the three-pole axial magnetic bearing, considering the influence of eddy currents on both the u, v, w Coordinate system and the z, x, y Coordinate system. Then, the author compared the magnetic force amplitude of the magnetic pole in the newly constructed formula with the non-laminated magnetic pole using the finite element method, and the results showed that the magnetic force amplitude values of the two determinations above were approximately equal, which confirms that the constructed formula is reliable. From the mathematical model of the three-pole axial magnetic bearing, newly built relatively close to the actual model, the authors designed a sliding mode controller. Simulation results on MATLAB - Simulink software show that the sliding mode controller gives better noise resistance results than the PID controller and the BSC controller and the controller is designed according to the z, x, y system, which gives better noise resistance results than the u, v, w system, because the mathematical model has less influence on the interleaving between the magnetic pole pairs. The final result is improved system control quality; however, in the mathematical model and controller, the computational volume is relatively large and complex.",
+          "subjects": []
+        },
+        {
+          "title": "Robust Fixed‐Time Sliding Mode With Prescribed Performance Control for Heavy‐Haul Freight Trains Under Actuator Saturation and Input Time Delay",
+          "authors": [
+            "Tien Dung Nguyen",
+            "Duc Thinh Le",
+            "Duc Manh Do",
+            "Tung Lam Nguyen"
+          ],
+          "year": 2025,
+          "date": "2025-10-15",
+          "citations": 4,
+          "arxiv_id": null,
+          "paper_id": "0e161257b2718299008a55b3589573f54afdb9ee",
+          "url": "https://www.semanticscholar.org/paper/0e161257b2718299008a55b3589573f54afdb9ee",
+          "abstract": "This paper proposes a robust fixed‐time sliding mode controller with a prescribed performance function (RFTSM‐PPC) for heavy haul freight trains (HhFT) employing multiple electric locomotives. First, a fixed‐time extended state observer (FxTESO) is designed to estimate the velocities of the locomotives and the lumped disturbance component, which represents model uncertainties, external disturbances, as well as malfunctions in the actuators, including actuator faults, input saturation, and input time delay. Then, a prescribed performance function (PPF) is constructed to ensure that the tracking error is confined within predefined bounds. Based on the outputs of the FxTESO and PPF, a fixed‐time sliding mode controller is developed, incorporating a transition function to eliminate singularities and an auxiliary control component to compensate for the estimation error from the FxTESO. Finally, the particle swarm optimization algorithm (PSO) is employed to optimize the system parameters to enhance control performance. The theoretical analyses demonstrate that, with the proposed control system, the tracking errors of the HhFT are confined within a defined range and will converge to a bounded region within a fixed time. The simulation results show the effectiveness and superior performance of the proposed control method in ensuring accurate tracking and strong robustness under various operating conditions.",
+          "subjects": []
+        },
+        {
+          "title": "Vibration reduction and finite time payload tracking performance control for gantry cranes with inputs saturation and constrained outputs",
+          "authors": [
+            "Hue Luu Thi",
+            "Mai Hoang-Thi",
+            "Khanh Hoa Bui Thi",
+            "D. Nguyen",
+            "Tung Lam Nguyen"
+          ],
+          "year": 2025,
+          "date": "2025-05-16",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "70023cc80d09872c20435ccf4de0c0c17813e145",
+          "url": "https://www.semanticscholar.org/paper/70023cc80d09872c20435ccf4de0c0c17813e145",
+          "abstract": "\n This study proposes an anti-vibration and load trajectory tracking controller for gantry cranes over a finite period of time with limited inputs and outputs, while minimizing the effects of system uncertainties and disturbances. Firstly, the reference trajectory of the load is formulated by considering the crane system as a flatness system with constraints on the swing angle. Subsequently, a Terminal Sliding-Mode Controller (TSMC) and an Adaptive Finite-Time Extended State Observer (AFT-ESO) are developed to enhance the system's performance. In practice, the input signals and state variables of the system are always limited, in order to handle these constraints the Lyapunov-based Model Predictive Control (LMPC) is proposed. Finally, simulation results and comparative studies with the conventional methods are given to prove the effectiveness and feasibility of the control strategy.",
+          "subjects": []
+        },
+        {
+          "title": "Adaptive finite-time extended state observer-based model predictive control with Flatness motivated trajectory planning for 5-DOF tower cranes",
+          "authors": [
+            "T. Luu",
+            "Van Chung Nguyen",
+            "Tung Lam Nguyen"
+          ],
+          "year": 2025,
+          "date": "2025-01-01",
+          "citations": 12,
+          "arxiv_id": null,
+          "paper_id": "47a5a2e1b2c691c6ab7a27477ac27c8628c557e6",
+          "url": "https://www.semanticscholar.org/paper/47a5a2e1b2c691c6ab7a27477ac27c8628c557e6",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Anti‐sloshing control: Flatness‐based trajectory planning and tracking control with an integrated extended state observer",
+          "authors": [
+            "K. Viet",
+            "M. Duc",
+            "T. Duc",
+            "Tung Lam Nguyen"
+          ],
+          "year": 2024,
+          "date": "2024-08-25",
+          "citations": 5,
+          "arxiv_id": null,
+          "paper_id": "963436257e2e565097f4a432bab7d12116c80c37",
+          "url": "https://www.semanticscholar.org/paper/963436257e2e565097f4a432bab7d12116c80c37",
+          "abstract": "The phenomenon of sloshing causes a significantly negative impact on a wide range of industries. A time‐optimal flatness‐based trajectory planning and Lyapunov‐based model predictive control (LMPC) is proposed for trajectory tracking of a transmitting cylindrical container filled with liquid. Firstly, this research presents an equivalent discrete model based on a mass‐spring‐damper system. Subsequently, after the flatness of the adopted non‐linear model for 2D is established, time‐optimal trajectories are introduced. A control method called LMPC is shown to solve the problem of orbital tracking, which allows setting limits for state variables. In addition, to ensure system performance, a linear extended state observer (LESO) is integrated to cope with system uncertainties. Finally, the efficiency of the proposed approach for liquid sloshing suppression and tracking is illustrated by simulations.",
+          "subjects": []
+        },
+        {
+          "title": "Flatness-based Motion Planning and Model Predictive Control of Industrial Cranes",
+          "authors": [
+            "H. B. Khanh",
+            "Mai Hoang Thi",
+            "H. Luu",
+            "Tung Lam Nguyen",
+            "D. Nguyen"
+          ],
+          "year": 2024,
+          "date": "2024-08-02",
+          "citations": 5,
+          "arxiv_id": null,
+          "paper_id": "e8ba867e2d468b745a6cd0ef409f33c1fbb07857",
+          "url": "https://www.semanticscholar.org/paper/e8ba867e2d468b745a6cd0ef409f33c1fbb07857",
+          "abstract": "This study develops a new controller for an industrial crane system in a three-dimensional space. First, the dynamic model of the industrial crane system with two subsystems, the tower crane and the overhead crane is presented. A bidirectional mapping is established between the system's input and output, allowing for efficient trajectory generation. Additionally, the design process explicitly considers the system's kinematic constraints, ensuring safe and feasible motions. This designed trajectory serves as an input for Model Predictive Control (MPC). The MPC is designed with the dual objectives of trajectory tracking and payload anti-swing. Finally, simulations are conducted and the results are compared with those of other control strategies under different cases to demonstrate the effectiveness of the proposed method.",
+          "subjects": []
+        },
+        {
+          "title": "Neural networks backstepping sliding mode control approach based fractional-order calculation for Roll-to-Roll systems",
+          "authors": [
+            "Dieu Hien Tran Thi",
+            "Van Trong Dang",
+            "Chi-Ho To",
+            "Quoc Anh Nguyen Ba",
+            "Ba-Chinh Nguyen",
+            "Tung Lam Nguyen"
+          ],
+          "year": 2023,
+          "date": "2023-11-27",
+          "citations": 5,
+          "arxiv_id": null,
+          "paper_id": "e0c5e2d319873a6bf62abcd3c5dcfbbe9b07db8c",
+          "url": "https://www.semanticscholar.org/paper/e0c5e2d319873a6bf62abcd3c5dcfbbe9b07db8c",
+          "abstract": "In this paper, an adaptive controller is designed for three-shaft roll-to-roll systems with uncertainty and disturbance elements. By utilizing backstepping technique, sliding mode surface theory, and fractional-order calculation, we propose a novel control structure for driving three motors of the system. Meanwhile, two neural networks are applied to avoid issues like eccentric rollers and variations of radii that continuously affect the system’s ability to perform during operation. To demonstrate the correctness of the proposed controller, we consider the stability of the entire system as well as the control performance via comparative simulation. The obtained results indicate that the control strategy remarkably ameliorates the control ability of output tension and velocity.",
+          "subjects": []
+        }
+      ]
     ],
     [
       "Fabrizio Pilone",
@@ -6430,6 +7475,48 @@
       ],
       [
         {
+          "title": "CoReMatch: Recurrent Continuous Coordinate Refinement for Real-Time Robotic Feature Matching",
+          "authors": [
+            "Robert J. Wang",
+            "Charles Ling",
+            "Boyu Wang"
+          ],
+          "date": "2026-11-02",
+          "citations": 0,
+          "arxiv_id": "2611.03932v1",
+          "url": "https://arxiv.org/abs/2611.03932v1",
+          "abstract": "Feature matching underpins many robotic perception tasks, including visual localization, mapping, SLAM, and autonomous navigation. Existing semi-dense matchers predict confidence on fixed grids, limiting correspondences to predefined locations and requiring costly high-resolution grids for precise localization. We present CoReMatch (Coordinate Refinement Match), a recurrent framework that refines correspondences directly in continuous coordinate space rather than predicting discrete confidence maps. CoReMatch progressively improves correspondence estimates by propagating information across iterations. At the coarse stage, a Deep Aggregated Transformer captures global context and iteratively updates correspondence coordinates, while a lightweight regression head further sharpens their localization. Experiments on indoor and outdoor benchmarks show that CoReMatch strikes a strong balance between accuracy and efficiency, outperforming Efficient LoFTR in accuracy while running more than 10x faster on embedded edge hardware. These results demonstrate that recurrent coordinate refinement offers an efficient and scalable approach to real-time feature matching for robotic perception.",
+          "subjects": [
+            "cs.RO",
+            "cs.CV"
+          ],
+          "venue": "CoRL",
+          "venue_year": "2026",
+          "is_cbf": false,
+          "is_robotics": true
+        },
+        {
+          "title": "Robot-Matched Soft Fingers for UMI Data Collection: Lessons from 100 Hours of Pick and Place",
+          "authors": [
+            "Kobi Kelemen",
+            "Tomasz Niedziałkowski",
+            "Marcin Paszczak",
+            "Victoriano Montesinos"
+          ],
+          "date": "2026-11-02",
+          "citations": 0,
+          "arxiv_id": "2611.03779v1",
+          "url": "https://arxiv.org/abs/2611.03779v1",
+          "abstract": "Training robot policies for multi-task pick and place requires demonstrations on many objects, which handheld Universal Manipulation Interfaces (UMIs) can collect quickly and cheaply. However, existing UMIs depend on external base stations, use rigid fingers that give no signal about contact forces, or use parallel-jaw fingers that limit grip strength. We present a battery-powered handheld interface, built on YUBI, whose soft, angled fingers wrap around objects, deform visibly under load as a visual proxy for force, and match the grippers of the robot. With it, we collect a 99.7-hour dataset over 53 objects, train $π_{0.5}$ policies on 49 of them, and hold out the other 4 as unseen objects. We find that a top camera raises success by 13 points even when only about half of the data includes it, and that mid-training on our multi-task data raises success after fine-tuning on unseen objects from 35% to 57%. Finger design, dataset, and data processing code: https://lute-corp.github.io/soft-yubi-site/",
+          "subjects": [
+            "cs.RO"
+          ],
+          "venue": "CoRL",
+          "venue_year": "2026",
+          "is_cbf": false,
+          "is_robotics": true
+        },
+        {
           "title": "Seeing Through the Illusion: Test-Time Scaling for World Action Models",
           "authors": [
             "Cheikh Ahmed",
@@ -7338,59 +8425,6 @@
           "venue_year": "2026",
           "is_cbf": false,
           "is_robotics": true
-        },
-        {
-          "title": "Long-Horizon Multi-Object Rearrangement via Distilled Tree Search over Continuous Actions",
-          "authors": [
-            "Kallol Saha",
-            "Yining Hong",
-            "Amber Li",
-            "Yejin Choi",
-            "Maxim Likhachev",
-            "David Held"
-          ],
-          "date": "2026-10-19",
-          "citations": 0,
-          "arxiv_id": "2610.25785v1",
-          "url": "https://arxiv.org/abs/2610.25785v1",
-          "abstract": "Despite recent advances in policy learning, long-horizon manipulation remains difficult because learned policies must avoid compounding errors while preserving future feasibility. While search-based planning can explicitly reason over such future consequences, it quickly becomes expensive in high-dimensional continuous action spaces. This raises a central question: how can long-horizon reasoning from search be transferred into policies in continuous action spaces? To this end, we propose DISCO: Distilled Tree Search over Continuous Actions. DISCO uses progressive-widening MCTS in physics simulation to generate long-horizon plans. During search, a learned policy proposes continuous actions, while a learned value function scores actions by their expected progress toward task completion. Using GPU-parallelized simulation, DISCO periodically distills MCTS-generated plans into the policy-value model, improving the action proposals and value estimates used in subsequent searches. Finally, the learned policy-value model can be directly deployed without the need for simulator-based search at test time. Across simulated and real-world rearrangement tasks, DISCO outperforms behavior cloning, reinforcement learning, and search-based baselines.",
-          "subjects": [
-            "cs.RO"
-          ],
-          "venue": "CoRL",
-          "venue_year": "2026",
-          "is_cbf": false,
-          "is_robotics": true
-        },
-        {
-          "title": "Progress-Guided Preference Generation for Aligning Generative Control Policies",
-          "authors": [
-            "Tung M. Luu",
-            "Tri Ton",
-            "Duc M. Nguyen",
-            "Xuan Thanh Nguyen",
-            "Nguyen Gia Binh",
-            "Quang Tan Nguyen",
-            "Vu Duong",
-            "Daniel Sonntag",
-            "Duy M. H. Nguyen",
-            "Vien Anh Ngo",
-            "Chang D. Yoo"
-          ],
-          "date": "2026-10-19",
-          "citations": 0,
-          "arxiv_id": "2610.25692v1",
-          "url": "https://arxiv.org/abs/2610.25692v1",
-          "abstract": "Generative policies have achieved strong performance in imitation learning tasks, but their success is often constrained by the limited availability of expert demonstrations. Although preference-based fine-tuning can leverage suboptimal rollouts to improve performance, existing approaches heavily rely on expensive human annotations. In this work, we introduce Progress-Guided Preference Generation (PGPG), an unsupervised preference alignment framework that eliminates the need for human-in-the-loop supervision. Our method leverages ordered coverage alignment to measure sequential progress relative to a small set of expert demonstrations, enabling the automatic extraction of pseudo-preference labels from autonomously collected rollouts. Furthermore, we introduce key enhancements to improve the reliability of these progress-guided preferences, enabling effective fine-tuning of pretrained generative policies without requiring manually designed reward functions. Extensive experiments across a suite of challenging long-horizon manipulation tasks demonstrate that PGPG outperforms standard supervised fine-tuning baselines. Moreover, our conceptually simple framework is broadly applicable across multiple classes of generative policies, demonstrating strong versatility when integrated with both diffusion and flow-matching policies.",
-          "subjects": [
-            "cs.LG",
-            "cs.AI",
-            "cs.RO"
-          ],
-          "venue": "CoRL",
-          "venue_year": "2026",
-          "is_cbf": false,
-          "is_robotics": true
         }
       ]
     ],
@@ -7445,7 +8479,7 @@
             "Aaron D. Ames"
           ],
           "date": "2026-10-07",
-          "citations": 0,
+          "citations": 1,
           "arxiv_id": "2610.10987v1",
           "url": "https://arxiv.org/abs/2610.10987v1",
           "abstract": "Underactuated systems with nontrivial geometry are abundant in practical robotic problems. However, little is known about constructive safety-critical control design in the presence of underactuation. In this work, we provide a constructive framework for synthesizing safe control architectures and control barrier functions for a class of quadrotor-like underactuated systems. By studying the geometry of their underactuation, we characterize when these systems have natural layered architectures useful for safety-critical control design. Using these architectures, we devise a constructive, hierarchical CBF synthesis procedure and provide conditions under which it succeeds.",
