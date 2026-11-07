@@ -217,7 +217,7 @@
       ],
       "year": 2021,
       "date": "2021-05-21",
-      "citations": 145,
+      "citations": 0,
       "arxiv_id": "2105.10596",
       "paper_id": "69a9d7223891cede85152b8ac6c4c3e29292dcae",
       "url": "https://arxiv.org/abs/2105.10596",
@@ -236,7 +236,7 @@
       ],
       "year": 2021,
       "date": "2021-05-21",
-      "citations": 0,
+      "citations": 114,
       "arxiv_id": "2105.10241",
       "paper_id": "d1f651bafb24c630533acb198b2b4c14c75f1c18",
       "url": "https://arxiv.org/abs/2105.10241",
@@ -375,7 +375,7 @@
       ],
       "year": 2020,
       "date": "2020-04-07",
-      "citations": 0,
+      "citations": 308,
       "arxiv_id": "2004.03315",
       "paper_id": "a8684cdff4f958a21ed95f181f120d03eb3ec321",
       "url": "https://arxiv.org/abs/2004.03315",
@@ -1300,7 +1300,7 @@
         "Ziqing Zhu"
       ],
       "date": "2026-10-12",
-      "citations": 1,
+      "citations": 0,
       "arxiv_id": "2610.16718v1",
       "url": "https://arxiv.org/abs/2610.16718v1",
       "abstract": "Intelligent power dispatch is enabling fast and self-adaptive decision-making in microgrids, yet its deployment in real-world industry remains limited due to unresolved safety concerns. Existing safety-preserving approaches typically rely on an accurate characterization of the feasible operating region, which is impossible to obtain under uncertain and heterogeneous system dynamics. Moreover, even a dispatch command verified as feasible at a discrete setpoint may become unsafe during its continuous physical execution. To address these challenges, this paper proposes a safety-aware dispatch adjustment framework that uses performance-equivalent modeling of closed-loop systems (PEM-CLS) and embeds high-order control barrier functions and control Lyapunov functions within a quadratic programming formulation (HOCBF-CLF-QP). PEM-CLS captures EMS-required power-regulation dynamics solely from port-level responses, without requiring internal subsystem models, parameters, or controller information. Its modeling error is analytically characterized and explicitly bounded, enabling requirement-oriented dynamic abstraction for safety-critical control. Based on these PEMs, the HOCBF-CLF-QP safety controller coordinates heterogeneous transient power responses and corrects unsafe EMS commands to maintain dynamic safety during command execution. Four deliberately constructed extreme stress-test scenarios are used to expose conflicts between nominal EMS commands and physical safety. Without intervention, the DC-bus voltage violates its safety limit in all four cases, whereas the proposed framework maintains QP feasibility and limits the voltage deviation. The results demonstrate that the proposed framework provides an algorithm-agnostic safety execution layer for intelligent power dispatch without requiring an exact feasible-region model or detailed internal information of lower-level devices.",
@@ -1688,7 +1688,7 @@
           ],
           "year": 2021,
           "date": "2021-05-21",
-          "citations": 145,
+          "citations": 0,
           "arxiv_id": "2105.10596",
           "paper_id": "69a9d7223891cede85152b8ac6c4c3e29292dcae",
           "url": "https://arxiv.org/abs/2105.10596",
@@ -2149,6 +2149,26 @@
           ]
         },
         {
+          "title": "Learning Hybrid Control Barrier Functions from Data",
+          "authors": [
+            "L. Lindemann",
+            "Haimin Hu",
+            "Alexander Robey",
+            "Hanwen Zhang",
+            "D. Dimarogonas",
+            "Stephen Tu",
+            "N. Matni"
+          ],
+          "year": 2020,
+          "date": "2020-11-08",
+          "citations": 0,
+          "arxiv_id": "2011.04112",
+          "paper_id": "8d974574e61c08d054e9036ec56dc51337409ca7",
+          "url": "https://arxiv.org/abs/2011.04112",
+          "abstract": "Motivated by the lack of systematic tools to obtain safe control laws for hybrid systems, we propose an optimization-based framework for learning certifiably safe control laws from data. In particular, we assume a setting in which the system dynamics are known and in which data exhibiting safe system behavior is available. We propose hybrid control barrier functions for hybrid systems as a means to synthesize safe control inputs. Based on this notion, we present an optimization-based framework to learn such hybrid control barrier functions from data. Importantly, we identify sufficient conditions on the data such that feasibility of the optimization problem ensures correctness of the learned hybrid control barrier functions, and hence the safety of the system. We illustrate our findings in two simulations studies, including a compass gait walker.",
+          "subjects": []
+        },
+        {
           "title": "Learning Control Barrier Functions from Expert Demonstrations",
           "authors": [
             "Alexander Robey",
@@ -2161,7 +2181,7 @@
           ],
           "year": 2020,
           "date": "2020-04-07",
-          "citations": 0,
+          "citations": 308,
           "arxiv_id": "2004.03315",
           "paper_id": "a8684cdff4f958a21ed95f181f120d03eb3ec321",
           "url": "https://arxiv.org/abs/2004.03315",
@@ -2173,7 +2193,385 @@
           ]
         }
       ],
-      []
+      [
+        {
+          "title": "Gambits or Assurances? Towards Robust and Verifiable Intelligence for Human-Centered Robotics",
+          "authors": [
+            "Haimin Hu"
+          ],
+          "year": null,
+          "date": "",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "2da6c69febe85f8cc13e01ae589323dc94d1bad1",
+          "url": "https://www.semanticscholar.org/paper/2da6c69febe85f8cc13e01ae589323dc94d1bad1",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Deep Reinforcement Learning Control for Spacecraft Formation With Dynamical Reward",
+          "authors": [
+            "Wei Jin",
+            "Ti Chen",
+            "Haimin Hu",
+            "Hai-Yan"
+          ],
+          "year": null,
+          "date": "",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "1a4fc16f89f6d59074cd87957b8f31a51c5854f4",
+          "url": "https://www.semanticscholar.org/paper/1a4fc16f89f6d59074cd87957b8f31a51c5854f4",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Comparative genomics reveals population structure and ecological adaptation in Lactobacillus helveticus.",
+          "authors": [
+            "Haimin Hu",
+            "Jiao Wu",
+            "Jia-Qi Sun",
+            "Simeng Wang",
+            "Jinhui Liu",
+            "T. Dan"
+          ],
+          "year": 2026,
+          "date": "2026-03-01",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "ea2f8987c13bf758d868baf164a1451e0545c042",
+          "url": "https://www.semanticscholar.org/paper/ea2f8987c13bf758d868baf164a1451e0545c042",
+          "abstract": "Lactobacillus helveticus (L. helveticus) is an important starter culture in fermented dairy production and is valued for its pronounced proteolytic activity. However, the genetic basis of its functional diversity and ecological adaptation warrants further investigation. This study presents a comparative genomic analysis of 284 L. helveticus isolated from diverse geographical regions and ecological niches. This investigation identified a core genome of 490 genes and a pan-genome encompassing 15,105 genes, revealing an open pan-genome structure for this species. Phylogenetic analysis classified the strains into six distinct evolutionary clades, indicating that their genetic evolution was likely driven by selective pressure associated with ecological niches. Statistically significant functional metabolic differences (P < 0.05) were observed among the different phylogenetic and ecological clades, whereas the intracellular peptidases were highly conserved. Assessment of angiotensin-converting enzyme (ACE) inhibitory activity among the strains revealed no significant differences across the phylogenetic clades. These findings demonstrate that L. helveticus has evolved evolutionary genomic mechanisms that facilitate its adaptation to diverse ecological environments. This study highlights the functional diversity of this species and provides a critical theoretical foundation for future industrial strain selection and development.",
+          "subjects": []
+        },
+        {
+          "title": "Metagenomic analysis of lactic acid bacteria communities in inner Mongolian fermented dairy products: influence of milk source and geography.",
+          "authors": [
+            "Hong Li",
+            "Haimin Hu",
+            "Wenhui Lu",
+            "Jinhui Liu",
+            "Qing-Jing Peng",
+            "Simeng Wang",
+            "T. Dan"
+          ],
+          "year": 2026,
+          "date": "2026-03-01",
+          "citations": 4,
+          "arxiv_id": null,
+          "paper_id": "3180b722dca993185e89b02895ac059d81387d1d",
+          "url": "https://www.semanticscholar.org/paper/3180b722dca993185e89b02895ac059d81387d1d",
+          "abstract": "Inner Mongolia, a key grassland region in China, has a long-standing tradition of fermented dairy products. This study aimed to elucidate the influence of milk source and geographical origin on the community structure and functional characteristics of lactic acid bacteria (LAB) in fermented milk. Twenty-four fermented milk samples from four regions were subjected to metagenomic sequencing analysis including α/β-diversity assessment, taxonomic classification, and functional annotation. The milk source and geographical region jointly shaped the diversity of LAB. The LAB community structure in fermented mare milk displayed more pronounced geographical differentiation than that in fermented cow milk. The core dominant LAB species included Lactobacillus kefiranofaciens, Lactobacillus helveticus, and Lactococcus lactis, with L. helveticus being more abundant in fermented mare milk. The functional profiles of LAB varied depending on the milk source used. The data indicated that milk source was a primary factor associated with the core LAB composition, while geographical origin was associated with the modulation of community diversity and functional attributes. These findings provide region-specific insights into the microbial ecology of traditional Inner Mongolian fermented dairy products.",
+          "subjects": []
+        },
+        {
+          "title": "Encapsulation of Lacticaseibacillus paracasei ProSci-92 in sodium alginate/soy protein isolate by endogenous emulsification: Enhanced viability and storage of probiotics",
+          "authors": [
+            "Qing-Jing Peng",
+            "Haimin Hu",
+            "Xinrui Cui",
+            "Jiao Wu",
+            "Wanrong Han",
+            "T. Dan"
+          ],
+          "year": 2025,
+          "date": "2025-12-01",
+          "citations": 6,
+          "arxiv_id": null,
+          "paper_id": "1ff6560422929fb3d5b85a376307d58f2a310ff5",
+          "url": "https://www.semanticscholar.org/paper/1ff6560422929fb3d5b85a376307d58f2a310ff5",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Genomic and transcriptomic analysis provides insights into the metabolic remodeling of a galactose-positive mutant of Streptococcus thermophilus",
+          "authors": [
+            "Q. Gao",
+            "Haiyan Chen",
+            "Haimin Hu",
+            "Binbin He",
+            "Jiao Wu",
+            "Qing-Jing Peng",
+            "Hong Li",
+            "Yue-Nan Wang",
+            "T. Dan"
+          ],
+          "year": 2025,
+          "date": "2025-10-01",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "752e8af0a4a89f705682cd5cdbe100b132bc7f4a",
+          "url": "https://www.semanticscholar.org/paper/752e8af0a4a89f705682cd5cdbe100b132bc7f4a",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Erratum to 'mechanisms of exopolysaccharide synthesis by Streptococcus thermophilus IMAU20246 determined by the carbon source'[Food Chemistry 481 (2025) 144069].",
+          "authors": [
+            "Qing-Jing Peng",
+            "Haimin Hu",
+            "Annaer Dai",
+            "Na Wu",
+            "Hong Li",
+            "T. Dan"
+          ],
+          "year": 2025,
+          "date": "2025-06-14",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "33ce26883220bedf45881ddf05d4fb788318e09b",
+          "url": "https://www.semanticscholar.org/paper/33ce26883220bedf45881ddf05d4fb788318e09b",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "From Gambits to Assurances: Game-Theoretic Integration of Safety and Learning for Interactive Robotics",
+          "authors": [
+            "Haimin Hu"
+          ],
+          "year": 2025,
+          "date": "2025-04-11",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "b71b1e6a7050cd573ff8d88cfab92acdbccb3685",
+          "url": "https://www.semanticscholar.org/paper/b71b1e6a7050cd573ff8d88cfab92acdbccb3685",
+          "abstract": "Autonomous robots are becoming more versatile and widespread in our daily lives. From autonomous vehicles to companion robots for senior care, these human-centric systems must demonstrate a high degree of reliability in order to build trust and, ultimately, deliver social value. How safe is safe enough for robots to be wholeheartedly trusted by society? Is it sufficient if an autonomous vehicle can avoid hitting a fallen cyclist 99.9% of the time? What if this rate can only be achieved by the vehicle always stopping and waiting for the human to move out of the way? I argue that, for trustworthy deployment of robots in human-populated space, we need to complement standard statistical methods with clear-cut robust safety assurances under a vetted set of operation conditions. We need runtime learning to minimize the robot’s performance loss during safety-enforcing maneuvers by reducing its inherent uncertainty induced by its human peers, for example, their intent (does a human driver want to merge, cut behind, or stay in the lane?) or response (if the robot comes closer, how will the human react?). We need to close the loop between the robot’s learning and decision-making so that it can optimize efficiency by anticipating how its ongoing interaction with the human may affect the evolving uncertainty, and ultimately, its long-term performance.",
+          "subjects": []
+        },
+        {
+          "title": "Numerical and Experimental Study of Heat Transfer Enhancement for Horizontal Blowing Panel-Type Radiators with Multiple Fans",
+          "authors": [
+            "Guan-Xun Diao",
+            "Wen-Rong Si",
+            "Chen-Zhao Fu",
+            "He-Li Ni",
+            "Haimin Hu",
+            "Peng Yuan",
+            "Yu-Hang Tian",
+            "Jian Yang"
+          ],
+          "year": 2025,
+          "date": "2025-04-02",
+          "citations": 3,
+          "arxiv_id": null,
+          "paper_id": "289a39e24588cc7d9df2244953a7de1361bca12b",
+          "url": "https://www.semanticscholar.org/paper/289a39e24588cc7d9df2244953a7de1361bca12b",
+          "abstract": "To improve the thermal performance of air-cooled panel-type radiators for transformers, a multi-fan horizontal blowing method was designed in this paper, and the thermo-hydraulic performance of the oil-side and air-side of the panel-type radiator was investigated with a simplified numerical method and experiments. The uniform air distribution and zoned heat dissipation ideas were used for three blowing methods, which can increase the proportion of air supply for the high-temperature area of the radiator and apply multiple fans for zoned heat dissipation of the insulating oil in the radiator. Then, the effect of different insulating oil flow rates on the heat dissipation performance of the panel-type radiator was investigated. It was shown that the computational time for the simplified numerical simulation method used for an air-cooled panel-type radiator could be effectively shortened with a small relative error. Due to a more uniform air supply and prioritized air distribution for the high-temperature areas using the multi-fan horizontal blowing method, the overall heat dissipation efficiency was improved. Among the three blowing methods, the best heat dissipation performance was obtained by using the six-fan horizontal blowing scheme, which can improve the performance by about 10.42% and 15.44% in experimental and numerical studies, respectively, as compared with the traditional blowing method.",
+          "subjects": []
+        },
+        {
+          "title": "Mechanisms of exopolysaccharide synthesis by Streptococcus thermophilus IMAU20246 determined by the carbon source.",
+          "authors": [
+            "Qing-Jing Peng",
+            "Haimin Hu",
+            "Annaer Dai",
+            "Na Wu",
+            "Hong Li",
+            "T. Dan"
+          ],
+          "year": 2025,
+          "date": "2025-03-01",
+          "citations": 9,
+          "arxiv_id": null,
+          "paper_id": "3c3e9d724a4c3e86b353555aaaf8a0196d85a9e6",
+          "url": "https://www.semanticscholar.org/paper/3c3e9d724a4c3e86b353555aaaf8a0196d85a9e6",
+          "abstract": "Our study characterized exopolysaccharide production by Streptococcus thermophilus IMAU20246 with lactose, glucose, galactose, or sucrose as sole carbon sources, and conducted comparative transcriptomics to unravel EPS synthesis mechanisms. The yield, molecular weight, monosaccharide composition and structure of EPSs were significantly affected by carbon sources. The yield of EPSs was highest (617 ± 5.9 mg/L), and Mw the smallest (3.789 × 104 Da) in sucrose; it was 1.5, 1.2 and 1.8 times higher than with lactose, glucose and galactose, respectively. Transcriptomic analysis identified 21 key enzymes for EPS synthesis, and S. thermophilus IMAU20246 preferentially regulated sucrose utilization through ABC transporters, phosphotransferase system (PTS), amino sugar and nucleotide sugar metabolism; and upregulated expression of EPS biosynthesis genes to increase EPS production. This study provides a theoretical basis for enhancing EPS content and reveals the dynamics of EPS synthesis in S. thermophilus which may be significant for further EPS production and application.",
+          "subjects": []
+        },
+        {
+          "title": "Multi-omics analysis reveals the mechanism for galactose metabolism in mutant Streptococcus thermophilus IMAU20551Y",
+          "authors": [
+            "J. Tai",
+            "Haimin Hu",
+            "Jinhui Liu",
+            "Wenhui Lu",
+            "T. Dan"
+          ],
+          "year": 2025,
+          "date": "2025-03-01",
+          "citations": 4,
+          "arxiv_id": null,
+          "paper_id": "74e56e6b30972e4f23f0b6a9f344778e530f816a",
+          "url": "https://www.semanticscholar.org/paper/74e56e6b30972e4f23f0b6a9f344778e530f816a",
+          "abstract": "Streptococcus thermophilus (S. thermophilus) is a species widely used in the dairy industry to accelerate the acidification rate and improve the texture and flavour characteristics of dairy products. However, most S. thermophilus have galactose-negative (Gal−) phenotypes, which can lead to accumulation of free galactose in fermented dairy products. In a previous study, a mutant of S. thermophilus IMAU20551Y was obtained by N-methyl-N′-nitro-N-nitrosoguanidine (NTG) mutagenesis in which key enzymes related to galactose metabolism were significantly changed compared with the wild type. β-galactosidase and galactokinase activity were higher in the mutant while glucokinase and pyruvate kinase activities were significantly decreased compared with the wild type. In this study, the ability of the mutant to metabolize galactose was verified by high performance liquid chromatography (HPLC), and the mechanism for enhanced galactose metabolism elucidated by multi-omics analysis. HPLC analysis showed that accumulation of galactose in milk fermented by mutant S. thermophilus IMAU20551Y was reduced by 41.4%, compared with the wild type. Although no mutations in gene sequences associated with galactose metabolism were detected by genome sequencing, transcriptomic data showed up-regulation in expression of galM, galK, galT, galE (associated with the Leloir pathway) and LacI family transcriptional regulator GalR, resulting in enhanced galactose metabolism in the mutant. This study provides a reference for genetic engineering modification of galactose-positive (Gal+) S. thermophilus, which is expected to be used as a starter for the production of low galactose fermented dairy products.",
+          "subjects": []
+        },
+        {
+          "title": "An Improved Correlation Filtering Method for Tracking Maritime Small Targets of GF-4 Staring Satellite Sequence Images",
+          "authors": [
+            "Deyang Zhang",
+            "Yao Xu",
+            "Haimin Hu"
+          ],
+          "year": 2025,
+          "date": "2025",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "f8b92b2f410a199949921017af349e37191a29cc",
+          "url": "https://www.semanticscholar.org/paper/f8b92b2f410a199949921017af349e37191a29cc",
+          "abstract": "Continuous, accurate and real-time earth observation plays an increasingly important role in battlefield situation awareness, environmental monitoring and many other fields. In this paper, GF-4 staring satellite’s sequence images are taken as the research objects, and its features such as “short imaging interval, long image sequence and high resolution” are used to solve the tracking problem of large and medium ships at sea. Using the target information, the dark-channel background modeling method and multi-scale Retinex illumination algorithm are improved to achieve target enhancement. The multi-scale features of the target based on time and space information are extracted, and the target tracking is realized by improved kernel correlation filtering algorithm. By comprehensively utilizing unscented Kalman filter model and target significance features, tracking results are optimized to improve tracking accuracy. The experimental results show that the proposed algorithm can track dim and small targets in the staring satellite sequence images effectively, and it has reference significance for the application of similar high-precision satellites.",
+          "subjects": []
+        },
+        {
+          "title": "Detection of cable termination stress cone lap defects by microwave reflection method",
+          "authors": [
+            "Guo-Fang Luo",
+            "Wangjun Deng",
+            "Wenlong Xu",
+            "Haimin Hu"
+          ],
+          "year": 2024,
+          "date": "2024-12-27",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "bbc29946d3a71e7f7a8352304859e25311208d2c",
+          "url": "https://www.semanticscholar.org/paper/bbc29946d3a71e7f7a8352304859e25311208d2c",
+          "abstract": "In this paper, a microwave reflection method is proposed to detect the lapping defects of cable terminal stress cones, and theoretical modeling and simulation analysis of cable terminal stress cone lapping defects are carried out, and it is concluded that the reflection coefficients S11 are significantly different under the conditions of normal lapping and misaligned lapping. Finally, based on this principle, an experimental platform was built to take the cold-shrink termination of 10 kV single-core cross-linked cables as the experimental object, and it was found that S11 was not the same under different lap conditions, which verified the feasibility of the method.",
+          "subjects": []
+        },
+        {
+          "title": "Exploration of the Application of Digital Operation and Maintenance of Transformers in Environmental Gas Monitoring",
+          "authors": [
+            "Haimin Hu",
+            "Zhenghong Sun",
+            "Pan Yu",
+            "Ren Cai",
+            "Siyuan Huang"
+          ],
+          "year": 2024,
+          "date": "2024-11-20",
+          "citations": 0,
+          "arxiv_id": null,
+          "paper_id": "fc7942c7ecc67c2ebf8a4096d7a35de56a22c559",
+          "url": "https://www.semanticscholar.org/paper/fc7942c7ecc67c2ebf8a4096d7a35de56a22c559",
+          "abstract": "there are problems such as insufficient sensor accuracy, equipment aging, and environmental interference, which lead to a decrease in monitoring accuracy. As the core component of the monitoring system, the accuracy of sensors directly determines the accuracy of monitoring results. If the accuracy of the sensor is insufficient, it will cause a deviation between the monitoring data and the actual value, further affecting the accuracy of the monitoring results. In addition, environmental factors such as temperature, humidity, and electromagnetic interference can also have adverse effects on monitoring results, leading to data fluctuations or errors. To address these issues, research is being conducted on the application of digital transformer operation and maintenance in environmental gas monitoring. This article uses spectral analysis technology to detect environmentally friendly gases in transformers, obtaining relevant information such as gas concentration. Through laser modulation technology, the control of the laser light source is achieved, and the optimal transformer gas data harmonic signal is obtained. Then, the status monitoring value is obtained through digital operation and maintenance, achieving real-time monitoring. The study conducted in-depth exploration from three dimensions: accuracy of gas concentration, measurement accuracy of gas temperature, and stability of gas pressure readings. The results showed that the new monitoring system can accurately test the changes in C4F7N/CO2 of the system, and the temperature data shows a high degree of consistency with the measured temperature trend, effectively supporting the safe and stable operation of transformers. The error between the test results and the actual pressure always remains within ± 1.00%, far below the requirement of an error range of ± 5%.",
+          "subjects": []
+        },
+        {
+          "title": "Research on 3D information collection path planning for hyper-redundant space robots (HSRs)",
+          "authors": [
+            "Guodong Qin",
+            "Haoran Zhang",
+            "Lei Zheng",
+            "Shijie Liu",
+            "Quan Chen",
+            "Haimin Hu",
+            "Deyang Zhang",
+            "Yong Cheng",
+            "Cong-Ju Zuo",
+            "Ai-Hong Ji"
+          ],
+          "year": 2024,
+          "date": "2024-09-05",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "a237498497ed82fd7d6fc081f551c5d33465ec74",
+          "url": "https://www.semanticscholar.org/paper/a237498497ed82fd7d6fc081f551c5d33465ec74",
+          "abstract": "Abstract. This paper proposes a path-planning method for 3D information collection on the space station surface via the hyper-redundant space robot (HSR). Firstly, to efficiently acquire information on the space station surface, the space station is reduced to a cylindrical model for modelling, and the initial mapping of the temperature field is carried out by a popular Gaussian process. Based on the active information collection method, the collision-free viewpoint trajectory of the space station surface can be planned to improve the efficiency of surface information collection. Then, the path planning of the space station surface information collection can be realized by importing the space station model and temperature field data and performing weight initialization, stochastic search, and continuous optimization. Finally, simulation experiments show that the root-mean-square errors in the surface information collection process are lower than 1 mm relative to the true value. It proves the effectiveness of the online information collection path-planning (IP) method.\n",
+          "subjects": []
+        },
+        {
+          "title": "A wearable conductive hydrogel with triple network reinforcement inspired by bio-fibrous scaffolds for real-time quantitatively sensing compression force exerted on fruit surface",
+          "authors": [
+            "Zhichao Yang",
+            "Zi-Qiang Qin",
+            "Menglu Wu",
+            "Haimin Hu",
+            "P. Nie",
+            "Yong Wang",
+            "Qi-Lei Li",
+            "Di Wu",
+            "Yong He",
+            "Kun-Song Chen"
+          ],
+          "year": 2024,
+          "date": "2024-09-01",
+          "citations": 29,
+          "arxiv_id": null,
+          "paper_id": "61dd29855a355d44d5fc2e90a0b57a0156a40c51",
+          "url": "https://www.semanticscholar.org/paper/61dd29855a355d44d5fc2e90a0b57a0156a40c51",
+          "abstract": "Graphical abstract",
+          "subjects": []
+        },
+        {
+          "title": "Unveiling the genetic basis and metabolic rewiring behind the galactose-positive phenotype in a Streptococcus thermophilus mutant.",
+          "authors": [
+            "Haimin Hu",
+            "Qing-Jing Peng",
+            "J. Tai",
+            "Wenhui Lu",
+            "Jinhui Liu",
+            "T. Dan"
+          ],
+          "year": 2024,
+          "date": "2024-09-01",
+          "citations": 4,
+          "arxiv_id": null,
+          "paper_id": "f7deb56570b57566e6924f8ae021851cdc1ae0e7",
+          "url": "https://www.semanticscholar.org/paper/f7deb56570b57566e6924f8ae021851cdc1ae0e7",
+          "abstract": "Streptococcus thermophilus (S. thermophilus) is a widely used starter culture in dairy fermentation, but most strains are galactose-negative and only metabolize glucose from lactose hydrolysis. In this study, we aimed to uncover the mechanisms underlying the acquisition of a stable galactose-positive (Gal+) phenotype in a mutant strain of S. thermophilus IMAU10636. By treating the wild-type strain with the mutagenic agent N-methyl-N-nitro-N-nitrosoguanidine, we successfully isolated a Gal+ mutant, S. thermophilus IMAU10636Y. Comparative enzyme activity assays revealed that the mutant exhibited higher β-galactosidase and galactokinase activities, but lower glucokinase and pyruvate kinase activities compared to the wild-type. High-performance liquid chromatography analysis confirmed the mutant's enhanced ability to utilize lactose and galactose, leading to increased glucose secretion. Integrated genome and transcriptomics analyses provided deeper insights into the underlying genetic and metabolic mechanisms. We found that the metabolism regulatory network of the glycolysis / Leloir pathway was altered in the mutant, possibly due to the upregulation of the gene expression in the galR-galK intergenic region. This likely led to increased RNA polymerase binding and transcription of the gal operon, ultimately promoting the Gal+ phenotype. Additionally, we identified a mutation in the scrR gene, encoding a LacI family transcriptional repressor, which also contributed to the Gal+ phenotype. These findings offer new perspectives on the metabolic rewiring and regulatory mechanisms that enable S. thermophilus to acquire the ability to metabolize galactose. This knowledge can inform strategies for engineering and selecting Gal+ strains with desirable fermentation characteristics for dairy applications.",
+          "subjects": []
+        },
+        {
+          "title": "Simulation Study on the Detection of Cable Termination Defects by Microwave Reflection Method",
+          "authors": [
+            "Guo-Fang Luo",
+            "Wangjun Deng",
+            "Wenlong Xu",
+            "Haimin Hu"
+          ],
+          "year": 2024,
+          "date": "2024-08-23",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "4dda0cecd22ffbf82956f45c7efaf3e89c9ed1d7",
+          "url": "https://www.semanticscholar.org/paper/4dda0cecd22ffbf82956f45c7efaf3e89c9ed1d7",
+          "abstract": "In this paper, the microwave equivalent reflection coefficient calculation model in the multilayer medium of cable termination is established, and the reflection coefficients of various typical defects inside the cable termination are calculated. A three-dimensional simulation model of rectangular waveguide and cable terminal is established in CST simulation software, and the influence of defects inside the cable terminal on the microwave reflection coefficient is analysed. From the simulation results, the characteristic frequency for detecting defects inside the cable terminal is 28.95 GHz, and the results show that the localization of flaws, the detection of defects of various sizes, and the identification of various types of defects are all possible using the microwave reflection approach. The correctness of the theoretical model is verified from the simulation point of view, which demonstrates even more the microwave reflection method's efficacy and technical viability in identifying cable terminal flaws.",
+          "subjects": []
+        },
+        {
+          "title": "Intelligent Detection of Power Switch Operation Status Based on Multi-source Partial Discharge Sensor Data Fusion",
+          "authors": [
+            "Kun-Qi Jia",
+            "Haimin Hu",
+            "Zhen Cai",
+            "Ren Cai",
+            "Fanqing Gao",
+            "Li-Cheng Huang"
+          ],
+          "year": 2024,
+          "date": "2024-08-09",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "c6470fd14ed7fe0b25afa29025e5fda5f8be8cac",
+          "url": "https://www.semanticscholar.org/paper/c6470fd14ed7fe0b25afa29025e5fda5f8be8cac",
+          "abstract": "There are various types of faults that power switches may face, including but not limited to mechanical faults, electrical faults, insulation faults, etc. Each type of fault may generate different partial discharge signals, which have complex and difficult to distinguish characteristics, posing challenges for fault detection. Therefore, an intelligent detection method for power switch operation status based on multi-source partial discharge sensor data fusion is proposed. A partial discharge (PD) data acquisition and coding system based on multi-source sensors has been designed. The system records and analyzes the basic information and spatial layout of sensors through a unified coding format, supporting efficient PD data acquisition and analysis. The encoding format follows the principle of “substation number voltage interval position electrical relationship” to ensure that the positional relationship between sensors can be accurately recognized by the computer. Using the feature layer information fusion method, the detection results of three partial discharge detection methods, ultrasound, ultra-high frequency, and high frequency, were fused, and a power switch operation status detection model was reconstructed by assigning different weights. Using association rules and decision tree models in data mining techniques to classify, cluster, and predict historical partial discharge data of power switches, analyze the correlation between data, and formulate mining rules for power switch operation status. By calculating the correlation and support, a set of operating states of power switches in the grid under frequent modes is selected. When a power switch fault state is detected, the Kirchhoff current rule is used to estimate the current fault component, and the operating status of the power switch is determined based on specific criteria. The experimental results show that the proposed method can accurately fuse multi-source partial discharge sensing data and achieve intelligent detection of power switch operation status.",
+          "subjects": []
+        },
+        {
+          "title": "Design and Development of an Air–Land Amphibious Inspection Drone for Fusion Reactor",
+          "authors": [
+            "Guodong Qin",
+            "Youzhi Xu",
+            "Wei He",
+            "Qian Qi",
+            "Lei Zheng",
+            "Haimin Hu",
+            "Yong Cheng",
+            "Cong-Ju Zuo",
+            "Deyang Zhang",
+            "Ai-Hong Ji"
+          ],
+          "year": 2024,
+          "date": "2024-05-11",
+          "citations": 6,
+          "arxiv_id": null,
+          "paper_id": "6715c6bb50ce2c86d3c5d5139fe1311e8d3494e1",
+          "url": "https://www.semanticscholar.org/paper/6715c6bb50ce2c86d3c5d5139fe1311e8d3494e1",
+          "abstract": "This paper proposes a design method for a miniature air–land amphibious inspection drone (AAID) to be used in the latest compact fusion reactor discharge gap observation mission. Utilizing the amphibious function, the AAID realizes the function of crawling transportation in the narrow maintenance channel and flying observation inside the fusion reactor. To realize miniaturization, the mobile platform adopts the bionic cockroach wheel-legged system to improve the obstacle-crossing ability. The flight platform adopts an integrated rotor structure with frame and control to reduce the overall weight of the AAID. Based on the AAID dynamic model and the optimal control method, the control strategies under flight mode, hover mode and fly–crawl transition are designed, respectively. Finally, the prototype of the AAID is established, and the crawling, hovering, and fly–crawling transition control experiments are carried out, respectively. The test results show that the maximum crawling inclination of the AAID is more than 20°. The roll angle, pitch angle, and yaw angle deviation of the AAID during hovering are all less than 2°. The landing success rate of the AAID during the fly–crawl transition phase also exceeded 77%, proving the effectiveness of the structural design and dynamic control strategy.",
+          "subjects": []
+        }
+      ]
     ],
     [
       "Massimiliano de Sa",
@@ -2777,7 +3175,7 @@
           ],
           "year": 2021,
           "date": "2021-05-21",
-          "citations": 0,
+          "citations": 114,
           "arxiv_id": "2105.10241",
           "paper_id": "d1f651bafb24c630533acb198b2b4c14c75f1c18",
           "url": "https://arxiv.org/abs/2105.10241",
@@ -2914,7 +3312,7 @@
           ],
           "year": 2021,
           "date": "2021-05-21",
-          "citations": 0,
+          "citations": 114,
           "arxiv_id": "2105.10241",
           "paper_id": "d1f651bafb24c630533acb198b2b4c14c75f1c18",
           "url": "https://arxiv.org/abs/2105.10241",
@@ -2924,7 +3322,431 @@
           ]
         }
       ],
-      []
+      [
+        {
+          "title": "Supporting Online Material Materials and Methods Figs. S1 to S14 Tables S1 to S4 References a Conserved Molecular Framework for Compound Leaf Development",
+          "authors": [
+            "Cong Ou-Yang",
+            "T. Andersson",
+            "S. Kondo",
+            "C. Golden",
+            "Johnson",
+            "J S O 'neill",
+            "E. Maywood",
+            "J. Chesham",
+            "J. Takahashi",
+            "M. Hastings",
+            "M. Zeilinger",
+            "E. Farré",
+            "S. R. Taylor",
+            "S. Kay",
+            "F. Doyle",
+            "E. Farré",
+            "S. Harmer",
+            "F. Harmon",
+            "M. Yanovsky",
+            "S. Thain",
+            "G. Murtas",
+            "J. Lynn",
+            "R. Mcgrath",
+            "A. Millar",
+            "Y. Fan",
+            "A. Hida",
+            "D. A. Anderson",
+            "M. Izumo",
+            "C. Johnson",
+            "K. Stokkan",
+            "S. Yamazaki",
+            "H. Tei",
+            "Y. Sakaki",
+            "M. Menaker",
+            "T. Blein",
+            "A. Pulido",
+            "Aurélie C. M. Vialette-Guiraud",
+            "K. Nikovics",
+            "H. Morin",
+            "A. Hay",
+            "Ida Elisabeth Johansen"
+          ],
+          "year": null,
+          "date": "",
+          "citations": 61,
+          "arxiv_id": null,
+          "paper_id": "2389c49551dcf86470e040cf283b1a283a271956",
+          "url": "https://www.semanticscholar.org/paper/2389c49551dcf86470e040cf283b1a283a271956",
+          "abstract": "",
+          "subjects": []
+        },
+        {
+          "title": "Cerebral Hemodynamic Changes During Cardiac Surgery: A Feasibility MR Study in Piglets",
+          "authors": [
+            "Dominik T. Schulte",
+            "R. O'Gorman-Tuura",
+            "Henning Richter",
+            "Michael Hofmann",
+            "F. Del Chicca",
+            "T. Aigner",
+            "Christoph Loeschmann",
+            "Martina Lentini",
+            "M. Wieser",
+            "Frauke Seehusen",
+            "R. Bektas",
+            "M. Zeilinger",
+            "M. Schmiady",
+            "M. Schmid Daners"
+          ],
+          "year": 2026,
+          "date": "2026-04-05",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "95b349d942292ba4c1a8a60e40755e382d5507a2",
+          "url": "https://www.semanticscholar.org/paper/95b349d942292ba4c1a8a60e40755e382d5507a2",
+          "abstract": "Congenital heart disease often requires early surgical intervention. Cardiopulmonary bypass (CPB) is a standard procedure, but infants undergoing CPB show an increased risk of postoperative white matter injury. These injuries are associated with adverse neurodevelopmental outcomes, yet the underlying mechanisms remain poorly understood. MR imaging offers unique opportunities to study cerebral perfusion and metabolism in vivo but has not previously been feasible during CPB with a heart‐lung machine (HLM) in close proximity to the patient and the MR scanner, respectively, because conventional HLMs interfere with scanner operation. To address this limitation, we developed an MR‐conditional HLM and evaluated it in an in vivo piglet model, which closely mimics the neonatal brain and circulation. Unlike conventional systems, our MR‐conditional roller pump can be positioned directly inside the scanner bore without compromising imaging quality or pump performance. Four trials were conducted, in which piglets were cannulated and maintained on CPB inside the MR scanner. During CPB, cooling, rewarming, and unilateral carotid clamping were performed while repeatedly acquiring MR data on flow, diffusion, perfusion, and metabolism. Crucial brain structures—including the basal ganglia, hippocampus, and internal capsule—were consistently visualized without artifacts, and no disturbances occurred in pump operation or monitoring signals. The MR scans revealed flow‐related changes and a progressive increase in lactate, suggesting the onset of metabolic stress under hypoperfusion. These results demonstrate the technical feasibility of performing CPB within the MR scanner using an MR‐conditional HLM. Although not sufficient to identify specific mechanisms of brain injury, this platform provides a unique foundation for mechanistic studies in relevant large‐animal models. In the future, such an approach could help identify early markers of cerebral vulnerability, improve the safety of pediatric cardiac surgery, and inform the development of neuroprotective strategies for CPB and extracorporeal membrane oxygenation patients.",
+          "subjects": []
+        },
+        {
+          "title": "An MPC framework for efficient navigation of mobile robots in cluttered environments",
+          "authors": [
+            "Johannes Köhler",
+            "Dan-xu Zhang",
+            "Raffaele Soloperto",
+            "Andrea Carron",
+            "M. Zeilinger"
+          ],
+          "year": 2025,
+          "date": "2025-09-19",
+          "citations": 0,
+          "arxiv_id": "2509.15917",
+          "paper_id": "fc515945742027d4939e9a9c183bf086b0d6c616",
+          "url": "https://arxiv.org/abs/2509.15917",
+          "abstract": "We present a model predictive control (MPC) framework for efficient navigation of mobile robots in cluttered environments. The proposed approach integrates a finite-segment shortest path planner into the finite-horizon trajectory optimization of the MPC. This formulation ensures convergence to dynamically selected targets and guarantees collision avoidance, even under general nonlinear dynamics and cluttered environments. The approach is validated through hardware experiments on a small ground robot, where a human operator dynamically assigns target locations that a robot should reach while avoiding obstacles. The robot reached new targets within 2-3 seconds and responded to new commands within 50 ms to 100 ms, immediately adjusting its motion even while still moving at high speeds toward a previous target.",
+          "subjects": []
+        },
+        {
+          "title": "ZipMPC: Compressed Context-Dependent MPC Cost via Imitation Learning",
+          "authors": [
+            "Rahel Rickenbach",
+            "Alan A. Lahoud",
+            "Erik Schaffernicht",
+            "M. Zeilinger",
+            "J. A. Stork"
+          ],
+          "year": 2025,
+          "date": "2025-07-17",
+          "citations": 0,
+          "arxiv_id": "2507.13088",
+          "paper_id": "90245ae0306abdbc3c2cd37949b7d055b58e1ae4",
+          "url": "https://arxiv.org/abs/2507.13088",
+          "abstract": "The computational burden of model predictive control (MPC) limits its application on real-time systems, such as robots, and often requires the use of short prediction horizons. This not only affects the control performance, but also increases the difficulty of designing MPC cost functions that reflect the desired long-term objective. This paper proposes ZipMPC, a method that imitates a long-horizon MPC behaviour by learning a compressed and context-dependent cost function for a short-horizon MPC. It improves performance over alternative methods, such as approximate explicit MPC and automatic cost parameter tuning, in particular in terms of i) optimizing the long term objective; ii) maintaining computational costs comparable to a short-horizon MPC; iii) ensuring constraint satisfaction; and iv) generalizing control behaviour to environments not observed during training. For this purpose, ZipMPC leverages the concept of differentiable MPC with neural networks to propagate gradients of the imitation loss through the MPC optimization. We validate our proposed method in simulation and real-world experiments on autonomous racing. ZipMPC consistently completes laps faster than selected baselines, achieving lap times close to the long-horizon MPC baseline. In challenging scenarios where the short-horizon MPC baseline fails to complete a lap, ZipMPC is able to do so. In particular, these performance gains are also observed on tracks unseen during training.",
+          "subjects": []
+        },
+        {
+          "title": "A robust and adaptive MPC formulation for Gaussian process models",
+          "authors": [
+            "Mathieu Dubied",
+            "Amon Lahr",
+            "M. Zeilinger",
+            "Johannes Köhler"
+          ],
+          "year": 2025,
+          "date": "2025-07-02",
+          "citations": 3,
+          "arxiv_id": "2507.02098",
+          "paper_id": "30c27e41eb41cbcb0630a5abf5b475af4b395fb2",
+          "url": "https://arxiv.org/abs/2507.02098",
+          "abstract": "In this paper, we present a robust and adaptive model predictive control (MPC) framework for uncertain nonlinear systems affected by bounded disturbances and unmodeled nonlinearities. We use Gaussian Processes (GPs) to learn the uncertain dynamics based on noisy measurements, including those collected during system operation. As a key contribution, we derive robust predictions for GP models using contraction metrics, which are incorporated in the MPC formulation. The proposed design guarantees recursive feasibility, robust constraint satisfaction and convergence to a reference state, with high probability. We provide a numerical example of a planar quadrotor subject to difficult-to-model ground effects, which highlights significant improvements achieved through the proposed robust prediction method and through online learning.",
+          "subjects": []
+        },
+        {
+          "title": "CSFsim: A Simulation Framework for Cerebrospinal Fluid Dynamics and Hydrocephalus Shunt Systems",
+          "authors": [
+            "Jonas Ohnemus",
+            "Fabian Flurenbrock",
+            "Anthony Podgoršak",
+            "M. Zeilinger",
+            "M. Schmid Daners"
+          ],
+          "year": 2025,
+          "date": "2025-07-01",
+          "citations": 2,
+          "arxiv_id": null,
+          "paper_id": "a5c98438050e11adbcbd71bb326d554f24252f95",
+          "url": "https://www.semanticscholar.org/paper/a5c98438050e11adbcbd71bb326d554f24252f95",
+          "abstract": "This paper introduces a unified and open-source simulation framework for lumped-parameter models of cerebrospinal fluid (CSF) dynamics and hydrocephalus shunt systems. The framework enables the estimation of the underlying parameters of CSF models from physiological time series data to create a subject-specific model. A synthetic forcing generator is used to create customizable but realistic cardiovascular forcing signals as inputs to CSF models. Additionally, shunt systems with different physical properties and control strategies can be designed and integrated for closed-loop shunt simulations. The framework is based on a modular design, which allows for seamless adaptation and continuous improvement of the individual components in the simulation pipeline. To promote reproducibility and collaboration, we open-source the framework and provide the code at: https://gitlab.ethz.ch/ics/csfsim.Clinical relevance— The ability to accurately estimate the parameters of CSF models may provide clinicians with deeper insights into a patient’s pathophysiology, enabling more personalized treatment decisions for hydrocephalus. Additionally, a unified simulation framework can support the development of new CSF models for fundamental research and the design of smart shunt systems for improved therapy outcomes.",
+          "subjects": []
+        },
+        {
+          "title": "Constraint-Aware Diffusion Guidance for Robotics: Real-Time Obstacle Avoidance for Autonomous Racing",
+          "authors": [
+            "Hao Ma",
+            "Sabrina Bodmer",
+            "Andrea Carron",
+            "M. Zeilinger",
+            "M. Muehlebach"
+          ],
+          "year": 2025,
+          "date": "2025-05-19",
+          "citations": 0,
+          "arxiv_id": "2505.13131",
+          "paper_id": "611b7454e628e99a8182620e8d65077fa9e8e8f3",
+          "url": "https://arxiv.org/abs/2505.13131",
+          "abstract": "Diffusion models hold great potential in robotics due to their ability to capture complex, high-dimensional data distributions. However, their lack of constraint-awareness limits their deployment in safety-critical applications. We propose Constraint-Aware Diffusion Guidance (CoDiG), a data-efficient and general-purpose framework that integrates barrier functions into the denoising process, guiding diffusion sampling toward constraint-satisfying outputs. CoDiG enables constraint satisfaction even with limited training data and generalizes across tasks. We evaluate our framework in the challenging setting of miniature autonomous racing, where real-time obstacle avoidance is essential. Real-world experiments show that CoDiG generates safe outputs efficiently under dynamic conditions, highlighting its potential for broader robotic applications. A demonstration video is available at https://youtu.be/KNYsTdtdxOU.",
+          "subjects": []
+        },
+        {
+          "title": "VIEshunt: towards a ventricular intelligent and electromechanical shunt for hydrocephalus therapy",
+          "authors": [
+            "Fabian Flurenbrock",
+            "Leonie Korn",
+            "Dominik T. Schulte",
+            "Anthony Podgoršak",
+            "Joris Chomarat",
+            "Janina Hug",
+            "Tiago Hungerland",
+            "Caroline Holzer",
+            "David Iselin",
+            "Luca Krebs",
+            "R. Weiß",
+            "M. F. Oertel",
+            "Lennart Stieglitz",
+            "M. Weisskopf",
+            "M. Meboldt",
+            "M. Zeilinger",
+            "M. Schmid Daners"
+          ],
+          "year": 2025,
+          "date": "2025-03-14",
+          "citations": 5,
+          "arxiv_id": null,
+          "paper_id": "a46945e2e3a56c7fe42b092c73188cf0b63685ec",
+          "url": "https://www.semanticscholar.org/paper/a46945e2e3a56c7fe42b092c73188cf0b63685ec",
+          "abstract": "Shunt systems for hydrocephalus therapy are commonly based on passive mechanical pressure valves that are driven by the intracranial, intra-abdominal, and hydrostatic pressure. The differential pressure acting on the valve determines the drainage rate of cerebrospinal fluid (CSF) but is not a gauge of the physiological condition of the patient. Internal and external influences can cause over- or underdrainage and lead to pathological levels of intracranial pressure (ICP). The first prototype of a ventricular intelligent and electromechanical shunt (VIEshunt) is developed, tested, and compared with previous efforts towards the development of a smart shunt. Its key components are a micro pump, a flow meter, a pressure sensor, an inertial measurement unit, a wireless communication interface, and a microcontroller. The VIEshunt prototype was tested in vitro using a hardware-in-the-loop (HiL) test bench that runs real-time patient simulations involving changes in intracranial and intra-abdominal pressure, as well as changes in posture ranging between supine and upright position. The prototype was subsequently tested in an in vivo pilot study based on an acute ovine animal model (n=1) with infusions of artificial CSF. During 24 h in vitro testing, the prototype detected the simulated posture changes of the patient and automatically adapted the controller reference. The posture-specific ICP references of 12 mmHg for supine and —3 mmHg for upright position were tracked without offset, thus preventing adverse over- and underdrainage during the investigated HiL test scenario. During acute in vivo testing, the prototype first regulated the mean ICP of a sheep from 22 mmHg down to 20 mmHg. Each of the three subsequent intraventricular bolus infusions of 1 mL saline solution increased mean ICP by approximately 11 mmHg. While natural absorption alone decreased ICP by only 5 mmHg within 9 min, the prototype was able to regulate ICP back to the pre-bolus pressure value within 5 min. The developed VIEshunt prototype is capable of posture-dependent ICP regulation and CSF drainage control. Smart shunt systems based on VIEshunt could improve patient monitoring and enable optimal physiologic therapy by adapting to the individual patient. To derive statistically relevant conclusions for the performance of VIEshunt, future work will focus on the development of a next generation prototype for use in pre-clinical studies.",
+          "subjects": []
+        },
+        {
+          "title": "Toward the \"Perfect\" Shunt: Historical Vignette, Current Efforts, and Future Directions.",
+          "authors": [
+            "Anthony Podgoršak",
+            "Fabian Flurenbrock",
+            "N. Trimmel",
+            "Leonie Korn",
+            "M. F. Oertel",
+            "Lennart H. Stieglitz",
+            "Sandra Fernandes Dias",
+            "M. Hierweger",
+            "M. Zeilinger",
+            "M. Weisskopf",
+            "M. Schmid Daners"
+          ],
+          "year": 2024,
+          "date": "2024",
+          "citations": 3,
+          "arxiv_id": null,
+          "paper_id": "3e57eedf99ce428bca201a82960a214d378ec8af",
+          "url": "https://www.semanticscholar.org/paper/3e57eedf99ce428bca201a82960a214d378ec8af",
+          "abstract": "As a concept, drainage of excess fluid volume in the cranium has been around for more than 1000 years. Starting with the original decompression-trepanation of Abulcasis to modern programmable shunt systems, to other nonshunt-based treatments such as endoscopic third ventriculostomy and choroid plexus cauterization, we have come far as a field. However, there are still fundamental limitations that shunts have yet to overcome: namely posture-induced over- and underdrainage, the continual need for valve opening pressure especially in pediatric cases, and the failure to reinstall physiologic intracranial pressure dynamics. However, there are groups worldwide, in the clinic, in industry, and in academia, that are trying to ameliorate the current state of the technology within hydrocephalus treatment. This chapter aims to provide a historical overview of hydrocephalus, current challenges in shunt design, what members of the community have done and continue to do to address these challenges, and finally, a definition of the \"perfect\" shunt is provided and how the authors are working toward it.",
+          "subjects": []
+        },
+        {
+          "title": "Physics-Informed Machine Learning for Modeling and Control of Dynamical Systems",
+          "authors": [
+            "Truong X. Nghiem",
+            "Ján Drgoňa",
+            "Colin N. Jones",
+            "Zoltán Nagy",
+            "Roland Schwan",
+            "Biswadip Dey",
+            "A. Chakrabarty",
+            "S. di Cairano",
+            "Joel A. Paulson",
+            "Andrea Carron",
+            "M. Zeilinger",
+            "Wenceslao Shaw Cortez",
+            "D. Vrabie"
+          ],
+          "year": 2023,
+          "date": "2023-05-31",
+          "citations": 0,
+          "arxiv_id": "2306.13867",
+          "paper_id": "d95c7f3a6ca2b98ba3c4422aabb33e3754cb1a47",
+          "url": "https://arxiv.org/abs/2306.13867",
+          "abstract": "Physics-informed machine learning (PIML) is a set of methods and tools that systematically integrate machine learning (ML) algorithms with physical constraints and abstract mathematical models developed in scientific and engineering domains. As opposed to purely data-driven methods, PIML models can be trained from additional information obtained by enforcing physical laws such as energy and mass conservation. More broadly, PIML models can include abstract properties and conditions such as stability, convexity, or invariance. The basic premise of PIML is that the integration of ML and physics can yield more effective, physically consistent, and data-efficient models. This paper aims to provide a tutorial-like overview of the recent advances in PIML for dynamical system modeling and control. Specifically, the paper covers an overview of the theory, fundamental concepts and methods, tools, and applications on topics of: 1) physics-informed learning for system identification; 2) physics-informed learning for control; 3) analysis and verification of PIML models; and 4) physics-informed digital twins. The paper is concluded with a perspective on open challenges and future research opportunities.",
+          "subjects": []
+        },
+        {
+          "title": "On Stochastic MPC Formulations with Closed-Loop Guarantees: Analysis and a Unifying Framework",
+          "authors": [
+            "Johannes Köhler",
+            "Ferdinand Geuss",
+            "M. Zeilinger"
+          ],
+          "year": 2023,
+          "date": "2023-03-31",
+          "citations": 0,
+          "arxiv_id": "2304.00069",
+          "paper_id": "13687300840729315442123f1299c1c58bfd37a5",
+          "url": "https://arxiv.org/abs/2304.00069",
+          "abstract": "We investigate model predictive control (MPC) formulations for linear systems subject to i.i.d. stochastic disturbances with bounded support and chance constraints. Existing stochastic MPC formulations with closed-loop guarantees can be broadly classified in two separate frameworks: i) using robust techniques; ii) feasibility preserving algorithms. We investigate two particular MPC formulations representative for these two frameworks called robust-stochastic MPC and indirect feedback stochastic MPC. We provide a qualitative analysis, highlighting intrinsic limitations of both approaches in different edge cases. Then, we derive a unifying stochastic MPC framework that naturally includes these two formulations as limit cases. This qualitative analysis is complemented with numerical results, showcasing the advantages and limitations of each method.",
+          "subjects": []
+        },
+        {
+          "title": "Active Learning-Based Model Predictive Coverage Control",
+          "authors": [
+            "Rahel Rickenbach",
+            "Johannes Köhler",
+            "Anna Scampicchio",
+            "M. Zeilinger",
+            "Andrea Carron"
+          ],
+          "year": 2023,
+          "date": "2023-03-17",
+          "citations": 0,
+          "arxiv_id": "2303.09910",
+          "paper_id": "8beb3d4fa5f98201e78e061ad40bcf07af646a6f",
+          "url": "https://arxiv.org/abs/2303.09910",
+          "abstract": "The problem of coverage control, i.e., of coordinating multiple agents to optimally cover an area, arises in various applications. However, coverage applications face two major challenges: 1) dealing with nonlinear dynamics while respecting system and safety critical constraints and 2) performing the task in an initially unknown environment. We solve the coverage problem by using a hierarchical framework, in which references are calculated at a central server and passed to the agents' local model predictive control (MPC) tracking schemes. Furthermore, to ensure that the environment is actively explored by the agents a probabilistic exploration–exploitation tradeoff is deployed. In addition, we derive a control framework that avoids the hierarchical structure by integrating the reference optimization in the MPC formulation. Active learning is then performed drawing inspiration from Upper Confidence Bound (UCB) approaches. For all developed control architectures, we guarantee closed-loop constraint satisfaction and convergence to an optimal configuration. Furthermore, all methods are tested and compared on hardware using a miniature car platform.",
+          "subjects": []
+        },
+        {
+          "title": "Beratung von ostasiatischen Studierenden",
+          "authors": [
+            "M. Zeilinger"
+          ],
+          "year": 2023,
+          "date": "2023",
+          "citations": 3,
+          "arxiv_id": null,
+          "paper_id": "fbde67ea8e426d92bcf1824f44ef9cb6f1154324",
+          "url": "https://www.semanticscholar.org/paper/fbde67ea8e426d92bcf1824f44ef9cb6f1154324",
+          "abstract": "Angesichts wachsender Studierendenzahlen chinesischer, japanischer und koreanischer Studierender in Deutschland werden geeignete Beratungs- und Förderungsangebote für diese Studierendengruppe immer wichtiger. Da ostasiatische Studierende von einer gänzlich anderen Lernkultur und Wissenschaftspraxis geprägt sind, haben sie oft erhebliche Schwierigkeiten, sich im deutschen Hochschulalltag zurechtzufinden und in die deutsche Studierendengemeinschaft zu integrieren. Aufgrund des stark verschulten Hochschulsystems in ihren Heimatländern fällt es ihnen schwer, plötzlich ihr Studium selbstbestimmt zu gestalten.",
+          "subjects": []
+        },
+        {
+          "title": "Bayesian Multi-Task Learning MPC for Robotic Mobile Manipulation",
+          "authors": [
+            "Elena Arcari",
+            "M. Minniti",
+            "Anna Scampicchio",
+            "Andrea Carron",
+            "Farbod Farshidian",
+            "Marco Hutter",
+            "M. Zeilinger"
+          ],
+          "year": 2022,
+          "date": "2022-11-18",
+          "citations": 0,
+          "arxiv_id": "2211.10270",
+          "paper_id": "13cd39b7595650a486638b340a3fcd19985aff36",
+          "url": "https://arxiv.org/abs/2211.10270",
+          "abstract": "Mobile manipulation in robotics is challenging due to the need to solve many diverse tasks, such as opening a door or picking-and-placing an object. Typically, a basic first-principles system description of the robot is available, thus motivating the use of model-based controllers. However, the robot dynamics and its interaction with an object are affected by uncertainty, limiting the controller's performance. To tackle this problem, we propose a Bayesian multi-task learning model that uses trigonometric basis functions to identify the error in the dynamics. In this way, data from different but related tasks can be leveraged to provide a descriptive error model that can be efficiently updated online for new, unseen tasks. We combine this learning scheme with a model predictive controller, and extensively test the effectiveness of the proposed approach, including comparisons with available baseline controllers. We present simulation tests with a ball-balancing robot, and door opening hardware experiments with a quadrupedal manipulator.",
+          "subjects": []
+        },
+        {
+          "title": "A model predictive control framework with robust stability guarantees under unbounded disturbances",
+          "authors": [
+            "Johannes Kohler",
+            "M. Zeilinger"
+          ],
+          "year": 2022,
+          "date": "2022-07-20",
+          "citations": 0,
+          "arxiv_id": "2207.10216",
+          "paper_id": "8a4c470585c7187d1327e22cd151fb8196d1e0eb",
+          "url": "https://arxiv.org/abs/2207.10216",
+          "abstract": "To address feasibility issues in model predictive control (MPC), most implementations relax state constraints by using slack variables and adding a penalty to the cost. We propose an alternative strategy: relaxing the initial state constraint with a penalty. Compared to state-of-the-art soft constrained MPC formulations, the proposed formulation has two key features: (i) input-to-state stability and bounds on the cumulative constraint violation for unbounded disturbances; (ii) close-to-optimal performance under nominal operating conditions. The idea is initially presented for open-loop asymptotically stable nonlinear systems by designing the penalty as a Lyapunov function, but we also show how to relax this condition to: i) Lyapunov stable systems; ii) stabilizable systems; and iii) utilizing an implicit characterization of the Lyapunov function. In the special case of linear systems, the proposed MPC formulation reduces to a quadratic program, and the offline design and online computational complexity are only marginally increased compared to a nominal design. Numerical examples demonstrate benefits compared to state-of-the-art soft-constrained MPC formulations.",
+          "subjects": []
+        },
+        {
+          "title": "A Feasible Sequential Linear Programming Algorithm with Application to Time-Optimal Path Planning Problems",
+          "authors": [
+            "D. Kiessling",
+            "Andrea Zanelli",
+            "Armin Nurkanović",
+            "Joris Gillis",
+            "M. Diehl",
+            "M. Zeilinger",
+            "G. Pipeleers",
+            "J. Swevers"
+          ],
+          "year": 2022,
+          "date": "2022-05-02",
+          "citations": 0,
+          "arxiv_id": "2205.00754",
+          "paper_id": "c546da02765551ba3123e61b7145e97f439dc7b4",
+          "url": "https://arxiv.org/abs/2205.00754",
+          "abstract": "In this paper, we propose a Feasible Sequential Linear Programming (FSLP) algorithm applied to time-optimal control problems (TOCP) obtained through direct multiple shooting discretization. This method is motivated by TOCP with nonlinear constraints which arise in motion planning of mechatronic systems. The algorithm applies a trust-region globalization strategy ensuring global convergence. For fully determined problems our algorithm provides locally quadratic convergence. Moreover, the algorithm keeps all iterates feasible enabling early termination at suboptimal, feasible solutions. This additional feasibility is achieved by an efficient iterative strategy using evaluations of constraints, i.e., zero-order information. Convergence of the feasibility iterations can be enforced by reduction of the trust-region radius. These feasibility iterations maintain feasibility for general Nonlinear Programs (NLP). Therefore, the algorithm is applicable to general NLPs. We demonstrate our algorithm’s efficiency and the feasibility update strategy on a TOCP of an overhead crane motion planning simulation case.",
+          "subjects": []
+        },
+        {
+          "title": "Developing high performance asphalt mixtures with considerable amounts of recycled asphalt with a new chemical bitumen additive",
+          "authors": [
+            "N. U. Carreño",
+            "M. Oeser",
+            "M. Zeilinger",
+            "Olivier Fleischel"
+          ],
+          "year": 2021,
+          "date": "2021-10-26",
+          "citations": 1,
+          "arxiv_id": null,
+          "paper_id": "6bd2967a25e46dee0a071c383ebd3d4fa2cc8c82",
+          "url": "https://www.semanticscholar.org/paper/6bd2967a25e46dee0a071c383ebd3d4fa2cc8c82",
+          "abstract": "Due to the increase of heavy traffic worldwide, many roads are being repaved to be able to support this demand. This generates an ever-growing amount of reclaimed material which is increasingly challenging to recycle due to bitumen aging. A new type of reactive chemical additive (B2Last®), tested at the laboratory of the Institute of Highway Engineering of the RWTH Aachen University, has shown to increase the asphalt performance by creating an elastic network within the bitumen. The additive reacts with the functional groups within the neat and oxidized bitumen producing a good performing bitumen in mixtures with or without reclaimed asphalt. The additive has also shown to increase the workability of the asphalt mixtures, as well as the performance against rutting and fatigue, without disrupting the low temperature behavior. By using softer base bitumen, like a neat 70/100 bitumen, the modified bitumen is able to perform well at very low temperatures, and also at very high ones. This is seen on laboratory bitumen and asphalt tests, as well as on mixture samples taken from the construction of a real-life track close to Munich. There, a 200-meter-long binder layer was built with 50% reclaimed asphalt in June 2019. With a small amount of additive mixed with a neat 70/100 bitumen, the workability on site of the mixture was improved, and the performance was on the same level as the reference track, where an SBS modified bitumen was employed.",
+          "subjects": []
+        },
+        {
+          "title": "Contextual Tuning of Model Predictive Control for Autonomous Racing",
+          "authors": [
+            "Lukas P. Fröhlich",
+            "Christian Küttel",
+            "Elena Arcari",
+            "L. Hewing",
+            "M. Zeilinger",
+            "Andrea Carron"
+          ],
+          "year": 2021,
+          "date": "2021-10-06",
+          "citations": 0,
+          "arxiv_id": "2110.02710",
+          "paper_id": "6e60e39411eba8769bcccd2e353d8c444477371e",
+          "url": "https://arxiv.org/abs/2110.02710",
+          "abstract": "Learning-based model predictive control has been widely applied in autonomous racing to improve the closed-loop behaviour of vehicles in a data-driven manner. When environmental conditions change, e.g., due to rain, often only the predictive model is adapted, but the controller parameters are kept constant. However, this can lead to suboptimal behaviour. In this paper, we address the problem of data-efficient controller tuning, adapting both the model and objective simultaneously. The key novelty of the proposed approach is that we leverage a learned dynamics model to encode the environmental condition as a so-called context. This insight allows us to employ contextual Bayesian optimization to efficiently transfer knowledge across different environmental conditions. Consequently, we require fewer data to find the optimal controller configuration for each context. The proposed framework is extensively evaluated with more than 3'000 laps driven on an experimental platform with 1:28 scale RC race cars. The results show that our approach successfully optimizes the lap time across different contexts requiring fewer data compared to other approaches based on standard Bayesian optimization.",
+          "subjects": []
+        },
+        {
+          "title": "Tactical Entanglements: AI Art, Creative Agency, and the Limits of Intellectual Property",
+          "authors": [
+            "M. Zeilinger"
+          ],
+          "year": 2021,
+          "date": "2021-06-18",
+          "citations": 36,
+          "arxiv_id": null,
+          "paper_id": "967d6bc121771579f567dd0ec4b4021a0022b6be",
+          "url": "https://www.semanticscholar.org/paper/967d6bc121771579f567dd0ec4b4021a0022b6be",
+          "abstract": "How do artistic experiments with artificial intelligence problematize human-centered notions of creative agency, authorship, and ownership? Offering a wide-ranging discussion of contemporary digital art practices, philosophical and technical considerations of AI, posthumanist thought, and emerging issues of intellectual property and the commons, this book is firmly positioned against the anthropomorphic spectacle of \"creative AI.\" It proposes instead the concept of the posthumanist agential assemblage, and invites readers to consider what new types of creative practice, what reconfigurations of the author function, and what critical interventions become possible when AI art provokes tactical entanglements between aesthetics, law, and capital.",
+          "subjects": []
+        },
+        {
+          "title": "Data-driven control of room temperature and bidirectional EV charging using deep reinforcement learning: Simulations and experiments",
+          "authors": [
+            "B. Svetozarevic",
+            "C. Baumann",
+            "S. Muntwiler",
+            "L. Di Natale",
+            "M. Zeilinger",
+            "Philipp Heer"
+          ],
+          "year": 2021,
+          "date": "2021-03-02",
+          "citations": 53,
+          "arxiv_id": "2103.01886",
+          "paper_id": "1972f4bbc9fd6eebc724075e4e47c9d4f9bb3536",
+          "url": "https://arxiv.org/abs/2103.01886",
+          "abstract": "This work presents a fully data-driven, black-box pipeline to obtain an optimal control policy for a multi-loop building control problem based on historical building and weather data, thus without the need for complex physics-based modelling. We demonstrate the method for joint control of room temperature and bidirectional EV charging to maximize the occupant thermal comfort and energy savings while leaving enough energy in the EV battery for the next trip. We modelled the room temperature with a recurrent neural network and EV charging with a piece-wise linear function. Using these models as a simulation environment, we applied a deep reinforcement learning (DRL) algorithm to obtain an optimal control policy. The learnt policy achieves on average 17% energy savings over the heating season and 19% better comfort satisfaction than a standard RB room temperature controller. When a bidirectional EV is additionally connected and a two-tariff electricity pricing is applied, the MIMO DRL policy successfully leverages the battery and decreases the overall cost of electricity compared to two standard RB controllers, one controlling the room temperature and another controlling the bidirectional EV (dis-)charging. Finally, we demonstrate a successful transfer of the learnt DRL policy from simulation onto a real building, the DFAB HOUSE at Empa Duebendorf in Switzerland, achieving up to 30% energy savings while maintaining similar comfort levels compared to a conventional RB room temperature controller over three weeks during the heating season.",
+          "subjects": []
+        }
+      ]
     ],
     [
       "Anil Alan",
