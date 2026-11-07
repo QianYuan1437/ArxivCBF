@@ -32,7 +32,7 @@
       ],
       "year": 2023,
       "date": "2023-10-01",
-      "citations": 289,
+      "citations": 291,
       "arxiv_id": null,
       "paper_id": "ee4395ec938e8861d6646113ddd6f4aede0d2605",
       "url": "https://www.semanticscholar.org/paper/ee4395ec938e8861d6646113ddd6f4aede0d2605",
@@ -167,7 +167,7 @@
       ],
       "year": 2021,
       "date": "2021-08-18",
-      "citations": 655,
+      "citations": 659,
       "arxiv_id": null,
       "paper_id": "5cd269d0aa2fad218d39dacdd380ebb9244b88c5",
       "url": "https://www.semanticscholar.org/paper/5cd269d0aa2fad218d39dacdd380ebb9244b88c5",
@@ -217,7 +217,7 @@
       ],
       "year": 2021,
       "date": "2021-05-21",
-      "citations": 0,
+      "citations": 145,
       "arxiv_id": "2105.10596",
       "paper_id": "69a9d7223891cede85152b8ac6c4c3e29292dcae",
       "url": "https://arxiv.org/abs/2105.10596",
@@ -466,7 +466,7 @@
       ],
       "year": 2019,
       "date": "2019-01-01",
-      "citations": 415,
+      "citations": 416,
       "arxiv_id": null,
       "paper_id": "0a8878cc9a339e2f133436f1c1624d54a7cb30cd",
       "url": "https://www.semanticscholar.org/paper/0a8878cc9a339e2f133436f1c1624d54a7cb30cd",
@@ -480,7 +480,7 @@
       ],
       "year": 2018,
       "date": "2018-10-01",
-      "citations": 481,
+      "citations": 482,
       "arxiv_id": null,
       "paper_id": "795bd045acd3bc6dd6c8d98d6763b6e18e4e5f7b",
       "url": "https://www.semanticscholar.org/paper/795bd045acd3bc6dd6c8d98d6763b6e18e4e5f7b",
@@ -547,7 +547,7 @@
       ],
       "year": 2016,
       "date": "2016-07-06",
-      "citations": 675,
+      "citations": 676,
       "arxiv_id": null,
       "paper_id": "1d385c55a692705df8e77185aac626ca560ac32f",
       "url": "https://www.semanticscholar.org/paper/1d385c55a692705df8e77185aac626ca560ac32f",
@@ -1300,7 +1300,7 @@
         "Ziqing Zhu"
       ],
       "date": "2026-10-12",
-      "citations": 0,
+      "citations": 1,
       "arxiv_id": "2610.16718v1",
       "url": "https://arxiv.org/abs/2610.16718v1",
       "abstract": "Intelligent power dispatch is enabling fast and self-adaptive decision-making in microgrids, yet its deployment in real-world industry remains limited due to unresolved safety concerns. Existing safety-preserving approaches typically rely on an accurate characterization of the feasible operating region, which is impossible to obtain under uncertain and heterogeneous system dynamics. Moreover, even a dispatch command verified as feasible at a discrete setpoint may become unsafe during its continuous physical execution. To address these challenges, this paper proposes a safety-aware dispatch adjustment framework that uses performance-equivalent modeling of closed-loop systems (PEM-CLS) and embeds high-order control barrier functions and control Lyapunov functions within a quadratic programming formulation (HOCBF-CLF-QP). PEM-CLS captures EMS-required power-regulation dynamics solely from port-level responses, without requiring internal subsystem models, parameters, or controller information. Its modeling error is analytically characterized and explicitly bounded, enabling requirement-oriented dynamic abstraction for safety-critical control. Based on these PEMs, the HOCBF-CLF-QP safety controller coordinates heterogeneous transient power responses and corrects unsafe EMS commands to maintain dynamic safety during command execution. Four deliberately constructed extreme stress-test scenarios are used to expose conflicts between nominal EMS commands and physical safety. Without intervention, the DC-bus voltage violates its safety limit in all four cases, whereas the proposed framework maintains QP feasibility and limits the voltage deviation. The results demonstrate that the proposed framework provides an algorithm-agnostic safety execution layer for intelligent power dispatch without requiring an exact feasible-region model or detailed internal information of lower-level devices.",
@@ -1449,7 +1449,7 @@
           ],
           "year": 2023,
           "date": "2023-10-01",
-          "citations": 289,
+          "citations": 291,
           "arxiv_id": null,
           "paper_id": "ee4395ec938e8861d6646113ddd6f4aede0d2605",
           "url": "https://www.semanticscholar.org/paper/ee4395ec938e8861d6646113ddd6f4aede0d2605",
@@ -1640,25 +1640,6 @@
       "K. Sreenath",
       [
         {
-          "title": "Dynamic Collision Avoidance Using Velocity Obstacle-Based Control Barrier Functions",
-          "authors": [
-            "Ji-Hao Huang",
-            "Jun Zeng",
-            "Xue-Min Chi",
-            "K. Sreenath",
-            "Zhi-Tao Liu",
-            "Hong-Ye Su"
-          ],
-          "year": 2025,
-          "date": "2025-03-01",
-          "citations": 0,
-          "arxiv_id": "2503.00606",
-          "paper_id": "60b79a333c93eb14cc207459cdcd8fa948cf4d0c",
-          "url": "https://arxiv.org/abs/2503.00606",
-          "abstract": "Designing safety-critical controllers for acceleration-controlled unicycle robots is challenging, as control inputs may not appear in the constraints of control Lyapunov functions (CLFs) and control barrier functions (CBFs), leading to invalid controllers. Existing methods often rely on state-feedback-based CLFs and high-order CBFs (HOCBFs), which are computationally expensive to construct and fail to maintain effectiveness in dynamic environments with fast-moving, nearby obstacles. To address these challenges, we propose constructing velocity obstacle (VO)-based CBFs (VOCBFs) in the velocity space to enhance dynamic collision avoidance capabilities, instead of relying on distance-based CBFs that require the introduction of HOCBFs. Additionally, by extending VOCBFs using variants of VO, we enable reactive collision avoidance between robots. We formulate a safety-critical controller for acceleration-controlled unicycle robots as a mixed-integer quadratic programming (MIQP), integrating state-feedback-based CLFs for navigation and VOCBFs for collision avoidance. To enhance the efficiency of solving the MIQP, we split the MIQP into multiple suboptimization problems and employ a decision network to reduce computational costs. Numerical simulations demonstrate that our approach effectively guides the robot to its target while avoiding collisions. Compared to HOCBFs, VOCBFs exhibit significantly improved dynamic obstacle avoidance performance, especially when obstacles are fast moving and close to the robot. Furthermore, we extend our method to distributed multirobot systems.",
-          "subjects": []
-        },
-        {
           "title": "Data-Driven Safety Filters: Hamilton-Jacobi Reachability, Control Barrier Functions, and Predictive Methods for Uncertain Systems",
           "authors": [
             "K. P. Wabersich",
@@ -1671,7 +1652,7 @@
           ],
           "year": 2023,
           "date": "2023-10-01",
-          "citations": 289,
+          "citations": 291,
           "arxiv_id": null,
           "paper_id": "ee4395ec938e8861d6646113ddd6f4aede0d2605",
           "url": "https://www.semanticscholar.org/paper/ee4395ec938e8861d6646113ddd6f4aede0d2605",
@@ -1707,7 +1688,7 @@
           ],
           "year": 2021,
           "date": "2021-05-21",
-          "citations": 0,
+          "citations": 145,
           "arxiv_id": "2105.10596",
           "paper_id": "69a9d7223891cede85152b8ac6c4c3e29292dcae",
           "url": "https://arxiv.org/abs/2105.10596",
@@ -1717,74 +1698,6 @@
             "cs.RO",
             "math.OC"
           ]
-        },
-        {
-          "title": "Robust Control Barrier–Value Functions for Safety-Critical Control",
-          "authors": [
-            "J. Choi",
-            "Dong-Gun Lee",
-            "K. Sreenath",
-            "C. Tomlin",
-            "S. Herbert"
-          ],
-          "year": 2021,
-          "date": "2021-04-06",
-          "citations": 0,
-          "arxiv_id": "2104.02808",
-          "paper_id": "558e38786c18df7a217d719e08310e144a64dadb",
-          "url": "https://arxiv.org/abs/2104.02808",
-          "abstract": "This paper works towards unifying two popular approaches in the safety control community: Hamilton-Jacobi (HJ) reachability and Control Barrier Functions (CBFs). HJ Reachability has methods for direct construction of value functions that provide safety guarantees and safe controllers, however the online implementation can be overly conservative and/or rely on chattering bang-bang control. The CBF community has methods for safe-guarding controllers in the form of point-wise optimization using quadratic programs (CBF-QP), where the CBF-based safety certificate is used as a constraint. However, finding a valid CBF for a general dynamical system is challenging. This paper unifies these two methods by introducing a new reachability formulation inspired by the structure of CBFs to construct a Control Barrier-Value Function (CBVF). We verify that CBVF is a viscosity solution to a novel Hamilton-Jacobi-Isaacs Variational Inequality and preserves the same safety guarantee as the original reachability formulation. Finally, inspired by the CBF-QP, we propose a QP-based online control synthesis for systems affine in control and disturbance, whose solution is always the CBVF’s optimal control signal robust to bounded disturbance. We demonstrate the benefit of using the CBVFs for double-integrator and Dubins car systems by comparing it to previous methods.",
-          "subjects": []
-        },
-        {
-          "title": "Safety-Critical Control using Optimal-decay Control Barrier Function with Guaranteed Point-wise Feasibility",
-          "authors": [
-            "Jun Zeng",
-            "Bi-Ke Zhang",
-            "Zhongyu Li",
-            "K. Sreenath"
-          ],
-          "year": 2021,
-          "date": "2021-03-23",
-          "citations": 0,
-          "arxiv_id": "2103.12375",
-          "paper_id": "a04cda4daed93c7041785a845173df5efab77b2a",
-          "url": "https://arxiv.org/abs/2103.12375",
-          "abstract": "Safety is one of the fundamental problems in robotics. Recently, a quadratic program based control barrier function (CBF) method has emerged as a way to enforce safety-critical constraints. Together with control Lyapunov function (CLF), it forms a safety-critical control strategy, named CLF-CBF-QP, which can mediate between achieving the control objective and ensuring safety, while being executable in real-time. However, once additional constraints such as input constraints are introduced, the CLF-CBF-QP may encounter infeasibility. In order to address the challenge arises due to the infeasibility, we propose an optimal-decay form for safety-critical control wherein the decay rate of the CBF is optimized point-wise in time so as to guarantee point-wise feasibility when the state lies inside the safe set. The proposed control design is numerically validated using an adaptive cruise control example.",
-          "subjects": []
-        },
-        {
-          "title": "Rule-Based Safety-Critical Control Design using Control Barrier Functions with Application to Autonomous Lane Change",
-          "authors": [
-            "Suiyi He",
-            "Jun Zeng",
-            "Bi-Ke Zhang",
-            "K. Sreenath"
-          ],
-          "year": 2021,
-          "date": "2021-03-23",
-          "citations": 0,
-          "arxiv_id": "2103.12382",
-          "paper_id": "a7ce60b06b297b19cbcbac1d6c762935838a8af5",
-          "url": "https://arxiv.org/abs/2103.12382",
-          "abstract": "This paper develops a new control design for guaranteeing a vehicle's safety during lane change maneuvers in a complex traffic environment. The proposed method uses a finite state machine (FSM), where a quadratic program based optimization problem using control Lyapunov functions and control barrier functions (CLF-CBF-QP) is used to calculate the system's optimal inputs via rule-based control strategies. The FSM can make switches between different states automatically according to the command of driver and traffic environment, which makes the ego vehicle find a safe opportunity to do a collision-free lane change maneuver. By using a convex quadratic program, the controller can guarantee the system's safety at a high update frequency. A set of pre-designed typical lane change scenarios as well as randomly generated driving scenarios are simulated to show the performance of our controller.",
-          "subjects": []
-        },
-        {
-          "title": "Safety-Critical Model Predictive Control with Discrete-Time Control Barrier Function",
-          "authors": [
-            "Jun Zeng",
-            "Bi-Ke Zhang",
-            "K. Sreenath"
-          ],
-          "year": 2020,
-          "date": "2020-07-22",
-          "citations": 0,
-          "arxiv_id": "2007.11718",
-          "paper_id": "58af72097330b194d126962bfb05862dde3bf921",
-          "url": "https://arxiv.org/abs/2007.11718",
-          "abstract": "The optimal performance of robotic systems is usually achieved near the limit of state and input bounds. Model predictive control (MPC) is a prevalent strategy to handle these operational constraints, however, safety still remains an open challenge for MPC as it needs to guarantee that the system stays within an invariant set. In order to obtain safe optimal performance in the context of set invariance, we present a safety-critical model predictive control strategy utilizing discrete-time control barrier functions (CBFs), which guarantees system safety and accomplishes optimal performance via model predictive control. We analyze the feasibility and the stability properties of our control design. We verify the properties of our method on a 2D double integrator model for obstacle avoidance. We also validate the algorithm numerically using a competitive car racing example, where the ego car is able to overtake other racing cars.",
-          "subjects": []
         },
         {
           "title": "Reinforcement Learning for Safety-Critical Control under Model Uncertainty, using Control Lyapunov Functions and Control Barrier Functions",
@@ -1851,7 +1764,7 @@
           ],
           "year": 2016,
           "date": "2016-07-06",
-          "citations": 675,
+          "citations": 676,
           "arxiv_id": null,
           "paper_id": "1d385c55a692705df8e77185aac626ca560ac32f",
           "url": "https://www.semanticscholar.org/paper/1d385c55a692705df8e77185aac626ca560ac32f",
@@ -1859,429 +1772,7 @@
           "subjects": []
         }
       ],
-      [
-        {
-          "title": "SuperMimic: Scaling Humanoid Whole-Body Control with One Differentiable World Model",
-          "authors": [
-            "Qia-Yuan Liao",
-            "Yi-Yang Shao",
-            "Jun-Feng Long",
-            "Kevin Zakka",
-            "R. Horowitz",
-            "Pieter Abbeel",
-            "K. Sreenath"
-          ],
-          "year": 2026,
-          "date": "2026-10-20",
-          "citations": 0,
-          "arxiv_id": "2610.28480",
-          "paper_id": "251172bb9753a85caaffee850f2c1281848f9606",
-          "url": "https://arxiv.org/abs/2610.28480",
-          "abstract": "Tracking large human-motion datasets has become the dominant route to general, expressive humanoid whole-body control, but scaling across many motions is expensive. Current pipelines use model-free reinforcement learning, either merging per-motion specialists through lossy distillation, or brute-forcing a single policy with cluster-scale compute. SuperMimic amortizes learning across all motions with one differentiable world model of their shared dynamics, fit from logged transitions of a standard rigid-body simulator. The world model and the tracking policy train together in one loop, and backpropagation-through-time over short imagined rollouts gives the policy analytic gradients. Fast imagined rollouts and analytic gradients make policy learning efficient. In 3 hours on a single GPU, SuperMimic surpasses the return of a state-of-the-art motion tracker baseline trained for 7 days on 128 GPUs. It reduces GPU-hours by more than $1000\\times$ and fails on only 25 of 129,514 benchmark motions, versus 179 failures for the baseline. After 9.8 hours on two GPUs, SuperMimic achieves zero failures. From 1 to 264 hours of motion, the world model's prediction error stays stable, and GPU-hours to a target return grow slowly. Our policy transfers to a physical Unitree G1 across diverse and acrobatic motions. SuperMimic removes compute as the bottleneck to scaling humanoid whole-body control, making it practical to measure motion-tracking scaling laws.",
-          "subjects": []
-        },
-        {
-          "title": "VLK: Learning Humanoid Loco-Manipulation from Synthetic Interactions in Reconstructed Scenes",
-          "authors": [
-            "Yen-Jen Wang",
-            "Jiaman Li",
-            "Sirui Chen",
-            "Takara Truong",
-            "Pei Xu",
-            "Pieter Abbeel",
-            "Rocky Duan",
-            "K. Sreenath",
-            "Angjoo Kanazawa",
-            "Carmelo Sferrazza",
-            "Guan-Ya Shi",
-            "C. K. Liu"
-          ],
-          "year": 2026,
-          "date": "2026-06-29",
-          "citations": 0,
-          "arxiv_id": "2606.30645",
-          "paper_id": "e28cb1cffd38b5bf38ec761ba5138deed792ef25",
-          "url": "https://arxiv.org/abs/2606.30645",
-          "abstract": "Perception-based humanoid loco-manipulation requires connecting egocentric observations and task instructions to whole-body motion. Learning this mapping requires synchronized egocentric images, language commands, and robot-compatible kinematic trajectories, yet no existing data source provides this complete tuple at scale. We address this bottleneck by generating vision-language-kinematics (VLK) supervision synthetically in reconstructed scenes. Our pipeline leverages 3D Gaussian Splatting to reconstruct metric-scale indoor environments, synthesizes navigation and object-interaction trajectories using privileged scene information, and renders paired egocentric observations after the fact. We produce 48,000 paired trajectories with no human intervention and train a VLK policy that predicts short-horizon whole-body kinematic trajectories. A whole-body tracker converts these predictions into actions on the physical humanoid. We evaluate on the physical Unitree G1 performing navigation and single-object transport, demonstrating that synthesized interactions in reconstructed scenes provide effective supervision for sim-to-real perception-based humanoid loco-manipulation. Project Website: https://vision-language-kinematics.github.io/",
-          "subjects": []
-        },
-        {
-          "title": "WOMBET: World Model-based Experience Transfer for Robust and Sample-efficient Reinforcement Learning",
-          "authors": [
-            "Mintae Kim",
-            "K. Sreenath"
-          ],
-          "year": 2026,
-          "date": "2026-04-10",
-          "citations": 0,
-          "arxiv_id": "2604.08958",
-          "paper_id": "10e1e24dc9315f48e249be7bc2db72dabf321914",
-          "url": "https://arxiv.org/abs/2604.08958",
-          "abstract": "Reinforcement learning (RL) in robotics is often limited by the cost and risk of data collection, motivating experience transfer from a source task to a target task. Offline-to-online RL leverages prior data but typically assumes a given fixed dataset and does not address how to generate reliable data for transfer. We propose World Model-Based Experience Transfer (WOMBET), a framework that jointly generates and utilizes prior data. WOMBET learns a world model in the source task and generates offline data via uncertainty-penalized planning, followed by filtering trajectories with high return and low epistemic uncertainty. It then performs online fine-tuning in the target task using adaptive sampling between offline and online data, enabling a stable transition from prior-driven initialization to task-specific adaptation. We show that the uncertainty-penalized objective provides a lower bound on the true return and derive a finite-sample error decomposition capturing distribution mismatch and approximation error. Empirically, WOMBET improves sample efficiency and final performance over strong baselines on continuous control benchmarks, demonstrating the benefit of jointly optimizing data generation and transfer.",
-          "subjects": []
-        },
-        {
-          "title": "SPARK: Skeleton-Parameter Aligned Retargeting on Humanoid Robots with Kinodynamic Trajectory Optimization",
-          "authors": [
-            "Han-Wen Wang",
-            "Qia-Yuan Liao",
-            "Bi-Ke Zhang",
-            "Kun-Zhao Ren",
-            "K. Sreenath",
-            "Xiao-Bin Xiong"
-          ],
-          "year": 2026,
-          "date": "2026-03-12",
-          "citations": 0,
-          "arxiv_id": "2603.11480",
-          "paper_id": "858a21427ef77a2f302d63bdc2b2880db3ecfc0e",
-          "url": "https://arxiv.org/abs/2603.11480",
-          "abstract": "Human motion provides rich priors for training general-purpose humanoid control policies, but raw demonstrations are often incompatible with a robot's kinematics and dynamics, limiting their direct use. We present a two-stage pipeline for generating natural and dynamically feasible motion references from task-space human data. First, we convert human motion into a unified robot description format (URDF)-based skeleton representation and calibrate it to the target humanoid's dimensions. By aligning the underlying skeleton structure rather than heuristically modifying task-space targets, this step significantly reduces inverse kinematics error and tuning effort. Second, we refine the retargeted trajectories through progressive kinodynamic trajectory optimization (TO), solved in three stages: kinematic TO, inverse dynamics, and full kinodynamic TO, each warm-started from the previous solution. The final result yields dynamically consistent state trajectories and joint torque profiles, providing high-quality references for learning-based controllers. Together, skeleton calibration and kinodynamic TO enable the generation of natural, physically consistent motion references across diverse humanoid platforms.",
-          "subjects": []
-        },
-        {
-          "title": "Perceptive Humanoid Parkour: Chaining Dynamic Human Skills via Motion Matching",
-          "authors": [
-            "Zhen Wu",
-            "Xiao-Yu Huang",
-            "Lu-Jie Yang",
-            "Yuanhang Zhang",
-            "K. Sreenath",
-            "Xi Chen",
-            "Pieter Abbeel",
-            "Rocky Duan",
-            "Angjoo Kanazawa",
-            "Carmelo Sferrazza",
-            "Guan-Ya Shi",
-            "C. K. Liu"
-          ],
-          "year": 2026,
-          "date": "2026-02-17",
-          "citations": 0,
-          "arxiv_id": "2602.15827",
-          "paper_id": "28affb4c70b339d39c7711844a932757b8b540c9",
-          "url": "https://arxiv.org/abs/2602.15827",
-          "abstract": "While recent advances in humanoid locomotion have achieved stable walking on varied terrains, capturing the agility and adaptivity of highly dynamic human motions remains an open challenge. In particular, agile parkour in complex environments demands not only low-level robustness, but also human-like motion expressiveness, long-horizon skill composition, and perception-driven decision-making. In this paper, we present Perceptive Humanoid Parkour (PHP), a modular framework that enables humanoid robots to autonomously perform long-horizon, vision-based parkour across challenging obstacle courses. Our approach first leverages motion matching, formulated as nearest-neighbor search in a feature space, to compose retargeted atomic human skills into long-horizon kinematic trajectories. This framework enables the flexible composition and smooth transition of complex skill chains while preserving the elegance and fluidity of dynamic human motions. Next, we train motion-tracking reinforcement learning (RL) expert policies for these composed motions, and distill them into a single depth-based, multi-skill student policy, using a combination of DAgger and RL. Crucially, the combination of perception and skill composition enables autonomous, context-aware decision-making: using only onboard depth sensing and a discrete 2D velocity command, the robot selects and executes whether to step over, climb onto, vault or roll off obstacles of varying geometries and heights. We validate our framework with extensive real-world experiments on a Unitree G1 humanoid robot, demonstrating highly dynamic parkour skills such as climbing tall obstacles up to 1.25m (96% robot height), as well as long-horizon multi-obstacle traversal with closed-loop adaptation to real-time obstacle perturbations.",
-          "subjects": []
-        },
-        {
-          "title": "RPL: Learning Robust Humanoid Perceptive Locomotion on Challenging Terrains",
-          "authors": [
-            "Yuanhang Zhang",
-            "Younggyo Seo",
-            "Juyue Chen",
-            "Yi-Fu Yuan",
-            "K. Sreenath",
-            "Pieter Abbeel",
-            "Carmelo Sferrazza",
-            "C. K. Liu",
-            "Rocky Duan",
-            "Guan-Ya Shi"
-          ],
-          "year": 2026,
-          "date": "2026-02-03",
-          "citations": 0,
-          "arxiv_id": "2602.03002",
-          "paper_id": "00fe6bb8d00bc6832b92326d2daad44798ba16ea",
-          "url": "https://arxiv.org/abs/2602.03002",
-          "abstract": "Humanoid perceptive locomotion has made significant progress and shows great promise, yet achieving robust multi-directional locomotion on complex terrains remains underexplored. To tackle this challenge, we propose RPL, a two-stage training framework that enables multi-directional locomotion on challenging terrains, and remains robust with payloads. RPL first trains terrain-specific expert policies with privileged height map observations to master decoupled locomotion and manipulation skills across different terrains, and then distills them into a transformer policy that leverages multiple depth cameras to cover a wide range of views. During distillation, we introduce two techniques to robustify multi-directional locomotion, depth feature scaling based on velocity commands and random side masking, which are critical for asymmetric depth observations and unseen widths of terrains. For scalable depth distillation, we develop an efficient multi-depth system that ray-casts against both dynamic robot meshes and static terrain meshes in massively parallel environments, achieving a 5-times speedup over the depth rendering pipelines in existing simulators while modeling realistic sensor latency, noise, and dropout. Extensive real-world experiments demonstrate robust multi-directional locomotion with payloads (2kg) across challenging terrains, including 20{\\deg} slopes, staircases with different step lengths (22 cm, 25 cm, 30 cm), and 25 cm by 25 cm stepping stones separated by 60 cm gaps.",
-          "subjects": []
-        },
-        {
-          "title": "mjlab: A Lightweight Framework for GPU-Accelerated Robot Learning",
-          "authors": [
-            "Kevin Zakka",
-            "Qia-Yuan Liao",
-            "Brent Yi",
-            "L. Lay",
-            "K. Sreenath",
-            "Pieter Abbeel"
-          ],
-          "year": 2026,
-          "date": "2026-01-29",
-          "citations": 0,
-          "arxiv_id": "2601.22074",
-          "paper_id": "80e1e59979a8a59496fb1339adad2b4d23f9365c",
-          "url": "https://arxiv.org/abs/2601.22074",
-          "abstract": "We present mjlab, a lightweight, open-source framework for robot learning that combines GPU-accelerated simulation with composable environments and minimal setup friction. mjlab adopts the manager-based API introduced by Isaac Lab, where users compose modular building blocks for observations, rewards, and events, and pairs it with MuJoCo Warp for GPU-accelerated physics. The result is a framework installable with a single command, requiring minimal dependencies, and providing direct access to native MuJoCo data structures. mjlab ships with reference implementations of velocity tracking, motion imitation, and manipulation tasks.",
-          "subjects": []
-        },
-        {
-          "title": "Learning Dexterous Manipulation Skills from Imperfect Simulations",
-          "authors": [
-            "Elvis Hsieh",
-            "Wen-Han Hsieh",
-            "Yen-Jen Wang",
-            "To-Ru Lin",
-            "Jitendra Malik",
-            "K. Sreenath",
-            "Haozhi Qi"
-          ],
-          "year": 2025,
-          "date": "2025-12-01",
-          "citations": 0,
-          "arxiv_id": "2512.02011",
-          "paper_id": "157b8752a29d47f5f0aba254224d635804441758",
-          "url": "https://arxiv.org/abs/2512.02011",
-          "abstract": "Reinforcement learning and sim-to-real transfer have made significant progress in dexterous manipulation. However, progress remains limited by the difficulty of simulating complex contact dynamics and multisensory signals, especially tactile feedback. In this work, we propose DexScrew, a sim-to-real framework that addresses these limitations and demonstrates its effectiveness on nut-bolt fastening and screwdriving with multi-fingered hands. The framework has three stages. First, we train reinforcement learning policies in simulation using simplified object models that lead to the emergence of correct finger gaits. We then use the learned policy as a skill primitive within a teleoperation system to collect real-world demonstrations that contain tactile and proprioceptive information. Finally, we train a behavior cloning policy that incorporates tactile sensing and show that it generalizes to nuts and screwdrivers with diverse geometries. Experiments across both tasks show high task progress ratios compared to direct sim-to-real transfer and robust performance even on unseen object shapes and under external perturbations.",
-          "subjects": []
-        },
-        {
-          "title": "HITTER: A HumanoId Table TEnnis Robot via Hierarchical Planning and Learning",
-          "authors": [
-            "Zhi Su",
-            "Bi-Ke Zhang",
-            "Nima Rahmanian",
-            "Yu-Man Gao",
-            "Qia-Yuan Liao",
-            "Caitlin Regan",
-            "K. Sreenath",
-            "S. Sastry"
-          ],
-          "year": 2025,
-          "date": "2025-08-28",
-          "citations": 0,
-          "arxiv_id": "2508.21043",
-          "paper_id": "bbd45cd569d82e8452fef89f8b44d175790e285c",
-          "url": "https://arxiv.org/abs/2508.21043",
-          "abstract": "Humanoid robots have recently achieved impressive progress in locomotion and whole-body control, yet they remain constrained in tasks that demand rapid interaction with dynamic environments through manipulation. Table tennis exemplifies such a challenge: with ball speeds exceeding 5 m/s, players must perceive, predict, and act within sub-second reaction times, requiring both agility and precision. To address this, we present a hierarchical framework for humanoid table tennis that integrates a model-based planner for ball trajectory prediction and racket target planning with a reinforcement learning-based whole-body controller. The planner determines striking position, velocity and timing, while the controller generates coordinated arm and leg motions that mimic human strikes and maintain stability and agility across consecutive rallies. Moreover, to encourage natural movements, human motion references are incorporated during training. We validate our system on a general-purpose humanoid robot, achieving up to 106 consecutive shots with a human opponent and sustained exchanges against another humanoid. These results demonstrate real-world humanoid table tennis with sub-second reactive control, marking a step toward agile and interactive humanoid behaviors.",
-          "subjects": []
-        },
-        {
-          "title": "BeyondMimic: From Motion Tracking to Versatile Humanoid Control via Guided Diffusion",
-          "authors": [
-            "Qia-Yuan Liao",
-            "Takara Truong",
-            "Xiao-Yu Huang",
-            "Yu-Man Gao",
-            "Guy Tevet",
-            "K. Sreenath",
-            "C. K. Liu"
-          ],
-          "year": 2025,
-          "date": "2025-08-11",
-          "citations": 0,
-          "arxiv_id": "2508.08241",
-          "paper_id": "5e41d6cb0dac607eb5fbc901bb565877612cf60b",
-          "url": "https://arxiv.org/abs/2508.08241",
-          "abstract": "The humanlike form of humanoid robots uniquely positions them to achieve the agility and versatility in motor skills that humans have. Learning from human demonstrations offers a scalable approach to acquiring these capabilities. However, prior works either produced unnatural motions or relied on motion-specific tuning to achieve satisfactory naturalness. Furthermore, these methods are often motion or goal specific, lacking the versatility to compose diverse skills, especially when solving unseen tasks. We present BeyondMimic, a framework that scales to diverse motions and carries the versatility to compose them seamlessly in tackling unseen downstream tasks. A compact motion tracking formulation enables mastery of a wide range of highly agile behaviors, including aerial cartwheels, spin kicks, flip kicks, and sprinting, with a single setup and shared hyperparameters, all while achieving humanlike performance. Moving beyond the mere imitation of existing motions, we propose a unified latent diffusion model that empowers versatile goal specification, seamless task switching, and dynamic composition of these agile behaviors. Leveraging classifier guidance, a diffusion-specific technique for test-time optimization toward unseen objectives, our model extended its capability to solve downstream tasks never encountered during training, including motion inpainting, joystick teleoperation, and obstacle avoidance, and transferred these skills zero-shot to real hardware. Together, these components enable scalable acquisition of humanlike motor skills from human motion and motion synthesis that generalizes and adapts beyond the training setup.",
-          "subjects": []
-        },
-        {
-          "title": "LeVERB: Humanoid Whole-Body Control with Latent Vision-Language Instruction",
-          "authors": [
-            "Haoru Xue",
-            "Xiao-Yu Huang",
-            "Dan-Tong Niu",
-            "Qia-Yuan Liao",
-            "Thomas Kragerud",
-            "J. Gravdahl",
-            "Xue-Bin Peng",
-            "Guan-Ya Shi",
-            "Trevor Darrell",
-            "K. Sreenath",
-            "S. Sastry"
-          ],
-          "year": 2025,
-          "date": "2025-06-16",
-          "citations": 0,
-          "arxiv_id": "2506.13751",
-          "paper_id": "2908c90439041ccd829a8666fa8073b6b85bde0e",
-          "url": "https://arxiv.org/abs/2506.13751",
-          "abstract": "Vision-language-action (VLA) models have demonstrated strong semantic understanding and zero-shot generalization, yet most existing systems assume an accurate low-level controller with hand-crafted action\"vocabulary\"such as end-effector pose or root velocity. This assumption confines prior work to quasi-static tasks and precludes the agile, whole-body behaviors required by humanoid whole-body control (WBC) tasks. To capture this gap in the literature, we start by introducing the first sim-to-real-ready, vision-language, closed-loop benchmark for humanoid WBC, comprising over 150 tasks from 10 categories. We then propose LeVERB: Latent Vision-Language-Encoded Robot Behavior, a hierarchical latent instruction-following framework for humanoid vision-language WBC, the first of its kind. At the top level, a vision-language policy learns a latent action vocabulary from synthetically rendered kinematic demonstrations; at the low level, a reinforcement-learned WBC policy consumes these latent verbs to generate dynamics-level commands. In our benchmark, LeVERB can zero-shot attain a 80% success rate on simple visual navigation tasks, and 58.5% success rate overall, outperforming naive hierarchical whole-body VLA implementation by 7.8 times.",
-          "subjects": []
-        },
-        {
-          "title": "Modelling the Influence of Climate Drivers on the Spatial Distribution of Scads along the West Coast of India",
-          "authors": [
-            "Rose P. Bright",
-            "Eldho Varghese",
-            "Alphonsa Joseph",
-            "J. Jayasankar",
-            "R. R. Kumar",
-            "Reshma Gills",
-            "N. Kishore",
-            "Grinson George",
-            "K. Sreenath"
-          ],
-          "year": 2025,
-          "date": "2025-04-01",
-          "citations": 2,
-          "arxiv_id": null,
-          "paper_id": "8dc17fc83e33492bf56722894375fc8a0c6423dc",
-          "url": "https://www.semanticscholar.org/paper/8dc17fc83e33492bf56722894375fc8a0c6423dc",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Diffuse-CLoC: Guided Diffusion for Physics-based Character Look-ahead Control",
-          "authors": [
-            "Xiao-Yu Huang",
-            "Takara Truong",
-            "Yun-Bo Zhang",
-            "Fang-Zhou Yu",
-            "Jean-Pierre Sleiman",
-            "Jessica K. Hodgins",
-            "K. Sreenath",
-            "Farbod Farshidian"
-          ],
-          "year": 2025,
-          "date": "2025-03-14",
-          "citations": 0,
-          "arxiv_id": "2503.11801",
-          "paper_id": "4071bf00cea436d4afd9a2948fc6214080bf2b26",
-          "url": "https://arxiv.org/abs/2503.11801",
-          "abstract": "We present Diffuse-CLoC, a guided diffusion framework for physics-based look-ahead control that enables intuitive, steerable, and physically realistic motion generation. While existing kinematics motion generation with diffusion models offer intuitive steering capabilities with inference-time conditioning, they often fail to produce physically viable motions. In contrast, recent diffusion-based control policies have shown promise in generating physically realizable motion sequences, but the lack of kinematics prediction limits their steerability. Diffuse-CLoC addresses these challenges through a key insight: modeling the joint distribution of states and actions within a single diffusion model makes action generation steerable by conditioning it on the predicted states. This approach allows us to leverage established conditioning techniques from kinematic motion generation while producing physically realistic motions. As a result, we achieve planning capabilities without the need for a high-level planner. Our method handles a diverse set of unseen long-horizon downstream tasks through a single pre-trained model, including static and dynamic obstacle avoidance, motion in-betweening, and task-space control. Experimental results show that our method significantly outperforms the traditional hierarchical framework of high-level motion diffusion and low-level tracking.",
-          "subjects": []
-        },
-        {
-          "title": "RoboCopilot: Human-in-the-loop Interactive Imitation Learning for Robot Manipulation",
-          "authors": [
-            "Philipp Wu",
-            "Yide Shentu",
-            "Qia-Yuan Liao",
-            "Ding Jin",
-            "Meng Guo",
-            "K. Sreenath",
-            "Xing-Yu Lin",
-            "Pieter Abbeel"
-          ],
-          "year": 2025,
-          "date": "2025-03-10",
-          "citations": 0,
-          "arxiv_id": "2503.07771",
-          "paper_id": "dcd99528e6f8d554af00f59821c98f9a12858713",
-          "url": "https://arxiv.org/abs/2503.07771",
-          "abstract": "Learning from human demonstration is an effective approach for learning complex manipulation skills. However, existing approaches heavily focus on learning from passive human demonstration data for its simplicity in data collection. Interactive human teaching has appealing theoretical and practical properties, but they are not well supported by existing human-robot interfaces. This paper proposes a novel system that enables seamless control switching between human and an autonomous policy for bi-manual manipulation tasks, enabling more efficient learning of new tasks. This is achieved through a compliant, bilateral teleoperation system. Through simulation and hardware experiments, we demonstrate the value of our system in an interactive human teaching for learning complex bi-manual manipulation skills.",
-          "subjects": []
-        },
-        {
-          "title": "MuJoCo Playground",
-          "authors": [
-            "Kevin Zakka",
-            "Baruch Tabanpour",
-            "Qia-Yuan Liao",
-            "M. Haiderbhai",
-            "Samuel Holt",
-            "Jing Luo",
-            "Arthur Allshire",
-            "Erik Frey",
-            "K. Sreenath",
-            "Lueder A. Kahrs",
-            "Carmelo Sferrazza",
-            "Yuval Tassa",
-            "P. Abbeel"
-          ],
-          "year": 2025,
-          "date": "2025-02-12",
-          "citations": 0,
-          "arxiv_id": "2502.08844",
-          "paper_id": "73c83fc2e4bd2e80e8644aeeeb39cf85c6bf43cb",
-          "url": "https://arxiv.org/abs/2502.08844",
-          "abstract": "We introduce MuJoCo Playground, a fully open-source framework for robot learning built with MJX, with the express goal of streamlining simulation, training, and sim-to-real transfer onto robots. With a simple\"pip install playground\", researchers can train policies in minutes on a single GPU. Playground supports diverse robotic platforms, including quadrupeds, humanoids, dexterous hands, and robotic arms, enabling zero-shot sim-to-real transfer from both state and pixel inputs. This is achieved through an integrated stack comprising a physics engine, batch renderer, and training environments. Along with video results, the entire framework is freely available at playground.mujoco.org",
-          "subjects": []
-        },
-        {
-          "title": "Dual mode of delivery of Mycoplasma pneumoniae CARDS toxin determines the toxin trafficking pathway and cytotoxicity in host cells",
-          "authors": [
-            "K. Sreenath",
-            "Lin-Bo Li",
-            "Danielle Molotsky",
-            "J. Ayo",
-            "J. Baseman",
-            "T. Kannan"
-          ],
-          "year": 2025,
-          "date": "2025-01-15",
-          "citations": 4,
-          "arxiv_id": null,
-          "paper_id": "c43363419e0b55c6f83a268cda5bd33748281598",
-          "url": "https://www.semanticscholar.org/paper/c43363419e0b55c6f83a268cda5bd33748281598",
-          "abstract": "ABSTRACT Mycoplasma pneumoniae (Mp) causes both pulmonary and extrapulmonary infections in humans, and its virulence is largely attributed to the community-acquired respiratory distress syndrome (CARDS) toxin. CARDS toxin is transiently expressed during Mp growth in the serum-rich SP4 medium, detected predominantly in the cytoplasm, with none secreted into the medium. Here, we show that CARDS toxin synthesis has increased at least fivefold during Mp growth in serum-free minimal media, with approximately 40% of the toxin being released into the extracellular environment. In infected human alveolar epithelial cells, the toxin is visualized both in association with Mp and in free form around the perinuclear region, confirming its secretion. Using density gradient centrifugation, transmission electron microscopy, and immunoblotting, we demonstrate that Mp secretes extracellular vesicles enriched with CARDS toxin. Approximately 35% of the secreted toxin is associated with vesicles, while the remainder exists in a free-soluble form. The vesicle-bound toxin shows increased resistance to proteolytic degradation compared to the free-soluble toxin. Both forms of the purified toxin are biologically active and induce varying degrees of cytotoxicity in human epithelial cells based on their distinct trafficking patterns, which highlights their distinct roles in host-cell interactions. Together, these findings reveal a dual mode of CARDS toxin secretion as a key feature of Mp pathogenicity, providing a significant benefit in toxin delivery and thereby enhancing virulence, expanding the scope of infection. IMPORTANCE Mycoplasma pneumoniae (Mp) is a significant human respiratory pathogen whose systemic effects are largely caused by the CARDS toxin. Our study provides new insights into the secretion and delivery of CARDS toxin. We demonstrate that Mp highly expresses and selectively releases CARDS toxin when grown in serum-free minimal media and during interaction with host cells. Importantly, Mp utilizes two distinct pathways to secrete CARDS toxin: extracellular vesicles (EVs) and a non-EV-mediated route. Compared to the free-soluble toxin, the vesicle-associated CARDS toxin resists proteolytic degradation, which likely enhances its ability to act on distant sites. Both forms of toxin exhibit varying degrees of cytotoxicity on human epithelial cells, highlighting their distinct roles in host-cell interactions. These findings reveal that Mp uses multiple strategies to propagate its virulence factors effectively. Understanding these delivery mechanisms provides potential new targets for developing therapeutic interventions to counteract Mp pathogenesis, particularly those mediated by CARDS toxin. Mycoplasma pneumoniae (Mp) is a significant human respiratory pathogen whose systemic effects are largely caused by the CARDS toxin. Our study provides new insights into the secretion and delivery of CARDS toxin. We demonstrate that Mp highly expresses and selectively releases CARDS toxin when grown in serum-free minimal media and during interaction with host cells. Importantly, Mp utilizes two distinct pathways to secrete CARDS toxin: extracellular vesicles (EVs) and a non-EV-mediated route. Compared to the free-soluble toxin, the vesicle-associated CARDS toxin resists proteolytic degradation, which likely enhances its ability to act on distant sites. Both forms of toxin exhibit varying degrees of cytotoxicity on human epithelial cells, highlighting their distinct roles in host-cell interactions. These findings reveal that Mp uses multiple strategies to propagate its virulence factors effectively. Understanding these delivery mechanisms provides potential new targets for developing therapeutic interventions to counteract Mp pathogenesis, particularly those mediated by CARDS toxin.",
-          "subjects": []
-        },
-        {
-          "title": "Video Prediction Policy: A Generalist Robot Policy with Predictive Visual Representations",
-          "authors": [
-            "Yu-Cheng Hu",
-            "Yanjiang Guo",
-            "Pengchao Wang",
-            "Xiao-Yu Chen",
-            "Yen-Jen Wang",
-            "Jian-Ke Zhang",
-            "K. Sreenath",
-            "Chaochao Lu",
-            "Jian-Yu Chen"
-          ],
-          "year": 2024,
-          "date": "2024-12-19",
-          "citations": 0,
-          "arxiv_id": "2412.14803",
-          "paper_id": "3461cadf487a14afc0444df4602773b1cd0445d9",
-          "url": "https://arxiv.org/abs/2412.14803",
-          "abstract": "Visual representations play a crucial role in developing generalist robotic policies. Previous vision encoders, typically pre-trained with single-image reconstruction or two-image contrastive learning, tend to capture static information, often neglecting the dynamic aspects vital for embodied tasks. Recently, video diffusion models (VDMs) demonstrate the ability to predict future frames and showcase a strong understanding of physical world. We hypothesize that VDMs inherently produce visual representations that encompass both current static information and predicted future dynamics, thereby providing valuable guidance for robot action learning. Based on this hypothesis, we propose the Video Prediction Policy (VPP), which learns implicit inverse dynamics model conditioned on predicted future representations inside VDMs. To predict more precise future, we fine-tune pre-trained video foundation model on robot datasets along with internet human manipulation data. In experiments, VPP achieves a 18.6\\% relative improvement on the Calvin ABC-D generalization benchmark compared to the previous state-of-the-art, and demonstrates a 31.6\\% increase in success rates for complex real-world dexterous manipulation tasks. Project page at https://video-prediction-policy.github.io",
-          "subjects": []
-        },
-        {
-          "title": "Antagonistic activity of leaf extracts ofRhizophora mucronata and Avicennia officinalis against Vibrio cholerae",
-          "authors": [
-            "V. Sruthi",
-            "K. Sreenath"
-          ],
-          "year": 2024,
-          "date": "2024-05-15",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "2110637a0857fc89e96fe0b0b53dd68c10f651cb",
-          "url": "https://www.semanticscholar.org/paper/2110637a0857fc89e96fe0b0b53dd68c10f651cb",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Humanoid Locomotion as Next Token Prediction",
-          "authors": [
-            "Ilija Radosavovic",
-            "Bi-Ke Zhang",
-            "Baifeng Shi",
-            "Jathushan Rajasegaran",
-            "Sarthak Kamat",
-            "Trevor Darrell",
-            "K. Sreenath",
-            "Jitendra Malik"
-          ],
-          "year": 2024,
-          "date": "2024-02-29",
-          "citations": 0,
-          "arxiv_id": "2402.19469",
-          "paper_id": "5e878c1fe9567a65b1938ce7c930d38307ff7ff3",
-          "url": "https://arxiv.org/abs/2402.19469",
-          "abstract": "We cast real-world humanoid control as a next token prediction problem, akin to predicting the next word in language. Our model is a causal transformer trained via autoregressive prediction of sensorimotor trajectories. To account for the multi-modal nature of the data, we perform prediction in a modality-aligned way, and for each input token predict the next token from the same modality. This general formulation enables us to leverage data with missing modalities, like video trajectories without actions. We train our model on a collection of simulated trajectories coming from prior neural network policies, model-based controllers, motion capture data, and YouTube videos of humans. We show that our model enables a full-sized humanoid to walk in San Francisco zero-shot. Our model can transfer to the real world even when trained on only 27 hours of walking data, and can generalize to commands not seen during training like walking backward. These findings suggest a promising path toward learning challenging real-world control tasks by generative modeling of sensorimotor trajectories.",
-          "subjects": []
-        },
-        {
-          "title": "Epidemiological, clinical, and laboratory characteristics of human granulocytic anaplasmosis in North India",
-          "authors": [
-            "E. Vinayaraj",
-            "C. Thakur",
-            "Preeti Negi",
-            "K. Sreenath",
-            "Priyanka Upadhyay",
-            "N. Verma",
-            "B. Das",
-            "S. Kabra",
-            "N. Wig",
-            "Rama Chaudhry"
-          ],
-          "year": 2024,
-          "date": "2024-02-08",
-          "citations": 8,
-          "arxiv_id": null,
-          "paper_id": "16f7b2da546dd040c663c3e1ade989bd37758bd4",
-          "url": "https://www.semanticscholar.org/paper/16f7b2da546dd040c663c3e1ade989bd37758bd4",
-          "abstract": "ABSTRACT Human granulocytic anaplasmosis (HGA) is an emerging, rickettsial tick-borne disease caused by Anaplasma phagocytophilum. Sero-epidemiological data demonstrate that this pathogen has a worldwide distribution. The diagnosis of HGA requires a high index of clinical suspicion, even in endemic areas. In recent years, HGA has increasingly been reported from Asia and described in China, Japan, and Korea. We serologically and molecularly screened 467 patients with clinical suspicion of Anaplasmosis. The present study describes the epidemiology, clinical, and laboratory details of 6 confirmed and 43 probable cases of human granulocytic anaplasmosis. One of the HGA patients developed secondary invasive opportunistic Aspergillus fumigatus and Acinetobacter baumanii infection during the illness, which resulted in a fatal infection. The HGA patients without severe complications had excellent treatment responses to doxycycline. The emergence of this newly recognized tick-borne zoonotic HGA in North India is a significant concern for public health and is likely underdiagnosed, underreported, and untreated. Hence, it is also essential to establish a well-coordinated system for actively conducting tick surveillance, especially in the forested areas of the country. IMPORTANCE The results of the present study show the clinical and laboratory evidence of autochthonous cases of Anaplasma phagocytophilum in North India. The results suggest the possibility of underdiagnosis of HGA in this geographical area. One of the HGA patients developed secondary invasive opportunistic Aspergillus fumigatus and Acinetobacter baumanii infection during the illness, which resulted in a fatal infection. The results of the present study show the clinical and laboratory evidence of autochthonous cases of Anaplasma phagocytophilum in North India. The results suggest the possibility of underdiagnosis of HGA in this geographical area. One of the HGA patients developed secondary invasive opportunistic Aspergillus fumigatus and Acinetobacter baumanii infection during the illness, which resulted in a fatal infection.",
-          "subjects": []
-        }
-      ]
+      []
     ],
     [
       "Aaron D. Ames",
@@ -2427,7 +1918,7 @@
           ],
           "year": 2021,
           "date": "2021-08-18",
-          "citations": 655,
+          "citations": 659,
           "arxiv_id": null,
           "paper_id": "5cd269d0aa2fad218d39dacdd380ebb9244b88c5",
           "url": "https://www.semanticscholar.org/paper/5cd269d0aa2fad218d39dacdd380ebb9244b88c5",
@@ -2487,7 +1978,7 @@
           ],
           "year": 2023,
           "date": "2023-10-01",
-          "citations": 289,
+          "citations": 291,
           "arxiv_id": null,
           "paper_id": "ee4395ec938e8861d6646113ddd6f4aede0d2605",
           "url": "https://www.semanticscholar.org/paper/ee4395ec938e8861d6646113ddd6f4aede0d2605",
@@ -2566,7 +2057,7 @@
           ],
           "year": 2021,
           "date": "2021-08-18",
-          "citations": 655,
+          "citations": 659,
           "arxiv_id": null,
           "paper_id": "5cd269d0aa2fad218d39dacdd380ebb9244b88c5",
           "url": "https://www.semanticscholar.org/paper/5cd269d0aa2fad218d39dacdd380ebb9244b88c5",
@@ -3271,7 +2762,7 @@
           ],
           "year": 2023,
           "date": "2023-10-01",
-          "citations": 289,
+          "citations": 291,
           "arxiv_id": null,
           "paper_id": "ee4395ec938e8861d6646113ddd6f4aede0d2605",
           "url": "https://www.semanticscholar.org/paper/ee4395ec938e8861d6646113ddd6f4aede0d2605",
@@ -3314,7 +2805,7 @@
           ],
           "year": 2023,
           "date": "2023-10-01",
-          "citations": 289,
+          "citations": 291,
           "arxiv_id": null,
           "paper_id": "ee4395ec938e8861d6646113ddd6f4aede0d2605",
           "url": "https://www.semanticscholar.org/paper/ee4395ec938e8861d6646113ddd6f4aede0d2605",
@@ -3361,7 +2852,7 @@
           ],
           "year": 2023,
           "date": "2023-10-01",
-          "citations": 289,
+          "citations": 291,
           "arxiv_id": null,
           "paper_id": "ee4395ec938e8861d6646113ddd6f4aede0d2605",
           "url": "https://www.semanticscholar.org/paper/ee4395ec938e8861d6646113ddd6f4aede0d2605",
@@ -3390,389 +2881,7 @@
           ]
         }
       ],
-      [
-        {
-          "title": "Hybrid Control Models of Next Generation Air Tra(cid:14)c Management ?",
-          "authors": [
-            "C. Tomlin",
-            "G. Pappas",
-            "J. Lygeros",
-            "D. Godbole",
-            "S. Sastry"
-          ],
-          "year": null,
-          "date": "",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "2f169260915953903bf7b3b7c6d4cfe3156ff2f9",
-          "url": "https://www.semanticscholar.org/paper/2f169260915953903bf7b3b7c6d4cfe3156ff2f9",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "‘We all have a stake in this’: a phenomenological inquiry into integrating suicide intervention in home-delivered meal service contexts",
-          "authors": [
-            "Jordan B. Westcott",
-            "Matthew C. Fullen",
-            "C. Tomlin",
-            "Kelly Eikenberg",
-            "Paul M. Delaughter",
-            "Mary Chase Breedlove Mize",
-            "Laura R. Shannonhouse"
-          ],
-          "year": 2023,
-          "date": "2023-11-16",
-          "citations": 4,
-          "arxiv_id": null,
-          "paper_id": "5d4c5e99144c40612c0877d632ffcc26cb6ac31e",
-          "url": "https://www.semanticscholar.org/paper/5d4c5e99144c40612c0877d632ffcc26cb6ac31e",
-          "abstract": "Abstract Objectives Late-life suicide is a public health concern, yet many older adults do not have access to traditional mental health services. The present study sought to explore how suicide intervention is integrated into home-delivered meal (HDM) contexts following volunteer training in an evidence-based suicide first responder program. Methods Using phenomenological inquiry, we examined the experiences of 20 HDM volunteers trained in ASIST. Results Three primary themes emerged: (a) Logistics influencing integration of Suicide Intervention into HDM Systems, describing HDM program logistics; (b) Intrapersonal Context, describing HDM volunteer characteristics influencing intervention utilization and HDM client concerns; and (c) Interpersonal Context, describing HDM relationship characteristics that influenced intervention utilization. Conclusion HDM and other nutrition services have potential for addressing late life suicide, particularly when volunteers best equipped to address risk receive training and HDM policies reflect the needs of their clients. Implications for HDM services, as well as the Aging Services Network, are discussed.",
-          "subjects": []
-        },
-        {
-          "title": "The spatial propagation and increasing dominance of Gilbertiodendron dewevrei (Fabaceae) in the eastern Congo basin",
-          "authors": [
-            "H. Glick",
-            "P. Umunay",
-            "J. Makana",
-            "C. Tomlin",
-            "J. Reuning-Scherer",
-            "T. Gregoire"
-          ],
-          "year": 2023,
-          "date": "2023-02-07",
-          "citations": 3,
-          "arxiv_id": null,
-          "paper_id": "68a5e50f731fbd6c6adbf87679e7d4775a12d18f",
-          "url": "https://www.semanticscholar.org/paper/68a5e50f731fbd6c6adbf87679e7d4775a12d18f",
-          "abstract": "Though substantial research has been conducted on possible historical, physiological, and symbiotic mechanisms that permit monodominance to occur within tropical lowland rainforests, less is known about the successional rates at which monodominance exerts itself on surrounding forest structures. Here we extend efforts to evaluate the longitudinal dynamics of Gilbertiodendron dewevrei-dominated forest in Central Africa by considering this species’ spatial dynamics. Using three 10-ha censused field plots measured across three time periods, we present the first quantitative estimates of the spatial propagation of Gilbertiodendron into adjacent mixed species forest. Using three analytical strategies, we demonstrate that Gilbertiodendron is increasing in dominance and that monodominant forest patches are expanding into the surrounding forest at a statistically significant rate. The rates of successional advance vary by patch and direction, but average 0.31 m year−1, with speeds greatest in the direction of the prevailing winds. We show that the advancement of Gilbertiodendron is significantly slower than documented rates from other forest ecotones across Central Africa. When paired with stress tolerance traits and ectomycorrhizal associations, these findings help to clarify the means by which Gilbertiodendron dewevrei gains dominance in otherwise species-diverse regions.",
-          "subjects": []
-        },
-        {
-          "title": "Online and offline learning of player objectives from partial observations in dynamic games",
-          "authors": [
-            "Lasse Peters",
-            "V. Rubies-Royo",
-            "C. Tomlin",
-            "L. Ferranti",
-            "Javier Alonso-Mora",
-            "C. Stachniss",
-            "David Fridovich-Keil"
-          ],
-          "year": 2023,
-          "date": "2023-02-03",
-          "citations": 0,
-          "arxiv_id": "2302.01999",
-          "paper_id": "33cf32207f2800dc20842cbf1bf61d3a28e8690b",
-          "url": "https://arxiv.org/abs/2302.01999",
-          "abstract": "Robots deployed to the real world must be able to interact with other agents in their environment. Dynamic game theory provides a powerful mathematical framework for modeling scenarios in which agents have individual objectives and interactions evolve over time. However, a key limitation of such techniques is that they require a priori knowledge of all players’ objectives. In this work, we address this issue by proposing a novel method for learning players’ objectives in continuous dynamic games from noise-corrupted, partial state observations. Our approach learns objectives by coupling the estimation of unknown cost parameters of each player with inference of unobserved states and inputs through Nash equilibrium constraints. By coupling past state estimates with future state predictions, our approach is amenable to simultaneous online learning and prediction in receding horizon fashion. We demonstrate our method in several simulated traffic scenarios in which we recover players’ preferences, for, e.g. desired travel speed and collision-avoidance behavior. Results show that our method reliably estimates game-theoretic models from noise-corrupted data that closely matches ground-truth objectives, consistently outperforming state-of-the-art approaches.",
-          "subjects": []
-        },
-        {
-          "title": "Multi-Task Imitation Learning for Linear Dynamical Systems",
-          "authors": [
-            "Thomas T. C. K. Zhang",
-            "Katie Kang",
-            "Bruce D. Lee",
-            "C. Tomlin",
-            "S. Levine",
-            "Stephen Tu",
-            "N. Matni"
-          ],
-          "year": 2022,
-          "date": "2022-12-01",
-          "citations": 0,
-          "arxiv_id": "2212.00186",
-          "paper_id": "d0298db916a3563b388f0d709998e3d34fe57679",
-          "url": "https://arxiv.org/abs/2212.00186",
-          "abstract": "We study representation learning for efficient imitation learning over linear systems. In particular, we consider a setting where learning is split into two phases: (a) a pre-training step where a shared $k$-dimensional representation is learned from $H$ source policies, and (b) a target policy fine-tuning step where the learned representation is used to parameterize the policy class. We find that the imitation gap over trajectories generated by the learned target policy is bounded by $\\tilde{O}\\left( \\frac{k n_x}{HN_{\\mathrm{shared}}} + \\frac{k n_u}{N_{\\mathrm{target}}}\\right)$, where $n_x>k$ is the state dimension, $n_u$ is the input dimension, $N_{\\mathrm{shared}}$ denotes the total amount of data collected for each policy during representation learning, and $N_{\\mathrm{target}}$ is the amount of target task data. This result formalizes the intuition that aggregating data across related tasks to learn a representation can significantly improve the sample efficiency of learning a target task. The trends suggested by this bound are corroborated in simulation.",
-          "subjects": []
-        },
-        {
-          "title": "Holistic Wellness Coaching for Older Adults: Preliminary Evidence for a Novel Wellness Intervention in Senior Living Communities",
-          "authors": [
-            "Matthew C. Fullen",
-            "Jennifer L. Smith",
-            "P. Clarke",
-            "Jordan B. Westcott",
-            "Regina McCoy",
-            "C. Tomlin"
-          ],
-          "year": 2022,
-          "date": "2022-10-28",
-          "citations": 4,
-          "arxiv_id": null,
-          "paper_id": "47e8a027c94f4bba58ecf3466faadf176558edae",
-          "url": "https://www.semanticscholar.org/paper/47e8a027c94f4bba58ecf3466faadf176558edae",
-          "abstract": "Although resident wellness is increasingly a priority in senior living communities, there are few programs that promote holistic wellness in later life. A total of 79 residents (ages 71 to 97; M = 84.27, SD = 6.46) from eight senior living communities completed a pilot study of a novel, staff-led wellness coaching program consisting of resident-driven goals and individual and group coaching sessions. Participants completed surveys at three time points (pre-program, post-program, and 1-month follow-up). Repeated measures ANOVAs revealed positive changes in resident health satisfaction, physical quality of life (QOL), psychological QOL, loneliness, relatedness, competence, and sense of purpose. Some of these results (i.e., psychological QOL, loneliness) persisted at follow-up. Residents reported high satisfaction with the program. These findings have implications for the application of holistic wellness frameworks in later life, as well as the development and implementation of wellness coaching programs with older adults.",
-          "subjects": []
-        },
-        {
-          "title": "Optimality Guarantees for Particle Belief Approximation of POMDPs",
-          "authors": [
-            "M. H. Lim",
-            "Tyler J. Becker",
-            "M. Kochenderfer",
-            "C. Tomlin",
-            "Zachary Sunberg"
-          ],
-          "year": 2022,
-          "date": "2022-10-10",
-          "citations": 0,
-          "arxiv_id": "2210.05015",
-          "paper_id": "7e7a24d551fade59e5a1cd40c5135be18cf81527",
-          "url": "https://arxiv.org/abs/2210.05015",
-          "abstract": "Partially observable Markov decision processes (POMDPs) provide a flexible representation for real-world decision and control problems. However, POMDPs are notoriously difficult to solve, especially when the state and observation spaces are continuous or hybrid, which is often the case for physical systems. While recent online sampling-based POMDP algorithms that plan with observation likelihood weighting have shown practical effectiveness, a general theory characterizing the approximation error of the particle filtering techniques that these algorithms use has not previously been proposed. Our main contribution is bounding the error between any POMDP and its corresponding finite sample particle belief MDP (PB-MDP) approximation. This fundamental bridge between PB-MDPs and POMDPs allows us to adapt any sampling-based MDP algorithm to a POMDP by solving the corresponding particle belief MDP, thereby extending the convergence guarantees of the MDP algorithm to the POMDP. Practically, this is implemented by using the particle filter belief transition model as the generative model for the MDP solver. While this requires access to the observation density model from the POMDP, it only increases the transition sampling complexity of the MDP solver by a factor of O(C), where C is the number of particles. Thus, when combined with sparse sampling MDP algorithms, this approach can yield algorithms for POMDPs that have no direct theoretical dependence on the size of the state and observation spaces. In addition to our theoretical contribution, we perform five numerical experiments on benchmark POMDPs to demonstrate that a simple MDP algorithm adapted using PB-MDP approximation, Sparse-PFT, achieves performance competitive with other leading continuous observation POMDP solvers.",
-          "subjects": []
-        },
-        {
-          "title": "‘Listen closer’: home-delivered meal volunteers’ understanding of their role in suicide intervention",
-          "authors": [
-            "Jordan B. Westcott",
-            "Matthew C. Fullen",
-            "C. Tomlin",
-            "Kelly Eikenberg",
-            "Paul M. Delaughter",
-            "M. Mize",
-            "Laura R. Shannonhouse"
-          ],
-          "year": 2022,
-          "date": "2022-04-21",
-          "citations": 7,
-          "arxiv_id": null,
-          "paper_id": "938b2b7adc13e050a7d16d6eea9e62caf1d142b5",
-          "url": "https://www.semanticscholar.org/paper/938b2b7adc13e050a7d16d6eea9e62caf1d142b5",
-          "abstract": "Abstract Suicide in later life is a pressing public health concern, which has likely been exacerbated by the COVID-19 pandemic. Many older adults who need mental health treatment do not have access to necessary services and training for mental health providers to support older adults experiencing suicidality is limited. One solution is developing interventions based in a public health approach to suicide prevention, whereby natural helpers who provide community services are mobilised to respond to older persons-at-risk. Home-delivered meal (HDM) services, for example, are one effective means to reach older adults who are isolated due to being homebound and may be instrumental in preventing suicide. This study examined the experiences of 20 HDM volunteers who received Applied Suicide Intervention Skills Training (ASIST), an evidence-based suicide intervention programme. Phenomenological analysis yielded findings centred on three areas demonstrating the impact of the ASIST training on HDM volunteers: putting asist skills into practice; response to ASIST skills; and role transformation. Implications for integrating suicide prevention efforts with HDM services and directions for future research are discussed.",
-          "subjects": []
-        },
-        {
-          "title": "Dispositional Mindfulness and Stress Coping Amid the COVID-19 Pandemic: An Exploration of Problem-Focused Mediators",
-          "authors": [
-            "C. Tomlin",
-            "Rivkah Estrin",
-            "Jodi Thall"
-          ],
-          "year": 2021,
-          "date": "2021-11-16",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "f3c3166f441b89207264b223677cc59f054437df",
-          "url": "https://www.semanticscholar.org/paper/f3c3166f441b89207264b223677cc59f054437df",
-          "abstract": "The psychological phenomenon of mindfulness - nonjudgmental attention to and awareness of one's present experience - has been linked to effective coping with a range of situational stressors. The potential mediating role of problem-focused strategies in predicting stress-related outcomes has not been sufficiently addressed.",
-          "subjects": []
-        },
-        {
-          "title": "Inferring Objectives in Continuous Dynamic Games from Noise-Corrupted Partial State Observations",
-          "authors": [
-            "Lasse Peters",
-            "David Fridovich-Keil",
-            "V. Rubies-Royo",
-            "C. Tomlin",
-            "C. Stachniss"
-          ],
-          "year": 2021,
-          "date": "2021-06-07",
-          "citations": 0,
-          "arxiv_id": "2106.03611",
-          "paper_id": "afeb35760ce9357d27c47d8abedcc33022180a45",
-          "url": "https://arxiv.org/abs/2106.03611",
-          "abstract": "Robots and autonomous systems must interact with one another and their environment to provide high-quality services to their users. Dynamic game theory provides an expressive theoretical framework for modeling scenarios involving multiple agents with differing objectives interacting over time. A core challenge when formulating a dynamic game is designing objectives for each agent that capture desired behavior. In this paper, we propose a method for inferring parametric objective models of multiple agents based on observed interactions. Our inverse game solver jointly optimizes player objectives and continuous-state estimates by coupling them through Nash equilibrium constraints. Hence, our method is able to directly maximize the observation likelihood rather than other non-probabilistic surrogate criteria. Our method does not require full observations of game states or player strategies to identify player objectives. Instead, it robustly recovers this information from noisy, partial state observations. As a byproduct of estimating player objectives, our method computes a Nash equilibrium trajectory corresponding to those objectives. Thus, it is suitable for downstream trajectory forecasting tasks. We demonstrate our method in several simulated traffic scenarios. Results show that it reliably estimates player objectives from a short sequence of noise-corrupted partial state observations. Furthermore, using the estimated objectives, our method makes accurate predictions of each player's trajectory.",
-          "subjects": []
-        },
-        {
-          "title": "Risk-Sensitive Safety Analysis Using Conditional Value-at-Risk",
-          "authors": [
-            "Margaret P. Chapman",
-            "R. Bonalli",
-            "K. Smith",
-            "Insoon Yang",
-            "M. Pavone",
-            "C. Tomlin"
-          ],
-          "year": 2021,
-          "date": "2021-01-28",
-          "citations": 0,
-          "arxiv_id": "2101.12086",
-          "paper_id": "ee54ce9bf7151b4d088558fb80912e4dd0f51c4b",
-          "url": "https://arxiv.org/abs/2101.12086",
-          "abstract": "This article develops a safetyanalysis method for stochastic systems that is sensitive to the possibility and severity of rare harmful outcomes. We define risk-sensitive safe sets as sublevel sets of the solution to a nonstandard optimal control problem, where a random maximum cost is assessed via Conditional Value-at-Risk (CVaR). The objective function represents the maximum extent of constraint violation of the state trajectory, averaged over a given percentage of worst cases. This problem is well-motivated but difficult to solve tractably because the temporal decomposition for CVaR is history-dependent. Our primary theoretical contribution is to derive computationally tractable underapproximations to risk-sensitive safe sets. Our method provides a novel, theoretically guaranteed, parameter-dependent upper bound to the CVaR of a maximum cost without the need to augment the state space. For a fixed parameter value, the solution to only one Markov decision process problem is required to obtain the underapproximations for any family of risk-sensitivity levels. In addition, we propose a second definition for risk-sensitive safe sets and provide a tractable method for their estimation without using a parameter-dependent upper bound. The second definition is expressed in terms of a new coherent risk functional, which is inspired by CVaR. We demonstrate our primary theoretical contribution via numerical examples.",
-          "subjects": []
-        },
-        {
-          "title": "A method for finding least-cost corridors with reduced distortion in raster space",
-          "authors": [
-            "Lindsi Seegmiller",
-            "T. Shirabe",
-            "C. Tomlin"
-          ],
-          "year": 2020,
-          "date": "2020-12-22",
-          "citations": 10,
-          "arxiv_id": null,
-          "paper_id": "bd127d5a2bce5577248f73ceb9c904fbcbc80a46",
-          "url": "https://www.semanticscholar.org/paper/bd127d5a2bce5577248f73ceb9c904fbcbc80a46",
-          "abstract": "ABSTRACT Given a grid of cells, each having a value indicating its cost per unit area, a variant of the least-cost path problem is to find a corridor of a specified width connecting two termini such that its cost-weighted area is minimized. A computationally efficient method exists for finding such corridors, but as is the case with conventional raster-based least-cost paths, their incremental orientations are limited to a fixed number of (typically eight orthogonal and diagonal) directions, and therefore, regardless of the grid resolution, they tend to deviate from those conceivable on the Euclidean plane. In this paper, we propose a method for solving the raster-based least-cost corridor problem with reduced distortion by adapting a distortion reduction technique originally designed for least-cost paths and applying it to an efficient but distortion-prone least-cost corridor algorithm. The proposed method is, in theory, guaranteed to generate no less accurate solutions than the existing one in polynomial time and, in practice, expected to generate more accurate solutions, as demonstrated experimentally using synthetic and real-world data.",
-          "subjects": []
-        },
-        {
-          "title": "Wellness Coaching: Practices and Preferences Among Life Plan Community Residents and Staff",
-          "authors": [
-            "Matthew C. Fullen",
-            "Jennifer L. Smith",
-            "Janis Sayer",
-            "P. Clarke",
-            "C. Tomlin"
-          ],
-          "year": 2020,
-          "date": "2020-12-01",
-          "citations": 3,
-          "arxiv_id": null,
-          "paper_id": "d800f6de0ee702ffffa78e79719311a19be16a88",
-          "url": "https://www.semanticscholar.org/paper/d800f6de0ee702ffffa78e79719311a19be16a88",
-          "abstract": "Abstract Wellness coaching, a process in which a coach and client partner together to address the client’s wellness goals, can increase motivation and develop skills to enhance wellness and lifestyle balance among older adults. To understand wellness preferences among Life Plan Community residents, we surveyed a total of 447 residents from 10 Life Plan Communities. Participants were asked about perceptions of wellness, wellness activity preferences, motivators and barriers to participation in wellness activities, and wellness coaching program preferences. Twenty employees in wellness-related or leadership roles also completed a survey. To enhance our understanding of these perspectives on wellness coaching, nine residents and four employees participated in follow-up interviews. Among the study findings, the majority of resident respondents expressed an interest in improving almost all domains of wellness. Forty percent (40%) of participants said they were extremely or moderately likely to try wellness coaching, and about one-half (51%) said they believed they would benefit from wellness coaching. Staff indicated interest in implementing a wellness coaching program in their community, with 74% reporting at least a moderate likelihood of implementing a program if led by a staff member. Results indicated that emotional and vocational wellness programs were offered and attended less frequently than other types of wellness programs, which suggests that wellness coaching could help to address the need for more programming in these areas. In addition, findings suggested that implementation requires resident input to ensure buy-in. The survey results informed the development of recommendations for a resident wellness coaching program.",
-          "subjects": []
-        },
-        {
-          "title": "Bridging Hamilton-Jacobi Safety Analysis and Reinforcement Learning",
-          "authors": [
-            "J. F. Fisac",
-            "Neil F. Lugovoy",
-            "V. Rubies-Royo",
-            "Shromona Ghosh",
-            "C. Tomlin"
-          ],
-          "year": 2019,
-          "date": "2019-05-01",
-          "citations": 238,
-          "arxiv_id": null,
-          "paper_id": "331638e2105fd2ed70ec9e700255af1bc962f1be",
-          "url": "https://www.semanticscholar.org/paper/331638e2105fd2ed70ec9e700255af1bc962f1be",
-          "abstract": "Safety analysis is a necessary component in the design and deployment of autonomous robotic systems. Techniques from robust optimal control theory, such as Hamilton-Jacobi reachability analysis, allow a rigorous formalization of safety as guaranteed constraint satisfaction. Unfortunately, the computational complexity of these tools for general dynamical systems scales poorly with state dimension, making existing tools impractical beyond small problems. Modern reinforcement learning methods have shown promising ability to find approximate yet proficient solutions to optimal control problems in complex and high-dimensional systems, however their application has in practice been restricted to problems with an additive payoff over time, unsuitable for reasoning about safety. In recent work, we introduced a time-discounted modification of the problem of maximizing the minimum payoff over time, central to safety analysis, through a modified dynamic programming equation that induces a contraction mapping. Here, we show how a similar contraction mapping can render reinforcement learning techniques amenable to quantitative safety analysis as tools to approximate the safe set and optimal safety policy. This opens a new avenue of research connecting control-theoretic safety analysis and the reinforcement learning domain. We validate the correctness of our formulation by comparing safety results computed through Q-learning to analytic and numerical solutions, and demonstrate its scalability by learning safe sets and control policies for simulated systems of up to 18 state dimensions using value learning and policy gradient techniques.",
-          "subjects": []
-        },
-        {
-          "title": "Differentiation-state plasticity is a targetable resistance mechanism in basal-like breast cancer",
-          "authors": [
-            "Tyler Risom",
-            "Ellen M. Langer",
-            "Margaret P. Chapman",
-            "J. Rantala",
-            "A. Fields",
-            "C. Boniface",
-            "Mariano J. Alvarez",
-            "Nicholas D. Kendsersky",
-            "C. Pelz",
-            "Katie Johnson-Camacho",
-            "L. Dobrolecki",
-            "K. Chin",
-            "Anil J. Aswani",
-            "Nicholas J. Wang",
-            "A. Califano",
-            "M. Lewis",
-            "C. Tomlin",
-            "P. Spellman",
-            "A. Adey",
-            "J. Gray",
-            "R. Sears"
-          ],
-          "year": 2018,
-          "date": "2018-09-19",
-          "citations": 150,
-          "arxiv_id": null,
-          "paper_id": "b101ab6d29c65e21fa959e72eb4ee4f50be361e4",
-          "url": "https://www.semanticscholar.org/paper/b101ab6d29c65e21fa959e72eb4ee4f50be361e4",
-          "abstract": "Intratumoral heterogeneity in cancers arises from genomic instability and epigenomic plasticity and is associated with resistance to cytotoxic and targeted therapies. We show here that cell-state heterogeneity, defined by differentiation-state marker expression, is high in triple-negative and basal-like breast cancer subtypes, and that drug tolerant persister (DTP) cell populations with altered marker expression emerge during treatment with a wide range of pathway-targeted therapeutic compounds. We show that MEK and PI3K/mTOR inhibitor-driven DTP states arise through distinct cell-state transitions rather than by Darwinian selection of preexisting subpopulations, and that these transitions involve dynamic remodeling of open chromatin architecture. Increased activity of many chromatin modifier enzymes, including BRD4, is observed in DTP cells. Co-treatment with the PI3K/mTOR inhibitor BEZ235 and the BET inhibitor JQ1 prevents changes to the open chromatin architecture, inhibits the acquisition of a DTP state, and results in robust cell death in vitro and xenograft regression in vivo. Resistance to therapy can be driven by intratumoral heterogeneity. Here, the authors show that drug tolerant persistent cell populations emerge during treatment, and these emergent populations arise through epigenetically mediated cell state transitions rather than sub population selection.",
-          "subjects": []
-        },
-        {
-          "title": "Customized Local Differential Privacy for Multi-Agent Distributed Optimization",
-          "authors": [
-            "R. Dobbe",
-            "Y. Pu",
-            "Jing-Ge Zhu",
-            "K. Ramchandran",
-            "C. Tomlin"
-          ],
-          "year": 2018,
-          "date": "2018-06-15",
-          "citations": 0,
-          "arxiv_id": "1806.06035",
-          "paper_id": "eb597310604f819586e68bac0c6620d935617a7f",
-          "url": "https://arxiv.org/abs/1806.06035",
-          "abstract": "Real-time data-driven optimization and control problems over networks may require sensitive information of participating users to calculate solutions and decision variables, such as in traffic or energy systems. Adversaries with access to coordination signals may potentially decode information on individual users and put user privacy at risk. We develop local differential privacy, which is a strong notion that guarantees user privacy regardless of any auxiliary information an adversary may have, for a larger family of convex distributed optimization problems. The mechanism allows agent to customize their own privacy level based on local needs and parameter sensitivities. We propose a general sampling based approach for determining sensitivity and derive analytical bounds for specific quadratic problems. We analyze inherent trade-offs between privacy and suboptimality and propose allocation schemes to divide the maximum allowable noise, a privacy budget, among all participating agents. Our algorithm is implemented to enable privacy in distributed optimal power flow for electric grids.",
-          "subjects": []
-        },
-        {
-          "title": "Hamilton-Jacobi reachability: A brief overview and recent advances",
-          "authors": [
-            "Somil Bansal",
-            "Mo Chen",
-            "S. Herbert",
-            "C. Tomlin"
-          ],
-          "year": 2017,
-          "date": "2017-09-21",
-          "citations": 0,
-          "arxiv_id": "1709.07523",
-          "paper_id": "2d0fc3b6c8bca95f290c05ff5c64235e4c06fad4",
-          "url": "https://arxiv.org/abs/1709.07523",
-          "abstract": "Hamilton-Jacobi (HJ) reachability analysis is an important formal verification method for guaranteeing performance and safety properties of dynamical systems; it has been applied to many small-scale systems in the past decade. Its advantages include compatibility with general nonlinear system dynamics, formal treatment of bounded disturbances, and the availability of well-developed numerical tools. The main challenge is addressing its exponential computational complexity with respect to the number of state variables. In this tutorial, we present an overview of basic HJ reachability theory and provide instructions for using the most recent numerical tools, including an efficient GPU-parallelized implementation of a Level Set Toolbox for computing reachable sets. In addition, we review some of the current work in high-dimensional HJ reachability to show how the dimensionality challenge can be alleviated via various general theoretical and application-specific insights.",
-          "subjects": []
-        },
-        {
-          "title": "Effect of Message Congruency on Attention and Recall in Pictorial Health Warning Labels",
-          "authors": [
-            "Kirsten Lochbuehler",
-            "M. Mercincavage",
-            "K. Tang",
-            "C. Tomlin",
-            "J. Cappella",
-            "Andrew A. Strasser"
-          ],
-          "year": 2017,
-          "date": "2017-05-16",
-          "citations": 47,
-          "arxiv_id": null,
-          "paper_id": "93b8be3a5697b0d4a476b22c0840da5a30806a83",
-          "url": "https://www.semanticscholar.org/paper/93b8be3a5697b0d4a476b22c0840da5a30806a83",
-          "abstract": "Objective The nine pictorial health warning labels (PWLs) proposed by the US Food and Drug Administration vary in format and feature of visual and textual information. Congruency is the degree to which visual and textual features reflect a common theme. This characteristic can affect attention and recall of label content. This study investigates the effect of congruency in PWLs on smoker’s attention and recall of label content. Methods 120 daily smokers were randomly assigned to view either congruent or incongruent PWLs, while having their eye movements recorded. Participants were asked to recall label content immediately after exposure and 5 days later. Results Overall, the image was viewed more and recalled better than the text. Smokers in the incongruent condition spent more time focusing on the text than smokers in the congruent condition (p=0.03), but dwell time of the image did not differ. Despite lower dwell time on the text, smokers in the congruent condition were more likely to correctly recall it on day 1 (p=0.02) and the risk message of the PWLs on both day 1 (p=0.01) and day 5 (p=0.006) than smokers in the incongruent condition. Conclusions This study identifies an important design feature of PWLs and demonstrates objective differences in how smokers process PWLs. Our results suggest that message congruency between visual and textual information is beneficial to recall of label content. Moreover, images captured and held smokers’ attention better than the text.",
-          "subjects": []
-        },
-        {
-          "title": "Decomposition of Reachable Sets and Tubes for a Class of Nonlinear Systems",
-          "authors": [
-            "Mo Chen",
-            "S. Herbert",
-            "Mahesh S. Vashishtha",
-            "Somil Bansal",
-            "C. Tomlin"
-          ],
-          "year": 2016,
-          "date": "2016-11-01",
-          "citations": 0,
-          "arxiv_id": "1611.00122",
-          "paper_id": "9479634706f16d54cf5515579b01afb75b606158",
-          "url": "https://arxiv.org/abs/1611.00122",
-          "abstract": "Reachability analysis provides formal guarantees for performance and safety properties of nonlinear control systems. Here, one aims to compute the backward reachable set (BRS) or tube (BRT)—the set of states from which the system can be driven into a target set at a particular time or within a time interval, respectively. The computational complexity of current approaches scales poorly, making application to high-dimensional systems intractable. We propose a technique that decomposes the dynamics of a general class of nonlinear systems into subsystems which may be coupled through common states, controls, and disturbances. Despite this coupling, BRSs and BRTs can be computed efficiently using our technique without incurring additional approximation errors and without the need for linearizing dynamics or approximating sets as polytopes. Computations of BRSs and BRTs now become orders of magnitude faster, and for the first time BRSs and BRTs for many high-dimensional nonlinear control systems can be computed using the Hamilton–Jacobi formulation. In situations involving bounded adversarial disturbances, our proposed method can obtain slightly conservative results. We demonstrate our theory by numerically computing BRSs and BRTs for several systems, including the six-dimensional Acrobatic Quadrotor using the HJ formulation.",
-          "subjects": []
-        },
-        {
-          "title": "Multi-vehicle collision avoidance via hamilton-jacobi reachability and mixed integer programming",
-          "authors": [
-            "Mo Chen",
-            "Jennifer C. Shih",
-            "C. Tomlin"
-          ],
-          "year": 2016,
-          "date": "2016-03-16",
-          "citations": 0,
-          "arxiv_id": "1603.05200",
-          "paper_id": "2d521149bff534a4f86e814109f68e3ed6beeede",
-          "url": "https://arxiv.org/abs/1603.05200",
-          "abstract": "Multi-agent differential games are important and useful tools for analyzing many practical problems. With the recent surge of interest in using UAVs for civil purposes, the importance and urgency of developing tractable multiagent analysis techniques that provide safety and performance guarantees is at an all-time high. Hamilton-Jacobi (HJ) reachability has successfully provided safety guarantees to smallscale systems and is flexible in terms of system dynamics. However, the exponential complexity scaling of HJ reachability prevents its direct application to large scale problems when the number of vehicles is greater than two. In this paper, we overcome the scalability limitations of HJ reachability by using a mixed integer program that exploits the properties of HJ solutions to provide higher-level control logic. Our proposed method provides safety guarantee for three-vehicle systems - a previously intractable task for HJ reachability - without incurring significant additional computation cost. Furthermore, our method is scalable beyond three vehicles and performs significantly better by several metrics than an extension of pairwise collision avoidance to multi-vehicle collision avoidance. We demonstrate our proposed method in simulations.",
-          "subjects": []
-        }
-      ]
+      []
     ],
     [
       "M. Zeilinger",
@@ -3790,7 +2899,7 @@
           ],
           "year": 2023,
           "date": "2023-10-01",
-          "citations": 289,
+          "citations": 291,
           "arxiv_id": null,
           "paper_id": "ee4395ec938e8861d6646113ddd6f4aede0d2605",
           "url": "https://www.semanticscholar.org/paper/ee4395ec938e8861d6646113ddd6f4aede0d2605",
