@@ -1,6 +1,26 @@
 {
   "high_citation": [
     {
+      "title": "GCBF+: A Neural Graph Control Barrier Function Framework for Distributed Safe Multiagent Control",
+      "authors": [
+        "Song-Yuan Zhang",
+        "Oswin So",
+        "Kunal Garg",
+        "Chuchu Fan"
+      ],
+      "year": 2024,
+      "date": "2024-01-25",
+      "citations": 0,
+      "arxiv_id": "2401.14554",
+      "paper_id": "8f4857384e0573e45e74154704fc89468ab17988",
+      "url": "https://arxiv.org/abs/2401.14554",
+      "abstract": "Distributed, scalable, and safe control of large-scale multiagent systems is a challenging problem. In this article, we design a distributed framework for safe multiagent control in large-scale environments with obstacles, where a large number of agents are required to maintain safety using only local information and reach their goal locations. We introduce a new class of certificates, termed graph control barrier function (GCBF), which are based on the well-established control barrier function theory for safety guarantees and utilize a graph structure for scalable and generalizable distributed control of MAS. We develop a novel theoretical framework to prove the safety of an arbitrary-sized MAS with a single GCBF. We propose a new training framework GCBF+ that uses graph neural networks to parameterize a candidate GCBF and a distributed control policy. The proposed framework is distributed and is capable of taking point clouds from LiDAR, instead of actual state information, for real-world robotic applications. We illustrate the efficacy of the proposed method through various hardware experiments on a swarm of drones with objectives ranging from exchanging positions to docking on a moving target without collision. In addition, we perform extensive numerical experiments, where the number and density of agents, as well as the number of obstacles, increase. Empirical results show that in complex environments with agents with nonlinear dynamics (e.g., Crazyflie drones), GCBF+ outperforms the hand-crafted CBF-based method with the best performance by up to 20% for relatively small-scale MAS with up to 256 agents, and leading reinforcement learning (RL) methods by up to 40% for MAS with 1024 agents. Furthermore, the proposed method does not compromise on the performance, in terms of goal reaching, for achieving high safety rates, which is a common tradeoff in RL-based methods. Project website: https://mit-realm.github.io/gcbfplus/",
+      "subjects": [
+        "cs.RO",
+        "math.OC"
+      ]
+    },
+    {
       "title": "How to Train Your Neural Control Barrier Function: Learning Safety Filters for Complex Input-Constrained Systems",
       "authors": [
         "Oswin So",
@@ -81,6 +101,21 @@
       "subjects": []
     },
     {
+      "title": "High-Order Control Barrier Functions",
+      "authors": [
+        "Wei Xiao",
+        "C. Belta"
+      ],
+      "year": 2021,
+      "date": "2021-08-18",
+      "citations": 672,
+      "arxiv_id": null,
+      "paper_id": "5cd269d0aa2fad218d39dacdd380ebb9244b88c5",
+      "url": "https://www.semanticscholar.org/paper/5cd269d0aa2fad218d39dacdd380ebb9244b88c5",
+      "abstract": "We approach the problem of stabilizing a dynamical system while optimizing a cost and satisfying safety constraints and control limitations. For (nonlinear) affine control systems and quadratic costs, it has been shown that control barrier functions (CBFs) guaranteeing safety and control Lyapunov functions (CLFs) enforcing convergence can be used to (conservatively) reduce the optimal control problem to a sequence of quadratic programs (QPs). Existing works in this category have two main limitations. First, with one exception, they are based on the assumption that the relative degree of the system with respect to a function enforcing a safety constraint is one. Second, the QPs can easily become infeasible, in particular for problems with many safety constraints and tight control limitations. We propose high-order CBFs (HOCBFs), which can accommodate systems of arbitrary relative degrees. For each safety constraint, by using Lyapunov-like conditions, we construct a set of controls that renders the intersection of a set of sets forward invariant, which implies the satisfaction of the original constraint. We formulate optimal control problems with constraints given by HOCBF and CLF, and propose two methods—the penalty method and the parameterization method—to address the feasibility problem. Finally, we show how our methodology can be extended for safe navigation in unknown environments with long-term feasibility. We illustrate the proposed framework on adaptive cruise control and robot control problems.",
+      "subjects": []
+    },
+    {
       "title": "Safety-Critical Control using Optimal-decay Control Barrier Function with Guaranteed Point-wise Feasibility",
       "authors": [
         "Jun Zeng",
@@ -116,6 +151,26 @@
       "subjects": []
     },
     {
+      "title": "Barrier Function Based Collaborative Control of Multiple Robots Under Signal Temporal Logic Tasks",
+      "authors": [
+        "L. Lindemann",
+        "Dimos V. Dimarogonas"
+      ],
+      "year": 2020,
+      "date": "2020-12-01",
+      "citations": 0,
+      "arxiv_id": "2102.02609",
+      "paper_id": "12f1dbd76abe39270ecb4331e8a564cb81065a74",
+      "url": "https://arxiv.org/abs/2102.02609",
+      "abstract": "Motivated by the recent interest in cyber-physical and autonomous robotic systems, we study the problem of dynamically coupled multiagent systems under a set of signal temporal logic tasks. In particular, the satisfaction of each of these signal temporal logic tasks depends on the behavior of a distinct set of agents. Instead of abstracting the agent dynamics and the temporal logic tasks into a discrete domain and solving the problem therein or using optimization-based methods, we derive collaborative feedback control laws.These control laws are based on a decentralized control barrier function condition that results in discontinuous control laws, as opposed to a centralized condition resembling the single-agent case. The benefits of our approach are inherent robustness properties typically present in feedback control as well as satisfaction guarantees for continuous-time multiagent systems. More specifically, time-varying control barrier functions are used that account for the semantics of the signal temporal logic tasks at hand. For a certain fragment of signal temporal logic tasks, we further propose a systematic way to construct such control barrier functions. Finally, we show the efficacy and robustness of our framework in an experiment, including a group of three omnidirectional robots.",
+      "subjects": [
+        "eess.SY",
+        "cs.FL",
+        "cs.RO",
+        "math.OC"
+      ]
+    },
+    {
       "title": "Safe reinforcement learning: A control barrier function optimization approach",
       "authors": [
         "Zahra Marvi",
@@ -129,6 +184,62 @@
       "url": "https://www.semanticscholar.org/paper/30a7cc5400e70ef83d1ce0d9deaa4e824a955001",
       "abstract": "This article presents a learning‐based barrier certified method to learn safe optimal controllers that guarantee operation of safety‐critical systems within their safe regions while providing an optimal performance. The cost function that encodes the designer's objectives is augmented with a control barrier function (CBF) to ensure safety and optimality. A damping coefficient is incorporated into the CBF which specifies the trade‐off between safety and optimality. The proposed formulation provides a look‐ahead and proactive safety planning and results in a smooth transition of states within the feasible set. That is, instead of applying an optimal controller and intervening with it only if the safety constraints are violated, the safety is planned and optimized along with the performance to minimize the intervention with the optimal controller. It is shown that addition of the CBF into the cost function does not affect the stability and optimality of the designed controller within the safe region. This formulation enables us to find the optimal safe solution iteratively. An off‐policy reinforcement learning (RL) algorithm is then employed to find a safe optimal policy without requiring the complete knowledge about the system dynamics, while satisfies the safety constraints. The efficacy of the proposed safe RL control design approach is demonstrated on the lane keeping as an automotive control problem.",
       "subjects": []
+    },
+    {
+      "title": "Safety-Critical Model Predictive Control with Discrete-Time Control Barrier Function",
+      "authors": [
+        "Jun Zeng",
+        "Bi-Ke Zhang",
+        "K. Sreenath"
+      ],
+      "year": 2020,
+      "date": "2020-07-22",
+      "citations": 0,
+      "arxiv_id": "2007.11718",
+      "paper_id": "58af72097330b194d126962bfb05862dde3bf921",
+      "url": "https://arxiv.org/abs/2007.11718",
+      "abstract": "The optimal performance of robotic systems is usually achieved near the limit of state and input bounds. Model predictive control (MPC) is a prevalent strategy to handle these operational constraints, however, safety still remains an open challenge for MPC as it needs to guarantee that the system stays within an invariant set. In order to obtain safe optimal performance in the context of set invariance, we present a safety-critical model predictive control strategy utilizing discrete-time control barrier functions (CBFs), which guarantees system safety and accomplishes optimal performance via model predictive control. We analyze the feasibility and the stability properties of our control design. We verify the properties of our method on a 2D double integrator model for obstacle avoidance. We also validate the algorithm numerically using a competitive car racing example, where the ego car is able to overtake other racing cars.",
+      "subjects": [
+        "eess.SY",
+        "cs.RO"
+      ]
+    },
+    {
+      "title": "Control Barrier Function-Based Quadratic Programs Introduce Undesirable Asymptotically Stable Equilibria",
+      "authors": [
+        "Matheus F. Reis",
+        "Antonio Pedro Aguiar",
+        "P. Tabuada"
+      ],
+      "year": 2020,
+      "date": "2020-03-17",
+      "citations": 153,
+      "arxiv_id": "2003.07819",
+      "paper_id": "41efa4d755cff2bd72071d0bbeb326c7ed73b717",
+      "url": "https://arxiv.org/abs/2003.07819",
+      "abstract": "Control Lyapunov functions (CLFs) and control barrier functions (CBFs) have been used to develop provably safe controllers by means of quadratic programs (QPs), guaranteeing safety in the form of trajectory invariance with respect to a given set. In this letter, we show that this framework can introduce equilibrium points (particularly at the boundary of the safe set) other than the minimum of the Lyapunov function into the closed-loop system. We derive explicit conditions under which these undesired equilibria (which can even appear in the simple case of linear systems with just one convex unsafe set) are asymptotically stable. To address this issue, we propose an extension to the QP-based controller unifying CLFs and CBFs such that the resulting system trajectories avoid the undesirable equilibria problem on the boundary of the safe set. The solution is illustrated in the design of a collision-free controller.",
+      "subjects": [
+        "eess.SY",
+        "math.OC"
+      ]
+    },
+    {
+      "title": "A Barrier Function Approach to Finite-Time Stochastic System Verification and Control",
+      "authors": [
+        "Cesar Santoyo",
+        "Maxence Dutreix",
+        "Samuel D. Coogan"
+      ],
+      "year": 2019,
+      "date": "2019-09-10",
+      "citations": 0,
+      "arxiv_id": "1909.05109",
+      "paper_id": "626eee12138906b4c0fb29fa6895e8ebbf075adf",
+      "url": "https://arxiv.org/abs/1909.05109",
+      "abstract": "This paper studies the problem of enforcing safety of a stochastic dynamical system over a finite-time horizon. We use stochastic control barrier functions as a means to quantify the probability that a system exits a given safe region of the state space in finite time. A barrier certificate condition that bounds the expected value of the barrier function over the time horizon is recast as a sum-of-squares optimization problem for efficient numerical computation. Unlike prior works, the proposed certificate condition includes a state-dependent upper bound on the evolution of the expectation. We present formulations for both continuous-time and discrete-time systems. Moreover, for systems for which the drift dynamics are affine-in-control, we propose a method for synthesizing polynomial state feedback controllers that achieve a specified probability of safety. Several case studies are presented which benchmark and illustrate the performance of our verification and control method in the continuous-time and discrete-time domains.",
+      "subjects": [
+        "eess.SY"
+      ]
     },
     {
       "title": "Control Barrier Function Based Quadratic Programs for Safety Critical Systems",
@@ -151,6 +262,22 @@
       ]
     },
     {
+      "title": "Control barrier function based quadratic programs with application to bipedal robotic walking",
+      "authors": [
+        "Shao-Chen Hsu",
+        "Xiangru Xu",
+        "A. Ames"
+      ],
+      "year": 2015,
+      "date": "2015-07-01",
+      "citations": 252,
+      "arxiv_id": null,
+      "paper_id": "591898dabb9237accc4adb3fbe94d2ce1fc5fe07",
+      "url": "https://www.semanticscholar.org/paper/591898dabb9237accc4adb3fbe94d2ce1fc5fe07",
+      "abstract": "",
+      "subjects": []
+    },
+    {
       "title": "Control barrier function based quadratic programs with application to adaptive cruise control",
       "authors": [
         "A. Ames",
@@ -159,7 +286,7 @@
       ],
       "year": 2014,
       "date": "2014-12-01",
-      "citations": 1119,
+      "citations": 1120,
       "arxiv_id": null,
       "paper_id": "14e3102e6d9cd166f3a7eac1acf1eb36ed4c961b",
       "url": "https://www.semanticscholar.org/paper/14e3102e6d9cd166f3a7eac1acf1eb36ed4c961b",
@@ -900,7 +1027,7 @@
         "Aaron D. Ames"
       ],
       "date": "2026-10-16",
-      "citations": 1,
+      "citations": 0,
       "arxiv_id": "2610.24308v1",
       "url": "https://arxiv.org/abs/2610.24308v1",
       "abstract": "Reduced-order model architectures are often used to decompose complex safety-critical control design tasks into tractable subproblems. In this paradigm, one must ask: when does the safety of a reduced-order model lift to safety of the full system? Taking an invariant manifold perspective, we provide necessary and sufficient conditions for the existence of smooth, regular lifts of compact safe sets from reduced-order models. Our characterization relies only on asymptotic stability of an embedding of a reduced-order safe set, without additional robustness or rate conditions. We apply these results to study control barrier functions in reduced-order model architectures and lifts of safe sets through cascades. Further, we use our conditions to obtain topological obstructions to the tracking of safe, kinematic reduced-order models for mechanical systems. We conclude by using these obstructions to inform safe hierarchical control design for an underactuated satellite on SE(3).",
@@ -1029,87 +1156,8 @@
   ],
   "authors": [
     [
-      "Aaron D. Ames",
-      [
-        {
-          "title": "Safety of layered control systems via control barrier morphisms",
-          "authors": [
-            "Aaron D. Ames",
-            "Joe Moeller",
-            "Massimiliano de Sa",
-            "Paulo Tabuada"
-          ],
-          "date": "2026-10-28",
-          "citations": 0,
-          "arxiv_id": "2610.38108v1",
-          "url": "https://arxiv.org/abs/2610.38108v1",
-          "abstract": "Layered control architectures provide a powerful paradigm for synthesizing controllers for complex systems. Yet, translating guarantees at each layer to system-level guarantees is challenging due to the interactions between layers. To address this problem, this paper presents a categorical perspective on layered control architectures. Individual systems are represented as control coalgebras, their interactions are specified as morphisms to mediators, and system-level behaviors are obtained via composition defined categorically as a pullback. To analyze the safety of these systems, we formulate control barrier morphisms (CBMs), the categorical generalization of control barrier functions. We prove that feedback controllers satisfying a CBM condition render the associated safe subobject forward invariant. It is through CBMs that we can establish the safety of layered systems: given a CBM at each layer subject to compatibility conditions, the universal property of the pullback implies the existence of a CBM for the composed system. Safety of a full-order model being safety filtered by a reduced-order model is recovered as a specialization of the categorical framework.",
-          "subjects": [
-            "math.CT",
-            "eess.SY",
-            "math.OC"
-          ]
-        },
-        {
-          "title": "Lifting Safety Through Reduced-Order Model Architectures: An Invariant Manifold Approach",
-          "authors": [
-            "Massimiliano de Sa",
-            "Aaron D. Ames"
-          ],
-          "date": "2026-10-16",
-          "citations": 1,
-          "arxiv_id": "2610.24308v1",
-          "url": "https://arxiv.org/abs/2610.24308v1",
-          "abstract": "Reduced-order model architectures are often used to decompose complex safety-critical control design tasks into tractable subproblems. In this paradigm, one must ask: when does the safety of a reduced-order model lift to safety of the full system? Taking an invariant manifold perspective, we provide necessary and sufficient conditions for the existence of smooth, regular lifts of compact safe sets from reduced-order models. Our characterization relies only on asymptotic stability of an embedding of a reduced-order safe set, without additional robustness or rate conditions. We apply these results to study control barrier functions in reduced-order model architectures and lifts of safe sets through cascades. Further, we use our conditions to obtain topological obstructions to the tracking of safe, kinematic reduced-order models for mechanical systems. We conclude by using these obstructions to inform safe hierarchical control design for an underactuated satellite on SE(3).",
-          "subjects": [
-            "eess.SY",
-            "math.OC"
-          ]
-        },
-        {
-          "title": "Regions of Attraction of CBF-Based Safety Filters for Stable Planar Linear Systems",
-          "authors": [
-            "Adam K. Kiss",
-            "Pol Mestres",
-            "Andras Bartfai",
-            "Shima Sadat Mousavi",
-            "Aaron D. Ames"
-          ],
-          "date": "2026-10-15",
-          "citations": 0,
-          "arxiv_id": "2610.21221v1",
-          "url": "https://arxiv.org/abs/2610.21221v1",
-          "abstract": "In this paper we study the dynamical properties induced by safety filters based on control barrier functions (CBFs). These are obtained by minimally modifying a nominal controller with the goal of rendering it safe. We consider the simple setting of a planar linear plant with a stable linear nominal controller and an affine constraint. We show that even in this simple setting, the filtered system can oscillate or diverge while remaining safe. We fully characterize the parameters for which the origin is globally (exponentially or asymptotically) stable. For all other parameters, the filter creates a saddle on the constraint boundary, and we characterize the region of attraction of the origin. For underdamped nominal dynamics, its boundary is an unstable periodic orbit, a homoclinic loop, or the saddle's stable manifold, depending on whether the CBF gain is below, at, or above a homoclinic transition value. A vehicle sideslip example and two three-dimensional examples illustrate the results and what changes beyond planar dynamics.",
-          "subjects": [
-            "eess.SY"
-          ]
-        }
-      ],
-      []
-    ],
-    [
       "A. Ames",
       [
-        {
-          "title": "Data-Driven Safety Filters: Hamilton-Jacobi Reachability, Control Barrier Functions, and Predictive Methods for Uncertain Systems",
-          "authors": [
-            "K. P. Wabersich",
-            "Andrew J. Taylor",
-            "J. Choi",
-            "K. Sreenath",
-            "C. Tomlin",
-            "A. Ames",
-            "M. Zeilinger"
-          ],
-          "year": 2023,
-          "date": "2023-10-01",
-          "citations": 293,
-          "arxiv_id": null,
-          "paper_id": "ee4395ec938e8861d6646113ddd6f4aede0d2605",
-          "url": "https://www.semanticscholar.org/paper/ee4395ec938e8861d6646113ddd6f4aede0d2605",
-          "abstract": "Today’s control engineering problems exhibit an unprecedented complexity, with examples including the reliable integration of renewable energy sources into power grids <xref ref-type=\"bibr\" rid=\"ref1\">[1]</xref>, safe collaboration between humans and robotic systems <xref ref-type=\"bibr\" rid=\"ref2\">[2]</xref>, and dependable control of medical devices <xref ref-type=\"bibr\" rid=\"ref3\">[3]</xref> offering personalized treatment <xref ref-type=\"bibr\" rid=\"ref4\">[4]</xref>. In addition to compliance with safety criteria, the corresponding control objective is often multifaceted. It ranges from relatively simple stabilization tasks to unknown objective functions, which are, for example, accessible only through demonstrations from interactions between robots and humans <xref ref-type=\"bibr\" rid=\"ref5\">[5]</xref>. Classical control engineering methods are, however, often based on stability criteria with respect to set points and reference trajectories, and they can therefore be challenging to apply in such unstructured tasks with potentially conflicting safety specifications [6, Secs. 3 and 6]. While numerous efforts have started to address these challenges, missing safety certificates often still prohibit the widespread application of innovative designs outside research environments. As described in “Summary,” this article presents safety filters and advanced data-driven enhancements as a flexible framework for overcoming these limitations by ensuring that safety requirements codified as static state constraints are satisfied under all physical limitations of the system.",
-          "subjects": []
-        },
         {
           "title": "Composing Control Barrier Functions for Complex Safety Specifications",
           "authors": [
@@ -1217,7 +1265,7 @@
           ],
           "year": 2018,
           "date": "2018-03-08",
-          "citations": 0,
+          "citations": 380,
           "arxiv_id": "1803.03035",
           "paper_id": "05dd18ae103bc20c012bb034ff0ead9be30f0e58",
           "url": "https://arxiv.org/abs/1803.03035",
@@ -1234,7 +1282,7 @@
           ],
           "year": 2016,
           "date": "2016-12-05",
-          "citations": 0,
+          "citations": 731,
           "arxiv_id": "1612.01554",
           "paper_id": "3098826a91ba89250332fa1de1881207e619d6ea",
           "url": "https://arxiv.org/abs/1612.01554",
@@ -1303,7 +1351,7 @@
           ],
           "year": 2014,
           "date": "2014-12-01",
-          "citations": 1119,
+          "citations": 1120,
           "arxiv_id": null,
           "paper_id": "14e3102e6d9cd166f3a7eac1acf1eb36ed4c961b",
           "url": "https://www.semanticscholar.org/paper/14e3102e6d9cd166f3a7eac1acf1eb36ed4c961b",
@@ -1541,7 +1589,7 @@
           ],
           "year": 2014,
           "date": "2014-01-10",
-          "citations": 468,
+          "citations": 469,
           "arxiv_id": null,
           "paper_id": "5d5e595181a487dbd603ad9643e3ae2c51550354",
           "url": "https://www.semanticscholar.org/paper/5d5e595181a487dbd603ad9643e3ae2c51550354",
@@ -1718,6 +1766,26 @@
           ]
         },
         {
+          "title": "GCBF+: A Neural Graph Control Barrier Function Framework for Distributed Safe Multiagent Control",
+          "authors": [
+            "Song-Yuan Zhang",
+            "Oswin So",
+            "Kunal Garg",
+            "Chuchu Fan"
+          ],
+          "year": 2024,
+          "date": "2024-01-25",
+          "citations": 0,
+          "arxiv_id": "2401.14554",
+          "paper_id": "8f4857384e0573e45e74154704fc89468ab17988",
+          "url": "https://arxiv.org/abs/2401.14554",
+          "abstract": "Distributed, scalable, and safe control of large-scale multiagent systems is a challenging problem. In this article, we design a distributed framework for safe multiagent control in large-scale environments with obstacles, where a large number of agents are required to maintain safety using only local information and reach their goal locations. We introduce a new class of certificates, termed graph control barrier function (GCBF), which are based on the well-established control barrier function theory for safety guarantees and utilize a graph structure for scalable and generalizable distributed control of MAS. We develop a novel theoretical framework to prove the safety of an arbitrary-sized MAS with a single GCBF. We propose a new training framework GCBF+ that uses graph neural networks to parameterize a candidate GCBF and a distributed control policy. The proposed framework is distributed and is capable of taking point clouds from LiDAR, instead of actual state information, for real-world robotic applications. We illustrate the efficacy of the proposed method through various hardware experiments on a swarm of drones with objectives ranging from exchanging positions to docking on a moving target without collision. In addition, we perform extensive numerical experiments, where the number and density of agents, as well as the number of obstacles, increase. Empirical results show that in complex environments with agents with nonlinear dynamics (e.g., Crazyflie drones), GCBF+ outperforms the hand-crafted CBF-based method with the best performance by up to 20% for relatively small-scale MAS with up to 256 agents, and leading reinforcement learning (RL) methods by up to 40% for MAS with 1024 agents. Furthermore, the proposed method does not compromise on the performance, in terms of goal reaching, for achieving high safety rates, which is a common tradeoff in RL-based methods. Project website: https://mit-realm.github.io/gcbfplus/",
+          "subjects": [
+            "cs.RO",
+            "math.OC"
+          ]
+        },
+        {
           "title": "How to Train Your Neural Control Barrier Function: Learning Safety Filters for Complex Input-Constrained Systems",
           "authors": [
             "Oswin So",
@@ -1738,6 +1806,215 @@
           "subjects": [
             "math.OC",
             "cs.RO"
+          ]
+        }
+      ],
+      []
+    ],
+    [
+      "Aaron D. Ames",
+      [
+        {
+          "title": "Safety of layered control systems via control barrier morphisms",
+          "authors": [
+            "Aaron D. Ames",
+            "Joe Moeller",
+            "Massimiliano de Sa",
+            "Paulo Tabuada"
+          ],
+          "date": "2026-10-28",
+          "citations": 0,
+          "arxiv_id": "2610.38108v1",
+          "url": "https://arxiv.org/abs/2610.38108v1",
+          "abstract": "Layered control architectures provide a powerful paradigm for synthesizing controllers for complex systems. Yet, translating guarantees at each layer to system-level guarantees is challenging due to the interactions between layers. To address this problem, this paper presents a categorical perspective on layered control architectures. Individual systems are represented as control coalgebras, their interactions are specified as morphisms to mediators, and system-level behaviors are obtained via composition defined categorically as a pullback. To analyze the safety of these systems, we formulate control barrier morphisms (CBMs), the categorical generalization of control barrier functions. We prove that feedback controllers satisfying a CBM condition render the associated safe subobject forward invariant. It is through CBMs that we can establish the safety of layered systems: given a CBM at each layer subject to compatibility conditions, the universal property of the pullback implies the existence of a CBM for the composed system. Safety of a full-order model being safety filtered by a reduced-order model is recovered as a specialization of the categorical framework.",
+          "subjects": [
+            "math.CT",
+            "eess.SY",
+            "math.OC"
+          ]
+        },
+        {
+          "title": "Lifting Safety Through Reduced-Order Model Architectures: An Invariant Manifold Approach",
+          "authors": [
+            "Massimiliano de Sa",
+            "Aaron D. Ames"
+          ],
+          "date": "2026-10-16",
+          "citations": 0,
+          "arxiv_id": "2610.24308v1",
+          "url": "https://arxiv.org/abs/2610.24308v1",
+          "abstract": "Reduced-order model architectures are often used to decompose complex safety-critical control design tasks into tractable subproblems. In this paradigm, one must ask: when does the safety of a reduced-order model lift to safety of the full system? Taking an invariant manifold perspective, we provide necessary and sufficient conditions for the existence of smooth, regular lifts of compact safe sets from reduced-order models. Our characterization relies only on asymptotic stability of an embedding of a reduced-order safe set, without additional robustness or rate conditions. We apply these results to study control barrier functions in reduced-order model architectures and lifts of safe sets through cascades. Further, we use our conditions to obtain topological obstructions to the tracking of safe, kinematic reduced-order models for mechanical systems. We conclude by using these obstructions to inform safe hierarchical control design for an underactuated satellite on SE(3).",
+          "subjects": [
+            "eess.SY",
+            "math.OC"
+          ]
+        },
+        {
+          "title": "Regions of Attraction of CBF-Based Safety Filters for Stable Planar Linear Systems",
+          "authors": [
+            "Adam K. Kiss",
+            "Pol Mestres",
+            "Andras Bartfai",
+            "Shima Sadat Mousavi",
+            "Aaron D. Ames"
+          ],
+          "date": "2026-10-15",
+          "citations": 0,
+          "arxiv_id": "2610.21221v1",
+          "url": "https://arxiv.org/abs/2610.21221v1",
+          "abstract": "In this paper we study the dynamical properties induced by safety filters based on control barrier functions (CBFs). These are obtained by minimally modifying a nominal controller with the goal of rendering it safe. We consider the simple setting of a planar linear plant with a stable linear nominal controller and an affine constraint. We show that even in this simple setting, the filtered system can oscillate or diverge while remaining safe. We fully characterize the parameters for which the origin is globally (exponentially or asymptotically) stable. For all other parameters, the filter creates a saddle on the constraint boundary, and we characterize the region of attraction of the origin. For underdamped nominal dynamics, its boundary is an unstable periodic orbit, a homoclinic loop, or the saddle's stable manifold, depending on whether the CBF gain is below, at, or above a homoclinic transition value. A vehicle sideslip example and two three-dimensional examples illustrate the results and what changes beyond planar dynamics.",
+          "subjects": [
+            "eess.SY"
+          ]
+        }
+      ],
+      []
+    ],
+    [
+      "P. Tabuada",
+      [
+        {
+          "title": "Control Barrier Function-Based Quadratic Programs Introduce Undesirable Asymptotically Stable Equilibria",
+          "authors": [
+            "Matheus F. Reis",
+            "Antonio Pedro Aguiar",
+            "P. Tabuada"
+          ],
+          "year": 2020,
+          "date": "2020-03-17",
+          "citations": 153,
+          "arxiv_id": "2003.07819",
+          "paper_id": "41efa4d755cff2bd72071d0bbeb326c7ed73b717",
+          "url": "https://arxiv.org/abs/2003.07819",
+          "abstract": "Control Lyapunov functions (CLFs) and control barrier functions (CBFs) have been used to develop provably safe controllers by means of quadratic programs (QPs), guaranteeing safety in the form of trajectory invariance with respect to a given set. In this letter, we show that this framework can introduce equilibrium points (particularly at the boundary of the safe set) other than the minimum of the Lyapunov function into the closed-loop system. We derive explicit conditions under which these undesired equilibria (which can even appear in the simple case of linear systems with just one convex unsafe set) are asymptotically stable. To address this issue, we propose an extension to the QP-based controller unifying CLFs and CBFs such that the resulting system trajectories avoid the undesirable equilibria problem on the boundary of the safe set. The solution is illustrated in the design of a collision-free controller.",
+          "subjects": [
+            "eess.SY",
+            "math.OC"
+          ]
+        },
+        {
+          "title": "Control Barrier Function Based Quadratic Programs for Safety Critical Systems",
+          "authors": [
+            "A. Ames",
+            "Xiangru Xu",
+            "J. Grizzle",
+            "P. Tabuada"
+          ],
+          "year": 2016,
+          "date": "2016-09-21",
+          "citations": 0,
+          "arxiv_id": "1609.06408",
+          "paper_id": "291a176dc906f31e8faf760911a61f0ca9bde444",
+          "url": "https://arxiv.org/abs/1609.06408",
+          "abstract": "Safety critical systems involve the tight coupling between potentially conflicting control objectives and safety constraints. As a means of creating a formal framework for controlling systems of this form, and with a view toward automotive applications, this paper develops a methodology that allows safety conditions—expressed as  control barrier functions—to be unified with performance objectives—expressed as control Lyapunov functions—in the context of real-time optimization-based controllers. Safety conditions are specified in terms of forward invariance of a set, and are verified via two novel generalizations of barrier functions; in each case, the existence of a barrier function satisfying Lyapunov-like conditions implies forward invariance of the set, and the relationship between these two classes of barrier functions is characterized. In addition, each of these formulations yields a notion of control barrier function (CBF), providing inequality constraints in the control input that, when satisfied, again imply forward invariance of the set. Through these constructions, CBFs can naturally be unified with control Lyapunov functions (CLFs) in the context of a quadratic program (QP); this allows for the achievement of control objectives (represented by CLFs) subject to conditions on the admissible states of the system (represented by CBFs). The mediation of safety and performance through a QP is demonstrated on adaptive cruise control and lane keeping, two automotive control problems that present both safety and performance considerations coupled with actuator bounds.",
+          "subjects": [
+            "math.OC",
+            "eess.SY"
+          ]
+        },
+        {
+          "title": "Control barrier function based quadratic programs with application to adaptive cruise control",
+          "authors": [
+            "A. Ames",
+            "J. Grizzle",
+            "P. Tabuada"
+          ],
+          "year": 2014,
+          "date": "2014-12-01",
+          "citations": 1120,
+          "arxiv_id": null,
+          "paper_id": "14e3102e6d9cd166f3a7eac1acf1eb36ed4c961b",
+          "url": "https://www.semanticscholar.org/paper/14e3102e6d9cd166f3a7eac1acf1eb36ed4c961b",
+          "abstract": "",
+          "subjects": []
+        }
+      ],
+      []
+    ],
+    [
+      "Wei Xiao",
+      [
+        {
+          "title": "Per-Agent-Safe Navigation of Globally Driven Robot Collectives via Affine Field Design",
+          "authors": [
+            "Seunghwan Jang",
+            "Steven Ceron",
+            "Wei Xiao"
+          ],
+          "date": "2026-11-13",
+          "citations": 0,
+          "arxiv_id": "2611.17859v1",
+          "url": "https://arxiv.org/abs/2611.17859v1",
+          "abstract": "Safe navigation of robot collectives requires coordinating motion and deformation so that the collective can traverse constrained environments while ensuring each robot's safety. Existing controllers for swarmalator collectives largely rely on local control, where each robot receives an individual command, which causes the control and communication requirements to grow with the number of agents. We introduce a broadcast control formulation in which a single spatially affine field governs both the motion and deformation of the collective. The scalar component of the field regulates collective size, and its spatial gradient generates collective translation through non-reciprocal interactions. Both components enter the collective dynamics directly, which allows per-robot wall, actuation, and cohesion constraints to be enforced using control barrier functions within a single quadratic program for the whole collective. The resulting controller continuously adapts the collective size to the local environment, and enables safe passage through corridors narrower than the unconstrained collective without pre-planned resizing. We further derive how the available actuation budget determines the reachable speed and minimum passable corridor width, and we demonstrate that two independently driven collectives can simultaneously traverse a shared junction using distinct fixed phase labels without inter-collective coordination.",
+          "subjects": [
+            "cs.RO"
+          ]
+        },
+        {
+          "title": "High-Order Control Barrier Functions",
+          "authors": [
+            "Wei Xiao",
+            "C. Belta"
+          ],
+          "year": 2021,
+          "date": "2021-08-18",
+          "citations": 672,
+          "arxiv_id": null,
+          "paper_id": "5cd269d0aa2fad218d39dacdd380ebb9244b88c5",
+          "url": "https://www.semanticscholar.org/paper/5cd269d0aa2fad218d39dacdd380ebb9244b88c5",
+          "abstract": "We approach the problem of stabilizing a dynamical system while optimizing a cost and satisfying safety constraints and control limitations. For (nonlinear) affine control systems and quadratic costs, it has been shown that control barrier functions (CBFs) guaranteeing safety and control Lyapunov functions (CLFs) enforcing convergence can be used to (conservatively) reduce the optimal control problem to a sequence of quadratic programs (QPs). Existing works in this category have two main limitations. First, with one exception, they are based on the assumption that the relative degree of the system with respect to a function enforcing a safety constraint is one. Second, the QPs can easily become infeasible, in particular for problems with many safety constraints and tight control limitations. We propose high-order CBFs (HOCBFs), which can accommodate systems of arbitrary relative degrees. For each safety constraint, by using Lyapunov-like conditions, we construct a set of controls that renders the intersection of a set of sets forward invariant, which implies the satisfaction of the original constraint. We formulate optimal control problems with constraints given by HOCBF and CLF, and propose two methods—the penalty method and the parameterization method—to address the feasibility problem. Finally, we show how our methodology can be extended for safe navigation in unknown environments with long-term feasibility. We illustrate the proposed framework on adaptive cruise control and robot control problems.",
+          "subjects": []
+        }
+      ],
+      []
+    ],
+    [
+      "Chuchu Fan",
+      [
+        {
+          "title": "Unified Overview of Safety Certificate Functions: Techniques from Hamilton--Jacobi Reachability and Control Barrier Functions",
+          "authors": [
+            "Hao Wang",
+            "Max Cohen",
+            "Zeyuan Feng",
+            "Donggeon David Oh",
+            "Oswin So",
+            "Songyuan Zhang",
+            "Javier Borquez",
+            "Chuchu Fan",
+            "Jaime Fernández Fisac",
+            "Haimin Hu",
+            "Jason J. Choi",
+            "Somil Bansal"
+          ],
+          "date": "2026-11-05",
+          "citations": 0,
+          "arxiv_id": "2611.07537v1",
+          "url": "https://arxiv.org/abs/2611.07537v1",
+          "abstract": "Safety is a central concern in modern autonomous systems. Safety certificates---functions whose existence guarantees that a system meets its safety specification---have long been used as a principled tool for rigorously reasoning about safety. Methods for synthesizing such certificates are scattered across research areas, with little guidance on when to use a particular approach. This tutorial provides a holistic treatment of safety certificate synthesis centered on two widely used families: Hamilton--Jacobi (HJ) reachability analysis and control barrier functions (CBFs). For each family of methods, we first introduce its general formulation, along with classical and learning-based tools for certificate synthesis. Next, we introduce two benchmark problems consisting of vehicle systems of differing complexity to assess the certificate quality of different synthesis methods and their effectiveness in safety-critical control. We use these benchmarks to compare various methods and provide practical guidance for selecting an approach.",
+          "subjects": [
+            "cs.RO",
+            "eess.SY"
+          ]
+        },
+        {
+          "title": "GCBF+: A Neural Graph Control Barrier Function Framework for Distributed Safe Multiagent Control",
+          "authors": [
+            "Song-Yuan Zhang",
+            "Oswin So",
+            "Kunal Garg",
+            "Chuchu Fan"
+          ],
+          "year": 2024,
+          "date": "2024-01-25",
+          "citations": 0,
+          "arxiv_id": "2401.14554",
+          "paper_id": "8f4857384e0573e45e74154704fc89468ab17988",
+          "url": "https://arxiv.org/abs/2401.14554",
+          "abstract": "Distributed, scalable, and safe control of large-scale multiagent systems is a challenging problem. In this article, we design a distributed framework for safe multiagent control in large-scale environments with obstacles, where a large number of agents are required to maintain safety using only local information and reach their goal locations. We introduce a new class of certificates, termed graph control barrier function (GCBF), which are based on the well-established control barrier function theory for safety guarantees and utilize a graph structure for scalable and generalizable distributed control of MAS. We develop a novel theoretical framework to prove the safety of an arbitrary-sized MAS with a single GCBF. We propose a new training framework GCBF+ that uses graph neural networks to parameterize a candidate GCBF and a distributed control policy. The proposed framework is distributed and is capable of taking point clouds from LiDAR, instead of actual state information, for real-world robotic applications. We illustrate the efficacy of the proposed method through various hardware experiments on a swarm of drones with objectives ranging from exchanging positions to docking on a moving target without collision. In addition, we perform extensive numerical experiments, where the number and density of agents, as well as the number of obstacles, increase. Empirical results show that in complex environments with agents with nonlinear dynamics (e.g., Crazyflie drones), GCBF+ outperforms the hand-crafted CBF-based method with the best performance by up to 20% for relatively small-scale MAS with up to 256 agents, and leading reinforcement learning (RL) methods by up to 40% for MAS with 1024 agents. Furthermore, the proposed method does not compromise on the performance, in terms of goal reaching, for achieving high safety rates, which is a common tradeoff in RL-based methods. Project website: https://mit-realm.github.io/gcbfplus/",
+          "subjects": [
+            "cs.RO",
+            "math.OC"
           ]
         }
       ],
@@ -1772,7 +2049,7 @@
             "Aaron D. Ames"
           ],
           "date": "2026-10-16",
-          "citations": 1,
+          "citations": 0,
           "arxiv_id": "2610.24308v1",
           "url": "https://arxiv.org/abs/2610.24308v1",
           "abstract": "Reduced-order model architectures are often used to decompose complex safety-critical control design tasks into tractable subproblems. In this paradigm, one must ask: when does the safety of a reduced-order model lift to safety of the full system? Taking an invariant manifold perspective, we provide necessary and sufficient conditions for the existence of smooth, regular lifts of compact safe sets from reduced-order models. Our characterization relies only on asymptotic stability of an embedding of a reduced-order safe set, without additional robustness or rate conditions. We apply these results to study control barrier functions in reduced-order model architectures and lifts of safe sets through cascades. Further, we use our conditions to obtain topological obstructions to the tracking of safe, kinematic reduced-order models for mechanical systems. We conclude by using these obstructions to inform safe hierarchical control design for an underactuated satellite on SE(3).",
@@ -1804,22 +2081,6 @@
           ]
         },
         {
-          "title": "Robust Dynamic Safety Margins are Robust Control Barrier Functions",
-          "authors": [
-            "Victor Freire",
-            "Saber Jafarpour",
-            "M. Nicotra"
-          ],
-          "year": 2026,
-          "date": "2026-10-27",
-          "citations": 0,
-          "arxiv_id": "2610.37900",
-          "paper_id": "a4f68bbc05ef741c505bc01486dfc1ae10c1a99c",
-          "url": "https://arxiv.org/abs/2610.37900",
-          "abstract": "This paper establishes robustness properties for control barrier functions (CBFs) constructed using dynamic safety margins (DSMs). We show that DSMs can act as robust CBFs by leveraging input-to-state stability for Lyapunov-based constructions, and contractivity for trajectory-prediction-based approaches. Additionally, we derive closed-form DSM-based robust CBFs (RDSM-RCBFs) specifically for linear systems. Simulations highlight the improved robustness of the proposed RDSM-RCBFs compared to nominal DSM-CBF baselines.",
-          "subjects": []
-        },
-        {
           "title": "Using Finite-Time Control to Synthesize Dynamic Backup Control Barrier Functions",
           "authors": [
             "Victor Turpin-Aguayo",
@@ -1834,220 +2095,9 @@
           "subjects": [
             "eess.SY"
           ]
-        },
-        {
-          "title": "Using Finite-Time Control to Synthesize Dynamic Backup Control Barrier Functions",
-          "authors": [
-            "Victor Turpin-Aguayo",
-            "Victor Freire",
-            "M. Nicotra"
-          ],
-          "year": 2026,
-          "date": "2026-10-22",
-          "citations": 0,
-          "arxiv_id": "2610.30545",
-          "paper_id": "5c490e75d3113a2bff643684b15213f256acf607",
-          "url": "https://arxiv.org/abs/2610.30545",
-          "abstract": "This paper presents a novel approach for the construction of control barrier functions (CBFs) for controllable linear systems subject to multiple state and input constraints. The approach is based on the Dynamic Backup CBF (DB-CBF) framework, where the control policy is parametrized using the equilibrium subspace of the system. By using a minimum-energy finite-time controller, we show that the terminal set constraint trivially reduces to having an admissible equilibrium point. The proposed DB-CBF is easy to tune (one parameter), fully takes advantage of the input range (by minimizing the control effort), and guarantees constraint enforcement (by tracking a backup equilibrium point that can be reached safely in finite time).",
-          "subjects": []
-        },
-        {
-          "title": "Importance of the Input Cost when Designing Control Barrier Function Safety Filters",
-          "authors": [
-            "Victor Freire",
-            "M. Nicotra"
-          ],
-          "year": 2026,
-          "date": "2026-05-26",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "392b3b2b3d0a85e3b051b51ee4766632e35f411e",
-          "url": "https://www.semanticscholar.org/paper/392b3b2b3d0a85e3b051b51ee4766632e35f411e",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Control-Mixing Barrier Functions: Characterizing Control Invariance for Intersections and Unions",
-          "authors": [
-            "Victor Turpin-Aguayo",
-            "M. Nicotra",
-            "Victor Freire"
-          ],
-          "year": 2026,
-          "date": "2026",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "b2d12427aced90a7bd0d6695588dbb6eaad02b2c",
-          "url": "https://www.semanticscholar.org/paper/b2d12427aced90a7bd0d6695588dbb6eaad02b2c",
-          "abstract": "This letter addresses safety verification for intersections and unions of constraints using control barrier functions. After summarizing the control-sharing property for certifying control invariance of intersections of constraints (AND), this letter proposes the control-relaying property to address unions of constraints (OR), and the control-mixing property for mixed constraints (AND + OR). The control-sharing property is highlighted as the most natural extension of control barrier functions to vector-valued functions. It is also shown that any group of control barrier functions has the control-mixing property. Finally, this letter presents a safety filter that leverages the control-mixing property to enforce mixed constraints.",
-          "subjects": []
-        },
-        {
-          "title": "Designing Control Barrier Functions Using a Dynamic Backup Policy",
-          "authors": [
-            "Victor Freire",
-            "M. Nicotra"
-          ],
-          "year": 2025,
-          "date": "2025-10-10",
-          "citations": 0,
-          "arxiv_id": "2510.09810",
-          "paper_id": "7698a3fb399bd2fe38a6fb8bf8d133707d3f9102",
-          "url": "https://arxiv.org/abs/2510.09810",
-          "abstract": "This paper presents a systematic approach to construct control barrier functions for nonlinear control affine systems subject to arbitrary state and input constraints. Taking inspiration from the reference governor literature, the proposed method defines a family of backup policies, parametrized by the equilibrium manifold of the system. The control barrier function is defined on the augmented state-and-reference space: given a state-reference pair, the approach quantifies the distance to constraint violation at any time in the future. The proposed method is applied to an inverted pendulum on cart.",
-          "subjects": []
-        },
-        {
-          "title": "Designing Control Barrier Functions for Underactuated Euler–Lagrange Systems Using Dynamic Safety Margins",
-          "authors": [
-            "Victor Freire",
-            "Sauranil Debarshi",
-            "M. Nicotra"
-          ],
-          "year": 2025,
-          "date": "2025",
-          "citations": 5,
-          "arxiv_id": null,
-          "paper_id": "235d6c985dacf1fba85646bb3753ab3f384e71fa",
-          "url": "https://www.semanticscholar.org/paper/235d6c985dacf1fba85646bb3753ab3f384e71fa",
-          "abstract": "This letter shows how to design control barrier functions for underactuated and fully-actuated Euler-Lagrange systems subject to state and input constraints. The proposed method uses passivity-based considerations to limit the total energy available to the system and ensure constraint satisfaction. The approach can handle multiple state and input constraints regardless of relative degree.",
-          "subjects": []
-        },
-        {
-          "title": "Building Robust Control Barrier Functions from Robust Maximal Output Admissible Sets",
-          "authors": [
-            "Victor Freire",
-            "M. Nicotra"
-          ],
-          "year": 2024,
-          "date": "2024-12-16",
-          "citations": 2,
-          "arxiv_id": null,
-          "paper_id": "c756585983c51ce493cd49817b42b2540204762f",
-          "url": "https://www.semanticscholar.org/paper/c756585983c51ce493cd49817b42b2540204762f",
-          "abstract": "This paper addresses the constrained control of nonlinear systems subject to bounded disturbances and arbitrary state and input constraints. This is done by defining a robust discrete-time control barrier function (RDCBF) and using it to synthesize a control policy. Given that RDCBFs are certificates of robust control invariance, it is shown that robust maximal output admissible sets can be used to construct RDCBFs. By also specializing the approach to linear systems, the paper provides a step-by-step algorithm for designing a safe and recursively feasible RDCBF-based controller for linear discrete-time systems subject to bounded disturbances and polyhedral state and input constraints. Numerical examples showcase the effectiveness of the proposed controller compared to other robust constrained control approaches.",
-          "subjects": []
-        },
-        {
-          "title": "Using Dynamic Safety Margins as Control Barrier Functions",
-          "authors": [
-            "Victor Freire",
-            "M. Nicotra"
-          ],
-          "year": 2024,
-          "date": "2024-04-01",
-          "citations": 0,
-          "arxiv_id": "2404.01445",
-          "paper_id": "ae8f800a1edf02d1490b78944a2e286b3e011234",
-          "url": "https://arxiv.org/abs/2404.01445",
-          "abstract": "This article presents an approach to design control barrier functions (CBFs) for arbitrary state and input constraints using tools from the reference governor literature. In particular, it is shown that dynamic safety margins (DSMs) are CBFs for an augmented system obtained by concatenating the state with a virtual reference. The proposed approach is agnostic to the relative degree and can handle multiple state and input constraints using the control-sharing property of CBFs. The construction of CBFs using Lyapunov-based DSMs is then investigated in further detail. Numerical simulations show that the method outperforms existing DSM-based approaches, while also guaranteeing safety and persistent feasibility of the associated optimization program.",
-          "subjects": []
-        },
-        {
-          "title": "Systematic Design of Discrete-Time Control Barrier Functions Using Maximal Output Admissible Sets",
-          "authors": [
-            "Victor Freire",
-            "M. Nicotra"
-          ],
-          "year": 2023,
-          "date": "2023",
-          "citations": 24,
-          "arxiv_id": null,
-          "paper_id": "ab334983dbf3762a53b4259f52b886cfd74a7018",
-          "url": "https://www.semanticscholar.org/paper/ab334983dbf3762a53b4259f52b886cfd74a7018",
-          "abstract": "This letter introduces a novel discrete-time control barrier function (DCBF) that stems directly from discrete-time set invariance theory. The proposed DCBF provides necessary and sufficient conditions for certifying control invariance and can be used to synthesize a constrained control policy. Moreover, the DCBF can be constructed for arbitrary sets of state and input constraints by taking advantage of maximal output admissible set theory. The resulting DCBF-based controller is proven to be safe and recursively feasible. Numerical examples showcase the effectiveness of the scheme by comparing it to existing constrained control approaches.",
-          "subjects": []
-        },
-        {
-          "title": "Flatness-Based Quadcopter Trajectory Planning and Tracking With Continuous-Time Safety Guarantees",
-          "authors": [
-            "Victor Freire",
-            "Xiangru Xu"
-          ],
-          "year": 2021,
-          "date": "2021-11-01",
-          "citations": 0,
-          "arxiv_id": "2111.00951",
-          "paper_id": "0802da56c5742f11c357b26090bc8697a08fe8f9",
-          "url": "https://arxiv.org/abs/2111.00951",
-          "abstract": "This work proposes a convex optimization-based framework for the trajectory planning and tracking of quadcopters that ensures continuous-time safety guarantees. Using the convexity property of B-spline curves and the differential flatness property of quadcopters, a second-order cone program is formulated to generate an optimal nominal trajectory that respects state and input constraints, including position, linear velocity, angle, angular velocity, thrust, waypoints, and obstacle avoidance constraints, rigorously in the continuous-time sense. To ensure safe trajectory tracking, a convex quadratic program is proposed based on control barrier functions, which guarantees that the actual trajectory of the quadcopter remains within a prescribed safe tube of the nominal trajectory in continuous time. Furthermore, conditions that ensure the safe tracking controller respects thrust, roll, and pitch constraints are also presented. Both the planning and control approaches are suitable for online implementation, and the effectiveness of the proposed framework is demonstrated through simulations and experiments with a Crazyflie2.1 nano quadcopter.",
-          "subjects": []
         }
       ],
-      [
-        {
-          "title": "Rapid Development of an Autonomous Vehicle for the SAE AutoDrive Challenge II Competition",
-          "authors": [
-            "Sriram Ashokkumar",
-            "Anirudh Jayendra",
-            "S. Tobin",
-            "Ariel Leykin",
-            "R. Stegeman",
-            "Abhiraj Dashora",
-            "B. Look",
-            "Joseph Koenig",
-            "Brian Hu",
-            "M. Crooks",
-            "Ishaan Mahajan",
-            "Pravin Boopathy",
-            "M. Krishnakumar",
-            "Nevindu Batagoda",
-            "Hanwei Wang",
-            "A. Young",
-            "Victor Freire",
-            "Glenn Bower",
-            "Xiangru Xu",
-            "D. Negrut"
-          ],
-          "year": 2024,
-          "date": "2024-04-09",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "b8c837eba02b6bee8f01a80dd0e3a3e3e43483ec",
-          "url": "https://www.semanticscholar.org/paper/b8c837eba02b6bee8f01a80dd0e3a3e3e43483ec",
-          "abstract": "The SAE AutoDrive Challenge II is a four-year collegiate competition dedicated to developing a Level 4 autonomous vehicle by 2025. In January 2023, the participating teams each received a Chevy Bolt EUV. Within a span of five months, the second phase of the competition took place in Ann Arbor, MI. The authors of this contribution, who participated in this event as team Wisconsin Autonomous representing the University of Wisconsin–Madison, secured second place in static events and third place in dynamic events. This has been accomplished by reducing reliance on the actual vehicle platform and instead leveraging physical analogs and simulation. This paper outlines the software and hardware infrastructure of the competing vehicle, touching on issues pertaining sensors, hardware, and the software architecture employed on the autonomous vehicle. We discuss the LiDAR-camera fusion approach for object detection and the three-tier route planning and following systems. One of the defining aspects of our approach was leveraging early simulation and the use of physical analogs, which accelerated the development of the autonomy algorithms. In the process, we established a rapid autonomous vehicle development methodology that will anchor our technical effort in the third stage of the SAE AutoDrive Challenge II competition.",
-          "subjects": []
-        },
-        {
-          "title": "A software toolkit and hardware platform for investigating and comparing robot autonomy algorithms in simulation and reality",
-          "authors": [
-            "A. Elmquist",
-            "A. Young",
-            "Ishaan Mahajan",
-            "Kyle Fahey",
-            "Abhiraj Dashora",
-            "Sriram Ashokkumar",
-            "Stefan Caldararu",
-            "Victor Freire",
-            "Xiangru Xu",
-            "R. Serban",
-            "D. Negrut"
-          ],
-          "year": 2022,
-          "date": "2022-06-14",
-          "citations": 0,
-          "arxiv_id": "2206.06537",
-          "paper_id": "01f0dd53bfe00c3024ec728fb4d0a930daf11dea",
-          "url": "https://arxiv.org/abs/2206.06537",
-          "abstract": "—We describe a software framework and a hard- ware platform used in tandem for the design and analysis of robot autonomy algorithms in simulation and reality. The software, which is open source, containerized, and operating system (OS) independent, has three main components: a ROS 2 interface to a C++ vehicle simulation framework (Chrono), which provides high-ﬁdelity wheeled/tracked vehicle and sensor simulation; a basic ROS 2-based autonomy stack for algorithm design and testing; and, a development ecosystem which en- ables visualization, and hardware-in-the-loop experimentation in perception, state estimation, path planning, and controls. The accompanying hardware platform is a 1/6th scale vehicle augmented with reconﬁgurable mountings for computing, sensing, and tracking. Its purpose is to allow algorithms and sensor conﬁgurations to be physically tested and improved. Since this vehicle platform has a digital twin within the simulation environment, one can test and compare the same algorithms and autonomy stack in simulation and reality. This platform has been built with an eye towards characterizing and managing the simulation-to-reality gap. Herein, we describe how this platform is set up, deployed, and used to improve autonomy for mobility applications.",
-          "subjects": []
-        },
-        {
-          "title": "Optimal Control for Kinematic Bicycle Model With Continuous-Time Safety Guarantees: A Sequential Second-Order Cone Programming Approach",
-          "authors": [
-            "Victor Freire",
-            "Xiangru Xu"
-          ],
-          "year": 2022,
-          "date": "2022-04-19",
-          "citations": 0,
-          "arxiv_id": "2204.08980",
-          "paper_id": "688326cb2cdd96c6789cdc801ac5c78cca11da53",
-          "url": "https://arxiv.org/abs/2204.08980",
-          "abstract": "The optimal control problem for the kinematic bicycle model is considered where the trajectories are required to satisfy the safety constraints in the continuous-time sense. Based on the differential flatness property of the model, necessary and sufficient conditions in the flat space are provided to guarantee safety in the state space. The optimal control problem is relaxed into three second-order cone programs (SOCPs) solved sequentially, which find the safe path, the trajectory duration, and the speed profile, respectively. Solutions of the three SOCPs provide a sub-optimal but feasible trajectory in the original optimal control problem. Simulation examples and comparisons with state-of-the-art optimal control solvers are presented to demonstrate the effectiveness of the proposed approach.",
-          "subjects": []
-        }
-      ]
+      []
     ],
     [
       "Marco M. Nicotra",
@@ -2088,6 +2138,180 @@
       []
     ],
     [
+      "Jun Zeng",
+      [
+        {
+          "title": "Safety-Critical Control using Optimal-decay Control Barrier Function with Guaranteed Point-wise Feasibility",
+          "authors": [
+            "Jun Zeng",
+            "Bi-Ke Zhang",
+            "Zhongyu Li",
+            "K. Sreenath"
+          ],
+          "year": 2021,
+          "date": "2021-03-23",
+          "citations": 0,
+          "arxiv_id": "2103.12375",
+          "paper_id": "a04cda4daed93c7041785a845173df5efab77b2a",
+          "url": "https://arxiv.org/abs/2103.12375",
+          "abstract": "Safety is one of the fundamental problems in robotics. Recently, a quadratic program based control barrier function (CBF) method has emerged as a way to enforce safety-critical constraints. Together with control Lyapunov function (CLF), it forms a safety-critical control strategy, named CLF-CBF-QP, which can mediate between achieving the control objective and ensuring safety, while being executable in real-time. However, once additional constraints such as input constraints are introduced, the CLF-CBF-QP may encounter infeasibility. In order to address the challenge arises due to the infeasibility, we propose an optimal-decay form for safety-critical control wherein the decay rate of the CBF is optimized point-wise in time so as to guarantee point-wise feasibility when the state lies inside the safe set. The proposed control design is numerically validated using an adaptive cruise control example.",
+          "subjects": [
+            "eess.SY"
+          ]
+        },
+        {
+          "title": "Safety-Critical Model Predictive Control with Discrete-Time Control Barrier Function",
+          "authors": [
+            "Jun Zeng",
+            "Bi-Ke Zhang",
+            "K. Sreenath"
+          ],
+          "year": 2020,
+          "date": "2020-07-22",
+          "citations": 0,
+          "arxiv_id": "2007.11718",
+          "paper_id": "58af72097330b194d126962bfb05862dde3bf921",
+          "url": "https://arxiv.org/abs/2007.11718",
+          "abstract": "The optimal performance of robotic systems is usually achieved near the limit of state and input bounds. Model predictive control (MPC) is a prevalent strategy to handle these operational constraints, however, safety still remains an open challenge for MPC as it needs to guarantee that the system stays within an invariant set. In order to obtain safe optimal performance in the context of set invariance, we present a safety-critical model predictive control strategy utilizing discrete-time control barrier functions (CBFs), which guarantees system safety and accomplishes optimal performance via model predictive control. We analyze the feasibility and the stability properties of our control design. We verify the properties of our method on a 2D double integrator model for obstacle avoidance. We also validate the algorithm numerically using a competitive car racing example, where the ego car is able to overtake other racing cars.",
+          "subjects": [
+            "eess.SY",
+            "cs.RO"
+          ]
+        }
+      ],
+      []
+    ],
+    [
+      "Bi-Ke Zhang",
+      [
+        {
+          "title": "Safety-Critical Control using Optimal-decay Control Barrier Function with Guaranteed Point-wise Feasibility",
+          "authors": [
+            "Jun Zeng",
+            "Bi-Ke Zhang",
+            "Zhongyu Li",
+            "K. Sreenath"
+          ],
+          "year": 2021,
+          "date": "2021-03-23",
+          "citations": 0,
+          "arxiv_id": "2103.12375",
+          "paper_id": "a04cda4daed93c7041785a845173df5efab77b2a",
+          "url": "https://arxiv.org/abs/2103.12375",
+          "abstract": "Safety is one of the fundamental problems in robotics. Recently, a quadratic program based control barrier function (CBF) method has emerged as a way to enforce safety-critical constraints. Together with control Lyapunov function (CLF), it forms a safety-critical control strategy, named CLF-CBF-QP, which can mediate between achieving the control objective and ensuring safety, while being executable in real-time. However, once additional constraints such as input constraints are introduced, the CLF-CBF-QP may encounter infeasibility. In order to address the challenge arises due to the infeasibility, we propose an optimal-decay form for safety-critical control wherein the decay rate of the CBF is optimized point-wise in time so as to guarantee point-wise feasibility when the state lies inside the safe set. The proposed control design is numerically validated using an adaptive cruise control example.",
+          "subjects": [
+            "eess.SY"
+          ]
+        },
+        {
+          "title": "Safety-Critical Model Predictive Control with Discrete-Time Control Barrier Function",
+          "authors": [
+            "Jun Zeng",
+            "Bi-Ke Zhang",
+            "K. Sreenath"
+          ],
+          "year": 2020,
+          "date": "2020-07-22",
+          "citations": 0,
+          "arxiv_id": "2007.11718",
+          "paper_id": "58af72097330b194d126962bfb05862dde3bf921",
+          "url": "https://arxiv.org/abs/2007.11718",
+          "abstract": "The optimal performance of robotic systems is usually achieved near the limit of state and input bounds. Model predictive control (MPC) is a prevalent strategy to handle these operational constraints, however, safety still remains an open challenge for MPC as it needs to guarantee that the system stays within an invariant set. In order to obtain safe optimal performance in the context of set invariance, we present a safety-critical model predictive control strategy utilizing discrete-time control barrier functions (CBFs), which guarantees system safety and accomplishes optimal performance via model predictive control. We analyze the feasibility and the stability properties of our control design. We verify the properties of our method on a 2D double integrator model for obstacle avoidance. We also validate the algorithm numerically using a competitive car racing example, where the ego car is able to overtake other racing cars.",
+          "subjects": [
+            "eess.SY",
+            "cs.RO"
+          ]
+        }
+      ],
+      []
+    ],
+    [
+      "K. Sreenath",
+      [
+        {
+          "title": "Safety-Critical Control using Optimal-decay Control Barrier Function with Guaranteed Point-wise Feasibility",
+          "authors": [
+            "Jun Zeng",
+            "Bi-Ke Zhang",
+            "Zhongyu Li",
+            "K. Sreenath"
+          ],
+          "year": 2021,
+          "date": "2021-03-23",
+          "citations": 0,
+          "arxiv_id": "2103.12375",
+          "paper_id": "a04cda4daed93c7041785a845173df5efab77b2a",
+          "url": "https://arxiv.org/abs/2103.12375",
+          "abstract": "Safety is one of the fundamental problems in robotics. Recently, a quadratic program based control barrier function (CBF) method has emerged as a way to enforce safety-critical constraints. Together with control Lyapunov function (CLF), it forms a safety-critical control strategy, named CLF-CBF-QP, which can mediate between achieving the control objective and ensuring safety, while being executable in real-time. However, once additional constraints such as input constraints are introduced, the CLF-CBF-QP may encounter infeasibility. In order to address the challenge arises due to the infeasibility, we propose an optimal-decay form for safety-critical control wherein the decay rate of the CBF is optimized point-wise in time so as to guarantee point-wise feasibility when the state lies inside the safe set. The proposed control design is numerically validated using an adaptive cruise control example.",
+          "subjects": [
+            "eess.SY"
+          ]
+        },
+        {
+          "title": "Safety-Critical Model Predictive Control with Discrete-Time Control Barrier Function",
+          "authors": [
+            "Jun Zeng",
+            "Bi-Ke Zhang",
+            "K. Sreenath"
+          ],
+          "year": 2020,
+          "date": "2020-07-22",
+          "citations": 0,
+          "arxiv_id": "2007.11718",
+          "paper_id": "58af72097330b194d126962bfb05862dde3bf921",
+          "url": "https://arxiv.org/abs/2007.11718",
+          "abstract": "The optimal performance of robotic systems is usually achieved near the limit of state and input bounds. Model predictive control (MPC) is a prevalent strategy to handle these operational constraints, however, safety still remains an open challenge for MPC as it needs to guarantee that the system stays within an invariant set. In order to obtain safe optimal performance in the context of set invariance, we present a safety-critical model predictive control strategy utilizing discrete-time control barrier functions (CBFs), which guarantees system safety and accomplishes optimal performance via model predictive control. We analyze the feasibility and the stability properties of our control design. We verify the properties of our method on a 2D double integrator model for obstacle avoidance. We also validate the algorithm numerically using a competitive car racing example, where the ego car is able to overtake other racing cars.",
+          "subjects": [
+            "eess.SY",
+            "cs.RO"
+          ]
+        }
+      ],
+      []
+    ],
+    [
+      "Xiangru Xu",
+      [
+        {
+          "title": "Control Barrier Function Based Quadratic Programs for Safety Critical Systems",
+          "authors": [
+            "A. Ames",
+            "Xiangru Xu",
+            "J. Grizzle",
+            "P. Tabuada"
+          ],
+          "year": 2016,
+          "date": "2016-09-21",
+          "citations": 0,
+          "arxiv_id": "1609.06408",
+          "paper_id": "291a176dc906f31e8faf760911a61f0ca9bde444",
+          "url": "https://arxiv.org/abs/1609.06408",
+          "abstract": "Safety critical systems involve the tight coupling between potentially conflicting control objectives and safety constraints. As a means of creating a formal framework for controlling systems of this form, and with a view toward automotive applications, this paper develops a methodology that allows safety conditions—expressed as  control barrier functions—to be unified with performance objectives—expressed as control Lyapunov functions—in the context of real-time optimization-based controllers. Safety conditions are specified in terms of forward invariance of a set, and are verified via two novel generalizations of barrier functions; in each case, the existence of a barrier function satisfying Lyapunov-like conditions implies forward invariance of the set, and the relationship between these two classes of barrier functions is characterized. In addition, each of these formulations yields a notion of control barrier function (CBF), providing inequality constraints in the control input that, when satisfied, again imply forward invariance of the set. Through these constructions, CBFs can naturally be unified with control Lyapunov functions (CLFs) in the context of a quadratic program (QP); this allows for the achievement of control objectives (represented by CLFs) subject to conditions on the admissible states of the system (represented by CBFs). The mediation of safety and performance through a QP is demonstrated on adaptive cruise control and lane keeping, two automotive control problems that present both safety and performance considerations coupled with actuator bounds.",
+          "subjects": [
+            "math.OC",
+            "eess.SY"
+          ]
+        },
+        {
+          "title": "Control barrier function based quadratic programs with application to bipedal robotic walking",
+          "authors": [
+            "Shao-Chen Hsu",
+            "Xiangru Xu",
+            "A. Ames"
+          ],
+          "year": 2015,
+          "date": "2015-07-01",
+          "citations": 252,
+          "arxiv_id": null,
+          "paper_id": "591898dabb9237accc4adb3fbe94d2ce1fc5fe07",
+          "url": "https://www.semanticscholar.org/paper/591898dabb9237accc4adb3fbe94d2ce1fc5fe07",
+          "abstract": "",
+          "subjects": []
+        }
+      ],
+      []
+    ],
+    [
       "J. Grizzle",
       [
         {
@@ -2119,49 +2343,7 @@
           ],
           "year": 2014,
           "date": "2014-12-01",
-          "citations": 1119,
-          "arxiv_id": null,
-          "paper_id": "14e3102e6d9cd166f3a7eac1acf1eb36ed4c961b",
-          "url": "https://www.semanticscholar.org/paper/14e3102e6d9cd166f3a7eac1acf1eb36ed4c961b",
-          "abstract": "",
-          "subjects": []
-        }
-      ],
-      []
-    ],
-    [
-      "P. Tabuada",
-      [
-        {
-          "title": "Control Barrier Function Based Quadratic Programs for Safety Critical Systems",
-          "authors": [
-            "A. Ames",
-            "Xiangru Xu",
-            "J. Grizzle",
-            "P. Tabuada"
-          ],
-          "year": 2016,
-          "date": "2016-09-21",
-          "citations": 0,
-          "arxiv_id": "1609.06408",
-          "paper_id": "291a176dc906f31e8faf760911a61f0ca9bde444",
-          "url": "https://arxiv.org/abs/1609.06408",
-          "abstract": "Safety critical systems involve the tight coupling between potentially conflicting control objectives and safety constraints. As a means of creating a formal framework for controlling systems of this form, and with a view toward automotive applications, this paper develops a methodology that allows safety conditions—expressed as  control barrier functions—to be unified with performance objectives—expressed as control Lyapunov functions—in the context of real-time optimization-based controllers. Safety conditions are specified in terms of forward invariance of a set, and are verified via two novel generalizations of barrier functions; in each case, the existence of a barrier function satisfying Lyapunov-like conditions implies forward invariance of the set, and the relationship between these two classes of barrier functions is characterized. In addition, each of these formulations yields a notion of control barrier function (CBF), providing inequality constraints in the control input that, when satisfied, again imply forward invariance of the set. Through these constructions, CBFs can naturally be unified with control Lyapunov functions (CLFs) in the context of a quadratic program (QP); this allows for the achievement of control objectives (represented by CLFs) subject to conditions on the admissible states of the system (represented by CBFs). The mediation of safety and performance through a QP is demonstrated on adaptive cruise control and lane keeping, two automotive control problems that present both safety and performance considerations coupled with actuator bounds.",
-          "subjects": [
-            "math.OC",
-            "eess.SY"
-          ]
-        },
-        {
-          "title": "Control barrier function based quadratic programs with application to adaptive cruise control",
-          "authors": [
-            "A. Ames",
-            "J. Grizzle",
-            "P. Tabuada"
-          ],
-          "year": 2014,
-          "date": "2014-12-01",
-          "citations": 1119,
+          "citations": 1120,
           "arxiv_id": null,
           "paper_id": "14e3102e6d9cd166f3a7eac1acf1eb36ed4c961b",
           "url": "https://www.semanticscholar.org/paper/14e3102e6d9cd166f3a7eac1acf1eb36ed4c961b",
@@ -2216,28 +2398,6 @@
     ],
     [
       "Steven Ceron",
-      [
-        {
-          "title": "Per-Agent-Safe Navigation of Globally Driven Robot Collectives via Affine Field Design",
-          "authors": [
-            "Seunghwan Jang",
-            "Steven Ceron",
-            "Wei Xiao"
-          ],
-          "date": "2026-11-13",
-          "citations": 0,
-          "arxiv_id": "2611.17859v1",
-          "url": "https://arxiv.org/abs/2611.17859v1",
-          "abstract": "Safe navigation of robot collectives requires coordinating motion and deformation so that the collective can traverse constrained environments while ensuring each robot's safety. Existing controllers for swarmalator collectives largely rely on local control, where each robot receives an individual command, which causes the control and communication requirements to grow with the number of agents. We introduce a broadcast control formulation in which a single spatially affine field governs both the motion and deformation of the collective. The scalar component of the field regulates collective size, and its spatial gradient generates collective translation through non-reciprocal interactions. Both components enter the collective dynamics directly, which allows per-robot wall, actuation, and cohesion constraints to be enforced using control barrier functions within a single quadratic program for the whole collective. The resulting controller continuously adapts the collective size to the local environment, and enables safe passage through corridors narrower than the unconstrained collective without pre-planned resizing. We further derive how the available actuation budget determines the reachable speed and minimum passable corridor width, and we demonstrate that two independently driven collectives can simultaneously traverse a shared junction using distinct fixed phase labels without inter-collective coordination.",
-          "subjects": [
-            "cs.RO"
-          ]
-        }
-      ],
-      []
-    ],
-    [
-      "Wei Xiao",
       [
         {
           "title": "Per-Agent-Safe Navigation of Globally Driven Robot Collectives via Affine Field Design",
@@ -2346,357 +2506,9 @@
           "subjects": [
             "math.OC"
           ]
-        },
-        {
-          "title": "Adaptive Constraint Sampling for Stochastic Gradient Methods in Constrained Optimization",
-          "authors": [
-            "Erik Müller",
-            "Naum Dimitrieski",
-            "M. Belabbas",
-            "Christian Ebenbauer"
-          ],
-          "year": 2026,
-          "date": "2026-11-12",
-          "citations": 0,
-          "arxiv_id": "2611.17076",
-          "paper_id": "cd17109309f48cf5e5e463eb577606f1068bc700",
-          "url": "https://arxiv.org/abs/2611.17076",
-          "abstract": "This paper proposes an adaptive constraint-sampling technique for stochastic gradient-based methods to efficiently solve constrained optimization problems with a large number of inequality constraints. The proposed constraint-sampling technique maintains a set of recently violated constraints and draws the constraint used in each iteration uniformly either from this set or from the set of all constraints. This keeps its per-iteration arithmetic overhead independent of the number of constraints. In simulations on synthetic convex optimization problems and in the synthesis of a control barrier function for the Dubins Car, the constraint-sampling technique is shown to significantly outperform uniform constraint sampling.",
-          "subjects": []
         }
       ],
-      [
-        {
-          "title": "Synthesis of the Transient Behaviour of Optimization Algorithms for Strongly Convex Objective Functions",
-          "authors": [
-            "Adel Abdelsamed",
-            "Dennis Gramlich",
-            "Christian Ebenbauer",
-            "Carsten W. Scherer"
-          ],
-          "year": 2026,
-          "date": "2026-10-16",
-          "citations": 0,
-          "arxiv_id": "2610.23206",
-          "paper_id": "bcda7b5d3fcb663e873faa8f93999a6e7a6d3060",
-          "url": "https://arxiv.org/abs/2610.23206",
-          "abstract": "We study the transient behavior of first-order optimization methods for unconstrained minimization of smooth and strongly convex objective functions. These methods are modelled as linear systems over finite-time intervals embedded in feedback with the gradient nonlinearity. By characterizing the function class through discrete-time Zames-Falb integral quadratic constraints, we employ a robust $\\mathcal{H}_2$ control framework to obtain convex semidefinite programs certifying tight worst-case bounds on the terminal distance to the optimizer. Building on the same formulation, we derive a convex synthesis procedure for a transient-optimal method that achieves the optimal finite-horizon bounds and guarantees error reduction over any prescribed number of steps. The framework naturally extends to delayed gradient measurements, enabling both transient performance analysis and synthesis of optimal algorithms under feedback delays.",
-          "subjects": []
-        },
-        {
-          "title": "Lie bracket approximations of RMSprop for Extremum Seeking Control",
-          "authors": [
-            "V. Grushkovskaya",
-            "Christian Ebenbauer"
-          ],
-          "year": 2026,
-          "date": "2026-09-06",
-          "citations": 0,
-          "arxiv_id": "2609.06505",
-          "paper_id": "a5b4f9a843a325aefc9bf97abe54541b230bd9e9",
-          "url": "https://arxiv.org/abs/2609.06505",
-          "abstract": "This paper presents novel extremum seeking algorithms inspired by RMSProp dynamics and based on Lie bracket approximation techniques. To inherit the behavior of the classical continuous-time RMSProp algorithm, we introduce an extremum seeking scheme that exploits second-order Lie brackets, allowing the excitation of squared gradient terms in the resulting Lie bracket system. Moreover, we propose two modified RMSProp-type algorithms that can be implemented using only first-order Lie bracket approximations, thereby reducing the complexity of the extremum seeking control design. The three resulting extremum seeking algorithms are compared through numerical simulations.",
-          "subjects": []
-        },
-        {
-          "title": "Stochastic Gradient Descent with Momentum: Analysis and Synthesis via Integral Quadratic Constraints",
-          "authors": [
-            "Dennis Gramlich",
-            "Carsten W. Scherer",
-            "Christian Ebenbauer"
-          ],
-          "year": 2026,
-          "date": "2026-08-07",
-          "citations": 0,
-          "arxiv_id": "2608.06915",
-          "paper_id": "47d91bad9e6b7b396d62f95ddecd1003f5e39a8b",
-          "url": "https://arxiv.org/abs/2608.06915",
-          "abstract": "This article applies dynamic integral quadratic constraints (IQCs) to the analysis and synthesis of accelerated stochastic gradient algorithms. We consider composite objective functions whose gradient can be approximated via mini-batch sampling and we model the resulting stochastic gradient oracle as a feedback nonlinearity in the spirit of Lur'e systems from robust control. Our first main contribution is a family of IQCs that characterize the second-order statistics of mini-batch gradients, extending the classical Zames--Falb multipliers. Our second contribution is a semidefinite-program for certifying exponential convergence rates of stochastic gradient algorithms, and a complementary condition for bounding the asymptotic variance caused by non-vanishing gradient noise. Our third contribution is a convex synthesis procedure that identifies mini-batch gradient algorithms with the smallest certifiable convergence rate.",
-          "subjects": []
-        },
-        {
-          "title": "Averaging of Random Vibrations in Mechanical Systems in the Sense of Ito, Stratonovich, and Sussmann",
-          "authors": [
-            "Raik Suttner",
-            "Christian Ebenbauer"
-          ],
-          "year": 2026,
-          "date": "2026-06-10",
-          "citations": 0,
-          "arxiv_id": "2606.12266",
-          "paper_id": "799888aa8f2c950a22c878701f97df877e9c6beb",
-          "url": "https://arxiv.org/abs/2606.12266",
-          "abstract": "In this paper, we investigate a stochastic averaging principle for a large class of mechanical systems in the presence of random vibrations. We show that a known deterministic averaging principle for affine connection control systems with large-amplitude high-frequency inputs also holds for non-periodic stochastic inputs. The randomly vibrating mechanical system is described by a stochastic differential equation whose solutions do not depend on its interpretation in the sense of Ito, Stratonovich, or Sussmann. We also show that solutions of this stochastic differential equation can be directly computed from a single ordinary differential equation. We illustrate our theoretical results by the example of stochastic source seeking with a nonholonomic vehicle.",
-          "subjects": []
-        },
-        {
-          "title": "An Adaptive Accelerated Derivative-Free Optimization Algorithm Based on Noncommutative Maps",
-          "authors": [
-            "Minghui Chu",
-            "Xin Huo",
-            "Christian Ebenbauer",
-            "Kemao Ma"
-          ],
-          "year": 2026,
-          "date": "2026-06-01",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "ffbb564961c488ecf7a9b22431d34778b1d77c2d",
-          "url": "https://www.semanticscholar.org/paper/ffbb564961c488ecf7a9b22431d34778b1d77c2d",
-          "abstract": "In this article, an adaptive accelerated derivative-free optimization algorithm is developed. A composition of noncommutative maps based on objective function evaluations is used to approximate an accelerated gradient descent algorithm with a momentum term. An adaptive step-size rule and an adaptive momentum term are introduced to improve the algorithm’s performance in terms of convergence speed and steady-state accuracy. Semi-global asymptotic stability of the proposed algorithm is proved for a class of convex objective functions under suitable assumptions. Simulation results are shown and compared to other derivative-free optimization algorithms.",
-          "subjects": []
-        },
-        {
-          "title": "Global exponential stabilization of a force- and torque-actuated unicycle by flexible-step MPC",
-          "authors": [
-            "Ala Kolsi",
-            "Christian Ebenbauer",
-            "Bahman Gharesifard",
-            "Raik Suttner"
-          ],
-          "year": 2026,
-          "date": "2026-05-05",
-          "citations": 0,
-          "arxiv_id": "2605.03726",
-          "paper_id": "fe411253a3f8837a076608cc2151d0ed26238479",
-          "url": "https://arxiv.org/abs/2605.03726",
-          "abstract": "We study the problem of global exponential stabilization of a force- and torque-controlled unicycle model in discrete time. To this end, we extend a recently introduced approach to model predictive control (MPC) in which a flexible number of inputs is implemented in every iteration. We present the first flexible-step MPC protocol with state-dependent weights for average descent. Notably, the proposed method relies neither on a suitable design of running or terminal cost functions nor on a suitable choice of terminal constraints. Instead, stability is guaranteed through a generalized discrete-time control Lyapunov function. We establish a new theoretical framework for global exponential stabilization of general nonlinear discrete-time control systems by flexible-step MPC. The obtained results go beyond the unicycle example. However, given the importance of the unicycle dynamics, we make that a focal point of our work. For the particular case of the dynamic (second-order) unicycle model, we show that global exponential stability cannot be attained in the classical sense, but in a slightly weaker sense. The proposed flexible-step MPC method is shown to induce the best possible notion of global exponential stability for this model. We provide explicit rules for the choice of parameters, which guarantee feasibility and global exponential stability. Our numerical simulations show that the discrete MPC method also works very well in applications to a continuous-time torque-actuated unicycle.",
-          "subjects": []
-        },
-        {
-          "title": "Joint Trajectory and Tracking Controller Design Under Uncertain Models: Study With Autonomous Parafoils",
-          "authors": [
-            "Dennis Gramlich",
-            "Lukas Hewing",
-            "Carsten W. Scherer",
-            "V. Preda",
-            "Joost Veenman",
-            "C. Ardura",
-            "S. Bennani",
-            "Christian Ebenbauer"
-          ],
-          "year": 2026,
-          "date": "2026-05-01",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "bfcc01e4b8d5a44bc9a467f1ddba6514b96ea0e3",
-          "url": "https://www.semanticscholar.org/paper/bfcc01e4b8d5a44bc9a467f1ddba6514b96ea0e3",
-          "abstract": "This article advocates the use of robust optimization methods for trajectory planning in control systems, highlighting their potential to enhance system robustness and performance. We provide an extensive benchmark of robust differential dynamic programming (DDP), a method that jointly optimizes reference trajectories and tracking controllers to reduce sensitivity to uncertainties. The optimized trajectories avoid regions of high uncertainty in the state space and mitigate the excitation of uncertain system components. We evaluate the performance of these robust trajectories using a parafoil landing simulator developed to industrial standards, demonstrating superior landing accuracy compared to nominal trajectories. Furthermore, we show that robust trajectories autonomously implement energy management strategies, such as spiraling over a landing point to dissipate excess altitude, which are often hard-coded in parafoil guidance algorithms. Our results underscore the potential of robust trajectory planning to advance control system design.",
-          "subjects": []
-        },
-        {
-          "title": "Global Stability and Step Size Robustness of RMSProp",
-          "authors": [
-            "Naum Dimitrieski",
-            "M. C. Honecker",
-            "Carsten W. Scherer",
-            "Christian Ebenbauer"
-          ],
-          "year": 2026,
-          "date": "2026-03-16",
-          "citations": 0,
-          "arxiv_id": "2603.15823",
-          "paper_id": "b7b53e5c1951282631202205eae55c343a481bd8",
-          "url": "https://arxiv.org/abs/2603.15823",
-          "abstract": "In this letter, an input-to-state Lyapunov function for the RMSProp optimization algorithm is introduced. Global asymptotic stability of the RMSProp algorithm for constant step sizes and robustness properties with respect to arbitrary bounded time-varying step size rules are established.",
-          "subjects": []
-        },
-        {
-          "title": "Extremum Seeking With Double Integrators in the Presence of Local Extrema",
-          "authors": [
-            "Raik Suttner",
-            "Christian Ebenbauer",
-            "S. Dashkovskiy"
-          ],
-          "year": 2026,
-          "date": "2026-03-03",
-          "citations": 0,
-          "arxiv_id": "2603.02823",
-          "paper_id": "2de088b974d21902a8c02f788ed1696b3a85769c",
-          "url": "https://arxiv.org/abs/2603.02823",
-          "abstract": "We study the problem of global extremum seeking in the presence of local extrema. We investigate two different perturbation-based methods: 1) a well-known classical extremum seeking scheme for steady-state output optimization; and 2) a source seeking scheme for a two-dimensional point mass. In each of these two scenarios, the closed-loop system involves a damped double integrator subject to an oscillatory force. An averaging analysis reveals that the respective averaged system is again a damped double integrator, but now subject to a potential force. The potential force is given by the gradient of a locally averaged objective function. Such a function is less prone to have undesired local extrema and is therefore better suited for global optimization. We provide sufficient conditions for semi-global practical uniform asymptotic stability of the closed-loop system. The sufficient conditions only involve assumptions on the averaged objective function but not the original one.",
-          "subjects": []
-        },
-        {
-          "title": "Non-Local Extremum Seeking Based on the Divergence Theorem",
-          "authors": [
-            "Raik Suttner",
-            "Christian Ebenbauer",
-            "S. Dashkovskiy"
-          ],
-          "year": 2026,
-          "date": "2026-03-01",
-          "citations": 2,
-          "arxiv_id": "2603.01200",
-          "paper_id": "d887fea09e6f3629cb1f22189154f75da27ad5e8",
-          "url": "https://arxiv.org/abs/2603.01200",
-          "abstract": "We propose a new design strategy for extremum seeking control for a multi-dimensional single-integrator system in the presence of local extrema. The proposed method employs suitably designed sinusoidal dither signals, which force the single-integrator to a spherical motion. Over time, this spherical motion gives approximate access to an integral of the objective function over a sphere. Using the divergence theorem, we identify the integral over the sphere as the gradient of an integral over the enclosed ball. This integral over the ball defines a locally averaged objective function. The proposed extremum seeking method drives the system state into the gradient direction of the averaged objective function. Such a local average of the objective function can eliminate undesired local extrema and is therefore beneficial for global optimization. Under the assumption that the averaged objective function has no undesired critical points, we prove practical asymptotic stability of the closed-loop system. Our theoretical analysis takes sufficiently small $L_\\infty$-measurement errors of the objective function into account.",
-          "subjects": []
-        },
-        {
-          "title": "Reducing Conservatism in Robust Data-Driven MPC via the S-Variable Method and Time-varying Lyapunov Functions",
-          "authors": [
-            "H. H. Nguyen",
-            "Dennis Gramlich",
-            "Christian Ebenbauer",
-            "Rolf Findeisen"
-          ],
-          "year": 2025,
-          "date": "2025-12-09",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "484c529ca651b561910f5abc2992164e3dac38a2",
-          "url": "https://www.semanticscholar.org/paper/484c529ca651b561910f5abc2992164e3dac38a2",
-          "abstract": "Predictive control relies on a system model to forecast future behavior. In scenarios where a nominal model is unavailable, data-driven model predictive control techniques can compute control inputs directly from past measured trajectories. When the system is subject to noise and disturbances, the collected data becomes corrupted, potentially degrading control performance. By integrating robust control techniques with data-driven MPC, it is possible to ensure stability and robust constraint satisfaction in the presence of such uncertainty. Recent methods based on Linear Matrix Inequalities (LMIs) have shown promise in this direction, but often lead to conservative solutions due to structural limitations in the formulation. In this work, we propose a less conservative data-driven MPC scheme by incorporating a sequence of time-varying Lyapunov functions together with the S-variable approach. This enables a relaxation of the LMI conditions, decouples the controller design from the Lyapunov matrix, and improves feasibility and performance. We show that the resulting controller guarantees asymptotic stability and robust constraint satisfaction of the closed-loop system. A numerical example illustrates the effectiveness of the proposed approach compared to existing methods.",
-          "subjects": []
-        },
-        {
-          "title": "A Tutorial on Convex Design of Optimization Algorithms by Integral Quadratic Constraints",
-          "authors": [
-            "Carsten W. Scherer",
-            "Christian Ebenbauer"
-          ],
-          "year": 2025,
-          "date": "2025-11-25",
-          "citations": 10,
-          "arxiv_id": null,
-          "paper_id": "a0a2fffee1c78bd0f1dfc260344fe18008d84d95",
-          "url": "https://www.semanticscholar.org/paper/a0a2fffee1c78bd0f1dfc260344fe18008d84d95",
-          "abstract": "In this tutorial article, we expose the mechanisms underlying the design of optimization algorithms based on so-called dynamic integral quadratic constraints. These tools from robust control allow one to systematically construct accelerated first-order optimization algorithms with optimal guaranteed convergence rates by solving small-sized semidefinite programs. This is possible even if the information flow from and to the gradient is subject to nontrivial dynamics such as delays. Numerical experiments not only illustrate how to recover accelerated gradient algorithms by design but also unveil the flexibility of this approach gained from its embedding into systems theory and controller design, relying on the generalized plant framework.",
-          "subjects": []
-        },
-        {
-          "title": "A Poisson Jump-driven SDE Approach to Distributed Gradient Descent with Sparse Communication",
-          "authors": [
-            "Marc Weber",
-            "J. P. Strachan",
-            "Christian Ebenbauer"
-          ],
-          "year": 2025,
-          "date": "2025-11-09",
-          "citations": 0,
-          "arxiv_id": "2511.06379",
-          "paper_id": "bb7f0eac1275317e52b51da8e96e80ae4f1a3e84",
-          "url": "https://arxiv.org/abs/2511.06379",
-          "abstract": "To bridge the gap between idealised communication models and the stochastic reality of networked systems, we introduce a framework for embedding asynchronous communication directly into algorithm dynamics using stochastic differential equations (SDE) driven by Poisson Jumps. We apply this communication-aware design to the continuous-time gradient flow, yielding a distributed algorithm where updates occur via sparse Poisson events. Our analysis establishes communication rate bounds for asymptotic stability and, crucially, a higher, yet sparse, rate that provably any desired exponential convergence performance slower than the nominal, centralized flow. These theoretical results, shown for unconstrained quadratic optimisation, are validated by a numerical simulation.",
-          "subjects": []
-        },
-        {
-          "title": "Flexible-step MPC for Unknown Linear Time-Invariant Systems",
-          "authors": [
-            "Markus Pietschner",
-            "Christian Ebenbauer",
-            "Bahman Gharesifard",
-            "Raik Suttner"
-          ],
-          "year": 2025,
-          "date": "2025-10-01",
-          "citations": 0,
-          "arxiv_id": "2510.00961",
-          "paper_id": "995c26430b65ec729464daec8feca2cf01d76786",
-          "url": "https://arxiv.org/abs/2510.00961",
-          "abstract": "We propose a novel flexible-step model predictive control algorithm for unknown linear time-invariant discrete-time systems. The goal is to asymptotically stabilize the system without relying on a pre-collected dataset that reveals the system’s behavior in advance. In particular, we aim to avoid a potentially harmful initial open-loop exploration phase for identification, since full identification is often not necessary for stabilization. Instead, the proposed control scheme explores and learns the unknown system online through measurements of inputs and states. The measurement results are used to update the prediction model in the finite-horizon optimal control problem. If the current prediction model results in an infeasible optimal control problem, then persistently exciting inputs are applied until feasibility is reestablished. The proposed flexible-step approach allows for a flexible number of implemented optimal input values in each iteration, which is beneficial for simultaneous exploration and exploitation. A generalized control Lyapunov function is included into the constraints of the optimal control problem to guarantee stability. This way, the problem of optimization is decoupled from the problem of stabilization. For an asymptotically stabilizable unknown control system, we prove that the proposed flexible-step algorithm can lead to global convergence of the system state to the origin.",
-          "subjects": []
-        },
-        {
-          "title": "Distributionally robust LMI synthesis for LTI systems",
-          "authors": [
-            "Dennis Gramlich",
-            "Shu-Hao Yan",
-            "Carsten W. Scherer",
-            "Christian Ebenbauer"
-          ],
-          "year": 2025,
-          "date": "2025-09-27",
-          "citations": 0,
-          "arxiv_id": "2509.23493",
-          "paper_id": "ccd5e14bb2de766b6166c2cbcf3defe8780f194a",
-          "url": "https://arxiv.org/abs/2509.23493",
-          "abstract": "This article shows that distributionally robust controller synthesis as investigated in \\cite{taskesen2024distributionally} can be formulated as a convex linear matrix inequality (LMI) synthesis problem. To this end, we rely on well-established convexification techniques from robust control. The LMI synthesis problem we propose has the advantage that it can be solved efficiently using off-the-shelf semi-definite programming (SDP) solvers. In addition, our formulation exposes the studied distributionally robust controller synthesis problem as an instance of robust $H_2$ synthesis.",
-          "subjects": []
-        },
-        {
-          "title": "A piecewise deterministic discrete-time model with simultaneous random jumps",
-          "authors": [
-            "Christian Ebenbauer",
-            "Raik Suttner"
-          ],
-          "year": 2025,
-          "date": "2025-09-01",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "6357301405a131caffe512714296b64906631453",
-          "url": "https://www.semanticscholar.org/paper/6357301405a131caffe512714296b64906631453",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Stochastic Gradient Descent for Constrained Optimization Based on Adaptive Relaxed Barrier Functions",
-          "authors": [
-            "Naum Dimitrieski",
-            "Jing Cao",
-            "Christian Ebenbauer"
-          ],
-          "year": 2025,
-          "date": "2025-03-13",
-          "citations": 0,
-          "arxiv_id": "2503.10384",
-          "paper_id": "4d3d59c89a0f1588792b2e5b65bfdd88e620631c",
-          "url": "https://arxiv.org/abs/2503.10384",
-          "abstract": "This letter presents a novel stochastic gradient descent algorithm for constrained optimization. The proposed algorithm randomly samples constraints and components of the finite sum objective function and relies on a relaxed logarithmic barrier function that is appropriately adapted in each optimization iteration. For a strongly convex objective function and affine inequality constraints, step-size rules and barrier adaptation rules are established that guarantee asymptotic convergence with probability one. The theoretical results in this letter are complemented by numerical studies which highlight potential advantages of the proposed algorithm for optimization problems with a large number of constraints.",
-          "subjects": []
-        },
-        {
-          "title": "Optimal Stochastic Injection Attack Strategy Against Discrete Time-Varying System via Moment Matrices",
-          "authors": [
-            "Sheng Gao",
-            "Dennis Gramlich",
-            "Hao Zhang",
-            "Huai-Cheng Yan",
-            "Christian Ebenbauer"
-          ],
-          "year": 2025,
-          "date": "2025",
-          "citations": 4,
-          "arxiv_id": null,
-          "paper_id": "cdb80db2f03858eb97237b842c26644dccee5886",
-          "url": "https://www.semanticscholar.org/paper/cdb80db2f03858eb97237b842c26644dccee5886",
-          "abstract": "This paper investigates injection attacks incorporating stochastic noise against linear discrete time-varying system, which is more general but also more challenging to defend than deterministic injection attacks. Based on the optimization theory and novel key defining matrices, an optimal stochastic injection attack strategy is proposed. Unlike existing strategies, this strategy is stochastic, making it harder for defenders to predict. Therefore, the newly designed attack is expected to be widely used to disrupt system performance. By leveraging estimated data from the observer and the attack input, a virtual residual system is established, which more accurately reflects changes in the system error before and after the attack than the traditional error system. Using the state and output residuals along with the stochastic attack input, two performances are defined to ensure the stealthiness and effectiveness of the attack, respectively. Subsequently, an optimal attack problem with non-convex objective function and constraint is formulated. The key to acquiring the designed optimal stochastic injection attack strategy is to apply a semi-definite relaxation involving moment matrices for transforming this non-convex optimization problem into a convex optimization problem and solving it. Finally, the effectiveness of the proposed attack strategy is validated through numerical simulation of a networked mass-spring-damper system and a V-formation experiment involving three quadrotors. Note to Practitioners—The primary objective of this paper is to focus on the cyber security of discrete time-varying systems from the perspective of the attacker, which provides insight into the way of generating attack strategies under the stochastic case. The majority of existing injection attack strategies against intelligent systems are deterministic, and this can make the attacks less effective as the attacked system reconstructs and compensates for the attack signals, and the attack strategies tend to fail or are mostly ineffective. This paper synthesizes state estimation, semi-definite programming, optimization principles, and control theory to propose an optimal stochastic injection attack strategy. Compared with the deterministic injection attack strategies, the latter is harder to defend. Specifically, the operation of the attacker is divided into two phases: initial data eavesdropping and strategy generation. In the initial data eavesdropping phase, the attacker continuously eavesdrops and stores the initial traffic data of the system for a virtual state residual data estimation. In the strategy generation phase, the attacker generates the attack strategy using semi-definite programming with the help of the measured initial data. The mathematical analytical form of the proposed optimal stochastic injection attack strategy is given in detail. Subsequently, the effectiveness is verified by the numerical simulation and experiment based on a leader-following form consisting of three quadcopters, but not yet tested in production. In the future, we plan to design stochastic injection attack strategies with a data-driven framework.",
-          "subjects": []
-        },
-        {
-          "title": "Time-delay Induced Stochastic Optimization and Extremum Seeking",
-          "authors": [
-            "Naum Dimitrieski",
-            "M. Reyer",
-            "M. Belabbas",
-            "Christian Ebenbauer"
-          ],
-          "year": 2024,
-          "date": "2024-10-27",
-          "citations": 0,
-          "arxiv_id": "2410.20572",
-          "paper_id": "3043c95392856b68d066816d14614142ea055518",
-          "url": "https://arxiv.org/abs/2410.20572",
-          "abstract": "In this paper a novel stochastic optimization and extremum seeking algorithm is presented, one which is based on time-delayed random perturbations and step size adaptation. For the case of a one-dimensional quadratic unconstrained optimization problem, global exponential convergence in expectation and global exponential practical convergence of the variance of the trajectories are proven. The theoretical results are complemented by numerical simulations for one-and multidimensional quadratic and non-quadratic objective functions.",
-          "subjects": []
-        },
-        {
-          "title": "Generalized Saddle Points Seeking Algorithms for Convex Optimization Problems",
-          "authors": [
-            "V. Grushkovskaya",
-            "Christian Ebenbauer"
-          ],
-          "year": 2024,
-          "date": "2024-06-11",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "083cc6a9e88834e5a4ebd1e9c643f98b02d62a5f",
-          "url": "https://www.semanticscholar.org/paper/083cc6a9e88834e5a4ebd1e9c643f98b02d62a5f",
-          "abstract": "The paper focuses on convex optimization problems, assuming that the cost and constraint functions are not analytically known, and only the values of the associated Lagrangian are available. One of the main contributions is the introduction of a general family of dynamical systems, whose trajectories converge to an arbitrarily small neighborhood of a saddle point of the associated Lagrangian. The vector fields of the proposed systems exploit only the values of the Lagrangian and thus are derivative-free. Unlike previous derivative-free saddle point seeking methods, this approach utilizes a generalized Lagrangian, which provides certain advantages like driftless dynamics, convergence for almost all initial conditions, and others. It is proven that, in general, the set of saddle points is practically asymptotically stable for the obtained systems. Additionally, it is demonstrated that a special choice of vector fields leads to asymptotic stability in the sense of Lyapunov. The obtained results are illustrated with several examples.",
-          "subjects": []
-        }
-      ]
+      []
     ],
     [
       "Gary Rostomyan",
@@ -2740,350 +2552,9 @@
             "cs.RO",
             "eess.SY"
           ]
-        },
-        {
-          "title": "A Coupled Control Barrier Function Approach to Deadlock-Free Multi-Robot Conflict Resolution",
-          "authors": [
-            "Gary Rostomyan",
-            "Ketan Savla",
-            "Petros A. Ioannou"
-          ],
-          "year": 2026,
-          "date": "2026-11-12",
-          "citations": 0,
-          "arxiv_id": "2611.16218",
-          "paper_id": "315d99bfce9355de9e6a78956910abc8aab909cd",
-          "url": "https://arxiv.org/abs/2611.16218",
-          "abstract": "Many robotic applications involve scenarios where multiple robots interact and the decisions of one robot influence the behavior of others. This paper presents a quadratic programming (QP)-based feedback controller for multi-robot conflict resolution with input constraints. Safety is enforced using coupled Control Barrier Function (CBF), while a yielding matrix encodes how robots influence each other. Unlike existing methods with fixed or hard priorities, the proposed framework enables yielding preferences while guaranteeing deadlock-free operation by design. Sufficient conditions are established for the controller to be locally Lipschitz. The optimal CBF sign- indefinite slack is shown to admit a finite uniform bound, which is compensated through an enlarged CBF safety margin to obtain a forward invariant set contained within the desired safe set. The analysis also identifies an irreducible slack component due to finite maximum deceleration that cannot be eliminated by increasing the slack penalty. Finally, sufficient conditions on the yielding matrix and nominal controller are derived to exclude deadlock states. Simulations demonstrate adaptive coordination across yielding preferences and robustness to robot failures.",
-          "subjects": []
         }
       ],
-      [
-        {
-          "title": "MIT Open Access Articles A Dynamical Queue Approach to Intelligent Task Management for Human Operators",
-          "authors": [
-            "Ketan Savla",
-            "Emilio Frazzoli"
-          ],
-          "year": null,
-          "date": "",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "d136d52bc3b972532eeaa2428c55402231589d1d",
-          "url": "https://www.semanticscholar.org/paper/d136d52bc3b972532eeaa2428c55402231589d1d",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Control via Incentives and Information in Socio-technical Systems: A Tutorial",
-          "authors": [
-            "Tamer Başar",
-            "Subhonmesh Bose",
-            "Philip N. Brown",
-            "Chih-Yuan Chiu",
-            "Bryce L. Ferguson",
-            "Chinmay Maheshwari",
-            "Ketan Savla",
-            "R. K. Velicheti",
-            "Man-Xi Wu"
-          ],
-          "year": 2026,
-          "date": "2026-05-26",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "969f20c8ea518e60591667565b77d3c901c60696",
-          "url": "https://www.semanticscholar.org/paper/969f20c8ea518e60591667565b77d3c901c60696",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "FNO∠ θ: Extended Fourier neural operator for learning state and optimal control of distributed parameter systems",
-          "authors": [
-            "Zhe-Xian Li",
-            "Ketan Savla"
-          ],
-          "year": 2026,
-          "date": "2026-04-06",
-          "citations": 0,
-          "arxiv_id": "2604.05187",
-          "paper_id": "1a9f7ce9349422f534d9f27aa41ae05c33204b47",
-          "url": "https://arxiv.org/abs/2604.05187",
-          "abstract": "We propose an extended Fourier neural operator (FNO) architecture for learning state and linear quadratic additive optimal control of systems governed by partial differential equations. Using the Ehrenpreis-Palamodov fundamental principle, we show that any state and optimal control of linear PDEs with constant coefficients can be represented as an integral in the complex domain. The integrand of this representation involves the same exponential term as in the inverse Fourier transform, where the latter is used to represent the convolution operator in FNO layer. Motivated by this observation, we modify the FNO layer by extending the frequency variable in the inverse Fourier transform from the real to complex domain to capture the integral representation from the fundamental principle. We illustrate the performance of FNO in learning state and optimal control for the nonlinear Burgers'equation, showing order of magnitude improvements in training errors and more accurate predictions of non-periodic boundary values over FNO.",
-          "subjects": []
-        },
-        {
-          "title": "Central Coordination of Connected Autonomous Vehicles at a Signal Free Intersection",
-          "authors": [
-            "Gary Rostomyan",
-            "Ketan Savla",
-            "Petros A. Ioannou"
-          ],
-          "year": 2026,
-          "date": "2026-04-01",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "86265cc67d40bd51050737354880080cedf4fe47",
-          "url": "https://www.semanticscholar.org/paper/86265cc67d40bd51050737354880080cedf4fe47",
-          "abstract": "Intersections are major sources of traffic delays and accidents. Unlike traffic light controlled intersections, signal free intersections coordinate safe vehicle crossings individually, offering greater flexibility and the potential to eliminate unnecessary stops. Moreover, the high cost of installing and maintaining physical traffic signals motivates the adoption of virtual infrastructure enabled by connectivity and fast computation. This paper proposes a centralized intersection controller for real-time coordination of the dynamic traffic demands of Connected and Autonomous Vehicles (CAVs) at a signal free intersection. The proposed method consists of a centralized intersection controller that, in real time, assigns each CAV a safe reference path and desired speed based on its location, current speed, onboard vehicle controller transient response, and origin–destination pair, rather than transmitting direct acceleration commands to individual vehicles. Due to errors in measuring acceleration and susceptibility to delays, tracking a reference speed is a more robust and practical approach as it takes into account the ability of onboard vehicle controllers to track speeds in a more accurate way than accelerations. Moreover, the proposed approach allows vehicles to be in any lane when making left and right turns, which has been shown to improve efficiency. The proposed method was evaluated via multi-agent simulations in the open-source CARLA environment. It was compared against four benchmark methods: fixed- and variable cycle time traffic light controlled intersections (with variable cycle and phase plan optimized using Webster’s method) and two state-of-the-art signal free coordination methods. Results show that the proposed approach reduces average delays and increases the average lane flow rate compared to these benchmarks. As expected, the magnitude of improvement depends on the demand.",
-          "subjects": []
-        },
-        {
-          "title": "On Online Control of Opinion Dynamics",
-          "authors": [
-            "Sheryl Paul",
-            "Leslie Cruz Juarez",
-            "Jyotirmoy V. Deshmukh",
-            "Ketan Savla"
-          ],
-          "year": 2026,
-          "date": "2026-03-17",
-          "citations": 0,
-          "arxiv_id": "2603.17155",
-          "paper_id": "a14958426812ceea2aafdc398b057f4a6fe8d38d",
-          "url": "https://arxiv.org/abs/2603.17155",
-          "abstract": "Networked multi-agent dynamical systems have been used to model how individual opinions evolve over time due to the opinions of other agents in the network. Particularly, such a model has been used to study how a planning agent can be used to steer opinions in a desired direction through repeated, budgeted interventions. In this paper, we consider the problem where individuals’ susceptibilities to external influences are unknown. We propose an online algorithm that alternates between estimating this susceptibility parameter, and using the current estimate to drive opinions toward a desired target. We provide conditions that guarantee stability and convergence to the desired target opinion when the planning agent faces budgetary or temporal constraints. Our analysis shows that the key advantage of estimating the susceptibility parameter is that it helps achieve near-optimal convergence to the target opinion given a finite amount of intervention rounds, and, for a given intervention budget, quantifies how close the opinion can get to the desired target.",
-          "subjects": []
-        },
-        {
-          "title": "Anytime CAV Sorting Algorithm for Mixed-Traffic Multi-Lane Highways",
-          "authors": [
-            "Fernando V. Monteiro",
-            "Ketan Savla"
-          ],
-          "year": 2025,
-          "date": "2025-11-18",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "7eaf9f0644bed026d1f2881909ad528b041ac99d",
-          "url": "https://www.semanticscholar.org/paper/7eaf9f0644bed026d1f2881909ad528b041ac99d",
-          "abstract": "This paper addresses the problem of ensuring Connected Autonomous Vehicles (CAVs) reach their desired lanes before some location downstream in mixed-traffic highways. We propose a centralized planning approach that issues high-level command sequences to each CAV, while relying on the CAVs' own onboard controllers to react in real-time to unexpected human behavior and decide when to start lateral maneuvers. The core of our method, based on the symbolic synthesis approach, discretizes the system into a graph of quantized states, where edges correspond to sets of commands. Given the combinatorial nature of the problem, it is essential to use an approach that can provide solutions within computational time constraints. This is achieved via a heuristic search that identifies an initial solution, followed by a cached branch-and-bound depth-first search. Simulations in dense, low-penetration scenarios demonstrate that the centralized controller can effectively bring distant CAVs together to facilitate cooperative lane changes and guide them to their desired lanes.",
-          "subjects": []
-        },
-        {
-          "title": "Constrained bilinear optimal control of reactive evolution equations",
-          "authors": [
-            "Zhe-Xian Li",
-            "F. D. de Barros",
-            "Ketan Savla"
-          ],
-          "year": 2025,
-          "date": "2025-10-17",
-          "citations": 0,
-          "arxiv_id": "2510.15293",
-          "paper_id": "8cd4d9f55a5be74390a8203a3de7d7b5ae4283b9",
-          "url": "https://arxiv.org/abs/2510.15293",
-          "abstract": "We consider constrained bilinear optimal control of second-order linear evolution partial differential equations (PDEs) with a reaction term on the half line, where control arises as a time-dependent reaction coefficient and constraints are imposed on the state and control variables. These PDEs represent a wide range of physical phenomena in fluid flow, heat, and mass transfer. Existing computational methods for this type of control problems only consider constraints on the control variable and lack global convergence guarantee. In this paper, we propose a novel optimize-then-discretize framework for computing constrained bilinear optimal control with both state and control constraints. Unlike existing methods that derive optimality conditions directly from the PDE constraint, this framework first replaces the PDE constraint with an equivalent integral representation of the PDE solution and then derives optimality conditions for the reformulated problem. The integral representation, derived from the unified transform method, does not involve differential operators, and thus explicit expressions for necessary conditions of optimality can be derived using the Karush-Kuhn-Tucker conditions for infinite-dimensional optimization. Discretizing the optimality conditions results in a system of finite-dimensional smooth nonlinear equations, which can be efficiently solved using existing algorithms with guaranteed global convergence at a quadratic rate. This is in contrast with discretize-then-optimize methods that discretize the PDE first and then solve the optimality conditions of the approximated finite-dimensional problem. Computational results for two applications, namely nuclear reactivity control and water quality treatment in a reactor, are presented to illustrate the effectiveness of the proposed framework.",
-          "subjects": []
-        },
-        {
-          "title": "Optimal coordinated platoon lane change in highways with mixed traffic",
-          "authors": [
-            "Fernando V. Monteiro",
-            "Ketan Savla",
-            "Petros A. Ioannou"
-          ],
-          "year": 2025,
-          "date": "2025-04-01",
-          "citations": 3,
-          "arxiv_id": null,
-          "paper_id": "fee4e0310f25444d252586a8735270474b28304a",
-          "url": "https://www.semanticscholar.org/paper/fee4e0310f25444d252586a8735270474b28304a",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Throughput Maximizing Takeoff Scheduling for eVTOL Vehicles in On-Demand Urban Air Mobility Systems",
-          "authors": [
-            "Milad Pooladsanj",
-            "Ketan Savla",
-            "Petros A. Ioannou"
-          ],
-          "year": 2025,
-          "date": "2025-03-21",
-          "citations": 0,
-          "arxiv_id": "2503.17313",
-          "paper_id": "90036159954aef3065993bd44dbe3110e14e2206",
-          "url": "https://arxiv.org/abs/2503.17313",
-          "abstract": "Urban Air Mobility (UAM) offers a solution to current traffic congestion by using electric Vertical Takeoff and Landing (eVTOL) vehicles to provide on-demand air mobility in urban areas. Effective traffic management is crucial for efficient operation of UAM systems, especially for high-demand scenarios. In this paper, we present a centralized framework for conflict-free takeoff scheduling of eVTOLs in on-demand UAM systems. Specifically, we provide a scheduling policy, called VertiSync, which jointly schedules UAM vehicles for servicing trip requests and rebalancing, subject to safety margins and energy requirements. We characterize the system-level throughput of VertiSync, which determines the demand threshold at which the average waiting time transitions from being stable to being increasing over time. We show that the proposed policy maximizes throughput for sufficiently large fleet size and if the UAM network has a certain symmetry property. We demonstrate the performance of VertiSync through a case study for the city of Los Angeles, and show that it significantly reduces average passenger waiting time compared to a first-come first-serve scheduling policy.",
-          "subjects": []
-        },
-        {
-          "title": "Adaptive model predictive control for traffic signal timing with unknown demand and parameters",
-          "authors": [
-            "Zhe-Xian Li",
-            "Ketan Savla"
-          ],
-          "year": 2025,
-          "date": "2025-03-13",
-          "citations": 0,
-          "arxiv_id": "2503.10934",
-          "paper_id": "5bd275efacf83329117f72388c704fcb85789cdd",
-          "url": "https://arxiv.org/abs/2503.10934",
-          "abstract": "This paper designs traffic signal control policy for a network of signalized intersections without knowing the demand and parameters. Within a model predictive control (MPC) framework, the proposed control policy consists of an algorithm that estimates parameters and a one-step MPC that computes control inputs using estimated parameters. The algorithm switches between different terminal sets of the MPC to explore different regions of the state space, where different parameters are identifiable. The one-step MPC minimizes a cost that approximates the sum of squares of all the queue lengths within a constant and does not require demand information. We show that the algorithm can estimate parameters exactly in finite time, and the one-step MPC renders maximum throughput in terms of input-to-state practical stability. Simulations indicate better transient performance regarding queue lengths under our proposed policies than existing ones.",
-          "subjects": []
-        },
-        {
-          "title": "Centrally Coordinated Vehicles in a Signal Free Intersection",
-          "authors": [
-            "Gary Rostomyan",
-            "Ketan Savla",
-            "Petros A. Ioannou"
-          ],
-          "year": 2024,
-          "date": "2024-09-24",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "e24a43883cac5abc9d8ed1e9aecbdb6f7d50ac90",
-          "url": "https://www.semanticscholar.org/paper/e24a43883cac5abc9d8ed1e9aecbdb6f7d50ac90",
-          "abstract": "Connected and Autonomous Vehicles (CAVs) can substantially improve the safety and efficiency of transportation systems. In this paper, we provide a centralized framework for increasing the flow and decreasing the delay at a four-way intersection by assigning safe reference speeds to CAVs. We rely on CAV capabilities, such as ideal connectivity with a central infrastructure controller and each CAV's ability to track a reference speed prescribed by the central infrastructure controller. Our approach comprises: (1) a high-level multi-vehicle intersection controller, and (2) a low-level reference trajectory tracking controller. For each CAV requesting access to the intersection, a high-level intersection controller determines the safe reference trajectory. In determining the safe reference trajectory, the high-level intersection controller also considers the response of the low-level reference trajectory tracking controller. The speed plans of other CAVs that have been granted reference trajectories prior are also considered. Our high-level multi-vehicle intersection controller requires very little communication bandwidth and processes a request to cross an intersection in real-time. The effectiveness of the proposed approach is validated through simulations and comparison with a signalized intersection implemented in the traffic simulator.",
-          "subjects": []
-        },
-        {
-          "title": "A complex spatial frequency approach to optimal control of finite-extent linear evolution systems",
-          "authors": [
-            "Zhe-Xian Li",
-            "A. Fokas",
-            "Ketan Savla"
-          ],
-          "year": 2024,
-          "date": "2024-08-14",
-          "citations": 0,
-          "arxiv_id": "2408.07632",
-          "paper_id": "08d18d2c7cce9912379445af5f724f6c9a805390",
-          "url": "https://arxiv.org/abs/2408.07632",
-          "abstract": "We consider the linear quadratic regulator (LQR) for one-dimensional linear evolution partial differential equations (PDEs) on a finite interval in space. The control is applied as an additive forcing term to PDEs. Existing methods for closed-form optimal control only apply to homogeneous (zero) boundary conditions, often resulting in series representations. In this paper, we consider general smooth boundary conditions. We use the unified transform, namely the Fourier transform restricted to the bounded spatial domain, to decouple PDEs into a family of ordinary differential equations (ODEs) parameterized by complex spatial frequency variables. Then, optimal control in the frequency domain is derived using LQR theory for ODEs. The inverse Fourier transform leads to non-causal terms in optimal control corresponding to integrals, over the real line, of future values of unspecified boundary conditions. To eliminate this non-causality, we deform the integrals to well-constructed contours in the complex plane along which the contribution of unknowns vanishes. For the reaction-diffusion equation, we show that the integral representation can be reformulated as a series representation, which leads to a state-feedback convolution form for optimal control, with the boundary conditions appearing as an additive term. In numerical experiments, we illustrate the computational advantages of the integral representation in comparison to the series representation and structural properties of the convolution kernel.",
-          "subjects": []
-        },
-        {
-          "title": "Adaptive Pricing for Routing Game Identification: Theory & Experiment",
-          "authors": [
-            "Ya-Jun Liu",
-            "Zheng-Bang Liu",
-            "Ketan Savla"
-          ],
-          "year": 2024,
-          "date": "2024",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "db0d1701febf82ea737b5e65d9303e9fb843ecfc",
-          "url": "https://www.semanticscholar.org/paper/db0d1701febf82ea737b5e65d9303e9fb843ecfc",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Output-Feedback Model Predictive Control for Ramp Metering",
-          "authors": [
-            "Zhe-Xian Li",
-            "Ketan Savla"
-          ],
-          "year": 2023,
-          "date": "2023-09-24",
-          "citations": 2,
-          "arxiv_id": null,
-          "paper_id": "cb169ad05a5c616161d65fce28a3629424819e0e",
-          "url": "https://www.semanticscholar.org/paper/cb169ad05a5c616161d65fce28a3629424819e0e",
-          "abstract": "We study the stability of traffic flow under output-feedback ramp metering in cases of incomplete information about the traffic flow state. We propose a set-membership estimation method for the cell transmission model with capacity drops and design a model predictive controller accordingly. This controller has linear running and terminal costs in cell densities, and its output comprises density measurements from a subset of the cells, e.g., through loop detectors or connected vehicles. For a line network, we provide sufficient conditions under which the traffic system is input-to-state stable, meaning the ramp queue length remains bounded, on the control horizons, cost coefficients, and the inflows at the ramps. In addition to the proposed controller, we provide extensive simulations of other ramp metering algorithms in the literature as baselines for evaluating performance. Simulation results show that traffic flow is unstable without ramp metering or with other ramp metering methods under high inflows, congested initial conditions, and incomplete state measurements. In contrast, the designed controller stabilizes traffic flow and provides higher throughput with measurements from an arbitrary subset of the cells.",
-          "subjects": []
-        },
-        {
-          "title": "Decreasing Delay at Signal Free Intersection Through High Order Reference Trajectories",
-          "authors": [
-            "Gary Rostomyan",
-            "Ketan Savla",
-            "Petros A. Ioannou"
-          ],
-          "year": 2023,
-          "date": "2023-09-24",
-          "citations": 2,
-          "arxiv_id": null,
-          "paper_id": "5989403b86ea04308fbcf4e5ea83e87dac904a47",
-          "url": "https://www.semanticscholar.org/paper/5989403b86ea04308fbcf4e5ea83e87dac904a47",
-          "abstract": "In this paper, we provide a centralized frame-work for decreasing the delay in a four-way intersection by coordinating CAVs. We rely on CAV capabilities, such as ideal connectivity with a central infrastructure controller and strict adherence to a trajectory prescribed by the central infrastructure controller. Our framework includes: (1) multivehicle motion planning based on Bezier curves, and (2) optimal multivehicle coordination. For each CAV requesting access to the intersection, both the motion planning and coordination are cast as a single optimization problem with nonlinear constraints, where eight decision variables completely specify the CAV's time optimal trajectory. The optimal time scaling functions are in the class of degree three polynomials which can encode diverse acceleration/deceleration profiles. As such, our framework requires a very small communication bandwidth to encode complex acceleration/deceleration profiles for each CAV. The effectiveness of the proposed framework is validated through simulations.",
-          "subjects": []
-        },
-        {
-          "title": "A Traffic Management Framework for On-Demand Urban Air Mobility Systems",
-          "authors": [
-            "Milad Pooladsanj",
-            "Ketan Savla",
-            "Petros A. Ioannou"
-          ],
-          "year": 2023,
-          "date": "2023-09-01",
-          "citations": 0,
-          "arxiv_id": "2309.07139",
-          "paper_id": "2c0595a42e52a65da99d3f612846d822e00dd0b8",
-          "url": "https://arxiv.org/abs/2309.07139",
-          "abstract": "Urban Air Mobility (UAM) offers a solution to current traffic congestion by providing on-demand air mobility in urban areas. Effective traffic management is crucial for efficient operation of UAM systems, especially for high-demand scenarios. In this paper, we present a centralized traffic management framework for on-demand UAM systems. Specifically, we provide a scheduling policy, called VertiSync, which schedules the aircraft for either servicing trip requests or rebalancing in the system subject to aircraft safety margins and energy requirements. We characterize the system-level throughput of VertiSync, which determines the demand threshold at which passenger waiting times transition from being stabilized to being increasing over time. We show that the proposed policy is able to maximize throughput for sufficiently large fleet sizes. We demonstrate the performance of VertiSync through a case study for the city of Los Angeles, and show that it significantly reduces passenger waiting times compared to a first-come first-serve scheduling policy.",
-          "subjects": []
-        },
-        {
-          "title": "Output-feedback adaptive model predictive control for ramp metering: A set-membership approach",
-          "authors": [
-            "Zhe-Xian Li",
-            "Ketan Savla"
-          ],
-          "year": 2023,
-          "date": "2023-08-10",
-          "citations": 0,
-          "arxiv_id": "2308.05265",
-          "paper_id": "ac6558ce335334e445b1ed37379979595de41eca",
-          "url": "https://arxiv.org/abs/2308.05265",
-          "abstract": "Ramp metering, which regulates the flow entering the freeway, is one of the most effective freeway traffic control methods. This paper introduces an output-feedback adaptive approach to ramp metering that combines model predictive control (MPC) with set-membership parameter and state estimation. The set-membership estimator is based on a mixed-monotone embedding of underlying traffic dynamics. The embedding is also used as the modeling basis for MPC optimization. For a freeway stretch with unknown parameters and partial measurement on the freeway mainline, we provide sufficient conditions on the control horizon, cost functions, terminal sets of MPC, and inflow demand at the ramps such that the queue lengths in the closed-loop system remain bounded. The sufficient condition on the demand matches the necessary condition, thereby proving maximal throughput under the proposed controller. The result is strengthened to input-to-state stability when model parameters and demand are known. The stability analysis is conducted for the case of constant demand and unbounded on-ramps. The closed-loop trajectory data generated by the proposed controller is shown to facilitate finite time estimation of free-flow model parameters, i.e., free-flow speed and turning ratios. Simulation results illustrate stability of the closed-loop system under the proposed controller with time-varying demand and few mainline measurements, for which the system becomes unstable under a well-known approach from the literature. This indicates that the proposed controller renders higher throughput than the well-known approach, possibly using more computing resources.",
-          "subjects": []
-        },
-        {
-          "title": "Networks and Communication Systems [Technical Activities]",
-          "authors": [
-            "Giacomo Como",
-            "P. Frasca",
-            "F. Parise",
-            "C. Ravazzi",
-            "Ketan Savla",
-            "Serdar Yüksel"
-          ],
-          "year": 2023,
-          "date": "2023-08-01",
-          "citations": 0,
-          "arxiv_id": null,
-          "paper_id": "67071822263357561aaab73832587c5f8c3d760b",
-          "url": "https://www.semanticscholar.org/paper/67071822263357561aaab73832587c5f8c3d760b",
-          "abstract": "",
-          "subjects": []
-        },
-        {
-          "title": "Bottleneck Management Using Pricing Under Constraints",
-          "authors": [
-            "Gary Rostomyan",
-            "Ketan Savla",
-            "Petros A. Ioannou"
-          ],
-          "year": 2023,
-          "date": "2023-05-31",
-          "citations": 1,
-          "arxiv_id": null,
-          "paper_id": "858bf1c90f35e7c05ad874a1f41e03bf2e5f8318",
-          "url": "https://www.semanticscholar.org/paper/858bf1c90f35e7c05ad874a1f41e03bf2e5f8318",
-          "abstract": "Studies of the traffic congestion have been limited to designing optimal time-varying tolls to eliminate queuing. Moreover, limited studies have considered time-varying rewards that eliminate queuing. This paper is the first to systematically analyze the social optimum under a user equilibrium as well as budget and maximum toll constraints for a single bottleneck. We cast the congestion pricing problem as a bilevel optimization problem and provide several analytical and numerical results. Specifically, we show that the bilevel optimization problem can be converted into a convex optimization problem under some weak assumptions of the schedule delay cost under an inelastic demand setting. The methodological contributions are supplemented with illustrative simulation results.",
-          "subjects": []
-        },
-        {
-          "title": "Throughput of Freeway Networks under Ramp Metering Subject to Vehicle Safety Constraints",
-          "authors": [
-            "Milad Pooladsanj",
-            "Ketan Savla",
-            "Petros A. Ioannou"
-          ],
-          "year": 2023,
-          "date": "2023-03-12",
-          "citations": 0,
-          "arxiv_id": "2303.06569",
-          "paper_id": "142823dce0fd3c86a0bb76b4e75e9d9e76dbe6b1",
-          "url": "https://arxiv.org/abs/2303.06569",
-          "abstract": "Ramp metering is one of the most effective tools to combat traffic congestion. In this paper, we present a ramp metering policy for a network of freeways with arbitrary number of on- and off-ramps, merge, and diverge junctions. The proposed policy is designed at the microscopic level and takes into account vehicle following safety constraints. In addition, each on-ramp operates in cycles during which it releases vehicles as long as the number of releases does not exceed its queue size at the start of the cycle. Moreover, each on-ramp dynamically adjusts its release rate based on the traffic condition. To evaluate the performance of the policy, we analyze its throughput, which is characterized by the set of arrival rates for which the queue sizes at all on-ramps remain bounded in expectation. We show that the proposed policy is able to maximize the throughput if the merging speed at all the on-ramps is equal to the free flow speed and the network has no merge junction. We provide simulations to illustrate the performance of our policy and compare it with a well-known policy from the literature.",
-          "subjects": []
-        }
-      ]
+      []
     ],
     [
       "Petros A. Ioannou",
@@ -3624,125 +3095,6 @@
           "abstract": "Industrial manipulators offer reach and precision but can damage nearby structures in confined spaces. Soft robots provide compliant contact but typically have limited reach. Rigid-soft systems combine their advantages, although they often require dedicated actuation and control hardware. We propose actuating a passive tendon-driven soft extension through manipulator joint motion. As the robot moves, the exterior spans of tendons anchored to upstream links change, altering tendon tension and deforming the extension. Inspection through narrow apertures, for example, constrains the motion of the end effector (EE). We develop a controller that regulates the soft tip while preserving such EE constraints. A differential model separates rigid transport from soft deformation, combining analytic arm and tendon kinematics with a locally identified span-to-deformation map. We also derive a local upper bound on the number of independent deformation directions transmitted by the tendons under the EE constraint, and conditions for the exponential convergence of the tip error. A quadratic program with control barrier functions imposes obstacle clearance, fulcrum limits, and model-validity conditions. Simulations and real experiments show tip and shape regulation under free, position-constrained, and fulcrum-constrained EE motion.",
           "subjects": [
             "cs.RO"
-          ]
-        }
-      ],
-      []
-    ],
-    [
-      "Gonzalo López-Nicolás",
-      [
-        {
-          "title": "Actuation and Control of Passive Tendon-Driven Soft Extensions Through Rigid Manipulator Motion",
-          "authors": [
-            "Ignacio Cuiral-Zueco",
-            "Gonzalo López-Nicolás",
-            "Youcef Mezouar"
-          ],
-          "date": "2026-11-11",
-          "citations": 0,
-          "arxiv_id": "2611.15386v1",
-          "url": "https://arxiv.org/abs/2611.15386v1",
-          "abstract": "Industrial manipulators offer reach and precision but can damage nearby structures in confined spaces. Soft robots provide compliant contact but typically have limited reach. Rigid-soft systems combine their advantages, although they often require dedicated actuation and control hardware. We propose actuating a passive tendon-driven soft extension through manipulator joint motion. As the robot moves, the exterior spans of tendons anchored to upstream links change, altering tendon tension and deforming the extension. Inspection through narrow apertures, for example, constrains the motion of the end effector (EE). We develop a controller that regulates the soft tip while preserving such EE constraints. A differential model separates rigid transport from soft deformation, combining analytic arm and tendon kinematics with a locally identified span-to-deformation map. We also derive a local upper bound on the number of independent deformation directions transmitted by the tendons under the EE constraint, and conditions for the exponential convergence of the tip error. A quadratic program with control barrier functions imposes obstacle clearance, fulcrum limits, and model-validity conditions. Simulations and real experiments show tip and shape regulation under free, position-constrained, and fulcrum-constrained EE motion.",
-          "subjects": [
-            "cs.RO"
-          ]
-        }
-      ],
-      []
-    ],
-    [
-      "Youcef Mezouar",
-      [
-        {
-          "title": "Actuation and Control of Passive Tendon-Driven Soft Extensions Through Rigid Manipulator Motion",
-          "authors": [
-            "Ignacio Cuiral-Zueco",
-            "Gonzalo López-Nicolás",
-            "Youcef Mezouar"
-          ],
-          "date": "2026-11-11",
-          "citations": 0,
-          "arxiv_id": "2611.15386v1",
-          "url": "https://arxiv.org/abs/2611.15386v1",
-          "abstract": "Industrial manipulators offer reach and precision but can damage nearby structures in confined spaces. Soft robots provide compliant contact but typically have limited reach. Rigid-soft systems combine their advantages, although they often require dedicated actuation and control hardware. We propose actuating a passive tendon-driven soft extension through manipulator joint motion. As the robot moves, the exterior spans of tendons anchored to upstream links change, altering tendon tension and deforming the extension. Inspection through narrow apertures, for example, constrains the motion of the end effector (EE). We develop a controller that regulates the soft tip while preserving such EE constraints. A differential model separates rigid transport from soft deformation, combining analytic arm and tendon kinematics with a locally identified span-to-deformation map. We also derive a local upper bound on the number of independent deformation directions transmitted by the tendons under the EE constraint, and conditions for the exponential convergence of the tip error. A quadratic program with control barrier functions imposes obstacle clearance, fulcrum limits, and model-validity conditions. Simulations and real experiments show tip and shape regulation under free, position-constrained, and fulcrum-constrained EE motion.",
-          "subjects": [
-            "cs.RO"
-          ]
-        }
-      ],
-      []
-    ],
-    [
-      "Chuxuan Zhang",
-      [
-        {
-          "title": "Can I join you? Extended Social Force Based Model with Predictive Control and Barrier Functions for Humanoid Group Repositioning Amidst Obstacles",
-          "authors": [
-            "Chuxuan Zhang",
-            "Niloofar Jahanshahi",
-            "Yasaman Etesam",
-            "Mo Chen",
-            "Angelica Lim"
-          ],
-          "date": "2026-11-11",
-          "citations": 0,
-          "arxiv_id": "2611.14853v1",
-          "url": "https://arxiv.org/abs/2611.14853v1",
-          "abstract": "As social and service robots increasingly share interaction spaces in public, they may form groups while coordinating tasks or interacting with humans. Initial group formation alone is insufficient in dynamic settings, because it can be disrupted when a person or another agent joins, leaves, or passes through the group. Although group dynamics and repositioning have been widely studied in swarm robotics and virtual-agent settings, little attention has been given to socially appropriate repositioning behaviors in groups of humanoid robots. Existing social-force-based approaches provide a useful foundation for group behavior, but they have limited obstacle handling, and can produce unsafe behavior as environmental complexity increases. We propose a novel framework that modulates traditional Social Force, guided by Model Predictive Control (MPC) to plan ahead, bounded by Control Barrier Functions (CBF) to increase safety for robot groups repositioning behaviors. This approach aims to produce safer and socially aware group repositioning behaviors under various group formation disturbance. We evaluate the method in simulation through an ablation study and an online user study. The results show that our proposed method can produce smoother and safer repositioning behaviors in complex environments while preserving social appropriateness.",
-          "subjects": [
-            "cs.RO",
-            "cs.HC"
-          ]
-        }
-      ],
-      []
-    ],
-    [
-      "Niloofar Jahanshahi",
-      [
-        {
-          "title": "Can I join you? Extended Social Force Based Model with Predictive Control and Barrier Functions for Humanoid Group Repositioning Amidst Obstacles",
-          "authors": [
-            "Chuxuan Zhang",
-            "Niloofar Jahanshahi",
-            "Yasaman Etesam",
-            "Mo Chen",
-            "Angelica Lim"
-          ],
-          "date": "2026-11-11",
-          "citations": 0,
-          "arxiv_id": "2611.14853v1",
-          "url": "https://arxiv.org/abs/2611.14853v1",
-          "abstract": "As social and service robots increasingly share interaction spaces in public, they may form groups while coordinating tasks or interacting with humans. Initial group formation alone is insufficient in dynamic settings, because it can be disrupted when a person or another agent joins, leaves, or passes through the group. Although group dynamics and repositioning have been widely studied in swarm robotics and virtual-agent settings, little attention has been given to socially appropriate repositioning behaviors in groups of humanoid robots. Existing social-force-based approaches provide a useful foundation for group behavior, but they have limited obstacle handling, and can produce unsafe behavior as environmental complexity increases. We propose a novel framework that modulates traditional Social Force, guided by Model Predictive Control (MPC) to plan ahead, bounded by Control Barrier Functions (CBF) to increase safety for robot groups repositioning behaviors. This approach aims to produce safer and socially aware group repositioning behaviors under various group formation disturbance. We evaluate the method in simulation through an ablation study and an online user study. The results show that our proposed method can produce smoother and safer repositioning behaviors in complex environments while preserving social appropriateness.",
-          "subjects": [
-            "cs.RO",
-            "cs.HC"
-          ]
-        }
-      ],
-      []
-    ],
-    [
-      "Yasaman Etesam",
-      [
-        {
-          "title": "Can I join you? Extended Social Force Based Model with Predictive Control and Barrier Functions for Humanoid Group Repositioning Amidst Obstacles",
-          "authors": [
-            "Chuxuan Zhang",
-            "Niloofar Jahanshahi",
-            "Yasaman Etesam",
-            "Mo Chen",
-            "Angelica Lim"
-          ],
-          "date": "2026-11-11",
-          "citations": 0,
-          "arxiv_id": "2611.14853v1",
-          "url": "https://arxiv.org/abs/2611.14853v1",
-          "abstract": "As social and service robots increasingly share interaction spaces in public, they may form groups while coordinating tasks or interacting with humans. Initial group formation alone is insufficient in dynamic settings, because it can be disrupted when a person or another agent joins, leaves, or passes through the group. Although group dynamics and repositioning have been widely studied in swarm robotics and virtual-agent settings, little attention has been given to socially appropriate repositioning behaviors in groups of humanoid robots. Existing social-force-based approaches provide a useful foundation for group behavior, but they have limited obstacle handling, and can produce unsafe behavior as environmental complexity increases. We propose a novel framework that modulates traditional Social Force, guided by Model Predictive Control (MPC) to plan ahead, bounded by Control Barrier Functions (CBF) to increase safety for robot groups repositioning behaviors. This approach aims to produce safer and socially aware group repositioning behaviors under various group formation disturbance. We evaluate the method in simulation through an ablation study and an online user study. The results show that our proposed method can produce smoother and safer repositioning behaviors in complex environments while preserving social appropriateness.",
-          "subjects": [
-            "cs.RO",
-            "cs.HC"
           ]
         }
       ],
@@ -9430,7 +8782,7 @@
             "Aaron D. Ames"
           ],
           "date": "2026-10-16",
-          "citations": 1,
+          "citations": 0,
           "arxiv_id": "2610.24308v1",
           "url": "https://arxiv.org/abs/2610.24308v1",
           "abstract": "Reduced-order model architectures are often used to decompose complex safety-critical control design tasks into tractable subproblems. In this paradigm, one must ask: when does the safety of a reduced-order model lift to safety of the full system? Taking an invariant manifold perspective, we provide necessary and sufficient conditions for the existence of smooth, regular lifts of compact safe sets from reduced-order models. Our characterization relies only on asymptotic stability of an embedding of a reduced-order safe set, without additional robustness or rate conditions. We apply these results to study control barrier functions in reduced-order model architectures and lifts of safe sets through cascades. Further, we use our conditions to obtain topological obstructions to the tracking of safe, kinematic reduced-order models for mechanical systems. We conclude by using these obstructions to inform safe hierarchical control design for an underactuated satellite on SE(3).",
